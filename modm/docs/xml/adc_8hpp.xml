@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="adc_8hpp" kind="file" language="C++">
+    <compoundname>adc.hpp</compoundname>
+    <includes refid="peripheral_8hpp" local="no">modm/architecture/interface/peripheral.hpp</includes>
+    <includedby refid="adc__interrupt_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp</includedby>
+    <includedby refid="interface_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface.hpp</includedby>
+    <includedby refid="adc__1_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp</includedby>
+    <includedby refid="adc__2_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp</includedby>
+    <includedby refid="adc__3_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp</includedby>
+    <incdepgraph>
+      <node id="737">
+        <label>stdint.h</label>
+      </node>
+      <node id="735">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/adc.hpp</label>
+        <link refid="adc_8hpp"/>
+        <childnode refid="736" relation="include">
+        </childnode>
+      </node>
+      <node id="741">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="742" relation="include">
+        </childnode>
+      </node>
+      <node id="740">
+        <label>modm/math/units.hpp</label>
+        <link refid="units_8hpp"/>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="741" relation="include">
+        </childnode>
+      </node>
+      <node id="736">
+        <label>modm/architecture/interface/peripheral.hpp</label>
+        <link refid="peripheral_8hpp"/>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+      </node>
+      <node id="738">
+        <label>cstddef</label>
+      </node>
+      <node id="742">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="739">
+        <label>modm/math/tolerance.hpp</label>
+        <link refid="tolerance_8hpp"/>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="749">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp</label>
+        <link refid="adc__interrupt__2_8hpp"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="750">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_3.hpp</label>
+        <link refid="adc__interrupt__3_8hpp"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="746">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture.hpp</label>
+        <link refid="architecture_8hpp"/>
+      </node>
+      <node id="743">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/adc.hpp</label>
+        <link refid="adc_8hpp"/>
+        <childnode refid="744" relation="include">
+        </childnode>
+        <childnode refid="745" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+      </node>
+      <node id="745">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
+        <link refid="interface_8hpp"/>
+        <childnode refid="746" relation="include">
+        </childnode>
+      </node>
+      <node id="751">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp</label>
+        <link refid="adc__1_8hpp"/>
+        <childnode refid="747" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="747">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp</label>
+        <link refid="adc__interrupt__1_8hpp"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="753">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp</label>
+        <link refid="adc__3_8hpp"/>
+        <childnode refid="750" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="744">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp</label>
+        <link refid="adc__interrupt_8hpp"/>
+        <childnode refid="745" relation="include">
+        </childnode>
+        <childnode refid="747" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+      </node>
+      <node id="752">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp</label>
+        <link refid="adc__2_8hpp"/>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+      <node id="748">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1_adc" prot="public">modm::Adc</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/adc.hpp"/>
+  </compounddef>
+</doxygen>

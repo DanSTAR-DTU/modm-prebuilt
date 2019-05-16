@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="s__curve__generator_8hpp" kind="file" language="C++">
+    <compoundname>s_curve_generator.hpp</compoundname>
+    <includes local="yes">s_curve_generator_impl.hpp</includes>
+    <includedby refid="filter_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <incdepgraph>
+      <node id="2678">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/s_curve_generator.hpp</label>
+        <link refid="s__curve__generator_8hpp"/>
+        <childnode refid="2679" relation="include">
+        </childnode>
+      </node>
+      <node id="2679">
+        <label>s_curve_generator_impl.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2681">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter.hpp</label>
+        <link refid="filter_8hpp"/>
+        <childnode refid="2682" relation="include">
+        </childnode>
+      </node>
+      <node id="2680">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/s_curve_generator.hpp</label>
+        <link refid="s__curve__generator_8hpp"/>
+        <childnode refid="2681" relation="include">
+        </childnode>
+        <childnode refid="2682" relation="include">
+        </childnode>
+      </node>
+      <node id="2682">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+        <link refid="math_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1_s_curve_generator" prot="public">modm::SCurveGenerator</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/s_curve_generator.hpp"/>
+  </compounddef>
+</doxygen>

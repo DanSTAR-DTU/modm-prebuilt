@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="uart_8hpp" kind="file" language="C++">
+    <compoundname>uart.hpp</compoundname>
+    <includes refid="peripheral_8hpp" local="no">modm/architecture/interface/peripheral.hpp</includes>
+    <includedby refid="interface_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface.hpp</includedby>
+    <includedby refid="uart__1_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp</includedby>
+    <includedby refid="uart__2_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_2.hpp</includedby>
+    <includedby refid="uart__3_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_3.hpp</includedby>
+    <includedby refid="uart__4_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_4.hpp</includedby>
+    <includedby refid="uart__5_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_5.hpp</includedby>
+    <includedby refid="uart__6_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_6.hpp</includedby>
+    <incdepgraph>
+      <node id="1453">
+        <label>stdint.h</label>
+      </node>
+      <node id="1457">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="1458" relation="include">
+        </childnode>
+      </node>
+      <node id="1456">
+        <label>modm/math/units.hpp</label>
+        <link refid="units_8hpp"/>
+        <childnode refid="1453" relation="include">
+        </childnode>
+        <childnode refid="1457" relation="include">
+        </childnode>
+      </node>
+      <node id="1452">
+        <label>modm/architecture/interface/peripheral.hpp</label>
+        <link refid="peripheral_8hpp"/>
+        <childnode refid="1453" relation="include">
+        </childnode>
+        <childnode refid="1454" relation="include">
+        </childnode>
+        <childnode refid="1455" relation="include">
+        </childnode>
+        <childnode refid="1456" relation="include">
+        </childnode>
+      </node>
+      <node id="1454">
+        <label>cstddef</label>
+      </node>
+      <node id="1458">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="1455">
+        <label>modm/math/tolerance.hpp</label>
+        <link refid="tolerance_8hpp"/>
+        <childnode refid="1453" relation="include">
+        </childnode>
+        <childnode refid="1456" relation="include">
+        </childnode>
+      </node>
+      <node id="1451">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/uart.hpp</label>
+        <link refid="uart_8hpp"/>
+        <childnode refid="1452" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1461">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture.hpp</label>
+        <link refid="architecture_8hpp"/>
+      </node>
+      <node id="1462">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp</label>
+        <link refid="uart__1_8hpp"/>
+        <childnode refid="1463" relation="include">
+        </childnode>
+      </node>
+      <node id="1465">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_3.hpp</label>
+        <link refid="uart__3_8hpp"/>
+        <childnode refid="1463" relation="include">
+        </childnode>
+      </node>
+      <node id="1460">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
+        <link refid="interface_8hpp"/>
+        <childnode refid="1461" relation="include">
+        </childnode>
+      </node>
+      <node id="1464">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_2.hpp</label>
+        <link refid="uart__2_8hpp"/>
+        <childnode refid="1463" relation="include">
+        </childnode>
+      </node>
+      <node id="1467">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_5.hpp</label>
+        <link refid="uart__5_8hpp"/>
+        <childnode refid="1463" relation="include">
+        </childnode>
+      </node>
+      <node id="1466">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_4.hpp</label>
+        <link refid="uart__4_8hpp"/>
+        <childnode refid="1463" relation="include">
+        </childnode>
+      </node>
+      <node id="1468">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_6.hpp</label>
+        <link refid="uart__6_8hpp"/>
+        <childnode refid="1463" relation="include">
+        </childnode>
+      </node>
+      <node id="1463">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+      <node id="1459">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/uart.hpp</label>
+        <link refid="uart_8hpp"/>
+        <childnode refid="1460" relation="include">
+        </childnode>
+        <childnode refid="1462" relation="include">
+        </childnode>
+        <childnode refid="1464" relation="include">
+        </childnode>
+        <childnode refid="1465" relation="include">
+        </childnode>
+        <childnode refid="1466" relation="include">
+        </childnode>
+        <childnode refid="1467" relation="include">
+        </childnode>
+        <childnode refid="1468" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1_uart" prot="public">modm::Uart</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/uart.hpp"/>
+  </compounddef>
+</doxygen>

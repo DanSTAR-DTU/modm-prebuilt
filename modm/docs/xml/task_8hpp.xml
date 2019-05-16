@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="task_8hpp" kind="file" language="C++">
+    <compoundname>task.hpp</compoundname>
+    <includedby refid="processing_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing.hpp</includedby>
+    <invincdepgraph>
+      <node id="7344">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing.hpp</label>
+        <link refid="processing_8hpp"/>
+      </node>
+      <node id="7343">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/task.hpp</label>
+        <link refid="task_8hpp"/>
+        <childnode refid="7344" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1_task" prot="public">modm::Task</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/task.hpp"/>
+  </compounddef>
+</doxygen>

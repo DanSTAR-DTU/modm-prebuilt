@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="flag_8hpp" kind="file" language="C++">
+    <compoundname>flag.hpp</compoundname>
+    <includes refid="architecture_2interface_2atomic__lock_8hpp" local="no">modm/architecture/interface/atomic_lock.hpp</includes>
+    <includedby refid="atomic_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic.hpp</includedby>
+    <incdepgraph>
+      <node id="523">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp</label>
+        <link refid="flag_8hpp"/>
+        <childnode refid="524" relation="include">
+        </childnode>
+      </node>
+      <node id="524">
+        <label>modm/architecture/interface/atomic_lock.hpp</label>
+        <link refid="architecture_2interface_2atomic__lock_8hpp"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="526">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic.hpp</label>
+        <link refid="atomic_8hpp"/>
+      </node>
+      <node id="525">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp</label>
+        <link refid="flag_8hpp"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1atomic_1_1_flag" prot="public">modm::atomic::Flag</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1atomic">modm::atomic</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp"/>
+  </compounddef>
+</doxygen>

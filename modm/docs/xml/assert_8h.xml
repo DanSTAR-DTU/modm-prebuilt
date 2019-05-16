@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="assert_8h" kind="file" language="C++">
+    <compoundname>assert.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="architecture_2utils_8hpp" local="no">modm/architecture/utils.hpp</includes>
+    <incdepgraph>
+      <node id="772">
+        <label>stdbool.h</label>
+      </node>
+      <node id="771">
+        <label>stdint.h</label>
+      </node>
+      <node id="770">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.h</label>
+        <link refid="assert_8h"/>
+        <childnode refid="771" relation="include">
+        </childnode>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="774" relation="include">
+        </childnode>
+      </node>
+      <node id="774">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.h"/>
+  </compounddef>
+</doxygen>

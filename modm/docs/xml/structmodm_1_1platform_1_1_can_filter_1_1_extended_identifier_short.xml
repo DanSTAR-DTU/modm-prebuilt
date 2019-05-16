@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short" kind="struct" language="C++" prot="public">
+    <compoundname>modm::platform::CanFilter::ExtendedIdentifierShort</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">modm::platform::CanFilter::IdentifierShort</basecompoundref>
+    <includes refid="can__filter_8hpp" local="no">modm/platform/can/can_filter.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short_1a5bd1bcf630384092f86c58fba34ebfe7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>modm::platform::CanFilter::ExtendedIdentifierShort::ExtendedIdentifierShort</definition>
+        <argsstring>(uint32_t identifier, RemoteRequestStatus rtr=NO_RTR)</argsstring>
+        <name>ExtendedIdentifierShort</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>identifier</declname>
+        </param>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_can_filter_1a21cbe9c6fdcb15a598e610fa3a0b88de" kindref="member">RemoteRequestStatus</ref></type>
+          <declname>rtr</declname>
+          <defval><ref refid="classmodm_1_1platform_1_1_can_filter_1a21cbe9c6fdcb15a598e610fa3a0b88dea6e448f6a4c79c6cc1b8f2e8331c11c90" kindref="member">NO_RTR</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="180" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="180" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Generate an identifier for the Dual Filter mode from an extended (29-bit) identifier.</para>
+<para><simplesect kind="warning"><para>Uses only the upper 14-bit of the 29-bit identifier! The lower 15-bit will be don&apos;t care! </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="234">
+        <label>modm::platform::CanFilter::IdentifierShort</label>
+      </node>
+      <node id="233">
+        <label>modm::platform::CanFilter::ExtendedIdentifierShort</label>
+        <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short"/>
+        <childnode refid="234" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="236">
+        <label>modm::platform::CanFilter::IdentifierShort</label>
+      </node>
+      <node id="235">
+        <label>modm::platform::CanFilter::ExtendedIdentifierShort</label>
+        <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short"/>
+        <childnode refid="236" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="178" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="177" bodyend="187"/>
+    <listofallmembers>
+      <member refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short_1a5bd1bcf630384092f86c58fba34ebfe7" prot="public" virt="non-virtual"><scope>modm::platform::CanFilter::ExtendedIdentifierShort</scope><name>ExtendedIdentifierShort</name></member>
+      <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1a9c9d64674d4620c1c9a8bdf7bdcdfb8c" prot="protected" virt="non-virtual"><scope>modm::platform::CanFilter::ExtendedIdentifierShort</scope><name>IdentifierShort</name></member>
+      <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1a972e0df59d0f4495a282a0141ba96998" prot="public" virt="non-virtual"><scope>modm::platform::CanFilter::ExtendedIdentifierShort</scope><name>operator uint16_t</name></member>
+      <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1ab9683ecaa18bb7528ea64607b171503b" prot="protected" virt="non-virtual"><scope>modm::platform::CanFilter::ExtendedIdentifierShort</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

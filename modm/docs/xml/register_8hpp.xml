@@ -1,0 +1,651 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="register_8hpp" kind="file" language="C++">
+    <compoundname>register.hpp</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="bit__constants_8hpp" local="no">modm/math/utils/bit_constants.hpp</includes>
+    <includes refid="detect_8hpp" local="no">modm/architecture/detect.hpp</includes>
+    <includes refid="iostream_8hpp" local="no">modm/io/iostream.hpp</includes>
+    <includedby refid="gpio__expander_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp</includedby>
+    <includedby refid="memory_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp</includedby>
+    <includedby refid="interface_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface.hpp</includedby>
+    <includedby refid="bme280_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</includedby>
+    <includedby refid="adc__1_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp</includedby>
+    <includedby refid="adc__2_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp</includedby>
+    <includedby refid="adc__3_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp</includedby>
+    <includedby refid="spi__base_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp</includedby>
+    <includedby refid="basic__base_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp</includedby>
+    <includedby refid="uart__base_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp</includedby>
+    <incdepgraph>
+      <node id="1313">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1307">
+        <label>stdint.h</label>
+      </node>
+      <node id="1308">
+        <label>modm/math/utils/bit_constants.hpp</label>
+        <link refid="bit__constants_8hpp"/>
+        <childnode refid="1307" relation="include">
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp</label>
+        <link refid="register_8hpp"/>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1308" relation="include">
+        </childnode>
+        <childnode refid="1309" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+      </node>
+      <node id="1312">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="1309" relation="include">
+        </childnode>
+      </node>
+      <node id="1311">
+        <label>cstddef</label>
+      </node>
+      <node id="1309">
+        <label>modm/architecture/detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="1317">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1316" relation="include">
+        </childnode>
+      </node>
+      <node id="1315">
+        <label>type_traits</label>
+      </node>
+      <node id="1316">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
+      </node>
+      <node id="1310">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="1311" relation="include">
+        </childnode>
+        <childnode refid="1312" relation="include">
+        </childnode>
+        <childnode refid="1313" relation="include">
+        </childnode>
+        <childnode refid="1314" relation="include">
+        </childnode>
+        <childnode refid="1315" relation="include">
+        </childnode>
+        <childnode refid="1316" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+      </node>
+      <node id="1314">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1337">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_3.hpp</label>
+        <link refid="spi__hal__3_8hpp"/>
+        <childnode refid="1338" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1356">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp</label>
+        <link refid="uart__base_8hpp"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1361" relation="include">
+        </childnode>
+        <childnode refid="1362" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+        <childnode refid="1369" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1361">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_2.hpp</label>
+        <link refid="uart__hal__2_8hpp"/>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1355">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_7.hpp</label>
+        <link refid="timer__7_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1363">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_3.hpp</label>
+        <link refid="uart__hal__3_8hpp"/>
+        <childnode refid="1362" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1354">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp</label>
+        <link refid="timer__6_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1338">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp</label>
+        <link refid="spi__master__3_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1329">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp</label>
+        <link refid="adc__interrupt__2_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1353">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_9.hpp</label>
+        <link refid="timer__9_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1323">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/core/heap_table.hpp</label>
+        <link refid="heap__table_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1336">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_2.hpp</label>
+        <link refid="spi__master__2_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1331">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_3.hpp</label>
+        <link refid="adc__interrupt__3_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1359">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_1.hpp</label>
+        <link refid="uart__hal__1_8hpp"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1343">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_8.hpp</label>
+        <link refid="timer__8_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1340">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp</label>
+        <link refid="general__purpose__base_8hpp"/>
+        <childnode refid="1341" relation="include">
+        </childnode>
+        <childnode refid="1344" relation="include">
+        </childnode>
+        <childnode refid="1345" relation="include">
+        </childnode>
+        <childnode refid="1346" relation="include">
+        </childnode>
+        <childnode refid="1347" relation="include">
+        </childnode>
+        <childnode refid="1348" relation="include">
+        </childnode>
+        <childnode refid="1349" relation="include">
+        </childnode>
+        <childnode refid="1350" relation="include">
+        </childnode>
+        <childnode refid="1351" relation="include">
+        </childnode>
+        <childnode refid="1352" relation="include">
+        </childnode>
+        <childnode refid="1353" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1321">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture.hpp</label>
+        <link refid="architecture_8hpp"/>
+      </node>
+      <node id="1357">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp</label>
+        <link refid="uart__1_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1333">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_1.hpp</label>
+        <link refid="spi__hal__1_8hpp"/>
+        <childnode refid="1334" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1358">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp</label>
+        <link refid="uart__baudrate_8hpp"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1361" relation="include">
+        </childnode>
+        <childnode refid="1362" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+        <childnode refid="1369" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1362">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_3.hpp</label>
+        <link refid="uart__3_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1322">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp</label>
+        <link refid="memory_8hpp"/>
+        <childnode refid="1320" relation="include">
+        </childnode>
+        <childnode refid="1323" relation="include">
+        </childnode>
+      </node>
+      <node id="1320">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
+        <link refid="interface_8hpp"/>
+        <childnode refid="1321" relation="include">
+        </childnode>
+      </node>
+      <node id="1360">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_2.hpp</label>
+        <link refid="uart__2_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1332">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp</label>
+        <link refid="spi__base_8hpp"/>
+        <childnode refid="1333" relation="include">
+        </childnode>
+        <childnode refid="1335" relation="include">
+        </childnode>
+        <childnode refid="1337" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1326">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp</label>
+        <link refid="adc__1_8hpp"/>
+        <childnode refid="1327" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1327">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp</label>
+        <link refid="adc__interrupt__1_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1366">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_5.hpp</label>
+        <link refid="uart__5_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1318">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp</label>
+        <link refid="register_8hpp"/>
+        <childnode refid="1319" relation="include">
+        </childnode>
+        <childnode refid="1322" relation="include">
+        </childnode>
+        <childnode refid="1320" relation="include">
+        </childnode>
+        <childnode refid="1325" relation="include">
+        </childnode>
+        <childnode refid="1326" relation="include">
+        </childnode>
+        <childnode refid="1328" relation="include">
+        </childnode>
+        <childnode refid="1330" relation="include">
+        </childnode>
+        <childnode refid="1332" relation="include">
+        </childnode>
+        <childnode refid="1339" relation="include">
+        </childnode>
+        <childnode refid="1356" relation="include">
+        </childnode>
+      </node>
+      <node id="1364">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_4.hpp</label>
+        <link refid="uart__4_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1330">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp</label>
+        <link refid="adc__3_8hpp"/>
+        <childnode refid="1331" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1325">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
+        <link refid="bme280_8hpp"/>
+      </node>
+      <node id="1328">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp</label>
+        <link refid="adc__2_8hpp"/>
+        <childnode refid="1329" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1368">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_6.hpp</label>
+        <link refid="uart__6_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1344">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_10.hpp</label>
+        <link refid="timer__10_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1345">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_11.hpp</label>
+        <link refid="timer__11_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1346">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_12.hpp</label>
+        <link refid="timer__12_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1342">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_1.hpp</label>
+        <link refid="timer__1_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1347">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_13.hpp</label>
+        <link refid="timer__13_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1319">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp</label>
+        <link refid="gpio__expander_8hpp"/>
+        <childnode refid="1320" relation="include">
+        </childnode>
+      </node>
+      <node id="1324">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+      <node id="1348">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp</label>
+        <link refid="timer__14_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1334">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp</label>
+        <link refid="spi__master__1_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1369">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp</label>
+        <link refid="uart__hal__6_8hpp"/>
+        <childnode refid="1368" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1350">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_3.hpp</label>
+        <link refid="timer__3_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1339">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp</label>
+        <link refid="basic__base_8hpp"/>
+        <childnode refid="1340" relation="include">
+        </childnode>
+        <childnode refid="1354" relation="include">
+        </childnode>
+        <childnode refid="1355" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1349">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_2.hpp</label>
+        <link refid="timer__2_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1365">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_4.hpp</label>
+        <link refid="uart__hal__4_8hpp"/>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1352">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_5.hpp</label>
+        <link refid="timer__5_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1341">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/advanced_base.hpp</label>
+        <link refid="advanced__base_8hpp"/>
+        <childnode refid="1342" relation="include">
+        </childnode>
+        <childnode refid="1343" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1335">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_2.hpp</label>
+        <link refid="spi__hal__2_8hpp"/>
+        <childnode refid="1336" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1367">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp</label>
+        <link refid="uart__hal__5_8hpp"/>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1351">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_4.hpp</label>
+        <link refid="timer__4_8hpp"/>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmodm_1_1_register" prot="public">modm::Register</innerclass>
+    <innerclass refid="structmodm_1_1_flags_operators" prot="public">modm::FlagsOperators</innerclass>
+    <innerclass refid="structmodm_1_1_flags" prot="public">modm::Flags</innerclass>
+    <innerclass refid="structmodm_1_1_flags_group_3_01_t_8_8_8_01_4" prot="public">modm::FlagsGroup&lt; T... &gt;</innerclass>
+    <innerclass refid="structmodm_1_1_configuration" prot="public">modm::Configuration</innerclass>
+    <innerclass refid="structmodm_1_1_value" prot="public">modm::Value</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__modm__architecture__register_1ga7e44b28c63d4d9235b48f814a9becc10" prot="public" static="no">
+        <name>MODM_FLAGS8</name>
+        <param><defname>Enum</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro creates a Flags8 class with the enum class provided and adds the required bitwise <computeroutput>(Enum op Enum)</computeroutput> operator overloads for it The resulting Flags8 class type will have the signature <computeroutput>Enum_t</computeroutput>.</para>
+<para><simplesect kind="warning"><para>This macro only works properly <bold>inside</bold> of a struct or class. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__modm__architecture__register_1ga0fd05bf2b80fcbe189a29fb7599ba868" kindref="member">MODM_TYPE_FLAGS</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Enum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a strongly-typed enum containing the bit masks </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="698" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture__register_1ga504f6a42eaea7ddf9c21c18d79694f80" prot="public" static="no">
+        <name>MODM_FLAGS16</name>
+        <param><defname>Enum</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro creates a Flags16 class with the enum class provided and adds the required bitwise <computeroutput>(Enum op Enum)</computeroutput> operator overloads for it. The resulting Flags16 class type will have the signature <computeroutput>Enum_t</computeroutput>.</para>
+<para><simplesect kind="warning"><para>This macro only works properly <bold>inside</bold> of a struct or class. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__modm__architecture__register_1ga0fd05bf2b80fcbe189a29fb7599ba868" kindref="member">MODM_TYPE_FLAGS</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Enum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a strongly-typed enum containing the bit masks </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="716" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture__register_1ga37de536c84e4014ca93a0c771ae8b07f" prot="public" static="no">
+        <name>MODM_FLAGS32</name>
+        <param><defname>Enum</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro creates a Flags32 class with the enum class provided and adds the required bitwise <computeroutput>(Enum op Enum)</computeroutput> operator overloads for it. The resulting Flags32 class type will have the signature <computeroutput>Enum_t</computeroutput>.</para>
+<para><simplesect kind="warning"><para>This macro only works properly <bold>inside</bold> of a struct or class. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__modm__architecture__register_1ga0fd05bf2b80fcbe189a29fb7599ba868" kindref="member">MODM_TYPE_FLAGS</ref></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Enum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a strongly-typed enum containing the bit masks </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="734" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture__register_1ga0fd05bf2b80fcbe189a29fb7599ba868" prot="public" static="no">
+        <name>MODM_TYPE_FLAGS</name>
+        <param><defname>Parent</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro creates bitwise <computeroutput>(Parent::EnumType op Parent::EnumType)</computeroutput> operator overloads for use with the Flags class.</para>
+<para><simplesect kind="warning"><para>This macro only works properly <bold>outside</bold> of a struct or class.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a Flags class </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="750" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="750" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp"/>
+  </compounddef>
+</doxygen>

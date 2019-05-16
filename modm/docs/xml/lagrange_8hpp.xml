@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="lagrange_8hpp" kind="file" language="C++">
+    <compoundname>lagrange.hpp</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">type_traits</includes>
+    <includes refid="pair_8hpp" local="no">modm/container/pair.hpp</includes>
+    <includes refid="accessor_8hpp" local="no">modm/architecture/interface/accessor.hpp</includes>
+    <includes local="yes">lagrange_impl.hpp</includes>
+    <includedby refid="interpolation_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <incdepgraph>
+      <node id="3443">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3433">
+        <label>stdint.h</label>
+      </node>
+      <node id="3432">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/lagrange.hpp</label>
+        <link refid="lagrange_8hpp"/>
+        <childnode refid="3433" relation="include">
+        </childnode>
+        <childnode refid="3434" relation="include">
+        </childnode>
+        <childnode refid="3435" relation="include">
+        </childnode>
+        <childnode refid="3436" relation="include">
+        </childnode>
+        <childnode refid="3447" relation="include">
+        </childnode>
+      </node>
+      <node id="3441">
+        <label>modm/architecture/interface/accessor_flash.hpp</label>
+        <link refid="accessor__flash_8hpp"/>
+        <childnode refid="3439" relation="include">
+        </childnode>
+        <childnode refid="3442" relation="include">
+        </childnode>
+      </node>
+      <node id="3439">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="3440" relation="include">
+        </childnode>
+      </node>
+      <node id="3447">
+        <label>lagrange_impl.hpp</label>
+      </node>
+      <node id="3435">
+        <label>modm/container/pair.hpp</label>
+        <link refid="pair_8hpp"/>
+      </node>
+      <node id="3436">
+        <label>modm/architecture/interface/accessor.hpp</label>
+        <link refid="accessor_8hpp"/>
+        <childnode refid="3437" relation="include">
+        </childnode>
+        <childnode refid="3441" relation="include">
+        </childnode>
+      </node>
+      <node id="3438">
+        <label>cstddef</label>
+      </node>
+      <node id="3437">
+        <label>modm/architecture/interface/accessor_ram.hpp</label>
+        <link refid="accessor__ram_8hpp"/>
+        <childnode refid="3438" relation="include">
+        </childnode>
+        <childnode refid="3439" relation="include">
+        </childnode>
+      </node>
+      <node id="3440">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="3446">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="3433" relation="include">
+        </childnode>
+        <childnode refid="3445" relation="include">
+        </childnode>
+      </node>
+      <node id="3434">
+        <label>type_traits</label>
+      </node>
+      <node id="3445">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
+      </node>
+      <node id="3442">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="3438" relation="include">
+        </childnode>
+        <childnode refid="3439" relation="include">
+        </childnode>
+        <childnode refid="3443" relation="include">
+        </childnode>
+        <childnode refid="3444" relation="include">
+        </childnode>
+        <childnode refid="3434" relation="include">
+        </childnode>
+        <childnode refid="3445" relation="include">
+        </childnode>
+        <childnode refid="3446" relation="include">
+        </childnode>
+      </node>
+      <node id="3444">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3448">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/lagrange.hpp</label>
+        <link refid="lagrange_8hpp"/>
+        <childnode refid="3449" relation="include">
+        </childnode>
+        <childnode refid="3450" relation="include">
+        </childnode>
+      </node>
+      <node id="3450">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+        <link refid="math_8hpp"/>
+      </node>
+      <node id="3449">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation.hpp</label>
+        <link refid="interpolation_8hpp"/>
+        <childnode refid="3450" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1interpolation_1_1_lagrange" prot="public">modm::interpolation::Lagrange</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1interpolation">modm::interpolation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/lagrange.hpp"/>
+  </compounddef>
+</doxygen>

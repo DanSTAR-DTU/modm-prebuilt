@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structmodm_1_1_linked_list_1_1_node" kind="struct" language="C++" prot="protected">
+    <compoundname>modm::LinkedList::Node</compoundname>
+    <includes refid="linked__list_8hpp" local="no">modm/container/linked_list.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmodm_1_1_linked_list_1_1_node_1ab9f881841424f946ae197f966a1589b6" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T modm::LinkedList&lt; T, Allocator &gt;::Node::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/linked_list.hpp" line="100" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/linked_list.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmodm_1_1_linked_list_1_1_node_1ab2a2b1c6bfb7a67e356f762f25192e89" prot="public" static="no" mutable="no">
+        <type><ref refid="structmodm_1_1_linked_list_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* modm::LinkedList&lt; T, Allocator &gt;::Node::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/linked_list.hpp" line="101" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/linked_list.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1405">
+        <label>T</label>
+      </node>
+      <node id="1404">
+        <label>modm::LinkedList&lt; T, Allocator &gt;::Node</label>
+        <link refid="structmodm_1_1_linked_list_1_1_node"/>
+        <childnode refid="1404" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+        <childnode refid="1405" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/linked_list.hpp" line="99" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/linked_list.hpp" bodystart="98" bodyend="102"/>
+    <listofallmembers>
+      <member refid="structmodm_1_1_linked_list_1_1_node_1ab2a2b1c6bfb7a67e356f762f25192e89" prot="public" virt="non-virtual"><scope>modm::LinkedList::Node</scope><name>next</name></member>
+      <member refid="structmodm_1_1_linked_list_1_1_node_1ab9f881841424f946ae197f966a1589b6" prot="public" virt="non-virtual"><scope>modm::LinkedList::Node</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

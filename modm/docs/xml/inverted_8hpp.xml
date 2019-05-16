@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="inverted_8hpp" kind="file" language="C++">
+    <compoundname>inverted.hpp</compoundname>
+    <includes refid="gpio_8hpp" local="no">modm/architecture/interface/gpio.hpp</includes>
+    <includedby refid="platform_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <incdepgraph>
+      <node id="5699">
+        <label>stdint.h</label>
+      </node>
+      <node id="5698">
+        <label>modm/architecture/interface/gpio.hpp</label>
+        <link refid="gpio_8hpp"/>
+        <childnode refid="5699" relation="include">
+        </childnode>
+        <childnode refid="5700" relation="include">
+        </childnode>
+      </node>
+      <node id="5700">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="5701" relation="include">
+        </childnode>
+      </node>
+      <node id="5701">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="5697">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/inverted.hpp</label>
+        <link refid="inverted_8hpp"/>
+        <childnode refid="5698" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5703">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+      <node id="5702">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/inverted.hpp</label>
+        <link refid="inverted_8hpp"/>
+        <childnode refid="5703" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_inverted" prot="public">modm::platform::GpioInverted</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1platform">modm::platform</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/inverted.hpp"/>
+  </compounddef>
+</doxygen>

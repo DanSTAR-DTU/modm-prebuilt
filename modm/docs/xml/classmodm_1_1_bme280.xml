@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1_bme280" kind="class" language="C++" prot="public">
+    <compoundname>modm::Bme280</compoundname>
+    <basecompoundref refid="structmodm_1_1bme280" prot="public" virt="non-virtual">modm::bme280</basecompoundref>
+    <basecompoundref refid="classmodm_1_1_i2c_device" prot="public" virt="non-virtual">modm::I2cDevice&lt; I2cMaster, 1 &gt;</basecompoundref>
+    <includes refid="bme280_8hpp" local="no">modm/driver/pressure/bme280.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename <ref refid="classmodm_1_1_i2c_master" kindref="compound">I2cMaster</ref></type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmodm_1_1_bme280_1a04979b008b9e4821ae7fcf0768f165b6" prot="private" static="no" mutable="no">
+        <type><ref refid="structmodm_1_1bme280_1a55590ac02e613e7cb445ee06c026fcf5" kindref="member">Data</ref> &amp;</type>
+        <definition>Data&amp; modm::Bme280&lt; I2cMaster &gt;::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="241" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1_bme280_1abb63ef2f9bdfe7c4618ef17659382751" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t modm::Bme280&lt; I2cMaster &gt;::buffer[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="244" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1_bme280_1a1e3defcd57ec8390549240dcdd9788d9" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t modm::Bme280&lt; I2cMaster &gt;::calBuffer[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>calBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="247" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodm_1_1_bme280_1aaf4b3fc997752ac74a4563c464f149fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modm::Bme280&lt; I2cMaster &gt;::Bme280</definition>
+        <argsstring>(Data &amp;data, uint8_t address=0x76)</argsstring>
+        <name>Bme280</name>
+        <param>
+          <type><ref refid="structmodm_1_1bme280_1a55590ac02e613e7cb445ee06c026fcf5" kindref="member">Data</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+          <defval>0x76</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to buffer of the internal data of type Data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address defaults to 0x76 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="211" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_bme280_1aacccfa527c8efae8b899d9ef9ccf1030" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
+        <definition>modm::ResumableResult&lt;bool&gt; modm::Bme280&lt; I2cMaster &gt;::initialize</definition>
+        <argsstring>(Mode mode=Mode::Normal, Oversampling temperature=Oversampling::Single, Oversampling pressure=Oversampling::Single, Oversampling humidity=Oversampling::Single)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type><ref refid="structmodm_1_1bme280_1a3986d1de2ce7dcc1250b55b0b4e05789" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+          <defval><ref refid="structmodm_1_1bme280_1a3986d1de2ce7dcc1250b55b0b4e05789a960b44c579bc2f6818d2daaf9e4c16f0" kindref="member">Mode::Normal</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dc" kindref="member">Oversampling</ref></type>
+          <declname>temperature</declname>
+          <defval><ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dca66ba162102bbf6ae31b522aec561735e" kindref="member">Oversampling::Single</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dc" kindref="member">Oversampling</ref></type>
+          <declname>pressure</declname>
+          <defval><ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dca66ba162102bbf6ae31b522aec561735e" kindref="member">Oversampling::Single</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dc" kindref="member">Oversampling</ref></type>
+          <declname>humidity</declname>
+          <defval><ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dca66ba162102bbf6ae31b522aec561735e" kindref="member">Oversampling::Single</ref></defval>
+        </param>
+        <briefdescription>
+<para>Reads out and stores the calibration bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_bme280_1a79038a6f75240af78989543d310ed5a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
+        <definition>modm::ResumableResult&lt;bool&gt; modm::Bme280&lt; I2cMaster &gt;::readout</definition>
+        <argsstring>()</argsstring>
+        <name>readout</name>
+        <briefdescription>
+<para>Read the raw data from the sensor. Conversion must be freerunning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="224" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_bme280_1aa9faba977df390d6090c70df85a2b91d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
+        <definition>modm::ResumableResult&lt;bool&gt; modm::Bme280&lt; I2cMaster &gt;::startMeasurement</definition>
+        <argsstring>(Oversampling temperature=Oversampling::Single, Oversampling pressure=Oversampling::Single)</argsstring>
+        <name>startMeasurement</name>
+        <param>
+          <type><ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dc" kindref="member">Oversampling</ref></type>
+          <declname>temperature</declname>
+          <defval><ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dca66ba162102bbf6ae31b522aec561735e" kindref="member">Oversampling::Single</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dc" kindref="member">Oversampling</ref></type>
+          <declname>pressure</declname>
+          <defval><ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dca66ba162102bbf6ae31b522aec561735e" kindref="member">Oversampling::Single</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start a single measurement in forced mode. Sensor will go to standby after this. To reduce bus traffic only the absolute necessary register (CTRL_MEAS) is written. If oversampling of humidity shall be changed, another method must be used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="230" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_bme280_1a3d43c6366577d8989a16bfc20a67278a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structmodm_1_1bme280_1a55590ac02e613e7cb445ee06c026fcf5" kindref="member">Data</ref> &amp;</type>
+        <definition>Data&amp; modm::Bme280&lt; I2cMaster &gt;::getData</definition>
+        <argsstring>()</argsstring>
+        <name>getData</name>
+        <briefdescription>
+<para>Get the data object for this sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="237" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="237" bodyend="238"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Sascha Schade</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classmodm_1_1_i2c_master" kindref="compound">I2cMaster</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C interface </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="123">
+        <label>modm::bme280</label>
+        <link refid="structmodm_1_1bme280"/>
+      </node>
+      <node id="124">
+        <label>modm::I2cDevice&lt; I2cMaster, 1 &gt;</label>
+        <link refid="classmodm_1_1_i2c_device"/>
+        <childnode refid="125" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>modm::NestedResumable&lt; NestingLevels+1 &gt;</label>
+        <link refid="classmodm_1_1_nested_resumable"/>
+      </node>
+      <node id="122">
+        <label>modm::Bme280&lt; I2cMaster &gt;</label>
+        <link refid="classmodm_1_1_bme280"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="127">
+        <label>modm::bme280</label>
+        <link refid="structmodm_1_1bme280"/>
+      </node>
+      <node id="130">
+        <label>modm::I2cWriteReadTransaction</label>
+        <link refid="classmodm_1_1_i2c_write_read_transaction"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>modm::I2cDevice&lt; I2cMaster, 1 &gt;</label>
+        <link refid="classmodm_1_1_i2c_device"/>
+        <childnode refid="129" relation="protected-inheritance">
+        </childnode>
+        <childnode refid="130" relation="usage">
+          <edgelabel>transaction</edgelabel>
+        </childnode>
+      </node>
+      <node id="129">
+        <label>modm::NestedResumable&lt; NestingLevels+1 &gt;</label>
+        <link refid="classmodm_1_1_nested_resumable"/>
+      </node>
+      <node id="132">
+        <label>modm::I2c</label>
+        <link refid="structmodm_1_1_i2c"/>
+      </node>
+      <node id="131">
+        <label>modm::I2cTransaction</label>
+        <link refid="classmodm_1_1_i2c_transaction"/>
+        <childnode refid="132" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>modm::Bme280&lt; I2cMaster &gt;</label>
+        <link refid="classmodm_1_1_bme280"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="28" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="28" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1_i2c_device_1af69c9510f28ffa17808595ef0ba594cd" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>attachConfigurationHandler</name></member>
+      <member refid="classmodm_1_1_bme280_1aaf4b3fc997752ac74a4563c464f149fe" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Bme280</name></member>
+      <member refid="classmodm_1_1_bme280_1abb63ef2f9bdfe7c4618ef17659382751" prot="private" virt="non-virtual"><scope>modm::Bme280</scope><name>buffer</name></member>
+      <member refid="classmodm_1_1_bme280_1a1e3defcd57ec8390549240dcdd9788d9" prot="private" virt="non-virtual"><scope>modm::Bme280</scope><name>calBuffer</name></member>
+      <member refid="structmodm_1_1bme280_1a59ed724b2dd720cc7ddd8be1957ca6a0" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Calibration</name></member>
+      <member refid="structmodm_1_1bme280_1a91a7856aae86f523cc84215eed274888" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Config</name></member>
+      <member refid="structmodm_1_1bme280_1a0f7a932685ec8f93564bfe3b03c58e27" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Config_t</name></member>
+      <member refid="structmodm_1_1bme280_1a221472e8dd0353bfad01fa22753fdf17" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>CtrlHum</name></member>
+      <member refid="structmodm_1_1bme280_1af073fa36b2ac6e68061d9ace1de675ad" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>CtrlHum_t</name></member>
+      <member refid="structmodm_1_1bme280_1ae3688f0d05874d1fee06af97281707e4" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>CtrlMeas</name></member>
+      <member refid="structmodm_1_1bme280_1ac3b485aaeefac3429b0d7356ca98cef2" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>CtrlMeas_t</name></member>
+      <member refid="classmodm_1_1_bme280_1a04979b008b9e4821ae7fcf0768f165b6" prot="private" virt="non-virtual"><scope>modm::Bme280</scope><name>data</name></member>
+      <member refid="structmodm_1_1bme280_1a55590ac02e613e7cb445ee06c026fcf5" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Data</name></member>
+      <member refid="structmodm_1_1bme280_1a2f1363585982a6aa78a679946ed70fcd" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>DataBase</name></member>
+      <member refid="structmodm_1_1bme280_1abdd56edb09635287e8544ccc29773d46" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>DataDouble</name></member>
+      <member refid="structmodm_1_1bme280_1acecc1c055668a788131845d6e9a3b0a8" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>FilterSettings</name></member>
+      <member refid="classmodm_1_1_nested_resumable_1a4a262915b4bf9b2f45b63432c80bbbba" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>function</name></member>
+      <member refid="classmodm_1_1_bme280_1a3d43c6366577d8989a16bfc20a67278a" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>getData</name></member>
+      <member refid="classmodm_1_1_nested_resumable_1a9d2533f899a91e764498123bc26705c0" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>getResumableDepth</name></member>
+      <member refid="structmodm_1_1bme280_1ae4625e7b3fd67192243d56a589a8076c" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Humidity</name></member>
+      <member refid="classmodm_1_1_i2c_device_1a8b2bad58a80104ddaaccf6e2c9d6b067" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>I2cDevice</name></member>
+      <member refid="classmodm_1_1_bme280_1aacccfa527c8efae8b899d9ef9ccf1030" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>initialize</name></member>
+      <member refid="classmodm_1_1_nested_resumable_1a264e13e3deb4b8cfc026b3e0878634d0" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>isResumableRunning</name></member>
+      <member refid="classmodm_1_1_i2c_device_1ab2f2626acd027c2ab7329b47c3bcd32d" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>isTransactionRunning</name></member>
+      <member refid="structmodm_1_1bme280_1a3986d1de2ce7dcc1250b55b0b4e05789" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Mode</name></member>
+      <member refid="structmodm_1_1bme280_1af3828d58ad74b363558b64bf10915cbf" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Mode_t</name></member>
+      <member refid="classmodm_1_1_nested_resumable_1abbbbb9e321a5638643a32ad6567725d5" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>NestedResumable</name></member>
+      <member refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dc" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Oversampling</name></member>
+      <member refid="classmodm_1_1_i2c_device_1a8246f7cd360a090574b8803309e5fb56" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>ping</name></member>
+      <member refid="structmodm_1_1bme280_1ab63583d4a4d1d93d8132851aa03daf8f" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Pressure</name></member>
+      <member refid="classmodm_1_1_bme280_1a79038a6f75240af78989543d310ed5a5" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>readout</name></member>
+      <member refid="classmodm_1_1_i2c_device_1af72a1ecfe399671f236f6e1fae64ffec" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>runTransaction</name></member>
+      <member refid="classmodm_1_1_i2c_device_1a835cbd938f2c13713c4b46669dc5cd84" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>setAddress</name></member>
+      <member refid="classmodm_1_1_bme280_1aa9faba977df390d6090c70df85a2b91d" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>startMeasurement</name></member>
+      <member refid="classmodm_1_1_i2c_device_1a614eae1b4b0c83cbff05a7546655e74d" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>startRead</name></member>
+      <member refid="classmodm_1_1_i2c_device_1a10d5b5d4aab42daa7d00172eb0d7bafd" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>startTransaction</name></member>
+      <member refid="classmodm_1_1_i2c_device_1a13fe5ceae5f77e7a86d54f237c78b23e" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>startTransaction</name></member>
+      <member refid="classmodm_1_1_i2c_device_1a2db4e7efe1f03a9624e24180efb5b0c2" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>startWrite</name></member>
+      <member refid="classmodm_1_1_i2c_device_1a38c8739bcfdaa6ab89632d3e54ff76a7" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>startWriteRead</name></member>
+      <member refid="structmodm_1_1bme280_1ab6e9d26f95cde8d1b23f1559d1f5579b" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Status</name></member>
+      <member refid="structmodm_1_1bme280_1abbbc4fddfadce36633f657ff34f03d5b" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Status_t</name></member>
+      <member refid="classmodm_1_1_nested_resumable_1a76d5ca76aec447ab4fe45b56fa2d462d" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>stopResumable</name></member>
+      <member refid="structmodm_1_1bme280_1a999300749d11de457d334323aac3370c" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Temperature</name></member>
+      <member refid="structmodm_1_1bme280_1aee54ed9877f47ce1150a9c72641a2586" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>TimeStandby</name></member>
+      <member refid="structmodm_1_1bme280_1aba739fb48c5d367880e19552a64b62e9" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>TimeStandby_t</name></member>
+      <member refid="classmodm_1_1_i2c_device_1a2143acb5e132fa9a9b89dac9adb29336" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>transaction</name></member>
+      <member refid="classmodm_1_1_i2c_device_1a982a2935e54ada5a0eefb1b4f6ac6fef" prot="protected" virt="non-virtual"><scope>modm::Bme280</scope><name>wasTransactionSuccessful</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short" kind="struct" language="C++" prot="private">
+    <compoundname>modm::platform::CanFilter::IdentifierShort</compoundname>
+    <derivedcompoundref refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short" prot="public" virt="non-virtual">modm::platform::CanFilter::ExtendedIdentifierShort</derivedcompoundref>
+    <derivedcompoundref refid="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier_short" prot="public" virt="non-virtual">modm::platform::CanFilter::StandardIdentifierShort</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1ab9683ecaa18bb7528ea64607b171503b" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t modm::platform::CanFilter::IdentifierShort::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="159" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1a9c9d64674d4620c1c9a8bdf7bdcdfb8c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>modm::platform::CanFilter::IdentifierShort::IdentifierShort</definition>
+        <argsstring>(uint16_t identifier)</argsstring>
+        <name>IdentifierShort</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>identifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="154" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1a972e0df59d0f4495a282a0141ba96998" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>modm::platform::CanFilter::IdentifierShort::operator uint16_t</definition>
+        <argsstring>() const</argsstring>
+        <name>operator uint16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="163" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="163" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1335">
+        <label>modm::platform::CanFilter::StandardIdentifierShort</label>
+        <link refid="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier_short"/>
+        <childnode refid="1333" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1333">
+        <label>modm::platform::CanFilter::IdentifierShort</label>
+      </node>
+      <node id="1334">
+        <label>modm::platform::CanFilter::ExtendedIdentifierShort</label>
+        <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short"/>
+        <childnode refid="1333" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="151" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="150" bodyend="167"/>
+    <listofallmembers>
+      <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1a9c9d64674d4620c1c9a8bdf7bdcdfb8c" prot="protected" virt="non-virtual"><scope>modm::platform::CanFilter::IdentifierShort</scope><name>IdentifierShort</name></member>
+      <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1a972e0df59d0f4495a282a0141ba96998" prot="public" virt="non-virtual"><scope>modm::platform::CanFilter::IdentifierShort</scope><name>operator uint16_t</name></member>
+      <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1ab9683ecaa18bb7528ea64607b171503b" prot="protected" virt="non-virtual"><scope>modm::platform::CanFilter::IdentifierShort</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

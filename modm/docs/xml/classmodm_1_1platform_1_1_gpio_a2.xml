@@ -1,0 +1,902 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1platform_1_1_gpio_a2" kind="class" language="C++" prot="public">
+    <compoundname>modm::platform::GpioA2</compoundname>
+    <basecompoundref refid="structmodm_1_1platform_1_1_gpio" prot="public" virt="non-virtual">modm::platform::Gpio</basecompoundref>
+    <basecompoundref refid="classmodm_1_1_gpio_i_o" prot="public" virt="non-virtual">modm::GpioIO</basecompoundref>
+    <includes refid="gpio___a2_8hpp" local="no">modm/platform/gpio/gpio_A2.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_a2_1a2539965ef6e19ae4781f9ac2fb0c5567" prot="public" static="no">
+        <type>GpioSignal</type>
+        <definition>using modm::platform::GpioA2::BitBang =  GpioSignal</definition>
+        <argsstring></argsstring>
+        <name>BitBang</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connect to any software peripheral </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="167" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_a2_1afea15ffa0a72c6005a64f8d7c4128d46" prot="public" static="no">
+        <type>GpioSignal</type>
+        <definition>using modm::platform::GpioA2::Ch1 =  GpioSignal</definition>
+        <argsstring></argsstring>
+        <name>Ch1</name>
+        <briefdescription>
+<para>Connect to Tim9. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="169" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_a2_1a855c5b9af9d620155f277e32aef298c9" prot="public" static="no">
+        <type>GpioSignal</type>
+        <definition>using modm::platform::GpioA2::Ch3 =  GpioSignal</definition>
+        <argsstring></argsstring>
+        <name>Ch3</name>
+        <briefdescription>
+<para>Connect to Tim2 or Tim5. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="171" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_a2_1a3711f192a328d3fdcd1a75a47f0fb765" prot="public" static="no">
+        <type>GpioSignal</type>
+        <definition>using modm::platform::GpioA2::In2 =  GpioSignal</definition>
+        <argsstring></argsstring>
+        <name>In2</name>
+        <briefdescription>
+<para>Connect to <ref refid="classmodm_1_1platform_1_1_adc1" kindref="compound">Adc1</ref> or <ref refid="classmodm_1_1platform_1_1_adc2" kindref="compound">Adc2</ref> or <ref refid="classmodm_1_1platform_1_1_adc3" kindref="compound">Adc3</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="173" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_a2_1afdaa04502609e0d6abc6313928fcbba9" prot="public" static="no">
+        <type>GpioSignal</type>
+        <definition>using modm::platform::GpioA2::Tx =  GpioSignal</definition>
+        <argsstring></argsstring>
+        <name>Tx</name>
+        <briefdescription>
+<para>Connect to <ref refid="classmodm_1_1platform_1_1_usart2" kindref="compound">Usart2</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="175" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_a2_1aaf1d3b433697a0c2ff922c2578b5d559" prot="private" static="no">
+        <type><ref refid="classmodm_1_1platform_1_1_gpio_set" kindref="compound">GpioSet</ref>&lt; <ref refid="classmodm_1_1platform_1_1_gpio_a2" kindref="compound">GpioA2</ref> &gt;</type>
+        <definition>using modm::platform::GpioA2::PinSet =  GpioSet&lt;GpioA2&gt;</definition>
+        <argsstring></argsstring>
+        <name>PinSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="37" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_a2_1ad6db3000f1de43a79336b2fa13464ddb" prot="public" static="no">
+        <type><ref refid="classmodm_1_1platform_1_1_gpio_a2" kindref="compound">GpioA2</ref></type>
+        <definition>using modm::platform::GpioA2::Output =  GpioA2</definition>
+        <argsstring></argsstring>
+        <name>Output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_a2_1a667db89b1a3c1f05dd1322e7c103d9b7" prot="public" static="no">
+        <type><ref refid="classmodm_1_1platform_1_1_gpio_a2" kindref="compound">GpioA2</ref></type>
+        <definition>using modm::platform::GpioA2::Input =  GpioA2</definition>
+        <argsstring></argsstring>
+        <name>Input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="43" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_a2_1a49755a2f857005f3c8e4e5984e0bb140" prot="public" static="no">
+        <type><ref refid="classmodm_1_1platform_1_1_gpio_a2" kindref="compound">GpioA2</ref></type>
+        <definition>using modm::platform::GpioA2::IO =  GpioA2</definition>
+        <argsstring></argsstring>
+        <name>IO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="44" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_a2_1a6fa3dccd7e43854b44d22819ff83bbb9" prot="public" static="no">
+        <type><ref refid="classmodm_1_1platform_1_1_gpio_a2" kindref="compound">GpioA2</ref></type>
+        <definition>using modm::platform::GpioA2::Type =  GpioA2</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="45" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmodm_1_1platform_1_1_gpio_a2_1a4e7835d7980cbc422c366c10fdbc1f77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Gpios</declname>
+            <defname>Gpios</defname>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class GpioSet</definition>
+        <argsstring></argsstring>
+        <name>GpioSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="36" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmodm_1_1platform_1_1_gpio_a2_1a6f211b1a6fb32c7354ec26cb136397d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Adc</definition>
+        <argsstring></argsstring>
+        <name>Adc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="38" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmodm_1_1platform_1_1_gpio_a2_1a408d9d1af47860a0d441db9e682a0286" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Adc1</definition>
+        <argsstring></argsstring>
+        <name>Adc1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmodm_1_1platform_1_1_gpio_a2_1aa23e1a089c072f958a021d20e3999d1d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Adc2</definition>
+        <argsstring></argsstring>
+        <name>Adc2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmodm_1_1platform_1_1_gpio_a2_1a5ed7caa4b9cdb2a9e493c0d14f0969ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Adc3</definition>
+        <argsstring></argsstring>
+        <name>Adc3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmodm_1_1platform_1_1_gpio_a2_1a448248fc7a1c51bccc4b77743edcb11f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Adc4</definition>
+        <argsstring></argsstring>
+        <name>Adc4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_a2_1a457395dddb2cadea71bfcd373c1ab1a8" prot="public" static="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool modm::platform::GpioA2::isInverted</definition>
+        <argsstring></argsstring>
+        <name>isInverted</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="46" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_a2_1a3d64b0bb6489fedb3e29706794b25693" prot="public" static="yes" mutable="no">
+        <type>constexpr <ref refid="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19b" kindref="member">Port</ref></type>
+        <definition>constexpr Port modm::platform::GpioA2::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <initializer>= <ref refid="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19ba7fc56270e7a70fa81a5935b72eacbe29" kindref="member">Port::A</ref></initializer>
+        <briefdescription>
+<para>Port name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="47" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_a2_1ae41c15e94999863d5587daef86fc94cd" prot="public" static="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t modm::platform::GpioA2::pin</definition>
+        <argsstring></argsstring>
+        <name>pin</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+<para>Pin number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="48" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_a2_1a53552c4c7e952d9e6812ad26511f432f" prot="protected" static="yes" mutable="no">
+        <type>constexpr uint16_t</type>
+        <definition>constexpr uint16_t modm::platform::GpioA2::mask</definition>
+        <argsstring></argsstring>
+        <name>mask</name>
+        <initializer>= 0x1 &lt;&lt; pin</initializer>
+        <briefdescription>
+<para>Bitmask for registers that contain a 1bit value for every pin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="52" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_a2_1a316a1e81c98ad890ce7fc186bbd45c0a" prot="protected" static="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::platform::GpioA2::mask2</definition>
+        <argsstring></argsstring>
+        <name>mask2</name>
+        <initializer>= 0x3 &lt;&lt; (pin * 2)</initializer>
+        <briefdescription>
+<para>Bitmask for registers that contain a 2bit value for every pin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="54" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_a2_1ab51def4288d790e9dcf31384f7f5d227" prot="protected" static="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t modm::platform::GpioA2::port_nr</definition>
+        <argsstring></argsstring>
+        <name>port_nr</name>
+        <initializer>= uint8_t(<ref refid="classmodm_1_1platform_1_1_gpio_a2_1a3d64b0bb6489fedb3e29706794b25693" kindref="member">port</ref>)</initializer>
+        <briefdescription>
+<para>Port Number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="56" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_a2_1a0cb2de13eff0d20f3aaeaa2c656df98c" prot="protected" static="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t modm::platform::GpioA2::af_id</definition>
+        <argsstring></argsstring>
+        <name>af_id</name>
+        <initializer>= <ref refid="classmodm_1_1platform_1_1_gpio_a2_1ae41c15e94999863d5587daef86fc94cd" kindref="member">pin</ref> / 8</initializer>
+        <briefdescription>
+<para>Alternate Function register id. 0 for pin 0-7. 1 for pin 8-15. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="58" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_a2_1a7ce61a8da1d4748733c0a5b4414fafdb" prot="protected" static="yes" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t modm::platform::GpioA2::af_offset</definition>
+        <argsstring></argsstring>
+        <name>af_offset</name>
+        <initializer>= (<ref refid="classmodm_1_1platform_1_1_gpio_a2_1ae41c15e94999863d5587daef86fc94cd" kindref="member">pin</ref> * 4) % 32</initializer>
+        <briefdescription>
+<para>Alternate Function offset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="60" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_a2_1afc97d893d229cd03ea6a82a48076f8df" prot="protected" static="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::platform::GpioA2::af_mask</definition>
+        <argsstring></argsstring>
+        <name>af_mask</name>
+        <initializer>= 0xf &lt;&lt; af_offset</initializer>
+        <briefdescription>
+<para>Alternate Function register mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="62" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_a2_1a2753fbfbc146d239927ed8ad3b69d6ec" prot="protected" static="yes" mutable="no">
+        <type>constexpr IRQn_Type</type>
+        <definition>constexpr IRQn_Type modm::platform::GpioA2::ExternalInterruptIRQ</definition>
+        <argsstring></argsstring>
+        <name>ExternalInterruptIRQ</name>
+        <initializer>= EXTI2_IRQn</initializer>
+        <briefdescription>
+<para>ExternalInterruptIRQ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="64" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_a2_1a96314cd9c49187e38ebfc670d48b49ab" prot="private" static="yes" mutable="no">
+        <templateparamlist>
+          <param>
+            <type><ref refid="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55" kindref="member">Peripheral</ref></type>
+            <declname>peripheral</declname>
+            <defname>peripheral</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr int8_t</type>
+        <definition>constexpr int8_t modm::platform::GpioA2::AdcChannel</definition>
+        <argsstring></argsstring>
+        <name>AdcChannel</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="215" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1a5b1a2bd08f37357ce843473d670e7060" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::setOutput</definition>
+        <argsstring>()</argsstring>
+        <name>setOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="80" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1ad90f687e0d3dace568f1c216e5c79c7c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::setOutput</definition>
+        <argsstring>(bool status)</argsstring>
+        <name>setOutput</name>
+        <param>
+          <type>bool</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="81" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1ab2c0322c9fd332430a25a305c20fc3bd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::set</definition>
+        <argsstring>()</argsstring>
+        <name>set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="82" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1a0c54e765e548dae4f1bc7e6efe255c4f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::set</definition>
+        <argsstring>(bool status)</argsstring>
+        <name>set</name>
+        <param>
+          <type>bool</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="83" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1ab169ccf59651800eed7b270484017ec9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="84" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1af957c9ef3face80d7aaf1851c2431fdd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::toggle</definition>
+        <argsstring>()</argsstring>
+        <name>toggle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="85" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1adaf7e633eb0ee213f93ad5c829430320" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::GpioA2::isSet</definition>
+        <argsstring>()</argsstring>
+        <name>isSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="89" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1ab57450d9103a8002f9c9c39ecf79df69" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::configure</definition>
+        <argsstring>(OutputType type, OutputSpeed speed=OutputSpeed::MHz50)</argsstring>
+        <name>configure</name>
+        <param>
+          <type><ref refid="structmodm_1_1platform_1_1_gpio_1ad68170d2e3d45721421375623c8f5a61" kindref="member">OutputType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09" kindref="member">OutputSpeed</ref></type>
+          <declname>speed</declname>
+          <defval><ref refid="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09a291c765b56a54ef8453ee3aceef60ed3" kindref="member">OutputSpeed::MHz50</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="91" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1adbe663e7454473888fe82f03977b79ec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::setOutput</definition>
+        <argsstring>(OutputType type, OutputSpeed speed=OutputSpeed::MHz50)</argsstring>
+        <name>setOutput</name>
+        <param>
+          <type><ref refid="structmodm_1_1platform_1_1_gpio_1ad68170d2e3d45721421375623c8f5a61" kindref="member">OutputType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09" kindref="member">OutputSpeed</ref></type>
+          <declname>speed</declname>
+          <defval><ref refid="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09a291c765b56a54ef8453ee3aceef60ed3" kindref="member">OutputSpeed::MHz50</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="92" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1a8a60db547b27f3899a7a4804be30cb5c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::setInput</definition>
+        <argsstring>()</argsstring>
+        <name>setInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="95" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1a3510597f536eb28267b984c9ec23fcb9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::GpioA2::read</definition>
+        <argsstring>()</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="96" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1a0493eac26e1401b5bb2d9a0feee60cad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::configure</definition>
+        <argsstring>(InputType type)</argsstring>
+        <name>configure</name>
+        <param>
+          <type><ref refid="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6d" kindref="member">InputType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="98" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1ae06581fdb17fd0b2c5f0906da25a7a9d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::setInput</definition>
+        <argsstring>(InputType type)</argsstring>
+        <name>setInput</name>
+        <param>
+          <type><ref refid="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6d" kindref="member">InputType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="99" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1a7125906152b59254d3154c4a9e7c1e1f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::enableExternalInterrupt</definition>
+        <argsstring>()</argsstring>
+        <name>enableExternalInterrupt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="104" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="104" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1abf897ea099aca68bb4f7fdcc8944ff8e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::disableExternalInterrupt</definition>
+        <argsstring>()</argsstring>
+        <name>disableExternalInterrupt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="119" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1a2f3bea40550b5e253616219211315825" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::enableExternalInterruptVector</definition>
+        <argsstring>(const uint32_t priority)</argsstring>
+        <name>enableExternalInterruptVector</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="120" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1ab940a1d78779d0b44dde78936d1fadbf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::disableExternalInterruptVector</definition>
+        <argsstring>()</argsstring>
+        <name>disableExternalInterruptVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="125" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1a3df1da83ef7f604e2712a794cdc90514" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::setInputTrigger</definition>
+        <argsstring>(const InputTrigger trigger)</argsstring>
+        <name>setInputTrigger</name>
+        <param>
+          <type>const <ref refid="structmodm_1_1platform_1_1_gpio_1a5f683814888fa5a34c2bcf2db9b803a5" kindref="member">InputTrigger</ref></type>
+          <declname>trigger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="126" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="126" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1ae60c733e430caefd9c1561708b7332b3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::GpioA2::getExternalInterruptFlag</definition>
+        <argsstring>()</argsstring>
+        <name>getExternalInterruptFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="144" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="144" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1af9d11b56b7830f4a4c2f93523159c199" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::acknowledgeExternalInterruptFlag</definition>
+        <argsstring>()</argsstring>
+        <name>acknowledgeExternalInterruptFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="145" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="145" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1a518630540419bdcb59f79582991badc6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structmodm_1_1_gpio_1a5c167852e8d86eded53f554eabace79b" kindref="member">Direction</ref></type>
+        <definition>static Direction modm::platform::GpioA2::getDirection</definition>
+        <argsstring>()</argsstring>
+        <name>getDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="148" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="148" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1a8542b61bc37405c77c3d30c53737402d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::lock</definition>
+        <argsstring>()</argsstring>
+        <name>lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="157" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="157" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_a2_1abb874748dcba545aaa62607108817df0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::GpioA2::disconnect</definition>
+        <argsstring>()</argsstring>
+        <name>disconnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="158" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="158" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>IO class for Pin A2 </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="512">
+        <label>modm::platform::Gpio</label>
+        <link refid="structmodm_1_1platform_1_1_gpio"/>
+      </node>
+      <node id="513">
+        <label>modm::GpioIO</label>
+        <link refid="classmodm_1_1_gpio_i_o"/>
+        <childnode refid="514" relation="public-inheritance">
+        </childnode>
+        <childnode refid="516" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="511">
+        <label>modm::platform::GpioA2</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a2"/>
+        <childnode refid="512" relation="public-inheritance">
+        </childnode>
+        <childnode refid="513" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="516">
+        <label>modm::GpioInput</label>
+        <link refid="classmodm_1_1_gpio_input"/>
+        <childnode refid="515" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="514">
+        <label>modm::GpioOutput</label>
+        <link refid="classmodm_1_1_gpio_output"/>
+        <childnode refid="515" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>modm::Gpio</label>
+        <link refid="structmodm_1_1_gpio"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="518">
+        <label>modm::platform::Gpio</label>
+        <link refid="structmodm_1_1platform_1_1_gpio"/>
+      </node>
+      <node id="519">
+        <label>modm::GpioIO</label>
+        <link refid="classmodm_1_1_gpio_i_o"/>
+        <childnode refid="520" relation="public-inheritance">
+        </childnode>
+        <childnode refid="522" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>modm::platform::GpioA2</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a2"/>
+        <childnode refid="518" relation="public-inheritance">
+        </childnode>
+        <childnode refid="519" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="522">
+        <label>modm::GpioInput</label>
+        <link refid="classmodm_1_1_gpio_input"/>
+        <childnode refid="521" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>modm::GpioOutput</label>
+        <link refid="classmodm_1_1_gpio_output"/>
+        <childnode refid="521" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="521">
+        <label>modm::Gpio</label>
+        <link refid="structmodm_1_1_gpio"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" line="34" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp" bodystart="33" bodyend="216"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1af9d11b56b7830f4a4c2f93523159c199" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>acknowledgeExternalInterruptFlag</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a6f211b1a6fb32c7354ec26cb136397d7" prot="private" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>Adc</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a408d9d1af47860a0d441db9e682a0286" prot="private" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>Adc1</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1aa23e1a089c072f958a021d20e3999d1d" prot="private" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>Adc2</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a5ed7caa4b9cdb2a9e493c0d14f0969ab" prot="private" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>Adc3</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a448248fc7a1c51bccc4b77743edcb11f" prot="private" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>Adc4</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a96314cd9c49187e38ebfc670d48b49ab" prot="private" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>AdcChannel</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a0cb2de13eff0d20f3aaeaa2c656df98c" prot="protected" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>af_id</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1afc97d893d229cd03ea6a82a48076f8df" prot="protected" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>af_mask</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a7ce61a8da1d4748733c0a5b4414fafdb" prot="protected" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>af_offset</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a2539965ef6e19ae4781f9ac2fb0c5567" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>BitBang</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1afea15ffa0a72c6005a64f8d7c4128d46" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>Ch1</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a855c5b9af9d620155f277e32aef298c9" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>Ch3</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1ab57450d9103a8002f9c9c39ecf79df69" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>configure</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a0493eac26e1401b5bb2d9a0feee60cad" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>configure</name></member>
+      <member refid="structmodm_1_1_gpio_1a5c167852e8d86eded53f554eabace79b" prot="public" virt="non-virtual" ambiguityscope="modm::"><scope>modm::platform::GpioA2</scope><name>Direction</name></member>
+      <member refid="structmodm_1_1_gpio_1a5c167852e8d86eded53f554eabace79b" prot="public" virt="non-virtual" ambiguityscope="modm::GpioInput::"><scope>modm::platform::GpioA2</scope><name>Direction</name></member>
+      <member refid="classmodm_1_1_gpio_i_o_1ac3e00d004cfc8c6268085b4468e22684" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>direction</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1abf897ea099aca68bb4f7fdcc8944ff8e" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>disableExternalInterrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1ab940a1d78779d0b44dde78936d1fadbf" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>disableExternalInterruptVector</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1abb874748dcba545aaa62607108817df0" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>disconnect</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a7125906152b59254d3154c4a9e7c1e1f" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>enableExternalInterrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a2f3bea40550b5e253616219211315825" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>enableExternalInterruptVector</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a2753fbfbc146d239927ed8ad3b69d6ec" prot="protected" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>ExternalInterruptIRQ</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a518630540419bdcb59f79582991badc6" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>getDirection</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1ae60c733e430caefd9c1561708b7332b3" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>getExternalInterruptFlag</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a4e7835d7980cbc422c366c10fdbc1f77" prot="private" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>GpioSet</name></member>
+      <member refid="structmodm_1_1_gpio_1a17454096f07c8ae16d603ff46ad53c6a" prot="public" virt="non-virtual" ambiguityscope="modm::"><scope>modm::platform::GpioA2</scope><name>High</name></member>
+      <member refid="structmodm_1_1_gpio_1a17454096f07c8ae16d603ff46ad53c6a" prot="public" virt="non-virtual" ambiguityscope="modm::GpioInput::"><scope>modm::platform::GpioA2</scope><name>High</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a3711f192a328d3fdcd1a75a47f0fb765" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>In2</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a667db89b1a3c1f05dd1322e7c103d9b7" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>Input</name></member>
+      <member refid="structmodm_1_1platform_1_1_gpio_1a5f683814888fa5a34c2bcf2db9b803a5" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>InputTrigger</name></member>
+      <member refid="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6d" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>InputType</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a49755a2f857005f3c8e4e5984e0bb140" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>IO</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a457395dddb2cadea71bfcd373c1ab1a8" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>isInverted</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1adaf7e633eb0ee213f93ad5c829430320" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>isSet</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a8542b61bc37405c77c3d30c53737402d" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>lock</name></member>
+      <member refid="structmodm_1_1_gpio_1a85ddb071ba8af1c2b89b4e8c079ea58f" prot="public" virt="non-virtual" ambiguityscope="modm::"><scope>modm::platform::GpioA2</scope><name>Low</name></member>
+      <member refid="structmodm_1_1_gpio_1a85ddb071ba8af1c2b89b4e8c079ea58f" prot="public" virt="non-virtual" ambiguityscope="modm::GpioInput::"><scope>modm::platform::GpioA2</scope><name>Low</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a53552c4c7e952d9e6812ad26511f432f" prot="protected" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>mask</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a316a1e81c98ad890ce7fc186bbd45c0a" prot="protected" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>mask2</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1ad6db3000f1de43a79336b2fa13464ddb" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>Output</name></member>
+      <member refid="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>OutputSpeed</name></member>
+      <member refid="structmodm_1_1platform_1_1_gpio_1ad68170d2e3d45721421375623c8f5a61" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>OutputType</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1ae41c15e94999863d5587daef86fc94cd" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>pin</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1aaf1d3b433697a0c2ff922c2578b5d559" prot="private" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>PinSet</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a3d64b0bb6489fedb3e29706794b25693" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>port</name></member>
+      <member refid="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19b" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>Port</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1ab51def4288d790e9dcf31384f7f5d227" prot="protected" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>port_nr</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a3510597f536eb28267b984c9ec23fcb9" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>read</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1ab169ccf59651800eed7b270484017ec9" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>reset</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1ab2c0322c9fd332430a25a305c20fc3bd" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>set</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a0c54e765e548dae4f1bc7e6efe255c4f" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>set</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a8a60db547b27f3899a7a4804be30cb5c" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>setInput</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1ae06581fdb17fd0b2c5f0906da25a7a9d" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>setInput</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a3df1da83ef7f604e2712a794cdc90514" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>setInputTrigger</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a5b1a2bd08f37357ce843473d670e7060" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>setOutput</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1ad90f687e0d3dace568f1c216e5c79c7c" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>setOutput</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1adbe663e7454473888fe82f03977b79ec" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>setOutput</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1af957c9ef3face80d7aaf1851c2431fdd" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>toggle</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1afdaa04502609e0d6abc6313928fcbba9" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>Tx</name></member>
+      <member refid="classmodm_1_1platform_1_1_gpio_a2_1a6fa3dccd7e43854b44d22819ff83bbb9" prot="public" virt="non-virtual"><scope>modm::platform::GpioA2</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

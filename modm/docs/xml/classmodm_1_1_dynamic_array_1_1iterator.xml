@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1_dynamic_array_1_1iterator" kind="class" language="C++" prot="public">
+    <compoundname>modm::DynamicArray::iterator</compoundname>
+    <includes refid="dynamic__array_8hpp" local="no">modm/container/dynamic_array.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmodm_1_1_dynamic_array_1_1iterator_1a845f49ed7330a208136c47af630fe8d3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class DynamicArray</definition>
+        <argsstring></argsstring>
+        <name>DynamicArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="263" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmodm_1_1_dynamic_array_1_1iterator_1ac220ce1c155db1ac44146c12d178056f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class const_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="264" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmodm_1_1_dynamic_array_1_1iterator_1ae4bf704d5a4c13e9cb18b09bc30b2b2b" prot="private" static="no" mutable="no">
+        <type><ref refid="classmodm_1_1_dynamic_array" kindref="compound">DynamicArray</ref> *</type>
+        <definition>DynamicArray* modm::DynamicArray&lt; T, Allocator &gt;::iterator::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="284" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1_dynamic_array_1_1iterator_1a143991f30496fa7605a5fed2020f668e" prot="private" static="no" mutable="no">
+        <type><ref refid="classmodm_1_1_dynamic_array_1a0f4abafca97727852b8328acd3222c9b" kindref="member">SizeType</ref></type>
+        <definition>SizeType modm::DynamicArray&lt; T, Allocator &gt;::iterator::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="285" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodm_1_1_dynamic_array_1_1iterator_1a3b35cfe0354f61728b0430f2ebe9f84a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modm::DynamicArray&lt; T, Allocator &gt;::iterator::iterator</definition>
+        <argsstring>()</argsstring>
+        <name>iterator</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_dynamic_array_1_1iterator_1a650d197c57a69b1679dab7734a079cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modm::DynamicArray&lt; T, Allocator &gt;::iterator::iterator</definition>
+        <argsstring>(const iterator &amp;other)</argsstring>
+        <name>iterator</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_dynamic_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="269" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_dynamic_array_1_1iterator_1a64c5fb78604050a22abf4631606d311a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_dynamic_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+        <definition>iterator&amp; modm::DynamicArray&lt; T, Allocator &gt;::iterator::operator=</definition>
+        <argsstring>(const iterator &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_dynamic_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="271" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_dynamic_array_1_1iterator_1a9963957f07f62166f9cdfc9aa7174f49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_dynamic_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+        <definition>iterator&amp; modm::DynamicArray&lt; T, Allocator &gt;::iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_dynamic_array_1_1iterator_1a0e02f92d9bcc1c195f6545ddc4c3832d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_dynamic_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+        <definition>iterator&amp; modm::DynamicArray&lt; T, Allocator &gt;::iterator::operator --</definition>
+        <argsstring>()</argsstring>
+        <name>operator --</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="273" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_dynamic_array_1_1iterator_1ac0db008370fc7f622646afc7a6fbe2f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::DynamicArray&lt; T, Allocator &gt;::iterator::operator==</definition>
+        <argsstring>(const iterator &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_dynamic_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_dynamic_array_1_1iterator_1ae8c9c8bdda811be9dc9fcb00dc263958" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::DynamicArray&lt; T, Allocator &gt;::iterator::operator !=</definition>
+        <argsstring>(const iterator &amp;other) const</argsstring>
+        <name>operator !=</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_dynamic_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="275" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_dynamic_array_1_1iterator_1aee80c0e9276b21e7344ce3bac0d73ca1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::DynamicArray&lt; T, Allocator &gt;::iterator::operator&lt;</definition>
+        <argsstring>(const iterator &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_dynamic_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="276" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_dynamic_array_1_1iterator_1a9c26bd1c361410aa0fd8c24fe2a4121b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::DynamicArray&lt; T, Allocator &gt;::iterator::operator &gt;</definition>
+        <argsstring>(const iterator &amp;other) const</argsstring>
+        <name>operator &gt;</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_dynamic_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="277" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_dynamic_array_1_1iterator_1a800b08c7d4af5737db074e2c918ddab9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; modm::DynamicArray&lt; T, Allocator &gt;::iterator::operator *</definition>
+        <argsstring>()</argsstring>
+        <name>operator *</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="278" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_dynamic_array_1_1iterator_1ac751cdaca036b5c20c31a18bfc3c00b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* modm::DynamicArray&lt; T, Allocator &gt;::iterator::operator -&gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator -&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="279" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmodm_1_1_dynamic_array_1_1iterator_1a483a5176cfe6d26552b0ab3c788e1481" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modm::DynamicArray&lt; T, Allocator &gt;::iterator::iterator</definition>
+        <argsstring>(DynamicArray *parent, SizeType index)</argsstring>
+        <name>iterator</name>
+        <param>
+          <type><ref refid="classmodm_1_1_dynamic_array" kindref="compound">DynamicArray</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classmodm_1_1_dynamic_array_1a0f4abafca97727852b8328acd3222c9b" kindref="member">SizeType</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="282" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Forward iterator. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" line="262" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp" bodystart="261" bodyend="286"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1ac220ce1c155db1ac44146c12d178056f" prot="private" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>const_iterator</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a845f49ed7330a208136c47af630fe8d3" prot="private" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>DynamicArray</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a143991f30496fa7605a5fed2020f668e" prot="private" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>index</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a3b35cfe0354f61728b0430f2ebe9f84a" prot="public" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>iterator</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a650d197c57a69b1679dab7734a079cc5" prot="public" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>iterator</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a483a5176cfe6d26552b0ab3c788e1481" prot="private" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>iterator</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1ae8c9c8bdda811be9dc9fcb00dc263958" prot="public" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>operator !=</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a800b08c7d4af5737db074e2c918ddab9" prot="public" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>operator *</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a0e02f92d9bcc1c195f6545ddc4c3832d" prot="public" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>operator --</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1ac751cdaca036b5c20c31a18bfc3c00b7" prot="public" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>operator -&gt;</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a9c26bd1c361410aa0fd8c24fe2a4121b" prot="public" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>operator &gt;</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a9963957f07f62166f9cdfc9aa7174f49" prot="public" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>operator++</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1aee80c0e9276b21e7344ce3bac0d73ca1" prot="public" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>operator&lt;</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a64c5fb78604050a22abf4631606d311a" prot="public" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>operator=</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1ac0db008370fc7f622646afc7a6fbe2f1" prot="public" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>operator==</name></member>
+      <member refid="classmodm_1_1_dynamic_array_1_1iterator_1ae4bf704d5a4c13e9cb18b09bc30b2b2b" prot="private" virt="non-virtual"><scope>modm::DynamicArray::iterator</scope><name>parent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

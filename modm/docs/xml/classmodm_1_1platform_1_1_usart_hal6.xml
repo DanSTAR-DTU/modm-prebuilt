@@ -1,0 +1,513 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1platform_1_1_usart_hal6" kind="class" language="C++" prot="public">
+    <compoundname>modm::platform::UsartHal6</compoundname>
+    <basecompoundref refid="classmodm_1_1platform_1_1_uart_base" prot="public" virt="non-virtual">modm::platform::UartBase</basecompoundref>
+    <includes refid="uart__hal__6_8hpp" local="no">modm/platform/uart/uart_hal_6.hpp</includes>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a2dad80d3e556ec6cf7fff69e34e5d628" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::setParity</definition>
+        <argsstring>(const Parity parity)</argsstring>
+        <name>setParity</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1platform_1_1_uart_base_1a598033b30db9a90ea5c34a7b1cdc41e1" kindref="member">Parity</ref></type>
+          <declname>parity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable Parity or Enable Odd/Even Parity</para>
+<para>This method assumes 8 databits + 1 parity bit Remember to enable the clock but not the UART peripheral before setting the party. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a972bb2edbe59c0d9991a55f8050ce3b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::enable</definition>
+        <argsstring>()</argsstring>
+        <name>enable</name>
+        <briefdescription>
+<para>Enables the clock, resets the hardware and sets the UE bit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1ab41ecd3df8fe387f6d6446e500861edd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::disable</definition>
+        <argsstring>()</argsstring>
+        <name>disable</name>
+        <briefdescription>
+<para>Disables the hw module (by disabling its clock line) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a96c46fda596b9b6d1c6ac9d860e1cc2d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class SystemClock</type>
+          </param>
+          <param>
+            <type><ref refid="group__modm__math__units_1ga30af1fac499efa181bc4708e24c577d1" kindref="member">baudrate_t</ref></type>
+            <declname>baudrate</declname>
+            <defname>baudrate</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::initialize</definition>
+        <argsstring>(Parity parity=Parity::Disabled)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_uart_base_1a598033b30db9a90ea5c34a7b1cdc41e1" kindref="member">Parity</ref></type>
+          <declname>parity</declname>
+          <defval><ref refid="classmodm_1_1platform_1_1_uart_base_1a598033b30db9a90ea5c34a7b1cdc41e1ab9f5c797ebbf55adccdd8539a65a0241" kindref="member">Parity::Disabled</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize <ref refid="classmodm_1_1_uart" kindref="compound">Uart</ref> HAL Peripheral</para>
+<para>Enables clocks, the UART peripheral (but neither TX nor RX) Sets baudrate and parity. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1afc8e3e29f38c8ef269f4658f49207b85" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class SystemClock</type>
+          </param>
+          <param>
+            <type><ref refid="group__modm__math__units_1ga30af1fac499efa181bc4708e24c577d1" kindref="member">baudrate_t</ref></type>
+            <declname>baudrate</declname>
+            <defname>baudrate</defname>
+          </param>
+          <param>
+            <type><ref refid="classmodm_1_1platform_1_1_uart_base_1a7dd12333d203f746bca00aedd0d23d05" kindref="member">OversamplingMode</ref></type>
+            <declname>oversample</declname>
+            <defname>oversample</defname>
+            <defval><ref refid="classmodm_1_1platform_1_1_uart_base_1a7dd12333d203f746bca00aedd0d23d05a576ef423a885b172d29d9d7f112d0084" kindref="member">OversamplingMode::By16</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::initialize</definition>
+        <argsstring>(Parity parity=Parity::Disabled)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_uart_base_1a598033b30db9a90ea5c34a7b1cdc41e1" kindref="member">Parity</ref></type>
+          <declname>parity</declname>
+          <defval><ref refid="classmodm_1_1platform_1_1_uart_base_1a598033b30db9a90ea5c34a7b1cdc41e1ab9f5c797ebbf55adccdd8539a65a0241" kindref="member">Parity::Disabled</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize <ref refid="classmodm_1_1_uart" kindref="compound">Uart</ref> HAL Peripheral</para>
+<para>Enables clocks, the UART peripheral (but neither TX nor RX) Sets baudrate and parity. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a8800907fc8d58bfde87fe75579e2b44a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::initializeWithBrr</definition>
+        <argsstring>(uint16_t brr, Parity parity, OversamplingMode oversample)</argsstring>
+        <name>initializeWithBrr</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>brr</declname>
+        </param>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_uart_base_1a598033b30db9a90ea5c34a7b1cdc41e1" kindref="member">Parity</ref></type>
+          <declname>parity</declname>
+        </param>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_uart_base_1a7dd12333d203f746bca00aedd0d23d05" kindref="member">OversamplingMode</ref></type>
+          <declname>oversample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize <ref refid="classmodm_1_1_uart" kindref="compound">Uart</ref> HAL Peripheral</para>
+<para>Enables clocks, the UART peripheral (but neither TX nor RX) Sets raw brr, parity and oversampling mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a39bb8304ae72dc907161a94096ee3f4f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::setOversamplingMode</definition>
+        <argsstring>(OversamplingMode mode)</argsstring>
+        <name>setOversamplingMode</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_uart_base_1a7dd12333d203f746bca00aedd0d23d05" kindref="member">OversamplingMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Choose if you want to oversample by 16 (<emphasis>default</emphasis>) or by 8. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1ac59e2e99ff1b9ad1affe1d3344836fac" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::setSpiClock</definition>
+        <argsstring>(SpiClock clk)</argsstring>
+        <name>setSpiClock</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_uart_base_1aa946086fdf30e477d0a317d657c4e44f" kindref="member">SpiClock</ref></type>
+          <declname>clk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1aa72037205f51e2275b19f39a4ec4fc2c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::setSpiDataMode</definition>
+        <argsstring>(SpiDataMode mode)</argsstring>
+        <name>setSpiDataMode</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_uart_base_1abb9ae2af6239db1ae39f2a789989e03c" kindref="member">SpiDataMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1ac5b3990580444ab2d0908f668bb06b1a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::setLastBitClockPulse</definition>
+        <argsstring>(LastBitClockPulse pulse)</argsstring>
+        <name>setLastBitClockPulse</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_uart_base_1ace789bf4bb98f058efde7ab625f10e0a" kindref="member">LastBitClockPulse</ref></type>
+          <declname>pulse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a29ed4bc0f59fa69f3a37c40e1582ccd3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::write</definition>
+        <argsstring>(uint8_t data)</argsstring>
+        <name>write</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Write a single byte to the transmit register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This method does NOT do any sanity checks!! It is your responsibility to check if the register is empty! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a6e2499d7feaccf15b35617b112a28475" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::read</definition>
+        <argsstring>(uint8_t &amp;data)</argsstring>
+        <name>read</name>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Saves the value of the receive register to data</para>
+<para><simplesect kind="warning"><para>This method does NOT do any sanity checks!! It is your responsibility to check if the register contains something useful! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a2c1342872bf7cd51fa39251eb9a0d849" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::setTransmitterEnable</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setTransmitterEnable</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enable/Disable Transmitter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a811382383ee8fb95eeb2e20ac24969d1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::setReceiverEnable</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>setReceiverEnable</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enable/Disable Receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1ae6e131bf43ee5abe92b4f14ede217714" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::enableOperation</definition>
+        <argsstring>()</argsstring>
+        <name>enableOperation</name>
+        <briefdescription>
+<para>Set the UE (USART enable) bit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a5fa2422a3a95c78719babddb2a92d765" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::disableOperation</definition>
+        <argsstring>()</argsstring>
+        <name>disableOperation</name>
+        <briefdescription>
+<para>Clear the UE (USART enable) bit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a372a8e3cad054885289d5c2af0db1b73" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::UsartHal6::isReceiveRegisterNotEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>isReceiveRegisterNotEmpty</name>
+        <briefdescription>
+<para>Returns true if data has been received. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a9acc0843864a54a4a86d41b5d1fb63c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::UsartHal6::isTransmitRegisterEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>isTransmitRegisterEmpty</name>
+        <briefdescription>
+<para>Returns true if data can be written. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a140305cb34a3209bb7524fcfc8605bdb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::enableInterruptVector</definition>
+        <argsstring>(bool enable, uint32_t priority)</argsstring>
+        <name>enableInterruptVector</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a88a90c692c3e569db9cfe8e6cee46491" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::enableInterrupt</definition>
+        <argsstring>(Interrupt_t interrupt)</argsstring>
+        <name>enableInterrupt</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_uart_base_1a6ebe84a6b410051751c29464340e395f" kindref="member">Interrupt_t</ref></type>
+          <declname>interrupt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1a03bbaa95d6f9f04d3d4d357b3784c560" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::disableInterrupt</definition>
+        <argsstring>(Interrupt_t interrupt)</argsstring>
+        <name>disableInterrupt</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_uart_base_1a6ebe84a6b410051751c29464340e395f" kindref="member">Interrupt_t</ref></type>
+          <declname>interrupt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1acbdbb7753fc5d704bcc2bdd462569b51" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmodm_1_1platform_1_1_uart_base_1a918f65a6ffc3f0f1a6c64b9088e4dc5b" kindref="member">InterruptFlag_t</ref></type>
+        <definition>static InterruptFlag_t modm::platform::UsartHal6::getInterruptFlags</definition>
+        <argsstring>()</argsstring>
+        <name>getInterruptFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_usart_hal6_1af3f5c8db307181976f040d95d30b6bd3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::UsartHal6::acknowledgeInterruptFlags</definition>
+        <argsstring>(InterruptFlag_t flags)</argsstring>
+        <name>acknowledgeInterruptFlags</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_uart_base_1a918f65a6ffc3f0f1a6c64b9088e4dc5b" kindref="member">InterruptFlag_t</ref></type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the value of the receive register</para>
+<para><simplesect kind="warning"><para>Not all InterruptFlags can be cleared this way. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="166" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Universal asynchronous receiver transmitter (<ref refid="classmodm_1_1platform_1_1_usart_hal6" kindref="compound">UsartHal6</ref>)</para>
+<para>Not available on the low- and medium density devices.</para>
+<para>Very basic implementation that exposes more hardware features than the regular Usart classes.</para>
+<para><simplesect kind="author"><para>Kevin Laeufer </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1799">
+        <label>modm::platform::UartBase</label>
+        <link refid="classmodm_1_1platform_1_1_uart_base"/>
+      </node>
+      <node id="1798">
+        <label>modm::platform::UsartHal6</label>
+        <link refid="classmodm_1_1platform_1_1_usart_hal6"/>
+        <childnode refid="1799" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1801">
+        <label>modm::platform::UartBase</label>
+        <link refid="classmodm_1_1platform_1_1_uart_base"/>
+      </node>
+      <node id="1800">
+        <label>modm::platform::UsartHal6</label>
+        <link refid="classmodm_1_1platform_1_1_usart_hal6"/>
+        <childnode refid="1801" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp" bodystart="39" bodyend="167"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1af3f5c8db307181976f040d95d30b6bd3" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>acknowledgeInterruptFlags</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1ab41ecd3df8fe387f6d6446e500861edd" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>disable</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a03bbaa95d6f9f04d3d4d357b3784c560" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>disableInterrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a5fa2422a3a95c78719babddb2a92d765" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>disableOperation</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a972bb2edbe59c0d9991a55f8050ce3b1" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>enable</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a88a90c692c3e569db9cfe8e6cee46491" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>enableInterrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a140305cb34a3209bb7524fcfc8605bdb" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>enableInterruptVector</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1ae6e131bf43ee5abe92b4f14ede217714" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>enableOperation</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1acbdbb7753fc5d704bcc2bdd462569b51" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>getInterruptFlags</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a96c46fda596b9b6d1c6ac9d860e1cc2d" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>initialize</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1afc8e3e29f38c8ef269f4658f49207b85" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>initialize</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a8800907fc8d58bfde87fe75579e2b44a" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>initializeWithBrr</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1ac9c1bc3b77588a11d520416c22a25832" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>Interrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1a6ebe84a6b410051751c29464340e395f" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>Interrupt_t</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1a231dd8ca89bde31fb9bec6a65c1dae8f" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>InterruptFlag</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1a918f65a6ffc3f0f1a6c64b9088e4dc5b" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>InterruptFlag_t</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a372a8e3cad054885289d5c2af0db1b73" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>isReceiveRegisterNotEmpty</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a9acc0843864a54a4a86d41b5d1fb63c6" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>isTransmitRegisterEmpty</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1ace789bf4bb98f058efde7ab625f10e0a" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>LastBitClockPulse</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1a7dd12333d203f746bca00aedd0d23d05" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>OversamplingMode</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1a598033b30db9a90ea5c34a7b1cdc41e1" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>Parity</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a6e2499d7feaccf15b35617b112a28475" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>read</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1ac5b3990580444ab2d0908f668bb06b1a" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>setLastBitClockPulse</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a39bb8304ae72dc907161a94096ee3f4f" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>setOversamplingMode</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a2dad80d3e556ec6cf7fff69e34e5d628" prot="private" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>setParity</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a811382383ee8fb95eeb2e20ac24969d1" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>setReceiverEnable</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1ac59e2e99ff1b9ad1affe1d3344836fac" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>setSpiClock</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1aa72037205f51e2275b19f39a4ec4fc2c" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>setSpiDataMode</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a2c1342872bf7cd51fa39251eb9a0d849" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>setTransmitterEnable</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1aa946086fdf30e477d0a317d657c4e44f" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>SpiClock</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1abb9ae2af6239db1ae39f2a789989e03c" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>SpiDataMode</name></member>
+      <member refid="classmodm_1_1platform_1_1_usart_hal6_1a29ed4bc0f59fa69f3a37c40e1582ccd3" prot="public" virt="non-virtual"><scope>modm::platform::UsartHal6</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

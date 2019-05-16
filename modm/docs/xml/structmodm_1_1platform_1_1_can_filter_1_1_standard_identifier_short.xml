@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier_short" kind="struct" language="C++" prot="public">
+    <compoundname>modm::platform::CanFilter::StandardIdentifierShort</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">modm::platform::CanFilter::IdentifierShort</basecompoundref>
+    <includes refid="can__filter_8hpp" local="no">modm/platform/can/can_filter.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier_short_1a69205452a8bd64ac38ced07d3c2c4f63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>modm::platform::CanFilter::StandardIdentifierShort::StandardIdentifierShort</definition>
+        <argsstring>(uint16_t identifier, RemoteRequestStatus rtr=NO_RTR)</argsstring>
+        <name>StandardIdentifierShort</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>identifier</declname>
+        </param>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_can_filter_1a21cbe9c6fdcb15a598e610fa3a0b88de" kindref="member">RemoteRequestStatus</ref></type>
+          <declname>rtr</declname>
+          <defval><ref refid="classmodm_1_1platform_1_1_can_filter_1a21cbe9c6fdcb15a598e610fa3a0b88dea6e448f6a4c79c6cc1b8f2e8331c11c90" kindref="member">NO_RTR</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="223" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="223" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Generate an identifier for the Dual Filter mode from a standard (11-bit) identifier. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1588">
+        <label>modm::platform::CanFilter::StandardIdentifierShort</label>
+        <link refid="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier_short"/>
+        <childnode refid="1589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1589">
+        <label>modm::platform::CanFilter::IdentifierShort</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1590">
+        <label>modm::platform::CanFilter::StandardIdentifierShort</label>
+        <link refid="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier_short"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1591">
+        <label>modm::platform::CanFilter::IdentifierShort</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="221" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="220" bodyend="227"/>
+    <listofallmembers>
+      <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1a9c9d64674d4620c1c9a8bdf7bdcdfb8c" prot="protected" virt="non-virtual"><scope>modm::platform::CanFilter::StandardIdentifierShort</scope><name>IdentifierShort</name></member>
+      <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1a972e0df59d0f4495a282a0141ba96998" prot="public" virt="non-virtual"><scope>modm::platform::CanFilter::StandardIdentifierShort</scope><name>operator uint16_t</name></member>
+      <member refid="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier_short_1a69205452a8bd64ac38ced07d3c2c4f63" prot="public" virt="non-virtual"><scope>modm::platform::CanFilter::StandardIdentifierShort</scope><name>StandardIdentifierShort</name></member>
+      <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1ab9683ecaa18bb7528ea64607b171503b" prot="protected" virt="non-virtual"><scope>modm::platform::CanFilter::StandardIdentifierShort</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

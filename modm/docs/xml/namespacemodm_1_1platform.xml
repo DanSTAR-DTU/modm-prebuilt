@@ -1,0 +1,732 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespacemodm_1_1platform" kind="namespace" language="C++">
+    <compoundname>modm::platform</compoundname>
+    <innerclass refid="classmodm_1_1platform_1_1_adc1" prot="public">modm::platform::Adc1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_adc2" prot="public">modm::platform::Adc2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_adc3" prot="public">modm::platform::Adc3</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_adc_interrupt1" prot="public">modm::platform::AdcInterrupt1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_adc_interrupt2" prot="public">modm::platform::AdcInterrupt2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_adc_interrupt3" prot="public">modm::platform::AdcInterrupt3</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_advanced_control_timer" prot="public">modm::platform::AdvancedControlTimer</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_basic_timer" prot="public">modm::platform::BasicTimer</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_bit_bang_spi_master" prot="public">modm::platform::BitBangSpiMaster</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_can1" prot="public">modm::platform::Can1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_can2" prot="public">modm::platform::Can2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_can_filter" prot="public">modm::platform::CanFilter</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_general_purpose_timer" prot="public">modm::platform::GeneralPurposeTimer</innerclass>
+    <innerclass refid="structmodm_1_1platform_1_1_gpio" prot="public">modm::platform::Gpio</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a0" prot="public">modm::platform::GpioA0</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a1" prot="public">modm::platform::GpioA1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a10" prot="public">modm::platform::GpioA10</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a11" prot="public">modm::platform::GpioA11</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a12" prot="public">modm::platform::GpioA12</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a13" prot="public">modm::platform::GpioA13</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a14" prot="public">modm::platform::GpioA14</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a15" prot="public">modm::platform::GpioA15</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a2" prot="public">modm::platform::GpioA2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a3" prot="public">modm::platform::GpioA3</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a4" prot="public">modm::platform::GpioA4</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a5" prot="public">modm::platform::GpioA5</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a6" prot="public">modm::platform::GpioA6</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a7" prot="public">modm::platform::GpioA7</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a8" prot="public">modm::platform::GpioA8</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_a9" prot="public">modm::platform::GpioA9</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b0" prot="public">modm::platform::GpioB0</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b1" prot="public">modm::platform::GpioB1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b10" prot="public">modm::platform::GpioB10</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b12" prot="public">modm::platform::GpioB12</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b13" prot="public">modm::platform::GpioB13</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b14" prot="public">modm::platform::GpioB14</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b15" prot="public">modm::platform::GpioB15</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b2" prot="public">modm::platform::GpioB2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b3" prot="public">modm::platform::GpioB3</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b4" prot="public">modm::platform::GpioB4</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b5" prot="public">modm::platform::GpioB5</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b6" prot="public">modm::platform::GpioB6</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b7" prot="public">modm::platform::GpioB7</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b8" prot="public">modm::platform::GpioB8</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b9" prot="public">modm::platform::GpioB9</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c0" prot="public">modm::platform::GpioC0</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c1" prot="public">modm::platform::GpioC1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c10" prot="public">modm::platform::GpioC10</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c11" prot="public">modm::platform::GpioC11</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c12" prot="public">modm::platform::GpioC12</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c13" prot="public">modm::platform::GpioC13</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c14" prot="public">modm::platform::GpioC14</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c15" prot="public">modm::platform::GpioC15</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c2" prot="public">modm::platform::GpioC2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c3" prot="public">modm::platform::GpioC3</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c4" prot="public">modm::platform::GpioC4</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c5" prot="public">modm::platform::GpioC5</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c6" prot="public">modm::platform::GpioC6</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c7" prot="public">modm::platform::GpioC7</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c8" prot="public">modm::platform::GpioC8</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_c9" prot="public">modm::platform::GpioC9</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_d2" prot="public">modm::platform::GpioD2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_h0" prot="public">modm::platform::GpioH0</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_h1" prot="public">modm::platform::GpioH1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_inverted" prot="public">modm::platform::GpioInverted</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_port" prot="public">modm::platform::GpioPort</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_set" prot="public">modm::platform::GpioSet</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_unused" prot="public">modm::platform::GpioUnused</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_i2c_master1" prot="public">modm::platform::I2cMaster1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_i2c_master2" prot="public">modm::platform::I2cMaster2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_i2c_master3" prot="public">modm::platform::I2cMaster3</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_rcc" prot="public">modm::platform::Rcc</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_software_gpio_port" prot="public">modm::platform::SoftwareGpioPort</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_spi_base" prot="public">modm::platform::SpiBase</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_spi_hal1" prot="public">modm::platform::SpiHal1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_spi_hal2" prot="public">modm::platform::SpiHal2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_spi_hal3" prot="public">modm::platform::SpiHal3</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_spi_master1" prot="public">modm::platform::SpiMaster1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_spi_master2" prot="public">modm::platform::SpiMaster2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_spi_master3" prot="public">modm::platform::SpiMaster3</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_sys_tick_timer" prot="public">modm::platform::SysTickTimer</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer1" prot="public">modm::platform::Timer1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer10" prot="public">modm::platform::Timer10</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer11" prot="public">modm::platform::Timer11</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer12" prot="public">modm::platform::Timer12</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer13" prot="public">modm::platform::Timer13</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer14" prot="public">modm::platform::Timer14</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer2" prot="public">modm::platform::Timer2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer3" prot="public">modm::platform::Timer3</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer4" prot="public">modm::platform::Timer4</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer5" prot="public">modm::platform::Timer5</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer6" prot="public">modm::platform::Timer6</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer7" prot="public">modm::platform::Timer7</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer8" prot="public">modm::platform::Timer8</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_timer9" prot="public">modm::platform::Timer9</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_uart4" prot="public">modm::platform::Uart4</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_uart5" prot="public">modm::platform::Uart5</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_uart_base" prot="public">modm::platform::UartBase</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_uart_baudrate" prot="public">modm::platform::UartBaudrate</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_uart_hal4" prot="public">modm::platform::UartHal4</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_uart_hal5" prot="public">modm::platform::UartHal5</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_usart1" prot="public">modm::platform::Usart1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_usart2" prot="public">modm::platform::Usart2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_usart3" prot="public">modm::platform::Usart3</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_usart6" prot="public">modm::platform::Usart6</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_usart_hal1" prot="public">modm::platform::UsartHal1</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_usart_hal2" prot="public">modm::platform::UsartHal2</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_usart_hal3" prot="public">modm::platform::UsartHal3</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_usart_hal6" prot="public">modm::platform::UsartHal6</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__modm__platform__can_1ga6667adccb58f77a0331d06e55b8cf070" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ErrorCode</name>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a93cc21c76103b733dc112b198c92573a" prot="public">
+          <name>CAN_ERROR_PASSIVE_MODE</name>
+          <initializer>= 0x0010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070ac2470f5364e0da11c0b87738ab81d838" prot="public">
+          <name>CAN_BUS_OFF_MODE</name>
+          <initializer>= 0x0011</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070aac66cd13731577c83065ef22e4603f13" prot="public">
+          <name>CAN_FIFO0_OVERFLOW</name>
+          <initializer>= 0x0012</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070ac0527e4e924dffb69a9eb5cb32f455f9" prot="public">
+          <name>CAN_FIFO1_OVERFLOW</name>
+          <initializer>= 0x0013</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a14dc0ad63c11b1087b9332ad4defb14d" prot="public">
+          <name>CAN_TX_OVERFLOW</name>
+          <initializer>= 0x0014</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a1743d500e0cb32d3c97322b179fc326b" prot="public">
+          <name>CAN1_ERROR_PASSIVE_MODE</name>
+          <initializer>= 0x0010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a6fe1205f54cdc3e7526eb143451c87bd" prot="public">
+          <name>CAN1_BUS_OFF_MODE</name>
+          <initializer>= 0x0011</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070acc2cf263266ed0b44ba57b1001f4d6c2" prot="public">
+          <name>CAN1_FIFO0_OVERFLOW</name>
+          <initializer>= 0x0012</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070afc4427f63b525d958fad906daf04bc08" prot="public">
+          <name>CAN1_FIFO1_OVERFLOW</name>
+          <initializer>= 0x0013</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070ae3e2c5b57af0aeda2b761a868f48ca96" prot="public">
+          <name>CAN1_TX_OVERFLOW</name>
+          <initializer>= 0x0014</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070adf76e4999d730b29e1730017a23d496f" prot="public">
+          <name>CAN2_ERROR_PASSIVE_MODE</name>
+          <initializer>= 0x0010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a8e44290f2edb8c6f97bbfc95e4555991" prot="public">
+          <name>CAN2_BUS_OFF_MODE</name>
+          <initializer>= 0x0011</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070ad8fcfc98948fbad82b4e993fc3b53c8b" prot="public">
+          <name>CAN2_FIFO0_OVERFLOW</name>
+          <initializer>= 0x0012</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a2f78ecb5511adbcdc07058fabeb3d723" prot="public">
+          <name>CAN2_FIFO1_OVERFLOW</name>
+          <initializer>= 0x0013</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a63a118b2bf3e9ef83ab99664fc1095e8" prot="public">
+          <name>CAN2_TX_OVERFLOW</name>
+          <initializer>= 0x0014</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a894e75db6b2e279aedbe234fffa8ecb9" prot="public">
+          <name>CAN3_ERROR_PASSIVE_MODE</name>
+          <initializer>= 0x0010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a9cc99760a6dc619d81db6841641567a3" prot="public">
+          <name>CAN3_BUS_OFF_MODE</name>
+          <initializer>= 0x0011</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070ac6d85283c11295b624451da2df6ebdd6" prot="public">
+          <name>CAN3_FIFO0_OVERFLOW</name>
+          <initializer>= 0x0012</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a636cffb0478a6a67ce192fe5b7c929fd" prot="public">
+          <name>CAN3_FIFO1_OVERFLOW</name>
+          <initializer>= 0x0013</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a805edcff50655a8b3150491005e2d77f" prot="public">
+          <name>CAN3_TX_OVERFLOW</name>
+          <initializer>= 0x0014</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" line="25" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" bodystart="24" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Peripheral</name>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a06507d1398bc031f63ec72c71a4e191e" prot="public">
+          <name>BitBang</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55ac3933a02d6a066aac17f9a6e6d9aaab7" prot="public">
+          <name>Adc1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a155436e35209fff51d85a39c8e89d8b8" prot="public">
+          <name>Adc2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55af4a798315e8219e6d79aad6b712b730b" prot="public">
+          <name>Adc3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a263820892e41819073011a24c8b96616" prot="public">
+          <name>Can1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a910c1d1e435001f2d416b062813bf884" prot="public">
+          <name>Can2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a55e731c6b6315941e95a1fe250b82e37" prot="public">
+          <name>Crc</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55ab92c9f73443413d0e29fbff2778aa86c" prot="public">
+          <name>Dac</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55af622c4293e322a477a39bfea50d8b719" prot="public">
+          <name>Dcmi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a4f9808954b0bf5b82f421c341b904b23" prot="public">
+          <name>Dma1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55aeb2265cf7756245bed86f02b857fb1f0" prot="public">
+          <name>Dma2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55abf2c44e6fc09515648b91b1bb4ec3f5f" prot="public">
+          <name>Flash</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a71edc02aae363b8d380280b6a89c99a7" prot="public">
+          <name>Fmpi2c1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55ad117722e9b66f1c795edbf81cc3024b5" prot="public">
+          <name>HdmiCec</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55acc6c6c0469b368baf2e43b4d51fde8e2" prot="public">
+          <name>I2c1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a189fbde293cb4d519e8b005a68e1a1c3" prot="public">
+          <name>I2c2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a862e3983939da5a75b07fcc64eebacd9" prot="public">
+          <name>I2c3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55abcdaef18fbbede3ddf859978bec3b086" prot="public">
+          <name>I2s</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55af33743cde86475fa6189dd141757e4a1" prot="public">
+          <name>I2s1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55af2900d626401ae2b511f16fd2d43a467" prot="public">
+          <name>I2s2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55aa2e888f74c5328544e371222bf18abef" prot="public">
+          <name>I2s3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55ab7326e2ea9b07b47f3553b208ed2720d" prot="public">
+          <name>Iwdg</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a739f2e49eaec0dab5d7681872e4a2681" prot="public">
+          <name>Quadspi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55aebdee5cfe45a00a4450108a1b1767e4c" prot="public">
+          <name>Rcc</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a41769872d61bb8870c3c91e5515b6095" prot="public">
+          <name>Rtc</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a30284e9d163b2ee7dbc6e67a263b7c56" prot="public">
+          <name>Sai1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a64ae1a120e8cb686b25a29b6d9d5815b" prot="public">
+          <name>Sdio</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a776fbdceeb7587877a09d2a3b7bc485a" prot="public">
+          <name>Spdifrx</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a517f29763a33ef0456eb9c56e11e3dc8" prot="public">
+          <name>Spi1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a62a4794c8576642f7ff70e6a889aca3b" prot="public">
+          <name>Spi2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a09b34ae6b0251eeae06fc3aaac4af14d" prot="public">
+          <name>Spi3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a40085574ffe68d3214bf81845239eefc" prot="public">
+          <name>Sys</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55af5ee098ec9608f7688a1645cba930638" prot="public">
+          <name>Tim1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a40f39d88d0454546778d9fdb813ae68e" prot="public">
+          <name>Tim10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a273da4456b3a2094963d4ac01d622e15" prot="public">
+          <name>Tim11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55af19350606a27699d2618ec422d51608c" prot="public">
+          <name>Tim12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a1bf80135a303006c35bd89f9ab668542" prot="public">
+          <name>Tim13</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a4d3c87870f8d706e48e65ebadb6c53de" prot="public">
+          <name>Tim14</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a8443efd761df59739016ea465a8690b5" prot="public">
+          <name>Tim2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55aec7034972ec188af56239d09e2cd961e" prot="public">
+          <name>Tim3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a787a0445708f853e78bb7f0be1d0841e" prot="public">
+          <name>Tim4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a4e13a631e2b0e3b239e3b30359f76ab7" prot="public">
+          <name>Tim5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55ad4e2c141ee60aa09df232f8b25cb9587" prot="public">
+          <name>Tim6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55abb92136441001cd4b9c846d599434a91" prot="public">
+          <name>Tim7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55acad890ff869da073bd36d48bf540e163" prot="public">
+          <name>Tim8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a1322718a37f655037c44e1e5ef9396e5" prot="public">
+          <name>Tim9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55ad3639c5e47317abbedb8867af3187dcd" prot="public">
+          <name>Uart4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a37799d26d9ad4b7a1dc2a6460373d585" prot="public">
+          <name>Uart5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55aeb11ae864b2133d390d097ef0777a2d6" prot="public">
+          <name>Usart1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a63cf1441ce5eaee5f9ddac353d67877c" prot="public">
+          <name>Usart2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a3c1c9c8f88e7b0bb59821dde86de121d" prot="public">
+          <name>Usart3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a2ab6b319ac1dcd3b328c964e9e453412" prot="public">
+          <name>Usart6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a4ff7e565b0fa07d54659780c99f43f98" prot="public">
+          <name>UsbOtgFs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a6132b55d91bc269f9557c21f518f42ed" prot="public">
+          <name>UsbOtgHs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55ae20848b4234f47db545b8f03febf4817" prot="public">
+          <name>Wwdg</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a897758a55d99d2951b00e0bf880d197d" prot="public">
+          <name>Syscfg</name>
+          <initializer>= Sys</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/core/peripherals.hpp" line="20" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/core/peripherals.hpp" bodystart="18" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacemodm_1_1platform_1a6602a07fb8f21fb7fc440c0d0e27ca39" prot="public" static="no">
+        <type><ref refid="classmodm_1_1platform_1_1_rcc" kindref="compound">Rcc</ref></type>
+        <definition>using modm::platform::ClockControl = typedef Rcc</definition>
+        <argsstring></argsstring>
+        <name>ClockControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" line="280" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacemodm_1_1platform_1a1741981ded5a57530c304f4df920fa35" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* modm::platform::InterruptHandler) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>InterruptHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" line="23" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp" line="27" column="1"/>
+  </compounddef>
+</doxygen>

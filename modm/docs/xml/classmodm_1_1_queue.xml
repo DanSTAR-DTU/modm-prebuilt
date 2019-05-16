@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1_queue" kind="class" language="C++" prot="public">
+    <compoundname>modm::Queue</compoundname>
+    <derivedcompoundref refid="classmodm_1_1_bounded_queue" prot="public" virt="non-virtual">modm::BoundedQueue&lt; T, N, Container &gt;</derivedcompoundref>
+    <includes refid="container_2queue_8hpp" local="no">modm/container/queue.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename Container</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmodm_1_1_queue_1a89577e61c3428b90023e32b474564fa9" prot="public" static="no">
+        <type>Container::Size</type>
+        <definition>typedef Container::Size modm::Queue&lt; T, Container &gt;::Size</definition>
+        <argsstring></argsstring>
+        <name>Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmodm_1_1_queue_1a18a7367e7cdb1a0a8cc6bb9d6626747e" prot="protected" static="no" mutable="no">
+        <type>Container</type>
+        <definition>Container modm::Queue&lt; T, Container &gt;::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="105" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodm_1_1_queue_1a4738d927fd6debf38f74a1a2d0ed02e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Queue&lt; T, Container &gt;::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="46" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_queue_1a60762b7e5a65aec8125fc99b328305ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Queue&lt; T, Container &gt;::isNotEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isNotEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="52" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_queue_1a54cef3217d71950328b7510e1a60e36c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Queue&lt; T, Container &gt;::isFull</definition>
+        <argsstring>() const</argsstring>
+        <name>isFull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="55" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_queue_1ab3202627e9c341dcf6ff348c5e93ca5c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Queue&lt; T, Container &gt;::isNotFull</definition>
+        <argsstring>() const</argsstring>
+        <name>isNotFull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="61" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_queue_1a45c91511ac46ce5f3ab0195bdcd83388" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_queue_1a89577e61c3428b90023e32b474564fa9" kindref="member">Size</ref></type>
+        <definition>Size modm::Queue&lt; T, Container &gt;::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="67" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_queue_1a14da09cba259f621b5219e65e5080bdb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_queue_1a89577e61c3428b90023e32b474564fa9" kindref="member">Size</ref></type>
+        <definition>Size modm::Queue&lt; T, Container &gt;::getMaxSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="73" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_queue_1a8830dfcadcc51f4a886bc31287bf8cbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; modm::Queue&lt; T, Container &gt;::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+<para>Access first element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="80" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_queue_1af5be0c57637f9e01a429df52224d2ee2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; modm::Queue&lt; T, Container &gt;::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <briefdescription>
+<para>Access first element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="87" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_queue_1a1d6dcc7e52d8ecb4e56ba43a9ecb0dc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Queue&lt; T, Container &gt;::push</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>push</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="93" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_queue_1a573475c5a870d0804e0192837cba1ca6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void modm::Queue&lt; T, Container &gt;::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="99" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>FIFO queue. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>getFront(), removeFront(), append()</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>container</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>Deque()</para>
+</simplesect>
+<simplesect kind="author"><para>Fabian Greif </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1463">
+        <label>modm::Queue&lt; T, Container &gt;</label>
+        <link refid="classmodm_1_1_queue"/>
+      </node>
+      <node id="1464">
+        <label>modm::BoundedQueue&lt; T, Container &gt;</label>
+        <link refid="classmodm_1_1_bounded_queue"/>
+        <childnode refid="1463" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="39" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1_queue_1a18a7367e7cdb1a0a8cc6bb9d6626747e" prot="protected" virt="non-virtual"><scope>modm::Queue</scope><name>c</name></member>
+      <member refid="classmodm_1_1_queue_1a8830dfcadcc51f4a886bc31287bf8cbd" prot="public" virt="non-virtual"><scope>modm::Queue</scope><name>get</name></member>
+      <member refid="classmodm_1_1_queue_1af5be0c57637f9e01a429df52224d2ee2" prot="public" virt="non-virtual"><scope>modm::Queue</scope><name>get</name></member>
+      <member refid="classmodm_1_1_queue_1a14da09cba259f621b5219e65e5080bdb" prot="public" virt="non-virtual"><scope>modm::Queue</scope><name>getMaxSize</name></member>
+      <member refid="classmodm_1_1_queue_1a45c91511ac46ce5f3ab0195bdcd83388" prot="public" virt="non-virtual"><scope>modm::Queue</scope><name>getSize</name></member>
+      <member refid="classmodm_1_1_queue_1a4738d927fd6debf38f74a1a2d0ed02e8" prot="public" virt="non-virtual"><scope>modm::Queue</scope><name>isEmpty</name></member>
+      <member refid="classmodm_1_1_queue_1a54cef3217d71950328b7510e1a60e36c" prot="public" virt="non-virtual"><scope>modm::Queue</scope><name>isFull</name></member>
+      <member refid="classmodm_1_1_queue_1a60762b7e5a65aec8125fc99b328305ec" prot="public" virt="non-virtual"><scope>modm::Queue</scope><name>isNotEmpty</name></member>
+      <member refid="classmodm_1_1_queue_1ab3202627e9c341dcf6ff348c5e93ca5c" prot="public" virt="non-virtual"><scope>modm::Queue</scope><name>isNotFull</name></member>
+      <member refid="classmodm_1_1_queue_1a573475c5a870d0804e0192837cba1ca6" prot="public" virt="non-virtual"><scope>modm::Queue</scope><name>pop</name></member>
+      <member refid="classmodm_1_1_queue_1a1d6dcc7e52d8ecb4e56ba43a9ecb0dc4" prot="public" virt="non-virtual"><scope>modm::Queue</scope><name>push</name></member>
+      <member refid="classmodm_1_1_queue_1a89577e61c3428b90023e32b474564fa9" prot="public" virt="non-virtual"><scope>modm::Queue</scope><name>Size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

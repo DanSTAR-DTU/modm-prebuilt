@@ -1,0 +1,30 @@
+<library>
+	<repositories>
+		<repository><path>./repo/repo.lb</path></repository>
+	</repositories>
+	<options>
+		<option name=":target">stm32f446ret</option>
+		<option name=":docs:generate_module_docs">True</option>
+	</options>
+	<modules>
+		<module>:architecture:*</module>
+		<module>:container</module>
+		<module>:driver:bme280</module>
+		<module>:docs</module>
+		<module>:math:*</module>
+		<module>:io</module>
+		<module>:platform:adc:*</module>
+		<module>:platform:can:*</module>
+		<module>:platform:core</module>
+		<module>:platform:clock</module>
+		<module>:platform:gpio</module>
+		<module>:platform:i2c:*</module>
+		<module>:platform:spi:*</module>
+		<module>:platform:spi.bitbang</module>
+		<module>:platform:timer:*</module>
+		<module>:platform:uart:*</module>
+		<module>:processing:protothread</module>
+		<module>:processing:resumable</module>
+		<module>:processing:timer</module>
+	</modules>
+</library>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structmodm_1_1platform_1_1_rcc_1_1flash__latency" kind="struct" language="C++" prot="private">
+    <compoundname>modm::platform::Rcc::flash_latency</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmodm_1_1platform_1_1_rcc_1_1flash__latency_1ae3e8fe1599759692e0c7593e18ecc578" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t modm::platform::Rcc::flash_latency::latency</definition>
+        <argsstring></argsstring>
+        <name>latency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" line="273" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmodm_1_1platform_1_1_rcc_1_1flash__latency_1a40770a6b4cfc1f3bdec6894b12ecffca" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t modm::platform::Rcc::flash_latency::max_frequency</definition>
+        <argsstring></argsstring>
+        <name>max_frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" line="274" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" line="272" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" bodystart="271" bodyend="275"/>
+    <listofallmembers>
+      <member refid="structmodm_1_1platform_1_1_rcc_1_1flash__latency_1ae3e8fe1599759692e0c7593e18ecc578" prot="public" virt="non-virtual"><scope>modm::platform::Rcc::flash_latency</scope><name>latency</name></member>
+      <member refid="structmodm_1_1platform_1_1_rcc_1_1flash__latency_1a40770a6b4cfc1f3bdec6894b12ecffca" prot="public" virt="non-virtual"><scope>modm::platform::Rcc::flash_latency</scope><name>max_frequency</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

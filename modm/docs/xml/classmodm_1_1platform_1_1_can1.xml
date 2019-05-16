@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1platform_1_1_can1" kind="class" language="C++" prot="public">
+    <compoundname>modm::platform::Can1</compoundname>
+    <basecompoundref refid="classmodm_1_1_can" prot="public" virt="non-virtual">modm::Can</basecompoundref>
+    <includes refid="can__1_8hpp" local="no">modm/platform/can/can_1.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_can1_1a6a87cd88ca294bddcb9e7af865f1fcb6" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>Mode</name>
+        <enumvalue id="classmodm_1_1platform_1_1_can1_1a6a87cd88ca294bddcb9e7af865f1fcb6a960b44c579bc2f6818d2daaf9e4c16f0" prot="public">
+          <name>Normal</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_can1_1a6a87cd88ca294bddcb9e7af865f1fcb6a3db5be2c0f1a2c52d4efc1d475551ba9" prot="public">
+          <name>ListenOnly</name>
+          <initializer>= CAN_BTR_SILM</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_can1_1a6a87cd88ca294bddcb9e7af865f1fcb6a2bedeeb051e4212e3c53f13f85845fde" prot="public">
+          <name>LoopBack</name>
+          <initializer>= CAN_BTR_LBKM</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_can1_1a6a87cd88ca294bddcb9e7af865f1fcb6a45987c21827015f2000fff5769b231a2" prot="public">
+          <name>ListenOnlyLoopBack</name>
+          <initializer>= CAN_BTR_SILM | CAN_BTR_LBKM</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="61" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" bodystart="59" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_can1_1a7444a85f271d88a144c5ce4c890b2b1b" prot="public" static="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t modm::platform::Can1::RxBufferSize</definition>
+        <argsstring></argsstring>
+        <name>RxBufferSize</name>
+        <initializer>= 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="69" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_can1_1a0e8f11d8c4db2ce16909340ca2728450" prot="public" static="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t modm::platform::Can1::TxBufferSize</definition>
+        <argsstring></argsstring>
+        <name>TxBufferSize</name>
+        <initializer>= 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="70" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1a9808f51e5b57a372dbcc0c3c7ca5e6df" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Can1::initializeWithPrescaler</definition>
+        <argsstring>(uint16_t prescaler, uint8_t bs1, uint8_t bs2, uint32_t interruptPriority, Mode startupMode, bool overwriteOnOverrun)</argsstring>
+        <name>initializeWithPrescaler</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>prescaler</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bs1</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bs2</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>interruptPriority</declname>
+        </param>
+        <param>
+          <type><ref refid="classmodm_1_1_can_1a68a5fc0538d4b0e4b3ffcffa7d776e95" kindref="member">Mode</ref></type>
+          <declname>startupMode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overwriteOnOverrun</declname>
+        </param>
+        <briefdescription>
+<para>Private Initializer with computed prescaler and timing constants. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="75" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1a9e170183b440a8ae927ed042527b2b68" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>template&lt; <ref refid="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55" kindref="member">Peripheral</ref> _ &gt; class...</type>
+            <declname>Signals</declname>
+            <defname>Signals</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void modm::platform::Can1::connect</definition>
+        <argsstring>(Gpio::InputType inputType=Gpio::InputType::Floating)</argsstring>
+        <name>connect</name>
+        <param>
+          <type><ref refid="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6d" kindref="member">Gpio::InputType</ref></type>
+          <declname>inputType</declname>
+          <defval><ref refid="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6dac8df43648942ec3a9aec140f07f47b7c" kindref="member">Gpio::InputType::Floating</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="80" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" bodystart="80" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1a2575074b35ebcdb7b35897324c89c477" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class SystemClock</type>
+          </param>
+          <param>
+            <type><ref refid="group__modm__math__units_1ga03efd30b9bcb8788d36e4b55228ea6dd" kindref="member">bitrate_t</ref></type>
+            <declname>bitrate</declname>
+            <defname>bitrate</defname>
+            <defval><ref refid="group__modm__math__units_1ga9ce2bf9e99d363dd23d9835cb8db88f9" kindref="member">kbps</ref>(125)</defval>
+          </param>
+          <param>
+            <type><ref refid="group__modm__math__units_1ga4f017ee3fdf26cb780b0df55356f031c" kindref="member">percent_t</ref></type>
+            <declname>tolerance</declname>
+            <defname>tolerance</defname>
+            <defval><ref refid="group__modm__math__units_1gaa849cad2910e94feb4a7f31a6dacbb1c" kindref="member">pct</ref>(1)</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void modm::platform::Can1::initialize</definition>
+        <argsstring>(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>interruptPriority</declname>
+        </param>
+        <param>
+          <type><ref refid="classmodm_1_1_can_1a68a5fc0538d4b0e4b3ffcffa7d776e95" kindref="member">Mode</ref></type>
+          <declname>startupMode</declname>
+          <defval><ref refid="classmodm_1_1platform_1_1_can1_1a6a87cd88ca294bddcb9e7af865f1fcb6a960b44c579bc2f6818d2daaf9e4c16f0" kindref="member">Mode::Normal</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overwriteOnOverrun</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables the clock for the CAN controller and resets all settings</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CAN bitrate (defined in driver/connectivity/can/message.hpp) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>interruptPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt vector priority (0=highest to 15=lowest) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>overwriteOnOverrun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Once a receive FIFO is full the next incoming message will overwrite the previous one if <computeroutput>true</computeroutput> otherwise the incoming message will be discarded</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>Has to called after <ref refid="classmodm_1_1_can_1a7d79e4eb925ec51c55e5e1411ecd7020" kindref="member">connect()</ref>, but before any other function from this class! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="111" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" bodystart="111" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1ac24e379240a24b39903afd42e073bac6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Can1::setMode</definition>
+        <argsstring>(Mode mode)</argsstring>
+        <name>setMode</name>
+        <param>
+          <type><ref refid="classmodm_1_1_can_1a68a5fc0538d4b0e4b3ffcffa7d776e95" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The the operating mode.</para>
+<para>Default after initialization is the normal mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1a61b143d792f1969f286f63eb39724ddd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Can1::setAutomaticRetransmission</definition>
+        <argsstring>(bool retransmission)</argsstring>
+        <name>setAutomaticRetransmission</name>
+        <param>
+          <type>bool</type>
+          <declname>retransmission</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1adf5b8ccc31459c368c6789a00e439c6b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::Can1::isMessageAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>isMessageAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1a9443a5953caaaaa320e6063356f3d7c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::Can1::getMessage</definition>
+        <argsstring>(can::Message &amp;message)</argsstring>
+        <name>getMessage</name>
+        <param>
+          <type><ref refid="structmodm_1_1can_1_1_message" kindref="compound">can::Message</ref> &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1a6a8274d59359e946816eebb38a4f6a54" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::Can1::isReadyToSend</definition>
+        <argsstring>()</argsstring>
+        <name>isReadyToSend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1a3daa424ffd90994e11f33980223b6770" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::Can1::sendMessage</definition>
+        <argsstring>(const can::Message &amp;message)</argsstring>
+        <name>sendMessage</name>
+        <param>
+          <type>const <ref refid="structmodm_1_1can_1_1_message" kindref="compound">can::Message</ref> &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1ae760780ffac95aaec8094a86c6d8dbfb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t modm::platform::Can1::getReceiveErrorCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getReceiveErrorCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Receive Error Counter.</para>
+<para>In case of an error during reception, this counter is incremented by 1 or by 8 depending on the error condition as defined by the CAN standard. After every successful reception the counter is decremented by 1 or reset to 120 if its value was higher than 128. When the counter value exceeds 127, the CAN controller enters the error passive state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="165" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1ab409e90cfc67ba73ffc40fa07efeffa4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t modm::platform::Can1::getTransmitErrorCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getTransmitErrorCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Transmit Error Counter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="175" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1a198c2d9b0a79032dcde8092332ee33cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_can_1a0914c89eaf4b5f5f8a302c7fc18b2a1e" kindref="member">BusState</ref></type>
+        <definition>static BusState modm::platform::Can1::getBusState</definition>
+        <argsstring>()</argsstring>
+        <name>getBusState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_can1_1a6a75adedb568737a6a1c3f798ee1caa0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Can1::enableStatusChangeInterrupt</definition>
+        <argsstring>(uint32_t interruptEnable, uint32_t interruptPriority)</argsstring>
+        <name>enableStatusChangeInterrupt</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>interruptEnable</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>interruptPriority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable the error and status change interrupt.</para>
+<para><ref refid="classmodm_1_1_can" kindref="compound">Can</ref> be generated by the following events:<itemizedlist>
+<listitem><para>Error condition, for more details on error conditions please refer to the CAN Error Status register (CAN_ESR).</para>
+</listitem><listitem><para>Wakeup condition, SOF monitored on the CAN Rx signal.</para>
+</listitem><listitem><para>Entry into Sleep mode</para>
+</listitem></itemizedlist>
+</para>
+<para>You need to create you own interrupt handler for this interrupt. The interrupt handler has a fixed name: <programlisting><codeline><highlight class="normal">MODM_ISR(CAN1_SCE)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>e.g.<sp/>Acknowledge<sp/>interrupt</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CAN1-&gt;MSR<sp/>=<sp/>CAN_MSR_ERRI;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>interruptEnable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upper 24-bit of the CAN_IER register. E.g.:<itemizedlist>
+<listitem><para>CAN_IER_BOFIE</para>
+</listitem><listitem><para>CAN_IER_EPVIE</para>
+</listitem><listitem><para>... See Reference Manual &gt;&gt; bxCAN &gt;&gt; CAN_IER <ref refid="structmodm_1_1_register" kindref="compound">Register</ref> </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>interruptPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt vector priority (0=highest to 15=lowest) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="214" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Basic Extended CAN1. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The Basic Extended CAN peripheral, named bxCAN, interfaces the CAN network. It supports the CAN protocols version 2.0A and B. It has been designed to manage a high number of incoming messages efficiently with a minimum CPU load.</para>
+<para><heading level="2">Filter</heading>
+</para>
+<para>For connectivity line devices there are 28 filter banks, i=0 .. 27, in other devices there are 14 filter banks i = 0 ..13.</para>
+<para>The 28 filter banks for the connectivity line devices are shared between CAN1 and CAN2.</para>
+<para><heading level="2"><ref refid="structmodm_1_1_configuration" kindref="compound">Configuration</ref></heading>
+</para>
+<para>You can set the buffer size using the <computeroutput>tx_buffer</computeroutput> and <computeroutput>rx_buffer</computeroutput> parameters.</para>
+<para><simplesect kind="author"><para>Fabian Greif <ulink url="mailto:fabian.greif@rwth-aachen.de">fabian.greif@rwth-aachen.de</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="155">
+        <label>modm::Can</label>
+        <link refid="classmodm_1_1_can"/>
+        <childnode refid="156" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="154">
+        <label>modm::platform::Can1</label>
+        <link refid="classmodm_1_1platform_1_1_can1"/>
+        <childnode refid="155" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="158">
+        <label>modm::Can</label>
+        <link refid="classmodm_1_1_can"/>
+        <childnode refid="159" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="157">
+        <label>modm::platform::Can1</label>
+        <link refid="classmodm_1_1platform_1_1_can1"/>
+        <childnode refid="158" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" line="57" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp" bodystart="56" bodyend="216"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1_peripheral_driver_1a5c336ff9889c347e7eadb810bf984ebd" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>assertBaudrateInTolerance</name></member>
+      <member refid="classmodm_1_1_can_1a0914c89eaf4b5f5f8a302c7fc18b2a1e" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>BusState</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1a9e170183b440a8ae927ed042527b2b68" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>connect</name></member>
+      <member refid="classmodm_1_1_can_1a7d79e4eb925ec51c55e5e1411ecd7020" prot="public" virt="non-virtual" ambiguityscope="modm::Can::"><scope>modm::platform::Can1</scope><name>connect</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1a6a75adedb568737a6a1c3f798ee1caa0" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>enableStatusChangeInterrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1a198c2d9b0a79032dcde8092332ee33cb" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>getBusState</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1a9443a5953caaaaa320e6063356f3d7c3" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>getMessage</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1ae760780ffac95aaec8094a86c6d8dbfb" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>getReceiveErrorCounter</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1ab409e90cfc67ba73ffc40fa07efeffa4" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>getTransmitErrorCounter</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1a2575074b35ebcdb7b35897324c89c477" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>initialize</name></member>
+      <member refid="classmodm_1_1_can_1af262b36cf754f6dc7dce556cee997de1" prot="public" virt="non-virtual" ambiguityscope="modm::Can::"><scope>modm::platform::Can1</scope><name>initialize</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1a9808f51e5b57a372dbcc0c3c7ca5e6df" prot="private" virt="non-virtual"><scope>modm::platform::Can1</scope><name>initializeWithPrescaler</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1adf5b8ccc31459c368c6789a00e439c6b" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>isMessageAvailable</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1a6a8274d59359e946816eebb38a4f6a54" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>isReadyToSend</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1a6a87cd88ca294bddcb9e7af865f1fcb6" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>Mode</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1a7444a85f271d88a144c5ce4c890b2b1b" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>RxBufferSize</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1a3daa424ffd90994e11f33980223b6770" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>sendMessage</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1a61b143d792f1969f286f63eb39724ddd" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>setAutomaticRetransmission</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1ac24e379240a24b39903afd42e073bac6" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>setMode</name></member>
+      <member refid="classmodm_1_1platform_1_1_can1_1a0e8f11d8c4db2ce16909340ca2728450" prot="public" virt="non-virtual"><scope>modm::platform::Can1</scope><name>TxBufferSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

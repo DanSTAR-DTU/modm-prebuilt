@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="vector_8hpp" kind="file" language="C++">
+    <compoundname>vector.hpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="matrix_8hpp" local="no">modm/math/matrix.hpp</includes>
+    <includes refid="arithmetic__traits_8hpp" local="no">modm/math/utils/arithmetic_traits.hpp</includes>
+    <includes local="yes">vector_impl.hpp</includes>
+    <includes refid="vector1_8hpp" local="yes">vector1.hpp</includes>
+    <includes refid="vector2_8hpp" local="yes">vector2.hpp</includes>
+    <includes refid="vector3_8hpp" local="yes">vector3.hpp</includes>
+    <includes refid="vector4_8hpp" local="yes">vector4.hpp</includes>
+    <includedby refid="circle__2d_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp</includedby>
+    <includedby refid="vector1_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp</includedby>
+    <includedby refid="vector2_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp</includedby>
+    <includedby refid="vector3_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp</includedby>
+    <includedby refid="vector4_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp</includedby>
+    <includedby refid="point__set__2d_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/point_set_2d.hpp</includedby>
+    <includedby refid="line__2d_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/line_2d.hpp</includedby>
+    <includedby refid="line__segment__2d_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/line_segment_2d.hpp</includedby>
+    <includedby refid="ray__2d_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/ray_2d.hpp</includedby>
+    <includedby refid="location__2d_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp</includedby>
+    <includedby refid="geometry_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry.hpp</includedby>
+    <includedby refid="lu__decomposition_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <incdepgraph>
+      <node id="3186">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3201">
+        <label>angle.hpp</label>
+        <link refid="angle_8hpp"/>
+        <childnode refid="3178" relation="include">
+        </childnode>
+        <childnode refid="3202" relation="include">
+        </childnode>
+      </node>
+      <node id="3198">
+        <label>vector1_impl.hpp</label>
+      </node>
+      <node id="3194">
+        <label>limits</label>
+      </node>
+      <node id="3180">
+        <label>modm/math/matrix.hpp</label>
+        <link refid="matrix_8hpp"/>
+        <childnode refid="3178" relation="include">
+        </childnode>
+        <childnode refid="3181" relation="include">
+        </childnode>
+        <childnode refid="3179" relation="include">
+        </childnode>
+        <childnode refid="3182" relation="include">
+        </childnode>
+        <childnode refid="3191" relation="include">
+        </childnode>
+      </node>
+      <node id="3193">
+        <label>cstdint</label>
+      </node>
+      <node id="3179">
+        <label>stdint.h</label>
+      </node>
+      <node id="3205">
+        <label>vector3_impl.hpp</label>
+      </node>
+      <node id="3178">
+        <label>cmath</label>
+      </node>
+      <node id="3177">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp</label>
+        <link refid="vector_8hpp"/>
+        <childnode refid="3178" relation="include">
+        </childnode>
+        <childnode refid="3179" relation="include">
+        </childnode>
+        <childnode refid="3180" relation="include">
+        </childnode>
+        <childnode refid="3192" relation="include">
+        </childnode>
+        <childnode refid="3195" relation="include">
+        </childnode>
+        <childnode refid="3196" relation="include">
+        </childnode>
+        <childnode refid="3199" relation="include">
+        </childnode>
+        <childnode refid="3204" relation="include">
+        </childnode>
+        <childnode refid="3206" relation="include">
+        </childnode>
+      </node>
+      <node id="3195">
+        <label>vector_impl.hpp</label>
+      </node>
+      <node id="3207">
+        <label>vector4_impl.hpp</label>
+      </node>
+      <node id="3206">
+        <label>vector4.hpp</label>
+        <link refid="vector4_8hpp"/>
+        <childnode refid="3179" relation="include">
+        </childnode>
+        <childnode refid="3177" relation="include">
+        </childnode>
+        <childnode refid="3207" relation="include">
+        </childnode>
+      </node>
+      <node id="3199">
+        <label>vector2.hpp</label>
+        <link refid="vector2_8hpp"/>
+        <childnode refid="3178" relation="include">
+        </childnode>
+        <childnode refid="3179" relation="include">
+        </childnode>
+        <childnode refid="3182" relation="include">
+        </childnode>
+        <childnode refid="3200" relation="include">
+        </childnode>
+        <childnode refid="3201" relation="include">
+        </childnode>
+        <childnode refid="3177" relation="include">
+        </childnode>
+        <childnode refid="3203" relation="include">
+        </childnode>
+      </node>
+      <node id="3184">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="3185" relation="include">
+        </childnode>
+      </node>
+      <node id="3181">
+        <label>string.h</label>
+      </node>
+      <node id="3204">
+        <label>vector3.hpp</label>
+        <link refid="vector3_8hpp"/>
+        <childnode refid="3179" relation="include">
+        </childnode>
+        <childnode refid="3177" relation="include">
+        </childnode>
+        <childnode refid="3205" relation="include">
+        </childnode>
+      </node>
+      <node id="3191">
+        <label>matrix_impl.hpp</label>
+      </node>
+      <node id="3203">
+        <label>vector2_impl.hpp</label>
+      </node>
+      <node id="3196">
+        <label>vector1.hpp</label>
+        <link refid="vector1_8hpp"/>
+        <childnode refid="3178" relation="include">
+        </childnode>
+        <childnode refid="3197" relation="include">
+        </childnode>
+        <childnode refid="3179" relation="include">
+        </childnode>
+        <childnode refid="3177" relation="include">
+        </childnode>
+        <childnode refid="3198" relation="include">
+        </childnode>
+      </node>
+      <node id="3202">
+        <label>math.h</label>
+      </node>
+      <node id="3197">
+        <label>cstdlib</label>
+      </node>
+      <node id="3183">
+        <label>cstddef</label>
+      </node>
+      <node id="3185">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="3200">
+        <label>geometric_traits.hpp</label>
+        <link refid="geometric__traits_8hpp"/>
+        <childnode refid="3178" relation="include">
+        </childnode>
+        <childnode refid="3179" relation="include">
+        </childnode>
+        <childnode refid="3184" relation="include">
+        </childnode>
+      </node>
+      <node id="3190">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="3179" relation="include">
+        </childnode>
+        <childnode refid="3189" relation="include">
+        </childnode>
+      </node>
+      <node id="3188">
+        <label>type_traits</label>
+      </node>
+      <node id="3189">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
+      </node>
+      <node id="3182">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="3183" relation="include">
+        </childnode>
+        <childnode refid="3184" relation="include">
+        </childnode>
+        <childnode refid="3186" relation="include">
+        </childnode>
+        <childnode refid="3187" relation="include">
+        </childnode>
+        <childnode refid="3188" relation="include">
+        </childnode>
+        <childnode refid="3189" relation="include">
+        </childnode>
+        <childnode refid="3190" relation="include">
+        </childnode>
+      </node>
+      <node id="3192">
+        <label>modm/math/utils/arithmetic_traits.hpp</label>
+        <link refid="arithmetic__traits_8hpp"/>
+        <childnode refid="3193" relation="include">
+        </childnode>
+        <childnode refid="3194" relation="include">
+        </childnode>
+        <childnode refid="3188" relation="include">
+        </childnode>
+        <childnode refid="3178" relation="include">
+        </childnode>
+      </node>
+      <node id="3187">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3214">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp</label>
+        <link refid="polygon__2d_8hpp"/>
+        <childnode refid="3213" relation="include">
+        </childnode>
+        <childnode refid="3215" relation="include">
+        </childnode>
+        <childnode refid="3209" relation="include">
+        </childnode>
+        <childnode refid="3211" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3221">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp</label>
+        <link refid="location__2d_8hpp"/>
+        <childnode refid="3211" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3208">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp</label>
+        <link refid="vector_8hpp"/>
+        <childnode refid="3209" relation="include">
+        </childnode>
+        <childnode refid="3216" relation="include">
+        </childnode>
+        <childnode refid="3217" relation="include">
+        </childnode>
+        <childnode refid="3218" relation="include">
+        </childnode>
+        <childnode refid="3219" relation="include">
+        </childnode>
+        <childnode refid="3220" relation="include">
+        </childnode>
+        <childnode refid="3210" relation="include">
+        </childnode>
+        <childnode refid="3213" relation="include">
+        </childnode>
+        <childnode refid="3215" relation="include">
+        </childnode>
+        <childnode refid="3221" relation="include">
+        </childnode>
+        <childnode refid="3211" relation="include">
+        </childnode>
+        <childnode refid="3222" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3219">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp</label>
+        <link refid="vector4_8hpp"/>
+        <childnode refid="3208" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3217">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp</label>
+        <link refid="vector2_8hpp"/>
+        <childnode refid="3208" relation="include">
+        </childnode>
+        <childnode refid="3214" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3215">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/ray_2d.hpp</label>
+        <link refid="ray__2d_8hpp"/>
+        <childnode refid="3214" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3218">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp</label>
+        <link refid="vector3_8hpp"/>
+        <childnode refid="3208" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3216">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp</label>
+        <link refid="vector1_8hpp"/>
+        <childnode refid="3208" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3213">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/line_segment_2d.hpp</label>
+        <link refid="line__segment__2d_8hpp"/>
+        <childnode refid="3209" relation="include">
+        </childnode>
+        <childnode refid="3214" relation="include">
+        </childnode>
+        <childnode refid="3215" relation="include">
+        </childnode>
+        <childnode refid="3211" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3220">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/point_set_2d.hpp</label>
+        <link refid="point__set__2d_8hpp"/>
+        <childnode refid="3209" relation="include">
+        </childnode>
+        <childnode refid="3210" relation="include">
+        </childnode>
+        <childnode refid="3213" relation="include">
+        </childnode>
+        <childnode refid="3214" relation="include">
+        </childnode>
+        <childnode refid="3215" relation="include">
+        </childnode>
+        <childnode refid="3211" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3211">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry.hpp</label>
+        <link refid="geometry_8hpp"/>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3212">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+        <link refid="math_8hpp"/>
+      </node>
+      <node id="3210">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/line_2d.hpp</label>
+        <link refid="line__2d_8hpp"/>
+        <childnode refid="3209" relation="include">
+        </childnode>
+        <childnode refid="3211" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3222">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp</label>
+        <link refid="lu__decomposition_8hpp"/>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3209">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp</label>
+        <link refid="circle__2d_8hpp"/>
+        <childnode refid="3210" relation="include">
+        </childnode>
+        <childnode refid="3213" relation="include">
+        </childnode>
+        <childnode refid="3214" relation="include">
+        </childnode>
+        <childnode refid="3215" relation="include">
+        </childnode>
+        <childnode refid="3211" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1_matrix" prot="public">modm::Matrix</innerclass>
+    <innerclass refid="classmodm_1_1_vector" prot="public">modm::Vector</innerclass>
+    <innerclass refid="structmodm_1_1detail_1_1_make_signed_3_01_vector_3_01_t_00_01_n_01_4_01_4" prot="public">modm::detail::MakeSigned&lt; Vector&lt; T, N &gt; &gt;</innerclass>
+    <innerclass refid="structmodm_1_1detail_1_1_make_unsigned_3_01_vector_3_01_t_00_01_n_01_4_01_4" prot="public">modm::detail::MakeUnsigned&lt; Vector&lt; T, N &gt; &gt;</innerclass>
+    <innerclass refid="structmodm_1_1detail_1_1_wide_type_3_01_vector_3_01_t_00_01_n_01_4_01_4" prot="public">modm::detail::WideType&lt; Vector&lt; T, N &gt; &gt;</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="vector_8hpp_1acb490eacc0a65ce7507697623b2a2913" prot="public" static="no">
+        <name>IMPLEMENT_VECTOR_ACCESSOR2</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>Vector&lt;T, 2&gt; a##b() const				\
+		{										\
+			return Vector&lt;T, 2&gt;(a, b);			\
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp" line="129" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vector_8hpp_1a5d5d84d8826ea3352c2bc716d9ff2378" prot="public" static="no">
+        <name>IMPLEMENT_VECTOR_ACCESSOR3</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <initializer>Vector&lt;T, 3&gt; a##b##c() const			\
+		{										\
+			return Vector&lt;T, 3&gt;(a, b, c);		\
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp" line="135" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vector_8hpp_1a0fa858e60cbe812f952c9a1ee721793e" prot="public" static="no">
+        <name>IMPLEMENT_VECTOR_ACCESSOR4</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <param><defname>d</defname></param>
+        <initializer>Vector&lt;T, 4&gt; a##b##c##d() const			\
+		{										\
+			return Vector&lt;T, 4&gt;(a, b, c, d);	\
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp" line="141" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp"/>
+  </compounddef>
+</doxygen>

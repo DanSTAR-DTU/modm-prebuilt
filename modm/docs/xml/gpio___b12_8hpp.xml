@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="gpio___b12_8hpp" kind="file" language="C++">
+    <compoundname>gpio_B12.hpp</compoundname>
+    <includes refid="device_8hpp" local="yes">../device.hpp</includes>
+    <includes refid="base_8hpp" local="yes">base.hpp</includes>
+    <includes refid="set_8hpp" local="yes">set.hpp</includes>
+    <includedby refid="platform_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <incdepgraph>
+      <node id="5202">
+        <label>../device.hpp</label>
+        <link refid="device_8hpp"/>
+        <childnode refid="5203" relation="include">
+        </childnode>
+        <childnode refid="5204" relation="include">
+        </childnode>
+        <childnode refid="5206" relation="include">
+        </childnode>
+        <childnode refid="5207" relation="include">
+        </childnode>
+      </node>
+      <node id="5207">
+        <label>system_stm32f4xx.h</label>
+      </node>
+      <node id="5203">
+        <label>stdint.h</label>
+      </node>
+      <node id="5201">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B12.hpp</label>
+        <link refid="gpio___b12_8hpp"/>
+        <childnode refid="5202" relation="include">
+        </childnode>
+        <childnode refid="5208" relation="include">
+        </childnode>
+        <childnode refid="5214" relation="include">
+        </childnode>
+      </node>
+      <node id="5208">
+        <label>base.hpp</label>
+        <link refid="base_8hpp"/>
+        <childnode refid="5202" relation="include">
+        </childnode>
+        <childnode refid="5209" relation="include">
+        </childnode>
+        <childnode refid="5210" relation="include">
+        </childnode>
+        <childnode refid="5213" relation="include">
+        </childnode>
+      </node>
+      <node id="5212">
+        <label>cmath</label>
+      </node>
+      <node id="5209">
+        <label>modm/architecture/interface/gpio.hpp</label>
+        <link refid="gpio_8hpp"/>
+        <childnode refid="5203" relation="include">
+        </childnode>
+        <childnode refid="5204" relation="include">
+        </childnode>
+      </node>
+      <node id="5204">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="5205" relation="include">
+        </childnode>
+      </node>
+      <node id="5213">
+        <label>modm/platform/core/peripherals.hpp</label>
+        <link refid="peripherals_8hpp"/>
+      </node>
+      <node id="5214">
+        <label>set.hpp</label>
+        <link refid="set_8hpp"/>
+        <childnode refid="5202" relation="include">
+        </childnode>
+        <childnode refid="5208" relation="include">
+        </childnode>
+      </node>
+      <node id="5211">
+        <label>cstddef</label>
+      </node>
+      <node id="5205">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="5210">
+        <label>modm/math/utils/bit_operation.hpp</label>
+        <link refid="bit__operation_8hpp"/>
+        <childnode refid="5211" relation="include">
+        </childnode>
+        <childnode refid="5212" relation="include">
+        </childnode>
+        <childnode refid="5203" relation="include">
+        </childnode>
+        <childnode refid="5205" relation="include">
+        </childnode>
+        <childnode refid="5204" relation="include">
+        </childnode>
+      </node>
+      <node id="5206">
+        <label>stm32f446xx.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5215">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B12.hpp</label>
+        <link refid="gpio___b12_8hpp"/>
+        <childnode refid="5216" relation="include">
+        </childnode>
+      </node>
+      <node id="5216">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_b12" prot="public">modm::platform::GpioB12</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1platform">modm::platform</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B12.hpp"/>
+  </compounddef>
+</doxygen>

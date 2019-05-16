@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="port_8hpp" kind="file" language="C++">
+    <compoundname>port.hpp</compoundname>
+    <includes refid="base_8hpp" local="yes">base.hpp</includes>
+    <includes refid="set_8hpp" local="yes">set.hpp</includes>
+    <includes local="no">type_traits</includes>
+    <includes refid="bit__operation_8hpp" local="no">modm/math/utils/bit_operation.hpp</includes>
+    <includedby refid="platform_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <incdepgraph>
+      <node id="5706">
+        <label>../device.hpp</label>
+        <link refid="device_8hpp"/>
+        <childnode refid="5707" relation="include">
+        </childnode>
+        <childnode refid="5708" relation="include">
+        </childnode>
+        <childnode refid="5710" relation="include">
+        </childnode>
+        <childnode refid="5711" relation="include">
+        </childnode>
+      </node>
+      <node id="5711">
+        <label>system_stm32f4xx.h</label>
+      </node>
+      <node id="5707">
+        <label>stdint.h</label>
+      </node>
+      <node id="5705">
+        <label>base.hpp</label>
+        <link refid="base_8hpp"/>
+        <childnode refid="5706" relation="include">
+        </childnode>
+        <childnode refid="5712" relation="include">
+        </childnode>
+        <childnode refid="5713" relation="include">
+        </childnode>
+        <childnode refid="5716" relation="include">
+        </childnode>
+      </node>
+      <node id="5715">
+        <label>cmath</label>
+      </node>
+      <node id="5712">
+        <label>modm/architecture/interface/gpio.hpp</label>
+        <link refid="gpio_8hpp"/>
+        <childnode refid="5707" relation="include">
+        </childnode>
+        <childnode refid="5708" relation="include">
+        </childnode>
+      </node>
+      <node id="5708">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="5709" relation="include">
+        </childnode>
+      </node>
+      <node id="5716">
+        <label>modm/platform/core/peripherals.hpp</label>
+        <link refid="peripherals_8hpp"/>
+      </node>
+      <node id="5717">
+        <label>set.hpp</label>
+        <link refid="set_8hpp"/>
+        <childnode refid="5706" relation="include">
+        </childnode>
+        <childnode refid="5705" relation="include">
+        </childnode>
+      </node>
+      <node id="5704">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/port.hpp</label>
+        <link refid="port_8hpp"/>
+        <childnode refid="5705" relation="include">
+        </childnode>
+        <childnode refid="5717" relation="include">
+        </childnode>
+        <childnode refid="5718" relation="include">
+        </childnode>
+        <childnode refid="5713" relation="include">
+        </childnode>
+      </node>
+      <node id="5714">
+        <label>cstddef</label>
+      </node>
+      <node id="5709">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="5713">
+        <label>modm/math/utils/bit_operation.hpp</label>
+        <link refid="bit__operation_8hpp"/>
+        <childnode refid="5714" relation="include">
+        </childnode>
+        <childnode refid="5715" relation="include">
+        </childnode>
+        <childnode refid="5707" relation="include">
+        </childnode>
+        <childnode refid="5709" relation="include">
+        </childnode>
+        <childnode refid="5708" relation="include">
+        </childnode>
+      </node>
+      <node id="5718">
+        <label>type_traits</label>
+      </node>
+      <node id="5710">
+        <label>stm32f446xx.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5719">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/port.hpp</label>
+        <link refid="port_8hpp"/>
+        <childnode refid="5720" relation="include">
+        </childnode>
+      </node>
+      <node id="5720">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1platform_1_1_gpio_port" prot="public">modm::platform::GpioPort</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1platform">modm::platform</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/port.hpp"/>
+  </compounddef>
+</doxygen>

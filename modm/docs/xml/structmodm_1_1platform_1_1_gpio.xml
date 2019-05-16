@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structmodm_1_1platform_1_1_gpio" kind="struct" language="C++" prot="public">
+    <compoundname>modm::platform::Gpio</compoundname>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_set" prot="public" virt="non-virtual">modm::platform::GpioSet&lt; Gpios... &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a0" prot="public" virt="non-virtual">modm::platform::GpioA0</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a1" prot="public" virt="non-virtual">modm::platform::GpioA1</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a10" prot="public" virt="non-virtual">modm::platform::GpioA10</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a11" prot="public" virt="non-virtual">modm::platform::GpioA11</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a12" prot="public" virt="non-virtual">modm::platform::GpioA12</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a13" prot="public" virt="non-virtual">modm::platform::GpioA13</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a14" prot="public" virt="non-virtual">modm::platform::GpioA14</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a15" prot="public" virt="non-virtual">modm::platform::GpioA15</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a2" prot="public" virt="non-virtual">modm::platform::GpioA2</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a3" prot="public" virt="non-virtual">modm::platform::GpioA3</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a4" prot="public" virt="non-virtual">modm::platform::GpioA4</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a5" prot="public" virt="non-virtual">modm::platform::GpioA5</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a6" prot="public" virt="non-virtual">modm::platform::GpioA6</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a7" prot="public" virt="non-virtual">modm::platform::GpioA7</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a8" prot="public" virt="non-virtual">modm::platform::GpioA8</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_a9" prot="public" virt="non-virtual">modm::platform::GpioA9</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b0" prot="public" virt="non-virtual">modm::platform::GpioB0</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b1" prot="public" virt="non-virtual">modm::platform::GpioB1</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b10" prot="public" virt="non-virtual">modm::platform::GpioB10</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b12" prot="public" virt="non-virtual">modm::platform::GpioB12</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b13" prot="public" virt="non-virtual">modm::platform::GpioB13</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b14" prot="public" virt="non-virtual">modm::platform::GpioB14</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b15" prot="public" virt="non-virtual">modm::platform::GpioB15</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b2" prot="public" virt="non-virtual">modm::platform::GpioB2</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b3" prot="public" virt="non-virtual">modm::platform::GpioB3</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b4" prot="public" virt="non-virtual">modm::platform::GpioB4</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b5" prot="public" virt="non-virtual">modm::platform::GpioB5</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b6" prot="public" virt="non-virtual">modm::platform::GpioB6</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b7" prot="public" virt="non-virtual">modm::platform::GpioB7</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b8" prot="public" virt="non-virtual">modm::platform::GpioB8</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_b9" prot="public" virt="non-virtual">modm::platform::GpioB9</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c0" prot="public" virt="non-virtual">modm::platform::GpioC0</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c1" prot="public" virt="non-virtual">modm::platform::GpioC1</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c10" prot="public" virt="non-virtual">modm::platform::GpioC10</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c11" prot="public" virt="non-virtual">modm::platform::GpioC11</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c12" prot="public" virt="non-virtual">modm::platform::GpioC12</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c13" prot="public" virt="non-virtual">modm::platform::GpioC13</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c14" prot="public" virt="non-virtual">modm::platform::GpioC14</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c15" prot="public" virt="non-virtual">modm::platform::GpioC15</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c2" prot="public" virt="non-virtual">modm::platform::GpioC2</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c3" prot="public" virt="non-virtual">modm::platform::GpioC3</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c4" prot="public" virt="non-virtual">modm::platform::GpioC4</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c5" prot="public" virt="non-virtual">modm::platform::GpioC5</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c6" prot="public" virt="non-virtual">modm::platform::GpioC6</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c7" prot="public" virt="non-virtual">modm::platform::GpioC7</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c8" prot="public" virt="non-virtual">modm::platform::GpioC8</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_c9" prot="public" virt="non-virtual">modm::platform::GpioC9</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_d2" prot="public" virt="non-virtual">modm::platform::GpioD2</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_h0" prot="public" virt="non-virtual">modm::platform::GpioH0</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_h1" prot="public" virt="non-virtual">modm::platform::GpioH1</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_set" prot="public" virt="non-virtual">modm::platform::GpioSet&lt; Gpios &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_unused" prot="public" virt="non-virtual">modm::platform::GpioUnused</derivedcompoundref>
+    <includes refid="base_8hpp" local="no">modm/platform/gpio/base.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6d" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>InputType</name>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6dac8df43648942ec3a9aec140f07f47b7c" prot="public">
+          <name>Floating</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+<para>floating on input </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6dadbe269e26d8282186a4163a2424e3361" prot="public">
+          <name>PullUp</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+<para>pull-up on input </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6da4178eba6913566377ec7e0519dead47b" prot="public">
+          <name>PullDown</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+<para>pull-down on input </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="31" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1ad68170d2e3d45721421375623c8f5a61" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>OutputType</name>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1ad68170d2e3d45721421375623c8f5a61ae5914f527c36b22ce79ba8231491b63f" prot="public">
+          <name>PushPull</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+<para>push-pull on output </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1ad68170d2e3d45721421375623c8f5a61a8df1809fc704fe02606f58b4ba2a6c99" prot="public">
+          <name>OpenDrain</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+<para>open-drain on output </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="37" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>OutputSpeed</name>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09a28d0edd045e05cf5af64e35ae0c4c6ef" prot="public">
+          <name>Low</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09a87f8a6ab85c9ced3702b4ea641ad4bb5" prot="public">
+          <name>Medium</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09a655d20c1ca69519ca647684edbb2db35" prot="public">
+          <name>High</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09af0b44f10edcd3bdee6720430ac4111cd" prot="public">
+          <name>VeryHigh</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+<para>30 pF (80 MHz Output max speed on 15 pF) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09acfde97a6519c8feec9e0e0e512614cd0" prot="public">
+          <name>MHz2</name>
+          <initializer>= Low</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09a021af8a6d59707e09343f44af8354553" prot="public">
+          <name>MHz25</name>
+          <initializer>= Medium</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09a291c765b56a54ef8453ee3aceef60ed3" prot="public">
+          <name>MHz50</name>
+          <initializer>= High</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09a21a08bfcdb0222695a7c16981b6a6343" prot="public">
+          <name>MHz100</name>
+          <initializer>= VeryHigh</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="46" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="44" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1a5f683814888fa5a34c2bcf2db9b803a5" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>InputTrigger</name>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1a5f683814888fa5a34c2bcf2db9b803a5a5b0a1c3bcd3397b6e692a26fe8427564" prot="public">
+          <name>RisingEdge</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1a5f683814888fa5a34c2bcf2db9b803a5aa3919f129620bfcb6ba26d6e5dc1aa64" prot="public">
+          <name>FallingEdge</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1a5f683814888fa5a34c2bcf2db9b803a5abc2634359d039750febf9ba58e1643ad" prot="public">
+          <name>BothEdges</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="59" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="57" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19b" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Port</name>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19ba7fc56270e7a70fa81a5935b72eacbe29" prot="public">
+          <name>A</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19ba9d5ed678fe57bcca610140957afab571" prot="public">
+          <name>B</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19ba0d61f8370cad1d412f80b84d143e1257" prot="public">
+          <name>C</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19baf623e75af30e62bbd73d6df5b50bb7b5" prot="public">
+          <name>D</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19bac1d9f50f86825a1a2302ec2449c17196" prot="public">
+          <name>H</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The Port a <ref refid="structmodm_1_1platform_1_1_gpio" kindref="compound">Gpio</ref> Pin is connected to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="68" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="66" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="356">
+        <label>modm::platform::GpioUnused</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_unused"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>modm::platform::SoftwareGpioPort&lt; Gpios &gt;</label>
+        <link refid="classmodm_1_1platform_1_1_software_gpio_port"/>
+        <childnode refid="303" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>modm::platform::GpioSet&lt; Gpios... &gt;</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_set"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>modm::platform::GpioH0</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_h0"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="354">
+        <label>modm::platform::GpioH1</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_h1"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="336">
+        <label>modm::platform::GpioC0</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c0"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="337">
+        <label>modm::platform::GpioC1</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c1"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="344">
+        <label>modm::platform::GpioC2</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c2"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>modm::platform::Gpio</label>
+        <link refid="structmodm_1_1platform_1_1_gpio"/>
+      </node>
+      <node id="345">
+        <label>modm::platform::GpioC3</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c3"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="346">
+        <label>modm::platform::GpioC4</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c4"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="347">
+        <label>modm::platform::GpioC5</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c5"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="348">
+        <label>modm::platform::GpioC6</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c6"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>modm::platform::GpioC7</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c7"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>modm::platform::GpioC8</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c8"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>modm::platform::GpioC9</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c9"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>modm::platform::GpioD2</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_d2"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="355">
+        <label>modm::platform::GpioSet&lt; Gpios &gt;</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_set"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>modm::platform::GpioA0</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a0"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="306">
+        <label>modm::platform::GpioA1</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a1"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>modm::platform::GpioA2</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a2"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>modm::platform::GpioA3</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a3"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>modm::platform::GpioA4</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a4"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>modm::platform::GpioA5</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a5"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>modm::platform::GpioA6</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a6"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>modm::platform::GpioA7</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a7"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>modm::platform::GpioA8</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a8"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>modm::platform::GpioA9</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a9"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="307">
+        <label>modm::platform::GpioA10</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a10"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>modm::platform::GpioA11</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a11"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>modm::platform::GpioA12</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a12"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>modm::platform::GpioA13</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a13"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>modm::platform::GpioA14</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a14"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>modm::platform::GpioB0</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b0"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>modm::platform::GpioA15</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a15"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="322">
+        <label>modm::platform::GpioB1</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b1"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="328">
+        <label>modm::platform::GpioB2</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b2"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="329">
+        <label>modm::platform::GpioB3</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b3"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>modm::platform::GpioB4</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b4"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="331">
+        <label>modm::platform::GpioB5</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b5"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="332">
+        <label>modm::platform::GpioB6</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b6"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="333">
+        <label>modm::platform::GpioB7</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b7"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="334">
+        <label>modm::platform::GpioB8</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b8"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="335">
+        <label>modm::platform::GpioB9</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b9"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>modm::platform::GpioB10</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b10"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>modm::platform::GpioB12</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b12"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>modm::platform::GpioB13</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b13"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>modm::platform::GpioB14</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b14"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="327">
+        <label>modm::platform::GpioB15</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b15"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="338">
+        <label>modm::platform::GpioC10</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c10"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="339">
+        <label>modm::platform::GpioC11</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c11"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="340">
+        <label>modm::platform::GpioC12</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c12"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="341">
+        <label>modm::platform::GpioC13</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c13"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>modm::platform::GpioC14</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c14"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>modm::platform::GpioC15</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c15"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="28" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="27" bodyend="217"/>
+    <listofallmembers>
+      <member refid="structmodm_1_1platform_1_1_gpio_1a5f683814888fa5a34c2bcf2db9b803a5" prot="public" virt="non-virtual"><scope>modm::platform::Gpio</scope><name>InputTrigger</name></member>
+      <member refid="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6d" prot="public" virt="non-virtual"><scope>modm::platform::Gpio</scope><name>InputType</name></member>
+      <member refid="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09" prot="public" virt="non-virtual"><scope>modm::platform::Gpio</scope><name>OutputSpeed</name></member>
+      <member refid="structmodm_1_1platform_1_1_gpio_1ad68170d2e3d45721421375623c8f5a61" prot="public" virt="non-virtual"><scope>modm::platform::Gpio</scope><name>OutputType</name></member>
+      <member refid="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19b" prot="public" virt="non-virtual"><scope>modm::platform::Gpio</scope><name>Port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

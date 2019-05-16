@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="platform_2core_2atomic__lock_8hpp" kind="file" language="C++">
+    <compoundname>atomic_lock.hpp</compoundname>
+    <includedby refid="platform_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <invincdepgraph>
+      <node id="820">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+      <node id="819">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/core/atomic_lock.hpp</label>
+        <link refid="platform_2core_2atomic__lock_8hpp"/>
+        <childnode refid="820" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/core/atomic_lock.hpp"/>
+  </compounddef>
+</doxygen>

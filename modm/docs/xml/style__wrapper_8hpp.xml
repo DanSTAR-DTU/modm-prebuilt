@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="style__wrapper_8hpp" kind="file" language="C++">
+    <compoundname>style_wrapper.hpp</compoundname>
+    <includes refid="iodevice_8hpp" local="no">modm/io/iodevice.hpp</includes>
+    <includes refid="style_8hpp" local="yes">style.hpp</includes>
+    <includedby refid="logger_2logger_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp</includedby>
+    <incdepgraph>
+      <node id="1970">
+        <label>style.hpp</label>
+        <link refid="style_8hpp"/>
+        <childnode refid="1969" relation="include">
+        </childnode>
+        <childnode refid="1971" relation="include">
+        </childnode>
+      </node>
+      <node id="1971">
+        <label>style_impl.hpp</label>
+      </node>
+      <node id="1968">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style_wrapper.hpp</label>
+        <link refid="style__wrapper_8hpp"/>
+        <childnode refid="1969" relation="include">
+        </childnode>
+        <childnode refid="1970" relation="include">
+        </childnode>
+      </node>
+      <node id="1969">
+        <label>modm/io/iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1980">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data_impl_fp.hpp</label>
+        <link refid="bme280__data__impl__fp_8hpp"/>
+        <childnode refid="1978" relation="include">
+        </childnode>
+      </node>
+      <node id="1981">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data_impl_double.hpp</label>
+        <link refid="bme280__data__impl__double_8hpp"/>
+        <childnode refid="1978" relation="include">
+        </childnode>
+      </node>
+      <node id="1977">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug.hpp</label>
+        <link refid="debug_8hpp"/>
+      </node>
+      <node id="1974">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="1975" relation="include">
+        </childnode>
+        <childnode refid="1976" relation="include">
+        </childnode>
+        <childnode refid="1977" relation="include">
+        </childnode>
+      </node>
+      <node id="1978">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp</label>
+        <link refid="bme280__data_8hpp"/>
+        <childnode refid="1979" relation="include">
+        </childnode>
+      </node>
+      <node id="1973">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp</label>
+        <link refid="logger_2logger_8hpp"/>
+        <childnode refid="1974" relation="include">
+        </childnode>
+        <childnode refid="1978" relation="include">
+        </childnode>
+        <childnode refid="1980" relation="include">
+        </childnode>
+        <childnode refid="1981" relation="include">
+        </childnode>
+      </node>
+      <node id="1976">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/imp/std.hpp</label>
+        <link refid="std_8hpp"/>
+      </node>
+      <node id="1979">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
+        <link refid="bme280_8hpp"/>
+      </node>
+      <node id="1972">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style_wrapper.hpp</label>
+        <link refid="style__wrapper_8hpp"/>
+        <childnode refid="1973" relation="include">
+        </childnode>
+      </node>
+      <node id="1975">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/debug.hpp</label>
+        <link refid="debug_2debug_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1log_1_1_style_wrapper" prot="public">modm::log::StyleWrapper</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1log">modm::log</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style_wrapper.hpp"/>
+  </compounddef>
+</doxygen>

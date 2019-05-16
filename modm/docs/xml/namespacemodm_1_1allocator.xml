@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespacemodm_1_1allocator" kind="namespace" language="C++">
+    <compoundname>modm::allocator</compoundname>
+    <innerclass refid="classmodm_1_1allocator_1_1_allocator_base" prot="public">modm::allocator::AllocatorBase</innerclass>
+    <innerclass refid="classmodm_1_1allocator_1_1_block" prot="public">modm::allocator::Block</innerclass>
+    <innerclass refid="classmodm_1_1allocator_1_1_dynamic" prot="public">modm::allocator::Dynamic</innerclass>
+    <innerclass refid="classmodm_1_1allocator_1_1_static" prot="public">modm::allocator::Static</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" line="23" column="1"/>
+  </compounddef>
+</doxygen>

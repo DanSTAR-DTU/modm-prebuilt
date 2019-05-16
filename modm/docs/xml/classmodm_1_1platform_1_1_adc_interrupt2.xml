@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1platform_1_1_adc_interrupt2" kind="class" language="C++" prot="public">
+    <compoundname>modm::platform::AdcInterrupt2</compoundname>
+    <basecompoundref refid="classmodm_1_1platform_1_1_adc2" prot="public" virt="non-virtual">modm::platform::Adc2</basecompoundref>
+    <basecompoundref refid="classmodm_1_1_adc_interrupt" prot="public" virt="non-virtual">modm::AdcInterrupt</basecompoundref>
+    <includes refid="adc__interrupt__2_8hpp" local="no">modm/platform/adc/adc_interrupt_2.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_adc_interrupt2_1a8c7715f66f566e40cbb8254ead755547" prot="public" static="yes" mutable="no">
+        <type><ref refid="classmodm_1_1_adc_interrupt_1af82ca0cd5901c58c2ec7e9a63cef8803" kindref="member">Handler</ref></type>
+        <definition>Handler modm::platform::AdcInterrupt2::handler</definition>
+        <argsstring></argsstring>
+        <name>handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp" line="51" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_adc_interrupt2_1a58667643f5215fab227d08e78f5dc95e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::AdcInterrupt2::attachInterruptHandler</definition>
+        <argsstring>(Handler handler=modm::dummy)</argsstring>
+        <name>attachInterruptHandler</name>
+        <param>
+          <type><ref refid="classmodm_1_1_adc_interrupt_1af82ca0cd5901c58c2ec7e9a63cef8803" kindref="member">Handler</ref></type>
+          <declname>handler</declname>
+          <defval><ref refid="group__modm__utils_1gac9a2e3b1c445ec26b3a24543db1731dc" kindref="member">modm::dummy</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp" line="45" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ADC Interrupt module</para>
+<para>This class allows you to attach functions to the ADC Conversion Complete Interrupt via function pointers. Be aware however, that this implementation is slower and requires more resources than writing the function code directly into the interrupt service routines.</para>
+<para><simplesect kind="see"><para>AnalogSensors uses this implemenation.</para>
+</simplesect>
+<simplesect kind="author"><para>Niklas Hauser </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="53">
+        <label>modm::Adc</label>
+        <link refid="classmodm_1_1_adc"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>modm::AdcInterrupt</label>
+        <link refid="classmodm_1_1_adc_interrupt"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="51">
+        <label>modm::platform::AdcInterrupt2</label>
+        <link refid="classmodm_1_1platform_1_1_adc_interrupt2"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>modm::platform::Adc2</label>
+        <link refid="classmodm_1_1platform_1_1_adc2"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="58">
+        <label>modm::Adc</label>
+        <link refid="classmodm_1_1_adc"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>modm::AdcInterrupt</label>
+        <link refid="classmodm_1_1_adc_interrupt"/>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="56">
+        <label>modm::platform::AdcInterrupt2</label>
+        <link refid="classmodm_1_1platform_1_1_adc_interrupt2"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>modm::platform::Adc2</label>
+        <link refid="classmodm_1_1platform_1_1_adc2"/>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp" bodystart="41" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1platform_1_1_adc2_1ae74e3f16c86dfa2fb9952d71289328a6" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>acknowledgeInterruptFlags</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a64d28c5a5e7cd0c4ec2fe5f5d1ed80c5" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>addChannel</name></member>
+      <member refid="classmodm_1_1_peripheral_driver_1a5c336ff9889c347e7eadb810bf984ebd" prot="public" virt="non-virtual" ambiguityscope="modm::"><scope>modm::platform::AdcInterrupt2</scope><name>assertBaudrateInTolerance</name></member>
+      <member refid="classmodm_1_1_peripheral_driver_1a5c336ff9889c347e7eadb810bf984ebd" prot="public" virt="non-virtual" ambiguityscope="modm::AdcInterrupt::"><scope>modm::platform::AdcInterrupt2</scope><name>assertBaudrateInTolerance</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc_interrupt2_1a58667643f5215fab227d08e78f5dc95e" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>attachInterruptHandler</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a6384c6059297b71f0fe00025cd457e53" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>Channel</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a56ed2d96cf935566d49901b9d229e826" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>connect</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1adfd435229107ec644add6b9e637d9c71" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>disable</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1ab424c34bdcdf1ebae61ef5ec9dd22ffe" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>disableFreeRunningMode</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1ac2a069d5dc7e02b0ce9768681b66af7a" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>disableInterrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a967c0ace9607894283d5466b182cb977" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>disableTemperatureRefVMeasurement</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1ad450704ab2710456e402af7e7cb3d440" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>enableFreeRunningMode</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a90415bfa8fef9eb363a2f5f123b2d187" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>enableInterrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a68422c72dfcce0a48c69cd484b0cb152" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>enableInterruptVector</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a762f85374dac568c6dbdc1c68227ab2e" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>enableTemperatureRefVMeasurement</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a14f21a485817794732de5f08c86a0673" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>getChannel</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a7dd34fd42b6338fed37fe829c922960a" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>getInterruptFlags</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1aa11521d434d28078bcef20a1903ac1c2" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>getPinChannel</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a8419543c59df92a7842c7b6f97fdb6e5" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>getValue</name></member>
+      <member refid="classmodm_1_1_adc_interrupt_1af82ca0cd5901c58c2ec7e9a63cef8803" prot="protected" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>Handler</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc_interrupt2_1a8c7715f66f566e40cbb8254ead755547" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>handler</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a1d13827888d7b8049b4b641abdc3826b" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>initialize</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a32bf266a254638d524af3c17ad56172b" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>Interrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a79c222e4fc99e673caeecb755508b642" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>Interrupt_t</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a972943e8a1baa83bbbaf2d5d45f36a19" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>InterruptFlag</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1abc80c313e7c576320cd234d742729dda" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>InterruptFlag_t</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1ac2866b12fa93a195caf7802aca8df8b0" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>isConversionFinished</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1afee233f1d28e1cae7caf313c2550139a" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>readChannel</name></member>
+      <member refid="classmodm_1_1_adc_1a73bac09f02e8c10479f4d023c95f9570" prot="public" virt="non-virtual" ambiguityscope="modm::Adc::"><scope>modm::platform::AdcInterrupt2</scope><name>readChannel</name></member>
+      <member refid="classmodm_1_1_adc_1a73bac09f02e8c10479f4d023c95f9570" prot="public" virt="non-virtual" ambiguityscope="modm::AdcInterrupt::"><scope>modm::platform::AdcInterrupt2</scope><name>readChannel</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a0bcb350a9f2e85293404a235c5976ba3" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>Resolution</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1af9294d3d5ad853fbba64d8a74d6739da" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>SampleTime</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1ae6754ade5e0c02f154131cd2dce64710" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>setChannel</name></member>
+      <member refid="classmodm_1_1_adc_1a11367b26a7f631b73ef9fb3047b66240" prot="public" virt="non-virtual" ambiguityscope="modm::Adc::"><scope>modm::platform::AdcInterrupt2</scope><name>setChannel</name></member>
+      <member refid="classmodm_1_1_adc_1a11367b26a7f631b73ef9fb3047b66240" prot="public" virt="non-virtual" ambiguityscope="modm::AdcInterrupt::"><scope>modm::platform::AdcInterrupt2</scope><name>setChannel</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a46795b492e784c4ec20c2e9df89b6c6e" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>setLeftAdjustResult</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1ac139c18dcd4409a98ad31b4006518d54" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>setPinChannel</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1ae857eddb17b4051f42c066cbb904afba" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>setRightAdjustResult</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1a027826e1ac57da667a37c61de72b7156" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>setSampleTime</name></member>
+      <member refid="classmodm_1_1platform_1_1_adc2_1ab4ed47d4bba7bee1cbaa61db7c62bc99" prot="public" virt="non-virtual"><scope>modm::platform::AdcInterrupt2</scope><name>startConversion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

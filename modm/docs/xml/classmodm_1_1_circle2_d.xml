@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1_circle2_d" kind="class" language="C++" prot="public">
+    <compoundname>modm::Circle2D</compoundname>
+    <includes refid="circle__2d_8hpp" local="no">modm/math/geometry/circle_2d.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmodm_1_1_circle2_d_1a6303e0acd57756c853a8ee9a218b260e" prot="private" static="no">
+        <type><ref refid="structmodm_1_1_geometric_traits" kindref="compound">GeometricTraits</ref>&lt; T &gt;::WideType</type>
+        <definition>typedef GeometricTraits&lt;T&gt;::WideType modm::Circle2D&lt; T &gt;::WideType</definition>
+        <argsstring></argsstring>
+        <name>WideType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="43" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmodm_1_1_circle2_d_1a48c37167e15aaee72bfcd6e402ec79ed" prot="private" static="no">
+        <type><ref refid="structmodm_1_1_geometric_traits" kindref="compound">GeometricTraits</ref>&lt; T &gt;::FloatType</type>
+        <definition>typedef GeometricTraits&lt;T&gt;::FloatType modm::Circle2D&lt; T &gt;::FloatType</definition>
+        <argsstring></argsstring>
+        <name>FloatType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="44" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmodm_1_1_circle2_d_1ae77cd36b63c7ecaa66a419d2d3448cb9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; T, 2 &gt;</type>
+        <definition>Vector&lt;T, 2&gt; modm::Circle2D&lt; T &gt;::center</definition>
+        <argsstring></argsstring>
+        <name>center</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="96" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1_circle2_d_1a21e3554e0f3f6de68de85c59affcaa27" prot="protected" static="no" mutable="no">
+        <type>T</type>
+        <definition>T modm::Circle2D&lt; T &gt;::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="97" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmodm_1_1_circle2_d_1a1e46360ed224b3a5ba68f4f72b2a9ee1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Line2D&lt; T &gt;</definition>
+        <argsstring></argsstring>
+        <name>Line2D&lt; T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="97" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmodm_1_1_circle2_d_1ae40ed5af41f7bd4a9226e517ebd790d5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class LineSegment2D&lt; T &gt;</definition>
+        <argsstring></argsstring>
+        <name>LineSegment2D&lt; T &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="97" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodm_1_1_circle2_d_1a8435faece0803f236b9e14066a50795d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modm::Circle2D&lt; T &gt;::Circle2D</definition>
+        <argsstring>()</argsstring>
+        <name>Circle2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_circle2_d_1aa93415283a3a0983c08d291e772800db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modm::Circle2D&lt; T &gt;::Circle2D</definition>
+        <argsstring>(const Vector&lt; T, 2 &gt; &amp;center, T radius)</argsstring>
+        <name>Circle2D</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; T, 2 &gt; &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_circle2_d_1ade4049e1d0a0b7fc172b55384717bb6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; T, 2 &gt; &amp;</type>
+        <definition>const Vector&lt;T, 2&gt;&amp; modm::Circle2D&lt; T &gt;::getCenter</definition>
+        <argsstring>() const</argsstring>
+        <name>getCenter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_circle2_d_1aea68c3625a2946e79d34353fdc60fedf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void modm::Circle2D&lt; T &gt;::setCenter</definition>
+        <argsstring>(const Vector&lt; T, 2 &gt; &amp;point)</argsstring>
+        <name>setCenter</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; T, 2 &gt; &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_circle2_d_1ad6bd41cae5dd03d99ae8a15a6bd5c8a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T modm::Circle2D&lt; T &gt;::getRadius</definition>
+        <argsstring>() const</argsstring>
+        <name>getRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_circle2_d_1a5a79937a28dd48705c523066c99f88a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void modm::Circle2D&lt; T &gt;::setRadius</definition>
+        <argsstring>(T radius)</argsstring>
+        <name>setRadius</name>
+        <param>
+          <type>T</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_circle2_d_1aeb8ec0c54f12a98eacf3f42ddc0a52a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Circle2D&lt; T &gt;::intersects</definition>
+        <argsstring>(const Polygon2D&lt; T &gt; &amp;polygon) const</argsstring>
+        <name>intersects</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_polygon2_d" kindref="compound">Polygon2D</ref>&lt; T &gt; &amp;</type>
+          <declname>polygon</declname>
+        </param>
+        <briefdescription>
+<para>Check if a intersection exists. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_circle2_d_1acbc7442e9ea3d7e0d39d2e8f07b634fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Circle2D&lt; T &gt;::getIntersections</definition>
+        <argsstring>(const Circle2D &amp;other, PointSet2D&lt; T &gt; &amp;intersections) const</argsstring>
+        <name>getIntersections</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_circle2_d" kindref="compound">Circle2D</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classmodm_1_1_point_set2_d" kindref="compound">PointSet2D</ref>&lt; T &gt; &amp;</type>
+          <declname>intersections</declname>
+        </param>
+        <briefdescription>
+<para>Calculate intersection point(s) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other Circle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">intersections</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Intersection points</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="http://local.wasp.uwa.edu.au/~pbourke/geometry/2circle/">http://local.wasp.uwa.edu.au/~pbourke/geometry/2circle/</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_circle2_d_1a02acf757b4d27e9942bcc1c265db4b48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Circle2D&lt; T &gt;::getIntersections</definition>
+        <argsstring>(const Line2D&lt; T &gt; &amp;line, PointSet2D&lt; T &gt; &amp;intersections) const</argsstring>
+        <name>getIntersections</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_line2_d" kindref="compound">Line2D</ref>&lt; T &gt; &amp;</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type><ref refid="classmodm_1_1_point_set2_d" kindref="compound">PointSet2D</ref>&lt; T &gt; &amp;</type>
+          <declname>intersections</declname>
+        </param>
+        <briefdescription>
+<para>Calculate intersection point(s) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other line </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">intersections</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Intersection points</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>Line2D::intersect() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_circle2_d_1ad64f54931a43ce6bbe1ac9c558329199" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Circle2D&lt; T &gt;::getIntersections</definition>
+        <argsstring>(const LineSegment2D&lt; T &gt; &amp;line, PointSet2D&lt; T &gt; &amp;intersections) const</argsstring>
+        <name>getIntersections</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_line_segment2_d" kindref="compound">LineSegment2D</ref>&lt; T &gt; &amp;</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type><ref refid="classmodm_1_1_point_set2_d" kindref="compound">PointSet2D</ref>&lt; T &gt; &amp;</type>
+          <declname>intersections</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="92" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Circle. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Fabian Greif </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="175">
+        <label>T</label>
+      </node>
+      <node id="174">
+        <label>modm::Vector&lt; T, 2 &gt;</label>
+        <link refid="classmodm_1_1_vector_3_01_t_00_012_01_4"/>
+        <childnode refid="175" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+        </childnode>
+      </node>
+      <node id="173">
+        <label>modm::Circle2D&lt; T &gt;</label>
+        <link refid="classmodm_1_1_circle2_d"/>
+        <childnode refid="174" relation="usage">
+          <edgelabel>center</edgelabel>
+        </childnode>
+        <childnode refid="175" relation="usage">
+          <edgelabel>radius</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" bodystart="41" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1_circle2_d_1ae77cd36b63c7ecaa66a419d2d3448cb9" prot="protected" virt="non-virtual"><scope>modm::Circle2D</scope><name>center</name></member>
+      <member refid="classmodm_1_1_circle2_d_1a8435faece0803f236b9e14066a50795d" prot="public" virt="non-virtual"><scope>modm::Circle2D</scope><name>Circle2D</name></member>
+      <member refid="classmodm_1_1_circle2_d_1aa93415283a3a0983c08d291e772800db" prot="public" virt="non-virtual"><scope>modm::Circle2D</scope><name>Circle2D</name></member>
+      <member refid="classmodm_1_1_circle2_d_1a48c37167e15aaee72bfcd6e402ec79ed" prot="private" virt="non-virtual"><scope>modm::Circle2D</scope><name>FloatType</name></member>
+      <member refid="classmodm_1_1_circle2_d_1ade4049e1d0a0b7fc172b55384717bb6e" prot="public" virt="non-virtual"><scope>modm::Circle2D</scope><name>getCenter</name></member>
+      <member refid="classmodm_1_1_circle2_d_1acbc7442e9ea3d7e0d39d2e8f07b634fb" prot="public" virt="non-virtual"><scope>modm::Circle2D</scope><name>getIntersections</name></member>
+      <member refid="classmodm_1_1_circle2_d_1a02acf757b4d27e9942bcc1c265db4b48" prot="public" virt="non-virtual"><scope>modm::Circle2D</scope><name>getIntersections</name></member>
+      <member refid="classmodm_1_1_circle2_d_1ad64f54931a43ce6bbe1ac9c558329199" prot="public" virt="non-virtual"><scope>modm::Circle2D</scope><name>getIntersections</name></member>
+      <member refid="classmodm_1_1_circle2_d_1ad6bd41cae5dd03d99ae8a15a6bd5c8a5" prot="public" virt="non-virtual"><scope>modm::Circle2D</scope><name>getRadius</name></member>
+      <member refid="classmodm_1_1_circle2_d_1aeb8ec0c54f12a98eacf3f42ddc0a52a5" prot="public" virt="non-virtual"><scope>modm::Circle2D</scope><name>intersects</name></member>
+      <member refid="classmodm_1_1_circle2_d_1a1e46360ed224b3a5ba68f4f72b2a9ee1" prot="protected" virt="non-virtual"><scope>modm::Circle2D</scope><name>Line2D&lt; T &gt;</name></member>
+      <member refid="classmodm_1_1_circle2_d_1ae40ed5af41f7bd4a9226e517ebd790d5" prot="protected" virt="non-virtual"><scope>modm::Circle2D</scope><name>LineSegment2D&lt; T &gt;</name></member>
+      <member refid="classmodm_1_1_circle2_d_1a21e3554e0f3f6de68de85c59affcaa27" prot="protected" virt="non-virtual"><scope>modm::Circle2D</scope><name>radius</name></member>
+      <member refid="classmodm_1_1_circle2_d_1aea68c3625a2946e79d34353fdc60fedf" prot="public" virt="non-virtual"><scope>modm::Circle2D</scope><name>setCenter</name></member>
+      <member refid="classmodm_1_1_circle2_d_1a5a79937a28dd48705c523066c99f88a5" prot="public" virt="non-virtual"><scope>modm::Circle2D</scope><name>setRadius</name></member>
+      <member refid="classmodm_1_1_circle2_d_1a6303e0acd57756c853a8ee9a218b260e" prot="private" virt="non-virtual"><scope>modm::Circle2D</scope><name>WideType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

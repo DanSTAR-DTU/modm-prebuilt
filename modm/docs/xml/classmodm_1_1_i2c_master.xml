@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1_i2c_master" kind="class" language="C++" prot="public">
+    <compoundname>modm::I2cMaster</compoundname>
+    <basecompoundref refid="classmodm_1_1_peripheral_driver" prot="public" virt="non-virtual">modm::PeripheralDriver</basecompoundref>
+    <basecompoundref refid="structmodm_1_1_i2c" prot="public" virt="non-virtual">modm::I2c</basecompoundref>
+    <derivedcompoundref refid="classmodm_1_1_i2c_multiplexer_channel" prot="public" virt="non-virtual">modm::I2cMultiplexerChannel&lt; multiplexer, channel &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_i2c_master1" prot="public" virt="non-virtual">modm::platform::I2cMaster1</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_i2c_master2" prot="public" virt="non-virtual">modm::platform::I2cMaster2</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_i2c_master3" prot="public" virt="non-virtual">modm::platform::I2cMaster3</derivedcompoundref>
+    <includes refid="i2c__master_8hpp" local="no">modm/architecture/interface/i2c_master.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmodm_1_1_i2c_master_1aaeba2d490d4a099a1d45cd713106b3e8" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>Error</name>
+        <enumvalue id="classmodm_1_1_i2c_master_1aaeba2d490d4a099a1d45cd713106b3e8a70a47cae4eb221930f2663fd244369ea" prot="public">
+          <name>NoError</name>
+          <briefdescription>
+<para>No Error occurred. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1_i2c_master_1aaeba2d490d4a099a1d45cd713106b3e8ad1d43f321d5a6d263a887e033e3e1145" prot="public">
+          <name>SoftwareReset</name>
+          <briefdescription>
+<para>The master was reset in software. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1_i2c_master_1aaeba2d490d4a099a1d45cd713106b3e8a56f991230a68b28c915c9edf0a29e9eb" prot="public">
+          <name>AddressNack</name>
+          <briefdescription>
+<para>Address was transmitted and NACK received. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1_i2c_master_1aaeba2d490d4a099a1d45cd713106b3e8a2cfa78cc4ecdfe41a0ab44e8d53bc602" prot="public">
+          <name>DataNack</name>
+          <briefdescription>
+<para>Data was transmitted and NACK received. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1_i2c_master_1aaeba2d490d4a099a1d45cd713106b3e8a2dd6ed6c891cbb02a2919b02931d31a4" prot="public">
+          <name>ArbitrationLost</name>
+          <briefdescription>
+<para>Arbitration was lost during writing or reading. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1_i2c_master_1aaeba2d490d4a099a1d45cd713106b3e8ac61259eafa8417c3438d27e43dd087fb" prot="public">
+          <name>BusCondition</name>
+          <briefdescription>
+<para>Misplaced Start or Stop condition. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1_i2c_master_1aaeba2d490d4a099a1d45cd713106b3e8aa2575641a386e96d4981f9069a59dbfa" prot="public">
+          <name>BusBusy</name>
+          <briefdescription>
+<para>Bus is busy during Start condition. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1_i2c_master_1aaeba2d490d4a099a1d45cd713106b3e8a88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <briefdescription>
+<para>Unknown error condition. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Errors that can happen during master operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" bodystart="38" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="classmodm_1_1_i2c_master_1a51438a8241ababe94f9ca4b69b75d91c" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>PullUps</name>
+        <enumvalue id="classmodm_1_1_i2c_master_1a51438a8241ababe94f9ca4b69b75d91cab206a1b4ea1097761f78e8876f6da779" prot="public">
+          <name>External</name>
+          <briefdescription>
+<para>External pull-ups exists in SDA and SCL. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1_i2c_master_1a51438a8241ababe94f9ca4b69b75d91caafbf0897a5a83fdd873dfb032ec695d3" prot="public">
+          <name>Internal</name>
+          <briefdescription>
+<para>Use weak internal pull-ups on SDA and SCL. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" line="53" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" bodystart="51" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="classmodm_1_1_i2c_master_1a141efec8e032cdcd5c9766fbf0f1ddcb" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>ResetDevices</name>
+        <enumvalue id="classmodm_1_1_i2c_master_1a141efec8e032cdcd5c9766fbf0f1ddcba24e03e17ea30a9d76a0c19f0f6c16c7f" prot="public">
+          <name>NoReset</name>
+          <initializer>=       0</initializer>
+          <briefdescription>
+<para>Do not reset devices. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1_i2c_master_1a141efec8e032cdcd5c9766fbf0f1ddcbaaca8a1df3a15a21abda1cc6ca484bccc" prot="public">
+          <name>LowSpeed</name>
+          <initializer>=   10000</initializer>
+          <briefdescription>
+<para>Low-Speed datarate of 10kHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1_i2c_master_1a141efec8e032cdcd5c9766fbf0f1ddcbaeb6d8ae6f20283755b339c0dc273988b" prot="public">
+          <name>Standard</name>
+          <initializer>=  100000</initializer>
+          <briefdescription>
+<para>Standard datarate of 100kHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1_i2c_master_1a141efec8e032cdcd5c9766fbf0f1ddcbae16b5b7f26f54214445cbe38d72c2828" prot="public">
+          <name>Fast</name>
+          <initializer>=  400000</initializer>
+          <briefdescription>
+<para>Fast datarate of 400kHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" line="60" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" bodystart="58" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmodm_1_1_i2c_master_1ad1e8c614cc60a21ded60bd4cba60bf54" prot="public" static="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t modm::I2cMaster::TransactionBufferSize</definition>
+        <argsstring></argsstring>
+        <name>TransactionBufferSize</name>
+        <initializer>= 8</initializer>
+        <briefdescription>
+<para>Number of transactions which can be queued in this driver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" line="70" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmodm_1_1_i2c_master_1a691a55b27dd3cb0032f5f93b6381f66b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Signals</declname>
+            <defname>Signals</defname>
+          </param>
+          <param>
+            <type><ref refid="classmodm_1_1_i2c_master_1a141efec8e032cdcd5c9766fbf0f1ddcb" kindref="member">ResetDevices</ref></type>
+            <declname>reset</declname>
+            <defname>reset</defname>
+            <defval><ref refid="classmodm_1_1_i2c_master_1a141efec8e032cdcd5c9766fbf0f1ddcbaeb6d8ae6f20283755b339c0dc273988b" kindref="member">ResetDevices::Standard</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void modm::I2cMaster::connect</definition>
+        <argsstring>(PullUps pullups=PullUps::External)</argsstring>
+        <name>connect</name>
+        <param>
+          <type><ref refid="classmodm_1_1_i2c_master_1a51438a8241ababe94f9ca4b69b75d91c" kindref="member">PullUps</ref></type>
+          <declname>pullups</declname>
+          <defval><ref refid="classmodm_1_1_i2c_master_1a51438a8241ababe94f9ca4b69b75d91cab206a1b4ea1097761f78e8876f6da779" kindref="member">PullUps::External</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configures the Scl and Sda signals and connects them.</para>
+<para>This configures the Scl and Sda signals as open-drain outputs with optional weak internal pullups and optionally resets all slave devices on the bus.</para>
+<para><simplesect kind="warning"><para>Using weak internal pullups is not recommended and will require a slow baudrate. You must use external pullups for a reliable bus.</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Signals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One Scl and one Sda signal are required and can be passed out-of-order. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Choose a speed to reset the I2C devices with. <ref refid="classmodm_1_1_can" kindref="compound">Can</ref> be disabled with <computeroutput><ref refid="classmodm_1_1_i2c_master_1a141efec8e032cdcd5c9766fbf0f1ddcba24e03e17ea30a9d76a0c19f0f6c16c7f" kindref="member">ResetDevices::NoReset</ref></computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pullups</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Use external or weak internal pullups. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_i2c_master_1a4c4273e301d9bc57ba27bb76dc6d7ca5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class SystemClock</type>
+          </param>
+          <param>
+            <type><ref refid="group__modm__math__units_1ga30af1fac499efa181bc4708e24c577d1" kindref="member">baudrate_t</ref></type>
+            <declname>baudrate</declname>
+            <defname>baudrate</defname>
+            <defval>100_kBd</defval>
+          </param>
+          <param>
+            <type><ref refid="group__modm__math__units_1ga4f017ee3fdf26cb780b0df55356f031c" kindref="member">percent_t</ref></type>
+            <declname>tolerance</declname>
+            <defname>tolerance</defname>
+            <defval>5_pct</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void modm::I2cMaster::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the hardware and sets the datarate.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>SystemClock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the currently active system clock </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baudrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the desired baudrate in Hz </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tolerance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the allowed absolute tolerance for the resulting baudrate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_i2c_master_1adc07ebab3b6e297c40ba4304068ae487" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::I2cMaster::start</definition>
+        <argsstring>(I2cTransaction *transaction, ConfigurationHandler handler=nullptr)</argsstring>
+        <name>start</name>
+        <param>
+          <type><ref refid="classmodm_1_1_i2c_transaction" kindref="compound">I2cTransaction</ref> *</type>
+          <declname>transaction</declname>
+        </param>
+        <param>
+          <type><ref refid="structmodm_1_1_i2c_1acc3232e086891a4564399117a4e0e450" kindref="member">ConfigurationHandler</ref></type>
+          <declname>handler</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Requests transaction attachment.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transaction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object that inherits from the <ref refid="classmodm_1_1_i2c_transaction" kindref="compound">I2cTransaction</ref> class. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>configuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function which configures the master for this transaction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Caller gains control if <computeroutput>true</computeroutput>. Call has no effect if <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_i2c_master_1a03eda724e9d299c25d66e3724bbef896" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::I2cMaster::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Perform a software reset of the driver in case of an error and detach the transaction object.</para>
+<para>It is strongly recommended to reset the slave devices on the bus after a master reset. You can use the <ref refid="classmodm_1_1_i2c_master_1a691a55b27dd3cb0032f5f93b6381f66b" kindref="member">connect()</ref> method for that. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_i2c_master_1af26642b59383fce84ceac28b85cee4c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_i2c_master_1aaeba2d490d4a099a1d45cd713106b3e8" kindref="member">Error</ref></type>
+        <definition>static Error modm::I2cMaster::getErrorState</definition>
+        <argsstring>()</argsstring>
+        <name>getErrorState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check the error state of the driver.</para>
+<para>The error states are hardware and implementation specific. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" line="135" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Interface of a I2C master.</para>
+<para>Performing transfers in background allows the use of DMA etc. and enables the program to do other things while the operation is going on.</para>
+<para><simplesect kind="author"><para>Georgi Grinshpun </para>
+</simplesect>
+<simplesect kind="author"><para>Niklas Hauser </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1257">
+        <label>modm::platform::I2cMaster1</label>
+        <link refid="classmodm_1_1platform_1_1_i2c_master1"/>
+        <childnode refid="1253" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1258">
+        <label>modm::platform::I2cMaster2</label>
+        <link refid="classmodm_1_1platform_1_1_i2c_master2"/>
+        <childnode refid="1253" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1259">
+        <label>modm::platform::I2cMaster3</label>
+        <link refid="classmodm_1_1platform_1_1_i2c_master3"/>
+        <childnode refid="1253" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1255">
+        <label>modm::I2c</label>
+        <link refid="structmodm_1_1_i2c"/>
+      </node>
+      <node id="1253">
+        <label>modm::I2cMaster</label>
+        <link refid="classmodm_1_1_i2c_master"/>
+        <childnode refid="1254" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1255" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1254">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="1256">
+        <label>modm::I2cMultiplexerChannel&lt; multiplexer, channel &gt;</label>
+        <link refid="classmodm_1_1_i2c_multiplexer_channel"/>
+        <childnode refid="1253" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1262">
+        <label>modm::I2c</label>
+        <link refid="structmodm_1_1_i2c"/>
+      </node>
+      <node id="1260">
+        <label>modm::I2cMaster</label>
+        <link refid="classmodm_1_1_i2c_master"/>
+        <childnode refid="1261" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1262" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1261">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" line="35" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp" bodystart="34" bodyend="137"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1_peripheral_driver_1a5c336ff9889c347e7eadb810bf984ebd" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>assertBaudrateInTolerance</name></member>
+      <member refid="structmodm_1_1_i2c_1acc3232e086891a4564399117a4e0e450" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>ConfigurationHandler</name></member>
+      <member refid="classmodm_1_1_i2c_master_1a691a55b27dd3cb0032f5f93b6381f66b" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>connect</name></member>
+      <member refid="structmodm_1_1_i2c_1a0406997126d064926cdb512911a17dcd" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>DetachCause</name></member>
+      <member refid="classmodm_1_1_i2c_master_1aaeba2d490d4a099a1d45cd713106b3e8" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>Error</name></member>
+      <member refid="classmodm_1_1_i2c_master_1af26642b59383fce84ceac28b85cee4c0" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>getErrorState</name></member>
+      <member refid="classmodm_1_1_i2c_master_1a4c4273e301d9bc57ba27bb76dc6d7ca5" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>initialize</name></member>
+      <member refid="structmodm_1_1_i2c_1a768a0860e730f40db13d750648eb42ad" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>Operation</name></member>
+      <member refid="structmodm_1_1_i2c_1a9b3a80feb3a8f179706ee1d5afe8bb31" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>OperationAfterRead</name></member>
+      <member refid="structmodm_1_1_i2c_1ae92dc2a408c98192b77d0702fd18350d" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>OperationAfterStart</name></member>
+      <member refid="structmodm_1_1_i2c_1aec4012822851f4abbe0ed0dc03c24cbb" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>OperationAfterWrite</name></member>
+      <member refid="classmodm_1_1_i2c_master_1a51438a8241ababe94f9ca4b69b75d91c" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>PullUps</name></member>
+      <member refid="structmodm_1_1_i2c_1af314fb0ec2e32a25c17cf9f0a54447ee" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>Read</name></member>
+      <member refid="classmodm_1_1_i2c_master_1a03eda724e9d299c25d66e3724bbef896" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>reset</name></member>
+      <member refid="classmodm_1_1_i2c_master_1a141efec8e032cdcd5c9766fbf0f1ddcb" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>ResetDevices</name></member>
+      <member refid="structmodm_1_1_i2c_1a1855002ad6a0992e32db4f3ebf0432da" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>resetDevices</name></member>
+      <member refid="classmodm_1_1_i2c_master_1adc07ebab3b6e297c40ba4304068ae487" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>start</name></member>
+      <member refid="classmodm_1_1_i2c_master_1ad1e8c614cc60a21ded60bd4cba60bf54" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>TransactionBufferSize</name></member>
+      <member refid="structmodm_1_1_i2c_1a0ba607aa36d2c6c1e5f3ddd9a969c713" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>TransactionState</name></member>
+      <member refid="structmodm_1_1_i2c_1a1f77408aecf63279f7c085d8c3692681" prot="public" virt="non-virtual"><scope>modm::I2cMaster</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

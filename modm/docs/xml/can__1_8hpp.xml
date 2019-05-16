@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="can__1_8hpp" kind="file" language="C++">
+    <compoundname>can_1.hpp</compoundname>
+    <includes refid="can_8hpp" local="no">modm/architecture/interface/can.hpp</includes>
+    <includes refid="connector_8hpp" local="no">modm/platform/gpio/connector.hpp</includes>
+    <includes refid="device_8hpp" local="yes">../device.hpp</includes>
+    <includes refid="can__bit__timings_8hpp" local="yes">can_bit_timings.hpp</includes>
+    <includes refid="error__code_8hpp" local="yes">error_code.hpp</includes>
+    <includes refid="can__filter_8hpp" local="yes">can_filter.hpp</includes>
+    <includedby refid="platform_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <incdepgraph>
+      <node id="4298">
+        <label>stdarg.h</label>
+      </node>
+      <node id="4319">
+        <label>limits</label>
+      </node>
+      <node id="4305">
+        <label>../device.hpp</label>
+        <link refid="device_8hpp"/>
+        <childnode refid="4290" relation="include">
+        </childnode>
+        <childnode refid="4294" relation="include">
+        </childnode>
+        <childnode refid="4306" relation="include">
+        </childnode>
+        <childnode refid="4307" relation="include">
+        </childnode>
+      </node>
+      <node id="4320">
+        <label>error_code.hpp</label>
+        <link refid="error__code_8hpp"/>
+      </node>
+      <node id="4307">
+        <label>system_stm32f4xx.h</label>
+      </node>
+      <node id="4313">
+        <label>unused.hpp</label>
+        <link refid="unused_8hpp"/>
+        <childnode refid="4304" relation="include">
+        </childnode>
+        <childnode refid="4308" relation="include">
+        </childnode>
+      </node>
+      <node id="4318">
+        <label>cstdint</label>
+      </node>
+      <node id="4316">
+        <label>modm/processing/timer/timestamp.hpp</label>
+        <link refid="timestamp_8hpp"/>
+        <childnode refid="4290" relation="include">
+        </childnode>
+        <childnode refid="4297" relation="include">
+        </childnode>
+        <childnode refid="4317" relation="include">
+        </childnode>
+      </node>
+      <node id="4290">
+        <label>stdint.h</label>
+      </node>
+      <node id="4304">
+        <label>base.hpp</label>
+        <link refid="base_8hpp"/>
+        <childnode refid="4305" relation="include">
+        </childnode>
+        <childnode refid="4308" relation="include">
+        </childnode>
+        <childnode refid="4309" relation="include">
+        </childnode>
+        <childnode refid="4311" relation="include">
+        </childnode>
+      </node>
+      <node id="4287">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</label>
+        <link refid="can__1_8hpp"/>
+        <childnode refid="4288" relation="include">
+        </childnode>
+        <childnode refid="4303" relation="include">
+        </childnode>
+        <childnode refid="4305" relation="include">
+        </childnode>
+        <childnode refid="4314" relation="include">
+        </childnode>
+        <childnode refid="4320" relation="include">
+        </childnode>
+        <childnode refid="4321" relation="include">
+        </childnode>
+      </node>
+      <node id="4310">
+        <label>cmath</label>
+      </node>
+      <node id="4308">
+        <label>modm/architecture/interface/gpio.hpp</label>
+        <link refid="gpio_8hpp"/>
+        <childnode refid="4290" relation="include">
+        </childnode>
+        <childnode refid="4294" relation="include">
+        </childnode>
+      </node>
+      <node id="4312">
+        <label>connector_detail.hpp</label>
+        <link refid="connector__detail_8hpp"/>
+        <childnode refid="4313" relation="include">
+        </childnode>
+        <childnode refid="4300" relation="include">
+        </childnode>
+      </node>
+      <node id="4288">
+        <label>modm/architecture/interface/can.hpp</label>
+        <link refid="can_8hpp"/>
+        <childnode refid="4289" relation="include">
+        </childnode>
+        <childnode refid="4296" relation="include">
+        </childnode>
+      </node>
+      <node id="4294">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="4295" relation="include">
+        </childnode>
+      </node>
+      <node id="4311">
+        <label>modm/platform/core/peripherals.hpp</label>
+        <link refid="peripherals_8hpp"/>
+      </node>
+      <node id="4303">
+        <label>modm/platform/gpio/connector.hpp</label>
+        <link refid="connector_8hpp"/>
+        <childnode refid="4304" relation="include">
+        </childnode>
+        <childnode refid="4312" relation="include">
+        </childnode>
+      </node>
+      <node id="4314">
+        <label>can_bit_timings.hpp</label>
+        <link refid="can__bit__timings_8hpp"/>
+        <childnode refid="4315" relation="include">
+        </childnode>
+        <childnode refid="4293" relation="include">
+        </childnode>
+        <childnode refid="4310" relation="include">
+        </childnode>
+      </node>
+      <node id="4315">
+        <label>modm/architecture/interface/clock.hpp</label>
+        <link refid="clock_8hpp"/>
+        <childnode refid="4294" relation="include">
+        </childnode>
+        <childnode refid="4316" relation="include">
+        </childnode>
+      </node>
+      <node id="4293">
+        <label>modm/math/units.hpp</label>
+        <link refid="units_8hpp"/>
+        <childnode refid="4290" relation="include">
+        </childnode>
+        <childnode refid="4294" relation="include">
+        </childnode>
+      </node>
+      <node id="4289">
+        <label>modm/architecture/interface/peripheral.hpp</label>
+        <link refid="peripheral_8hpp"/>
+        <childnode refid="4290" relation="include">
+        </childnode>
+        <childnode refid="4291" relation="include">
+        </childnode>
+        <childnode refid="4292" relation="include">
+        </childnode>
+        <childnode refid="4293" relation="include">
+        </childnode>
+      </node>
+      <node id="4291">
+        <label>cstddef</label>
+      </node>
+      <node id="4295">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="4302">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="4290" relation="include">
+        </childnode>
+        <childnode refid="4301" relation="include">
+        </childnode>
+      </node>
+      <node id="4309">
+        <label>modm/math/utils/bit_operation.hpp</label>
+        <link refid="bit__operation_8hpp"/>
+        <childnode refid="4291" relation="include">
+        </childnode>
+        <childnode refid="4310" relation="include">
+        </childnode>
+        <childnode refid="4290" relation="include">
+        </childnode>
+        <childnode refid="4295" relation="include">
+        </childnode>
+        <childnode refid="4294" relation="include">
+        </childnode>
+      </node>
+      <node id="4306">
+        <label>stm32f446xx.h</label>
+      </node>
+      <node id="4300">
+        <label>type_traits</label>
+      </node>
+      <node id="4301">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
+      </node>
+      <node id="4297">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="4291" relation="include">
+        </childnode>
+        <childnode refid="4294" relation="include">
+        </childnode>
+        <childnode refid="4298" relation="include">
+        </childnode>
+        <childnode refid="4299" relation="include">
+        </childnode>
+        <childnode refid="4300" relation="include">
+        </childnode>
+        <childnode refid="4301" relation="include">
+        </childnode>
+        <childnode refid="4302" relation="include">
+        </childnode>
+      </node>
+      <node id="4296">
+        <label>can_message.hpp</label>
+        <link refid="can__message_8hpp"/>
+        <childnode refid="4290" relation="include">
+        </childnode>
+        <childnode refid="4297" relation="include">
+        </childnode>
+        <childnode refid="4294" relation="include">
+        </childnode>
+      </node>
+      <node id="4321">
+        <label>can_filter.hpp</label>
+        <link refid="can__filter_8hpp"/>
+        <childnode refid="4288" relation="include">
+        </childnode>
+        <childnode refid="4305" relation="include">
+        </childnode>
+      </node>
+      <node id="4317">
+        <label>modm/math/utils/arithmetic_traits.hpp</label>
+        <link refid="arithmetic__traits_8hpp"/>
+        <childnode refid="4318" relation="include">
+        </childnode>
+        <childnode refid="4319" relation="include">
+        </childnode>
+        <childnode refid="4300" relation="include">
+        </childnode>
+        <childnode refid="4310" relation="include">
+        </childnode>
+      </node>
+      <node id="4292">
+        <label>modm/math/tolerance.hpp</label>
+        <link refid="tolerance_8hpp"/>
+        <childnode refid="4290" relation="include">
+        </childnode>
+        <childnode refid="4293" relation="include">
+        </childnode>
+      </node>
+      <node id="4299">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4322">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</label>
+        <link refid="can__1_8hpp"/>
+        <childnode refid="4323" relation="include">
+        </childnode>
+      </node>
+      <node id="4323">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1platform_1_1_can1" prot="public">modm::platform::Can1</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1platform">modm::platform</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1platform_1_1_timer6" kind="class" language="C++" prot="public">
+    <compoundname>modm::platform::Timer6</compoundname>
+    <basecompoundref refid="classmodm_1_1platform_1_1_basic_timer" prot="public" virt="non-virtual">modm::platform::BasicTimer</basecompoundref>
+    <includes refid="timer__6_8hpp" local="no">modm/platform/timer/timer_6.hpp</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1a353aa8911f5ff823eafbdcdbf86c001b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>template&lt; <ref refid="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55" kindref="member">Peripheral</ref> _ &gt; class...</type>
+            <declname>Signals</declname>
+            <defname>Signals</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::connect</definition>
+        <argsstring>()</argsstring>
+        <name>connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="59" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="59" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1aa37a1c4b88266e545ded33a4ed1212ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::enable</definition>
+        <argsstring>()</argsstring>
+        <name>enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1a700b9957e78436345fabfe3e3d492d44" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::disable</definition>
+        <argsstring>()</argsstring>
+        <name>disable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1a130b6ed5e741458d2ee6bda238db1102" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::pause</definition>
+        <argsstring>()</argsstring>
+        <name>pause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="72" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1afefe8960f864a5d0b2da3796d86847e5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="78" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1a4e79b0b925b86ecf7a81c921c5d86e18" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::setMode</definition>
+        <argsstring>(Mode mode)</argsstring>
+        <name>setMode</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_basic_timer_1ae79609753399533b77903c3c42ff65a2" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1aef355d99fd8f27a26c498a5996d1446a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::setPrescaler</definition>
+        <argsstring>(uint16_t prescaler)</argsstring>
+        <name>setPrescaler</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>prescaler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="87" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1ab761448576f1654b87bba2034041ff2e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::setOverflow</definition>
+        <argsstring>(uint16_t overflow)</argsstring>
+        <name>setOverflow</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>overflow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="95" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1a60f285408f7196d60099492f4571a944" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class SystemClock</type>
+          </param>
+        </templateparamlist>
+        <type>uint16_t</type>
+        <definition>static uint16_t modm::platform::Timer6::setPeriod</definition>
+        <argsstring>(uint32_t microseconds, bool autoApply=true)</argsstring>
+        <name>setPeriod</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>microseconds</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>autoApply</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="102" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="102" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1ae093dced320bdfa90211ff8e326b153e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::applyAndReset</definition>
+        <argsstring>()</argsstring>
+        <name>applyAndReset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="124" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="124" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1ac95fcc3ea22137b6352676bac64995e9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>static uint16_t modm::platform::Timer6::getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="131" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1a5154cd2ba6a06c33b9c6ba16ad80c011" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::setValue</definition>
+        <argsstring>(uint16_t value)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="137" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1a381859fd81b8cf85394b3d07ce587472" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::enableInterruptVector</definition>
+        <argsstring>(bool enable, uint32_t priority)</argsstring>
+        <name>enableInterruptVector</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1a0b0b0b87acdb051cb5029fb016c0e632" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::enableInterrupt</definition>
+        <argsstring>(Interrupt_t interrupt)</argsstring>
+        <name>enableInterrupt</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_basic_timer_1aa15a59c3a874fbb1f75e07a4ad7d7c1b" kindref="member">Interrupt_t</ref></type>
+          <declname>interrupt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="146" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1a3e2b663c0e2d710472658b0d0da4030c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::disableInterrupt</definition>
+        <argsstring>(Interrupt_t interrupt)</argsstring>
+        <name>disableInterrupt</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_basic_timer_1aa15a59c3a874fbb1f75e07a4ad7d7c1b" kindref="member">Interrupt_t</ref></type>
+          <declname>interrupt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="152" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1a297d2eef612235e65cc5d5c73a992774" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmodm_1_1platform_1_1_basic_timer_1a14819cdd8cd6f7f2a8696f42606cd8a9" kindref="member">InterruptFlag_t</ref></type>
+        <definition>static InterruptFlag_t modm::platform::Timer6::getInterruptFlags</definition>
+        <argsstring>()</argsstring>
+        <name>getInterruptFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="158" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_timer6_1ac221d7e100f82df7bb56627a57f1d2ad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::Timer6::acknowledgeInterruptFlags</definition>
+        <argsstring>(InterruptFlag_t interrupt)</argsstring>
+        <name>acknowledgeInterruptFlags</name>
+        <param>
+          <type><ref refid="classmodm_1_1platform_1_1_basic_timer_1a14819cdd8cd6f7f2a8696f42606cd8a9" kindref="member">InterruptFlag_t</ref></type>
+          <declname>interrupt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="164" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="164" bodyend="169"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Basic Timer 6. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Interrupt handler: <programlisting><codeline><highlight class="normal">MODM_ISR(TIM6)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Timer6::resetInterruptFlags(Timer6::FLAG_UPDATE);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>For the STM32F2xx and STM32F4xx: <programlisting><codeline><highlight class="normal">MODM_ISR(TIM6_DAC)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Timer6::resetInterruptFlags(Timer6::FLAG_UPDATE);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="author"><para>Fabian Greif </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1677">
+        <label>modm::platform::BasicTimer</label>
+        <link refid="classmodm_1_1platform_1_1_basic_timer"/>
+      </node>
+      <node id="1676">
+        <label>modm::platform::Timer6</label>
+        <link refid="classmodm_1_1platform_1_1_timer6"/>
+        <childnode refid="1677" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1679">
+        <label>modm::platform::BasicTimer</label>
+        <link refid="classmodm_1_1platform_1_1_basic_timer"/>
+      </node>
+      <node id="1678">
+        <label>modm::platform::Timer6</label>
+        <link refid="classmodm_1_1platform_1_1_timer6"/>
+        <childnode refid="1679" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" line="55" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp" bodystart="54" bodyend="170"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1platform_1_1_timer6_1ac221d7e100f82df7bb56627a57f1d2ad" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>acknowledgeInterruptFlags</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1ae093dced320bdfa90211ff8e326b153e" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>applyAndReset</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1a353aa8911f5ff823eafbdcdbf86c001b" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>connect</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1a700b9957e78436345fabfe3e3d492d44" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>disable</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1a3e2b663c0e2d710472658b0d0da4030c" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>disableInterrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1aa37a1c4b88266e545ded33a4ed1212ed" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>enable</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1a0b0b0b87acdb051cb5029fb016c0e632" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>enableInterrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1a381859fd81b8cf85394b3d07ce587472" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>enableInterruptVector</name></member>
+      <member refid="classmodm_1_1platform_1_1_basic_timer_1a7137a7e00d411c85285db50c5cd7b9b4" prot="public" virt="non-virtual" ambiguityscope="modm::platform::BasicTimer::"><scope>modm::platform::Timer6</scope><name>enableInterruptVector</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1a297d2eef612235e65cc5d5c73a992774" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>getInterruptFlags</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1ac95fcc3ea22137b6352676bac64995e9" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>getValue</name></member>
+      <member refid="classmodm_1_1platform_1_1_basic_timer_1a6ab330516e8221330ec2db8319992b15" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>Interrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_basic_timer_1aa15a59c3a874fbb1f75e07a4ad7d7c1b" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>Interrupt_t</name></member>
+      <member refid="classmodm_1_1platform_1_1_basic_timer_1a77c851e009c1a0239dabf9f3451766a2" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>InterruptFlag</name></member>
+      <member refid="classmodm_1_1platform_1_1_basic_timer_1a14819cdd8cd6f7f2a8696f42606cd8a9" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>InterruptFlag_t</name></member>
+      <member refid="classmodm_1_1platform_1_1_basic_timer_1ae79609753399533b77903c3c42ff65a2" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>Mode</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1a130b6ed5e741458d2ee6bda238db1102" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>pause</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1a4e79b0b925b86ecf7a81c921c5d86e18" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>setMode</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1ab761448576f1654b87bba2034041ff2e" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>setOverflow</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1a60f285408f7196d60099492f4571a944" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>setPeriod</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1aef355d99fd8f27a26c498a5996d1446a" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>setPrescaler</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1a5154cd2ba6a06c33b9c6ba16ad80c011" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>setValue</name></member>
+      <member refid="classmodm_1_1platform_1_1_timer6_1afefe8960f864a5d0b2da3796d86847e5" prot="public" virt="non-virtual"><scope>modm::platform::Timer6</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

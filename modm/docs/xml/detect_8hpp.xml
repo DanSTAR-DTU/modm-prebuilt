@@ -1,0 +1,2470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="detect_8hpp" kind="file" language="C++">
+    <compoundname>detect.hpp</compoundname>
+    <includedby refid="register_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp</includedby>
+    <includedby refid="architecture_2utils_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/utils.hpp</includedby>
+    <includedby refid="bit__operation_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp</includedby>
+    <includedby refid="endianness_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp</includedby>
+    <invincdepgraph>
+      <node id="263">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_3.hpp</label>
+        <link refid="spi__hal__3_8hpp"/>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="368">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B3.hpp</label>
+        <link refid="gpio___b3_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="337">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp</label>
+        <link refid="i2c__master__3_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="447">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp</label>
+        <link refid="semaphore_8hpp"/>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp</label>
+        <link refid="uart__base_8hpp"/>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_2.hpp</label>
+        <link refid="uart__hal__2_8hpp"/>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic.hpp</label>
+        <link refid="atomic_8hpp"/>
+      </node>
+      <node id="281">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_7.hpp</label>
+        <link refid="timer__7_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="417">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp</label>
+        <link refid="polygon__2d_8hpp"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="387">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C6.hpp</label>
+        <link refid="gpio___c6_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp</label>
+        <link refid="i2c__multiplexer_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="441">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/device.hpp</label>
+        <link refid="device_8hpp"/>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="344" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+      </node>
+      <node id="369">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B4.hpp</label>
+        <link refid="gpio___b4_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</label>
+        <link refid="can__2_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="438">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils.hpp</label>
+        <link refid="math_2utils_8hpp"/>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_3.hpp</label>
+        <link refid="uart__hal__3_8hpp"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="425">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp</label>
+        <link refid="matrix_8hpp"/>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp</label>
+        <link refid="timer__6_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A0.hpp</label>
+        <link refid="gpio___a0_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="362">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B10.hpp</label>
+        <link refid="gpio___b10_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="388">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C7.hpp</label>
+        <link refid="gpio___c7_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp</label>
+        <link refid="spi__master__3_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="370">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B5.hpp</label>
+        <link refid="gpio___b5_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="341">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/unused.hpp</label>
+        <link refid="unused_8hpp"/>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="255">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp</label>
+        <link refid="adc__interrupt__2_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="423">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp</label>
+        <link refid="location__2d_8hpp"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/software_port.hpp</label>
+        <link refid="software__port_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_9.hpp</label>
+        <link refid="timer__9_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A1.hpp</label>
+        <link refid="gpio___a1_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="364">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B13.hpp</label>
+        <link refid="gpio___b13_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="407">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data_impl_fp.hpp</label>
+        <link refid="bme280__data__impl__fp_8hpp"/>
+        <childnode refid="406" relation="include">
+        </childnode>
+      </node>
+      <node id="389">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C8.hpp</label>
+        <link refid="gpio___c8_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/core/heap_table.hpp</label>
+        <link refid="heap__table_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp</label>
+        <link refid="timestamp_8hpp"/>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="262">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_2.hpp</label>
+        <link refid="spi__master__2_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_3.hpp</label>
+        <link refid="adc__interrupt__3_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_1.hpp</label>
+        <link refid="uart__hal__1_8hpp"/>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/lagrange.hpp</label>
+        <link refid="lagrange_8hpp"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_8.hpp</label>
+        <link refid="timer__8_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp</label>
+        <link refid="gpio___a2_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B12.hpp</label>
+        <link refid="gpio___b12_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="390">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp</label>
+        <link refid="gpio___c9_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="339">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp</label>
+        <link refid="base_8hpp"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="344" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="408">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data_impl_double.hpp</label>
+        <link refid="bme280__data__impl__double_8hpp"/>
+        <childnode refid="406" relation="include">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</label>
+        <link refid="can__1_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="405">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug.hpp</label>
+        <link refid="debug_8hpp"/>
+      </node>
+      <node id="313">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing.hpp</label>
+        <link refid="processing_8hpp"/>
+      </node>
+      <node id="266">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp</label>
+        <link refid="general__purpose__base_8hpp"/>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp</label>
+        <link refid="vector_8hpp"/>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A3.hpp</label>
+        <link refid="gpio___a3_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/macros.hpp</label>
+        <link refid="resumable_2macros_8hpp"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="402">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="403" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+      </node>
+      <node id="366">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B15.hpp</label>
+        <link refid="gpio___b15_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="338">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp</label>
+        <link refid="i2c__transaction_8hpp"/>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture.hpp</label>
+        <link refid="architecture_8hpp"/>
+      </node>
+      <node id="398">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/one_wire.hpp</label>
+        <link refid="one__wire_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/adc.hpp</label>
+        <link refid="adc_8hpp"/>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp</label>
+        <link refid="uart__1_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="445">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/protothread.hpp</label>
+        <link refid="protothread_2protothread_8hpp"/>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="354">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A4.hpp</label>
+        <link refid="gpio___a4_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B14.hpp</label>
+        <link refid="gpio___b14_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/queue.hpp</label>
+        <link refid="architecture_2driver_2atomic_2queue_8hpp"/>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_1.hpp</label>
+        <link refid="spi__hal__1_8hpp"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp</label>
+        <link refid="bme280__data_8hpp"/>
+        <childnode refid="251" relation="include">
+        </childnode>
+      </node>
+      <node id="355">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A5.hpp</label>
+        <link refid="gpio___a5_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp</label>
+        <link refid="uart__baudrate_8hpp"/>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_device.hpp</label>
+        <link refid="i2c__device_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_3.hpp</label>
+        <link refid="uart__3_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="401">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp</label>
+        <link refid="logger_2logger_8hpp"/>
+        <childnode refid="402" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="407" relation="include">
+        </childnode>
+        <childnode refid="408" relation="include">
+        </childnode>
+      </node>
+      <node id="332">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/gpio.hpp</label>
+        <link refid="gpio_8hpp"/>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="396" relation="include">
+        </childnode>
+      </node>
+      <node id="371">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B6.hpp</label>
+        <link refid="gpio___b6_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp</label>
+        <link refid="memory_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp</label>
+        <link refid="vector4_8hpp"/>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
+        <link refid="interface_8hpp"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor_flash.hpp</label>
+        <link refid="accessor__flash_8hpp"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/connector_detail.hpp</label>
+        <link refid="connector__detail_8hpp"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_D2.hpp</label>
+        <link refid="gpio___d2_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_2.hpp</label>
+        <link refid="uart__2_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp</label>
+        <link refid="spi__base_8hpp"/>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="392">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_H0.hpp</label>
+        <link refid="gpio___h0_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="252">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp</label>
+        <link refid="adc__1_8hpp"/>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp</label>
+        <link refid="resumable_2resumable_8hpp"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="372">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B7.hpp</label>
+        <link refid="gpio___b7_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="399">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/smart_pointer.hpp</label>
+        <link refid="smart__pointer_8hpp"/>
+        <childnode refid="400" relation="include">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.h</label>
+        <link refid="assert_8h"/>
+      </node>
+      <node id="253">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp</label>
+        <link refid="adc__interrupt__1_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/bitbang_spi_master.hpp</label>
+        <link refid="bitbang__spi__master_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_5.hpp</label>
+        <link refid="uart__5_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="322">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/can.hpp</label>
+        <link refid="can_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+      </node>
+      <node id="393">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_H1.hpp</label>
+        <link refid="gpio___h1_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="410">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io.hpp</label>
+        <link refid="io_8hpp"/>
+      </node>
+      <node id="373">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B8.hpp</label>
+        <link refid="gpio___b8_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="411">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp</label>
+        <link refid="vector2_8hpp"/>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="437">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp</label>
+        <link refid="endianness_8hpp"/>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="400">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container.hpp</label>
+        <link refid="container_8hpp"/>
+      </node>
+      <node id="244">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp</label>
+        <link refid="register_8hpp"/>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="397" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
+        </childnode>
+        <childnode refid="401" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+      </node>
+      <node id="418">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/ray_2d.hpp</label>
+        <link refid="ray__2d_8hpp"/>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="331">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer.hpp</label>
+        <link refid="timer_8hpp"/>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="440">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/operator.hpp</label>
+        <link refid="operator_8hpp"/>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_4.hpp</label>
+        <link refid="uart__4_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="328">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/common.hpp</label>
+        <link refid="common_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp</label>
+        <link refid="adc__3_8hpp"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="374">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B9.hpp</label>
+        <link refid="gpio___b9_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp</label>
+        <link refid="vector3_8hpp"/>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/imp/std.hpp</label>
+        <link refid="std_8hpp"/>
+      </node>
+      <node id="375">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C0.hpp</label>
+        <link refid="gpio___c0_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="397">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/interrupt.hpp</label>
+        <link refid="interrupt_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+      </node>
+      <node id="431">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp</label>
+        <link refid="adc__interrupt_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+      </node>
+      <node id="251">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
+        <link refid="bme280_8hpp"/>
+      </node>
+      <node id="254">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp</label>
+        <link refid="adc__2_8hpp"/>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C1.hpp</label>
+        <link refid="gpio___c1_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="442">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp</label>
+        <link refid="rcc_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="344">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/set.hpp</label>
+        <link refid="set_8hpp"/>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="334">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp</label>
+        <link refid="i2c__master_8hpp"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A6.hpp</label>
+        <link refid="gpio___a6_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_6.hpp</label>
+        <link refid="uart__6_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp</label>
+        <link refid="nested__resumable_8hpp"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_10.hpp</label>
+        <link refid="timer__10_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="306">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable.hpp</label>
+        <link refid="resumable_8hpp"/>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="347">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A11.hpp</label>
+        <link refid="gpio___a11_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="340">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/connector.hpp</label>
+        <link refid="connector_8hpp"/>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="327">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_bit_timings.hpp</label>
+        <link refid="can__bit__timings_8hpp"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="394">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/port.hpp</label>
+        <link refid="port_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp</label>
+        <link refid="vector1_8hpp"/>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="383">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C2.hpp</label>
+        <link refid="gpio___c2_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="443">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/core/delay.hpp</label>
+        <link refid="platform_2core_2delay_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="357">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A7.hpp</label>
+        <link refid="gpio___a7_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/clock.hpp</label>
+        <link refid="clock_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_11.hpp</label>
+        <link refid="timer__11_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp</label>
+        <link refid="units_8hpp"/>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+      </node>
+      <node id="346">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A10.hpp</label>
+        <link refid="gpio___a10_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/peripheral.hpp</label>
+        <link refid="peripheral_8hpp"/>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C3.hpp</label>
+        <link refid="gpio___c3_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/line_segment_2d.hpp</label>
+        <link refid="line__segment__2d_8hpp"/>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp</label>
+        <link refid="block__allocator_8hpp"/>
+      </node>
+      <node id="358">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A8.hpp</label>
+        <link refid="gpio___a8_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_12.hpp</label>
+        <link refid="timer__12_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A13.hpp</label>
+        <link refid="gpio___a13_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp</label>
+        <link refid="periodic__timer_8hpp"/>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C4.hpp</label>
+        <link refid="gpio___c4_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_1.hpp</label>
+        <link refid="timer__1_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A9.hpp</label>
+        <link refid="gpio___a9_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C11.hpp</label>
+        <link refid="gpio___c11_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp</label>
+        <link refid="spi_8hpp"/>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_13.hpp</label>
+        <link refid="timer__13_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp</label>
+        <link refid="gpio__expander_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor.hpp</label>
+        <link refid="accessor_8hpp"/>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+      <node id="348">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A12.hpp</label>
+        <link refid="gpio___a12_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor_ram.hpp</label>
+        <link refid="accessor__ram_8hpp"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C5.hpp</label>
+        <link refid="gpio___c5_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="333">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c.hpp</label>
+        <link refid="i2c_8hpp"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="338" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+      <node id="243">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp</label>
+        <link refid="detect_8hpp"/>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/geometric_traits.hpp</label>
+        <link refid="geometric__traits_8hpp"/>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="444">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp</label>
+        <link refid="protothread_2macros_8hpp"/>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/point_set_2d.hpp</label>
+        <link refid="point__set__2d_8hpp"/>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="377">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C10.hpp</label>
+        <link refid="gpio___c10_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry.hpp</label>
+        <link refid="geometry_8hpp"/>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="274">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp</label>
+        <link refid="timer__14_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A15.hpp</label>
+        <link refid="gpio___a15_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+        <link refid="math_8hpp"/>
+      </node>
+      <node id="414">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/line_2d.hpp</label>
+        <link refid="line__2d_8hpp"/>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp</label>
+        <link refid="spi__master__1_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi_master.hpp</label>
+        <link refid="spi__master_8hpp"/>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp</label>
+        <link refid="uart__hal__6_8hpp"/>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="329">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp</label>
+        <link refid="timeout_8hpp"/>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="436">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp</label>
+        <link refid="bit__operation_8hpp"/>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp</label>
+        <link refid="architecture_2driver_2atomic_2container_8hpp"/>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp</label>
+        <link refid="lu__decomposition_8hpp"/>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_3.hpp</label>
+        <link refid="timer__3_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="380">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C13.hpp</label>
+        <link refid="gpio___c13_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A14.hpp</label>
+        <link refid="gpio___a14_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B0.hpp</label>
+        <link refid="gpio___b0_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="448">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+      </node>
+      <node id="265">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp</label>
+        <link refid="basic__base_8hpp"/>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="413">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp</label>
+        <link refid="circle__2d_8hpp"/>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="439">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp</label>
+        <link refid="misc_8hpp"/>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_2.hpp</label>
+        <link refid="timer__2_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="379">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C12.hpp</label>
+        <link refid="gpio___c12_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="409">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
+        </childnode>
+        <childnode refid="401" relation="include">
+        </childnode>
+        <childnode refid="410" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation.hpp</label>
+        <link refid="interpolation_8hpp"/>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/can_message.hpp</label>
+        <link refid="can__message_8hpp"/>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi_device.hpp</label>
+        <link refid="spi__device_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="361">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B1.hpp</label>
+        <link refid="gpio___b1_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="307">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp</label>
+        <link refid="block__device_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="335">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_1.hpp</label>
+        <link refid="i2c__master__1_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/debug.hpp</label>
+        <link refid="debug_2debug_8hpp"/>
+      </node>
+      <node id="291">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_4.hpp</label>
+        <link refid="uart__hal__4_8hpp"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp</label>
+        <link refid="can__filter_8hpp"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_5.hpp</label>
+        <link refid="timer__5_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread.hpp</label>
+        <link refid="protothread_8hpp"/>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C15.hpp</label>
+        <link refid="gpio___c15_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="435">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/tolerance.hpp</label>
+        <link refid="tolerance_8hpp"/>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/advanced_base.hpp</label>
+        <link refid="advanced__base_8hpp"/>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp</label>
+        <link refid="assert_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_2.hpp</label>
+        <link refid="spi__hal__2_8hpp"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="433">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/uart.hpp</label>
+        <link refid="uart_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+      </node>
+      <node id="367">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B2.hpp</label>
+        <link refid="gpio___b2_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="336">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp</label>
+        <link refid="i2c__master__2_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="396">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/inverted.hpp</label>
+        <link refid="inverted_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp</label>
+        <link refid="linear_8hpp"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp</label>
+        <link refid="uart__hal__5_8hpp"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp</label>
+        <link refid="systick__timer_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="277">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_4.hpp</label>
+        <link refid="timer__4_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C14.hpp</label>
+        <link refid="gpio___c14_8hpp"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="group__modm__architecture_1gaf40b78056b753cbe17296d54272dc19a" prot="public" static="no">
+        <name>MODM_COMPILER_GCC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible compilers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="27" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1gab129f1254598c0115dd340547c63d01c" prot="public" static="no">
+        <name>MODM_COMPILER_MSVC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="28" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="group__modm__architecture_1ga72a1b21b5ee6372887c4e8ec8a9b011c" prot="public" static="no">
+        <name>MODM_OS_UNIX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible operating systems </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="38" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga766ba707a178f53cd0ea39cbc889bab4" prot="public" static="no">
+        <name>MODM_OS_LINUX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="39" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga3a3e1dd3fbf858344f0f095c98cb64f3" prot="public" static="no">
+        <name>MODM_OS_OSX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="40" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1gac738dc9b2b49654d59e38d24e1ebb556" prot="public" static="no">
+        <name>MODM_OS_WIN32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="41" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1gac9e1abf994a45bb20e6ad70afa4b7d2b" prot="public" static="no">
+        <name>MODM_OS_WIN64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="42" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1gae9b1a5ea5ce6c57211e106b172e9ffb3" prot="public" static="no">
+        <name>MODM_OS_HOSTED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="43" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga366648ed8e45761ff336c216b6167111" prot="public" static="no">
+        <name>MODM_OS_HOSTED_64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="44" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="group__modm__architecture_1ga4c2836cb88e7f4f9cc2fcd2a032c2081" prot="public" static="no">
+        <name>MODM_CPU_AVR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Possible CPU definitions </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="54" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga3a3f5674599e948005c6e944f9dd52b4" prot="public" static="no">
+        <name>MODM_CPU_ATXMEGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="55" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga5a3701cacb4635510337823e5354e6dc" prot="public" static="no">
+        <name>MODM_CPU_ATMEGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="56" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga6c7888ede96441e4f971bf736c505d83" prot="public" static="no">
+        <name>MODM_CPU_ATTINY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="57" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga853e5175711719875d0853c5cf8bc96c" prot="public" static="no">
+        <name>MODM_CPU_ARM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="59" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1gae4964652ac0c1c39d73dc32a0a56fcdd" prot="public" static="no">
+        <name>MODM_CPU_ARM7TDMI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="60" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga4f7f8e7b43ff0b4bf090b41cae2a0328" prot="public" static="no">
+        <name>MODM_CPU_CORTEX_M0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="61" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga7ea5fbc83d59ba8b0f0bbf395e95fa58" prot="public" static="no">
+        <name>MODM_CPU_CORTEX_M3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="62" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga17252b6d84a5ea2818fe289616f8110a" prot="public" static="no">
+        <name>MODM_CPU_CORTEX_M4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="63" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="group__modm__architecture_1ga88dd922cb7807801d1db2d3e10a6e721" prot="public" static="no">
+        <name>MODM_ALIGNMENT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Memory descriptions </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="69" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1gad9344fad3fe6186abaf306da2cafd195" prot="public" static="no">
+        <name>MODM_ORDER_BIG_ENDIAN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="71" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga47a80c571e6c1b6496cefa335d7b3efb" prot="public" static="no">
+        <name>MODM_ORDER_LITTLE_ENDIAN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="72" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga4fef69f83aa289589f2d86120103a83c" prot="public" static="no">
+        <name>MODM_ORDER_PDP_ENDIAN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="73" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1gae47b2f3b391b780e879c9aba173abbc9" prot="public" static="no">
+        <name>MODM_BYTE_ORDER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="75" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1gafb26575ebc7587ac170fbcf1429ab30c" prot="public" static="no">
+        <name>MODM_IS_BIG_ENDIAN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="77" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga8514f89bf3f55138f86d11fcd823ff45" prot="public" static="no">
+        <name>MODM_IS_LITTLE_ENDIAN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="78" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga66749f39fe4a4b1a648af6cb915c5972" prot="public" static="no">
+        <name>MODM_SIZEOF_POINTER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="80" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__modm__architecture_1ga216ed8268e7c39c0733b4a728c055db2" prot="public" static="no">
+        <name>MODM_COMPILER_STRING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compiler description </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="22" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1gac0355e1449e645ad2c8b6d465bd3845b" prot="public" static="no">
+        <name>MODM_OS_STRING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operating system description </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="33" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__modm__architecture_1ga7edd2c17160afe9afb8ca7bca789113d" prot="public" static="no">
+        <name>MODM_CPU_STRING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CPU description </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" line="49" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/detect.hpp"/>
+  </compounddef>
+</doxygen>

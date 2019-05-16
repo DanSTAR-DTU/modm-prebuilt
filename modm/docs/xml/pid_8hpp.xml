@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="pid_8hpp" kind="file" language="C++">
+    <compoundname>pid.hpp</compoundname>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="arithmetic__traits_8hpp" local="no">modm/math/utils/arithmetic_traits.hpp</includes>
+    <includes local="yes">pid_impl.hpp</includes>
+    <includedby refid="filter_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <incdepgraph>
+      <node id="2661">
+        <label>limits</label>
+      </node>
+      <node id="2660">
+        <label>cstdint</label>
+      </node>
+      <node id="2658">
+        <label>stdint.h</label>
+      </node>
+      <node id="2657">
+        <label>cmath</label>
+      </node>
+      <node id="2655">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp</label>
+        <link refid="pid_8hpp"/>
+        <childnode refid="2656" relation="include">
+        </childnode>
+        <childnode refid="2657" relation="include">
+        </childnode>
+        <childnode refid="2658" relation="include">
+        </childnode>
+        <childnode refid="2659" relation="include">
+        </childnode>
+        <childnode refid="2663" relation="include">
+        </childnode>
+      </node>
+      <node id="2656">
+        <label>cstdlib</label>
+      </node>
+      <node id="2663">
+        <label>pid_impl.hpp</label>
+      </node>
+      <node id="2662">
+        <label>type_traits</label>
+      </node>
+      <node id="2659">
+        <label>modm/math/utils/arithmetic_traits.hpp</label>
+        <link refid="arithmetic__traits_8hpp"/>
+        <childnode refid="2660" relation="include">
+        </childnode>
+        <childnode refid="2661" relation="include">
+        </childnode>
+        <childnode refid="2662" relation="include">
+        </childnode>
+        <childnode refid="2657" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2665">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter.hpp</label>
+        <link refid="filter_8hpp"/>
+        <childnode refid="2666" relation="include">
+        </childnode>
+      </node>
+      <node id="2664">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp</label>
+        <link refid="pid_8hpp"/>
+        <childnode refid="2665" relation="include">
+        </childnode>
+        <childnode refid="2666" relation="include">
+        </childnode>
+      </node>
+      <node id="2666">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+        <link refid="math_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1_pid" prot="public">modm::Pid</innerclass>
+    <innerclass refid="structmodm_1_1_pid_1_1_parameter" prot="public">modm::Pid::Parameter</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp"/>
+  </compounddef>
+</doxygen>

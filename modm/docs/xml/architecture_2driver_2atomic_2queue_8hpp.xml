@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="architecture_2driver_2atomic_2queue_8hpp" kind="file" language="C++">
+    <compoundname>queue.hpp</compoundname>
+    <includes local="no">cstddef</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">type_traits</includes>
+    <includes refid="architecture_2utils_8hpp" local="no">modm/architecture/utils.hpp</includes>
+    <includes refid="accessor_8hpp" local="no">modm/architecture/interface/accessor.hpp</includes>
+    <includes local="yes">queue_impl.hpp</includes>
+    <includedby refid="atomic_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic.hpp</includedby>
+    <incdepgraph>
+      <node id="537">
+        <label>stdarg.h</label>
+      </node>
+      <node id="529">
+        <label>cstdint</label>
+      </node>
+      <node id="541">
+        <label>stdint.h</label>
+      </node>
+      <node id="527">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/queue.hpp</label>
+        <link refid="architecture_2driver_2atomic_2queue_8hpp"/>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
+        <childnode refid="542" relation="include">
+        </childnode>
+      </node>
+      <node id="535">
+        <label>modm/architecture/interface/accessor_flash.hpp</label>
+        <link refid="accessor__flash_8hpp"/>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="536" relation="include">
+        </childnode>
+      </node>
+      <node id="531">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="532" relation="include">
+        </childnode>
+      </node>
+      <node id="533">
+        <label>modm/architecture/interface/accessor.hpp</label>
+        <link refid="accessor_8hpp"/>
+        <childnode refid="534" relation="include">
+        </childnode>
+        <childnode refid="535" relation="include">
+        </childnode>
+      </node>
+      <node id="534">
+        <label>modm/architecture/interface/accessor_ram.hpp</label>
+        <link refid="accessor__ram_8hpp"/>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+      </node>
+      <node id="528">
+        <label>cstddef</label>
+      </node>
+      <node id="532">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="540">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="541" relation="include">
+        </childnode>
+        <childnode refid="539" relation="include">
+        </childnode>
+      </node>
+      <node id="542">
+        <label>queue_impl.hpp</label>
+      </node>
+      <node id="530">
+        <label>type_traits</label>
+      </node>
+      <node id="539">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
+      </node>
+      <node id="536">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="538" relation="include">
+        </childnode>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="539" relation="include">
+        </childnode>
+        <childnode refid="540" relation="include">
+        </childnode>
+      </node>
+      <node id="538">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="544">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic.hpp</label>
+        <link refid="atomic_8hpp"/>
+      </node>
+      <node id="543">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/queue.hpp</label>
+        <link refid="architecture_2driver_2atomic_2queue_8hpp"/>
+        <childnode refid="544" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1atomic_1_1_queue" prot="public">modm::atomic::Queue</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1atomic">modm::atomic</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/queue.hpp"/>
+  </compounddef>
+</doxygen>

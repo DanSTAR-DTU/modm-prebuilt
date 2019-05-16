@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__modm__processing" kind="group">
+    <compoundname>modm_processing</compoundname>
+    <title>Processing</title>
+    <innerclass refid="classmodm_1_1_task" prot="public">modm::Task</innerclass>
+    <innergroup refid="group__modm__processing__protothread">Protothreads</innergroup>
+    <innergroup refid="group__modm__processing__resumable">Resumable Functions</innergroup>
+    <innergroup refid="group__modm__processing__timer">Software Timers</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Constructs to influence program flow execution, timing, synchronization and delegation. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

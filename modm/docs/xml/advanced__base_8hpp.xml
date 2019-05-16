@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="advanced__base_8hpp" kind="file" language="C++">
+    <compoundname>advanced_base.hpp</compoundname>
+    <includes refid="general__purpose__base_8hpp" local="yes">general_purpose_base.hpp</includes>
+    <includedby refid="timer__1_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_1.hpp</includedby>
+    <includedby refid="timer__8_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_8.hpp</includedby>
+    <includedby refid="platform_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <incdepgraph>
+      <node id="6220">
+        <label>stdarg.h</label>
+      </node>
+      <node id="6211">
+        <label>../device.hpp</label>
+        <link refid="device_8hpp"/>
+        <childnode refid="6210" relation="include">
+        </childnode>
+        <childnode refid="6212" relation="include">
+        </childnode>
+        <childnode refid="6214" relation="include">
+        </childnode>
+        <childnode refid="6215" relation="include">
+        </childnode>
+      </node>
+      <node id="6215">
+        <label>system_stm32f4xx.h</label>
+      </node>
+      <node id="6210">
+        <label>stdint.h</label>
+      </node>
+      <node id="6217">
+        <label>modm/math/utils/bit_constants.hpp</label>
+        <link refid="bit__constants_8hpp"/>
+        <childnode refid="6210" relation="include">
+        </childnode>
+      </node>
+      <node id="6208">
+        <label>general_purpose_base.hpp</label>
+        <link refid="general__purpose__base_8hpp"/>
+        <childnode refid="6209" relation="include">
+        </childnode>
+      </node>
+      <node id="6216">
+        <label>modm/architecture/interface/register.hpp</label>
+        <link refid="register_8hpp"/>
+        <childnode refid="6210" relation="include">
+        </childnode>
+        <childnode refid="6217" relation="include">
+        </childnode>
+        <childnode refid="6213" relation="include">
+        </childnode>
+        <childnode refid="6218" relation="include">
+        </childnode>
+      </node>
+      <node id="6212">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="6213" relation="include">
+        </childnode>
+      </node>
+      <node id="6219">
+        <label>cstddef</label>
+      </node>
+      <node id="6213">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="6224">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="6210" relation="include">
+        </childnode>
+        <childnode refid="6223" relation="include">
+        </childnode>
+      </node>
+      <node id="6209">
+        <label>basic_base.hpp</label>
+        <link refid="basic__base_8hpp"/>
+        <childnode refid="6210" relation="include">
+        </childnode>
+        <childnode refid="6211" relation="include">
+        </childnode>
+        <childnode refid="6216" relation="include">
+        </childnode>
+      </node>
+      <node id="6222">
+        <label>type_traits</label>
+      </node>
+      <node id="6214">
+        <label>stm32f446xx.h</label>
+      </node>
+      <node id="6223">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
+      </node>
+      <node id="6218">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="6219" relation="include">
+        </childnode>
+        <childnode refid="6212" relation="include">
+        </childnode>
+        <childnode refid="6220" relation="include">
+        </childnode>
+        <childnode refid="6221" relation="include">
+        </childnode>
+        <childnode refid="6222" relation="include">
+        </childnode>
+        <childnode refid="6223" relation="include">
+        </childnode>
+        <childnode refid="6224" relation="include">
+        </childnode>
+      </node>
+      <node id="6207">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/advanced_base.hpp</label>
+        <link refid="advanced__base_8hpp"/>
+        <childnode refid="6208" relation="include">
+        </childnode>
+      </node>
+      <node id="6221">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6228">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_8.hpp</label>
+        <link refid="timer__8_8hpp"/>
+        <childnode refid="6227" relation="include">
+        </childnode>
+      </node>
+      <node id="6226">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_1.hpp</label>
+        <link refid="timer__1_8hpp"/>
+        <childnode refid="6227" relation="include">
+        </childnode>
+      </node>
+      <node id="6227">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+      <node id="6225">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/advanced_base.hpp</label>
+        <link refid="advanced__base_8hpp"/>
+        <childnode refid="6226" relation="include">
+        </childnode>
+        <childnode refid="6228" relation="include">
+        </childnode>
+        <childnode refid="6227" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1platform_1_1_advanced_control_timer" prot="public">modm::platform::AdvancedControlTimer</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1platform">modm::platform</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/advanced_base.hpp"/>
+  </compounddef>
+</doxygen>

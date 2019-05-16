@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespacemodm_1_1math" kind="namespace" language="C++">
+    <compoundname>modm::math</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__modm__math__utils_1ga1be252233ce1fdce3a1d75a489ea2b68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t modm::math::crc32</definition>
+        <argsstring>(const uint8_t *data, size_t length)</argsstring>
+        <name>crc32</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slow, but table-less computation of CRC32.</para>
+<para><simplesect kind="see"><para><ulink url="http://www.hackersdelight.org/hdcodetxt/crc.c.txt">http://www.hackersdelight.org/hdcodetxt/crc.c.txt</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/crc32.hpp" line="26" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/crc32.hpp" bodystart="26" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="group__modm__math__utils_1gaba15ad6593861fe6186555881ef58d10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t modm::math::sqrt</definition>
+        <argsstring>(uint32_t a)</argsstring>
+        <name>sqrt</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Fast AVR integer square root assembly routines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Square root calculation based on a implementation by Ruud v Gessel. The maximum execution time is 310 clock cycles (inclusive CALL+RET)</para>
+<para><simplesect kind="see"><para><ulink url="http://www.mikrocontroller.net/articles/AVR_Arithmetik#avr-gcc_Implementierung_.2832_Bit.29">Article on microcontroller.net</ulink> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="http://members.chello.nl/j.beentjes3/Ruud/sqrt32avr.htm">Original implementation</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/operator.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/operator.hpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="group__modm__math__utils_1ga29f80139d32c4ef6a7720b1da1f83498" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t modm::math::mul</definition>
+        <argsstring>(uint16_t a, uint16_t b)</argsstring>
+        <name>mul</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>unsigned 16bit x 16bit = 32bit multiplication </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>AVR201 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/operator.hpp" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__modm__math__utils_1ga44e2c38b63d9c29e97ec6cc2dee8194f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t modm::math::mul</definition>
+        <argsstring>(int16_t a, int16_t b)</argsstring>
+        <name>mul</name>
+        <param>
+          <type>int16_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>signed 16bit x 16bit = 32bit multiplication </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>AVR201 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/operator.hpp" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__modm__math__utils_1ga7649ada53febd1ca04feeb994824fb00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t modm::math::mac</definition>
+        <argsstring>(int32_t result, int16_t a, int16_t b)</argsstring>
+        <name>mac</name>
+        <param>
+          <type>int32_t</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Signed multiply accumulate of two 16bits numbers with a 32bits result. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">result<sp/>+=<sp/>a<sp/>*<sp/>b;</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="see"><para>AVR201 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/operator.hpp" line="77" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/crc32.hpp" line="17" column="1"/>
+  </compounddef>
+</doxygen>

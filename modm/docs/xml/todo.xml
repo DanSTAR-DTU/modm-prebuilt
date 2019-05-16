@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Class <ref refid="classmodm_1_1atomic_1_1_queue" kindref="compound">modm::atomic::Queue&lt; T, N &gt;</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>This implementation should work but could be improved  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classmodm_1_1_bounded_deque_1_1const__iterator" kindref="compound">modm::BoundedDeque&lt; T, N &gt;::const_iterator</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000002"/>check if a simpler implementation is possible  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classmodm_1_1_doubly_linked_list_1_1const__iterator" kindref="compound">modm::DoublyLinkedList&lt; T, Allocator &gt;::const_iterator</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000004"/>decrement operator doesn&apos;t work correctly  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classmodm_1_1_doubly_linked_list_1_1iterator" kindref="compound">modm::DoublyLinkedList&lt; T, Allocator &gt;::iterator</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000003"/>decrement operator doesn&apos;t work correctly  </para>
+</listitem>
+<varlistentry><term>Namespace <ref refid="namespacemodm_1_1filter" kindref="compound">modm::filter</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000006"/> </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classmodm_1_1filter_1_1_ramp" kindref="compound">modm::filter::Ramp&lt; T &gt;</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000009"/>example</para>
+<para><anchor id="todo_1_todo000010"/>documentation</para>
+<para></para>
+</listitem>
+<varlistentry><term>Class <ref refid="classmodm_1_1_linked_list" kindref="compound">modm::LinkedList&lt; T, Allocator &gt;</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000005"/>implementation </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classmodm_1_1_pid" kindref="compound">modm::Pid&lt; T, ScaleFactor &gt;</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000007"/>use the faster avr::mul and avr::mac functions </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structmodm_1_1_pid_1_1_parameter_1aecf7d0b0f133c75f2eeb51db466e51ee" kindref="member">modm::Pid&lt; T, ScaleFactor &gt;::Parameter::Parameter</ref>  (const float &amp;kp=0, const float &amp;ki=0, const float &amp;kd=0, const T &amp;maxErrorSum=0, const T &amp;maxOutput=0)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000008"/>description why we use float here! </para>
+<para>calculate maxErrorSum from the parameters  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classmodm_1_1_polygon2_d_1adb66c10a6954012d6a517a312ced40ac" kindref="member">modm::Polygon2D&lt; T &gt;::intersects</ref>  (const <ref refid="classmodm_1_1_polygon2_d" kindref="compound">Polygon2D</ref> &amp;other) const</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000014"/>Currently a brute force approach is used here, needs to be optimized  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classmodm_1_1_saturated" kindref="compound">modm::Saturated&lt; T &gt;</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000015"/>extend implementation (multiplication etc.) </para>
+<para>add 16-bit datetype assembler implementations for AVRs </para>
+<para>documentation</para>
+<para></para>
+</listitem>
+<varlistentry><term>Class <ref refid="classmodm_1_1_s_curve_controller" kindref="compound">modm::SCurveController&lt; T &gt;</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000011"/>documentation </para>
+</listitem>
+<varlistentry><term>Class <ref refid="structmodm_1_1_s_curve_controller_1_1_parameter" kindref="compound">modm::SCurveController&lt; T &gt;::Parameter</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000012"/>some helper programs/formula to choose the right parameter values (e.g. the java tool from the last year) </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classmodm_1_1_s_curve_generator" kindref="compound">modm::SCurveGenerator&lt; T &gt;</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000013"/>documentation </para>
+<para>implementation</para>
+<para></para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

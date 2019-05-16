@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__modm__math__matrix" kind="group">
+    <compoundname>modm_math_matrix</compoundname>
+    <title>Matrix Math</title>
+    <innerclass refid="classmodm_1_1_l_u_decomposition" prot="public">modm::LUDecomposition</innerclass>
+    <innerclass refid="classmodm_1_1_matrix" prot="public">modm::Matrix</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__modm__math__matrix_1ga92ab7864d3c8a369ef9cb7d5703db07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>uint8_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T modm::determinant</definition>
+        <argsstring>(const modm::Matrix&lt; T, N, N &gt; &amp;m)</argsstring>
+        <name>determinant</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_matrix" kindref="compound">modm::Matrix</ref>&lt; T, N, N &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the determinant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="257" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

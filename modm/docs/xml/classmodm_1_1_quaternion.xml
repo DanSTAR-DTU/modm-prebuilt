@@ -1,0 +1,756 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1_quaternion" kind="class" language="C++" prot="public">
+    <compoundname>modm::Quaternion</compoundname>
+    <includes refid="quaternion_8hpp" local="no">modm/math/geometry/quaternion.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmodm_1_1_quaternion_1ad72a1ca0d7f2f89db398d8014a60308b" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T modm::Quaternion&lt; T &gt;::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="100" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1_quaternion_1a2c7fc6dad671c19e2096f8a188cac4d9" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T modm::Quaternion&lt; T &gt;::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="101" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1_quaternion_1a4b9e2b46e2a28bb50f084999ae5b8414" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T modm::Quaternion&lt; T &gt;::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="102" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1_quaternion_1a987b387372f691dcf4eaf72469cd3984" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T modm::Quaternion&lt; T &gt;::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="103" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a995ba2578f17431549e806723c6c594c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modm::Quaternion&lt; T &gt;::Quaternion</definition>
+        <argsstring>()</argsstring>
+        <name>Quaternion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a5619ba74ae70d0351973cdb40b662fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modm::Quaternion&lt; T &gt;::Quaternion</definition>
+        <argsstring>(T inW, T inX, T inY, T inZ)</argsstring>
+        <name>Quaternion</name>
+        <param>
+          <type>T</type>
+          <declname>inW</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>inX</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>inY</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>inZ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a65099fd685f76c16141cc38593b320e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modm::Quaternion&lt; T &gt;::Quaternion</definition>
+        <argsstring>(const Vector&lt; T, 3 &gt; &amp;axis, T angle)</argsstring>
+        <name>Quaternion</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; T, 3 &gt; &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a079fe4f65eddc2c866e42841aef5f95f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modm::Quaternion&lt; T &gt;::Quaternion</definition>
+        <argsstring>(const Matrix&lt; T, 4, 1 &gt; &amp;rhs)</argsstring>
+        <name>Quaternion</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; T, 4, 1 &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1adf9125dce9136e09e8e026ca5f7b3da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modm::Quaternion&lt; T &gt;::Quaternion</definition>
+        <argsstring>(const Quaternion &amp;rhs)</argsstring>
+        <name>Quaternion</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a8223ceb8fd7202411ded5f388f7525b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+        <definition>Quaternion&amp; modm::Quaternion&lt; T &gt;::operator=</definition>
+        <argsstring>(const Matrix&lt; T, 4, 1 &gt; &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; T, 4, 1 &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1ae3772d50c374ff5da5616a8e7a7e5833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+        <definition>Quaternion&amp; modm::Quaternion&lt; T &gt;::operator=</definition>
+        <argsstring>(const Quaternion &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a56afe1cc92fb5dd553b70afd206e9a97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Quaternion&lt; T &gt;::operator==</definition>
+        <argsstring>(const Quaternion &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a6b96bdaeab1193c2020cb2e3d74396f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Quaternion&lt; T &gt;::operator !=</definition>
+        <argsstring>(const Quaternion &amp;rhs) const</argsstring>
+        <name>operator !=</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1aeccca1fba6976c15c87d2c74a38a1688" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Quaternion&lt; T &gt;::operator&lt;</definition>
+        <argsstring>(const Quaternion &amp;rhs) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1acc92e374bfad546acb33ab1eaea12b2e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Quaternion&lt; T &gt;::operator&lt;=</definition>
+        <argsstring>(const Quaternion &amp;rhs) const</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a23023c4239b14bdd49ef4d01835b116b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Quaternion&lt; T &gt;::operator &gt;</definition>
+        <argsstring>(const Quaternion &amp;rhs) const</argsstring>
+        <name>operator &gt;</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a01d1fdb679bd726f6e21b0c9198dc2d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool modm::Quaternion&lt; T &gt;::operator &gt;=</definition>
+        <argsstring>(const Quaternion &amp;rhs) const</argsstring>
+        <name>operator &gt;=</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a72b948ff90dc7a579a0b3c26851f328c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; modm::Quaternion&lt; T &gt;::operator []</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>operator []</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a57c11b0ce5e75ef0d0be5ae40e8d5953" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* modm::Quaternion&lt; T &gt;::ptr</definition>
+        <argsstring>()</argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1abaecaa08a638a354ff78278518eb2aa0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T* modm::Quaternion&lt; T &gt;::ptr</definition>
+        <argsstring>() const</argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a1422187c7e56128c1ec8067375a8f6f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion modm::Quaternion&lt; T &gt;::operator -</definition>
+        <argsstring>()</argsstring>
+        <name>operator -</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1aa827a23320bca8010e6047b590e3c869" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion modm::Quaternion&lt; T &gt;::operator+</definition>
+        <argsstring>(const Quaternion &amp;rhs) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a84e6f0adc1f2baded1d1ac2ee30a23d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion modm::Quaternion&lt; T &gt;::operator -</definition>
+        <argsstring>(const Quaternion &amp;rhs) const</argsstring>
+        <name>operator -</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1ae85194e1b69780effeed9e7d540e2876" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion modm::Quaternion&lt; T &gt;::operator *</definition>
+        <argsstring>(const Quaternion &amp;rhs) const</argsstring>
+        <name>operator *</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1ae61a8bf0bf13a03e893ff6a1af555f35" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion modm::Quaternion&lt; T &gt;::operator *</definition>
+        <argsstring>(const T &amp;rhs) const</argsstring>
+        <name>operator *</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a26c19ec094b43fff8a1d9e63a42fb9cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion modm::Quaternion&lt; T &gt;::operator/</definition>
+        <argsstring>(const T &amp;rhs) const</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a5f4e8fcf5370febc364c6a8752e98c5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+        <definition>Quaternion&amp; modm::Quaternion&lt; T &gt;::operator+=</definition>
+        <argsstring>(const Quaternion &amp;rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a0c970d8829c265a225d3c129dda9520f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+        <definition>Quaternion&amp; modm::Quaternion&lt; T &gt;::operator -=</definition>
+        <argsstring>(const Quaternion &amp;rhs)</argsstring>
+        <name>operator -=</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a452b57e64e86250bf4395b8db2f19329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+        <definition>Quaternion&amp; modm::Quaternion&lt; T &gt;::operator *=</definition>
+        <argsstring>(const T &amp;rhs)</argsstring>
+        <name>operator *=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1ad37fb31f5f28349718f8bfb09c197275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+        <definition>Quaternion&amp; modm::Quaternion&lt; T &gt;::operator/=</definition>
+        <argsstring>(const T &amp;rhs)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1acf2195b67cc85be858d35c351b499661" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float modm::Quaternion&lt; T &gt;::getLength</definition>
+        <argsstring>() const</argsstring>
+        <name>getLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1aaa6fb73e52b6f56d94ae9dd2768b1cc0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float modm::Quaternion&lt; T &gt;::getLengthSquared</definition>
+        <argsstring>() const</argsstring>
+        <name>getLengthSquared</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a8184b2d9f65bf517e8677ad4d152c354" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+        <definition>Quaternion&amp; modm::Quaternion&lt; T &gt;::scale</definition>
+        <argsstring>(float newLength)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>float</type>
+          <declname>newLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a0066e99b194e89505c2670353a603132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+        <definition>Quaternion&amp; modm::Quaternion&lt; T &gt;::normalize</definition>
+        <argsstring>()</argsstring>
+        <name>normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rescale to length = 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a5e59f5bd91bf134e88035722006564b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+        <definition>Quaternion&amp; modm::Quaternion&lt; T &gt;::conjugate</definition>
+        <argsstring>()</argsstring>
+        <name>conjugate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a90f2263647f1f5adaffce2bc4b209cf6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion modm::Quaternion&lt; T &gt;::scaled</definition>
+        <argsstring>(float newLength) const</argsstring>
+        <name>scaled</name>
+        <param>
+          <type>float</type>
+          <declname>newLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1ab4eec858fc6db4c593ea9081091087e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion modm::Quaternion&lt; T &gt;::normalized</definition>
+        <argsstring>() const</argsstring>
+        <name>normalized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a new quaternion with the same direction by the length 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1aa128690743b7f6516451b0d78ce7037d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion modm::Quaternion&lt; T &gt;::conjugated</definition>
+        <argsstring>() const</argsstring>
+        <name>conjugated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1adb1465129f3e2a67575e20ff4db84b1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion modm::Quaternion&lt; T &gt;::unitInverse</definition>
+        <argsstring>()</argsstring>
+        <name>unitInverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a2244f6d4c893d876d6087e3c47bcf072" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion modm::Quaternion&lt; T &gt;::inverse</definition>
+        <argsstring>()</argsstring>
+        <name>inverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1a251ebc5b62c4f12152b0838f4f8a68eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void modm::Quaternion&lt; T &gt;::to4x4Matrix</definition>
+        <argsstring>(Matrix&lt; T, 4, 4 &gt; *outMatrix)</argsstring>
+        <name>to4x4Matrix</name>
+        <param>
+          <type><ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; T, 4, 4 &gt; *</type>
+          <declname>outMatrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_quaternion_1ab6464185815ba4996fba8712e30505e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void modm::Quaternion&lt; T &gt;::to3x3Matrix</definition>
+        <argsstring>(Matrix&lt; T, 3, 3 &gt; *outMatrix)</argsstring>
+        <name>to3x3Matrix</name>
+        <param>
+          <type><ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; T, 3, 3 &gt; *</type>
+          <declname>outMatrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="97" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Adapted from the implementation of Gaspard Petit (<ulink url="mailto:gaspardpetit@gmail.com">gaspardpetit@gmail.com</ulink>). <simplesect kind="see"><para>&lt;a href&quot;http://www-etud.iro.umontreal.ca/~petitg/cpp/quat.html&quot;&gt;Homepage</para>
+</simplesect>
+<simplesect kind="author"><para>Fabian Greif </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1462">
+        <label>T</label>
+      </node>
+      <node id="1461">
+        <label>modm::Quaternion&lt; T &gt;</label>
+        <link refid="classmodm_1_1_quaternion"/>
+        <childnode refid="1462" relation="usage">
+          <edgelabel>w</edgelabel>
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" bodystart="39" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1_quaternion_1a5e59f5bd91bf134e88035722006564b8" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>conjugate</name></member>
+      <member refid="classmodm_1_1_quaternion_1aa128690743b7f6516451b0d78ce7037d" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>conjugated</name></member>
+      <member refid="classmodm_1_1_quaternion_1acf2195b67cc85be858d35c351b499661" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>getLength</name></member>
+      <member refid="classmodm_1_1_quaternion_1aaa6fb73e52b6f56d94ae9dd2768b1cc0" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>getLengthSquared</name></member>
+      <member refid="classmodm_1_1_quaternion_1a2244f6d4c893d876d6087e3c47bcf072" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>inverse</name></member>
+      <member refid="classmodm_1_1_quaternion_1a0066e99b194e89505c2670353a603132" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>normalize</name></member>
+      <member refid="classmodm_1_1_quaternion_1ab4eec858fc6db4c593ea9081091087e0" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>normalized</name></member>
+      <member refid="classmodm_1_1_quaternion_1a6b96bdaeab1193c2020cb2e3d74396f3" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator !=</name></member>
+      <member refid="classmodm_1_1_quaternion_1ae85194e1b69780effeed9e7d540e2876" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator *</name></member>
+      <member refid="classmodm_1_1_quaternion_1ae61a8bf0bf13a03e893ff6a1af555f35" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator *</name></member>
+      <member refid="classmodm_1_1_quaternion_1a452b57e64e86250bf4395b8db2f19329" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator *=</name></member>
+      <member refid="classmodm_1_1_quaternion_1a1422187c7e56128c1ec8067375a8f6f8" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator -</name></member>
+      <member refid="classmodm_1_1_quaternion_1a84e6f0adc1f2baded1d1ac2ee30a23d6" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator -</name></member>
+      <member refid="classmodm_1_1_quaternion_1a0c970d8829c265a225d3c129dda9520f" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator -=</name></member>
+      <member refid="classmodm_1_1_quaternion_1a23023c4239b14bdd49ef4d01835b116b" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator &gt;</name></member>
+      <member refid="classmodm_1_1_quaternion_1a01d1fdb679bd726f6e21b0c9198dc2d9" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator &gt;=</name></member>
+      <member refid="classmodm_1_1_quaternion_1a72b948ff90dc7a579a0b3c26851f328c" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator []</name></member>
+      <member refid="classmodm_1_1_quaternion_1aa827a23320bca8010e6047b590e3c869" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator+</name></member>
+      <member refid="classmodm_1_1_quaternion_1a5f4e8fcf5370febc364c6a8752e98c5a" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator+=</name></member>
+      <member refid="classmodm_1_1_quaternion_1a26c19ec094b43fff8a1d9e63a42fb9cc" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator/</name></member>
+      <member refid="classmodm_1_1_quaternion_1ad37fb31f5f28349718f8bfb09c197275" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator/=</name></member>
+      <member refid="classmodm_1_1_quaternion_1aeccca1fba6976c15c87d2c74a38a1688" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator&lt;</name></member>
+      <member refid="classmodm_1_1_quaternion_1acc92e374bfad546acb33ab1eaea12b2e" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator&lt;=</name></member>
+      <member refid="classmodm_1_1_quaternion_1a8223ceb8fd7202411ded5f388f7525b5" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator=</name></member>
+      <member refid="classmodm_1_1_quaternion_1ae3772d50c374ff5da5616a8e7a7e5833" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator=</name></member>
+      <member refid="classmodm_1_1_quaternion_1a56afe1cc92fb5dd553b70afd206e9a97" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>operator==</name></member>
+      <member refid="classmodm_1_1_quaternion_1a57c11b0ce5e75ef0d0be5ae40e8d5953" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>ptr</name></member>
+      <member refid="classmodm_1_1_quaternion_1abaecaa08a638a354ff78278518eb2aa0" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>ptr</name></member>
+      <member refid="classmodm_1_1_quaternion_1a995ba2578f17431549e806723c6c594c" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>Quaternion</name></member>
+      <member refid="classmodm_1_1_quaternion_1a5619ba74ae70d0351973cdb40b662fbf" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>Quaternion</name></member>
+      <member refid="classmodm_1_1_quaternion_1a65099fd685f76c16141cc38593b320e4" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>Quaternion</name></member>
+      <member refid="classmodm_1_1_quaternion_1a079fe4f65eddc2c866e42841aef5f95f" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>Quaternion</name></member>
+      <member refid="classmodm_1_1_quaternion_1adf9125dce9136e09e8e026ca5f7b3da1" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>Quaternion</name></member>
+      <member refid="classmodm_1_1_quaternion_1a8184b2d9f65bf517e8677ad4d152c354" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>scale</name></member>
+      <member refid="classmodm_1_1_quaternion_1a90f2263647f1f5adaffce2bc4b209cf6" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>scaled</name></member>
+      <member refid="classmodm_1_1_quaternion_1ab6464185815ba4996fba8712e30505e9" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>to3x3Matrix</name></member>
+      <member refid="classmodm_1_1_quaternion_1a251ebc5b62c4f12152b0838f4f8a68eb" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>to4x4Matrix</name></member>
+      <member refid="classmodm_1_1_quaternion_1adb1465129f3e2a67575e20ff4db84b1f" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>unitInverse</name></member>
+      <member refid="classmodm_1_1_quaternion_1ad72a1ca0d7f2f89db398d8014a60308b" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>w</name></member>
+      <member refid="classmodm_1_1_quaternion_1a2c7fc6dad671c19e2096f8a188cac4d9" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>x</name></member>
+      <member refid="classmodm_1_1_quaternion_1a4b9e2b46e2a28bb50f084999ae5b8414" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>y</name></member>
+      <member refid="classmodm_1_1_quaternion_1a987b387372f691dcf4eaf72469cd3984" prot="public" virt="non-virtual"><scope>modm::Quaternion</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__arithmetic__traits" kind="group">
+    <compoundname>arithmetic_traits</compoundname>
+    <title>Arithmetic Traits</title>
+    <innerclass refid="structmodm_1_1_arithmetic_traits" prot="public">modm::ArithmeticTraits</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__arithmetic__traits_1ga4aa9b205cd091d24be9d4b873a91d6f5" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>typename detail::WideType&lt; T &gt;::type</type>
+        <definition>using modm::WideType = typedef typename detail::WideType&lt;T&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>WideType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" line="183" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__arithmetic__traits_1ga1eea33fb09849213b4d3d36cac81594c" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>typename detail::MakeSigned&lt; T &gt;::type</type>
+        <definition>using modm::SignedType = typedef typename detail::MakeSigned&lt;T&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>SignedType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" line="186" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__arithmetic__traits_1ga231b53d5b4f33431499b959367c9a620" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>typename detail::MakeUnsigned&lt; T &gt;::type</type>
+        <definition>using modm::UnsignedType = typedef typename detail::MakeUnsigned&lt;T&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>UnsignedType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" line="189" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Traits to give numbers more information then they have by default in C++</para>
+<sect1 id="group__arithmetic__traits_1provides">
+<title>Values provided by these traits</title>
+<para><itemizedlist>
+<listitem><para><computeroutput>WideType</computeroutput> Type that can holds the doubled length of data. May be used to hold the result of a multiplication.</para>
+</listitem><listitem><para><computeroutput>SignedType</computeroutput> Signed type for the given type. It applies <computeroutput>T == SignedType</computeroutput> if <computeroutput>T</computeroutput> is already signed.</para>
+</listitem><listitem><para><computeroutput>UnsignedType Some as SignedType only for unsigned types -</computeroutput>min<computeroutput>smallest value. -</computeroutput>max<computeroutput>biggest value -</computeroutput>isSigned<computeroutput>is this a signed or unsigned type -</computeroutput>isFloatingPoint<computeroutput>is this a floating point type -</computeroutput>isInteger<computeroutput>is this a integer type -</computeroutput>decimalDigits` count of digits to display this type in decimal</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="group__arithmetic__traits_1usage">
+<title>Usage</title>
+<para><programlisting><codeline><highlight class="normal">typedef<sp/>typename<sp/>modm::ArithmeticTraits&lt;T&gt;::WideType<sp/>T_DOUBLE;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">T<sp/>min<sp/>=<sp/>modm::ArithmeticTraits&lt;T&gt;::min;</highlight></codeline>
+<codeline><highlight class="normal">T<sp/>max<sp/>=<sp/>modm::ArithmeticTraits&lt;T&gt;::max;</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="author"><para>Martin Rosekeit <ulink url="mailto:martin.rosekeit@rwth-aachen.de">martin.rosekeit@rwth-aachen.de</ulink> </para>
+</simplesect>
+<simplesect kind="author"><para>Fabian Greif <ulink url="mailto:fabian.greif@rwth-aachen.de">fabian.greif@rwth-aachen.de</ulink> </para>
+</simplesect>
+<simplesect kind="author"><para>Niklas Hauser </para>
+</simplesect>
+<simplesect kind="author"><para>Christopher Durand </para>
+</simplesect>
+</para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

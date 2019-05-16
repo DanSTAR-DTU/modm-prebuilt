@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1platform_1_1_uart_base" kind="class" language="C++" prot="public">
+    <compoundname>modm::platform::UartBase</compoundname>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_uart4" prot="public" virt="non-virtual">modm::platform::Uart4</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_uart5" prot="public" virt="non-virtual">modm::platform::Uart5</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_uart_hal4" prot="public" virt="non-virtual">modm::platform::UartHal4</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_uart_hal5" prot="public" virt="non-virtual">modm::platform::UartHal5</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_usart1" prot="public" virt="non-virtual">modm::platform::Usart1</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_usart2" prot="public" virt="non-virtual">modm::platform::Usart2</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_usart3" prot="public" virt="non-virtual">modm::platform::Usart3</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_usart6" prot="public" virt="non-virtual">modm::platform::Usart6</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_usart_hal1" prot="public" virt="non-virtual">modm::platform::UsartHal1</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_usart_hal2" prot="public" virt="non-virtual">modm::platform::UsartHal2</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_usart_hal3" prot="public" virt="non-virtual">modm::platform::UsartHal3</derivedcompoundref>
+    <derivedcompoundref refid="classmodm_1_1platform_1_1_usart_hal6" prot="public" virt="non-virtual">modm::platform::UsartHal6</derivedcompoundref>
+    <includes refid="uart__base_8hpp" local="no">modm/platform/uart/uart_base.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_uart_base_1ac9c1bc3b77588a11d520416c22a25832" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>Interrupt</name>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1ac9c1bc3b77588a11d520416c22a25832a63440a36bf6fd0748b3c188f3e9fda78" prot="public">
+          <name>ParityError</name>
+          <initializer>= USART_CR1_PEIE</initializer>
+          <briefdescription>
+<para>Call interrupt when a parity error occurred. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1ac9c1bc3b77588a11d520416c22a25832a09fedbb429a73d9217bbd05d17bf9619" prot="public">
+          <name>TxEmpty</name>
+          <initializer>= USART_CR1_TXEIE</initializer>
+          <briefdescription>
+<para>Call interrupt when transmit register is empty (i.e. the byte has been transfered to the shift out register. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1ac9c1bc3b77588a11d520416c22a25832a017989d109c6f8c81153605ec5479c85" prot="public">
+          <name>TxComplete</name>
+          <initializer>= USART_CR1_TCIE</initializer>
+          <briefdescription>
+<para>Called when the byte was completely transmitted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1ac9c1bc3b77588a11d520416c22a25832aec6a6a1dbb315c8a29a90d8f027888ae" prot="public">
+          <name>RxNotEmpty</name>
+          <initializer>= USART_CR1_RXNEIE</initializer>
+          <briefdescription>
+<para>Call interrupt when char received (RXNE) or overrun occurred (ORE) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" line="46" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" bodystart="45" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_uart_base_1a231dd8ca89bde31fb9bec6a65c1dae8f" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>InterruptFlag</name>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1a231dd8ca89bde31fb9bec6a65c1dae8fa09fedbb429a73d9217bbd05d17bf9619" prot="public">
+          <name>TxEmpty</name>
+          <initializer>= USART_SR_TXE</initializer>
+          <briefdescription>
+<para>Set if the transmit data register is empty. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1a231dd8ca89bde31fb9bec6a65c1dae8fa017989d109c6f8c81153605ec5479c85" prot="public">
+          <name>TxComplete</name>
+          <initializer>= USART_SR_TC</initializer>
+          <briefdescription>
+<para>Set if the transmission is complete. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1a231dd8ca89bde31fb9bec6a65c1dae8faec6a6a1dbb315c8a29a90d8f027888ae" prot="public">
+          <name>RxNotEmpty</name>
+          <initializer>= USART_SR_RXNE</initializer>
+          <briefdescription>
+<para>Set if the receive data register is not empty. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1a231dd8ca89bde31fb9bec6a65c1dae8fa1e5b45a006f87ca231075ff2d2efbbb1" prot="public">
+          <name>OverrunError</name>
+          <initializer>= USART_SR_ORE</initializer>
+          <briefdescription>
+<para>Set if receive register was not cleared. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1a231dd8ca89bde31fb9bec6a65c1dae8fac2a32feb763cf02d22c6ea35051b7b43" prot="public">
+          <name>FramingError</name>
+          <initializer>= USART_SR_FE</initializer>
+          <briefdescription>
+<para>Set if a de-synchronization, excessive noise or a break character is detected. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1a231dd8ca89bde31fb9bec6a65c1dae8fa63440a36bf6fd0748b3c188f3e9fda78" prot="public">
+          <name>ParityError</name>
+          <initializer>= USART_SR_PE</initializer>
+          <briefdescription>
+<para>Set if a parity error was detected. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" line="59" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" bodystart="58" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_uart_base_1a598033b30db9a90ea5c34a7b1cdc41e1" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>Parity</name>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1a598033b30db9a90ea5c34a7b1cdc41e1ab9f5c797ebbf55adccdd8539a65a0241" prot="public">
+          <name>Disabled</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1a598033b30db9a90ea5c34a7b1cdc41e1a35537fbc25d87ffe59e4f35fefcd34b7" prot="public">
+          <name>Even</name>
+          <initializer>= USART_CR1_PCE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1a598033b30db9a90ea5c34a7b1cdc41e1a37b6bd7fe61d651735cec3d3b0356c66" prot="public">
+          <name>Odd</name>
+          <initializer>= USART_CR1_PCE | USART_CR1_PS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" line="76" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_uart_base_1abb9ae2af6239db1ae39f2a789989e03c" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>SpiDataMode</name>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1abb9ae2af6239db1ae39f2a789989e03ca315436bae0e85636381fc939db06aee5" prot="public">
+          <name>Mode0</name>
+          <initializer>= 0b00</initializer>
+          <briefdescription>
+<para>clock normal, sample on rising edge </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1abb9ae2af6239db1ae39f2a789989e03ca7a2ea225a084605104f8c39b3ae9657c" prot="public">
+          <name>Mode1</name>
+          <initializer>= USART_CR2_CPHA</initializer>
+          <briefdescription>
+<para>clock normal, sample on falling edge </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1abb9ae2af6239db1ae39f2a789989e03ca04c542f260d16590ec60c594f67a30e7" prot="public">
+          <name>Mode2</name>
+          <initializer>= USART_CR2_CPOL</initializer>
+          <briefdescription>
+<para>clock inverted, sample on falling edge </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1abb9ae2af6239db1ae39f2a789989e03cab68fa4884da8d22e83f37b4f209295f1" prot="public">
+          <name>Mode3</name>
+          <initializer>= USART_CR2_CPOL | USART_CR2_CPHA</initializer>
+          <briefdescription>
+<para>clock inverted, sample on rising edge </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> Data Mode, Mode0 is the most common mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" line="85" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" bodystart="83" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_uart_base_1a7dd12333d203f746bca00aedd0d23d05" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>OversamplingMode</name>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1a7dd12333d203f746bca00aedd0d23d05a576ef423a885b172d29d9d7f112d0084" prot="public">
+          <name>By16</name>
+          <initializer>= 0b0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1a7dd12333d203f746bca00aedd0d23d05ae3d6e57f9fa0f62bd696f7f74fdb7dc1" prot="public">
+          <name>By8</name>
+          <initializer>= USART_CR1_OVER8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" line="95" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" bodystart="93" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_uart_base_1ace789bf4bb98f058efde7ab625f10e0a" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>LastBitClockPulse</name>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1ace789bf4bb98f058efde7ab625f10e0aa72c5069dac5ef579db80e0fb67ec49a3" prot="public">
+          <name>DoNotOutput</name>
+          <initializer>= 0b0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1ace789bf4bb98f058efde7ab625f10e0aa29c2c02a361c9d7028472e5d92cd4a54" prot="public">
+          <name>Output</name>
+          <initializer>= USART_CR2_LBCL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" line="101" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" bodystart="99" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_uart_base_1aa946086fdf30e477d0a317d657c4e44f" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>SpiClock</name>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1aa946086fdf30e477d0a317d657c4e44fab9f5c797ebbf55adccdd8539a65a0241" prot="public">
+          <name>Disabled</name>
+          <initializer>= 0b0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_uart_base_1aa946086fdf30e477d0a317d657c4e44fa00d23a76e43b46dae9ec7aa9dcbebb32" prot="public">
+          <name>Enabled</name>
+          <initializer>= USART_CR2_CLKEN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" line="108" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" bodystart="106" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_uart_base_1a6ebe84a6b410051751c29464340e395f" prot="public" static="no">
+        <type><ref refid="group__modm__architecture__register_1ga4bbc612ddbc2cf239e7c5baeabfa8a0d" kindref="member">modm::Flags32</ref>&lt; <ref refid="classmodm_1_1platform_1_1_uart_base_1ac9c1bc3b77588a11d520416c22a25832" kindref="member">Interrupt</ref> &gt;</type>
+        <definition>using modm::platform::UartBase::Interrupt_t =  modm::Flags32&lt; Interrupt &gt;</definition>
+        <argsstring></argsstring>
+        <name>Interrupt_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" line="56" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_uart_base_1a918f65a6ffc3f0f1a6c64b9088e4dc5b" prot="public" static="no">
+        <type><ref refid="group__modm__architecture__register_1ga4bbc612ddbc2cf239e7c5baeabfa8a0d" kindref="member">modm::Flags32</ref>&lt; <ref refid="classmodm_1_1platform_1_1_uart_base_1a231dd8ca89bde31fb9bec6a65c1dae8f" kindref="member">InterruptFlag</ref> &gt;</type>
+        <definition>using modm::platform::UartBase::InterruptFlag_t =  modm::Flags32&lt; InterruptFlag &gt;</definition>
+        <argsstring></argsstring>
+        <name>InterruptFlag_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" line="73" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for the UART classes</para>
+<para>Provides some common enum that do not depend on the specific UART.</para>
+<para><simplesect kind="author"><para>Kevin Laeufer </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1727">
+        <label>modm::platform::Uart4</label>
+        <link refid="classmodm_1_1platform_1_1_uart4"/>
+        <childnode refid="1726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1728">
+        <label>modm::platform::Uart5</label>
+        <link refid="classmodm_1_1platform_1_1_uart5"/>
+        <childnode refid="1726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1729">
+        <label>modm::platform::UartHal4</label>
+        <link refid="classmodm_1_1platform_1_1_uart_hal4"/>
+        <childnode refid="1726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1730">
+        <label>modm::platform::UartHal5</label>
+        <link refid="classmodm_1_1platform_1_1_uart_hal5"/>
+        <childnode refid="1726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1726">
+        <label>modm::platform::UartBase</label>
+        <link refid="classmodm_1_1platform_1_1_uart_base"/>
+      </node>
+      <node id="1731">
+        <label>modm::platform::Usart1</label>
+        <link refid="classmodm_1_1platform_1_1_usart1"/>
+        <childnode refid="1726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1732">
+        <label>modm::platform::Usart2</label>
+        <link refid="classmodm_1_1platform_1_1_usart2"/>
+        <childnode refid="1726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1733">
+        <label>modm::platform::Usart3</label>
+        <link refid="classmodm_1_1platform_1_1_usart3"/>
+        <childnode refid="1726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1734">
+        <label>modm::platform::Usart6</label>
+        <link refid="classmodm_1_1platform_1_1_usart6"/>
+        <childnode refid="1726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1735">
+        <label>modm::platform::UsartHal1</label>
+        <link refid="classmodm_1_1platform_1_1_usart_hal1"/>
+        <childnode refid="1726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1736">
+        <label>modm::platform::UsartHal2</label>
+        <link refid="classmodm_1_1platform_1_1_usart_hal2"/>
+        <childnode refid="1726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1737">
+        <label>modm::platform::UsartHal3</label>
+        <link refid="classmodm_1_1platform_1_1_usart_hal3"/>
+        <childnode refid="1726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1738">
+        <label>modm::platform::UsartHal6</label>
+        <link refid="classmodm_1_1platform_1_1_usart_hal6"/>
+        <childnode refid="1726" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp" bodystart="41" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1ac9c1bc3b77588a11d520416c22a25832" prot="public" virt="non-virtual"><scope>modm::platform::UartBase</scope><name>Interrupt</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1a6ebe84a6b410051751c29464340e395f" prot="public" virt="non-virtual"><scope>modm::platform::UartBase</scope><name>Interrupt_t</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1a231dd8ca89bde31fb9bec6a65c1dae8f" prot="public" virt="non-virtual"><scope>modm::platform::UartBase</scope><name>InterruptFlag</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1a918f65a6ffc3f0f1a6c64b9088e4dc5b" prot="public" virt="non-virtual"><scope>modm::platform::UartBase</scope><name>InterruptFlag_t</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1ace789bf4bb98f058efde7ab625f10e0a" prot="public" virt="non-virtual"><scope>modm::platform::UartBase</scope><name>LastBitClockPulse</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1a7dd12333d203f746bca00aedd0d23d05" prot="public" virt="non-virtual"><scope>modm::platform::UartBase</scope><name>OversamplingMode</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1a598033b30db9a90ea5c34a7b1cdc41e1" prot="public" virt="non-virtual"><scope>modm::platform::UartBase</scope><name>Parity</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1aa946086fdf30e477d0a317d657c4e44f" prot="public" virt="non-virtual"><scope>modm::platform::UartBase</scope><name>SpiClock</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_base_1abb9ae2af6239db1ae39f2a789989e03c" prot="public" virt="non-virtual"><scope>modm::platform::UartBase</scope><name>SpiDataMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

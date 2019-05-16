@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structmodm_1_1_geometric_traits_3_01float_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>modm::GeometricTraits&lt; float &gt;</compoundname>
+    <includes refid="geometric__traits_8hpp" local="no">modm/math/geometry/geometric_traits.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structmodm_1_1_geometric_traits_3_01float_01_4_1aa17074ccb7fcdae1b00fb6152cd9db22" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float modm::GeometricTraits&lt; float &gt;::FloatType</definition>
+        <argsstring></argsstring>
+        <name>FloatType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/geometric_traits.hpp" line="117" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/geometric_traits.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structmodm_1_1_geometric_traits_3_01float_01_4_1ac6f5ad977ffe15cc7a41e1d45cbaf0d6" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float modm::GeometricTraits&lt; float &gt;::WideType</definition>
+        <argsstring></argsstring>
+        <name>WideType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/geometric_traits.hpp" line="118" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/geometric_traits.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structmodm_1_1_geometric_traits_3_01float_01_4_1a0bf3dafba98480fafdcebd0adc03de58" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool modm::GeometricTraits&lt; float &gt;::isValidType</definition>
+        <argsstring></argsstring>
+        <name>isValidType</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/geometric_traits.hpp" line="115" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/geometric_traits.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structmodm_1_1_geometric_traits_3_01float_01_4_1aa6e64a880eee2c6f3078c4757c1e25a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float modm::GeometricTraits&lt; float &gt;::round</definition>
+        <argsstring>(float value)</argsstring>
+        <name>round</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/geometric_traits.hpp" line="121" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/geometric_traits.hpp" bodystart="121" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/geometric_traits.hpp" line="114" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/geometric_traits.hpp" bodystart="113" bodyend="125"/>
+    <listofallmembers>
+      <member refid="structmodm_1_1_geometric_traits_3_01float_01_4_1aa17074ccb7fcdae1b00fb6152cd9db22" prot="public" virt="non-virtual"><scope>modm::GeometricTraits&lt; float &gt;</scope><name>FloatType</name></member>
+      <member refid="structmodm_1_1_geometric_traits_3_01float_01_4_1a0bf3dafba98480fafdcebd0adc03de58" prot="public" virt="non-virtual"><scope>modm::GeometricTraits&lt; float &gt;</scope><name>isValidType</name></member>
+      <member refid="structmodm_1_1_geometric_traits_3_01float_01_4_1aa6e64a880eee2c6f3078c4757c1e25a7" prot="public" virt="non-virtual"><scope>modm::GeometricTraits&lt; float &gt;</scope><name>round</name></member>
+      <member refid="structmodm_1_1_geometric_traits_3_01float_01_4_1ac6f5ad977ffe15cc7a41e1d45cbaf0d6" prot="public" virt="non-virtual"><scope>modm::GeometricTraits&lt; float &gt;</scope><name>WideType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

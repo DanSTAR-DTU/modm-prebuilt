@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1platform_1_1_uart_baudrate" kind="class" language="C++" prot="public">
+    <compoundname>modm::platform::UartBaudrate</compoundname>
+    <includes refid="uart__baudrate_8hpp" local="no">modm/platform/uart/uart_baudrate.hpp</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_baudrate_1af060524d0a87f0616db2253752a0fb9a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="classmodm_1_1platform_1_1_uart_base_1a7dd12333d203f746bca00aedd0d23d05" kindref="member">UartBase::OversamplingMode</ref></type>
+        <definition>static constexpr UartBase::OversamplingMode modm::platform::UartBaudrate::getOversamplingMode</definition>
+        <argsstring>(frequency_t clockrate, baudrate_t baudrate)</argsstring>
+        <name>getOversamplingMode</name>
+        <param>
+          <type><ref refid="group__modm__math__units_1gaedfcd0a3509b2f2ae47fd1efd95bd3ce" kindref="member">frequency_t</ref></type>
+          <declname>clockrate</declname>
+        </param>
+        <param>
+          <type><ref refid="group__modm__math__units_1ga30af1fac499efa181bc4708e24c577d1" kindref="member">baudrate_t</ref></type>
+          <declname>baudrate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the highest Oversampling Mode that is possible for this configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" line="47" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_baudrate_1a157f3c96da74c09991bd8bbdbe07efbb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="group__modm__math__units_1gaedfcd0a3509b2f2ae47fd1efd95bd3ce" kindref="member">frequency_t</ref></type>
+            <declname>clockrate</declname>
+            <defname>clockrate</defname>
+          </param>
+          <param>
+            <type><ref refid="group__modm__math__units_1ga30af1fac499efa181bc4708e24c577d1" kindref="member">baudrate_t</ref></type>
+            <declname>baudrate</declname>
+            <defname>baudrate</defname>
+          </param>
+          <param>
+            <type><ref refid="group__modm__math__units_1ga4f017ee3fdf26cb780b0df55356f031c" kindref="member">percent_t</ref></type>
+            <declname>tolerance</declname>
+            <defname>tolerance</defname>
+            <defval><ref refid="group__modm__math__units_1gaa849cad2910e94feb4a7f31a6dacbb1c" kindref="member">pct</ref>(10)</defval>
+          </param>
+        </templateparamlist>
+        <type>uint16_t</type>
+        <definition>static uint16_t modm::platform::UartBaudrate::getBrr</definition>
+        <argsstring>()</argsstring>
+        <name>getBrr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the best BRR for chosen baudrate and tolerance.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>clockrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the modules clock frequency in Hz </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baudrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the desired baudrate in Hz </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tolerance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the allowed absolute tolerance for the resulting baudrate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" line="63" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" bodystart="63" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class provides several helper functions to calculate the values for the fractional baudrate generator.</para>
+<para>All of these functions are <computeroutput>constexpr</computeroutput> functions which allow compile time evaluation. If you really need to change the baudrate at runtime, consider calculating the register values at compile time, storing them in your program, then switching them at runtime. This will save you a <emphasis>lot</emphasis> of flash and execution time.</para>
+<para><simplesect kind="author"><para>Kevin Laeufer </para>
+</simplesect>
+<simplesect kind="author"><para>Niklas Hauser </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" line="41" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" bodystart="40" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1platform_1_1_uart_baudrate_1a157f3c96da74c09991bd8bbdbe07efbb" prot="public" virt="non-virtual"><scope>modm::platform::UartBaudrate</scope><name>getBrr</name></member>
+      <member refid="classmodm_1_1platform_1_1_uart_baudrate_1af060524d0a87f0616db2253752a0fb9a" prot="public" virt="non-virtual"><scope>modm::platform::UartBaudrate</scope><name>getOversamplingMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

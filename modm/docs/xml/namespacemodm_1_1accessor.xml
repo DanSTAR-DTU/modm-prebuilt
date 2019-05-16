@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespacemodm_1_1accessor" kind="namespace" language="C++">
+    <compoundname>modm::accessor</compoundname>
+    <innerclass refid="classmodm_1_1accessor_1_1_flash" prot="public">modm::accessor::Flash</innerclass>
+    <innerclass refid="classmodm_1_1accessor_1_1_ram" prot="public">modm::accessor::Ram</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__modm__architecture__accessor_1gaea1a7665e0c1f7bc4fa774321527f295" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>volatile T&amp; modm::accessor::asVolatile</definition>
+        <argsstring>(T &amp;value)</argsstring>
+        <name>asVolatile</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add volatile modifier to T </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor.hpp" line="32" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor.hpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="group__modm__architecture__accessor_1ga584e5a440aa2242d8f4d83908bb926e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>inline ::<ref refid="classmodm_1_1accessor_1_1_flash" kindref="compound">modm::accessor::Flash</ref>&lt; T &gt;</type>
+        <definition>inline ::modm::accessor::Flash&lt;T&gt; modm::accessor::asFlash</definition>
+        <argsstring>(const T *ptr)</argsstring>
+        <name>asFlash</name>
+        <param>
+          <type>const T *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a normal pointer to a <ref refid="classmodm_1_1accessor_1_1_flash" kindref="compound">accessor::Flash</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor_flash.hpp" line="176" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor_flash.hpp" bodystart="176" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor.hpp" line="24" column="1"/>
+  </compounddef>
+</doxygen>

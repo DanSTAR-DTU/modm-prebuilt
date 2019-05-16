@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="allocator_8hpp" kind="file" language="C++">
+    <compoundname>allocator.hpp</compoundname>
+    <includes refid="dynamic_8hpp" local="yes">allocator/dynamic.hpp</includes>
+    <includes refid="static_8hpp" local="yes">allocator/static.hpp</includes>
+    <includes refid="block_8hpp" local="yes">allocator/block.hpp</includes>
+    <includedby refid="doubly__linked__list_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp</includedby>
+    <includedby refid="dynamic__array_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp</includedby>
+    <includedby refid="linked__list_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/linked_list.hpp</includedby>
+    <includedby refid="utils_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils.hpp</includedby>
+    <incdepgraph>
+      <node id="7450">
+        <label>allocator/static.hpp</label>
+        <link refid="static_8hpp"/>
+        <childnode refid="7447" relation="include">
+        </childnode>
+      </node>
+      <node id="7446">
+        <label>allocator/dynamic.hpp</label>
+        <link refid="dynamic_8hpp"/>
+        <childnode refid="7447" relation="include">
+        </childnode>
+      </node>
+      <node id="7451">
+        <label>allocator/block.hpp</label>
+        <link refid="block_8hpp"/>
+        <childnode refid="7447" relation="include">
+        </childnode>
+      </node>
+      <node id="7449">
+        <label>new</label>
+      </node>
+      <node id="7445">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator.hpp</label>
+        <link refid="allocator_8hpp"/>
+        <childnode refid="7446" relation="include">
+        </childnode>
+        <childnode refid="7450" relation="include">
+        </childnode>
+        <childnode refid="7451" relation="include">
+        </childnode>
+      </node>
+      <node id="7448">
+        <label>cstddef</label>
+      </node>
+      <node id="7447">
+        <label>allocator_base.hpp</label>
+        <link refid="allocator__base_8hpp"/>
+        <childnode refid="7448" relation="include">
+        </childnode>
+        <childnode refid="7449" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7462">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp</label>
+        <link refid="polygon__2d_8hpp"/>
+        <childnode refid="7461" relation="include">
+        </childnode>
+        <childnode refid="7463" relation="include">
+        </childnode>
+        <childnode refid="7457" relation="include">
+        </childnode>
+        <childnode refid="7459" relation="include">
+        </childnode>
+        <childnode refid="7460" relation="include">
+        </childnode>
+      </node>
+      <node id="7464">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/linked_list.hpp</label>
+        <link refid="linked__list_8hpp"/>
+        <childnode refid="7454" relation="include">
+        </childnode>
+      </node>
+      <node id="7454">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container.hpp</label>
+        <link refid="container_8hpp"/>
+      </node>
+      <node id="7463">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/ray_2d.hpp</label>
+        <link refid="ray__2d_8hpp"/>
+        <childnode refid="7462" relation="include">
+        </childnode>
+        <childnode refid="7460" relation="include">
+        </childnode>
+      </node>
+      <node id="7453">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp</label>
+        <link refid="doubly__linked__list_8hpp"/>
+        <childnode refid="7454" relation="include">
+        </childnode>
+      </node>
+      <node id="7461">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/line_segment_2d.hpp</label>
+        <link refid="line__segment__2d_8hpp"/>
+        <childnode refid="7457" relation="include">
+        </childnode>
+        <childnode refid="7462" relation="include">
+        </childnode>
+        <childnode refid="7463" relation="include">
+        </childnode>
+        <childnode refid="7459" relation="include">
+        </childnode>
+        <childnode refid="7460" relation="include">
+        </childnode>
+      </node>
+      <node id="7452">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator.hpp</label>
+        <link refid="allocator_8hpp"/>
+        <childnode refid="7453" relation="include">
+        </childnode>
+        <childnode refid="7455" relation="include">
+        </childnode>
+        <childnode refid="7464" relation="include">
+        </childnode>
+        <childnode refid="7465" relation="include">
+        </childnode>
+      </node>
+      <node id="7456">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/point_set_2d.hpp</label>
+        <link refid="point__set__2d_8hpp"/>
+        <childnode refid="7457" relation="include">
+        </childnode>
+        <childnode refid="7458" relation="include">
+        </childnode>
+        <childnode refid="7461" relation="include">
+        </childnode>
+        <childnode refid="7462" relation="include">
+        </childnode>
+        <childnode refid="7463" relation="include">
+        </childnode>
+        <childnode refid="7459" relation="include">
+        </childnode>
+        <childnode refid="7460" relation="include">
+        </childnode>
+      </node>
+      <node id="7459">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry.hpp</label>
+        <link refid="geometry_8hpp"/>
+        <childnode refid="7460" relation="include">
+        </childnode>
+      </node>
+      <node id="7460">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+        <link refid="math_8hpp"/>
+      </node>
+      <node id="7458">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/line_2d.hpp</label>
+        <link refid="line__2d_8hpp"/>
+        <childnode refid="7457" relation="include">
+        </childnode>
+        <childnode refid="7459" relation="include">
+        </childnode>
+        <childnode refid="7460" relation="include">
+        </childnode>
+      </node>
+      <node id="7465">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+      </node>
+      <node id="7457">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp</label>
+        <link refid="circle__2d_8hpp"/>
+        <childnode refid="7458" relation="include">
+        </childnode>
+        <childnode refid="7461" relation="include">
+        </childnode>
+        <childnode refid="7462" relation="include">
+        </childnode>
+        <childnode refid="7463" relation="include">
+        </childnode>
+        <childnode refid="7459" relation="include">
+        </childnode>
+        <childnode refid="7460" relation="include">
+        </childnode>
+      </node>
+      <node id="7455">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/dynamic_array.hpp</label>
+        <link refid="dynamic__array_8hpp"/>
+        <childnode refid="7454" relation="include">
+        </childnode>
+        <childnode refid="7456" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1allocator">modm::allocator</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator.hpp"/>
+  </compounddef>
+</doxygen>

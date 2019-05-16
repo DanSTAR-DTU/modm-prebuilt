@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__modm__utils" kind="group">
+    <compoundname>modm_utils</compoundname>
+    <title>Utilities</title>
+    <innergroup refid="group__modm__utils__allocator">Memory allocators</innergroup>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="group__modm__utils_1ga203c48bdc0ee80f631cdd258b10ac2ec" prot="public" static="no" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t modm::Bit0</definition>
+        <argsstring></argsstring>
+        <name>Bit0</name>
+        <initializer>= (1ul &lt;&lt;  0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="24" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga6cd002ab50e9098b051162dc153a9027" prot="public" static="no" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t modm::Bit1</definition>
+        <argsstring></argsstring>
+        <name>Bit1</name>
+        <initializer>= (1ul &lt;&lt;  1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="25" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga321c02afc0736ac2e00e7345160ecd15" prot="public" static="no" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t modm::Bit2</definition>
+        <argsstring></argsstring>
+        <name>Bit2</name>
+        <initializer>= (1ul &lt;&lt;  2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="26" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1gaba1b09d91059e91dfeb9f3de71d78b88" prot="public" static="no" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t modm::Bit3</definition>
+        <argsstring></argsstring>
+        <name>Bit3</name>
+        <initializer>= (1ul &lt;&lt;  3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="27" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga6af49a714dae4f25e5abf3651bfa78da" prot="public" static="no" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t modm::Bit4</definition>
+        <argsstring></argsstring>
+        <name>Bit4</name>
+        <initializer>= (1ul &lt;&lt;  4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="28" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1gaaf03e0045f592f171a2b890e86362471" prot="public" static="no" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t modm::Bit5</definition>
+        <argsstring></argsstring>
+        <name>Bit5</name>
+        <initializer>= (1ul &lt;&lt;  5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="29" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga1e6b1e4cc43ac4e146cdc5033b594e88" prot="public" static="no" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t modm::Bit6</definition>
+        <argsstring></argsstring>
+        <name>Bit6</name>
+        <initializer>= (1ul &lt;&lt;  6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="30" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1gaa1ac8e305f378973a4e5eb9af8c878c5" prot="public" static="no" mutable="no">
+        <type>constexpr uint8_t</type>
+        <definition>constexpr uint8_t modm::Bit7</definition>
+        <argsstring></argsstring>
+        <name>Bit7</name>
+        <initializer>= (1ul &lt;&lt;  7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="31" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1gaec33615d542182fef47fce64bd1bda68" prot="public" static="no" mutable="no">
+        <type>constexpr uint16_t</type>
+        <definition>constexpr uint16_t modm::Bit8</definition>
+        <argsstring></argsstring>
+        <name>Bit8</name>
+        <initializer>= (1ul &lt;&lt;  8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="32" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga622b926d825113ebd3dce00a6e4dab9b" prot="public" static="no" mutable="no">
+        <type>constexpr uint16_t</type>
+        <definition>constexpr uint16_t modm::Bit9</definition>
+        <argsstring></argsstring>
+        <name>Bit9</name>
+        <initializer>= (1ul &lt;&lt;  9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="33" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga8bccc12f46dc23d8e9dde7ebef902f7c" prot="public" static="no" mutable="no">
+        <type>constexpr uint16_t</type>
+        <definition>constexpr uint16_t modm::Bit10</definition>
+        <argsstring></argsstring>
+        <name>Bit10</name>
+        <initializer>= (1ul &lt;&lt; 10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="34" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga21a4a87d64bcb1dfbaf346a9cb1b8711" prot="public" static="no" mutable="no">
+        <type>constexpr uint16_t</type>
+        <definition>constexpr uint16_t modm::Bit11</definition>
+        <argsstring></argsstring>
+        <name>Bit11</name>
+        <initializer>= (1ul &lt;&lt; 11)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="35" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1gafaece4a97c420e6a4ebe85a3ceabc1f8" prot="public" static="no" mutable="no">
+        <type>constexpr uint16_t</type>
+        <definition>constexpr uint16_t modm::Bit12</definition>
+        <argsstring></argsstring>
+        <name>Bit12</name>
+        <initializer>= (1ul &lt;&lt; 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="36" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga17e9994f5624f7ce7c5d1653e60dd3d0" prot="public" static="no" mutable="no">
+        <type>constexpr uint16_t</type>
+        <definition>constexpr uint16_t modm::Bit13</definition>
+        <argsstring></argsstring>
+        <name>Bit13</name>
+        <initializer>= (1ul &lt;&lt; 13)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="37" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga9c16d83237a5ea2541ce977ecaa8ccfe" prot="public" static="no" mutable="no">
+        <type>constexpr uint16_t</type>
+        <definition>constexpr uint16_t modm::Bit14</definition>
+        <argsstring></argsstring>
+        <name>Bit14</name>
+        <initializer>= (1ul &lt;&lt; 14)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="38" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1gacb3f481f5bc52c7a08cf1b710c87abf8" prot="public" static="no" mutable="no">
+        <type>constexpr uint16_t</type>
+        <definition>constexpr uint16_t modm::Bit15</definition>
+        <argsstring></argsstring>
+        <name>Bit15</name>
+        <initializer>= (1ul &lt;&lt; 15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1gafaad0d5cd5990e8827fc3a86eb2406ac" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit16</definition>
+        <argsstring></argsstring>
+        <name>Bit16</name>
+        <initializer>= (1ul &lt;&lt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1gade5f68fc9cb58a187d19799042eb0757" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit17</definition>
+        <argsstring></argsstring>
+        <name>Bit17</name>
+        <initializer>= (1ul &lt;&lt; 17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="41" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga0fbf2302b43e9a15fe25590e0cde5ad1" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit18</definition>
+        <argsstring></argsstring>
+        <name>Bit18</name>
+        <initializer>= (1ul &lt;&lt; 18)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga6da4ebb26f61c13d39244605c2eb198a" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit19</definition>
+        <argsstring></argsstring>
+        <name>Bit19</name>
+        <initializer>= (1ul &lt;&lt; 19)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="43" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1gab4fd232fe4cdf951354261f3a8c49dd5" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit20</definition>
+        <argsstring></argsstring>
+        <name>Bit20</name>
+        <initializer>= (1ul &lt;&lt; 20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="44" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1gafea9762eaf05b5a0472b3adb3acc058f" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit21</definition>
+        <argsstring></argsstring>
+        <name>Bit21</name>
+        <initializer>= (1ul &lt;&lt; 21)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="45" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga5e1881d9f26e8dc474fb36b89562ae8d" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit22</definition>
+        <argsstring></argsstring>
+        <name>Bit22</name>
+        <initializer>= (1ul &lt;&lt; 22)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="46" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga82d65d1e5f5fce8b2e86a3b9d11730a6" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit23</definition>
+        <argsstring></argsstring>
+        <name>Bit23</name>
+        <initializer>= (1ul &lt;&lt; 23)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="47" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga11b288ca4c3081b3ced3dc2585f6c502" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit24</definition>
+        <argsstring></argsstring>
+        <name>Bit24</name>
+        <initializer>= (1ul &lt;&lt; 24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="48" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1gaabad2869a5008b8cda28d2040dfe7a54" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit25</definition>
+        <argsstring></argsstring>
+        <name>Bit25</name>
+        <initializer>= (1ul &lt;&lt; 25)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="49" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga8c1f16ba584d2b07937045035356e570" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit26</definition>
+        <argsstring></argsstring>
+        <name>Bit26</name>
+        <initializer>= (1ul &lt;&lt; 26)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="50" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1gae76888fcd842cb913770739d1969c272" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit27</definition>
+        <argsstring></argsstring>
+        <name>Bit27</name>
+        <initializer>= (1ul &lt;&lt; 27)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="51" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga71a08ac0d7e3cf1f2004849d75bdaab7" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit28</definition>
+        <argsstring></argsstring>
+        <name>Bit28</name>
+        <initializer>= (1ul &lt;&lt; 28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="52" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga5d6600a4f72f10f0929cbb7f5165fcfd" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit29</definition>
+        <argsstring></argsstring>
+        <name>Bit29</name>
+        <initializer>= (1ul &lt;&lt; 29)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="53" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga46eff7d0f9804d0dc18bba658b67ac59" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit30</definition>
+        <argsstring></argsstring>
+        <name>Bit30</name>
+        <initializer>= (1ul &lt;&lt; 30)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="54" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__modm__utils_1ga92a89a5cc50bd2b4cc805e2381bc5a11" prot="public" static="no" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t modm::Bit31</definition>
+        <argsstring></argsstring>
+        <name>Bit31</name>
+        <initializer>= (1ul &lt;&lt; 31)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="55" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__modm__utils_1gac9a2e3b1c445ec26b3a24543db1731dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void modm::dummy</definition>
+        <argsstring>()</argsstring>
+        <name>dummy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dummy function for default function pointers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/dummy.hpp" line="26" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

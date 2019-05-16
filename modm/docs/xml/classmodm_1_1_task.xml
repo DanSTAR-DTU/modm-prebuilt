@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1_task" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>modm::Task</compoundname>
+    <includes refid="task_8hpp" local="no">modm/processing/task.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodm_1_1_task_1ae2f9891e255b18d8c04a6ccbb031385e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual modm::Task::~Task</definition>
+        <argsstring>()</argsstring>
+        <name>~Task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/task.hpp" line="35" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/task.hpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_task_1a0a0992c2b22f41b7b73985098de51513" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void modm::Task::start</definition>
+        <argsstring>(...)</argsstring>
+        <name>start</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/task.hpp" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_task_1aa8692d4ebe02d77d596d64d05bc84ad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool modm::Task::isFinished</definition>
+        <argsstring>()=0</argsstring>
+        <name>isFinished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/task.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_task_1adc5bb8ad2de993c501b788dcc101e39a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void modm::Task::update</definition>
+        <argsstring>()=0</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/task.hpp" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Interface for a state-machine</para>
+<para>Every task must provide a <ref refid="classmodm_1_1_task_1a0a0992c2b22f41b7b73985098de51513" kindref="member">start()</ref> method which resets the internal state and starts execution. It is not declared here because the task may need some specific information which should be passed as a parameter.</para>
+<para><simplesect kind="author"><para>Fabian Greif </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/task.hpp" line="33" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/task.hpp" bodystart="32" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1_task_1aa8692d4ebe02d77d596d64d05bc84ad4" prot="public" virt="pure-virtual"><scope>modm::Task</scope><name>isFinished</name></member>
+      <member refid="classmodm_1_1_task_1a0a0992c2b22f41b7b73985098de51513" prot="public" virt="non-virtual"><scope>modm::Task</scope><name>start</name></member>
+      <member refid="classmodm_1_1_task_1adc5bb8ad2de993c501b788dcc101e39a" prot="public" virt="pure-virtual"><scope>modm::Task</scope><name>update</name></member>
+      <member refid="classmodm_1_1_task_1ae2f9891e255b18d8c04a6ccbb031385e" prot="public" virt="virtual"><scope>modm::Task</scope><name>~Task</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

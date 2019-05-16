@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="uart__hal__3_8hpp" kind="file" language="C++">
+    <compoundname>uart_hal_3.hpp</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="device_8hpp" local="yes">../device.hpp</includes>
+    <includes refid="uart__base_8hpp" local="yes">uart_base.hpp</includes>
+    <includes refid="uart__baudrate_8hpp" local="yes">uart_baudrate.hpp</includes>
+    <includes local="yes">uart_hal_3_impl.hpp</includes>
+    <includedby refid="uart__3_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_3.hpp</includedby>
+    <includedby refid="platform_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <incdepgraph>
+      <node id="7026">
+        <label>uart_base.hpp</label>
+        <link refid="uart__base_8hpp"/>
+        <childnode refid="7020" relation="include">
+        </childnode>
+        <childnode refid="7021" relation="include">
+        </childnode>
+        <childnode refid="7027" relation="include">
+        </childnode>
+        <childnode refid="7036" relation="include">
+        </childnode>
+      </node>
+      <node id="7031">
+        <label>stdarg.h</label>
+      </node>
+      <node id="7021">
+        <label>../device.hpp</label>
+        <link refid="device_8hpp"/>
+        <childnode refid="7020" relation="include">
+        </childnode>
+        <childnode refid="7022" relation="include">
+        </childnode>
+        <childnode refid="7024" relation="include">
+        </childnode>
+        <childnode refid="7025" relation="include">
+        </childnode>
+      </node>
+      <node id="7019">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_3.hpp</label>
+        <link refid="uart__hal__3_8hpp"/>
+        <childnode refid="7020" relation="include">
+        </childnode>
+        <childnode refid="7021" relation="include">
+        </childnode>
+        <childnode refid="7026" relation="include">
+        </childnode>
+        <childnode refid="7037" relation="include">
+        </childnode>
+        <childnode refid="7042" relation="include">
+        </childnode>
+      </node>
+      <node id="7025">
+        <label>system_stm32f4xx.h</label>
+      </node>
+      <node id="7020">
+        <label>stdint.h</label>
+      </node>
+      <node id="7028">
+        <label>modm/math/utils/bit_constants.hpp</label>
+        <link refid="bit__constants_8hpp"/>
+        <childnode refid="7020" relation="include">
+        </childnode>
+      </node>
+      <node id="7041">
+        <label>cmath</label>
+      </node>
+      <node id="7037">
+        <label>uart_baudrate.hpp</label>
+        <link refid="uart__baudrate_8hpp"/>
+        <childnode refid="7026" relation="include">
+        </childnode>
+        <childnode refid="7038" relation="include">
+        </childnode>
+        <childnode refid="7041" relation="include">
+        </childnode>
+      </node>
+      <node id="7027">
+        <label>modm/architecture/interface/register.hpp</label>
+        <link refid="register_8hpp"/>
+        <childnode refid="7020" relation="include">
+        </childnode>
+        <childnode refid="7028" relation="include">
+        </childnode>
+        <childnode refid="7023" relation="include">
+        </childnode>
+        <childnode refid="7029" relation="include">
+        </childnode>
+      </node>
+      <node id="7022">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="7023" relation="include">
+        </childnode>
+      </node>
+      <node id="7036">
+        <label>modm/architecture/interface/interrupt.hpp</label>
+        <link refid="interrupt_8hpp"/>
+        <childnode refid="7020" relation="include">
+        </childnode>
+        <childnode refid="7022" relation="include">
+        </childnode>
+      </node>
+      <node id="7040">
+        <label>modm/math/units.hpp</label>
+        <link refid="units_8hpp"/>
+        <childnode refid="7020" relation="include">
+        </childnode>
+        <childnode refid="7022" relation="include">
+        </childnode>
+      </node>
+      <node id="7038">
+        <label>modm/architecture/interface/peripheral.hpp</label>
+        <link refid="peripheral_8hpp"/>
+        <childnode refid="7020" relation="include">
+        </childnode>
+        <childnode refid="7030" relation="include">
+        </childnode>
+        <childnode refid="7039" relation="include">
+        </childnode>
+        <childnode refid="7040" relation="include">
+        </childnode>
+      </node>
+      <node id="7042">
+        <label>uart_hal_3_impl.hpp</label>
+      </node>
+      <node id="7030">
+        <label>cstddef</label>
+      </node>
+      <node id="7023">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="7035">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="7020" relation="include">
+        </childnode>
+        <childnode refid="7034" relation="include">
+        </childnode>
+      </node>
+      <node id="7033">
+        <label>type_traits</label>
+      </node>
+      <node id="7024">
+        <label>stm32f446xx.h</label>
+      </node>
+      <node id="7034">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
+      </node>
+      <node id="7029">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="7030" relation="include">
+        </childnode>
+        <childnode refid="7022" relation="include">
+        </childnode>
+        <childnode refid="7031" relation="include">
+        </childnode>
+        <childnode refid="7032" relation="include">
+        </childnode>
+        <childnode refid="7033" relation="include">
+        </childnode>
+        <childnode refid="7034" relation="include">
+        </childnode>
+        <childnode refid="7035" relation="include">
+        </childnode>
+      </node>
+      <node id="7039">
+        <label>modm/math/tolerance.hpp</label>
+        <link refid="tolerance_8hpp"/>
+        <childnode refid="7020" relation="include">
+        </childnode>
+        <childnode refid="7040" relation="include">
+        </childnode>
+      </node>
+      <node id="7032">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7043">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_3.hpp</label>
+        <link refid="uart__hal__3_8hpp"/>
+        <childnode refid="7044" relation="include">
+        </childnode>
+        <childnode refid="7045" relation="include">
+        </childnode>
+      </node>
+      <node id="7044">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_3.hpp</label>
+        <link refid="uart__3_8hpp"/>
+        <childnode refid="7045" relation="include">
+        </childnode>
+      </node>
+      <node id="7045">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1platform_1_1_usart_hal3" prot="public">modm::platform::UsartHal3</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1platform">modm::platform</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_3.hpp"/>
+  </compounddef>
+</doxygen>

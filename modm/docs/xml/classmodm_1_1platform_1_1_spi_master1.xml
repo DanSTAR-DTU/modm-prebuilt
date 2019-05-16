@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1platform_1_1_spi_master1" kind="class" language="C++" prot="public">
+    <compoundname>modm::platform::SpiMaster1</compoundname>
+    <basecompoundref refid="classmodm_1_1_spi_master" prot="public" virt="non-virtual">modm::SpiMaster</basecompoundref>
+    <includes refid="spi__master__1_8hpp" local="no">modm/platform/spi/spi_master_1.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_master1_1add79bda844260921053b866f38ca35c2" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>DataMode</name>
+        <enumvalue id="classmodm_1_1platform_1_1_spi_master1_1add79bda844260921053b866f38ca35c2a315436bae0e85636381fc939db06aee5" prot="public">
+          <name>Mode0</name>
+          <initializer>= 0b00</initializer>
+          <briefdescription>
+<para>clock normal, sample on rising edge </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_spi_master1_1add79bda844260921053b866f38ca35c2a7a2ea225a084605104f8c39b3ae9657c" prot="public">
+          <name>Mode1</name>
+          <initializer>= SPI_CR1_CPHA</initializer>
+          <briefdescription>
+<para>clock normal, sample on falling edge </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_spi_master1_1add79bda844260921053b866f38ca35c2a04c542f260d16590ec60c594f67a30e7" prot="public">
+          <name>Mode2</name>
+          <initializer>= SPI_CR1_CPOL</initializer>
+          <briefdescription>
+<para>clock inverted, sample on falling edge </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_spi_master1_1add79bda844260921053b866f38ca35c2ab68fa4884da8d22e83f37b4f209295f1" prot="public">
+          <name>Mode3</name>
+          <initializer>= SPI_CR1_CPOL | SPI_CR1_CPHA</initializer>
+          <briefdescription>
+<para>clock inverted, sample on rising edge </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> Data Mode, Mode0 is the most common mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="50" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="48" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_master1_1afe8175ef346e9cf268c5bc0dde84e9d8" prot="public" static="no" strong="yes">
+        <type>uint32_t</type>
+        <name>DataOrder</name>
+        <enumvalue id="classmodm_1_1platform_1_1_spi_master1_1afe8175ef346e9cf268c5bc0dde84e9d8aee850a31af8a5060a68542cb34339c50" prot="public">
+          <name>MsbFirst</name>
+          <initializer>= 0b0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmodm_1_1platform_1_1_spi_master1_1afe8175ef346e9cf268c5bc0dde84e9d8abdb340581a62499a27a78804ea99a99a" prot="public">
+          <name>LsbFirst</name>
+          <initializer>= SPI_CR1_LSBFIRST</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> Data Order, MsbFirst is the most common mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="61" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="59" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_spi_master1_1ae469de7839f7a8735342e70169d588fe" prot="public" static="no">
+        <type><ref refid="classmodm_1_1platform_1_1_spi_hal1" kindref="compound">SpiHal1</ref></type>
+        <definition>using modm::platform::SpiMaster1::Hal =  SpiHal1</definition>
+        <argsstring></argsstring>
+        <name>Hal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="45" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_spi_master1_1ab41dfb256bd021d262f1926f51345d97" prot="private" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t modm::platform::SpiMaster1::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_spi_master1_1a72141f9a51aa7d509025b1895f8e6cc8" prot="private" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t modm::platform::SpiMaster1::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="41" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_spi_master1_1a4ecc35a13c8b1d12fbfb4bc0e1507df7" prot="private" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void* modm::platform::SpiMaster1::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_spi_master1_1acad029f69c0b01071f81cca39a919fe6" prot="private" static="yes" mutable="no">
+        <type><ref refid="structmodm_1_1_spi_1a0d609550a29c439aa83e5999f584447d" kindref="member">ConfigurationHandler</ref></type>
+        <definition>ConfigurationHandler modm::platform::SpiMaster1::configuration</definition>
+        <argsstring></argsstring>
+        <name>configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="43" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master1_1a42d034c09b298bd8c42407e1d9a13458" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>template&lt; <ref refid="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55" kindref="member">Peripheral</ref> _ &gt; class...</type>
+            <declname>Signals</declname>
+            <defname>Signals</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void modm::platform::SpiMaster1::connect</definition>
+        <argsstring>()</argsstring>
+        <name>connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="69" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="69" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master1_1aa580e7721f6b8d7c2ef04a8911b101ba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class SystemClock</type>
+          </param>
+          <param>
+            <type><ref refid="group__modm__math__units_1ga30af1fac499efa181bc4708e24c577d1" kindref="member">baudrate_t</ref></type>
+            <declname>baudrate</declname>
+            <defname>baudrate</defname>
+          </param>
+          <param>
+            <type><ref refid="group__modm__math__units_1ga4f017ee3fdf26cb780b0df55356f031c" kindref="member">percent_t</ref></type>
+            <declname>tolerance</declname>
+            <defname>tolerance</defname>
+            <defval><ref refid="group__modm__math__units_1gaa849cad2910e94feb4a7f31a6dacbb1c" kindref="member">pct</ref>(5)</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void modm::platform::SpiMaster1::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="86" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="86" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master1_1a6b5026f8ef01f283135fa7b0778513f6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::SpiMaster1::setDataMode</definition>
+        <argsstring>(DataMode mode)</argsstring>
+        <name>setDataMode</name>
+        <param>
+          <type><ref refid="structmodm_1_1_spi_1a00c4c03fc5d3c23c677740fb804ae820" kindref="member">DataMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="125" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master1_1af1b49c42a9cc311ee8239a28d3635177" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::SpiMaster1::setDataOrder</definition>
+        <argsstring>(DataOrder order)</argsstring>
+        <name>setDataOrder</name>
+        <param>
+          <type><ref refid="structmodm_1_1_spi_1a738c2058b5a1778735b4c78df0bb6839" kindref="member">DataOrder</ref></type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="131" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master1_1abc3447b6539deedc5d36640f07ff689d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t modm::platform::SpiMaster1::acquire</definition>
+        <argsstring>(void *ctx, ConfigurationHandler handler=nullptr)</argsstring>
+        <name>acquire</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="structmodm_1_1_spi_1a0d609550a29c439aa83e5999f584447d" kindref="member">ConfigurationHandler</ref></type>
+          <declname>handler</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master1_1a1579ca92e613cce6e69bb15af7fb1153" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t modm::platform::SpiMaster1::release</definition>
+        <argsstring>(void *ctx)</argsstring>
+        <name>release</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master1_1a6f34d9323d85aa36299672aba24a750a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t modm::platform::SpiMaster1::transferBlocking</definition>
+        <argsstring>(uint8_t data)</argsstring>
+        <name>transferBlocking</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="145" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master1_1aa70bf04eeb9f648a5485dd2bbab089b2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::SpiMaster1::transferBlocking</definition>
+        <argsstring>(uint8_t *tx, uint8_t *rx, std::size_t length)</argsstring>
+        <name>transferBlocking</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>tx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rx</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="151" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master1_1a39e08ca4f937f81e9d9c310e297d7265" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; uint8_t &gt;</type>
+        <definition>static modm::ResumableResult&lt;uint8_t&gt; modm::platform::SpiMaster1::transfer</definition>
+        <argsstring>(uint8_t data)</argsstring>
+        <name>transfer</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master1_1af5ad0518cccc493a473fe56ad6df188e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; void &gt;</type>
+        <definition>static modm::ResumableResult&lt;void&gt; modm::platform::SpiMaster1::transfer</definition>
+        <argsstring>(uint8_t *tx, uint8_t *rx, std::size_t length)</argsstring>
+        <name>transfer</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>tx</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rx</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="161" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Serial peripheral interface (SPI1).</para>
+<para>Simple unbuffered implementation.</para>
+<para><simplesect kind="author"><para>Niklas Hauser </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1555">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="1556">
+        <label>modm::Spi</label>
+        <link refid="structmodm_1_1_spi"/>
+      </node>
+      <node id="1553">
+        <label>modm::platform::SpiMaster1</label>
+        <link refid="classmodm_1_1platform_1_1_spi_master1"/>
+        <childnode refid="1554" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1554">
+        <label>modm::SpiMaster</label>
+        <link refid="classmodm_1_1_spi_master"/>
+        <childnode refid="1555" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1559">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="1560">
+        <label>modm::Spi</label>
+        <link refid="structmodm_1_1_spi"/>
+      </node>
+      <node id="1557">
+        <label>modm::platform::SpiMaster1</label>
+        <link refid="classmodm_1_1platform_1_1_spi_master1"/>
+        <childnode refid="1558" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1558">
+        <label>modm::SpiMaster</label>
+        <link refid="classmodm_1_1_spi_master"/>
+        <childnode refid="1559" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1560" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp" bodystart="38" bodyend="163"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1abc3447b6539deedc5d36640f07ff689d" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>acquire</name></member>
+      <member refid="classmodm_1_1_peripheral_driver_1a5c336ff9889c347e7eadb810bf984ebd" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>assertBaudrateInTolerance</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1acad029f69c0b01071f81cca39a919fe6" prot="private" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>configuration</name></member>
+      <member refid="structmodm_1_1_spi_1a0d609550a29c439aa83e5999f584447d" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>ConfigurationHandler</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1a42d034c09b298bd8c42407e1d9a13458" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>connect</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1a4ecc35a13c8b1d12fbfb4bc0e1507df7" prot="private" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>context</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1a72141f9a51aa7d509025b1895f8e6cc8" prot="private" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>count</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1add79bda844260921053b866f38ca35c2" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>DataMode</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1afe8175ef346e9cf268c5bc0dde84e9d8" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>DataOrder</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1ae469de7839f7a8735342e70169d588fe" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>Hal</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1aa580e7721f6b8d7c2ef04a8911b101ba" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>initialize</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1a1579ca92e613cce6e69bb15af7fb1153" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>release</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1a6b5026f8ef01f283135fa7b0778513f6" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>setDataMode</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1af1b49c42a9cc311ee8239a28d3635177" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>setDataOrder</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1ab41dfb256bd021d262f1926f51345d97" prot="private" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>state</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1a39e08ca4f937f81e9d9c310e297d7265" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>transfer</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1af5ad0518cccc493a473fe56ad6df188e" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>transfer</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1a6f34d9323d85aa36299672aba24a750a" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>transferBlocking</name></member>
+      <member refid="classmodm_1_1platform_1_1_spi_master1_1aa70bf04eeb9f648a5485dd2bbab089b2" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster1</scope><name>transferBlocking</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="group__modm__architecture__i2c" kind="group">
+    <compoundname>modm_architecture_i2c</compoundname>
+    <title>Inter-Integrated Circuit (I²C)</title>
+    <innerclass refid="structmodm_1_1_i2c" prot="public">modm::I2c</innerclass>
+    <innerclass refid="classmodm_1_1_i2c_master" prot="public">modm::I2cMaster</innerclass>
+    <innerclass refid="classmodm_1_1_i2c_transaction" prot="public">modm::I2cTransaction</innerclass>
+    <innerclass refid="classmodm_1_1_i2c_write_read_transaction" prot="public">modm::I2cWriteReadTransaction</innerclass>
+    <innerclass refid="classmodm_1_1_i2c_write_transaction" prot="public">modm::I2cWriteTransaction</innerclass>
+    <innerclass refid="classmodm_1_1_i2c_read_transaction" prot="public">modm::I2cReadTransaction</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

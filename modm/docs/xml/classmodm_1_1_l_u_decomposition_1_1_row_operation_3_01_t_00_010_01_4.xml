@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1_l_u_decomposition_1_1_row_operation_3_01_t_00_010_01_4" kind="class" language="C++" prot="private">
+    <compoundname>modm::LUDecomposition::RowOperation&lt; T, 0 &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmodm_1_1_l_u_decomposition_1_1_row_operation_3_01_t_00_010_01_4_1a0687778988c86f348e994722775df4ba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::LUDecomposition::RowOperation&lt; T, 0 &gt;::multiply</definition>
+        <argsstring>(T *intoRow, const T *row, const T &amp;factor)</argsstring>
+        <name>multiply</name>
+        <param>
+          <type>T *</type>
+          <declname>intoRow</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_l_u_decomposition_1_1_row_operation_3_01_t_00_010_01_4_1a5889d36f85e29ace338a738a9d7badd2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::LUDecomposition::RowOperation&lt; T, 0 &gt;::addRowTimesFactor</definition>
+        <argsstring>(T *intoRow, const T *srcRow, const T *addRow, const T &amp;timesFactor)</argsstring>
+        <name>addRowTimesFactor</name>
+        <param>
+          <type>T *</type>
+          <declname>intoRow</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>srcRow</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>addRow</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>timesFactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1_l_u_decomposition_1_1_row_operation_3_01_t_00_010_01_4_1a70a024071cc63a9564750a34a6f8d1f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::LUDecomposition::RowOperation&lt; T, 0 &gt;::swap</definition>
+        <argsstring>(T *row1, T *row2)</argsstring>
+        <name>swap</name>
+        <param>
+          <type>T *</type>
+          <declname>row1</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>row2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp" line="145" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp" line="132" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp" bodystart="131" bodyend="146"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1_l_u_decomposition_1_1_row_operation_3_01_t_00_010_01_4_1a5889d36f85e29ace338a738a9d7badd2" prot="public" virt="non-virtual"><scope>modm::LUDecomposition::RowOperation&lt; T, 0 &gt;</scope><name>addRowTimesFactor</name></member>
+      <member refid="classmodm_1_1_l_u_decomposition_1_1_row_operation_3_01_t_00_010_01_4_1a0687778988c86f348e994722775df4ba" prot="public" virt="non-virtual"><scope>modm::LUDecomposition::RowOperation&lt; T, 0 &gt;</scope><name>multiply</name></member>
+      <member refid="classmodm_1_1_l_u_decomposition_1_1_row_operation_3_01_t_00_010_01_4_1a70a024071cc63a9564750a34a6f8d1f1" prot="public" virt="non-virtual"><scope>modm::LUDecomposition::RowOperation&lt; T, 0 &gt;</scope><name>swap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="block__allocator_8hpp" kind="file" language="C++">
+    <compoundname>block_allocator.hpp</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">cstddef</includes>
+    <includes refid="architecture_2utils_8hpp" local="no">modm/architecture/utils.hpp</includes>
+    <includes refid="arithmetic__traits_8hpp" local="no">modm/math/utils/arithmetic_traits.hpp</includes>
+    <includes local="yes">block_allocator_impl.hpp</includes>
+    <incdepgraph>
+      <node id="560">
+        <label>limits</label>
+      </node>
+      <node id="559">
+        <label>cstdint</label>
+      </node>
+      <node id="554">
+        <label>stdint.h</label>
+      </node>
+      <node id="562">
+        <label>cmath</label>
+      </node>
+      <node id="556">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="557" relation="include">
+        </childnode>
+      </node>
+      <node id="563">
+        <label>block_allocator_impl.hpp</label>
+      </node>
+      <node id="553">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp</label>
+        <link refid="block__allocator_8hpp"/>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+      </node>
+      <node id="555">
+        <label>cstddef</label>
+      </node>
+      <node id="557">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="561">
+        <label>type_traits</label>
+      </node>
+      <node id="558">
+        <label>modm/math/utils/arithmetic_traits.hpp</label>
+        <link refid="arithmetic__traits_8hpp"/>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="561" relation="include">
+        </childnode>
+        <childnode refid="562" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classmodm_1_1_block_allocator" prot="public">modm::BlockAllocator</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp"/>
+  </compounddef>
+</doxygen>

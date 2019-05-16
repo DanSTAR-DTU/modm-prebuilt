@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="debounce_8hpp" kind="file" language="C++">
+    <compoundname>debounce.hpp</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="yes">debounce_impl.hpp</includes>
+    <includedby refid="filter_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <incdepgraph>
+      <node id="2631">
+        <label>debounce_impl.hpp</label>
+      </node>
+      <node id="2630">
+        <label>stdint.h</label>
+      </node>
+      <node id="2629">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/debounce.hpp</label>
+        <link refid="debounce_8hpp"/>
+        <childnode refid="2630" relation="include">
+        </childnode>
+        <childnode refid="2631" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2633">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter.hpp</label>
+        <link refid="filter_8hpp"/>
+        <childnode refid="2634" relation="include">
+        </childnode>
+      </node>
+      <node id="2632">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/debounce.hpp</label>
+        <link refid="debounce_8hpp"/>
+        <childnode refid="2633" relation="include">
+        </childnode>
+        <childnode refid="2634" relation="include">
+        </childnode>
+      </node>
+      <node id="2634">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+        <link refid="math_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1filter_1_1_debounce" prot="public">modm::filter::Debounce</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1filter">modm::filter</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/debounce.hpp"/>
+  </compounddef>
+</doxygen>

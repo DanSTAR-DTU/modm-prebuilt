@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="error__report_8hpp" kind="file" language="C++">
+    <compoundname>error_report.hpp</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="debug_2debug_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/debug.hpp</includedby>
+    <includedby refid="debug_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug.hpp</includedby>
+    <incdepgraph>
+      <node id="1844">
+        <label>stdint.h</label>
+      </node>
+      <node id="1843">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/error_report.hpp</label>
+        <link refid="error__report_8hpp"/>
+        <childnode refid="1844" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1847">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug.hpp</label>
+        <link refid="debug_8hpp"/>
+      </node>
+      <node id="1845">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/error_report.hpp</label>
+        <link refid="error__report_8hpp"/>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+      </node>
+      <node id="1846">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/debug.hpp</label>
+        <link refid="debug_2debug_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1_error_report" prot="public">modm::ErrorReport</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/error_report.hpp"/>
+  </compounddef>
+</doxygen>

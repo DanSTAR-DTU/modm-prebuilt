@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="stack_8hpp" kind="file" language="C++">
+    <compoundname>stack.hpp</compoundname>
+    <includes local="no">cstddef</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="deque_8hpp" local="yes">deque.hpp</includes>
+    <includedby refid="container_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container.hpp</includedby>
+    <incdepgraph>
+      <node id="1794">
+        <label>cstdint</label>
+      </node>
+      <node id="1792">
+        <label>stdint.h</label>
+      </node>
+      <node id="1796">
+        <label>deque_impl.hpp</label>
+      </node>
+      <node id="1790">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/stack.hpp</label>
+        <link refid="stack_8hpp"/>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1792" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+      </node>
+      <node id="1793">
+        <label>deque.hpp</label>
+        <link refid="deque_8hpp"/>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1794" relation="include">
+        </childnode>
+        <childnode refid="1795" relation="include">
+        </childnode>
+        <childnode refid="1796" relation="include">
+        </childnode>
+      </node>
+      <node id="1791">
+        <label>cstddef</label>
+      </node>
+      <node id="1795">
+        <label>type_traits</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1798">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container.hpp</label>
+        <link refid="container_8hpp"/>
+      </node>
+      <node id="1797">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/stack.hpp</label>
+        <link refid="stack_8hpp"/>
+        <childnode refid="1798" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmodm_1_1_stack" prot="public">modm::Stack</innerclass>
+    <innerclass refid="classmodm_1_1_bounded_stack" prot="public">modm::BoundedStack</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/stack.hpp"/>
+  </compounddef>
+</doxygen>

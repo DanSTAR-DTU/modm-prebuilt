@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="resumable_2resumable_8hpp" kind="file" language="C++">
+    <compoundname>resumable.hpp</compoundname>
+    <includes refid="resumable_2macros_8hpp" local="yes">macros.hpp</includes>
+    <includes refid="architecture_2utils_8hpp" local="no">modm/architecture/utils.hpp</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">initializer_list</includes>
+    <includedby refid="resumable_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable.hpp</includedby>
+    <includedby refid="processing_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing.hpp</includedby>
+    <incdepgraph>
+      <node id="7283">
+        <label>stdarg.h</label>
+      </node>
+      <node id="7274">
+        <label>stdint.h</label>
+      </node>
+      <node id="7277">
+        <label>modm/math/utils/bit_constants.hpp</label>
+        <link refid="bit__constants_8hpp"/>
+        <childnode refid="7274" relation="include">
+        </childnode>
+      </node>
+      <node id="7272">
+        <label>macros.hpp</label>
+        <link refid="resumable_2macros_8hpp"/>
+        <childnode refid="7273" relation="include">
+        </childnode>
+        <childnode refid="7275" relation="include">
+        </childnode>
+      </node>
+      <node id="7281">
+        <label>modm/architecture/interface/accessor_flash.hpp</label>
+        <link refid="accessor__flash_8hpp"/>
+        <childnode refid="7275" relation="include">
+        </childnode>
+        <childnode refid="7282" relation="include">
+        </childnode>
+      </node>
+      <node id="7271">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp</label>
+        <link refid="resumable_2resumable_8hpp"/>
+        <childnode refid="7272" relation="include">
+        </childnode>
+        <childnode refid="7275" relation="include">
+        </childnode>
+        <childnode refid="7274" relation="include">
+        </childnode>
+        <childnode refid="7288" relation="include">
+        </childnode>
+      </node>
+      <node id="7275">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="7276" relation="include">
+        </childnode>
+      </node>
+      <node id="7278">
+        <label>modm/architecture/interface/accessor.hpp</label>
+        <link refid="accessor_8hpp"/>
+        <childnode refid="7279" relation="include">
+        </childnode>
+        <childnode refid="7281" relation="include">
+        </childnode>
+      </node>
+      <node id="7280">
+        <label>cstddef</label>
+      </node>
+      <node id="7279">
+        <label>modm/architecture/interface/accessor_ram.hpp</label>
+        <link refid="accessor__ram_8hpp"/>
+        <childnode refid="7280" relation="include">
+        </childnode>
+        <childnode refid="7275" relation="include">
+        </childnode>
+      </node>
+      <node id="7276">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="7287">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="7274" relation="include">
+        </childnode>
+        <childnode refid="7286" relation="include">
+        </childnode>
+      </node>
+      <node id="7285">
+        <label>type_traits</label>
+      </node>
+      <node id="7286">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
+      </node>
+      <node id="7282">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="7280" relation="include">
+        </childnode>
+        <childnode refid="7275" relation="include">
+        </childnode>
+        <childnode refid="7283" relation="include">
+        </childnode>
+        <childnode refid="7284" relation="include">
+        </childnode>
+        <childnode refid="7285" relation="include">
+        </childnode>
+        <childnode refid="7286" relation="include">
+        </childnode>
+        <childnode refid="7287" relation="include">
+        </childnode>
+      </node>
+      <node id="7273">
+        <label>modm/architecture/interface/assert.hpp</label>
+        <link refid="assert_8hpp"/>
+        <childnode refid="7274" relation="include">
+        </childnode>
+        <childnode refid="7275" relation="include">
+        </childnode>
+        <childnode refid="7277" relation="include">
+        </childnode>
+        <childnode refid="7278" relation="include">
+        </childnode>
+      </node>
+      <node id="7288">
+        <label>initializer_list</label>
+      </node>
+      <node id="7284">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7297">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp</label>
+        <link refid="i2c__multiplexer_8hpp"/>
+        <childnode refid="7292" relation="include">
+        </childnode>
+      </node>
+      <node id="7304">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp</label>
+        <link refid="spi__master__3_8hpp"/>
+        <childnode refid="7301" relation="include">
+        </childnode>
+      </node>
+      <node id="7303">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_2.hpp</label>
+        <link refid="spi__master__2_8hpp"/>
+        <childnode refid="7301" relation="include">
+        </childnode>
+      </node>
+      <node id="7305">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing.hpp</label>
+        <link refid="processing_8hpp"/>
+      </node>
+      <node id="7293">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture.hpp</label>
+        <link refid="architecture_8hpp"/>
+      </node>
+      <node id="7295">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_device.hpp</label>
+        <link refid="i2c__device_8hpp"/>
+        <childnode refid="7292" relation="include">
+        </childnode>
+        <childnode refid="7296" relation="include">
+        </childnode>
+      </node>
+      <node id="7292">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
+        <link refid="interface_8hpp"/>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7289">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp</label>
+        <link refid="resumable_2resumable_8hpp"/>
+        <childnode refid="7290" relation="include">
+        </childnode>
+        <childnode refid="7305" relation="include">
+        </childnode>
+      </node>
+      <node id="7300">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/bitbang_spi_master.hpp</label>
+        <link refid="bitbang__spi__master_8hpp"/>
+        <childnode refid="7301" relation="include">
+        </childnode>
+      </node>
+      <node id="7296">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
+        <link refid="bme280_8hpp"/>
+      </node>
+      <node id="7290">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable.hpp</label>
+        <link refid="resumable_8hpp"/>
+        <childnode refid="7291" relation="include">
+        </childnode>
+        <childnode refid="7294" relation="include">
+        </childnode>
+        <childnode refid="7295" relation="include">
+        </childnode>
+        <childnode refid="7297" relation="include">
+        </childnode>
+        <childnode refid="7298" relation="include">
+        </childnode>
+        <childnode refid="7296" relation="include">
+        </childnode>
+        <childnode refid="7305" relation="include">
+        </childnode>
+      </node>
+      <node id="7294">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp</label>
+        <link refid="gpio__expander_8hpp"/>
+        <childnode refid="7292" relation="include">
+        </childnode>
+      </node>
+      <node id="7301">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+      <node id="7302">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp</label>
+        <link refid="spi__master__1_8hpp"/>
+        <childnode refid="7301" relation="include">
+        </childnode>
+      </node>
+      <node id="7298">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi_master.hpp</label>
+        <link refid="spi__master_8hpp"/>
+        <childnode refid="7299" relation="include">
+        </childnode>
+        <childnode refid="7292" relation="include">
+        </childnode>
+        <childnode refid="7300" relation="include">
+        </childnode>
+        <childnode refid="7302" relation="include">
+        </childnode>
+        <childnode refid="7303" relation="include">
+        </childnode>
+        <childnode refid="7304" relation="include">
+        </childnode>
+      </node>
+      <node id="7299">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi_device.hpp</label>
+        <link refid="spi__device_8hpp"/>
+        <childnode refid="7292" relation="include">
+        </childnode>
+      </node>
+      <node id="7291">
+        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp</label>
+        <link refid="block__device_8hpp"/>
+        <childnode refid="7292" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmodm_1_1_resumable_result" prot="public">modm::ResumableResult</innerclass>
+    <innerclass refid="classmodm_1_1_resumable" prot="public">modm::Resumable</innerclass>
+    <innernamespace refid="namespacemodm">modm</innernamespace>
+    <innernamespace refid="namespacemodm_1_1rf">modm::rf</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="resumable_2resumable_8hpp_1a80f738e0d39abe0e0046ffeeaba2ad81" prot="public" static="no">
+        <name>MODM_RESUMABLE_MODULE_NAME</name>
+        <initializer>&quot;resumable&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="21" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp"/>
+  </compounddef>
+</doxygen>

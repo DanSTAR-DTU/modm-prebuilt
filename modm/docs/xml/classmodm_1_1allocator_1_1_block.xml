@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classmodm_1_1allocator_1_1_block" kind="class" language="C++" prot="public">
+    <compoundname>modm::allocator::Block</compoundname>
+    <basecompoundref refid="classmodm_1_1allocator_1_1_allocator_base" prot="public" virt="non-virtual">modm::allocator::AllocatorBase&lt; T &gt;</basecompoundref>
+    <includes refid="block_8hpp" local="no">modm/utils/allocator/block.hpp</includes>
+    <innerclass refid="structmodm_1_1allocator_1_1_block_1_1rebind" prot="public">modm::allocator::Block::rebind</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>BLOCKSIZE</declname>
+        <defname>BLOCKSIZE</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodm_1_1allocator_1_1_block_1aa562e93c7cf01c66e66378be2f251b0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>modm::allocator::Block&lt; T, BLOCKSIZE &gt;::Block</definition>
+        <argsstring>()</argsstring>
+        <name>Block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator/block.hpp" line="48" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator/block.hpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1allocator_1_1_block_1a841e6ba0dde1356477e2a210f9d51afc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>modm::allocator::Block&lt; T, BLOCKSIZE &gt;::Block</definition>
+        <argsstring>(const Block &amp;other)</argsstring>
+        <name>Block</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1allocator_1_1_block" kindref="compound">Block</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator/block.hpp" line="53" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator/block.hpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1allocator_1_1_block_1a43e83e5755acb3e97ac39d2482543569" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>modm::allocator::Block&lt; T, BLOCKSIZE &gt;::Block</definition>
+        <argsstring>(const Block&lt; U, BLOCKSIZE &gt; &amp;)</argsstring>
+        <name>Block</name>
+        <param>
+          <type>const <ref refid="classmodm_1_1allocator_1_1_block" kindref="compound">Block</ref>&lt; U, BLOCKSIZE &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator/block.hpp" line="59" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator/block.hpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1allocator_1_1_block_1a0100831465b4c0f7bdbec9ef258284d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* modm::allocator::Block&lt; T, BLOCKSIZE &gt;::allocate</definition>
+        <argsstring>()</argsstring>
+        <name>allocate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator/block.hpp" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1allocator_1_1_block_1aa9695184f5d1c827157333980ef9ae83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void modm::allocator::Block&lt; T, BLOCKSIZE &gt;::deallocate</definition>
+        <argsstring>(T *)</argsstring>
+        <name>deallocate</name>
+        <param>
+          <type>T *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator/block.hpp" line="69" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classmodm_1_1allocator_1_1_block" kindref="compound">Block</ref> allocator. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Allocates a big block of memory and then distribute small pieces of it. The memory is not released until the destruction of the allocator. If more memory is needed a new block is allocated.</para>
+<para>This technique is known as &quot;memory pool&quot;.</para>
+<para><simplesect kind="author"><para>Fabian Greif </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="114">
+        <label>modm::allocator::Block&lt; T, BLOCKSIZE &gt;</label>
+        <link refid="classmodm_1_1allocator_1_1_block"/>
+        <childnode refid="115" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>modm::allocator::AllocatorBase&lt; T &gt;</label>
+        <link refid="classmodm_1_1allocator_1_1_allocator_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="116">
+        <label>modm::allocator::Block&lt; T, BLOCKSIZE &gt;</label>
+        <link refid="classmodm_1_1allocator_1_1_block"/>
+        <childnode refid="117" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>modm::allocator::AllocatorBase&lt; T &gt;</label>
+        <link refid="classmodm_1_1allocator_1_1_allocator_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator/block.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator/block.hpp" bodystart="38" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1allocator_1_1_block_1a0100831465b4c0f7bdbec9ef258284d1" prot="public" virt="non-virtual"><scope>modm::allocator::Block</scope><name>allocate</name></member>
+      <member refid="classmodm_1_1allocator_1_1_allocator_base_1a609f717f38153960b28c8b7894c53761" prot="protected" virt="non-virtual"><scope>modm::allocator::Block</scope><name>AllocatorBase</name></member>
+      <member refid="classmodm_1_1allocator_1_1_block_1aa562e93c7cf01c66e66378be2f251b0d" prot="public" virt="non-virtual"><scope>modm::allocator::Block</scope><name>Block</name></member>
+      <member refid="classmodm_1_1allocator_1_1_block_1a841e6ba0dde1356477e2a210f9d51afc" prot="public" virt="non-virtual"><scope>modm::allocator::Block</scope><name>Block</name></member>
+      <member refid="classmodm_1_1allocator_1_1_block_1a43e83e5755acb3e97ac39d2482543569" prot="public" virt="non-virtual"><scope>modm::allocator::Block</scope><name>Block</name></member>
+      <member refid="classmodm_1_1allocator_1_1_allocator_base_1aa00e230191734784a8e0576871016fac" prot="public" virt="non-virtual"><scope>modm::allocator::Block</scope><name>construct</name></member>
+      <member refid="classmodm_1_1allocator_1_1_block_1aa9695184f5d1c827157333980ef9ae83" prot="public" virt="non-virtual"><scope>modm::allocator::Block</scope><name>deallocate</name></member>
+      <member refid="classmodm_1_1allocator_1_1_allocator_base_1a3ac0e1c924c98d1ac554f27c218cd574" prot="public" virt="non-virtual"><scope>modm::allocator::Block</scope><name>destroy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
