@@ -1,19 +1,17 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structmodm_1_1_spi" kind="struct" language="C++" prot="public">
     <compoundname>modm::Spi</compoundname>
     <derivedcompoundref refid="classmodm_1_1_spi_master" prot="public" virt="non-virtual">modm::SpiMaster</derivedcompoundref>
     <includes refid="spi_8hpp" local="no">modm/architecture/interface/spi.hpp</includes>
       <sectiondef kind="public-type">
-      <memberdef kind="enum" id="structmodm_1_1_spi_1a00c4c03fc5d3c23c677740fb804ae820" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="structmodm_1_1_spi_1a00c4c03fc5d3c23c677740fb804ae820" prot="public" static="no">
         <name>DataMode</name>
         <enumvalue id="structmodm_1_1_spi_1a00c4c03fc5d3c23c677740fb804ae820a315436bae0e85636381fc939db06aee5" prot="public">
           <name>Mode0</name>
           <initializer>= 0b00</initializer>
           <briefdescription>
-<para>clock normal, sample on rising edge </para>
-          </briefdescription>
+<para>clock normal, sample on rising edge </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -21,8 +19,7 @@
           <name>Mode1</name>
           <initializer>= 0b01</initializer>
           <briefdescription>
-<para>clock normal, sample on falling edge </para>
-          </briefdescription>
+<para>clock normal, sample on falling edge </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -30,8 +27,7 @@
           <name>Mode2</name>
           <initializer>= 0b10</initializer>
           <briefdescription>
-<para>clock inverted, sample on rising edge </para>
-          </briefdescription>
+<para>clock inverted, sample on rising edge </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -39,22 +35,19 @@
           <name>Mode3</name>
           <initializer>= 0b11</initializer>
           <briefdescription>
-<para>clock inverted, sample on falling edge </para>
-          </briefdescription>
+<para>clock inverted, sample on falling edge </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
-<para><ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> Data Mode, Mode0 is the most common mode. </para>
-        </briefdescription>
+<para><ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> Data Mode, Mode0 is the most common mode. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="32" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="30" bodyend="37"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="32" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="30" bodyend="37"/>
       </memberdef>
-      <memberdef kind="enum" id="structmodm_1_1_spi_1a738c2058b5a1778735b4c78df0bb6839" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="structmodm_1_1_spi_1a738c2058b5a1778735b4c78df0bb6839" prot="public" static="no">
         <name>DataOrder</name>
         <enumvalue id="structmodm_1_1_spi_1a738c2058b5a1778735b4c78df0bb6839aee850a31af8a5060a68542cb34339c50" prot="public">
           <name>MsbFirst</name>
@@ -73,13 +66,12 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
-<para><ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> Data Order, MsbFirst is the most common mode. </para>
-        </briefdescription>
+<para><ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> Data Order, MsbFirst is the most common mode. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="40" bodyend="45"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="42" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="40" bodyend="45"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1_spi_1a0d609550a29c439aa83e5999f584447d" prot="public" static="no">
         <type>void(*)()</type>
@@ -87,13 +79,12 @@
         <argsstring></argsstring>
         <name>ConfigurationHandler</name>
         <briefdescription>
-<para>The signature of the configuration function. </para>
-        </briefdescription>
+<para>The signature of the configuration function. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="27" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="27" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="27" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="27" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -136,7 +127,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="25" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="24" bodyend="46"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="25" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="24" bodyend="46"/>
     <listofallmembers>
       <member refid="structmodm_1_1_spi_1a0d609550a29c439aa83e5999f584447d" prot="public" virt="non-virtual"><scope>modm::Spi</scope><name>ConfigurationHandler</name></member>
       <member refid="structmodm_1_1_spi_1a00c4c03fc5d3c23c677740fb804ae820" prot="public" virt="non-virtual"><scope>modm::Spi</scope><name>DataMode</name></member>

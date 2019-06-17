@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1_doubly_linked_list_1_1iterator" kind="class" language="C++" prot="public">
     <compoundname>modm::DoublyLinkedList::iterator</compoundname>
     <includes refid="doubly__linked__list_8hpp" local="no">modm/container/doubly_linked_list.hpp</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="108" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="108" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="108" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classmodm_1_1_doubly_linked_list_1_1iterator_1ac220ce1c155db1ac44146c12d178056f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="109" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="109" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="109" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="109" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="127" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="127" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="127" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="127" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -53,13 +53,12 @@
         <argsstring>()</argsstring>
         <name>iterator</name>
         <briefdescription>
-<para>Default constructor. </para>
-        </briefdescription>
+<para>Default constructor. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="113" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="113" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_doubly_linked_list_1_1iterator_1a19a056e54bedbf968628f8529e958fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -76,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="114" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="114" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_doubly_linked_list_1_1iterator_1ae25c3cf40736e79bd551c7109b5d7956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
@@ -93,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="116" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="116" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_doubly_linked_list_1_1iterator_1acccd2ade7083fa5aeaf77423c0152310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
@@ -106,20 +105,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="117" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="117" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_doubly_linked_list_1_1iterator_1a5a8c1e0fc01eb87aff9962f6138fe00f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_doubly_linked_list_1_1iterator_1a060971733d5af32a155e1639f9e04bce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
-        <definition>iterator&amp; modm::DoublyLinkedList&lt; T, Allocator &gt;::iterator::operator --</definition>
+        <definition>iterator&amp; modm::DoublyLinkedList&lt; T, Allocator &gt;::iterator::operator--</definition>
         <argsstring>()</argsstring>
-        <name>operator --</name>
+        <name>operator--</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="118" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="118" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_doubly_linked_list_1_1iterator_1a4e58b0101807eb2f979a7c7b3c53e908" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -136,13 +135,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="119" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="119" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_doubly_linked_list_1_1iterator_1a4e705891aba40210755ba9a4465915da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_doubly_linked_list_1_1iterator_1a11f8fbfba47f710c0af31a0a3e3d8070" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool modm::DoublyLinkedList&lt; T, Allocator &gt;::iterator::operator !=</definition>
+        <definition>bool modm::DoublyLinkedList&lt; T, Allocator &gt;::iterator::operator!=</definition>
         <argsstring>(const iterator &amp;other) const</argsstring>
-        <name>operator !=</name>
+        <name>operator!=</name>
         <param>
           <type>const <ref refid="classmodm_1_1_doubly_linked_list_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
           <declname>other</declname>
@@ -153,33 +152,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="120" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="120" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_doubly_linked_list_1_1iterator_1a49002058cd6736c1e8981f1658c4ad17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_doubly_linked_list_1_1iterator_1a4c669f6ff6f99455de1b4246327d8404" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
-        <definition>T&amp; modm::DoublyLinkedList&lt; T, Allocator &gt;::iterator::operator *</definition>
+        <definition>T&amp; modm::DoublyLinkedList&lt; T, Allocator &gt;::iterator::operator*</definition>
         <argsstring>()</argsstring>
-        <name>operator *</name>
+        <name>operator*</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="121" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="121" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_doubly_linked_list_1_1iterator_1a2baf57928e2c4046a7ca909d3b408264" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_doubly_linked_list_1_1iterator_1a43838a7fa97c23c31642882cfff65696" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T *</type>
-        <definition>T* modm::DoublyLinkedList&lt; T, Allocator &gt;::iterator::operator -&gt;</definition>
+        <definition>T* modm::DoublyLinkedList&lt; T, Allocator &gt;::iterator::operator-&gt;</definition>
         <argsstring>()</argsstring>
-        <name>operator -&gt;</name>
+        <name>operator-&gt;</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="122" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="122" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -198,17 +197,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="125" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="125" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Forward iterator. </para>
-    </briefdescription>
+<para>Forward iterator. </para>    </briefdescription>
     <detaileddescription>
-<para><xrefsect id="todo_1_todo000003"><xreftitle>Todo</xreftitle><xrefdescription><para>decrement operator doesn&apos;t work correctly </para>
-</xrefdescription></xrefsect></para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="107" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="106" bodyend="128"/>
+<para><xrefsect id="todo_1_todo000003"><xreftitle>Todo</xreftitle><xrefdescription><para>decrement operator doesn&apos;t work correctly </para></xrefdescription></xrefsect></para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="107" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="106" bodyend="128"/>
     <listofallmembers>
       <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1ac220ce1c155db1ac44146c12d178056f" prot="private" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>const_iterator</name></member>
       <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a8518425fc192346c00bedb825184bcf1" prot="private" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>DoublyLinkedList</name></member>
@@ -216,11 +212,11 @@
       <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a19a056e54bedbf968628f8529e958fc7" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>iterator</name></member>
       <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1ace8168c410b71a88cb3435752f38a4b1" prot="private" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>iterator</name></member>
       <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a4a867668627acaeecb0b8e9f961f727f" prot="private" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>node</name></member>
-      <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a4e705891aba40210755ba9a4465915da" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>operator !=</name></member>
-      <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a49002058cd6736c1e8981f1658c4ad17" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>operator *</name></member>
-      <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a5a8c1e0fc01eb87aff9962f6138fe00f" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>operator --</name></member>
-      <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a2baf57928e2c4046a7ca909d3b408264" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>operator -&gt;</name></member>
+      <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a11f8fbfba47f710c0af31a0a3e3d8070" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>operator!=</name></member>
+      <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a4c669f6ff6f99455de1b4246327d8404" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>operator*</name></member>
       <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1acccd2ade7083fa5aeaf77423c0152310" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>operator++</name></member>
+      <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a060971733d5af32a155e1639f9e04bce" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>operator--</name></member>
+      <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a43838a7fa97c23c31642882cfff65696" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>operator-&gt;</name></member>
       <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1ae25c3cf40736e79bd551c7109b5d7956" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>operator=</name></member>
       <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a4e58b0101807eb2f979a7c7b3c53e908" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::iterator</scope><name>operator==</name></member>
     </listofallmembers>

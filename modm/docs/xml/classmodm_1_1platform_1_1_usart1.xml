@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1platform_1_1_usart1" kind="class" language="C++" prot="public">
     <compoundname>modm::platform::Usart1</compoundname>
     <basecompoundref refid="classmodm_1_1platform_1_1_uart_base" prot="public" virt="non-virtual">modm::platform::UartBase</basecompoundref>
@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="48" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" bodystart="48" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="48" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1platform_1_1_usart1_1aea04850dbb73a847ce2638479b4adbbe" prot="public" static="yes" mutable="no">
         <type>constexpr size_t</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="49" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" bodystart="49" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="49" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" bodystart="49" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -46,13 +46,12 @@
           <declname>interruptPriority</declname>
         </param>
         <briefdescription>
-<para>Second stage initialize for buffered uart. </para>
-        </briefdescription>
+<para>Second stage initialize for buffered uart. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="45" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="45" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -79,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="54" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" bodystart="54" bodyend="67"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="54" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" bodystart="54" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_usart1_1abc9c3e3a3b760d10e1cb74528cb6ca2e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -118,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="71" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" bodystart="71" bodyend="82"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="71" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" bodystart="71" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_usart1_1abbf3368918180ecca0ab1c9bbed66731" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -135,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="85" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="85" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_usart1_1a7d892e89649eef77a8a6743f7da11228" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -156,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="88" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="88" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_usart1_1a1dd4e6a7c04d2c32c8238381431f8eeb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -169,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="91" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="91" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_usart1_1aef6c5550c302183f325622e9d6ebfa48" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -186,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="94" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="94" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_usart1_1af4feb2ece9962465c3b95ca09e06ae93" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::size_t</type>
@@ -207,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="97" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="97" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_usart1_1ab8778052a8f2484024dcc408f4116b39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -220,7 +219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="100" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="100" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_usart1_1a5127e135554d646758c24671d8106099" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::size_t</type>
@@ -233,7 +232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="103" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="103" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_usart1_1ace7e346ecdd49d1041d3dd1a04249fab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -250,7 +249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="106" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="106" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_usart1_1aa31eb9a380d614028d3cb9a93aae9371" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::size_t</type>
@@ -271,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="109" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="109" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_usart1_1a7fe82dc44fbcd11b26a6233ca81288aa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::size_t</type>
@@ -284,19 +283,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="112" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="112" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Universal asynchronous receiver transmitter (USART1)</para>
-<para><simplesect kind="author"><para>Kevin Laeufer </para>
-</simplesect>
-<simplesect kind="author"><para>Niklas Hauser </para>
-</simplesect>
-</para>
-    </detaileddescription>
+<para>Universal asynchronous receiver transmitter (USART1)</para><para><simplesect kind="author"><para>Kevin Laeufer </para></simplesect>
+<simplesect kind="author"><para>Niklas Hauser </para></simplesect>
+</para>    </detaileddescription>
     <inheritancegraph>
       <node id="1757">
         <label>modm::PeripheralDriver</label>
@@ -345,7 +340,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" bodystart="39" bodyend="114"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" line="40" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp" bodystart="39" bodyend="114"/>
     <listofallmembers>
       <member refid="classmodm_1_1_peripheral_driver_1a5c336ff9889c347e7eadb810bf984ebd" prot="public" virt="non-virtual"><scope>modm::platform::Usart1</scope><name>assertBaudrateInTolerance</name></member>
       <member refid="classmodm_1_1platform_1_1_usart1_1a30cd5f72bf630ed86f074b84c82dde92" prot="public" virt="non-virtual"><scope>modm::platform::Usart1</scope><name>connect</name></member>

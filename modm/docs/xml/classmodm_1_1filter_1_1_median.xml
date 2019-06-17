@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1filter_1_1_median" kind="class" language="C++" prot="public">
     <compoundname>modm::filter::Median</compoundname>
     <includes refid="median_8hpp" local="no">modm/math/filter/median.hpp</includes>
@@ -27,23 +27,20 @@
           <defval>0</defval>
         </param>
         <briefdescription>
-<para>Constructor. </para>
-        </briefdescription>
+<para>Constructor. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>initialValue</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="structmodm_1_1_value" kindref="compound">Value</ref> will be set for the complete input buffer. </para>
-</parameterdescription>
+<para><ref refid="structmodm_1_1_value" kindref="compound">Value</ref> will be set for the complete input buffer. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/median.hpp" line="63" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/median.hpp" line="63" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1filter_1_1_median_1ac28febb30ea78c8b176987ab7d26aa8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -55,13 +52,12 @@
           <declname>input</declname>
         </param>
         <briefdescription>
-<para>Append new value. </para>
-        </briefdescription>
+<para>Append new value. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/median.hpp" line="67" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/median.hpp" line="67" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1filter_1_1_median_1a410bf7f2094176c416528ea5c41fd656" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -69,13 +65,12 @@
         <argsstring>()</argsstring>
         <name>udpate</name>
         <briefdescription>
-<para>calculate median </para>
-        </briefdescription>
+<para>calculate median </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/median.hpp" line="71" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/median.hpp" line="71" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1filter_1_1_median_1ab370c22b7af44980e49075122d0cf3b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const T</type>
@@ -83,22 +78,18 @@
         <argsstring>() const</argsstring>
         <name>getValue</name>
         <briefdescription>
-<para>Get median value. </para>
-        </briefdescription>
+<para>Get median value. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/median.hpp" line="75" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/median.hpp" line="75" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para><ref refid="classmodm_1_1filter_1_1_median" kindref="compound">Median</ref> filter. </para>
-    </briefdescription>
+<para><ref refid="classmodm_1_1filter_1_1_median" kindref="compound">Median</ref> filter. </para>    </briefdescription>
     <detaileddescription>
-<para>Calculates the median of a input set. Useful for eliminating spikes from the input. Adds a group delay of N/2 ticks for the signal.</para>
-<para>Implementation are available for N = 3, 5, 7 and 9. To find the median the signal values will be partly sorted, but only as much as needed to find the median.</para>
-<para><programlisting><codeline><highlight class="normal">//<sp/>create<sp/>a<sp/>new<sp/>filter<sp/>for<sp/>five<sp/>samples</highlight></codeline>
+<para>Calculates the median of a input set. Useful for eliminating spikes from the input. Adds a group delay of N/2 ticks for the signal.</para><para>Implementation are available for N = 3, 5, 7 and 9. To find the median the signal values will be partly sorted, but only as much as needed to find the median.</para><para><programlisting><codeline><highlight class="normal">//<sp/>create<sp/>a<sp/>new<sp/>filter<sp/>for<sp/>five<sp/>samples</highlight></codeline>
 <codeline><highlight class="normal">modm::filter::Median&lt;uint8_t,<sp/>5&gt;<sp/>filter;</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">//<sp/>append<sp/>new<sp/>signal<sp/>values</highlight></codeline>
@@ -110,27 +101,23 @@
 <codeline><highlight class="normal">filter.update();</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">output<sp/>=<sp/>filter.getValue();</highlight></codeline>
-</programlisting></para>
-<para><parameterlist kind="templateparam"><parameteritem>
+</programlisting></para><para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>T</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Input type </para>
-</parameterdescription>
+<para>Input type </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>N</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Number of samples </para>
-</parameterdescription>
+<para>Number of samples </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/median.hpp" line="55" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/median.hpp" bodystart="54" bodyend="76"/>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/median.hpp" line="55" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/median.hpp" bodystart="54" bodyend="76"/>
     <listofallmembers>
       <member refid="classmodm_1_1filter_1_1_median_1ac28febb30ea78c8b176987ab7d26aa8a" prot="public" virt="non-virtual"><scope>modm::filter::Median</scope><name>append</name></member>
       <member refid="classmodm_1_1filter_1_1_median_1ab370c22b7af44980e49075122d0cf3b2" prot="public" virt="non-virtual"><scope>modm::filter::Median</scope><name>getValue</name></member>

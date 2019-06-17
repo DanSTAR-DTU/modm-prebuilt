@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__modm__math__geometry" kind="group">
     <compoundname>modm_math_geometry</compoundname>
     <title>Geometric Operations</title>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="56" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="56" bodyend="59"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="56" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="56" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__geometry_1ga4734f4cf28f5ddbcda202dc5663be292" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>constexpr float</type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="63" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="63" bodyend="66"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="63" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="63" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__geometry_1ga443b6b5dbba5177fc4e90894ca576655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -72,13 +72,12 @@
           <declname>l</declname>
         </param>
         <briefdescription>
-<para>Stream operator to <bold>modm::Location&lt;T&gt;</bold> </para>
-        </briefdescription>
+<para>Stream operator to <bold>modm::Location&lt;T&gt;</bold> </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp" line="129" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp" line="129" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__geometry_1gae0dab16035b9f12ce06bed0aa87f8e31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -99,24 +98,23 @@
           <declname>c</declname>
         </param>
         <briefdescription>
-<para>Stream operator for <bold>modm::Vector&lt;U, 2&gt;</bold> </para>
-        </briefdescription>
+<para>Stream operator for <bold>modm::Vector&lt;U, 2&gt;</bold> </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="325" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="325" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group__modm__math__geometry_1ga903d98b7e7359bb9fb1a61221582a663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__modm__math__geometry_1gab1734ee8a7599e982c08365302ced3ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename U</type>
           </param>
         </templateparamlist>
         <type>Vector&lt; U, 2 &gt;</type>
-        <definition>Vector&lt;U, 2&gt; modm::operator *</definition>
+        <definition>Vector&lt;U, 2&gt; modm::operator*</definition>
         <argsstring>(float scale, const Vector&lt; U, 2 &gt; &amp;vector)</argsstring>
-        <name>operator *</name>
+        <name>operator*</name>
         <param>
           <type>float</type>
           <declname>scale</declname>
@@ -126,13 +124,12 @@
           <declname>vector</declname>
         </param>
         <briefdescription>
-<para>Scalar multiplication. </para>
-        </briefdescription>
+<para>Scalar multiplication. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="334" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="334" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__geometry_1ga3c7c922ac55292dc07237d75b17dc2b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -153,13 +150,12 @@
           <declname>vector</declname>
         </param>
         <briefdescription>
-<para>Scalar division. </para>
-        </briefdescription>
+<para>Scalar division. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="342" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="342" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structmodm_1_1_register" kind="struct" language="C++" prot="public">
     <compoundname>modm::Register</compoundname>
     <derivedcompoundref refid="structmodm_1_1_flags_operators" prot="public" virt="non-virtual">modm::FlagsOperators&lt; Enum, T &gt;</derivedcompoundref>
@@ -20,18 +20,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Returns <computeroutput>true</computeroutput> if <computeroutput>value</computeroutput> is non-zero</para>
-<para>The compiler will allow implicit conversions to bool in the following contexts:<itemizedlist>
-<listitem><para>conditions of if, while, for, do-while statements</para>
-</listitem><listitem><para>logical operators (&amp;&amp;, ||)</para>
-</listitem><listitem><para>negation (operator !)</para>
-</listitem><listitem><para>static_assert </para>
-</listitem></itemizedlist>
-</para>
-        </detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> if <computeroutput>value</computeroutput> is non-zero</para><para>The compiler will allow implicit conversions to bool in the following contexts:<itemizedlist>
+<listitem><para>conditions of if, while, for, do-while statements</para></listitem><listitem><para>logical operators (&amp;&amp;, ||)</para></listitem><listitem><para>negation (operator !)</para></listitem><listitem><para>static_assert </para></listitem></itemizedlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="77" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="77" bodyend="78"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="77" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="77" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_register_1a959d3b687497e1485faec27887cd8925" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>constexpr bool</type>
@@ -39,13 +33,12 @@
         <argsstring>() const</argsstring>
         <name>operator!</name>
         <briefdescription>
-<para>Returns <computeroutput>true</computeroutput> if <computeroutput>value</computeroutput> is zero. </para>
-        </briefdescription>
+<para>Returns <computeroutput>true</computeroutput> if <computeroutput>value</computeroutput> is zero. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="81" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="81" bodyend="82"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="81" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="81" bodyend="82"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-type">
@@ -55,13 +48,12 @@
         <argsstring></argsstring>
         <name>UnderlyingType</name>
         <briefdescription>
-<para>The integer type internally used to represent the register. </para>
-        </briefdescription>
+<para>The integer type internally used to represent the register. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="60" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="60" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="60" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="60" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -71,13 +63,12 @@
         <argsstring></argsstring>
         <name>value</name>
         <briefdescription>
-<para>The underlying integer value. </para>
-        </briefdescription>
+<para>The underlying integer value. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="61" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="61" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="61" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="61" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -87,13 +78,12 @@
         <argsstring>()</argsstring>
         <name>Register</name>
         <briefdescription>
-<para>Default constructor initializes <computeroutput>value</computeroutput> to zero. </para>
-        </briefdescription>
+<para>Default constructor initializes <computeroutput>value</computeroutput> to zero. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="64" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="64" bodyend="65"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="64" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="64" bodyend="65"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -111,13 +101,12 @@
           <declname>m</declname>
         </param>
         <briefdescription>
-<para>Printing a register will output its numeric value. </para>
-        </briefdescription>
+<para>Printing a register will output its numeric value. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="86" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="87" bodyend="88"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="86" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="87" bodyend="88"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -131,45 +120,34 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>This class is meant to be subclassed. </para>
-        </briefdescription>
+<para>This class is meant to be subclassed. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="92" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="92" bodyend="93"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="92" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="92" bodyend="93"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Class for holding a register value.</para>
-<para>You can cast any <ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref>, <ref refid="structmodm_1_1_configuration" kindref="compound">Configuration</ref> or <ref refid="structmodm_1_1_value" kindref="compound">Value</ref> type into the approprate <ref refid="structmodm_1_1_register" kindref="compound">Register</ref> type.</para>
-<para><programlisting><codeline><highlight class="normal">Control_t<sp/>control<sp/>=<sp/>Control::EN;</highlight></codeline>
+<para>Class for holding a register value.</para><para>You can cast any <ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref>, <ref refid="structmodm_1_1_configuration" kindref="compound">Configuration</ref> or <ref refid="structmodm_1_1_value" kindref="compound">Value</ref> type into the approprate <ref refid="structmodm_1_1_register" kindref="compound">Register</ref> type.</para><para><programlisting><codeline><highlight class="normal">Control_t<sp/>control<sp/>=<sp/>Control::EN;</highlight></codeline>
 <codeline><highlight class="normal">Register8<sp/>base<sp/>=<sp/>control;</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">//<sp/>functions<sp/>can<sp/>also<sp/>be<sp/>overloaded<sp/>to<sp/>accept<sp/>*any*<sp/>register<sp/>of<sp/>x<sp/>bits</highlight></codeline>
 <codeline><highlight class="normal">void<sp/>function(Register8<sp/>arg);</highlight></codeline>
 <codeline><highlight class="normal">function(control);</highlight></codeline>
-</programlisting></para>
-<para>Apart from the boolean operators, this base class deletes all other implicit operator overloadings. Since any type information is lost during casting, you should not be able to use any operations involving specific flags, configurations or values.</para>
-<para>Instead you have to explicitly use the integral <computeroutput>value</computeroutput> to perform your potentially unsafe operations.</para>
-<para>This class makes heavy use of <computeroutput>constexpr</computeroutput>, so that as many values and operation can take place at compile time for efficiency.</para>
-<para><parameterlist kind="templateparam"><parameteritem>
+</programlisting></para><para>Apart from the boolean operators, this base class deletes all other implicit operator overloadings. Since any type information is lost during casting, you should not be able to use any operations involving specific flags, configurations or values.</para><para>Instead you have to explicitly use the integral <computeroutput>value</computeroutput> to perform your potentially unsafe operations.</para><para>This class makes heavy use of <computeroutput>constexpr</computeroutput>, so that as many values and operation can take place at compile time for efficiency.</para><para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>T</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the (unsigned) underlying integer type: uint8_t, uint16_t, uint32_t </para>
-</parameterdescription>
+<para>the (unsigned) underlying integer type: uint8_t, uint16_t, uint32_t </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="see"><para><ref refid="group__modm__architecture__register_1gabd73ce6ec9b57c64d6f0a6205f023435" kindref="member">Register8</ref>, <ref refid="group__modm__architecture__register_1ga40997210e0b33d038e50059246a6c35f" kindref="member">Register16</ref>, <ref refid="group__modm__architecture__register_1ga6e710bba1e576562f1b48d3fac68c3fd" kindref="member">Register32</ref></para>
-</simplesect>
-<simplesect kind="author"><para>Niklas Hauser </para>
-</simplesect>
-</para>
-    </detaileddescription>
+<simplesect kind="see"><para><ref refid="group__modm__architecture__register_1gabd73ce6ec9b57c64d6f0a6205f023435" kindref="member">Register8</ref>, <ref refid="group__modm__architecture__register_1ga40997210e0b33d038e50059246a6c35f" kindref="member">Register16</ref>, <ref refid="group__modm__architecture__register_1ga6e710bba1e576562f1b48d3fac68c3fd" kindref="member">Register32</ref></para></simplesect>
+<simplesect kind="author"><para>Niklas Hauser </para></simplesect>
+</para>    </detaileddescription>
     <inheritancegraph>
       <node id="1487">
         <label>modm::FlagsOperators&lt; T &gt;</label>
@@ -200,7 +178,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="59" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="58" bodyend="94"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="59" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="58" bodyend="94"/>
     <listofallmembers>
       <member refid="structmodm_1_1_register_1aca49e332e09a999a9c10182c44a0ddff" prot="public" virt="non-virtual"><scope>modm::Register</scope><name>operator bool</name></member>
       <member refid="structmodm_1_1_register_1a959d3b687497e1485faec27887cd8925" prot="public" virt="non-virtual"><scope>modm::Register</scope><name>operator!</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1platform_1_1_gpio_c9" kind="class" language="C++" prot="public">
     <compoundname>modm::platform::GpioC9</compoundname>
     <basecompoundref refid="structmodm_1_1platform_1_1_gpio" prot="public" virt="non-virtual">modm::platform::Gpio</basecompoundref>
@@ -14,11 +14,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Connect to any software peripheral </para>
-        </detaileddescription>
+<para>Connect to any software peripheral </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="167" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="167" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="167" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="167" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_c9_1af0c3c9fa79945f4ae56a282697940c5b" prot="public" static="no">
         <type>GpioSignal</type>
@@ -26,13 +25,12 @@
         <argsstring></argsstring>
         <name>Bk1Io0</name>
         <briefdescription>
-<para>Connect to Quadspi. </para>
-        </briefdescription>
+<para>Connect to Quadspi. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="169" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="169" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="169" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="169" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_c9_1a7385ccb679115a2e83faa00ac47717db" prot="public" static="no">
         <type>GpioSignal</type>
@@ -40,13 +38,12 @@
         <argsstring></argsstring>
         <name>Ch4</name>
         <briefdescription>
-<para>Connect to Tim3 or Tim8. </para>
-        </briefdescription>
+<para>Connect to Tim3 or Tim8. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="171" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="171" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="171" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="171" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_c9_1a0af469d23bb0e51b054430f0bd1eae1d" prot="public" static="no">
         <type>GpioSignal</type>
@@ -54,13 +51,12 @@
         <argsstring></argsstring>
         <name>Ckin</name>
         <briefdescription>
-<para>Connect to I2s. </para>
-        </briefdescription>
+<para>Connect to I2s. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="173" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="173" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="173" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_c9_1ad74be64848a232df780d9598f11ebec1" prot="public" static="no">
         <type>GpioSignal</type>
@@ -68,13 +64,12 @@
         <argsstring></argsstring>
         <name>Cts</name>
         <briefdescription>
-<para>Connect to <ref refid="classmodm_1_1platform_1_1_uart5" kindref="compound">Uart5</ref>. </para>
-        </briefdescription>
+<para>Connect to <ref refid="classmodm_1_1platform_1_1_uart5" kindref="compound">Uart5</ref>. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="175" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="175" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="175" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_c9_1ab1f8211a99821da5705a4c9975ee5d43" prot="public" static="no">
         <type>GpioSignal</type>
@@ -82,13 +77,12 @@
         <argsstring></argsstring>
         <name>D1</name>
         <briefdescription>
-<para>Connect to Sdio. </para>
-        </briefdescription>
+<para>Connect to Sdio. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="177" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="177" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="177" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="177" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_c9_1a0437f3f45dc39f0b779ba8598057c480" prot="public" static="no">
         <type>GpioSignal</type>
@@ -96,13 +90,12 @@
         <argsstring></argsstring>
         <name>D3</name>
         <briefdescription>
-<para>Connect to Dcmi. </para>
-        </briefdescription>
+<para>Connect to Dcmi. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="179" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="179" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="179" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_c9_1a705fe71ff5e82fd55d568da2d9b4190e" prot="public" static="no">
         <type>GpioSignal</type>
@@ -110,13 +103,12 @@
         <argsstring></argsstring>
         <name>Mco2</name>
         <briefdescription>
-<para>Connect to <ref refid="classmodm_1_1platform_1_1_rcc" kindref="compound">Rcc</ref>. </para>
-        </briefdescription>
+<para>Connect to <ref refid="classmodm_1_1platform_1_1_rcc" kindref="compound">Rcc</ref>. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="181" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="181" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="181" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_c9_1af0d99111fcc649a307c0690fc06f1e70" prot="public" static="no">
         <type>GpioSignal</type>
@@ -124,13 +116,12 @@
         <argsstring></argsstring>
         <name>Sda</name>
         <briefdescription>
-<para>Connect to I2c3. </para>
-        </briefdescription>
+<para>Connect to I2c3. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="183" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="183" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="183" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="183" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-type">
@@ -145,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="37" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="37" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="37" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="37" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-type">
@@ -160,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="42" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="42" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_c9_1a1908d138a18a86c61f85d42e4c6708f2" prot="public" static="no">
         <type><ref refid="classmodm_1_1platform_1_1_gpio_c9" kindref="compound">GpioC9</ref></type>
@@ -173,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="43" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="43" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="43" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_c9_1a2cd706fc226303a63ee151184fdc90cf" prot="public" static="no">
         <type><ref refid="classmodm_1_1platform_1_1_gpio_c9" kindref="compound">GpioC9</ref></type>
@@ -186,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="44" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="44" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="44" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_gpio_c9_1aa4022bf7cd5f4c0df13444a052b27bc7" prot="public" static="no">
         <type><ref refid="classmodm_1_1platform_1_1_gpio_c9" kindref="compound">GpioC9</ref></type>
@@ -199,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="45" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="45" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="45" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -221,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="36" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="36" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="36" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classmodm_1_1platform_1_1_gpio_c9_1a6f211b1a6fb32c7354ec26cb136397d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -234,7 +225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="38" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="38" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="38" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classmodm_1_1platform_1_1_gpio_c9_1a408d9d1af47860a0d441db9e682a0286" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -247,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="39" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="39" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classmodm_1_1platform_1_1_gpio_c9_1aa23e1a089c072f958a021d20e3999d1d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -260,7 +251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="39" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="39" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classmodm_1_1platform_1_1_gpio_c9_1a5ed7caa4b9cdb2a9e493c0d14f0969ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -273,7 +264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="40" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="40" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classmodm_1_1platform_1_1_gpio_c9_1a448248fc7a1c51bccc4b77743edcb11f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -286,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="40" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="40" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="40" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -302,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="46" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="46" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="46" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_c9_1a9c3bc3f215d4684dc5bb5b2db6143009" prot="public" static="yes" mutable="no">
         <type>constexpr <ref refid="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19b" kindref="member">Port</ref></type>
@@ -311,13 +302,12 @@
         <name>port</name>
         <initializer>= <ref refid="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19ba0d61f8370cad1d412f80b84d143e1257" kindref="member">Port::C</ref></initializer>
         <briefdescription>
-<para>Port name. </para>
-        </briefdescription>
+<para>Port name. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="47" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="47" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="47" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_c9_1a8f47aaf586546e49b250f8848be1def3" prot="public" static="yes" mutable="no">
         <type>constexpr uint8_t</type>
@@ -326,13 +316,12 @@
         <name>pin</name>
         <initializer>= 9</initializer>
         <briefdescription>
-<para>Pin number. </para>
-        </briefdescription>
+<para>Pin number. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="48" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="48" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="48" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="48" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-static-attrib">
@@ -343,13 +332,12 @@
         <name>mask</name>
         <initializer>= 0x1 &lt;&lt; pin</initializer>
         <briefdescription>
-<para>Bitmask for registers that contain a 1bit value for every pin. </para>
-        </briefdescription>
+<para>Bitmask for registers that contain a 1bit value for every pin. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="52" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="52" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="52" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_c9_1afa70dc8bad9f8e3d8dbfe03186a71dba" prot="protected" static="yes" mutable="no">
         <type>constexpr uint32_t</type>
@@ -358,13 +346,12 @@
         <name>mask2</name>
         <initializer>= 0x3 &lt;&lt; (pin * 2)</initializer>
         <briefdescription>
-<para>Bitmask for registers that contain a 2bit value for every pin. </para>
-        </briefdescription>
+<para>Bitmask for registers that contain a 2bit value for every pin. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="54" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="54" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="54" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_c9_1a5f16c42206674ac5acdbb0dad3b6de02" prot="protected" static="yes" mutable="no">
         <type>constexpr uint8_t</type>
@@ -373,13 +360,12 @@
         <name>port_nr</name>
         <initializer>= uint8_t(<ref refid="classmodm_1_1platform_1_1_gpio_c9_1a9c3bc3f215d4684dc5bb5b2db6143009" kindref="member">port</ref>)</initializer>
         <briefdescription>
-<para>Port Number. </para>
-        </briefdescription>
+<para>Port Number. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="56" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="56" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="56" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_c9_1aeb4f75131d2faa4b0364b48e56510e57" prot="protected" static="yes" mutable="no">
         <type>constexpr uint8_t</type>
@@ -388,13 +374,12 @@
         <name>af_id</name>
         <initializer>= <ref refid="classmodm_1_1platform_1_1_gpio_c9_1a8f47aaf586546e49b250f8848be1def3" kindref="member">pin</ref> / 8</initializer>
         <briefdescription>
-<para>Alternate Function register id. 0 for pin 0-7. 1 for pin 8-15. </para>
-        </briefdescription>
+<para>Alternate Function register id. 0 for pin 0-7. 1 for pin 8-15. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="58" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="58" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="58" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_c9_1a639a4a91af4adaf6def329a852f2df04" prot="protected" static="yes" mutable="no">
         <type>constexpr uint8_t</type>
@@ -403,13 +388,12 @@
         <name>af_offset</name>
         <initializer>= (<ref refid="classmodm_1_1platform_1_1_gpio_c9_1a8f47aaf586546e49b250f8848be1def3" kindref="member">pin</ref> * 4) % 32</initializer>
         <briefdescription>
-<para>Alternate Function offset. </para>
-        </briefdescription>
+<para>Alternate Function offset. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="60" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="60" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="60" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_c9_1a229a0cdd5d0cc539bf3eb51a8595abc4" prot="protected" static="yes" mutable="no">
         <type>constexpr uint32_t</type>
@@ -418,13 +402,12 @@
         <name>af_mask</name>
         <initializer>= 0xf &lt;&lt; af_offset</initializer>
         <briefdescription>
-<para>Alternate Function register mask. </para>
-        </briefdescription>
+<para>Alternate Function register mask. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="62" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="62" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="62" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1platform_1_1_gpio_c9_1aaac1ed56de6ac95040a6bde70e021ec2" prot="protected" static="yes" mutable="no">
         <type>constexpr IRQn_Type</type>
@@ -433,13 +416,12 @@
         <name>ExternalInterruptIRQ</name>
         <initializer>= EXTI9_5_IRQn</initializer>
         <briefdescription>
-<para>ExternalInterruptIRQ. </para>
-        </briefdescription>
+<para>ExternalInterruptIRQ. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="64" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="64" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="64" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="64" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -462,7 +444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="245" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="245" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="245" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="245" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -477,7 +459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="80" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="80" bodyend="80"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="80" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="80" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a2511b93e178ac4e80c666b58c0c35167" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -494,7 +476,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="81" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="81" bodyend="81"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="81" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="81" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1aeba561041212b811494a9f815c3b4bc9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -507,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="82" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="82" bodyend="82"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="82" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="82" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a835767f7d6a491974f30819a20aab8c8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -524,7 +506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="83" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="83" bodyend="83"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="83" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="83" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a841af09cd76738163cb9c914d4c6b9db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -537,7 +519,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="84" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="84" bodyend="84"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="84" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="84" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1aa409a417be0d5e108c87e628f1a43bbf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -550,7 +532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="85" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="85" bodyend="88"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="85" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="85" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1ab1a5dfb1594a31052e40ff4c2c5c455e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -563,7 +545,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="89" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="89" bodyend="89"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="89" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="89" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a9c155555a39d5bd7296114e7ffe77a7a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -585,7 +567,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="91" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="91" bodyend="91"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="91" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="91" bodyend="91"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a3ea26bb5464b2e8fbc1e0f336daed1b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -607,7 +589,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="92" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="92" bodyend="92"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="92" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="92" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1aa22a6395754b8ce6c7ec78152876a19b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -620,7 +602,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="95" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="95" bodyend="95"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="95" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="95" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a30acfe8750173c85b11e1d955fc8ea24" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -633,7 +615,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="96" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="96" bodyend="96"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="96" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="96" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a532066088f50e6cb2c1fc64ec88d2401" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -650,7 +632,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="98" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="98" bodyend="98"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="98" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="98" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a6a869a5f32b3192f607fdb8ac2beb0f6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -667,7 +649,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="99" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="99" bodyend="99"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="99" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="99" bodyend="99"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a55c2624895498904a1b65c0bfc465a2e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -680,7 +662,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="104" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="104" bodyend="118"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="104" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="104" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1ab08e1e48e06df8ca9e4eb799508889ca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -693,7 +675,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="119" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="119" bodyend="119"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="119" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="119" bodyend="119"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a415ddbb3ebea549b7a4919787d5b1e81" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -710,7 +692,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="120" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="120" bodyend="124"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="120" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="120" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a156db08f42d9d193ea5e9d512ba6ef5d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -723,7 +705,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="125" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="125" bodyend="125"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="125" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="125" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a6c7226515ed640f117a878c52eebeb84" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -740,7 +722,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="126" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="126" bodyend="143"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="126" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="126" bodyend="143"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a8fcb4d2362d453029be1f78440400507" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -753,7 +735,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="144" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="144" bodyend="144"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="144" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="144" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a7d4c6517ba2741ef2020d8b48462431e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -766,7 +748,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="145" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="145" bodyend="145"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="145" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="145" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1aa23b026b74e8f1cc365bb23d3e24f061" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structmodm_1_1_gpio_1a5c167852e8d86eded53f554eabace79b" kindref="member">Direction</ref></type>
@@ -779,7 +761,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="148" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="148" bodyend="155"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="148" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="148" bodyend="155"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1af07d51fb77cadb528c1a57fab2ef6f1d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -792,7 +774,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="157" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="157" bodyend="157"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="157" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="157" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_gpio_c9_1a6613439913b0d63c5c0e827b70262431" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -805,14 +787,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="158" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="158" bodyend="161"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="158" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="158" bodyend="161"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>IO class for Pin C9 </para>
-    </detaileddescription>
+<para>IO class for Pin C9 </para>    </detaileddescription>
     <inheritancegraph>
       <node id="968">
         <label>modm::platform::Gpio</label>
@@ -889,7 +870,7 @@
         <link refid="structmodm_1_1_gpio"/>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="34" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="33" bodyend="246"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" line="34" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp" bodystart="33" bodyend="246"/>
     <listofallmembers>
       <member refid="classmodm_1_1platform_1_1_gpio_c9_1a7d4c6517ba2741ef2020d8b48462431e" prot="public" virt="non-virtual"><scope>modm::platform::GpioC9</scope><name>acknowledgeExternalInterruptFlag</name></member>
       <member refid="classmodm_1_1platform_1_1_gpio_c9_1a6f211b1a6fb32c7354ec26cb136397d7" prot="private" virt="non-virtual"><scope>modm::platform::GpioC9</scope><name>Adc</name></member>

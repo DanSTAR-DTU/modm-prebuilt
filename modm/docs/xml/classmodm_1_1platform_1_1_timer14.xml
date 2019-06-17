@@ -1,12 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1platform_1_1_timer14" kind="class" language="C++" prot="public">
     <compoundname>modm::platform::Timer14</compoundname>
     <basecompoundref refid="classmodm_1_1platform_1_1_general_purpose_timer" prot="public" virt="non-virtual">modm::platform::GeneralPurposeTimer</basecompoundref>
     <includes refid="timer__14_8hpp" local="no">modm/platform/timer/timer_14.hpp</includes>
       <sectiondef kind="public-type">
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_timer14_1a1519f99a16ed6fd9fa8fcc0630cfbb9a" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_timer14_1a1519f99a16ed6fd9fa8fcc0630cfbb9a" prot="public" static="no">
         <name>MasterMode</name>
         <enumvalue id="classmodm_1_1platform_1_1_timer14_1a1519f99a16ed6fd9fa8fcc0630cfbb9aa526d688f37a86d3c3f27d0c5016eb71d" prot="public">
           <name>Reset</name>
@@ -62,10 +61,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="51" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="50" bodyend="58"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="51" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="50" bodyend="58"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_timer14_1a007159e7924647f5633a319d80ceeace" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_timer14_1a007159e7924647f5633a319d80ceeace" prot="public" static="no">
         <name>SlaveModeTrigger</name>
         <enumvalue id="classmodm_1_1platform_1_1_timer14_1a007159e7924647f5633a319d80ceeacea178335d8800ef532695f42ce1ded6c71" prot="public">
           <name>Internal0</name>
@@ -137,17 +135,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="61" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="60" bodyend="70"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="61" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="60" bodyend="70"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_timer14_1a568061c818c20ca4d429203ebed94cca" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_timer14_1a568061c818c20ca4d429203ebed94cca" prot="public" static="no">
         <name>SlaveMode</name>
         <enumvalue id="classmodm_1_1platform_1_1_timer14_1a568061c818c20ca4d429203ebed94ccaab9f5c797ebbf55adccdd8539a65a0241" prot="public">
           <name>Disabled</name>
           <initializer>= 0</initializer>
           <briefdescription>
-<para>Slave mode disabled - if CEN = &apos;1&apos; then the prescaler is clocked directly by the internal clock. </para>
-          </briefdescription>
+<para>Slave mode disabled - if CEN = &apos;1&apos; then the prescaler is clocked directly by the internal clock. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -155,8 +151,7 @@
           <name>Encoder1</name>
           <initializer>= TIM_SMCR_SMS_0</initializer>
           <briefdescription>
-<para>Counter counts up/down on TI2FP2 edge depending on TI1FP1 level. </para>
-          </briefdescription>
+<para>Counter counts up/down on TI2FP2 edge depending on TI1FP1 level. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -164,8 +159,7 @@
           <name>Encoder2</name>
           <initializer>= TIM_SMCR_SMS_1</initializer>
           <briefdescription>
-<para>Counter counts up/down on TI1FP1 edge depending on TI2FP2 level. </para>
-          </briefdescription>
+<para>Counter counts up/down on TI1FP1 edge depending on TI2FP2 level. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -173,8 +167,7 @@
           <name>Encoder3</name>
           <initializer>= TIM_SMCR_SMS_1 | TIM_SMCR_SMS_0</initializer>
           <briefdescription>
-<para>Counter counts up/down on both TI1FP1 and TI2FP2 edges depending on the level of the other input. </para>
-          </briefdescription>
+<para>Counter counts up/down on both TI1FP1 and TI2FP2 edges depending on the level of the other input. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -182,8 +175,7 @@
           <name>Reset</name>
           <initializer>= TIM_SMCR_SMS_2</initializer>
           <briefdescription>
-<para>Rising edge of the selected trigger input (TRGI) reinitializes the counter and generates an update of the registers. </para>
-          </briefdescription>
+<para>Rising edge of the selected trigger input (TRGI) reinitializes the counter and generates an update of the registers. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -191,8 +183,7 @@
           <name>Gated</name>
           <initializer>= TIM_SMCR_SMS_2 | TIM_SMCR_SMS_0</initializer>
           <briefdescription>
-<para>The counter clock is enabled when the trigger input (TRGI) is high. The counter stops (but is not reset) as soon as the trigger becomes low. Both start and stop of the counter are controlled. </para>
-          </briefdescription>
+<para>The counter clock is enabled when the trigger input (TRGI) is high. The counter stops (but is not reset) as soon as the trigger becomes low. Both start and stop of the counter are controlled. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -200,8 +191,7 @@
           <name>Trigger</name>
           <initializer>= TIM_SMCR_SMS_2 | TIM_SMCR_SMS_1</initializer>
           <briefdescription>
-<para>The counter starts at a rising edge of the trigger TRGI (but it is not reset). Only the start of the counter is controlled. </para>
-          </briefdescription>
+<para>The counter starts at a rising edge of the trigger TRGI (but it is not reset). Only the start of the counter is controlled. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -209,8 +199,7 @@
           <name>ExternalClock</name>
           <initializer>= TIM_SMCR_SMS_2 | TIM_SMCR_SMS_1 | TIM_SMCR_SMS_0</initializer>
           <briefdescription>
-<para>Rising edges of the selected trigger (TRGI) clock the counter. </para>
-          </briefdescription>
+<para>Rising edges of the selected trigger (TRGI) clock the counter. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -220,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="73" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="72" bodyend="90"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="73" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="72" bodyend="90"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_timer14_1a23e94ebc25e72890b7fe075d1c5d7d10" prot="public" static="no">
         <type>uint16_t</type>
@@ -233,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="95" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="95" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="95" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="95" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -255,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="99" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="99" bodyend="103"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="99" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="99" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a149a07d8ffb3ffc0e6491f837e5d6b53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -268,7 +257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="107" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="107" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a7f739db5864a71a262ebb09df0d4134a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -281,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="111" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="111" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a9f82f3f3fa15e4ec33712207964396e7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -294,7 +283,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="114" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="114" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a81fbbc811b87ced23b95efce6db0cf34" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -307,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="117" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="117" bodyend="120"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="117" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="117" bodyend="120"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1ad117058986715b1e3c37377b50f44d40" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -320,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="123" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="123" bodyend="126"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="123" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="123" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1ac2d50fa450b49b500a765cc30fc8564f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -357,7 +346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="129" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="129" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a10df066142bb54f48566768d1fb0375b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -374,7 +363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="136" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="136" bodyend="141"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="136" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="136" bodyend="141"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1aaf59af4b268d1f045c8e31bf388e2cb6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -391,7 +380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="144" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="144" bodyend="147"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="144" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="144" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a4a08503f11f310935e4b2d18e91f6c4d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -418,7 +407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="151" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="151" bodyend="170"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="151" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="151" bodyend="170"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1adaea7f7b295e962348debe7afe59f3c2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -431,7 +420,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="173" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="173" bodyend="177"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="173" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="173" bodyend="177"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a2e147f85b02e67fc8402564069533e41" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classmodm_1_1platform_1_1_timer14_1a23e94ebc25e72890b7fe075d1c5d7d10" kindref="member">Value</ref></type>
@@ -444,7 +433,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="180" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="180" bodyend="183"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="180" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="180" bodyend="183"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a5d9e0c7c0ef18b829fa19ef75dc73ae1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -461,7 +450,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="186" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="186" bodyend="189"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="186" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="186" bodyend="189"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1aede3e62aade1564e899ef8d38e0eb83e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -499,7 +488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="193" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="193" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1ab539f0dae6a33672d9503ffa55ce2475" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -529,7 +518,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="199" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="199" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a11ff10c7c7c9ffc34aab84ab4da1fdcc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -543,12 +532,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Switch to Pwm Mode 2</para>
-<para>While upcounting channel will be active as long as the time value is smaller than the compare value, else inactive. Timer will not be disabled while switching modes. </para>
-        </detaileddescription>
+<para>Switch to Pwm Mode 2</para><para>While upcounting channel will be active as long as the time value is smaller than the compare value, else inactive. Timer will not be disabled while switching modes. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="208" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="208" bodyend="232"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="208" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="208" bodyend="232"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a8baec404a8cf9ab80cc182e30e819017" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -562,12 +549,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Switch to Pwm Mode 1</para>
-<para>While upcounting channel will be inactive as long as the time value is smaller than the compare value, else active. <bold>Please note</bold>: Timer will not be disabled while switching modes. </para>
-        </detaileddescription>
+<para>Switch to Pwm Mode 1</para><para>While upcounting channel will be inactive as long as the time value is smaller than the compare value, else active. <bold>Please note</bold>: Timer will not be disabled while switching modes. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="240" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="240" bodyend="264"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="240" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="240" bodyend="264"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a62ca165fbce95c8b9568d283b694b1f1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -581,12 +566,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Switch to Inactive Mode</para>
-<para>The channel output will be forced to the inactive level. <bold>Please note</bold>: Timer will not be disabled while switching modes. </para>
-        </detaileddescription>
+<para>Switch to Inactive Mode</para><para>The channel output will be forced to the inactive level. <bold>Please note</bold>: Timer will not be disabled while switching modes. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="271" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="271" bodyend="295"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="271" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="271" bodyend="295"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a5f3a492e9480eca49dd1a1d2a70ae7ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -600,12 +583,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Switch to Active Mode</para>
-<para>The channel output will be forced to the active level. <bold>Please note</bold>: Timer will not be disabled while switching modes. </para>
-        </detaileddescription>
+<para>Switch to Active Mode</para><para>The channel output will be forced to the active level. <bold>Please note</bold>: Timer will not be disabled while switching modes. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="302" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="302" bodyend="326"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="302" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="302" bodyend="326"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1ab873cf5e49d693705113a8ddbd89ee4f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -626,7 +607,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="330" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="330" bodyend="333"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="330" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="330" bodyend="333"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1ace4ba8d6518d522dd8e8bdefd237f176" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classmodm_1_1platform_1_1_timer14_1a23e94ebc25e72890b7fe075d1c5d7d10" kindref="member">Value</ref></type>
@@ -643,7 +624,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="336" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="336" bodyend="339"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="336" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="336" bodyend="339"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a3f8ae4db56073d6ef9d978ad158e18f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -664,7 +645,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="343" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="343" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a9e95398aa67e4dd3f60ac99deb7ec044" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -681,7 +662,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="346" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="346" bodyend="349"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="346" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="346" bodyend="349"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1ad64ad8d201c5cbc7404201c0771adb58" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -698,7 +679,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="352" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="352" bodyend="355"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="352" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="352" bodyend="355"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1adfd07f2048334065e7f6efbd9cb3d0e0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -715,7 +696,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="358" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="358" bodyend="361"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="358" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="358" bodyend="361"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a9533d8227cb01fb47aaf0f405b0e886b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -732,7 +713,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="364" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="364" bodyend="367"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="364" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="364" bodyend="367"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a8349e4eb4e68f1a296cfcdf1828d1fa1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classmodm_1_1platform_1_1_basic_timer_1a14819cdd8cd6f7f2a8696f42606cd8a9" kindref="member">InterruptFlag_t</ref></type>
@@ -745,7 +726,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="370" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="370" bodyend="373"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="370" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="370" bodyend="373"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_timer14_1a612f15a87a95695b048fc7174260b996" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -762,26 +743,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="376" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="376" bodyend="381"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="376" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="376" bodyend="381"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>General Purpose Timer 14</para>
-<para>Interrupt handler: <programlisting><codeline><highlight class="normal">MODM_ISR(TIM14)</highlight></codeline>
+<para>General Purpose Timer 14</para><para>Interrupt handler: <programlisting><codeline><highlight class="normal">MODM_ISR(TIM14)</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Timer14::resetInterruptFlags(Timer14::...);</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting></para>
-<para><simplesect kind="warning"><para>The Timer has much more possibilities than presented by this interface (e.g. Input Capture, Trigger for other Timers, DMA). It might be expanded in the future.</para>
-</simplesect>
-<simplesect kind="author"><para>Fabian Greif </para>
-</simplesect>
-</para>
-    </detaileddescription>
+</programlisting></para><para><simplesect kind="warning"><para>The Timer has much more possibilities than presented by this interface (e.g. Input Capture, Trigger for other Timers, DMA). It might be expanded in the future.</para></simplesect>
+<simplesect kind="author"><para>Fabian Greif </para></simplesect>
+</para>    </detaileddescription>
     <inheritancegraph>
       <node id="1646">
         <label>modm::platform::Timer14</label>
@@ -818,7 +794,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="48" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="47" bodyend="382"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" line="48" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp" bodystart="47" bodyend="382"/>
     <listofallmembers>
       <member refid="classmodm_1_1platform_1_1_timer14_1a612f15a87a95695b048fc7174260b996" prot="public" virt="non-virtual"><scope>modm::platform::Timer14</scope><name>acknowledgeInterruptFlags</name></member>
       <member refid="classmodm_1_1platform_1_1_timer14_1adaea7f7b295e962348debe7afe59f3c2" prot="public" virt="non-virtual"><scope>modm::platform::Timer14</scope><name>applyAndReset</name></member>

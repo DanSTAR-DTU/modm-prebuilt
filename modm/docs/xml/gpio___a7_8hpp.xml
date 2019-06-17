@@ -1,115 +1,115 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="gpio___a7_8hpp" kind="file" language="C++">
     <compoundname>gpio_A7.hpp</compoundname>
     <includes refid="device_8hpp" local="yes">../device.hpp</includes>
     <includes refid="base_8hpp" local="yes">base.hpp</includes>
     <includes refid="set_8hpp" local="yes">set.hpp</includes>
-    <includedby refid="platform_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <incdepgraph>
-      <node id="5106">
-        <label>../device.hpp</label>
-        <link refid="device_8hpp"/>
-        <childnode refid="5107" relation="include">
-        </childnode>
-        <childnode refid="5108" relation="include">
-        </childnode>
-        <childnode refid="5110" relation="include">
-        </childnode>
-        <childnode refid="5111" relation="include">
-        </childnode>
-      </node>
-      <node id="5111">
-        <label>system_stm32f4xx.h</label>
-      </node>
-      <node id="5107">
-        <label>stdint.h</label>
-      </node>
-      <node id="5112">
-        <label>base.hpp</label>
-        <link refid="base_8hpp"/>
-        <childnode refid="5106" relation="include">
-        </childnode>
-        <childnode refid="5113" relation="include">
-        </childnode>
-        <childnode refid="5114" relation="include">
-        </childnode>
-        <childnode refid="5117" relation="include">
-        </childnode>
-      </node>
-      <node id="5116">
-        <label>cmath</label>
-      </node>
-      <node id="5113">
-        <label>modm/architecture/interface/gpio.hpp</label>
-        <link refid="gpio_8hpp"/>
-        <childnode refid="5107" relation="include">
-        </childnode>
-        <childnode refid="5108" relation="include">
-        </childnode>
-      </node>
-      <node id="5108">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="5109" relation="include">
-        </childnode>
-      </node>
-      <node id="5117">
-        <label>modm/platform/core/peripherals.hpp</label>
-        <link refid="peripherals_8hpp"/>
-      </node>
-      <node id="5118">
-        <label>set.hpp</label>
-        <link refid="set_8hpp"/>
-        <childnode refid="5106" relation="include">
-        </childnode>
-        <childnode refid="5112" relation="include">
-        </childnode>
-      </node>
-      <node id="5105">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A7.hpp</label>
-        <link refid="gpio___a7_8hpp"/>
-        <childnode refid="5106" relation="include">
-        </childnode>
-        <childnode refid="5112" relation="include">
-        </childnode>
-        <childnode refid="5118" relation="include">
-        </childnode>
-      </node>
-      <node id="5115">
-        <label>cstddef</label>
-      </node>
-      <node id="5109">
+      <node id="5121">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="5114">
-        <label>modm/math/utils/bit_operation.hpp</label>
-        <link refid="bit__operation_8hpp"/>
-        <childnode refid="5115" relation="include">
+      <node id="5125">
+        <label>modm/architecture/interface/gpio.hpp</label>
+        <link refid="gpio_8hpp"/>
+        <childnode refid="5119" relation="include">
         </childnode>
-        <childnode refid="5116" relation="include">
-        </childnode>
-        <childnode refid="5107" relation="include">
-        </childnode>
-        <childnode refid="5109" relation="include">
-        </childnode>
-        <childnode refid="5108" relation="include">
+        <childnode refid="5120" relation="include">
         </childnode>
       </node>
-      <node id="5110">
+      <node id="5123">
+        <label>system_stm32f4xx.h</label>
+      </node>
+      <node id="5129">
+        <label>modm/platform/core/peripherals.hpp</label>
+        <link refid="peripherals_8hpp"/>
+      </node>
+      <node id="5119">
+        <label>stdint.h</label>
+      </node>
+      <node id="5128">
+        <label>cmath</label>
+      </node>
+      <node id="5117">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A7.hpp</label>
+        <link refid="gpio___a7_8hpp"/>
+        <childnode refid="5118" relation="include">
+        </childnode>
+        <childnode refid="5124" relation="include">
+        </childnode>
+        <childnode refid="5130" relation="include">
+        </childnode>
+      </node>
+      <node id="5130">
+        <label>set.hpp</label>
+        <link refid="set_8hpp"/>
+        <childnode refid="5118" relation="include">
+        </childnode>
+        <childnode refid="5124" relation="include">
+        </childnode>
+      </node>
+      <node id="5124">
+        <label>base.hpp</label>
+        <link refid="base_8hpp"/>
+        <childnode refid="5118" relation="include">
+        </childnode>
+        <childnode refid="5125" relation="include">
+        </childnode>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5129" relation="include">
+        </childnode>
+      </node>
+      <node id="5120">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="5121" relation="include">
+        </childnode>
+      </node>
+      <node id="5126">
+        <label>modm/math/utils/bit_operation.hpp</label>
+        <link refid="bit__operation_8hpp"/>
+        <childnode refid="5127" relation="include">
+        </childnode>
+        <childnode refid="5128" relation="include">
+        </childnode>
+        <childnode refid="5119" relation="include">
+        </childnode>
+        <childnode refid="5121" relation="include">
+        </childnode>
+        <childnode refid="5120" relation="include">
+        </childnode>
+      </node>
+      <node id="5118">
+        <label>../device.hpp</label>
+        <link refid="device_8hpp"/>
+        <childnode refid="5119" relation="include">
+        </childnode>
+        <childnode refid="5120" relation="include">
+        </childnode>
+        <childnode refid="5122" relation="include">
+        </childnode>
+        <childnode refid="5123" relation="include">
+        </childnode>
+      </node>
+      <node id="5127">
+        <label>cstddef</label>
+      </node>
+      <node id="5122">
         <label>stm32f446xx.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="5119">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A7.hpp</label>
+      <node id="5131">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A7.hpp</label>
         <link refid="gpio___a7_8hpp"/>
-        <childnode refid="5120" relation="include">
+        <childnode refid="5132" relation="include">
         </childnode>
       </node>
-      <node id="5120">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+      <node id="5132">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>
     </invincdepgraph>
@@ -120,6 +120,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A7.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A7.hpp"/>
   </compounddef>
 </doxygen>

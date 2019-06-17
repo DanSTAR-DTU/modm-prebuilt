@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1platform_1_1_basic_timer" kind="class" language="C++" prot="public">
     <compoundname>modm::platform::BasicTimer</compoundname>
     <derivedcompoundref refid="classmodm_1_1platform_1_1_general_purpose_timer" prot="public" virt="non-virtual">modm::platform::GeneralPurposeTimer</derivedcompoundref>
@@ -7,8 +7,7 @@
     <derivedcompoundref refid="classmodm_1_1platform_1_1_timer7" prot="public" virt="non-virtual">modm::platform::Timer7</derivedcompoundref>
     <includes refid="basic__base_8hpp" local="no">modm/platform/timer/basic_base.hpp</includes>
       <sectiondef kind="public-type">
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_basic_timer_1ae79609753399533b77903c3c42ff65a2" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_basic_timer_1ae79609753399533b77903c3c42ff65a2" prot="public" static="no">
         <name>Mode</name>
         <enumvalue id="classmodm_1_1platform_1_1_basic_timer_1ae79609753399533b77903c3c42ff65a2aa771e4a30d4558abdc5937d1a36fed9d" prot="public">
           <name>UpCounter</name>
@@ -32,10 +31,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="31" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" bodystart="30" bodyend="34"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="31" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" bodystart="30" bodyend="34"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_basic_timer_1a6ab330516e8221330ec2db8319992b15" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_basic_timer_1a6ab330516e8221330ec2db8319992b15" prot="public" static="no">
         <name>Interrupt</name>
         <enumvalue id="classmodm_1_1platform_1_1_basic_timer_1a6ab330516e8221330ec2db8319992b15a06933067aafd48425d67bcb01bba5cb6" prot="public">
           <name>Update</name>
@@ -51,10 +49,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="37" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" bodystart="36" bodyend="39"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="37" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" bodystart="36" bodyend="39"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_basic_timer_1a77c851e009c1a0239dabf9f3451766a2" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_basic_timer_1a77c851e009c1a0239dabf9f3451766a2" prot="public" static="no">
         <name>InterruptFlag</name>
         <enumvalue id="classmodm_1_1platform_1_1_basic_timer_1a77c851e009c1a0239dabf9f3451766a2a06933067aafd48425d67bcb01bba5cb6" prot="public">
           <name>Update</name>
@@ -70,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="43" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" bodystart="42" bodyend="45"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="43" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" bodystart="42" bodyend="45"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_basic_timer_1aa15a59c3a874fbb1f75e07a4ad7d7c1b" prot="public" static="no">
         <type><ref refid="group__modm__architecture__register_1ga4bbc612ddbc2cf239e7c5baeabfa8a0d" kindref="member">modm::Flags32</ref>&lt; <ref refid="classmodm_1_1platform_1_1_basic_timer_1a6ab330516e8221330ec2db8319992b15" kindref="member">Interrupt</ref> &gt;</type>
@@ -83,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" bodystart="40" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="40" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_basic_timer_1a14819cdd8cd6f7f2a8696f42606cd8a9" prot="public" static="no">
         <type><ref refid="group__modm__architecture__register_1ga4bbc612ddbc2cf239e7c5baeabfa8a0d" kindref="member">modm::Flags32</ref>&lt; <ref refid="classmodm_1_1platform_1_1_basic_timer_1a77c851e009c1a0239dabf9f3451766a2" kindref="member">InterruptFlag</ref> &gt;</type>
@@ -96,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="46" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" bodystart="46" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="46" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -108,12 +105,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Enables the clock for the timer and resets all settings</para>
-<para>Has to be called before calling any other function from this class! Otherwise the settings won&apos;t have any effect. </para>
-        </detaileddescription>
+<para>Enables the clock for the timer and resets all settings</para><para>Has to be called before calling any other function from this class! Otherwise the settings won&apos;t have any effect. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="56" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="56" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1a2e7447e2137162c81b3a0ce765ca6b6b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -123,12 +118,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Disable clock.</para>
-<para>All settings are ignored in this mode and the timer is shut down. Calling any function other than <ref refid="classmodm_1_1platform_1_1_basic_timer_1ab157aaf04b838264a33c7bf0cd0bb194" kindref="member">enable()</ref> won&apos;t have any effect. </para>
-        </detaileddescription>
+<para>Disable clock.</para><para>All settings are ignored in this mode and the timer is shut down. Calling any function other than <ref refid="classmodm_1_1platform_1_1_basic_timer_1ab157aaf04b838264a33c7bf0cd0bb194" kindref="member">enable()</ref> won&apos;t have any effect. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="66" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="66" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1a319d9a325629767d36b38180c761b89d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -138,12 +131,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Pause timer operation</para>
-<para>All settings are stored but the timer operation is suspend until <ref refid="classmodm_1_1platform_1_1_basic_timer_1adf8f3d42818242d3b42ad8955e06edce" kindref="member">start()</ref> is called. </para>
-        </detaileddescription>
+<para>Pause timer operation</para><para>All settings are stored but the timer operation is suspend until <ref refid="classmodm_1_1platform_1_1_basic_timer_1adf8f3d42818242d3b42ad8955e06edce" kindref="member">start()</ref> is called. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="75" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="75" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1adf8f3d42818242d3b42ad8955e06edce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -153,12 +144,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Re-enable timer operations</para>
-<para>Has to called after the initial configuration to start timer or after <ref refid="classmodm_1_1platform_1_1_basic_timer_1a319d9a325629767d36b38180c761b89d" kindref="member">pause()</ref> to restart the timer. </para>
-        </detaileddescription>
+<para>Re-enable timer operations</para><para>Has to called after the initial configuration to start timer or after <ref refid="classmodm_1_1platform_1_1_basic_timer_1a319d9a325629767d36b38180c761b89d" kindref="member">pause()</ref> to restart the timer. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="84" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="84" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1a428bd4fbf1acbae6cd25ab2d3f2182fc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -172,11 +161,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Set operation mode of the timer </para>
-        </detaileddescription>
+<para>Set operation mode of the timer </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="90" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="90" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1a3fbf2e910c75f7f5b8dd75f787503c1d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -190,15 +178,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Set new prescaler</para>
-<para>The prescaler can divide the counter clock frequency by any factor between 1 and 65536. The new prescaler ratio is taken into account at the next update event.</para>
-<para><simplesect kind="see"><para><ref refid="classmodm_1_1platform_1_1_basic_timer_1a0b5960f797e53edc6d6787e4edc81298" kindref="member">applyAndReset()</ref> </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para>Set new prescaler</para><para>The prescaler can divide the counter clock frequency by any factor between 1 and 65536. The new prescaler ratio is taken into account at the next update event.</para><para><simplesect kind="see"><para><ref refid="classmodm_1_1platform_1_1_basic_timer_1a0b5960f797e53edc6d6787e4edc81298" kindref="member">applyAndReset()</ref> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="102" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="102" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1abaa3878582d2142d83c0437ec3b2c8cf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -212,16 +196,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Set overflow.</para>
-<para>This sets the maximum counter value of the timer. The timer is blocked if <computeroutput>overflow</computeroutput> is set to zero.</para>
-<para>Takes effect at next update event.</para>
-<para><simplesect kind="see"><para><ref refid="classmodm_1_1platform_1_1_basic_timer_1a0b5960f797e53edc6d6787e4edc81298" kindref="member">applyAndReset()</ref> </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para>Set overflow.</para><para>This sets the maximum counter value of the timer. The timer is blocked if <computeroutput>overflow</computeroutput> is set to zero.</para><para>Takes effect at next update event.</para><para><simplesect kind="see"><para><ref refid="classmodm_1_1platform_1_1_basic_timer_1a0b5960f797e53edc6d6787e4edc81298" kindref="member">applyAndReset()</ref> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="115" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="115" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1a7d927b36368726f0b6ee7d2f683b1106" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -240,34 +219,27 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Set period in microseconds</para>
-<para>Changes prescaler and overflow values. Takes effect at next update event.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Set period in microseconds</para><para>Changes prescaler and overflow values. Takes effect at next update event.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>microseconds</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Requested period in microseconds </para>
-</parameterdescription>
+<para>Requested period in microseconds </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>autoApply</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Update the new value immediately and reset the counter value.</para>
-</parameterdescription>
+<para>Update the new value immediately and reset the counter value.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>New overflow value.</para>
-</simplesect>
-<simplesect kind="see"><para><ref refid="classmodm_1_1platform_1_1_basic_timer_1a0b5960f797e53edc6d6787e4edc81298" kindref="member">applyAndReset()</ref> </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>New overflow value.</para></simplesect>
+<simplesect kind="see"><para><ref refid="classmodm_1_1platform_1_1_basic_timer_1a0b5960f797e53edc6d6787e4edc81298" kindref="member">applyAndReset()</ref> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="132" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="132" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1a0b5960f797e53edc6d6787e4edc81298" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -275,16 +247,12 @@
         <argsstring>()</argsstring>
         <name>applyAndReset</name>
         <briefdescription>
-<para>Reset the counter, and update the prescaler and overflow values. </para>
-        </briefdescription>
+<para>Reset the counter, and update the prescaler and overflow values. </para>        </briefdescription>
         <detaileddescription>
-<para>Generates an Update-Event without generating an Update-Interrupt.</para>
-<para>This will reset the counter to 0 in up-counting mode (the default) or to the maximal value in down-counting mode. It will also update the timer&apos;s prescaler and overflow values if you have set them up to be changed using <ref refid="classmodm_1_1platform_1_1_basic_timer_1a3fbf2e910c75f7f5b8dd75f787503c1d" kindref="member">setPrescaler()</ref> or <ref refid="classmodm_1_1platform_1_1_basic_timer_1abaa3878582d2142d83c0437ec3b2c8cf" kindref="member">setOverflow()</ref> (or <ref refid="classmodm_1_1platform_1_1_basic_timer_1a7d927b36368726f0b6ee7d2f683b1106" kindref="member">setPeriod()</ref>).</para>
-<para>An Update-Event is also generated when the timer reaches its maximal (up-counting) or minimal (down-counting) value. The settings for Prescaler, Overflow and Compare values are applied then without calling this function. </para>
-        </detaileddescription>
+<para>Generates an Update-Event without generating an Update-Interrupt.</para><para>This will reset the counter to 0 in up-counting mode (the default) or to the maximal value in down-counting mode. It will also update the timer&apos;s prescaler and overflow values if you have set them up to be changed using <ref refid="classmodm_1_1platform_1_1_basic_timer_1a3fbf2e910c75f7f5b8dd75f787503c1d" kindref="member">setPrescaler()</ref> or <ref refid="classmodm_1_1platform_1_1_basic_timer_1abaa3878582d2142d83c0437ec3b2c8cf" kindref="member">setOverflow()</ref> (or <ref refid="classmodm_1_1platform_1_1_basic_timer_1a7d927b36368726f0b6ee7d2f683b1106" kindref="member">setPeriod()</ref>).</para><para>An Update-Event is also generated when the timer reaches its maximal (up-counting) or minimal (down-counting) value. The settings for Prescaler, Overflow and Compare values are applied then without calling this function. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="153" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="153" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1adb3f235b777fd4f10b92698389a00ab7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint16_t</type>
@@ -294,11 +262,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Get the counter value </para>
-        </detaileddescription>
+<para>Get the counter value </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="159" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="159" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1a2a1caea6b9c0cce8ee8a83d91eaf83bd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -312,11 +279,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Set a new counter value </para>
-        </detaileddescription>
+<para>Set a new counter value </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="165" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="165" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1a7137a7e00d411c85285db50c5cd7b9b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -334,29 +300,25 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Enables or disables the Interrupt <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Enables or disables the Interrupt <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>enable</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Enable/disable the interrupt vector </para>
-</parameterdescription>
+<para>Enable/disable the interrupt vector </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>priority</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Priority of the interrupt vector (0=highest to 15=lowest). </para>
-</parameterdescription>
+<para>Priority of the interrupt vector (0=highest to 15=lowest). </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="177" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="177" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1a0125bc3626a0051dbdc53a5483b985c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -370,23 +332,19 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Enables interrupts. Don&apos;t forget to enable the Interrupt <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Enables interrupts. Don&apos;t forget to enable the Interrupt <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>interrupt</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Interrupts to enable</para>
-</parameterdescription>
+<para>Interrupts to enable</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="see"><para><ref refid="classmodm_1_1platform_1_1_basic_timer_1a7137a7e00d411c85285db50c5cd7b9b4" kindref="member">enableInterruptVector()</ref> </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="see"><para><ref refid="classmodm_1_1platform_1_1_basic_timer_1a7137a7e00d411c85285db50c5cd7b9b4" kindref="member">enableInterruptVector()</ref> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="188" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="188" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1add0832893feb247cee7b7cbf9fba06d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -400,21 +358,18 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Disables interrupts.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Disables interrupts.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>interrupt</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Interrupts to disable </para>
-</parameterdescription>
+<para>Interrupts to disable </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="197" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="197" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1ae11330dcb450c89da44342855d1c0714" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1platform_1_1_basic_timer_1a14819cdd8cd6f7f2a8696f42606cd8a9" kindref="member">InterruptFlag_t</ref></type>
@@ -424,21 +379,17 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Returns a bitmap of the enum StateFlag. Use this method while executing an interrupt or in other situations where you want to know which of the flags are set.</para>
-<para>If a flag is a cause of an enabled interrupt (and the Interrupt <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> is enabled) then interrupt will be triggered as long the flag is set.</para>
-<para><simplesect kind="warning"><para>You cannot use a switch statement for the returned value, since multiple flags may be set!</para>
-</simplesect>
+<para>Returns a bitmap of the enum StateFlag. Use this method while executing an interrupt or in other situations where you want to know which of the flags are set.</para><para>If a flag is a cause of an enabled interrupt (and the Interrupt <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> is enabled) then interrupt will be triggered as long the flag is set.</para><para><simplesect kind="warning"><para>You cannot use a switch statement for the returned value, since multiple flags may be set!</para></simplesect>
 <programlisting><codeline><highlight class="normal">InterruptFlag<sp/>flags<sp/>=<sp/>TimerX::getInterruptFlags()</highlight></codeline>
 <codeline><highlight class="normal">if<sp/>(flags<sp/>&amp;<sp/>TimerX::FLAG_XX){</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Flag<sp/>was<sp/>set,<sp/>clear<sp/>the<sp/>flag<sp/>since<sp/>flags<sp/>are<sp/>set<sp/>by</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>hardware,<sp/>but<sp/>have<sp/>to<sp/>be<sp/>cleared<sp/>by<sp/>software</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TimerX::resetInterruptFlags(TIMx::FLAG_XX)</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting> </para>
-        </detaileddescription>
+</programlisting> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="221" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="221" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_basic_timer_1a5b2488893edd8afd43e8b4750256c391" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -452,21 +403,18 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Clears one or multiple flags.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Clears one or multiple flags.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>flags</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Bitmap of StateFlag </para>
-</parameterdescription>
+<para>Bitmap of StateFlag </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="229" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="229" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -575,7 +523,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="28" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" bodystart="27" bodyend="230"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" line="28" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp" bodystart="27" bodyend="230"/>
     <listofallmembers>
       <member refid="classmodm_1_1platform_1_1_basic_timer_1a5b2488893edd8afd43e8b4750256c391" prot="public" virt="non-virtual"><scope>modm::platform::BasicTimer</scope><name>acknowledgeInterruptFlags</name></member>
       <member refid="classmodm_1_1platform_1_1_basic_timer_1a0b5960f797e53edc6d6787e4edc81298" prot="public" virt="non-virtual"><scope>modm::platform::BasicTimer</scope><name>applyAndReset</name></member>

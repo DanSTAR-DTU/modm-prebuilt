@@ -1,45 +1,45 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="s__curve__controller_8hpp" kind="file" language="C++">
     <compoundname>s_curve_controller.hpp</compoundname>
     <includes local="no">cmath</includes>
     <includes local="yes">s_curve_controller_impl.hpp</includes>
-    <includedby refid="filter_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter.hpp</includedby>
-    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <includedby refid="filter_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
     <incdepgraph>
-      <node id="2672">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp</label>
-        <link refid="s__curve__controller_8hpp"/>
-        <childnode refid="2673" relation="include">
-        </childnode>
-        <childnode refid="2674" relation="include">
-        </childnode>
-      </node>
-      <node id="2673">
+      <node id="2685">
         <label>cmath</label>
       </node>
-      <node id="2674">
+      <node id="2684">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp</label>
+        <link refid="s__curve__controller_8hpp"/>
+        <childnode refid="2685" relation="include">
+        </childnode>
+        <childnode refid="2686" relation="include">
+        </childnode>
+      </node>
+      <node id="2686">
         <label>s_curve_controller_impl.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2675">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp</label>
-        <link refid="s__curve__controller_8hpp"/>
-        <childnode refid="2676" relation="include">
-        </childnode>
-        <childnode refid="2677" relation="include">
-        </childnode>
-      </node>
-      <node id="2676">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter.hpp</label>
-        <link refid="filter_8hpp"/>
-        <childnode refid="2677" relation="include">
-        </childnode>
-      </node>
-      <node id="2677">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+      <node id="2689">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
         <link refid="math_8hpp"/>
+      </node>
+      <node id="2688">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter.hpp</label>
+        <link refid="filter_8hpp"/>
+        <childnode refid="2689" relation="include">
+        </childnode>
+      </node>
+      <node id="2687">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp</label>
+        <link refid="s__curve__controller_8hpp"/>
+        <childnode refid="2688" relation="include">
+        </childnode>
+        <childnode refid="2689" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classmodm_1_1_s_curve_controller" prot="public">modm::SCurveController</innerclass>
@@ -49,6 +49,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp"/>
   </compounddef>
 </doxygen>

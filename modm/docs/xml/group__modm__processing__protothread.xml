@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__modm__processing__protothread" kind="group">
     <compoundname>modm_processing_protothread</compoundname>
     <title>Protothreads</title>
@@ -13,14 +13,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Declare start of protothread</para>
-<para><simplesect kind="warning"><para>Use at start of the run() implementation! </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para>Declare start of protothread</para><para><simplesect kind="warning"><para>Use at start of the run() implementation! </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="28" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="28" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="28" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga146c4bb0e1f9f2020cd12b8dd7ff076e" prot="public" static="no">
         <name>PT_END</name>
@@ -28,14 +25,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Stop protothread and end it</para>
-<para><simplesect kind="warning"><para>Use at end of the run() implementation! </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para>Stop protothread and end it</para><para><simplesect kind="warning"><para>Use at end of the run() implementation! </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="38" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="38" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="38" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga7593fae8873b594580319c407dd81ad6" prot="public" static="no">
         <name>PT_YIELD</name>
@@ -43,11 +37,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Yield protothread till next call to its run(). </para>
-        </detaileddescription>
+<para>Yield protothread till next call to its run(). </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="46" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="46" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="46" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga3b5d03ed0a607155806a4f5f7a6570b2" prot="public" static="no">
         <name>PT_WAIT_WHILE</name>
@@ -55,11 +48,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Cause protothread to wait <bold>while</bold> given condition is true. </para>
-        </detaileddescription>
+<para>Cause protothread to wait <bold>while</bold> given condition is true. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="55" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="55" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="55" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga742a4c6aa99440473f54651233ebd28b" prot="public" static="no">
         <name>PT_WAIT_UNTIL</name>
@@ -67,11 +59,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Cause protothread to wait <bold>until</bold> given condition is true. </para>
-        </detaileddescription>
+<para>Cause protothread to wait <bold>until</bold> given condition is true. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="66" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="66" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="66" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga62b66f563af59f459841f9cfe42b5496" prot="public" static="no">
         <name>PT_WAIT_THREAD</name>
@@ -79,11 +70,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Cause protothread to wait until given child protothread completes. </para>
-        </detaileddescription>
+<para>Cause protothread to wait until given child protothread completes. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="71" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="71" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="71" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga74af1993d763f937b2282d27dc23349a" prot="public" static="no">
         <name>PT_SPAWN</name>
@@ -91,11 +81,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Restart and spawn given child protothread and wait until it completes. </para>
-        </detaileddescription>
+<para>Restart and spawn given child protothread and wait until it completes. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="75" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="75" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="75" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1gaeb2e9a2948001a68950eb6d8b26f0dbd" prot="public" static="no">
         <name>PT_CALL</name>
@@ -103,11 +92,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Calls a given resumable function and returns whether it completed successfully or not. </para>
-        </detaileddescription>
+<para>Calls a given resumable function and returns whether it completed successfully or not. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="87" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="87" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="87" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga0c880659ee8887e4fa796017599bc022" prot="public" static="no">
         <name>PT_RESTART</name>
@@ -115,12 +103,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Reset protothread to start from the beginning</para>
-<para>In the next executing cycle the protothread will restart its execution at its PT_BEGIN. </para>
-        </detaileddescription>
+<para>Reset protothread to start from the beginning</para><para>In the next executing cycle the protothread will restart its execution at its PT_BEGIN. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="106" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="106" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="106" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1gaff926c0a76940ee9862be03f69605257" prot="public" static="no">
         <name>PT_EXIT</name>
@@ -128,26 +114,17 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Stop and exit from protothread. </para>
-        </detaileddescription>
+<para>Stop and exit from protothread. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="114" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="114" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="114" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="114" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Protothreads are extremely lightweight stackless threads designed for severely memory constrained systems, such as small embedded systems or wireless sensor network nodes. Protothreads provide linear code execution for event-driven systems implemented in C. Protothreads can be used with or without an underlying operating system to provide blocking event-handlers.</para>
-<para>Protothreads provide sequential flow of control without complex state machines or full multi-threading.</para>
-<para>Since they implement some kind of cooperative multi-threading, Protothreads are non-preemptable. Therefore, a context switch can only take place on blocking operations, which means you don&apos;t need complex synchronization.</para>
-<para>Protothreads are also stackless, so local variables are not preserved across context switches, and must instead become member variables of the <computeroutput>modm::Protothread</computeroutput> subclass</para>
-<para>A protothread runs within a single function (<computeroutput>modm::Protothread::run()</computeroutput>) and cannot span over other functions. A protothread may call normal functions, but cannot block inside a called function. Blocking inside nested function calls is instead made by spawning a separate protothread for each potentially blocking function.</para>
-<para>The protothread concept was developed by Adam Dunkels and Oliver Schmidt: <ulink url="http://dunkels.com/adam/pt">http://dunkels.com/adam/pt</ulink></para>
-<para>Originally ported to C++ for use by Hamilton Jet (www.hamiltonjet.co.nz) by Ben Hoyt, but stripped down for public release.</para>
-<para><heading level="2">Example</heading>
-</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="protothread_8hpp" kindref="compound">modm/processing/protothread.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para>Protothreads are extremely lightweight stackless threads designed for severely memory constrained systems, such as small embedded systems or wireless sensor network nodes. Protothreads provide linear code execution for event-driven systems implemented in C. Protothreads can be used with or without an underlying operating system to provide blocking event-handlers.</para><para>Protothreads provide sequential flow of control without complex state machines or full multi-threading.</para><para>Since they implement some kind of cooperative multi-threading, Protothreads are non-preemptable. Therefore, a context switch can only take place on blocking operations, which means you don&apos;t need complex synchronization.</para><para>Protothreads are also stackless, so local variables are not preserved across context switches, and must instead become member variables of the <computeroutput>modm::Protothread</computeroutput> subclass</para><para>A protothread runs within a single function (<computeroutput>modm::Protothread::run()</computeroutput>) and cannot span over other functions. A protothread may call normal functions, but cannot block inside a called function. Blocking inside nested function calls is instead made by spawning a separate protothread for each potentially blocking function.</para><para>The protothread concept was developed by Adam Dunkels and Oliver Schmidt: <ulink url="http://dunkels.com/adam/pt">http://dunkels.com/adam/pt</ulink></para><para>Originally ported to C++ for use by Hamilton Jet (www.hamiltonjet.co.nz) by Ben Hoyt, but stripped down for public release.</para><para><heading level="2">Example</heading>
+</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="protothread_8hpp" kindref="compound">modm/processing/protothread.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Led<sp/>=<sp/>GpioB0;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -187,7 +164,6 @@
 <codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>light.run();</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting> </para>
-    </detaileddescription>
+</programlisting> </para>    </detaileddescription>
   </compounddef>
 </doxygen>

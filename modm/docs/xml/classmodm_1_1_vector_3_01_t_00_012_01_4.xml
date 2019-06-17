@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1_vector_3_01_t_00_012_01_4" kind="class" language="C++" prot="public">
     <compoundname>modm::Vector&lt; T, 2 &gt;</compoundname>
     <includes refid="vector2_8hpp" local="no">modm/math/geometry/vector2.hpp</includes>
@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="61" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="61" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="61" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a508d9ffd289fb85722ddcfd0aeefee8d" prot="public" static="no">
         <type><ref refid="structmodm_1_1_geometric_traits" kindref="compound">GeometricTraits</ref>&lt; T &gt;::<ref refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a508d9ffd289fb85722ddcfd0aeefee8d" kindref="member">FloatType</ref></type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="62" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="62" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="62" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="62" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="378" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="58" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="378" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1aed86d4e7055e5e2247952cba3f905f6e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -69,24 +69,23 @@
           <declname>c</declname>
         </param>
         <briefdescription>
-<para>Stream operator for <bold>modm::Vector&lt;U, 2&gt;</bold> </para>
-        </briefdescription>
+<para>Stream operator for <bold>modm::Vector&lt;U, 2&gt;</bold> </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="305" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="305" column="1"/>
       </memberdef>
-      <memberdef kind="friend" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a18530172d8977a8ca37787ba4ff1a45f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="friend" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1aefd21149e400d47cc32c97a1b85ef59d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename U</type>
           </param>
         </templateparamlist>
         <type>friend <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; U, 2 &gt;</type>
-        <definition>Vector&lt;U, 2&gt; operator *</definition>
+        <definition>Vector&lt;U, 2&gt; operator*</definition>
         <argsstring>(float scale, const Vector&lt; U, 2 &gt; &amp;vector)</argsstring>
-        <name>operator *</name>
+        <name>operator*</name>
         <param>
           <type>float</type>
           <declname>scale</declname>
@@ -96,13 +95,12 @@
           <declname>vector</declname>
         </param>
         <briefdescription>
-<para>Scalar multiplication. </para>
-        </briefdescription>
+<para>Scalar multiplication. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="310" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="310" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -117,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="300" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="300" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="300" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="300" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a4363ae5effcf56c4e78f330601f09fbc" prot="public" static="no" mutable="no">
         <type>T</type>
@@ -130,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="301" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="301" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="301" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="301" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -140,14 +138,12 @@
         <argsstring>()</argsstring>
         <name>Vector</name>
         <briefdescription>
-<para>Default-Constructor. </para>
-        </briefdescription>
+<para>Default-Constructor. </para>        </briefdescription>
         <detaileddescription>
-<para>Creates a <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> with coordinates (0, 0). </para>
-        </detaileddescription>
+<para>Creates a <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> with coordinates (0, 0). </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="70" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="70" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ae4955e4dd55725bb101358efa515244e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -168,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="72" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="72" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a695305af84674dfcc656c6a1e2386a00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -189,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="74" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="74" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ad0dd38fba34c32283b81cbe4576e6f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -210,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="75" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="75" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a165eab6e8d8dab71b6ce4c9204a4728b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -231,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="76" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="76" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1af429b5d120589dbd6fdce21d38597301" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
         <type></type>
@@ -248,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="77" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="77" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ad007874bf5e609d184a5a7488bbe8bee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -265,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="78" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="78" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a9083b8221a214594aec037a1fbb0e056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -282,7 +278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="79" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="79" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1aa94eb9e901c090bba95562db320f009e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -299,7 +295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="82" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="82" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a9151b97a2ea8de0a0a1fe1f42b4c5854" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -316,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="85" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="85" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a9f533d53039f0f70cc604b13d85d3aab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -337,7 +333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="88" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="88" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a81498144fc42c80ccedc33c79c405a69" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const T &amp;</type>
@@ -350,7 +346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="92" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="92" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a0eee714f0f3efd786f7ae97b3ec6d55f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const T &amp;</type>
@@ -363,7 +359,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="95" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="95" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a6ef277ea25b928f223c1c2de115946c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -371,13 +367,12 @@
         <argsstring>() const</argsstring>
         <name>getLength</name>
         <briefdescription>
-<para>Calculate length of the vector. </para>
-        </briefdescription>
+<para>Calculate length of the vector. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="101" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="101" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a534f9317237ca236d6cef7d8c3e2b036" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab29b0c8baba82b9aa1baaa56b95fcc46" kindref="member">WideType</ref></type>
@@ -385,17 +380,13 @@
         <argsstring>() const</argsstring>
         <name>getLengthSquared</name>
         <briefdescription>
-<para>Calculate squared length of the vector. </para>
-        </briefdescription>
+<para>Calculate squared length of the vector. </para>        </briefdescription>
         <detaileddescription>
-<para>This method is considerably faster than <ref refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a6ef277ea25b928f223c1c2de115946c0" kindref="member">getLength()</ref> because it doesn&apos;t need to calculate the square root.</para>
-<para><simplesect kind="return"><para>squared length (x*x + y*y) </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para>This method is considerably faster than <ref refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a6ef277ea25b928f223c1c2de115946c0" kindref="member">getLength()</ref> because it doesn&apos;t need to calculate the square root.</para><para><simplesect kind="return"><para>squared length (x*x + y*y) </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="112" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="112" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1aa052d26cbc46253ead8b4b566f30d8e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -403,15 +394,13 @@
         <argsstring>() const</argsstring>
         <name>getAngle</name>
         <briefdescription>
-<para>Calculate the absolute angle. </para>
-        </briefdescription>
+<para>Calculate the absolute angle. </para>        </briefdescription>
         <detaileddescription>
 <para><programlisting><codeline><highlight class="normal">atan2(y,<sp/>x)</highlight></codeline>
-</programlisting> </para>
-        </detaileddescription>
+</programlisting> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="122" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="122" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a7f713c73214b86f10231b2c429100d3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
@@ -419,16 +408,13 @@
         <argsstring>()</argsstring>
         <name>normalize</name>
         <briefdescription>
-<para>Normalize length to 1. </para>
-        </briefdescription>
+<para>Normalize length to 1. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="warning"><para>This method is only useful if T is a floating point type. For integer types the result might be wrong! </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="warning"><para>This method is only useful if T is a floating point type. For integer types the result might be wrong! </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="131" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="131" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a38a971aa49885f774e835ef69aeee40b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref></type>
@@ -441,7 +427,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="134" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="134" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ae2c1827c867fb86a7be22bd1cea50c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
@@ -453,13 +439,12 @@
           <declname>length</declname>
         </param>
         <briefdescription>
-<para>Scale the vector to <computeroutput>length</computeroutput>. </para>
-        </briefdescription>
+<para>Scale the vector to <computeroutput>length</computeroutput>. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="140" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="140" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a865167d0e8725f62ba05bd9c39876413" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref></type>
@@ -476,7 +461,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="143" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="143" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a8a914c976ecb720b087c1cde4e672b78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
@@ -493,7 +478,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="147" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="147" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a3322a80be1eff7d0593e4421969492a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
@@ -505,13 +490,12 @@
           <declname>vector</declname>
         </param>
         <briefdescription>
-<para>Move the point in x and y direction. </para>
-        </briefdescription>
+<para>Move the point in x and y direction. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="153" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="153" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab8758196fdbf2edca28af2b7a6874c63" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab29b0c8baba82b9aa1baaa56b95fcc46" kindref="member">WideType</ref></type>
@@ -528,7 +512,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="157" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="157" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a0fefa9a014952a132af066c50036d5e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -545,7 +529,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="160" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="160" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a789f9cd802e5169272a9604a54048592" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab29b0c8baba82b9aa1baaa56b95fcc46" kindref="member">WideType</ref></type>
@@ -557,16 +541,13 @@
           <declname>other</declname>
         </param>
         <briefdescription>
-<para>Calculate the dot-product. </para>
-        </briefdescription>
+<para>Calculate the dot-product. </para>        </briefdescription>
         <detaileddescription>
-<para>Also known as the scalar product.</para>
-<para><programlisting><codeline><highlight class="normal">this.x<sp/>*<sp/>other.x<sp/>+<sp/>this.y<sp/>*<sp/>other.y</highlight></codeline>
-</programlisting> </para>
-        </detaileddescription>
+<para>Also known as the scalar product.</para><para><programlisting><codeline><highlight class="normal">this.x<sp/>*<sp/>other.x<sp/>+<sp/>this.y<sp/>*<sp/>other.y</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="172" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="172" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a2a3a1242db32e6c3ef73ae7f92b402db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab29b0c8baba82b9aa1baaa56b95fcc46" kindref="member">WideType</ref></type>
@@ -578,18 +559,13 @@
           <declname>other</declname>
         </param>
         <briefdescription>
-<para>Calculate the cross-product. </para>
-        </briefdescription>
+<para>Calculate the cross-product. </para>        </briefdescription>
         <detaileddescription>
-<para>In 2D there is no clear definition of this operation.</para>
-<para>This implementation is the most common one and will return the magnitude of the vector that would result from a regular 3D cross product of the input vectors, taking their Z values implicitly as 0 (i.e. treating the 2D space as a plane in the 3D space). The 3D cross product will be perpendicular to that plane, and thus have 0 X &amp; Y components (thus the scalar returned is the Z value of the 3D cross product vector).</para>
-<para><programlisting><codeline><highlight class="normal">this.x<sp/>*<sp/>other.y<sp/>-<sp/>this.y<sp/>*<sp/>other.x</highlight></codeline>
-</programlisting></para>
-<para>Other implementations take no arguments and returns a vector perpendicular to the input vector. This can be reached with the <ref refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a66038b7d836b5a1c726e54879c73881c" kindref="member">toOrthogonalVector()</ref> method, which returns a perpendicular copy of the vector. </para>
-        </detaileddescription>
+<para>In 2D there is no clear definition of this operation.</para><para>This implementation is the most common one and will return the magnitude of the vector that would result from a regular 3D cross product of the input vectors, taking their Z values implicitly as 0 (i.e. treating the 2D space as a plane in the 3D space). The 3D cross product will be perpendicular to that plane, and thus have 0 X &amp; Y components (thus the scalar returned is the Z value of the 3D cross product vector).</para><para><programlisting><codeline><highlight class="normal">this.x<sp/>*<sp/>other.y<sp/>-<sp/>this.y<sp/>*<sp/>other.x</highlight></codeline>
+</programlisting></para><para>Other implementations take no arguments and returns a vector perpendicular to the input vector. This can be reached with the <ref refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a66038b7d836b5a1c726e54879c73881c" kindref="member">toOrthogonalVector()</ref> method, which returns a perpendicular copy of the vector. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="197" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="197" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a64f182722705e332b118d6513405bcc5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -602,13 +578,12 @@
         <argsstring>() const</argsstring>
         <name>convert</name>
         <briefdescription>
-<para>Convert between Point-objects with different base-types. </para>
-        </briefdescription>
+<para>Convert between Point-objects with different base-types. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="204" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="204" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a66038b7d836b5a1c726e54879c73881c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref></type>
@@ -616,16 +591,13 @@
         <argsstring>() const</argsstring>
         <name>toOrthogonalVector</name>
         <briefdescription>
-<para>Returns a perpendicular copy of the vector. </para>
-        </briefdescription>
+<para>Returns a perpendicular copy of the vector. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>(y, -x) </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para>(y, -x) </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="212" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="212" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a0e15fcc37f1146b780aa70914d8c4e40" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref></type>
@@ -638,7 +610,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="216" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="216" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a477bdc1ade5e4561262b9ddb5d01412d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
@@ -655,7 +627,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="234" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="234" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ac38e4bd4455282b1a536c3627e20ad78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
@@ -672,7 +644,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="235" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="235" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1afc0c388befc5910e5ca76a14ddf1689d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -689,13 +661,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="237" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="237" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a52ea52521e49ac54617fcca24d86cb70" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1acd5148422d1fa82c82a7ed6338a5ee91" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool modm::Vector&lt; T, 2 &gt;::operator !=</definition>
+        <definition>bool modm::Vector&lt; T, 2 &gt;::operator!=</definition>
         <argsstring>(const Vector &amp;rhs) const</argsstring>
-        <name>operator !=</name>
+        <name>operator!=</name>
         <param>
           <type>const <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
           <declname>rhs</declname>
@@ -706,7 +678,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="238" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="238" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a86e9698be1f465d392e7a9ce527d8712" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -723,7 +695,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="239" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="239" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1aa8f3a4a4a7fbd9c1d8ad532866f0dfdc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -740,13 +712,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="240" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="240" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ad017865829f1e60ae4775ff3e2fc13df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a5cf20aaf5d7c898df1d58bc06e8c1e5b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool modm::Vector&lt; T, 2 &gt;::operator &gt;</definition>
+        <definition>bool modm::Vector&lt; T, 2 &gt;::operator&gt;</definition>
         <argsstring>(const Vector &amp;rhs) const</argsstring>
-        <name>operator &gt;</name>
+        <name>operator&gt;</name>
         <param>
           <type>const <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
           <declname>rhs</declname>
@@ -757,13 +729,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="241" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="241" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ad9f4a3644f59e4e1cb2801a82b322dd9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a0f2321f528f7b2ba24c9dbf7bbc7e960" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool modm::Vector&lt; T, 2 &gt;::operator &gt;=</definition>
+        <definition>bool modm::Vector&lt; T, 2 &gt;::operator&gt;=</definition>
         <argsstring>(const Vector &amp;rhs) const</argsstring>
-        <name>operator &gt;=</name>
+        <name>operator&gt;=</name>
         <param>
           <type>const <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
           <declname>rhs</declname>
@@ -774,13 +746,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="242" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="242" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1afc1f56021fe81cfca92525d295e6d404" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a9f32c2ecc53c6729bab1dc7cf6cb80bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const T &amp;</type>
-        <definition>const T&amp; modm::Vector&lt; T, 2 &gt;::operator []</definition>
+        <definition>const T&amp; modm::Vector&lt; T, 2 &gt;::operator[]</definition>
         <argsstring>(uint8_t index) const</argsstring>
-        <name>operator []</name>
+        <name>operator[]</name>
         <param>
           <type>uint8_t</type>
           <declname>index</declname>
@@ -791,13 +763,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="244" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="244" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab966e37d6695d5dad38a4840cbb95e2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a579643692a90659b3341846c288b004e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T &amp;</type>
-        <definition>T&amp; modm::Vector&lt; T, 2 &gt;::operator []</definition>
+        <definition>T&amp; modm::Vector&lt; T, 2 &gt;::operator[]</definition>
         <argsstring>(uint8_t index)</argsstring>
-        <name>operator []</name>
+        <name>operator[]</name>
         <param>
           <type>uint8_t</type>
           <declname>index</declname>
@@ -808,7 +780,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="245" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="245" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a2ac29d82ea6172dcbf38b2c8de046825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T *</type>
@@ -821,7 +793,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="247" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="247" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a37d3c9ba306624926b1f475d8f81fc11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const T *</type>
@@ -834,26 +806,26 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="248" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="248" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1abd744f145138d616a3054d9a61686a2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ac7f3343650860dc88bf7e51d29ef34f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref></type>
-        <definition>Vector modm::Vector&lt; T, 2 &gt;::operator -</definition>
+        <definition>Vector modm::Vector&lt; T, 2 &gt;::operator-</definition>
         <argsstring>() const</argsstring>
-        <name>operator -</name>
+        <name>operator-</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="250" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="250" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1adfa22e8d529b8a6dd1c4c64b090a1fc7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab90c9dfac680e2fe177eeed859242c9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref></type>
-        <definition>Vector modm::Vector&lt; T, 2 &gt;::operator -</definition>
+        <definition>Vector modm::Vector&lt; T, 2 &gt;::operator-</definition>
         <argsstring>(const Vector &amp;rhs) const</argsstring>
-        <name>operator -</name>
+        <name>operator-</name>
         <param>
           <type>const <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
           <declname>rhs</declname>
@@ -864,7 +836,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="251" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="251" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1adcddf391981107c6c1b8575311ae3439" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref></type>
@@ -881,13 +853,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="252" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="252" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1af16e861a5bd30f7bea271368b138bf79" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a707e37ff9207b1af1b9db0e25853c2e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
-        <definition>T modm::Vector&lt; T, 2 &gt;::operator *</definition>
+        <definition>T modm::Vector&lt; T, 2 &gt;::operator*</definition>
         <argsstring>(const Vector &amp;rhs) const</argsstring>
-        <name>operator *</name>
+        <name>operator*</name>
         <param>
           <type>const <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
           <declname>rhs</declname>
@@ -898,13 +870,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="253" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="253" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a119f52cdc6198f87e90b483ccabfebe1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1abb81c13a53872b51f7e38142c3a8fa27" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
-        <definition>T modm::Vector&lt; T, 2 &gt;::operator ^</definition>
+        <definition>T modm::Vector&lt; T, 2 &gt;::operator^</definition>
         <argsstring>(const Vector &amp;rhs) const</argsstring>
-        <name>operator ^</name>
+        <name>operator^</name>
         <param>
           <type>const <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
           <declname>rhs</declname>
@@ -915,13 +887,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="254" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="254" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab762f71cc94b2e42fc558074e30cf6ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a64a0b05540a435c4d58ee21b82311d46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref></type>
-        <definition>Vector modm::Vector&lt; T, 2 &gt;::operator *</definition>
+        <definition>Vector modm::Vector&lt; T, 2 &gt;::operator*</definition>
         <argsstring>(float rhs) const</argsstring>
-        <name>operator *</name>
+        <name>operator*</name>
         <param>
           <type>float</type>
           <declname>rhs</declname>
@@ -932,7 +904,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="255" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="255" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1abb099a1414246482704e63a60f5428a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref></type>
@@ -949,7 +921,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="256" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="256" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a61f4f99577e11b462b6577d53d72c718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
@@ -966,13 +938,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="258" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="258" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1af9b54e28a79532587579b9634682a537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ae2b5402f05660aa22d732c8790edd1ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
-        <definition>Vector&amp; modm::Vector&lt; T, 2 &gt;::operator -=</definition>
+        <definition>Vector&amp; modm::Vector&lt; T, 2 &gt;::operator-=</definition>
         <argsstring>(const Vector &amp;rhs)</argsstring>
-        <name>operator -=</name>
+        <name>operator-=</name>
         <param>
           <type>const <ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
           <declname>rhs</declname>
@@ -983,13 +955,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="259" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="259" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a63bbc84535bb7f24d882d540df25f713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a1c52fd88cced9a1eeff97c0f7f713a82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
-        <definition>Vector&amp; modm::Vector&lt; T, 2 &gt;::operator *=</definition>
+        <definition>Vector&amp; modm::Vector&lt; T, 2 &gt;::operator*=</definition>
         <argsstring>(const T &amp;rhs)</argsstring>
-        <name>operator *=</name>
+        <name>operator*=</name>
         <param>
           <type>const T &amp;</type>
           <declname>rhs</declname>
@@ -1000,7 +972,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="260" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="260" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a5c1f20cc1edb964ce589107f3c66f189" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
@@ -1017,20 +989,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="261" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="261" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a6ec40e8887ec6215b74ff2a84f4009dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a1b00a0aeee1fff6613b1a52b9361f754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
-        <definition>Vector&amp; modm::Vector&lt; T, 2 &gt;::operator ~</definition>
+        <definition>Vector&amp; modm::Vector&lt; T, 2 &gt;::operator~</definition>
         <argsstring>()</argsstring>
-        <name>operator ~</name>
+        <name>operator~</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="262" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="262" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a01e7994db57b33a7d6acc50204b44d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; T, 2, 1 &gt; &amp;</type>
@@ -1043,7 +1015,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="265" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="265" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a8a182126c1d108170c36da64c6987776" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; T, 2, 1 &gt; &amp;</type>
@@ -1056,7 +1028,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="268" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="268" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1af145b0f9c0ca4f5fd08b55ca4c893d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; T, 1, 2 &gt; &amp;</type>
@@ -1069,7 +1041,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="271" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="271" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a70783fbf5376efee30f2cda1191b4603" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; T, 1, 2 &gt; &amp;</type>
@@ -1082,7 +1054,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="274" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="274" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1ae881e8a6957a281e05c0b6a8b84e868d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1095,7 +1067,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="276" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="276" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_vector_3_01_t_00_012_01_4_1a4ba556f599c69878eb6c09b6b799db9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1108,7 +1080,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="277" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="277" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -1130,21 +1102,16 @@
           <declname>c</declname>
         </param>
         <briefdescription>
-<para>Check if three points are in a counter-clock wise direction. </para>
-        </briefdescription>
+<para>Check if three points are in a counter-clock wise direction. </para>        </briefdescription>
         <detaileddescription>
-<para>Check if we move counter-clock wise if we move from the first point to the second and the third.</para>
-<para>If all three points are in a line there are three possibilities: 1) strait line: third point behind the second (returns 1) 2) last point between the other two (returns 0) 3) third point before the first one (returns -1)</para>
-<para>This definition is useful for inclusion or intersection testing. </para>
-        </detaileddescription>
+<para>Check if we move counter-clock wise if we move from the first point to the second and the third.</para><para>If all three points are in a line there are three possibilities: 1) strait line: third point behind the second (returns 1) 2) last point between the other two (returns 0) 3) third point before the first one (returns -1)</para><para>This definition is useful for inclusion or intersection testing. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="232" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="232" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Class for handling common vector operations (2D) </para>
-    </briefdescription>
+<para>Class for handling common vector operations (2D) </para>    </briefdescription>
     <detaileddescription>
 <para>Operations: <programlisting><codeline><highlight class="normal">+<sp/>:<sp/>addition<sp/>of<sp/>points</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>:<sp/>different<sp/>of<sp/>points</highlight></codeline>
@@ -1152,16 +1119,10 @@
 <codeline><highlight class="normal">/<sp/>:<sp/>scalar<sp/>division</highlight></codeline>
 <codeline><highlight class="normal">^<sp/>:<sp/>cross<sp/>product<sp/>(determinant)</highlight></codeline>
 <codeline><highlight class="normal">~<sp/>:<sp/>perpendicular</highlight></codeline>
-</programlisting></para>
-<para>Adapted from the implementation of Gaspard Petit (<ulink url="mailto:gaspardpetit@gmail.com">gaspardpetit@gmail.com</ulink>) and heavily modified.</para>
-<para><simplesect kind="see"><para>&lt;a href&quot;http://www-etud.iro.umontreal.ca/~petitg/cpp/point.html&quot;&gt;Homepage</para>
-</simplesect>
-<simplesect kind="author"><para>Fabian Greif </para>
-</simplesect>
-<simplesect kind="author"><para>Niklas Hauser </para>
-</simplesect>
-</para>
-    </detaileddescription>
+</programlisting></para><para>Adapted from the implementation of Gaspard Petit (<ulink url="mailto:gaspardpetit@gmail.com">gaspardpetit@gmail.com</ulink>) and heavily modified.</para><para><simplesect kind="see"><para>&lt;a href&quot;http://www-etud.iro.umontreal.ca/~petitg/cpp/point.html&quot;&gt;Homepage</para></simplesect>
+<simplesect kind="author"><para>Fabian Greif </para></simplesect>
+<simplesect kind="author"><para>Niklas Hauser </para></simplesect>
+</para>    </detaileddescription>
     <collaborationgraph>
       <node id="1816">
         <label>T</label>
@@ -1175,7 +1136,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="57" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="56" bodyend="311"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="57" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="56" bodyend="311"/>
     <listofallmembers>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a01e7994db57b33a7d6acc50204b44d57" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>asMatrix</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a8a182126c1d108170c36da64c6987776" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>asMatrix</name></member>
@@ -1198,22 +1159,16 @@
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a7e18724c3ea45e98c437d474c3fe725e" prot="private" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>Location2D&lt; T &gt;</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a7f713c73214b86f10231b2c429100d3d" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>normalize</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a38a971aa49885f774e835ef69aeee40b" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>normalized</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a52ea52521e49ac54617fcca24d86cb70" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator !=</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1af16e861a5bd30f7bea271368b138bf79" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator *</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab762f71cc94b2e42fc558074e30cf6ea" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator *</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a18530172d8977a8ca37787ba4ff1a45f" prot="protected" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator *</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a63bbc84535bb7f24d882d540df25f713" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator *=</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1abd744f145138d616a3054d9a61686a2b" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator -</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1adfa22e8d529b8a6dd1c4c64b090a1fc7" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator -</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1af9b54e28a79532587579b9634682a537" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator -=</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ad017865829f1e60ae4775ff3e2fc13df" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator &gt;</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ad9f4a3644f59e4e1cb2801a82b322dd9" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator &gt;=</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1afc1f56021fe81cfca92525d295e6d404" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator []</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab966e37d6695d5dad38a4840cbb95e2b" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator []</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a119f52cdc6198f87e90b483ccabfebe1" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator ^</name></member>
-      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a6ec40e8887ec6215b74ff2a84f4009dc" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator ~</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1acd5148422d1fa82c82a7ed6338a5ee91" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator!=</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a707e37ff9207b1af1b9db0e25853c2e7" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator*</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a64a0b05540a435c4d58ee21b82311d46" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator*</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1aefd21149e400d47cc32c97a1b85ef59d" prot="protected" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator*</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a1c52fd88cced9a1eeff97c0f7f713a82" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator*=</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1adcddf391981107c6c1b8575311ae3439" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator+</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a61f4f99577e11b462b6577d53d72c718" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator+=</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ac7f3343650860dc88bf7e51d29ef34f3" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator-</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab90c9dfac680e2fe177eeed859242c9b" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator-</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ae2b5402f05660aa22d732c8790edd1ab" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator-=</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1abb099a1414246482704e63a60f5428a8" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator/</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a5c1f20cc1edb964ce589107f3c66f189" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator/=</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a86e9698be1f465d392e7a9ce527d8712" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator&lt;</name></member>
@@ -1222,6 +1177,12 @@
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a477bdc1ade5e4561262b9ddb5d01412d" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator=</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ac38e4bd4455282b1a536c3627e20ad78" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator=</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1afc0c388befc5910e5ca76a14ddf1689d" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator==</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a5cf20aaf5d7c898df1d58bc06e8c1e5b" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator&gt;</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a0f2321f528f7b2ba24c9dbf7bbc7e960" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator&gt;=</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a9f32c2ecc53c6729bab1dc7cf6cb80bd" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator[]</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a579643692a90659b3341846c288b004e" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator[]</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1abb81c13a53872b51f7e38142c3a8fa27" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator^</name></member>
+      <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a1b00a0aeee1fff6613b1a52b9361f754" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>operator~</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a0e15fcc37f1146b780aa70914d8c4e40" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>perpendicular</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a2ac29d82ea6172dcbf38b2c8de046825" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>ptr</name></member>
       <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a37d3c9ba306624926b1f475d8f81fc11" prot="public" virt="non-virtual"><scope>modm::Vector&lt; T, 2 &gt;</scope><name>ptr</name></member>

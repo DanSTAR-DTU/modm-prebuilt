@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.15">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
   <compound refid="classmodm_1_1_adc" kind="class"><name>modm::Adc</name>
     <member refid="classmodm_1_1_adc_1a80cfcf935b9394cac0c5fd0ddeffb06a" kind="typedef"><name>Channel</name></member>
     <member refid="classmodm_1_1_adc_1accb65726d97868bd953b204e6807a3f9" kind="variable"><name>Resolution</name></member>
@@ -332,15 +332,15 @@
     <member refid="classmodm_1_1_angle_1a2a14bb7ee75cdb9371487a78567e0c45" kind="function"><name>toDegree</name></member>
   </compound>
   <compound refid="structmodm_1_1_arithmetic_traits" kind="struct"><name>modm::ArithmeticTraits</name>
-    <member refid="structmodm_1_1_arithmetic_traits_1a657bd2532e1ccf359ebab9a8da2f6425" kind="typedef"><name>WideType</name></member>
-    <member refid="structmodm_1_1_arithmetic_traits_1a17f7da4b2929b5ccc5bdfe9fdb2cbf22" kind="typedef"><name>SignedType</name></member>
-    <member refid="structmodm_1_1_arithmetic_traits_1a3d1bedd400eae0c649bfe8de668772a6" kind="typedef"><name>UnsignedType</name></member>
-    <member refid="structmodm_1_1_arithmetic_traits_1a15de6f509578555e21605e1238551b07" kind="variable"><name>isFloatingPoint</name></member>
+    <member refid="structmodm_1_1_arithmetic_traits_1afb3378d6d5bc4e98be87cf9363ad4917" kind="typedef"><name>instead</name></member>
+    <member refid="structmodm_1_1_arithmetic_traits_1a9f956b181e182667a0dd5ede02d908ac" kind="typedef"><name>instead</name></member>
+    <member refid="structmodm_1_1_arithmetic_traits_1a66f79ce1049a7cecabb8ba97b8480cf1" kind="typedef"><name>instead</name></member>
+    <member refid="structmodm_1_1_arithmetic_traits_1a7dbbe202c33a086645c182e071c95b5c" kind="variable"><name>isFloatingPoint</name></member>
     <member refid="structmodm_1_1_arithmetic_traits_1abe13c91baaaf2122a2cd8d75fc5db362" kind="variable"><name>isInteger</name></member>
     <member refid="structmodm_1_1_arithmetic_traits_1ab918d0f589b3eff171243e15e341ff8e" kind="variable"><name>decimalDigits</name></member>
-    <member refid="structmodm_1_1_arithmetic_traits_1ac252df4678f29ce955fe37fa06230e10" kind="variable"><name>min</name></member>
-    <member refid="structmodm_1_1_arithmetic_traits_1a1d3d6f641c87278b6a55aa4501d21d89" kind="variable"><name>max</name></member>
-    <member refid="structmodm_1_1_arithmetic_traits_1ac744d4557cb07a1dd5a96c8b4d55632a" kind="variable"><name>epsilon</name></member>
+    <member refid="structmodm_1_1_arithmetic_traits_1a8225f5040372fbb3f43c35bb164c6ea8" kind="variable"><name>min</name></member>
+    <member refid="structmodm_1_1_arithmetic_traits_1a393dfd01d84cd04ced385964d72517c3" kind="variable"><name>max</name></member>
+    <member refid="structmodm_1_1_arithmetic_traits_1ad4db9cfc915cd6f542b989952e8b892b" kind="variable"><name>epsilon</name></member>
   </compound>
   <compound refid="classmodm_1_1platform_1_1_basic_timer" kind="class"><name>modm::platform::BasicTimer</name>
     <member refid="classmodm_1_1platform_1_1_basic_timer_1ae79609753399533b77903c3c42ff65a2" kind="enum"><name>Mode</name></member>
@@ -594,7 +594,7 @@
     <member refid="classmodm_1_1platform_1_1_can1_1ac24e379240a24b39903afd42e073bac6" kind="function"><name>setMode</name></member>
     <member refid="classmodm_1_1platform_1_1_can1_1a61b143d792f1969f286f63eb39724ddd" kind="function"><name>setAutomaticRetransmission</name></member>
     <member refid="classmodm_1_1platform_1_1_can1_1adf5b8ccc31459c368c6789a00e439c6b" kind="function"><name>isMessageAvailable</name></member>
-    <member refid="classmodm_1_1platform_1_1_can1_1a9443a5953caaaaa320e6063356f3d7c3" kind="function"><name>getMessage</name></member>
+    <member refid="classmodm_1_1platform_1_1_can1_1ac0c9e0ba31b79f0e224ab4bf962078a2" kind="function"><name>getMessage</name></member>
     <member refid="classmodm_1_1platform_1_1_can1_1a6a8274d59359e946816eebb38a4f6a54" kind="function"><name>isReadyToSend</name></member>
     <member refid="classmodm_1_1platform_1_1_can1_1a3daa424ffd90994e11f33980223b6770" kind="function"><name>sendMessage</name></member>
     <member refid="classmodm_1_1platform_1_1_can1_1ae760780ffac95aaec8094a86c6d8dbfb" kind="function"><name>getReceiveErrorCounter</name></member>
@@ -616,7 +616,7 @@
     <member refid="classmodm_1_1platform_1_1_can2_1a2a29560d1e2dad4f54b2e6fe24966d99" kind="function"><name>setMode</name></member>
     <member refid="classmodm_1_1platform_1_1_can2_1a8f4652f137f607ab1ef80eb8c5b6fb9a" kind="function"><name>setAutomaticRetransmission</name></member>
     <member refid="classmodm_1_1platform_1_1_can2_1a342faffac3516a381289ca610d6a0ddd" kind="function"><name>isMessageAvailable</name></member>
-    <member refid="classmodm_1_1platform_1_1_can2_1af332bcc73d202cbc10c573b7b36863f9" kind="function"><name>getMessage</name></member>
+    <member refid="classmodm_1_1platform_1_1_can2_1ae698c5907fb24eab4f268d0943f59619" kind="function"><name>getMessage</name></member>
     <member refid="classmodm_1_1platform_1_1_can2_1a52d92e7fddc7849f99a58bd6ebb20656" kind="function"><name>isReadyToSend</name></member>
     <member refid="classmodm_1_1platform_1_1_can2_1afd2a40db14307c301695a51eaab5daef" kind="function"><name>sendMessage</name></member>
     <member refid="classmodm_1_1platform_1_1_can2_1acc12f96a72cb680bb03fa66d0be0e1f4" kind="function"><name>getReceiveErrorCounter</name></member>
@@ -714,11 +714,11 @@
     <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1a322360a3705b147d3f366643bca7104a" kind="function"><name>const_iterator</name></member>
     <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1a62ad7ee2411816929ec37133f4af6cf8" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1a3e5421eee6600e7c9d7ec8332cfdb4fc" kind="function"><name>operator++</name></member>
-    <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1a2590df964ecae0a514398c0c04dbcb72" kind="function"><name>operator --</name></member>
+    <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1ab1c5a2d33cd2106440fb70507350a6f1" kind="function"><name>operator--</name></member>
     <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1a07531eedba898ae6533769b416a5994b" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1afbae0b0409fbc8ecf4f52ad7eebc471a" kind="function"><name>operator !=</name></member>
-    <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1a0ba7dcb033f6cdd9943647601202237e" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1a9581cb563a4fe5eb9884038aa0927815" kind="function"><name>operator -&gt;</name></member>
+    <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1ac8efa3535f07c76f391de96f7d05aa7d" kind="function"><name>operator!=</name></member>
+    <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1a9d6194436f9d79135dd1119172c78bc7" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1a628f2c31c9933fe6e9a914f62145b17d" kind="function"><name>operator-&gt;</name></member>
     <member refid="classmodm_1_1_bounded_deque_1_1const__iterator_1a7a3ac569ea28f05e73fe76db5e73525b" kind="function"><name>const_iterator</name></member>
   </compound>
   <compound refid="classmodm_1_1_doubly_linked_list_1_1const__iterator" kind="class"><name>modm::DoublyLinkedList::const_iterator</name>
@@ -729,11 +729,11 @@
     <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1a76593c51b28f6e859a2bb687fd804c29" kind="function"><name>const_iterator</name></member>
     <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1a40928050c1f77f5ce6fd29902b276775" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1a973241797ae73e7d9df0f152978701c4" kind="function"><name>operator++</name></member>
-    <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1a7f4db2b87e460c056983f565b4b6a03d" kind="function"><name>operator --</name></member>
+    <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1aeefc7183a31fcfcf956935a123ae6f94" kind="function"><name>operator--</name></member>
     <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1acbee4f6e2771feda07523d3ce4a52f87" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1aa9ce8b6448c371ae18a94a419b07e262" kind="function"><name>operator !=</name></member>
-    <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1ad62c3146cd8d9fe2178f4c4a9a748520" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1ae9e2eb26f1b459c8167403cc4206b87a" kind="function"><name>operator -&gt;</name></member>
+    <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1adc72627e17bcbc48ffa63e274260edf4" kind="function"><name>operator!=</name></member>
+    <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1a6a9b66af77da6693e0784b43db886841" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1a37d47f14ddea91cc9e5c829dfc7ad62e" kind="function"><name>operator-&gt;</name></member>
     <member refid="classmodm_1_1_doubly_linked_list_1_1const__iterator_1ac56d0d188fcdb2a148ba6fabd3d12783" kind="function"><name>const_iterator</name></member>
   </compound>
   <compound refid="classmodm_1_1_dynamic_array_1_1const__iterator" kind="class"><name>modm::DynamicArray::const_iterator</name>
@@ -745,11 +745,11 @@
     <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1a9ecbd3b70d926229f016db3198555767" kind="function"><name>const_iterator</name></member>
     <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1ad02c11a0d462de5a3f7fda7c125852ca" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1abadc1d2365c95c20347655bb733c63ac" kind="function"><name>operator++</name></member>
-    <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1a01f7e1f91b4e52974c4b93ab43749df6" kind="function"><name>operator --</name></member>
+    <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1ac0f3c31ddaf2fab1630c5488b5d3a280" kind="function"><name>operator--</name></member>
     <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1a1c447862d783ff7ea18ddb5d2ef89cd2" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1a2ceb9b0f2f9b34712a63184adfb6f24f" kind="function"><name>operator !=</name></member>
-    <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1a4edac3a0c01369f1d37eb56bc88961d8" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1a9b7ec30c993b126781f262b132f3e7af" kind="function"><name>operator -&gt;</name></member>
+    <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1a5e249bf544d4f6e7067d85c1c64439b5" kind="function"><name>operator!=</name></member>
+    <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1a27d83be3a9f1c79281cc060bb29ffd07" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1a2f245fc58df2e7a636a0d1be88bcd96b" kind="function"><name>operator-&gt;</name></member>
     <member refid="classmodm_1_1_dynamic_array_1_1const__iterator_1acdd029e8983a0802dfbfb8983edceadf" kind="function"><name>const_iterator</name></member>
   </compound>
   <compound refid="classmodm_1_1_linked_list_1_1const__iterator" kind="class"><name>modm::LinkedList::const_iterator</name>
@@ -761,9 +761,9 @@
     <member refid="classmodm_1_1_linked_list_1_1const__iterator_1a6f1915d32f20796976fde9685230beb8" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_linked_list_1_1const__iterator_1aa885cbc54c51ff7c160e63b4c4e492ab" kind="function"><name>operator++</name></member>
     <member refid="classmodm_1_1_linked_list_1_1const__iterator_1a1bf5edd2398a1a66a4850bdd59091804" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_linked_list_1_1const__iterator_1a0a8e31fc3755fa890272553b45906fec" kind="function"><name>operator !=</name></member>
-    <member refid="classmodm_1_1_linked_list_1_1const__iterator_1a5b3c5496911b7da0851c258b6a65cf0b" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_linked_list_1_1const__iterator_1acf88ead733498909b7e99311eb666ebb" kind="function"><name>operator -&gt;</name></member>
+    <member refid="classmodm_1_1_linked_list_1_1const__iterator_1a11707660e73153cb0a43b7a13a694fee" kind="function"><name>operator!=</name></member>
+    <member refid="classmodm_1_1_linked_list_1_1const__iterator_1a0e2d8e359cc99bef1841e2a0ecc486c1" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_linked_list_1_1const__iterator_1a48aacf3cf80367b9a3387ce8a50710d2" kind="function"><name>operator-&gt;</name></member>
     <member refid="classmodm_1_1_linked_list_1_1const__iterator_1ac0e00b672e0def0afe9b2dfe09ebef99" kind="function"><name>const_iterator</name></member>
   </compound>
   <compound refid="classmodm_1_1atomic_1_1_container" kind="class"><name>modm::atomic::Container</name>
@@ -894,8 +894,8 @@
     <member refid="classmodm_1_1_dynamic_array_1a475613c437b7a6a9f40173f56d4047b1" kind="function"><name>reserve</name></member>
     <member refid="classmodm_1_1_dynamic_array_1a8b856bfe713c7cb4a6aec85695b3b0b9" kind="function"><name>clear</name></member>
     <member refid="classmodm_1_1_dynamic_array_1a36306fdd222c10aae1dcf4cb56de3148" kind="function"><name>removeAll</name></member>
-    <member refid="classmodm_1_1_dynamic_array_1aaf35b83439603d1d2d600b913f8be094" kind="function"><name>operator []</name></member>
-    <member refid="classmodm_1_1_dynamic_array_1a3bd3eb7198a36cda2a53b1806251c7b4" kind="function"><name>operator []</name></member>
+    <member refid="classmodm_1_1_dynamic_array_1a6a71332c04c40bf9f1802e3fd4899159" kind="function"><name>operator[]</name></member>
+    <member refid="classmodm_1_1_dynamic_array_1a5c802b28036f4e6b12d7da87b4916f61" kind="function"><name>operator[]</name></member>
     <member refid="classmodm_1_1_dynamic_array_1a218210952fe3b08760dc0c81a61581a2" kind="function"><name>append</name></member>
     <member refid="classmodm_1_1_dynamic_array_1afffc4aafbed104801cf6ab0fc95126d8" kind="function"><name>removeBack</name></member>
     <member refid="classmodm_1_1_dynamic_array_1a2839990fcc428d96128c40d4a7516013" kind="function"><name>getFront</name></member>
@@ -1003,22 +1003,22 @@
     <member refid="structmodm_1_1_flags_operators_1a5a15da92c03131959f00fe3122d3f2b0" kind="function"><name>FlagsOperators</name></member>
     <member refid="structmodm_1_1_flags_operators_1a92001e0adca0280cd7bc248543635c6a" kind="function"><name>operator=</name></member>
     <member refid="structmodm_1_1_flags_operators_1a0baf85508f4708a386420aad5749c460" kind="function"><name>operator=</name></member>
-    <member refid="structmodm_1_1_flags_operators_1a6031bdd8b83beec16778740188ea6ab2" kind="function"><name>operator &amp;</name></member>
+    <member refid="structmodm_1_1_flags_operators_1a1a22f48deee83c98157648b5fab35b19" kind="function"><name>operator &amp;</name></member>
     <member refid="structmodm_1_1_flags_operators_1a600cfb6f6939c33ff1dd555ff7c4757e" kind="function"><name>operator|</name></member>
     <member refid="structmodm_1_1_flags_operators_1acd0240578bf6dde719f39464c82002be" kind="function"><name>operator^</name></member>
-    <member refid="structmodm_1_1_flags_operators_1a1d38805ab12378f42f0e942cd5b0ba9a" kind="function"><name>operator&amp;=</name></member>
+    <member refid="structmodm_1_1_flags_operators_1aa37c7eae13739d1f79fae64329034b6c" kind="function"><name>operator &amp;=</name></member>
     <member refid="structmodm_1_1_flags_operators_1a9e09e13d81dd36cb32a53274185b9286" kind="function"><name>operator|=</name></member>
     <member refid="structmodm_1_1_flags_operators_1a1b9f2672e756b82403df85f3abd953e5" kind="function"><name>operator^=</name></member>
-    <member refid="structmodm_1_1_flags_operators_1a2e55f60e8053f75e96ff00da5b967dde" kind="function"><name>operator&amp;=</name></member>
+    <member refid="structmodm_1_1_flags_operators_1a42b56aa9bcbda706bcaf5fc86df01bcb" kind="function"><name>operator &amp;=</name></member>
     <member refid="structmodm_1_1_flags_operators_1afecc755620b863362cd6be1b7b01174d" kind="function"><name>operator|=</name></member>
     <member refid="structmodm_1_1_flags_operators_1a40e2f53dd48f6889db0290fe6b594814" kind="function"><name>operator^=</name></member>
-    <member refid="structmodm_1_1_flags_operators_1af4517e688917f024215bbd66bea94600" kind="friend"><name>operator &amp;</name></member>
+    <member refid="structmodm_1_1_flags_operators_1af242a1c559780336753e58183ca51104" kind="friend"><name>operator &amp;</name></member>
     <member refid="structmodm_1_1_flags_operators_1a94848dda5041d305f367abc4c39f327a" kind="friend"><name>operator|</name></member>
     <member refid="structmodm_1_1_flags_operators_1a3a49f7e1c7caf05575bb4f2e4bfec29e" kind="friend"><name>operator^</name></member>
-    <member refid="structmodm_1_1_flags_operators_1abaf1be84ebdf2e38bf6ecd6d556b5074" kind="friend"><name>operator &amp;</name></member>
+    <member refid="structmodm_1_1_flags_operators_1a587d5c947e1b1688cc8b8463d8104cfd" kind="friend"><name>operator &amp;</name></member>
     <member refid="structmodm_1_1_flags_operators_1a26e004c57eba88d8201df7be071bf84d" kind="friend"><name>operator|</name></member>
     <member refid="structmodm_1_1_flags_operators_1a3ca154d188fea587c7589f49cfbb034b" kind="friend"><name>operator^</name></member>
-    <member refid="structmodm_1_1_flags_operators_1afbf9b9b967b51379e06ca8bbf6429b40" kind="friend"><name>operator &amp;</name></member>
+    <member refid="structmodm_1_1_flags_operators_1ad2f92bd4fb96ddcbabc4f501b052a94a" kind="friend"><name>operator &amp;</name></member>
     <member refid="structmodm_1_1_flags_operators_1a45e47c0db507bf89a29d8ecdd5ce5bd4" kind="friend"><name>operator|</name></member>
     <member refid="structmodm_1_1_flags_operators_1a12d86a9a77241c13b80ef5bbca1f2718" kind="friend"><name>operator^</name></member>
     <member refid="structmodm_1_1_flags_operators_1a9d8c3a729e59ad02477d5cc0e0166cff" kind="friend"><name>operator==</name></member>
@@ -1033,8 +1033,8 @@
     <member refid="classmodm_1_1accessor_1_1_flash_1a00162420a2c042ceeddf5bf1cb98a122" kind="variable"><name>address</name></member>
     <member refid="classmodm_1_1accessor_1_1_flash_1a2bf8a79d2497f8c23535a332215d03fb" kind="function"><name>Flash</name></member>
     <member refid="classmodm_1_1accessor_1_1_flash_1a67e2d85c49f8dc1a822c66252b74c55d" kind="function"><name>Flash</name></member>
-    <member refid="classmodm_1_1accessor_1_1_flash_1a2e0676af96b9e5a94da59174e05dff2d" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1accessor_1_1_flash_1a8ef9fd04aa336aea11bee715c40b5e73" kind="function"><name>operator []</name></member>
+    <member refid="classmodm_1_1accessor_1_1_flash_1a61190724cb5128ea17df09df6d20e71d" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1accessor_1_1_flash_1acc7407bf7b32baa1642d461ad5d26922" kind="function"><name>operator[]</name></member>
     <member refid="classmodm_1_1accessor_1_1_flash_1a97a284aa5f1db23bf76c01842d4ac86b" kind="function"><name>operator++</name></member>
     <member refid="classmodm_1_1accessor_1_1_flash_1aad898f4f268697859eec690336ff1e5b" kind="function"><name>operator++</name></member>
     <member refid="classmodm_1_1accessor_1_1_flash_1a8d2ce2e1676017c54ec60bc8d2aed74f" kind="function"><name>operator--</name></member>
@@ -1183,13 +1183,13 @@
     <member refid="classmodm_1_1_generic_timestamp_1a19091e4a3e4968927464508b1bb35f3f" kind="function"><name>GenericTimestamp</name></member>
     <member refid="classmodm_1_1_generic_timestamp_1adabff9a59c73d679b470f622c9880ddc" kind="function"><name>getTime</name></member>
     <member refid="classmodm_1_1_generic_timestamp_1a947d670762d85e0332104dec5397e646" kind="function"><name>operator+</name></member>
-    <member refid="classmodm_1_1_generic_timestamp_1a6a7b5218ae4caa1affd7a23bc862a5d1" kind="function"><name>operator -</name></member>
+    <member refid="classmodm_1_1_generic_timestamp_1a8ea86c55f8fda8b51cc9277ec2711f46" kind="function"><name>operator-</name></member>
     <member refid="classmodm_1_1_generic_timestamp_1aa8f457434eac98b015c2f79b7dc9908f" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_generic_timestamp_1ad41d56cfd1916621a6bc7899796fbe5b" kind="function"><name>operator !=</name></member>
+    <member refid="classmodm_1_1_generic_timestamp_1a86522e3712f1b47436ec8373a013e31a" kind="function"><name>operator!=</name></member>
     <member refid="classmodm_1_1_generic_timestamp_1a8ec734722f042f44cf0e169179d0256b" kind="function"><name>operator&lt;</name></member>
-    <member refid="classmodm_1_1_generic_timestamp_1ab411b68b355336e9a9e34a7711e6364e" kind="function"><name>operator &gt;</name></member>
+    <member refid="classmodm_1_1_generic_timestamp_1a375391e09e925cbc1abb7f35f3acaa2d" kind="function"><name>operator&gt;</name></member>
     <member refid="classmodm_1_1_generic_timestamp_1abffa269e6befec1b1f2a78cbaeb8f849" kind="function"><name>operator&lt;=</name></member>
-    <member refid="classmodm_1_1_generic_timestamp_1a54cc05ab86c06b5dd5db98b819d87371" kind="function"><name>operator &gt;=</name></member>
+    <member refid="classmodm_1_1_generic_timestamp_1a078aaad267aa5578ae9f2eabd454eebf" kind="function"><name>operator&gt;=</name></member>
   </compound>
   <compound refid="structmodm_1_1_geometric_traits" kind="struct"><name>modm::GeometricTraits</name>
     <member refid="structmodm_1_1_geometric_traits_1ab59ee9f60778ff2e77e1f09bad40fd49" kind="variable"><name>isValidType</name></member>
@@ -4297,8 +4297,6 @@
     <member refid="classmodm_1_1_i_o_device_wrapper_1a44e65b6cc692831454a23505a3a25bd3" kind="function"><name>write</name></member>
     <member refid="classmodm_1_1_i_o_device_wrapper_1ae84f9919cdc66003d6bae3a5666d2e9b" kind="function"><name>flush</name></member>
     <member refid="classmodm_1_1_i_o_device_wrapper_1ac1bb74c4ad554125452bbf97c4021af1" kind="function"><name>read</name></member>
-    <member refid="classmodm_1_1_i_o_device_wrapper_1abbe05e516e38666d798194a160cea75d" kind="function"><name>write</name></member>
-    <member refid="classmodm_1_1_i_o_device_wrapper_1a15063dcd78363970c9e7cdc5c7ac54ce" kind="function"><name>write</name></member>
   </compound>
   <compound refid="classmodm_1_1_i_o_stream" kind="class"><name>modm::IOStream</name>
     <member refid="classmodm_1_1_i_o_stream_1a0589c8e99811fbaad19d246f189303d6" kind="enum"><name>Mode</name></member>
@@ -4360,11 +4358,11 @@
     <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a19a056e54bedbf968628f8529e958fc7" kind="function"><name>iterator</name></member>
     <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1ae25c3cf40736e79bd551c7109b5d7956" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1acccd2ade7083fa5aeaf77423c0152310" kind="function"><name>operator++</name></member>
-    <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a5a8c1e0fc01eb87aff9962f6138fe00f" kind="function"><name>operator --</name></member>
+    <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a060971733d5af32a155e1639f9e04bce" kind="function"><name>operator--</name></member>
     <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a4e58b0101807eb2f979a7c7b3c53e908" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a4e705891aba40210755ba9a4465915da" kind="function"><name>operator !=</name></member>
-    <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a49002058cd6736c1e8981f1658c4ad17" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a2baf57928e2c4046a7ca909d3b408264" kind="function"><name>operator -&gt;</name></member>
+    <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a11f8fbfba47f710c0af31a0a3e3d8070" kind="function"><name>operator!=</name></member>
+    <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a4c669f6ff6f99455de1b4246327d8404" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1a43838a7fa97c23c31642882cfff65696" kind="function"><name>operator-&gt;</name></member>
     <member refid="classmodm_1_1_doubly_linked_list_1_1iterator_1ace8168c410b71a88cb3435752f38a4b1" kind="function"><name>iterator</name></member>
   </compound>
   <compound refid="classmodm_1_1_dynamic_array_1_1iterator" kind="class"><name>modm::DynamicArray::iterator</name>
@@ -4376,13 +4374,13 @@
     <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a650d197c57a69b1679dab7734a079cc5" kind="function"><name>iterator</name></member>
     <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a64c5fb78604050a22abf4631606d311a" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a9963957f07f62166f9cdfc9aa7174f49" kind="function"><name>operator++</name></member>
-    <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a0e02f92d9bcc1c195f6545ddc4c3832d" kind="function"><name>operator --</name></member>
+    <member refid="classmodm_1_1_dynamic_array_1_1iterator_1ab4ea91d2baa0744205368b0877dde893" kind="function"><name>operator--</name></member>
     <member refid="classmodm_1_1_dynamic_array_1_1iterator_1ac0db008370fc7f622646afc7a6fbe2f1" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_dynamic_array_1_1iterator_1ae8c9c8bdda811be9dc9fcb00dc263958" kind="function"><name>operator !=</name></member>
+    <member refid="classmodm_1_1_dynamic_array_1_1iterator_1ae8d7f194040fbf43831bbe36fcc3dd5b" kind="function"><name>operator!=</name></member>
     <member refid="classmodm_1_1_dynamic_array_1_1iterator_1aee80c0e9276b21e7344ce3bac0d73ca1" kind="function"><name>operator&lt;</name></member>
-    <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a9c26bd1c361410aa0fd8c24fe2a4121b" kind="function"><name>operator &gt;</name></member>
-    <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a800b08c7d4af5737db074e2c918ddab9" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_dynamic_array_1_1iterator_1ac751cdaca036b5c20c31a18bfc3c00b7" kind="function"><name>operator -&gt;</name></member>
+    <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a2416162f0a920072a1e976b093b84a12" kind="function"><name>operator&gt;</name></member>
+    <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a5b8fa9e4f79ac7ba59a30f3e47cbfadd" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a77e9f13c1c4faa774868380624e99067" kind="function"><name>operator-&gt;</name></member>
     <member refid="classmodm_1_1_dynamic_array_1_1iterator_1a483a5176cfe6d26552b0ab3c788e1481" kind="function"><name>iterator</name></member>
   </compound>
   <compound refid="classmodm_1_1_linked_list_1_1iterator" kind="class"><name>modm::LinkedList::iterator</name>
@@ -4394,9 +4392,9 @@
     <member refid="classmodm_1_1_linked_list_1_1iterator_1a0ecf11157cf416a9816911c44db834a4" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_linked_list_1_1iterator_1a9166d4567a574f7d708f58030a9ebc49" kind="function"><name>operator++</name></member>
     <member refid="classmodm_1_1_linked_list_1_1iterator_1ac01ec49b30c7fd7318684244b85876ac" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_linked_list_1_1iterator_1ae3406448584c3b2c9995222280a78620" kind="function"><name>operator !=</name></member>
-    <member refid="classmodm_1_1_linked_list_1_1iterator_1a620c5c6f67f5622ce0524d398362debe" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_linked_list_1_1iterator_1ac6f0fb1fe0efe234ae898a45f082d76c" kind="function"><name>operator -&gt;</name></member>
+    <member refid="classmodm_1_1_linked_list_1_1iterator_1aef93703bdf29353865ddd7ae20d47873" kind="function"><name>operator!=</name></member>
+    <member refid="classmodm_1_1_linked_list_1_1iterator_1a37816a3922d5351dbc901a492a9ccfb7" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_linked_list_1_1iterator_1a7024d37125ee4adc2339cd344da3dc65" kind="function"><name>operator-&gt;</name></member>
     <member refid="classmodm_1_1_linked_list_1_1iterator_1a7fa8a22474198785d6829962e74948a6" kind="function"><name>iterator</name></member>
   </compound>
   <compound refid="classmodm_1_1interpolation_1_1_lagrange" kind="class"><name>modm::interpolation::Lagrange</name>
@@ -4456,7 +4454,7 @@
     <member refid="classmodm_1_1_line_segment2_d_1a1f43940c633d9384794966fb199afbfd" kind="function"><name>getIntersections</name></member>
     <member refid="classmodm_1_1_line_segment2_d_1a0c3c4668f254adfe0c386a3bd66bea94" kind="function"><name>getIntersections</name></member>
     <member refid="classmodm_1_1_line_segment2_d_1a69b3414c9d85f62020b01734821598eb" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_line_segment2_d_1a8292c09b4d709245c3c9e32000b0bcff" kind="function"><name>operator !=</name></member>
+    <member refid="classmodm_1_1_line_segment2_d_1a65fbe3639cff519ccfdd6df63e8b3c32" kind="function"><name>operator!=</name></member>
   </compound>
   <compound refid="classmodm_1_1_linked_list" kind="class"><name>modm::LinkedList</name>
     <member refid="classmodm_1_1_linked_list_1a14b86edd473ad65c2007b4ea355880e3" kind="typedef"><name>Size</name></member>
@@ -4506,7 +4504,7 @@
     <member refid="classmodm_1_1_location2_d_1a9857d432a62556f5feeeefc51b30f9b7" kind="function"><name>translated</name></member>
     <member refid="classmodm_1_1_location2_d_1a8cceca0c307ebc9cda25c01ed2ae811f" kind="function"><name>convert</name></member>
     <member refid="classmodm_1_1_location2_d_1aafa8c00fa5a0adc7b2d3d2c40752268c" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_location2_d_1ac87e1f36446502913e8c5ea1c1a8f959" kind="function"><name>operator !=</name></member>
+    <member refid="classmodm_1_1_location2_d_1a5a2c7c79d04e5b0b22332b2cd652d914" kind="function"><name>operator!=</name></member>
     <member refid="classmodm_1_1_location2_d_1a2539c5f16ca41078027c6233c5926ae8" kind="friend"><name>operator&lt;&lt;</name></member>
   </compound>
   <compound refid="classmodm_1_1atomic_1_1_lock" kind="class"><name>modm::atomic::Lock</name>
@@ -4554,26 +4552,26 @@
     <member refid="classmodm_1_1_matrix_1a03d0940aee9c8933ef7c3e5efbb0399b" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_matrix_1a6d678a8d0c7fa22f157638855338b59b" kind="function"><name>subMatrix</name></member>
     <member refid="classmodm_1_1_matrix_1aaa50715a5466524d6b000d9bf702ff18" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_matrix_1a91e722d7a38fc1bed97f7734222f942d" kind="function"><name>operator !=</name></member>
-    <member refid="classmodm_1_1_matrix_1a1c95036789be3eb543baf401aed057f9" kind="function"><name>operator []</name></member>
-    <member refid="classmodm_1_1_matrix_1a9fea305cb9d38dcafadff9d4cc1e4ecb" kind="function"><name>operator []</name></member>
+    <member refid="classmodm_1_1_matrix_1a18c3a8fda5a5f319162b05a14b4b423e" kind="function"><name>operator!=</name></member>
+    <member refid="classmodm_1_1_matrix_1a13ec5bb661a95cf9b4c5de90dc85cfb6" kind="function"><name>operator[]</name></member>
+    <member refid="classmodm_1_1_matrix_1a089f869f2f66e6b02beb86cd43603497" kind="function"><name>operator[]</name></member>
     <member refid="classmodm_1_1_matrix_1a220826b5c769ade152636331943f4fa2" kind="function"><name>getNumberOfRows</name></member>
     <member refid="classmodm_1_1_matrix_1a514d3248f4ea6bf106d7718ed8587f87" kind="function"><name>getNumberOfColumns</name></member>
     <member refid="classmodm_1_1_matrix_1ac64b428c164beb25f57c11535862b778" kind="function"><name>getRow</name></member>
     <member refid="classmodm_1_1_matrix_1a9d82d38890255f31d1ec55d8b0cf23a1" kind="function"><name>getColumn</name></member>
     <member refid="classmodm_1_1_matrix_1a1a3255fab8365f931c19b10a3c223539" kind="function"><name>ptr</name></member>
     <member refid="classmodm_1_1_matrix_1a5b485650dc61a6c9c431e373cc674d2a" kind="function"><name>ptr</name></member>
-    <member refid="classmodm_1_1_matrix_1a401bef2d3d9c9ed141a34e5b126fef88" kind="function"><name>operator -</name></member>
+    <member refid="classmodm_1_1_matrix_1a4e45bfc3871815d81048cd5ce9d4ae9b" kind="function"><name>operator-</name></member>
     <member refid="classmodm_1_1_matrix_1a20dfe5513e30054e3629c1536c3d2948" kind="function"><name>operator+</name></member>
-    <member refid="classmodm_1_1_matrix_1a3a556648f405f309bd1ec128f763aa51" kind="function"><name>operator -</name></member>
-    <member refid="classmodm_1_1_matrix_1ac35cf1d8d75b5aec3abc600b285e454b" kind="function"><name>operator *</name></member>
+    <member refid="classmodm_1_1_matrix_1a4b6fb3601cb847cc505e19fd994c2bcd" kind="function"><name>operator-</name></member>
+    <member refid="classmodm_1_1_matrix_1ae7adab4f167a7c89dd0c80508bcc4e12" kind="function"><name>operator*</name></member>
     <member refid="classmodm_1_1_matrix_1a1e4d78b8e60a0159b7befae841ae72ff" kind="function"><name>operator/</name></member>
     <member refid="classmodm_1_1_matrix_1ace4f338d2c2f1454c3dedb2f46c111c9" kind="function"><name>operator+=</name></member>
-    <member refid="classmodm_1_1_matrix_1ab23739569b8bce642fa1ac7a15ad6762" kind="function"><name>operator -=</name></member>
-    <member refid="classmodm_1_1_matrix_1ad8fc98c2ae49fb7f240476247d23e5b1" kind="function"><name>operator *=</name></member>
+    <member refid="classmodm_1_1_matrix_1a7e6cc71e44f22661e41355c5f08b6fab" kind="function"><name>operator-=</name></member>
+    <member refid="classmodm_1_1_matrix_1aa17763980885938422be68903c0b4b03" kind="function"><name>operator*=</name></member>
     <member refid="classmodm_1_1_matrix_1a016f6651a053a2d99d84f8e21b4883a6" kind="function"><name>operator/=</name></member>
-    <member refid="classmodm_1_1_matrix_1ae110cc55b53096dcf4fdc63b2bae9411" kind="function"><name>operator *=</name></member>
-    <member refid="classmodm_1_1_matrix_1a9d3dbb9aa1dda409cb0493a4998eae80" kind="function"><name>operator *</name></member>
+    <member refid="classmodm_1_1_matrix_1ab49a52664cd928f6c9b8939f807e5a30" kind="function"><name>operator*=</name></member>
+    <member refid="classmodm_1_1_matrix_1a5d6b2fbb3056480fa537d82c991e4c91" kind="function"><name>operator*</name></member>
     <member refid="classmodm_1_1_matrix_1a2a8c719af63bedd9ca5e5e246c0e5858" kind="function"><name>asTransposed</name></member>
     <member refid="classmodm_1_1_matrix_1aa746412cbc7ac3db2be43265ec19e8e8" kind="function"><name>transpose</name></member>
     <member refid="classmodm_1_1_matrix_1aef402466f0a2d05a8929ac10423e0405" kind="function"><name>determinant</name></member>
@@ -4711,8 +4709,8 @@
     <member refid="classmodm_1_1_point_set2_d_1ac6d67c2559c2121572d4bd32ed5c544e" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_point_set2_d_1ad17f8136bd93cc70c3428b018b853ba5" kind="function"><name>getNumberOfPoints</name></member>
     <member refid="classmodm_1_1_point_set2_d_1a3c3124dc4e7b5c19c5f1d9b81b73593b" kind="function"><name>append</name></member>
-    <member refid="classmodm_1_1_point_set2_d_1a3ceca55e7fb57d259f3e13cb0d98a6d1" kind="function"><name>operator []</name></member>
-    <member refid="classmodm_1_1_point_set2_d_1a766dbb8b8f765b9c1a06a4c7c2fea731" kind="function"><name>operator []</name></member>
+    <member refid="classmodm_1_1_point_set2_d_1ae239a4a440b5867fd847371e30045b05" kind="function"><name>operator[]</name></member>
+    <member refid="classmodm_1_1_point_set2_d_1a4084179e55dcf783094f75eece1d6c73" kind="function"><name>operator[]</name></member>
     <member refid="classmodm_1_1_point_set2_d_1aa3d4bd59ab548f54f35d25f5af946b66" kind="function"><name>removeAll</name></member>
     <member refid="classmodm_1_1_point_set2_d_1a825a8904e5b7c215e14e701cec3dcb0c" kind="function"><name>begin</name></member>
     <member refid="classmodm_1_1_point_set2_d_1ab9b79a0f7cabeaa8fe627c5d1dbcc004" kind="function"><name>begin</name></member>
@@ -4755,6 +4753,7 @@
     <member refid="classmodm_1_1_quaternion_1a4b9e2b46e2a28bb50f084999ae5b8414" kind="variable"><name>y</name></member>
     <member refid="classmodm_1_1_quaternion_1a987b387372f691dcf4eaf72469cd3984" kind="variable"><name>z</name></member>
     <member refid="classmodm_1_1_quaternion_1a995ba2578f17431549e806723c6c594c" kind="function"><name>Quaternion</name></member>
+    <member refid="classmodm_1_1_quaternion_1af4e15ed300875ca5be397b11875c5b9e" kind="function"><name>Quaternion</name></member>
     <member refid="classmodm_1_1_quaternion_1a5619ba74ae70d0351973cdb40b662fbf" kind="function"><name>Quaternion</name></member>
     <member refid="classmodm_1_1_quaternion_1a65099fd685f76c16141cc38593b320e4" kind="function"><name>Quaternion</name></member>
     <member refid="classmodm_1_1_quaternion_1a079fe4f65eddc2c866e42841aef5f95f" kind="function"><name>Quaternion</name></member>
@@ -4762,23 +4761,23 @@
     <member refid="classmodm_1_1_quaternion_1a8223ceb8fd7202411ded5f388f7525b5" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_quaternion_1ae3772d50c374ff5da5616a8e7a7e5833" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_quaternion_1a56afe1cc92fb5dd553b70afd206e9a97" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_quaternion_1a6b96bdaeab1193c2020cb2e3d74396f3" kind="function"><name>operator !=</name></member>
+    <member refid="classmodm_1_1_quaternion_1a4f6732375001f488b3a9e9725c1632d9" kind="function"><name>operator!=</name></member>
     <member refid="classmodm_1_1_quaternion_1aeccca1fba6976c15c87d2c74a38a1688" kind="function"><name>operator&lt;</name></member>
     <member refid="classmodm_1_1_quaternion_1acc92e374bfad546acb33ab1eaea12b2e" kind="function"><name>operator&lt;=</name></member>
-    <member refid="classmodm_1_1_quaternion_1a23023c4239b14bdd49ef4d01835b116b" kind="function"><name>operator &gt;</name></member>
-    <member refid="classmodm_1_1_quaternion_1a01d1fdb679bd726f6e21b0c9198dc2d9" kind="function"><name>operator &gt;=</name></member>
-    <member refid="classmodm_1_1_quaternion_1a72b948ff90dc7a579a0b3c26851f328c" kind="function"><name>operator []</name></member>
+    <member refid="classmodm_1_1_quaternion_1a7ed9f354709ab909f196ef4a5d5c9923" kind="function"><name>operator&gt;</name></member>
+    <member refid="classmodm_1_1_quaternion_1a78eaedaf2576ed58a94d7a09ebe034d2" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classmodm_1_1_quaternion_1ae30532e4831c58195e62bfa11d33a3fa" kind="function"><name>operator[]</name></member>
     <member refid="classmodm_1_1_quaternion_1a57c11b0ce5e75ef0d0be5ae40e8d5953" kind="function"><name>ptr</name></member>
     <member refid="classmodm_1_1_quaternion_1abaecaa08a638a354ff78278518eb2aa0" kind="function"><name>ptr</name></member>
-    <member refid="classmodm_1_1_quaternion_1a1422187c7e56128c1ec8067375a8f6f8" kind="function"><name>operator -</name></member>
+    <member refid="classmodm_1_1_quaternion_1a5f109bef181273f4b45411d7935d0b8c" kind="function"><name>operator-</name></member>
     <member refid="classmodm_1_1_quaternion_1aa827a23320bca8010e6047b590e3c869" kind="function"><name>operator+</name></member>
-    <member refid="classmodm_1_1_quaternion_1a84e6f0adc1f2baded1d1ac2ee30a23d6" kind="function"><name>operator -</name></member>
-    <member refid="classmodm_1_1_quaternion_1ae85194e1b69780effeed9e7d540e2876" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_quaternion_1ae61a8bf0bf13a03e893ff6a1af555f35" kind="function"><name>operator *</name></member>
+    <member refid="classmodm_1_1_quaternion_1ad22607faca40847099157226616c25b9" kind="function"><name>operator-</name></member>
+    <member refid="classmodm_1_1_quaternion_1a8e32df09fdff70f2babbba1ee3defcb1" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_quaternion_1a1ee63d683dcc035ab51212c54046b481" kind="function"><name>operator*</name></member>
     <member refid="classmodm_1_1_quaternion_1a26c19ec094b43fff8a1d9e63a42fb9cc" kind="function"><name>operator/</name></member>
     <member refid="classmodm_1_1_quaternion_1a5f4e8fcf5370febc364c6a8752e98c5a" kind="function"><name>operator+=</name></member>
-    <member refid="classmodm_1_1_quaternion_1a0c970d8829c265a225d3c129dda9520f" kind="function"><name>operator -=</name></member>
-    <member refid="classmodm_1_1_quaternion_1a452b57e64e86250bf4395b8db2f19329" kind="function"><name>operator *=</name></member>
+    <member refid="classmodm_1_1_quaternion_1affcafa250980b49889ae59555649a850" kind="function"><name>operator-=</name></member>
+    <member refid="classmodm_1_1_quaternion_1a5b54195f4f05734318a094ccdaa87ab1" kind="function"><name>operator*=</name></member>
     <member refid="classmodm_1_1_quaternion_1ad37fb31f5f28349718f8bfb09c197275" kind="function"><name>operator/=</name></member>
     <member refid="classmodm_1_1_quaternion_1acf2195b67cc85be858d35c351b499661" kind="function"><name>getLength</name></member>
     <member refid="classmodm_1_1_quaternion_1aaa6fb73e52b6f56d94ae9dd2768b1cc0" kind="function"><name>getLengthSquared</name></member>
@@ -4829,14 +4828,14 @@
     <member refid="classmodm_1_1accessor_1_1_ram_1a7187045069b159a6fca513bfa051dc7f" kind="variable"><name>address</name></member>
     <member refid="classmodm_1_1accessor_1_1_ram_1a3341c530c20202024ebfdaa029cf3a0f" kind="function"><name>Ram</name></member>
     <member refid="classmodm_1_1accessor_1_1_ram_1af5bd9457aede5efd362c4022f8f7cf65" kind="function"><name>Ram</name></member>
-    <member refid="classmodm_1_1accessor_1_1_ram_1a3725f9758d6a3db4649f1e73d1696e14" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1accessor_1_1_ram_1a0ed5c8989b729c79935b77d5097b8774" kind="function"><name>operator []</name></member>
+    <member refid="classmodm_1_1accessor_1_1_ram_1afaa2ecf6697b751de9cd5fbb9627b7c4" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1accessor_1_1_ram_1a84ccb99327241f55371deb80ef4b356e" kind="function"><name>operator[]</name></member>
     <member refid="classmodm_1_1accessor_1_1_ram_1a0bda350d7e17ac23780b59c0de0a802e" kind="function"><name>operator++</name></member>
     <member refid="classmodm_1_1accessor_1_1_ram_1a8c4bf7c7c62cb6084606b8e8646c6407" kind="function"><name>operator++</name></member>
-    <member refid="classmodm_1_1accessor_1_1_ram_1a16de5b1927aab1f16ed91331d8ad79fc" kind="function"><name>operator --</name></member>
-    <member refid="classmodm_1_1accessor_1_1_ram_1ab5eb93ba539a0e16249604326e20d797" kind="function"><name>operator --</name></member>
+    <member refid="classmodm_1_1accessor_1_1_ram_1aeb5531264a7549f7a6859ddb885c1d63" kind="function"><name>operator--</name></member>
+    <member refid="classmodm_1_1accessor_1_1_ram_1a1600ec7546870d4f88a2bdb27f8670ad" kind="function"><name>operator--</name></member>
     <member refid="classmodm_1_1accessor_1_1_ram_1a73ebde66a9cbba6d8a06fe0bbbc43a0b" kind="function"><name>operator+=</name></member>
-    <member refid="classmodm_1_1accessor_1_1_ram_1a18f31fe5da87ec13d455dee35bf0b586" kind="function"><name>operator -=</name></member>
+    <member refid="classmodm_1_1accessor_1_1_ram_1aa3d4834062c52d543d035b320e3d0365" kind="function"><name>operator-=</name></member>
     <member refid="classmodm_1_1accessor_1_1_ram_1a8716efc9aa610d1bb8136e326377b079" kind="function"><name>getPointer</name></member>
   </compound>
   <compound refid="classmodm_1_1filter_1_1_ramp" kind="class"><name>modm::filter::Ramp</name>
@@ -4868,7 +4867,7 @@
     <member refid="classmodm_1_1_ray2_d_1a360863b6ecd5cdde69dd238913aa3bb5" kind="function"><name>intersects</name></member>
     <member refid="classmodm_1_1_ray2_d_1aaaaf41c6c39f77452357491df2aab0e6" kind="function"><name>ccw</name></member>
     <member refid="classmodm_1_1_ray2_d_1a06188e6d4304b895cd30a089d432c66c" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_ray2_d_1a5801c03573a2bece9927dcad5719fa75" kind="function"><name>operator !=</name></member>
+    <member refid="classmodm_1_1_ray2_d_1a121bec89e792776fc46d9d66d242d202" kind="function"><name>operator!=</name></member>
   </compound>
   <compound refid="classmodm_1_1platform_1_1_rcc" kind="class"><name>modm::platform::Rcc</name>
     <member refid="classmodm_1_1platform_1_1_rcc_1ac74f8c9671fb47f85fdfef5a3074407b" kind="enum"><name>PllSource</name></member>
@@ -5010,14 +5009,14 @@
     <member refid="classmodm_1_1_saturated_1a38220c678650ac7a25630b6f119353c6" kind="function"><name>Saturated</name></member>
     <member refid="classmodm_1_1_saturated_1a96e902005f885db334605f04d11c4312" kind="function"><name>getValue</name></member>
     <member refid="classmodm_1_1_saturated_1aadac5c3554fb6596fe0124e26cf0d3fc" kind="function"><name>operator+=</name></member>
-    <member refid="classmodm_1_1_saturated_1a3f81c3767fcb067bf7e6feb7986852a7" kind="function"><name>operator -=</name></member>
+    <member refid="classmodm_1_1_saturated_1a24809b27043a1faa49c2a784dd3d19e7" kind="function"><name>operator-=</name></member>
     <member refid="classmodm_1_1_saturated_1a55ef621fa22c11338d3aae15a1ca1c88" kind="function"><name>absolute</name></member>
-    <member refid="classmodm_1_1_saturated_1af8df0521a231795d86b35e067c258bdd" kind="friend"><name>operator -</name></member>
+    <member refid="classmodm_1_1_saturated_1ad3c1d1016da4a9f48ee8d357b4de3c8a" kind="friend"><name>operator-</name></member>
     <member refid="classmodm_1_1_saturated_1a29321a0fcf37a4d88292830593460a91" kind="friend"><name>abs</name></member>
-    <member refid="classmodm_1_1_saturated_1a1fe9d99f6681a60b3f55cd829f628f85" kind="friend"><name>operator -</name></member>
+    <member refid="classmodm_1_1_saturated_1a1cb3572bff02c15241305c741f0da7fd" kind="friend"><name>operator-</name></member>
     <member refid="classmodm_1_1_saturated_1a992f08b0aa2a0f5bce837a1fe557d6de" kind="friend"><name>operator+</name></member>
     <member refid="classmodm_1_1_saturated_1a976457c8ac01a2c7d2c93acb2a9cd4c3" kind="friend"><name>operator==</name></member>
-    <member refid="classmodm_1_1_saturated_1a15915bd95cf00ba6f2e08d42f1234282" kind="friend"><name>operator !=</name></member>
+    <member refid="classmodm_1_1_saturated_1aa1f21025d903b7239f9d92c33e0d0af7" kind="friend"><name>operator!=</name></member>
     <member refid="classmodm_1_1_saturated_1a67f087e1543055acfcf8427d4c9b6150" kind="function"><name>setValue</name></member>
   </compound>
   <compound refid="classmodm_1_1_s_curve_controller" kind="class"><name>modm::SCurveController</name>
@@ -6373,25 +6372,25 @@
     <member refid="classmodm_1_1_vector_1acaa2b333e39a593ed741de0ac6418c68" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_vector_1ac7fe467936d517fa53aaad30b9cb4f69" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_vector_1a145fff956b4e8777aec6323d52815e2f" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_vector_1ab23034fc43c00bed3a8fcecfdd21252f" kind="function"><name>operator !=</name></member>
+    <member refid="classmodm_1_1_vector_1a204850c0b0be753837ee8f97009014bc" kind="function"><name>operator!=</name></member>
     <member refid="classmodm_1_1_vector_1aad2a3f84627cba1c2f94dd6cc43ab3f1" kind="function"><name>operator&lt;</name></member>
     <member refid="classmodm_1_1_vector_1a258632f1dfc60b65bb75a5653f35411d" kind="function"><name>operator&lt;=</name></member>
-    <member refid="classmodm_1_1_vector_1ac0204d912ee0deb5aa0fb5e296066fc0" kind="function"><name>operator &gt;</name></member>
-    <member refid="classmodm_1_1_vector_1a0c97917e2cf89ab4a575c2a8cba11d45" kind="function"><name>operator &gt;=</name></member>
-    <member refid="classmodm_1_1_vector_1a93e33b50615bc9d8f880bd7271457400" kind="function"><name>operator []</name></member>
-    <member refid="classmodm_1_1_vector_1ae2b737d5f8045efb22bd2e843b82208e" kind="function"><name>operator []</name></member>
+    <member refid="classmodm_1_1_vector_1ac0d17f0b9855c51c846d97e0a97f9cd2" kind="function"><name>operator&gt;</name></member>
+    <member refid="classmodm_1_1_vector_1a77f72470b449f0bc0968b286dfa116a3" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classmodm_1_1_vector_1aa131aefcf5271c51a611ab85d67b385f" kind="function"><name>operator[]</name></member>
+    <member refid="classmodm_1_1_vector_1a42e402dea218128fad5141904f796678" kind="function"><name>operator[]</name></member>
     <member refid="classmodm_1_1_vector_1ac29c087bdd31549096c9814a0029e3b0" kind="function"><name>ptr</name></member>
     <member refid="classmodm_1_1_vector_1ab0cdc75a8ab1438b74b0d6336fdfccda" kind="function"><name>ptr</name></member>
     <member refid="classmodm_1_1_vector_1a248dc0cacbfab93d61d792edeed283a2" kind="function"><name>operator+</name></member>
-    <member refid="classmodm_1_1_vector_1acbc1f24282586913f6b10b6dcd267f5a" kind="function"><name>operator -</name></member>
-    <member refid="classmodm_1_1_vector_1a27cccf1a2cdc4a0bcc37e089056be968" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_vector_1a466d0b4510be85e9782d7ab5c71777ff" kind="function"><name>operator *</name></member>
+    <member refid="classmodm_1_1_vector_1afc52d40df1d01fbefccb02fbfcb29c1f" kind="function"><name>operator-</name></member>
+    <member refid="classmodm_1_1_vector_1aa69cd2c744b508a4ee5d3880ce10b247" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_vector_1aa326ddbbecc72db8d2b02a69d24d3599" kind="function"><name>operator*</name></member>
     <member refid="classmodm_1_1_vector_1afcc49d63075966aeb04d37c30b0a3e94" kind="function"><name>operator/</name></member>
     <member refid="classmodm_1_1_vector_1aec33d44e6a2fcf2d7f81c27bc60e3176" kind="function"><name>operator+=</name></member>
-    <member refid="classmodm_1_1_vector_1af401d91ae12b62e8c777946fad10b7e2" kind="function"><name>operator -=</name></member>
-    <member refid="classmodm_1_1_vector_1ac16002b89640b941b0a842da0010c5d9" kind="function"><name>operator *=</name></member>
+    <member refid="classmodm_1_1_vector_1a792167590d1c1a7d5a13cbc8f09114a3" kind="function"><name>operator-=</name></member>
+    <member refid="classmodm_1_1_vector_1ae80046f752493caad1f4ea0b326d30de" kind="function"><name>operator*=</name></member>
     <member refid="classmodm_1_1_vector_1a7929e504615244441a5e2bf7b4f331f5" kind="function"><name>operator/=</name></member>
-    <member refid="classmodm_1_1_vector_1aa039fa9750242c9afd3bf47acc63284e" kind="function"><name>operator -</name></member>
+    <member refid="classmodm_1_1_vector_1a0eff5b7f3d5d46e44356da77729cb245" kind="function"><name>operator-</name></member>
     <member refid="classmodm_1_1_vector_1a56144bf1bd8bb791765b895df5d52da9" kind="function"><name>getLength</name></member>
     <member refid="classmodm_1_1_vector_1ac9838894a8857f0b002c71e0106bb18d" kind="function"><name>getLengthSquared</name></member>
     <member refid="classmodm_1_1_vector_1ae605fd311a7692f76773b78c9d15c585" kind="function"><name>asMatrix</name></member>
@@ -6419,24 +6418,24 @@
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a50f470ce370444284e092c77c812bb7d" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a6aaddc21cd1de384f49312124aac0318" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a523ab8c1f1f54d92d1c25a845686576a" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a2426a73c09855b551f6aaed6acef58fa" kind="function"><name>operator !=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a5c0df769b4a9a16d13d04545fd986bc8" kind="function"><name>operator!=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a51f76ca61d4656fe2e2f2a18cdad01a2" kind="function"><name>operator&lt;</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a9b42c1b2a8486a82ef645fc489fb76c6" kind="function"><name>operator&lt;=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a80b725469746e1f1288bdb8508ea5194" kind="function"><name>operator &gt;</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a3aeaf7cc29b2024229b902459f88170c" kind="function"><name>operator &gt;=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1aa9eb745c9eb4bafa0a7c3d8f6fc51b2b" kind="function"><name>operator []</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a9c3e71615192cd85400aea6df2ce1a5e" kind="function"><name>operator []</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a69b1c5833385fb26ef7a5c997a65242f" kind="function"><name>operator&gt;</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a1a9ed9f5b723dd92482f1601faffbf20" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a821c7fee4a4a8978a467ac39a7c8f387" kind="function"><name>operator[]</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a21c0adb20524cfbed4234493c6cacb96" kind="function"><name>operator[]</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1afd62c0d057d489cf8e2e21b68be6ebdd" kind="function"><name>ptr</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1ae302b2f80818057f509f21d3ffec4a5c" kind="function"><name>ptr</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a94e8d47837a9f7c093146b4ff66e2f9c" kind="function"><name>operator -</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a948c1f0902d669abd67b0661c14fd201" kind="function"><name>operator-</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a192fc6805ec0ec5db8b4ebe520477a9e" kind="function"><name>operator+</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a3d0641cfe50fadbfed20ccdd4bf98948" kind="function"><name>operator -</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a2715b9c3a1124d03865ecc9e25aab655" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a41ba3dcf460d9006bdd925e5a7987566" kind="function"><name>operator *</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a74aef375414464a4801f0ad9059cbff4" kind="function"><name>operator-</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1adfbe997fa943d76a98c85dda98c7c113" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1aea64e185f79860ef81551de1673856b5" kind="function"><name>operator*</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1aafad58a4a1ed64e2698264922ed04156" kind="function"><name>operator/</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1aa3c49d7694da07279d3b9bb94230162d" kind="function"><name>operator+=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a0f3512869b55288c4759824714410200" kind="function"><name>operator -=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1ad882a4cdeaa4db195b16b865931f7a65" kind="function"><name>operator *=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1ae61e9ca0e40053682713916f519c4cfe" kind="function"><name>operator-=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a177a25addff27b9b31c3b74ae3fa248a" kind="function"><name>operator*=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a660a950b279a7f9839835dd9b45cf759" kind="function"><name>operator/=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a6998f5216fc5fde913d9d91ae5a73eb5" kind="function"><name>getLength</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_011_01_4_1a8b79b8f466d60c0db06d1fb538616c52" kind="function"><name>getLengthSquared</name></member>
@@ -6450,7 +6449,7 @@
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a508d9ffd289fb85722ddcfd0aeefee8d" kind="typedef"><name>FloatType</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a7e18724c3ea45e98c437d474c3fe725e" kind="friend"><name>Location2D&lt; T &gt;</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1aed86d4e7055e5e2247952cba3f905f6e" kind="friend"><name>operator&lt;&lt;</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a18530172d8977a8ca37787ba4ff1a45f" kind="friend"><name>operator *</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1aefd21149e400d47cc32c97a1b85ef59d" kind="friend"><name>operator*</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a36665ed75dd0834ca612fd04c778f287" kind="variable"><name>x</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a4363ae5effcf56c4e78f330601f09fbc" kind="variable"><name>y</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a188d4315c297f982e4da4f37eb91792d" kind="function"><name>Vector</name></member>
@@ -6485,27 +6484,27 @@
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a477bdc1ade5e4561262b9ddb5d01412d" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ac38e4bd4455282b1a536c3627e20ad78" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1afc0c388befc5910e5ca76a14ddf1689d" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a52ea52521e49ac54617fcca24d86cb70" kind="function"><name>operator !=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1acd5148422d1fa82c82a7ed6338a5ee91" kind="function"><name>operator!=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a86e9698be1f465d392e7a9ce527d8712" kind="function"><name>operator&lt;</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1aa8f3a4a4a7fbd9c1d8ad532866f0dfdc" kind="function"><name>operator&lt;=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ad017865829f1e60ae4775ff3e2fc13df" kind="function"><name>operator &gt;</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ad9f4a3644f59e4e1cb2801a82b322dd9" kind="function"><name>operator &gt;=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1afc1f56021fe81cfca92525d295e6d404" kind="function"><name>operator []</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab966e37d6695d5dad38a4840cbb95e2b" kind="function"><name>operator []</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a5cf20aaf5d7c898df1d58bc06e8c1e5b" kind="function"><name>operator&gt;</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a0f2321f528f7b2ba24c9dbf7bbc7e960" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a9f32c2ecc53c6729bab1dc7cf6cb80bd" kind="function"><name>operator[]</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a579643692a90659b3341846c288b004e" kind="function"><name>operator[]</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a2ac29d82ea6172dcbf38b2c8de046825" kind="function"><name>ptr</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a37d3c9ba306624926b1f475d8f81fc11" kind="function"><name>ptr</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1abd744f145138d616a3054d9a61686a2b" kind="function"><name>operator -</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1adfa22e8d529b8a6dd1c4c64b090a1fc7" kind="function"><name>operator -</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ac7f3343650860dc88bf7e51d29ef34f3" kind="function"><name>operator-</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab90c9dfac680e2fe177eeed859242c9b" kind="function"><name>operator-</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1adcddf391981107c6c1b8575311ae3439" kind="function"><name>operator+</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1af16e861a5bd30f7bea271368b138bf79" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a119f52cdc6198f87e90b483ccabfebe1" kind="function"><name>operator ^</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ab762f71cc94b2e42fc558074e30cf6ea" kind="function"><name>operator *</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a707e37ff9207b1af1b9db0e25853c2e7" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1abb81c13a53872b51f7e38142c3a8fa27" kind="function"><name>operator^</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a64a0b05540a435c4d58ee21b82311d46" kind="function"><name>operator*</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1abb099a1414246482704e63a60f5428a8" kind="function"><name>operator/</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a61f4f99577e11b462b6577d53d72c718" kind="function"><name>operator+=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1af9b54e28a79532587579b9634682a537" kind="function"><name>operator -=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a63bbc84535bb7f24d882d540df25f713" kind="function"><name>operator *=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1ae2b5402f05660aa22d732c8790edd1ab" kind="function"><name>operator-=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a1c52fd88cced9a1eeff97c0f7f713a82" kind="function"><name>operator*=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a5c1f20cc1edb964ce589107f3c66f189" kind="function"><name>operator/=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a6ec40e8887ec6215b74ff2a84f4009dc" kind="function"><name>operator ~</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a1b00a0aeee1fff6613b1a52b9361f754" kind="function"><name>operator~</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a01e7994db57b33a7d6acc50204b44d57" kind="function"><name>asMatrix</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1a8a182126c1d108170c36da64c6987776" kind="function"><name>asMatrix</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_012_01_4_1af145b0f9c0ca4f5fd08b55ca4c893d44" kind="function"><name>asTransposedMatrix</name></member>
@@ -6545,25 +6544,25 @@
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a33c98a9d9fa1ea3798986e510d0f90d5" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1aea3e9133b2206a04009dde25bfdc1674" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a0c547f1fcca7599cc65843097694481d" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1aa3b056b2f02c364fdb78c816c3071c31" kind="function"><name>operator !=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a31d7421e8ee6ae3db96b099610845f39" kind="function"><name>operator!=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a2cd356319a0bc23001be3eb1243b703b" kind="function"><name>operator&lt;</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1afd4ad0a4af7a16233636096bf0b5b46b" kind="function"><name>operator&lt;=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a02d012470d927a005a6a5c37bf29fbae" kind="function"><name>operator &gt;</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a793efb2c37979cc3666fde197a81727c" kind="function"><name>operator &gt;=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a25e87a0f9799b84077a35b3f00426108" kind="function"><name>operator []</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a2fd1782307dd139e573d9724bb73ce1e" kind="function"><name>operator []</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1aa6f593c4cf1dd3739c18f90359c13d98" kind="function"><name>operator&gt;</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a2dbfd5291e4e558cdfc4f7ed54108bf4" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a22d297bae448e8aec135d6d772b25d14" kind="function"><name>operator[]</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1aff1c6a3c8224752e61870d72c0c2d96e" kind="function"><name>operator[]</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1ad9c3af11995670ea9543f80b9ad7baba" kind="function"><name>ptr</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a329cb0cb0244f6d53c85b3184dd3b897" kind="function"><name>ptr</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a85426a812f488549676e74fd0e5651ba" kind="function"><name>operator -</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a5228a6f3bbb9c3a41d37c943268db810" kind="function"><name>operator-</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a015daf2d167c74a612da795381e0837b" kind="function"><name>operator+</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1ac99830662d432242b7f3e5a97a8041cf" kind="function"><name>operator -</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a538a929a965195cb55e2bfbfaa7bba97" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a1a2250c1f6cc210b47bd3a72de23862b" kind="function"><name>operator ^</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1adcc4332b53322fe647cbb1affb192f80" kind="function"><name>operator *</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1ae41eb151a73b86bf50320ebd5dec0410" kind="function"><name>operator-</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1aa4d92a1ae9cd2e87b10d327c74a4dc15" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1ac4cd4a3c5926f0905cffce0449fcfa4a" kind="function"><name>operator^</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a1ea3b06a27d9b26a932e7bbced223643" kind="function"><name>operator*</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1ab9ee5dc10c515ff9e318d7de1828baf0" kind="function"><name>operator/</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a3a61331a53714ba330ecc4396ca8b6fb" kind="function"><name>operator+=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a761d7bf69fe26efd6040fd0cc500e024" kind="function"><name>operator -=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1ac7cf13288e2e30903942528fdf55736d" kind="function"><name>operator *=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1aba15bd21ba2482799a67e0a748d3c71e" kind="function"><name>operator-=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a72b4de20585ea2c33bf4a3fc62c8cbc6" kind="function"><name>operator*=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1a8e9800c8b2e6595019e09c6b2f2dda27" kind="function"><name>operator/=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1ae1df8a796a29d2ee785787d2b4b2a1f4" kind="function"><name>getLength</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_013_01_4_1af9e0cd4920d193824f36ff6a56e79d1a" kind="function"><name>getLengthSquared</name></member>
@@ -6631,24 +6630,24 @@
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1ad95b7b30740ddd03e66b93ce0ca4911a" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a615c0535dd85b44b2275666ea8a3b4e8" kind="function"><name>operator=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a4ac22bd6d44b1faa5af5cb9c17ea8a6b" kind="function"><name>operator==</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a34e114540eb38bf8ea8073a0b54327b9" kind="function"><name>operator !=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1aef87e031bd595b0e5b8254879ecfcdde" kind="function"><name>operator!=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a41190f2af797797cdc30b7634a2b2481" kind="function"><name>operator&lt;</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a1f643b6277ea1994781200f5e47cfcdf" kind="function"><name>operator&lt;=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a64f6264cdaa636a4dba8903534de31ae" kind="function"><name>operator &gt;</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1abfae99fee82810247e22ad0f4f386054" kind="function"><name>operator &gt;=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1ad09b313b89da3aabe15d72a3c3baeae6" kind="function"><name>operator []</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1af9c4392f846e957d6536743b0d909902" kind="function"><name>operator []</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1aa8c698213acd811f9567b9798c07fa9c" kind="function"><name>operator&gt;</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a57228be74b4cb5f5018c62ee48e13281" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a9e9af14935f966e5536c232b21b090b3" kind="function"><name>operator[]</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1ad4a7bbe2fd892b01f55b63db89912dd9" kind="function"><name>operator[]</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a4ff10a842b591a5120b4d31dae9bea9b" kind="function"><name>ptr</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1ac1d40e4e03a86f7b4955a49175fb1a84" kind="function"><name>ptr</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a74592c55ae6d163e075a78fb9e7e984f" kind="function"><name>operator -</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a76c70d97286594697ce21e7e25c1d254" kind="function"><name>operator-</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a8cd4d70d122f99cba535e76ec3482996" kind="function"><name>operator+</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a4631acbc03183d1b891d6e62807cee50" kind="function"><name>operator -</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a7482e430eccc890978d8cdadab6fac0d" kind="function"><name>operator *</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a28b1a4a3ca7976d926f91ab285675fe2" kind="function"><name>operator *</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1adeb2c66c773fb62591e0552960dd6a54" kind="function"><name>operator-</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a0d939031dfac945cfcc8d1c2fcfd8750" kind="function"><name>operator*</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1aaabf2bcb24495709f93f92c8e00ff4e8" kind="function"><name>operator*</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a1f1779813cfd11e2dbee1bb54e633e58" kind="function"><name>operator/</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a7aa39212c99303c7c4a475889751856d" kind="function"><name>operator+=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a12265569ff4daa68c6496f937c30a2d7" kind="function"><name>operator -=</name></member>
-    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a2d98f56f0962deb0239d147891f08fd2" kind="function"><name>operator *=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1aec870ee503aeeed6b28091697b339e75" kind="function"><name>operator-=</name></member>
+    <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a05a5f4339072f97db40a45bee443526d" kind="function"><name>operator*=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a2d9b3e3944acd26d503393e4907829b6" kind="function"><name>operator/=</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a65069f8740a0e60f439ae6f65a891388" kind="function"><name>getLength</name></member>
     <member refid="classmodm_1_1_vector_3_01_t_00_014_01_4_1a99d61adaab73c2e8c512ab1afa279e00" kind="function"><name>getLengthSquared</name></member>
@@ -6823,6 +6822,7 @@
     <member refid="group__modm__architecture__memory_1gab4a17216559951bcee7bca4115ffc0f3" kind="variable"><name>MemoryExternal</name></member>
     <member refid="group__modm__architecture__memory_1ga8c685b0abc10fbae2b743a12c46b5599" kind="variable"><name>MemoryBackup</name></member>
     <member refid="group__modm__architecture__memory_1ga08155d1288c3fd230809c6bffb2df227" kind="variable"><name>MemoryDefault</name></member>
+    <member refid="group__modm__architecture__build__id_1gaac7e7e205bbced786315f5f5e7d165cf" kind="function"><name>build_id</name></member>
     <member refid="namespacemodm_1aec9a27daba54314a860c714c611db4b1" kind="function"><name>operator&lt;&lt;</name></member>
     <member refid="group__modm__architecture__delay_1gac74a1138fd586eafa8cd4c1928f4ccab" kind="function"><name>delayNanoseconds</name></member>
     <member refid="group__modm__architecture__delay_1ga03e5053cd9552409229bec06accb44b4" kind="function"><name>delayMicroseconds</name></member>
@@ -6836,25 +6836,25 @@
     <member refid="group__modm__math__geometry_1ga1745aa721c8c9d9c4874beab9901cfee" kind="function"><name>toRadian</name></member>
     <member refid="group__modm__math__geometry_1ga4734f4cf28f5ddbcda202dc5663be292" kind="function"><name>toDegree</name></member>
     <member refid="group__modm__math__geometry_1ga443b6b5dbba5177fc4e90894ca576655" kind="function"><name>operator&lt;&lt;</name></member>
-    <member refid="namespacemodm_1ad9e4b207b4772724c2b5e3a994355f61" kind="function"><name>operator *</name></member>
-    <member refid="namespacemodm_1a5f0828b5057c75f9b3e36ae4d0e0c52b" kind="function"><name>operator *</name></member>
+    <member refid="namespacemodm_1ad85d8387eb13fe8bb4cd5abf9d7a0bd8" kind="function"><name>operator*</name></member>
+    <member refid="namespacemodm_1adabcf6385638e9efc4984e356c7990f5" kind="function"><name>operator*</name></member>
     <member refid="group__modm__math__geometry_1gae0dab16035b9f12ce06bed0aa87f8e31" kind="function"><name>operator&lt;&lt;</name></member>
-    <member refid="group__modm__math__geometry_1ga903d98b7e7359bb9fb1a61221582a663" kind="function"><name>operator *</name></member>
+    <member refid="group__modm__math__geometry_1gab1734ee8a7599e982c08365302ced3ed" kind="function"><name>operator*</name></member>
     <member refid="group__modm__math__geometry_1ga3c7c922ac55292dc07237d75b17dc2b8" kind="function"><name>operator/</name></member>
-    <member refid="namespacemodm_1aaa1cf42335ad02924b52e94196520aaf" kind="function"><name>operator *</name></member>
-    <member refid="namespacemodm_1a17435fd4ab788c8eedba0ead376ee3ec" kind="function"><name>operator *</name></member>
-    <member refid="namespacemodm_1aa449f1ee817a9d7dbf2fe14bfc61149d" kind="function"><name>operator *</name></member>
-    <member refid="namespacemodm_1af8884135cb7a8f6c1f07cc965c7f73a7" kind="function"><name>operator *</name></member>
+    <member refid="namespacemodm_1a49a5790ea15ec72682a76ef76b210ef0" kind="function"><name>operator*</name></member>
+    <member refid="namespacemodm_1a13c67841a86b324af3f0d234e68d8fff" kind="function"><name>operator*</name></member>
+    <member refid="namespacemodm_1a5b7742f45b7255c8a7dccb84ccc31f66" kind="function"><name>operator*</name></member>
+    <member refid="namespacemodm_1a6dcb6c02d7f8c41f87cf2cc4bf7b64e0" kind="function"><name>operator*</name></member>
     <member refid="namespacemodm_1a2db61e11d39d5bcbbd068b69b8f5f86d" kind="function"><name>operator&lt;&lt;</name></member>
     <member refid="namespacemodm_1ac7d7fafff11c95af54480776c48f7ca4" kind="function"><name>determinant</name></member>
     <member refid="namespacemodm_1a64a4409e7094c3591df137f18fd5cbea" kind="function"><name>determinant</name></member>
     <member refid="group__modm__math__matrix_1ga92ab7864d3c8a369ef9cb7d5703db07d" kind="function"><name>determinant</name></member>
-    <member refid="namespacemodm_1a98a3dc8285465b536389f5cf83598984" kind="function"><name>operator -</name></member>
+    <member refid="namespacemodm_1af6ef30aee5d1f52e6e43c93f63bde624" kind="function"><name>operator-</name></member>
     <member refid="namespacemodm_1a5e02197831663b0f7f475c15fc9e8035" kind="function"><name>abs</name></member>
-    <member refid="namespacemodm_1a40a1bbd59a6db14a553af88ad8074071" kind="function"><name>operator -</name></member>
+    <member refid="namespacemodm_1a09aa3003d7d55f4271426e1883aea44c" kind="function"><name>operator-</name></member>
     <member refid="namespacemodm_1ae56e6de2c2d00edd73126375b2ecad17" kind="function"><name>operator+</name></member>
     <member refid="namespacemodm_1a1b11396b1710fc53864a744c8411c6a5" kind="function"><name>operator==</name></member>
-    <member refid="namespacemodm_1ad8ebc8b7b3aae074696dbf214d9e978e" kind="function"><name>operator !=</name></member>
+    <member refid="namespacemodm_1a9b05ac14150f69bfe4247a4050d268eb" kind="function"><name>operator!=</name></member>
     <member refid="group__modm__math__utils_1gaec13941291730157912e182afefe1be0" kind="function"><name>isPositive</name></member>
     <member refid="group__modm__math__utils_1ga5df53b0ad92fb8fa06b5dc17a16b1ed5" kind="function"><name>pow</name></member>
     <member refid="group__modm__math__utils_1ga0911b63c9be749d20800b5f99fb6d4a4" kind="function"><name>min</name></member>
@@ -6879,6 +6879,9 @@
     <member refid="namespacemodm_1_1can_1a68bfa1c1f0b35080cfc9f947d64439eb" kind="function"><name>operator&lt;&lt;</name></member>
   </compound>
   <compound refid="namespacemodm_1_1clock" kind="namespace"><name>modm::clock</name>
+  </compound>
+  <compound refid="namespacemodm_1_1cortex" kind="namespace"><name>modm::cortex</name>
+    <member refid="namespacemodm_1_1cortex_1a820c134e12c8347270c2d73c5e3af14c" kind="typedef"><name>instead</name></member>
   </compound>
   <compound refid="namespacemodm_1_1detail" kind="namespace"><name>modm::detail</name>
   </compound>
@@ -6926,11 +6929,6 @@
     <member refid="group__modm__math__utils_1ga29f80139d32c4ef6a7720b1da1f83498" kind="function"><name>mul</name></member>
     <member refid="group__modm__math__utils_1ga44e2c38b63d9c29e97ec6cc2dee8194f" kind="function"><name>mul</name></member>
     <member refid="group__modm__math__utils_1ga7649ada53febd1ca04feeb994824fb00" kind="function"><name>mac</name></member>
-  </compound>
-  <compound refid="namespacemodm_1_1modm" kind="namespace"><name>modm::modm</name>
-  </compound>
-  <compound refid="namespacemodm_1_1modm_1_1cortex" kind="namespace"><name>modm::modm::cortex</name>
-    <member refid="namespacemodm_1_1modm_1_1cortex_1a42f22f14531e45c5f8e87d3f5badc949" kind="typedef"><name>SysTickTimer</name></member>
   </compound>
   <compound refid="namespacemodm_1_1one__wire" kind="namespace"><name>modm::one_wire</name>
     <member refid="group__modm__architecture__1__wire_1ga56a4fb0fba7fb4d6fc16d93cc1564d2c" kind="enum"><name>RomCommand</name></member>
@@ -7020,7 +7018,7 @@
     <member refid="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a6132b55d91bc269f9557c21f518f42ed" kind="enumvalue"><name>UsbOtgHs</name></member>
     <member refid="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55ae20848b4234f47db545b8f03febf4817" kind="enumvalue"><name>Wwdg</name></member>
     <member refid="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a897758a55d99d2951b00e0bf880d197d" kind="enumvalue"><name>Syscfg</name></member>
-    <member refid="namespacemodm_1_1platform_1a6602a07fb8f21fb7fc440c0d0e27ca39" kind="typedef"><name>ClockControl</name></member>
+    <member refid="namespacemodm_1_1platform_1af0545f4f3722008b654a94f2625e1824" kind="typedef"><name>instead</name></member>
     <member refid="namespacemodm_1_1platform_1a1741981ded5a57530c304f4df920fa35" kind="typedef"><name>InterruptHandler</name></member>
   </compound>
   <compound refid="namespacemodm_1_1pt" kind="namespace"><name>modm::pt</name>
@@ -7038,6 +7036,8 @@
   <compound refid="modm-architecture-atomic_8dox" kind="file"><name>modm-architecture-atomic.dox</name>
   </compound>
   <compound refid="modm-architecture-block-device_8dox" kind="file"><name>modm-architecture-block-device.dox</name>
+  </compound>
+  <compound refid="modm-architecture-build-id_8dox" kind="file"><name>modm-architecture-build-id.dox</name>
   </compound>
   <compound refid="modm-architecture-can_8dox" kind="file"><name>modm-architecture-can.dox</name>
   </compound>
@@ -7294,6 +7294,8 @@
   <compound refid="platform_2core_2atomic__lock_8hpp" kind="file"><name>atomic_lock.hpp</name>
   </compound>
   <compound refid="block__device_8hpp" kind="file"><name>block_device.hpp</name>
+  </compound>
+  <compound refid="build__id_8hpp" kind="file"><name>build_id.hpp</name>
   </compound>
   <compound refid="can_8hpp" kind="file"><name>can.hpp</name>
   </compound>
@@ -7873,6 +7875,9 @@
   </compound>
   <compound refid="group__modm__architecture__block__device" kind="group"><name>modm_architecture_block_device</name>
   </compound>
+  <compound refid="group__modm__architecture__build__id" kind="group"><name>modm_architecture_build_id</name>
+    <member refid="group__modm__architecture__build__id_1gaac7e7e205bbced786315f5f5e7d165cf" kind="function"><name>build_id</name></member>
+  </compound>
   <compound refid="group__modm__architecture__can" kind="group"><name>modm_architecture_can</name>
   </compound>
   <compound refid="group__modm__architecture__clock" kind="group"><name>modm_architecture_clock</name>
@@ -8044,7 +8049,7 @@
     <member refid="group__modm__math__geometry_1ga4734f4cf28f5ddbcda202dc5663be292" kind="function"><name>toDegree</name></member>
     <member refid="group__modm__math__geometry_1ga443b6b5dbba5177fc4e90894ca576655" kind="function"><name>operator&lt;&lt;</name></member>
     <member refid="group__modm__math__geometry_1gae0dab16035b9f12ce06bed0aa87f8e31" kind="function"><name>operator&lt;&lt;</name></member>
-    <member refid="group__modm__math__geometry_1ga903d98b7e7359bb9fb1a61221582a663" kind="function"><name>operator *</name></member>
+    <member refid="group__modm__math__geometry_1gab1734ee8a7599e982c08365302ced3ed" kind="function"><name>operator*</name></member>
     <member refid="group__modm__math__geometry_1ga3c7c922ac55292dc07237d75b17dc2b8" kind="function"><name>operator/</name></member>
   </compound>
   <compound refid="group__modm__math__interpolation" kind="group"><name>modm_math_interpolation</name>
@@ -8333,81 +8338,79 @@
   </compound>
   <compound refid="bug" kind="page"><name>bug</name>
   </compound>
-  <compound refid="dir_a17bb408d1f46bb18885c2e01f4325d7" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc</name>
+  <compound refid="dir_a17bb408d1f46bb18885c2e01f4325d7" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc</name>
   </compound>
-  <compound refid="dir_950f61fe10323b4b6d7a075744db6885" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/allocator</name>
+  <compound refid="dir_950f61fe10323b4b6d7a075744db6885" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils/allocator</name>
   </compound>
-  <compound refid="dir_a92a5815b93acd5da051ab9f12278b5f" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture</name>
+  <compound refid="dir_a92a5815b93acd5da051ab9f12278b5f" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture</name>
   </compound>
-  <compound refid="dir_b1987c2f9aaf2ef7c47431031e532890" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic</name>
+  <compound refid="dir_b1987c2f9aaf2ef7c47431031e532890" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic</name>
   </compound>
-  <compound refid="dir_d8f0a95f41d4a72e3ea644113ce792ee" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can</name>
+  <compound refid="dir_d8f0a95f41d4a72e3ea644113ce792ee" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can</name>
   </compound>
-  <compound refid="dir_e957c3dce7b2168f7223f3531514ff20" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock</name>
+  <compound refid="dir_e957c3dce7b2168f7223f3531514ff20" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock</name>
   </compound>
-  <compound refid="dir_0710a2e1f6a75afa65329b9f687ea1e7" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container</name>
+  <compound refid="dir_0710a2e1f6a75afa65329b9f687ea1e7" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container</name>
   </compound>
-  <compound refid="dir_2d38556a0f7c7d07404778aab73d9574" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/core</name>
+  <compound refid="dir_2d38556a0f7c7d07404778aab73d9574" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/core</name>
   </compound>
-  <compound refid="dir_cade65d2ff05216884d5a4a604fac9c3" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug</name>
+  <compound refid="dir_cade65d2ff05216884d5a4a604fac9c3" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug</name>
   </compound>
-  <compound refid="dir_caf434cd0cc634da803ab3b40811fcd6" kind="dir"><name>dox</name>
+  <compound refid="dir_62207aa8b677f367834d67a0159aafde" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver</name>
   </compound>
-  <compound refid="dir_62207aa8b677f367834d67a0159aafde" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver</name>
+  <compound refid="dir_1e6bf357bf9089acee2727792522d1a4" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver</name>
   </compound>
-  <compound refid="dir_1e6bf357bf9089acee2727792522d1a4" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver</name>
+  <compound refid="dir_f21a4082c17cebd5c4b3dd4c3bbf15e4" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter</name>
   </compound>
-  <compound refid="dir_f21a4082c17cebd5c4b3dd4c3bbf15e4" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter</name>
+  <compound refid="dir_e0c3c843943b85c22c28841fdeaeb2e3" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry</name>
   </compound>
-  <compound refid="dir_e0c3c843943b85c22c28841fdeaeb2e3" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry</name>
+  <compound refid="dir_67aac43696f40d80973333444e9660ae" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio</name>
   </compound>
-  <compound refid="dir_67aac43696f40d80973333444e9660ae" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio</name>
+  <compound refid="dir_ef9f93f92fea83b620936b26a651d34c" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap</name>
   </compound>
-  <compound refid="dir_ef9f93f92fea83b620936b26a651d34c" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap</name>
+  <compound refid="dir_eec840c4aeabbca33859fe897b399a0e" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c</name>
   </compound>
-  <compound refid="dir_eec840c4aeabbca33859fe897b399a0e" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c</name>
+  <compound refid="dir_e5305a87848a4f2cac771e1f64a3636a" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/imp</name>
   </compound>
-  <compound refid="dir_e5305a87848a4f2cac771e1f64a3636a" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/imp</name>
+  <compound refid="dir_df1d2cf967d0fa09a2b8785420459712" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface</name>
   </compound>
-  <compound refid="dir_df1d2cf967d0fa09a2b8785420459712" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface</name>
+  <compound refid="dir_f91c685414855b45085b1448e0f51377" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation</name>
   </compound>
-  <compound refid="dir_f91c685414855b45085b1448e0f51377" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation</name>
+  <compound refid="dir_1bb2f6244fff8462e1b8b903685d9c5b" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io</name>
   </compound>
-  <compound refid="dir_1bb2f6244fff8462e1b8b903685d9c5b" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io</name>
+  <compound refid="dir_f8969be9240bd4cb9b1715ce837249d8" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger</name>
   </compound>
-  <compound refid="dir_f8969be9240bd4cb9b1715ce837249d8" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger</name>
+  <compound refid="dir_77ee7293d278d423e07820c877d0e1b4" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math</name>
   </compound>
-  <compound refid="dir_77ee7293d278d423e07820c877d0e1b4" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math</name>
+  <compound refid="dir_8a48607f40774c82a4d4fc5560386f89" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm</name>
   </compound>
-  <compound refid="dir_8a48607f40774c82a4d4fc5560386f89" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm</name>
+  <compound refid="dir_b37f9af6e752ee950a93bbcf6abf9065" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform</name>
   </compound>
-  <compound refid="dir_b37f9af6e752ee950a93bbcf6abf9065" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform</name>
+  <compound refid="dir_5149a32400ef567256626bcb8dd19bac" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure</name>
   </compound>
-  <compound refid="dir_5149a32400ef567256626bcb8dd19bac" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure</name>
+  <compound refid="dir_a00668fa6c213e555d4267bf9cc9a946" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing</name>
   </compound>
-  <compound refid="dir_a00668fa6c213e555d4267bf9cc9a946" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing</name>
+  <compound refid="dir_1aeeeab3acd468ff789512d12cb323fb" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread</name>
   </compound>
-  <compound refid="dir_1aeeeab3acd468ff789512d12cb323fb" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread</name>
+  <compound refid="dir_f96c44ffb614e16ffe4bb15d0b48602a" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable</name>
   </compound>
-  <compound refid="dir_f96c44ffb614e16ffe4bb15d0b48602a" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable</name>
+  <compound refid="dir_f7ef2fa10efaa4886c50b328776c04e2" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/saturated</name>
   </compound>
-  <compound refid="dir_f7ef2fa10efaa4886c50b328776c04e2" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/saturated</name>
+  <compound refid="dir_b2d1ae71ef267dde258e99663ebfc9dc" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi</name>
   </compound>
-  <compound refid="dir_b2d1ae71ef267dde258e99663ebfc9dc" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi</name>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src</name>
   </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src</name>
+  <compound refid="dir_fa857bb8b509b904ac284538c637123d" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style</name>
   </compound>
-  <compound refid="dir_fa857bb8b509b904ac284538c637123d" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style</name>
+  <compound refid="dir_f4d4451abd0b10316e10836c533eb5fe" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer</name>
   </compound>
-  <compound refid="dir_f4d4451abd0b10316e10836c533eb5fe" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer</name>
+  <compound refid="dir_418a3c94520e84ae81295dda7b9a34d3" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer</name>
   </compound>
-  <compound refid="dir_418a3c94520e84ae81295dda7b9a34d3" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer</name>
+  <compound refid="dir_3e14cdd6aeecccffc4d4117097500622" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart</name>
   </compound>
-  <compound refid="dir_3e14cdd6aeecccffc4d4117097500622" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/uart</name>
+  <compound refid="dir_a03e4cce18256d22bfbc509c49c95e45" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils</name>
   </compound>
-  <compound refid="dir_a03e4cce18256d22bfbc509c49c95e45" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils</name>
-  </compound>
-  <compound refid="dir_bde41730d9b79a359bd74ac2207b6115" kind="dir"><name>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils</name>
+  <compound refid="dir_bde41730d9b79a359bd74ac2207b6115" kind="dir"><name>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils</name>
   </compound>
   <compound refid="indexpage" kind="page"><name>index</name>
   </compound>

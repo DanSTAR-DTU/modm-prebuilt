@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="matrix_8hpp" kind="file" language="C++">
     <compoundname>matrix.hpp</compoundname>
     <includes local="no">cmath</includes>
@@ -7,266 +7,266 @@
     <includes local="no">stdint.h</includes>
     <includes refid="iostream_8hpp" local="no">modm/io/iostream.hpp</includes>
     <includes local="yes">matrix_impl.hpp</includes>
-    <includedby refid="vector_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp</includedby>
-    <includedby refid="lu__decomposition_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp</includedby>
-    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <includedby refid="vector_8hpp" local="no">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp</includedby>
+    <includedby refid="lu__decomposition_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
     <incdepgraph>
-      <node id="3517">
+      <node id="3529">
         <label>stdarg.h</label>
       </node>
-      <node id="3509">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp</label>
-        <link refid="matrix_8hpp"/>
-        <childnode refid="3510" relation="include">
-        </childnode>
-        <childnode refid="3511" relation="include">
-        </childnode>
-        <childnode refid="3512" relation="include">
-        </childnode>
-        <childnode refid="3513" relation="include">
-        </childnode>
-        <childnode refid="3522" relation="include">
-        </childnode>
-      </node>
-      <node id="3512">
-        <label>stdint.h</label>
-      </node>
-      <node id="3510">
-        <label>cmath</label>
-      </node>
-      <node id="3515">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="3516" relation="include">
-        </childnode>
-      </node>
-      <node id="3511">
-        <label>string.h</label>
-      </node>
-      <node id="3522">
-        <label>matrix_impl.hpp</label>
-      </node>
-      <node id="3514">
-        <label>cstddef</label>
-      </node>
-      <node id="3516">
+      <node id="3528">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="3521">
-        <label>iodevice_wrapper.hpp</label>
-        <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="3512" relation="include">
-        </childnode>
-        <childnode refid="3520" relation="include">
-        </childnode>
+      <node id="3524">
+        <label>stdint.h</label>
       </node>
-      <node id="3519">
-        <label>type_traits</label>
-      </node>
-      <node id="3520">
+      <node id="3532">
         <label>iodevice.hpp</label>
         <link refid="iodevice_8hpp"/>
       </node>
-      <node id="3513">
-        <label>modm/io/iostream.hpp</label>
-        <link refid="iostream_8hpp"/>
-        <childnode refid="3514" relation="include">
-        </childnode>
-        <childnode refid="3515" relation="include">
-        </childnode>
-        <childnode refid="3517" relation="include">
-        </childnode>
-        <childnode refid="3518" relation="include">
-        </childnode>
-        <childnode refid="3519" relation="include">
-        </childnode>
-        <childnode refid="3520" relation="include">
-        </childnode>
-        <childnode refid="3521" relation="include">
-        </childnode>
+      <node id="3522">
+        <label>cmath</label>
       </node>
-      <node id="3518">
-        <label>inttypes.h</label>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="3530">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp</label>
-        <link refid="polygon__2d_8hpp"/>
-        <childnode refid="3529" relation="include">
-        </childnode>
-        <childnode refid="3531" relation="include">
-        </childnode>
-        <childnode refid="3525" relation="include">
-        </childnode>
-        <childnode refid="3527" relation="include">
-        </childnode>
-        <childnode refid="3528" relation="include">
-        </childnode>
-      </node>
-      <node id="3523">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp</label>
-        <link refid="matrix_8hpp"/>
+      <node id="3533">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
         <childnode refid="3524" relation="include">
         </childnode>
-        <childnode refid="3538" relation="include">
-        </childnode>
-        <childnode refid="3528" relation="include">
+        <childnode refid="3532" relation="include">
         </childnode>
       </node>
-      <node id="3537">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp</label>
-        <link refid="location__2d_8hpp"/>
+      <node id="3525">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="3526" relation="include">
+        </childnode>
         <childnode refid="3527" relation="include">
         </childnode>
-        <childnode refid="3528" relation="include">
+        <childnode refid="3529" relation="include">
         </childnode>
-      </node>
-      <node id="3524">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp</label>
-        <link refid="vector_8hpp"/>
-        <childnode refid="3525" relation="include">
+        <childnode refid="3530" relation="include">
+        </childnode>
+        <childnode refid="3531" relation="include">
         </childnode>
         <childnode refid="3532" relation="include">
         </childnode>
         <childnode refid="3533" relation="include">
         </childnode>
+      </node>
+      <node id="3527">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="3528" relation="include">
+        </childnode>
+      </node>
+      <node id="3523">
+        <label>string.h</label>
+      </node>
+      <node id="3534">
+        <label>matrix_impl.hpp</label>
+      </node>
+      <node id="3526">
+        <label>cstddef</label>
+      </node>
+      <node id="3521">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp</label>
+        <link refid="matrix_8hpp"/>
+        <childnode refid="3522" relation="include">
+        </childnode>
+        <childnode refid="3523" relation="include">
+        </childnode>
+        <childnode refid="3524" relation="include">
+        </childnode>
+        <childnode refid="3525" relation="include">
+        </childnode>
         <childnode refid="3534" relation="include">
-        </childnode>
-        <childnode refid="3535" relation="include">
-        </childnode>
-        <childnode refid="3536" relation="include">
-        </childnode>
-        <childnode refid="3526" relation="include">
-        </childnode>
-        <childnode refid="3529" relation="include">
-        </childnode>
-        <childnode refid="3531" relation="include">
-        </childnode>
-        <childnode refid="3537" relation="include">
-        </childnode>
-        <childnode refid="3527" relation="include">
-        </childnode>
-        <childnode refid="3538" relation="include">
-        </childnode>
-        <childnode refid="3528" relation="include">
-        </childnode>
-      </node>
-      <node id="3535">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp</label>
-        <link refid="vector4_8hpp"/>
-        <childnode refid="3524" relation="include">
-        </childnode>
-        <childnode refid="3528" relation="include">
-        </childnode>
-      </node>
-      <node id="3533">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp</label>
-        <link refid="vector2_8hpp"/>
-        <childnode refid="3524" relation="include">
-        </childnode>
-        <childnode refid="3530" relation="include">
-        </childnode>
-        <childnode refid="3528" relation="include">
         </childnode>
       </node>
       <node id="3531">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/ray_2d.hpp</label>
-        <link refid="ray__2d_8hpp"/>
-        <childnode refid="3530" relation="include">
+        <label>type_traits</label>
+      </node>
+      <node id="3530">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3540">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
+        <link refid="math_8hpp"/>
+      </node>
+      <node id="3538">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/line_2d.hpp</label>
+        <link refid="line__2d_8hpp"/>
+        <childnode refid="3537" relation="include">
         </childnode>
-        <childnode refid="3528" relation="include">
+        <childnode refid="3539" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
         </childnode>
       </node>
-      <node id="3534">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp</label>
-        <link refid="vector3_8hpp"/>
-        <childnode refid="3524" relation="include">
-        </childnode>
-        <childnode refid="3528" relation="include">
+      <node id="3550">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp</label>
+        <link refid="lu__decomposition_8hpp"/>
+        <childnode refid="3540" relation="include">
         </childnode>
       </node>
-      <node id="3532">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp</label>
+      <node id="3542">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp</label>
+        <link refid="polygon__2d_8hpp"/>
+        <childnode refid="3541" relation="include">
+        </childnode>
+        <childnode refid="3543" relation="include">
+        </childnode>
+        <childnode refid="3537" relation="include">
+        </childnode>
+        <childnode refid="3539" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
+        </childnode>
+      </node>
+      <node id="3544">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp</label>
         <link refid="vector1_8hpp"/>
-        <childnode refid="3524" relation="include">
+        <childnode refid="3536" relation="include">
         </childnode>
-        <childnode refid="3528" relation="include">
+        <childnode refid="3540" relation="include">
         </childnode>
       </node>
-      <node id="3529">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/line_segment_2d.hpp</label>
+      <node id="3547">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp</label>
+        <link refid="vector4_8hpp"/>
+        <childnode refid="3536" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
+        </childnode>
+      </node>
+      <node id="3543">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/ray_2d.hpp</label>
+        <link refid="ray__2d_8hpp"/>
+        <childnode refid="3542" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
+        </childnode>
+      </node>
+      <node id="3545">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp</label>
+        <link refid="vector2_8hpp"/>
+        <childnode refid="3536" relation="include">
+        </childnode>
+        <childnode refid="3542" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
+        </childnode>
+      </node>
+      <node id="3537">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp</label>
+        <link refid="circle__2d_8hpp"/>
+        <childnode refid="3538" relation="include">
+        </childnode>
+        <childnode refid="3541" relation="include">
+        </childnode>
+        <childnode refid="3542" relation="include">
+        </childnode>
+        <childnode refid="3543" relation="include">
+        </childnode>
+        <childnode refid="3539" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
+        </childnode>
+      </node>
+      <node id="3546">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp</label>
+        <link refid="vector3_8hpp"/>
+        <childnode refid="3536" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
+        </childnode>
+      </node>
+      <node id="3548">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/point_set_2d.hpp</label>
+        <link refid="point__set__2d_8hpp"/>
+        <childnode refid="3537" relation="include">
+        </childnode>
+        <childnode refid="3538" relation="include">
+        </childnode>
+        <childnode refid="3541" relation="include">
+        </childnode>
+        <childnode refid="3542" relation="include">
+        </childnode>
+        <childnode refid="3543" relation="include">
+        </childnode>
+        <childnode refid="3539" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
+        </childnode>
+      </node>
+      <node id="3541">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/line_segment_2d.hpp</label>
         <link refid="line__segment__2d_8hpp"/>
-        <childnode refid="3525" relation="include">
+        <childnode refid="3537" relation="include">
         </childnode>
-        <childnode refid="3530" relation="include">
+        <childnode refid="3542" relation="include">
         </childnode>
-        <childnode refid="3531" relation="include">
+        <childnode refid="3543" relation="include">
         </childnode>
-        <childnode refid="3527" relation="include">
+        <childnode refid="3539" relation="include">
         </childnode>
-        <childnode refid="3528" relation="include">
+        <childnode refid="3540" relation="include">
         </childnode>
       </node>
       <node id="3536">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/point_set_2d.hpp</label>
-        <link refid="point__set__2d_8hpp"/>
-        <childnode refid="3525" relation="include">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp</label>
+        <link refid="vector_8hpp"/>
+        <childnode refid="3537" relation="include">
         </childnode>
-        <childnode refid="3526" relation="include">
+        <childnode refid="3544" relation="include">
         </childnode>
-        <childnode refid="3529" relation="include">
+        <childnode refid="3545" relation="include">
         </childnode>
-        <childnode refid="3530" relation="include">
+        <childnode refid="3546" relation="include">
         </childnode>
-        <childnode refid="3531" relation="include">
+        <childnode refid="3547" relation="include">
         </childnode>
-        <childnode refid="3527" relation="include">
+        <childnode refid="3548" relation="include">
         </childnode>
-        <childnode refid="3528" relation="include">
+        <childnode refid="3538" relation="include">
+        </childnode>
+        <childnode refid="3541" relation="include">
+        </childnode>
+        <childnode refid="3543" relation="include">
+        </childnode>
+        <childnode refid="3549" relation="include">
+        </childnode>
+        <childnode refid="3539" relation="include">
+        </childnode>
+        <childnode refid="3550" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
         </childnode>
       </node>
-      <node id="3527">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry.hpp</label>
+      <node id="3535">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp</label>
+        <link refid="matrix_8hpp"/>
+        <childnode refid="3536" relation="include">
+        </childnode>
+        <childnode refid="3550" relation="include">
+        </childnode>
+        <childnode refid="3540" relation="include">
+        </childnode>
+      </node>
+      <node id="3539">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry.hpp</label>
         <link refid="geometry_8hpp"/>
-        <childnode refid="3528" relation="include">
+        <childnode refid="3540" relation="include">
         </childnode>
       </node>
-      <node id="3528">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
-        <link refid="math_8hpp"/>
-      </node>
-      <node id="3526">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/line_2d.hpp</label>
-        <link refid="line__2d_8hpp"/>
-        <childnode refid="3525" relation="include">
+      <node id="3549">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp</label>
+        <link refid="location__2d_8hpp"/>
+        <childnode refid="3539" relation="include">
         </childnode>
-        <childnode refid="3527" relation="include">
-        </childnode>
-        <childnode refid="3528" relation="include">
-        </childnode>
-      </node>
-      <node id="3538">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp</label>
-        <link refid="lu__decomposition_8hpp"/>
-        <childnode refid="3528" relation="include">
-        </childnode>
-      </node>
-      <node id="3525">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp</label>
-        <link refid="circle__2d_8hpp"/>
-        <childnode refid="3526" relation="include">
-        </childnode>
-        <childnode refid="3529" relation="include">
-        </childnode>
-        <childnode refid="3530" relation="include">
-        </childnode>
-        <childnode refid="3531" relation="include">
-        </childnode>
-        <childnode refid="3527" relation="include">
-        </childnode>
-        <childnode refid="3528" relation="include">
+        <childnode refid="3540" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -276,6 +276,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp"/>
   </compounddef>
 </doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structmodm_1_1_doubly_linked_list_1_1_node" kind="struct" language="C++" prot="protected">
     <compoundname>modm::DoublyLinkedList::Node</compoundname>
     <includes refid="doubly__linked__list_8hpp" local="no">modm/container/doubly_linked_list.hpp</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="83" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="83" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="83" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmodm_1_1_doubly_linked_list_1_1_node_1a7acf684c58a89bcaae95a4413cee735c" prot="public" static="no" mutable="no">
         <type><ref refid="structmodm_1_1_doubly_linked_list_1_1_node" kindref="compound">Node</ref> *</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="85" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="85" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="85" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmodm_1_1_doubly_linked_list_1_1_node_1abfbedb3d5b84d13bd81f377f616eb81e" prot="public" static="no" mutable="no">
         <type><ref refid="structmodm_1_1_doubly_linked_list_1_1_node" kindref="compound">Node</ref> *</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="86" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="86" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="86" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="86" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -64,7 +64,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="82" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="81" bodyend="87"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" line="82" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/doubly_linked_list.hpp" bodystart="81" bodyend="87"/>
     <listofallmembers>
       <member refid="structmodm_1_1_doubly_linked_list_1_1_node_1abfbedb3d5b84d13bd81f377f616eb81e" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::Node</scope><name>next</name></member>
       <member refid="structmodm_1_1_doubly_linked_list_1_1_node_1a7acf684c58a89bcaae95a4413cee735c" prot="public" virt="non-virtual"><scope>modm::DoublyLinkedList::Node</scope><name>previous</name></member>

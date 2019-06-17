@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacemodm_1_1cortex" kind="namespace" language="C++">
+    <compoundname>modm::cortex</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacemodm_1_1cortex_1a820c134e12c8347270c2d73c5e3af14c" prot="public" static="no">
+        <type>::<ref refid="classmodm_1_1platform_1_1_sys_tick_timer" kindref="compound">modm::platform::SysTickTimer</ref></type>
+        <definition>using modm::cortex::instead = typedef ::modm::platform::SysTickTimer</definition>
+        <argsstring></argsstring>
+        <name>instead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" line="106" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" line="105" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structmodm_1_1platform_1_1_can_filter_1_1_extended_filter_mask_short" kind="struct" language="C++" prot="public">
     <compoundname>modm::platform::CanFilter::ExtendedFilterMaskShort</compoundname>
     <includes refid="can__filter_8hpp" local="no">modm/platform/can/can_filter.hpp</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="213" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="213" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="213" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="213" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -39,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="198" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="198" bodyend="204"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="198" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="198" bodyend="204"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1platform_1_1_can_filter_1_1_extended_filter_mask_short_1acfbe70ad01b5cd8cc881b8f5e399ad6a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -52,18 +52,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="207" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="207" bodyend="210"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="207" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="207" bodyend="210"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Generates a mask for a 29-bit identifier.</para>
-<para><simplesect kind="warning"><para>Uses only the upper 14-bit of the 29-bit mask! The lower 15-bit will be don&apos;t care! </para>
-</simplesect>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="196" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="195" bodyend="214"/>
+<para>Generates a mask for a 29-bit identifier.</para><para><simplesect kind="warning"><para>Uses only the upper 14-bit of the 29-bit mask! The lower 15-bit will be don&apos;t care! </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="196" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="195" bodyend="214"/>
     <listofallmembers>
       <member refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_filter_mask_short_1ac29a40dd44f472685169daa6fe552b80" prot="public" virt="non-virtual"><scope>modm::platform::CanFilter::ExtendedFilterMaskShort</scope><name>ExtendedFilterMaskShort</name></member>
       <member refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_filter_mask_short_1acfbe70ad01b5cd8cc881b8f5e399ad6a" prot="public" virt="non-virtual"><scope>modm::platform::CanFilter::ExtendedFilterMaskShort</scope><name>operator uint16_t</name></member>

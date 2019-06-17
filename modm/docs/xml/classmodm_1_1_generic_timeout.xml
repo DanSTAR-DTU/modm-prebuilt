@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1_generic_timeout" kind="class" language="C++" prot="public">
     <compoundname>modm::GenericTimeout</compoundname>
     <includes refid="timeout_8hpp" local="no">modm/processing/timer/timeout.hpp</includes>
@@ -17,8 +17,7 @@
       </param>
     </templateparamlist>
       <sectiondef kind="private-type">
-      <memberdef kind="enum" id="classmodm_1_1_generic_timeout_1a07e3f8bf458d28127e7e3c339d9681ad" prot="private" static="no" strong="no">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="classmodm_1_1_generic_timeout_1a07e3f8bf458d28127e7e3c339d9681ad" prot="private" static="no">
         <name>InternalState</name>
         <enumvalue id="classmodm_1_1_generic_timeout_1a07e3f8bf458d28127e7e3c339d9681adaf27003664b7137f0c50d8b4c1e9b0549" prot="private">
           <name>STOPPED</name>
@@ -66,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="106" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="104" bodyend="112"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="106" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="104" bodyend="112"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -81,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="114" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="114" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="114" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1_generic_timeout_1a9dd7b5a5c2dfe6ffd87ae778b12cd87e" prot="private" static="no" mutable="yes">
         <type>uint8_t</type>
@@ -94,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="115" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="115" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="115" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="115" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -109,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="115" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="117" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="115" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="117" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -119,13 +118,12 @@
         <argsstring>()</argsstring>
         <name>GenericTimeout</name>
         <briefdescription>
-<para>Creates a stopped timeout. </para>
-        </briefdescription>
+<para>Creates a stopped timeout. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="59" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="59" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_generic_timeout_1aac2f20a7bc3da764788031eb91b249b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -137,13 +135,12 @@
           <declname>time</declname>
         </param>
         <briefdescription>
-<para>Create and start the timeout. </para>
-        </briefdescription>
+<para>Create and start the timeout. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="62" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="62" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_generic_timeout_1a62a42cb1767af5dae3bbb07e2948a602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -155,13 +152,12 @@
           <declname>time</declname>
         </param>
         <briefdescription>
-<para>Set a new timeout value. </para>
-        </briefdescription>
+<para>Set a new timeout value. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="66" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="66" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_generic_timeout_1a1c035e5217e4ab7afc4fc645668acc21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -169,13 +165,12 @@
         <argsstring>()</argsstring>
         <name>stop</name>
         <briefdescription>
-<para>Stops the timer and sets <ref refid="classmodm_1_1_generic_timeout_1ae329c2c1dc61add28a7009739e0dd89e" kindref="member">isStopped()</ref> to <computeroutput>true</computeroutput>, and <ref refid="classmodm_1_1_generic_timeout_1a4164928b549c3b3af2b9d28b42e4f99f" kindref="member">isExpired()</ref> to <computeroutput>false</computeroutput>. </para>
-        </briefdescription>
+<para>Stops the timer and sets <ref refid="classmodm_1_1_generic_timeout_1ae329c2c1dc61add28a7009739e0dd89e" kindref="member">isStopped()</ref> to <computeroutput>true</computeroutput>, and <ref refid="classmodm_1_1_generic_timeout_1a4164928b549c3b3af2b9d28b42e4f99f" kindref="member">isExpired()</ref> to <computeroutput>false</computeroutput>. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="70" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="70" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_generic_timeout_1af1529d56b722a3059a65efe72401d5d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -185,13 +180,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><computeroutput>true</computeroutput> exactly once, after the timeout expired </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> exactly once, after the timeout expired </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="75" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="75" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_generic_timeout_1a1a89bd18de1e51729197cebdf214a7c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>TimestampType::SignedType</type>
@@ -201,13 +194,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>the time until (positive time) or since (negative time) expiration, or 0 if stopped </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para>the time until (positive time) or since (negative time) expiration, or 0 if stopped </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="80" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="80" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_generic_timeout_1abc9bb1952bab28368a6bcacfddba627b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group__modm__processing__timer_1gacc7987b8fe7071d9cd993829ee005298" kindref="member">TimeoutState</ref></type>
@@ -217,13 +208,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>the current state of the timeout </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para>the current state of the timeout </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="85" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="85" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_generic_timeout_1ae329c2c1dc61add28a7009739e0dd89e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -233,13 +222,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if the timeout is stopped, <computeroutput>false</computeroutput> otherwise </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if the timeout is stopped, <computeroutput>false</computeroutput> otherwise </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="89" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="89" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_generic_timeout_1a4164928b549c3b3af2b9d28b42e4f99f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -249,13 +236,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if the timeout has expired, <computeroutput>false</computeroutput> otherwise </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if the timeout has expired, <computeroutput>false</computeroutput> otherwise </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="93" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="93" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_generic_timeout_1ae573e9f83662e634723f239241ee452b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -265,13 +250,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if the timeout is armed (not stopped and not expired), <computeroutput>false</computeroutput> otherwise </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if the timeout is armed (not stopped and not expired), <computeroutput>false</computeroutput> otherwise </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="97" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="97" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -286,39 +269,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="101" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="101" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Generic software timeout class for variable timebase and timestamp width.</para>
-<para><simplesect kind="see"><para><ref refid="classmodm_1_1_generic_periodic_timer" kindref="compound">GenericPeriodicTimer</ref></para>
-</simplesect>
+<para>Generic software timeout class for variable timebase and timestamp width.</para><para><simplesect kind="see"><para><ref refid="classmodm_1_1_generic_periodic_timer" kindref="compound">GenericPeriodicTimer</ref></para></simplesect>
 <parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername><ref refid="classmodm_1_1_clock" kindref="compound">Clock</ref></parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Used clock which inherits from <ref refid="classmodm_1_1_clock" kindref="compound">modm::Clock</ref>, may have a variable timebase. </para>
-</parameterdescription>
+<para>Used clock which inherits from <ref refid="classmodm_1_1_clock" kindref="compound">modm::Clock</ref>, may have a variable timebase. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>TimestampType</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Used timestamp which is compatible with the chosen <ref refid="classmodm_1_1_clock" kindref="compound">Clock</ref>.</para>
-</parameterdescription>
+<para>Used timestamp which is compatible with the chosen <ref refid="classmodm_1_1_clock" kindref="compound">Clock</ref>.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="author"><para>Fabian Greif </para>
-</simplesect>
-<simplesect kind="author"><para>Niklas Hauser </para>
-</simplesect>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="56" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="55" bodyend="119"/>
+<simplesect kind="author"><para>Fabian Greif </para></simplesect>
+<simplesect kind="author"><para>Niklas Hauser </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="56" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="55" bodyend="119"/>
     <listofallmembers>
       <member refid="classmodm_1_1_generic_timeout_1a07e3f8bf458d28127e7e3c339d9681ada7723ef7f959f6c9b3297255ff2b794e8" prot="private" virt="non-virtual"><scope>modm::GenericTimeout</scope><name>ARMED</name></member>
       <member refid="classmodm_1_1_generic_timeout_1abafd1c99a3c6987fcd9eb9be73377a16" prot="private" virt="non-virtual"><scope>modm::GenericTimeout</scope><name>checkExpiration</name></member>

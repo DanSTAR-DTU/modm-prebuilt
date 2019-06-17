@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1_block_device" kind="class" language="C++" prot="public">
     <compoundname>modm::BlockDevice</compoundname>
     <includes refid="block__device_8hpp" local="no">modm/architecture/interface/block_device.hpp</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="37" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="37" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="37" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1_block_device_1ae290fe8fd3c4afe4b8d8e3daaf4f08e0" prot="public" static="no">
         <type>uint32_t</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="38" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="38" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="38" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="38" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -41,12 +41,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Minimum block sizes for block device operations</para>
-<para>Most persistent storage devices require <computeroutput><ref refid="classmodm_1_1_block_device_1a979f4853d4ea942256cf8b2be917a6ef" kindref="member">program()</ref></computeroutput>, <computeroutput><ref refid="classmodm_1_1_block_device_1a41ecd6009191ccb661f22f06bf966b9c" kindref="member">erase()</ref></computeroutput> and sometimes <computeroutput><ref refid="classmodm_1_1_block_device_1ad7727a5d33f52010157cbc9647fdb1d0" kindref="member">read()</ref></computeroutput> operations to be executed on fixed sized blocks. </para>
-        </detaileddescription>
+<para>Minimum block sizes for block device operations</para><para>Most persistent storage devices require <computeroutput><ref refid="classmodm_1_1_block_device_1a979f4853d4ea942256cf8b2be917a6ef" kindref="member">program()</ref></computeroutput>, <computeroutput><ref refid="classmodm_1_1_block_device_1a41ecd6009191ccb661f22f06bf966b9c" kindref="member">erase()</ref></computeroutput> and sometimes <computeroutput><ref refid="classmodm_1_1_block_device_1ad7727a5d33f52010157cbc9647fdb1d0" kindref="member">read()</ref></computeroutput> operations to be executed on fixed sized blocks. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="101" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="101" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="101" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="101" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1_block_device_1aed5ae2b05b68d134e7714b429b3094a4" prot="public" static="yes" mutable="no">
         <type>constexpr <ref refid="classmodm_1_1_block_device_1ae290fe8fd3c4afe4b8d8e3daaf4f08e0" kindref="member">bd_size_t</ref></type>
@@ -60,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="102" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="102" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="102" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="102" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1_block_device_1a19bb8e6f488c95595a13ec2a1748a9b3" prot="public" static="yes" mutable="no">
         <type>constexpr <ref refid="classmodm_1_1_block_device_1ae290fe8fd3c4afe4b8d8e3daaf4f08e0" kindref="member">bd_size_t</ref></type>
@@ -74,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="103" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="103" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="103" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1_block_device_1a1a066b86b7d91a6f87069bb9b3c1908b" prot="public" static="yes" mutable="no">
         <type>constexpr <ref refid="classmodm_1_1_block_device_1ae290fe8fd3c4afe4b8d8e3daaf4f08e0" kindref="member">bd_size_t</ref></type>
@@ -88,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="104" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="104" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="104" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="104" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -103,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="33" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="33" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_block_device_1a05749f18c2430cf32b834276b4ac3663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -119,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="34" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="34" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_block_device_1a4b720ce2fb854ba57b3a5803b0264512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_block_device" kindref="compound">BlockDevice</ref> &amp;</type>
@@ -135,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="35" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="35" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_block_device_1ab7d0dc7190ec2036973fca153b2faeb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -143,13 +141,12 @@
         <argsstring>()</argsstring>
         <name>initialize</name>
         <briefdescription>
-<para>Initializes the storage hardware. </para>
-        </briefdescription>
+<para>Initializes the storage hardware. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="44" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="44" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_block_device_1a1c9678629042c5cdaa570df2a8a47979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -157,13 +154,12 @@
         <argsstring>()</argsstring>
         <name>deinitialize</name>
         <briefdescription>
-<para>Deinitializes the storage hardware. </para>
-        </briefdescription>
+<para>Deinitializes the storage hardware. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="48" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="48" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_block_device_1ad7727a5d33f52010157cbc9647fdb1d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -185,39 +181,33 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Read data from one or more blocks</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Read data from one or more blocks</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Buffer to read data into </para>
-</parameterdescription>
+<para>Buffer to read data into </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>address</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Address to begin reading from </para>
-</parameterdescription>
+<para>Address to begin reading from </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Size to read in bytes (multiple of read block size) </para>
-</parameterdescription>
+<para>Size to read in bytes (multiple of read block size) </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>True on success </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>True on success </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="58" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="58" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_block_device_1a979f4853d4ea942256cf8b2be917a6ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -239,40 +229,33 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Program blocks with data</para>
-<para>Any block has to be erased prior to being programmed</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Program blocks with data</para><para>Any block has to be erased prior to being programmed</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Buffer of data to write to blocks </para>
-</parameterdescription>
+<para>Buffer of data to write to blocks </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>address</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Address of first block to begin writing to </para>
-</parameterdescription>
+<para>Address of first block to begin writing to </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Size to write in bytes (multiple of read block size) </para>
-</parameterdescription>
+<para>Size to write in bytes (multiple of read block size) </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>True on success </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>True on success </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="70" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="70" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_block_device_1a41ecd6009191ccb661f22f06bf966b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -290,32 +273,26 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Erase blocks</para>
-<para>The state of an erased block is undefined until it has been programmed</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Erase blocks</para><para>The state of an erased block is undefined until it has been programmed</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>address</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Address of block to begin erasing </para>
-</parameterdescription>
+<para>Address of block to begin erasing </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Size to erase in bytes (multiple of read block size) </para>
-</parameterdescription>
+<para>Size to erase in bytes (multiple of read block size) </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>True on success </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>True on success </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="81" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="81" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_block_device_1a22fef718da8c109d842b73b2ae029f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -337,52 +314,41 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Writes data to one or more blocks after erasing them</para>
-<para>The blocks are erased proir to being programmed</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Writes data to one or more blocks after erasing them</para><para>The blocks are erased proir to being programmed</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Buffer of data to write to blocks </para>
-</parameterdescription>
+<para>Buffer of data to write to blocks </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>address</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Address of first block to begin writing to </para>
-</parameterdescription>
+<para>Address of first block to begin writing to </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Size to write in bytes (multiple of read block size) </para>
-</parameterdescription>
+<para>Size to write in bytes (multiple of read block size) </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>True on success </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>True on success </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="93" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="93" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Interface of a Block Device</para>
-<para>Access to storage devices like flash chips</para>
-<para><simplesect kind="author"><para>Raphael Lehmann </para>
-</simplesect>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="31" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="30" bodyend="107"/>
+<para>Interface of a Block Device</para><para>Access to storage devices like flash chips</para><para><simplesect kind="author"><para>Raphael Lehmann </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" line="31" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp" bodystart="30" bodyend="107"/>
     <listofallmembers>
       <member refid="classmodm_1_1_block_device_1ae5801b18bcaf9ad1e1f82f92afa77976" prot="public" virt="non-virtual"><scope>modm::BlockDevice</scope><name>bd_address_t</name></member>
       <member refid="classmodm_1_1_block_device_1ae290fe8fd3c4afe4b8d8e3daaf4f08e0" prot="public" virt="non-virtual"><scope>modm::BlockDevice</scope><name>bd_size_t</name></member>

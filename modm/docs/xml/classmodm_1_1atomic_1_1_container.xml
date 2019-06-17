@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1atomic_1_1_container" kind="class" language="C++" prot="public">
     <compoundname>modm::atomic::Container</compoundname>
     <includes refid="architecture_2driver_2atomic_2container_8hpp" local="no">modm/architecture/driver/atomic/container.hpp</includes>
@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="153" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="153" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="153" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="153" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="77" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="77" bodyend="80"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="77" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="77" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1atomic_1_1_container_1af504700b0af7e156d54547566b9699da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="83" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="83" bodyend="87"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="83" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="83" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1atomic_1_1_container_1aa6ad700d2cdae5cbcd8129bd65f7891f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>T</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="90" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="90" bodyend="94"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="90" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="90" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1atomic_1_1_container_1aaefcf4957ba3c024977fb6c4d9edae79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>T</type>
@@ -84,11 +84,9 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Write a new value to the wrapped object and return the old value. </para>
-        </briefdescription>
+<para>Write a new value to the wrapped object and return the old value. </para>        </briefdescription>
         <detaileddescription>
-<para>This function is needed quite often when exchanging flags between interrupt routines and the main-loop.</para>
-<para><programlisting><codeline><highlight class="normal">modm::atomic::Container&lt;uint8_t&gt;<sp/>isrCounter;</highlight></codeline>
+<para>This function is needed quite often when exchanging flags between interrupt routines and the main-loop.</para><para><programlisting><codeline><highlight class="normal">modm::atomic::Container&lt;uint8_t&gt;<sp/>isrCounter;</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">ISR()<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
@@ -100,12 +98,10 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>counter<sp/>+=<sp/>isrCounter.swap(0);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting></para>
-<para>The same behavior for boolean values is provide by <ref refid="classmodm_1_1atomic_1_1_flag" kindref="compound">modm::atomic::Flag()</ref> </para>
-        </detaileddescription>
+</programlisting></para><para>The same behavior for boolean values is provide by <ref refid="classmodm_1_1atomic_1_1_flag" kindref="compound">modm::atomic::Flag()</ref> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="122" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="122" bodyend="130"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="122" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="122" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1atomic_1_1_container_1a958d9f79e98af843f4395d0a2eb56789" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>T &amp;</type>
@@ -113,18 +109,14 @@
         <argsstring>()</argsstring>
         <name>directAccess</name>
         <briefdescription>
-<para>Get direct access to the object. </para>
-        </briefdescription>
+<para>Get direct access to the object. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Reference to the object </para>
-</simplesect>
-<simplesect kind="warning"><para>If the object is accessed through this function the operations are not atomic! This might be useful inside a interrupt context where no atomic access is necessary. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para>Reference to the object </para></simplesect>
+<simplesect kind="warning"><para>If the object is accessed through this function the operations are not atomic! This might be useful inside a interrupt context where no atomic access is necessary. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="142" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="142" bodyend="145"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="142" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="142" bodyend="145"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -142,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="148" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="148" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1atomic_1_1_container_1a3942df1b43565236268b925d61ea0480" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1atomic_1_1_container" kindref="compound">Container</ref> &amp;</type>
@@ -158,16 +150,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="151" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="151" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Atomic access to objects. </para>
-    </briefdescription>
+<para>Atomic access to objects. </para>    </briefdescription>
     <detaileddescription>
-<para>The atomic container wraps objects and provides atomic access to them. This comes in handy when simple objects are accessed by an interrupt and the main program. The container provides secure access without much work in this case.</para>
-<para><simplesect kind="warning"><para>This class should be used with precaution because the objects are copied for every access.</para>
-</simplesect>
+<para>The atomic container wraps objects and provides atomic access to them. This comes in handy when simple objects are accessed by an interrupt and the main program. The container provides secure access without much work in this case.</para><para><simplesect kind="warning"><para>This class should be used with precaution because the objects are copied for every access.</para></simplesect>
 Example: <programlisting><codeline><highlight class="normal">modm::atomic::Containter&lt;uint32_t&gt;<sp/>data;</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">//<sp/>interrupt<sp/>routine</highlight></codeline>
@@ -179,21 +168,14 @@ Example: <programlisting><codeline><highlight class="normal">modm::atomic::Conta
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>localData<sp/>=<sp/>data.get();</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting></para>
-<para>If the interrupt routine is not interruptible (this is the default for the ATmega, but not for the ATxmega!) no atomic access is needed then: <programlisting><codeline><highlight class="normal">modm::atomic::Containter&lt;uint32_t&gt;<sp/>data;</highlight></codeline>
+</programlisting></para><para>If the interrupt routine is not interruptible (this is the default for the ATmega, but not for the ATxmega!) no atomic access is needed then: <programlisting><codeline><highlight class="normal">modm::atomic::Containter&lt;uint32_t&gt;<sp/>data;</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">ISR()<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data.directAccess()<sp/>=<sp/>123;</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting></para>
-<para>This will slightly faster because no lock needs to be created.</para>
-<para>If the object is big or a lot of accessed one after another are done, consider dropping this class and create critical sections for the access by yourself with <ref refid="classmodm_1_1atomic_1_1_lock" kindref="compound">modm::atomic::Lock</ref>.</para>
-<para>This can be a lot faster because the object don&apos;t need to be copied as it is the case here!</para>
-<para><simplesect kind="author"><para>Fabian Greif </para>
-</simplesect>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="75" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="74" bodyend="154"/>
+</programlisting></para><para>This will slightly faster because no lock needs to be created.</para><para>If the object is big or a lot of accessed one after another are done, consider dropping this class and create critical sections for the access by yourself with <ref refid="classmodm_1_1atomic_1_1_lock" kindref="compound">modm::atomic::Lock</ref>.</para><para>This can be a lot faster because the object don&apos;t need to be copied as it is the case here!</para><para><simplesect kind="author"><para>Fabian Greif </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="75" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" bodystart="74" bodyend="154"/>
     <listofallmembers>
       <member refid="classmodm_1_1atomic_1_1_container_1acb435f0916c7695d3f5a673069aede2a" prot="public" virt="non-virtual"><scope>modm::atomic::Container</scope><name>Container</name></member>
       <member refid="classmodm_1_1atomic_1_1_container_1a062cf5af4e622d4a55697ae7b2c78c70" prot="private" virt="non-virtual"><scope>modm::atomic::Container</scope><name>Container</name></member>

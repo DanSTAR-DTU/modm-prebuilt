@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1log_1_1_std_colour" kind="class" language="C++" prot="public">
     <compoundname>modm::log::StdColour</compoundname>
     <basecompoundref refid="classmodm_1_1log_1_1_style" prot="public" virt="non-virtual">modm::log::Style&lt; STYLE &gt;</basecompoundref>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="50" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="50" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1log_1_1_std_colour_1afccb1113cac2f5b8510a4daddc6b3438" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="52" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="52" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1log_1_1_std_colour_1a9e53e140381fa52669aa04aa79311645" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="55" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="55" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1log_1_1_std_colour_1a4acfa5923f6199d28d131f142a32e5be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="57" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="57" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1log_1_1_std_colour_1ac2f5d09e5170e25fef3ccb84f873f9bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -99,13 +99,12 @@
           <declname>c</declname>
         </param>
         <briefdescription>
-<para>Write one char to the sink. </para>
-        </briefdescription>
+<para>Write one char to the sink. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="61" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="61" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1log_1_1_std_colour_1a49089b3be814b3ac933ff921f906d83f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -117,13 +116,12 @@
           <declname>s</declname>
         </param>
         <briefdescription>
-<para>Write a string that terminates with <computeroutput>&apos;\0&apos;</computeroutput> to the sink. </para>
-        </briefdescription>
+<para>Write a string that terminates with <computeroutput>&apos;\0&apos;</computeroutput> to the sink. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="65" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="65" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1log_1_1_std_colour_1af852ceee3a760a2a32f3f069e51bde64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -131,13 +129,12 @@
         <argsstring>()</argsstring>
         <name>flush</name>
         <briefdescription>
-<para>The message is complete and can be written/send/displayed. </para>
-        </briefdescription>
+<para>The message is complete and can be written/send/displayed. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="69" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="69" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -152,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="73" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="73" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1log_1_1_std_colour_1a365642f46cd9ea5793f3c190d2a8c446" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const char *</type>
@@ -165,19 +162,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="76" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="76" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>This style colours the given stream in the color given by the template argument. </para>
-    </briefdescription>
+<para>This style colours the given stream in the color given by the template argument. </para>    </briefdescription>
     <detaileddescription>
-<para><simplesect kind="see"><para><ulink url="http://mathias-kettner.de/lw_farbige_ausgabe_auf_der_konsole.html">http://mathias-kettner.de/lw_farbige_ausgabe_auf_der_konsole.html</ulink></para>
-</simplesect>
-<simplesect kind="author"><para>Martin Rosekeit <ulink url="mailto:martin.rosekeit@rwth-aachen.de">martin.rosekeit@rwth-aachen.de</ulink> </para>
-</simplesect>
-</para>
-    </detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://mathias-kettner.de/lw_farbige_ausgabe_auf_der_konsole.html">http://mathias-kettner.de/lw_farbige_ausgabe_auf_der_konsole.html</ulink></para></simplesect>
+<simplesect kind="author"><para>Martin Rosekeit <ulink url="mailto:martin.rosekeit@rwth-aachen.de">martin.rosekeit@rwth-aachen.de</ulink> </para></simplesect>
+</para>    </detaileddescription>
     <inheritancegraph>
       <node id="1599">
         <label>modm::log::Style&lt; STYLE &gt;</label>
@@ -202,7 +195,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="48" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" bodystart="47" bodyend="77"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" line="48" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style/std_colour.hpp" bodystart="47" bodyend="77"/>
     <listofallmembers>
       <member refid="classmodm_1_1log_1_1_std_colour_1af852ceee3a760a2a32f3f069e51bde64" prot="public" virt="non-virtual"><scope>modm::log::StdColour</scope><name>flush</name></member>
       <member refid="classmodm_1_1log_1_1_std_colour_1a365642f46cd9ea5793f3c190d2a8c446" prot="private" virt="non-virtual"><scope>modm::log::StdColour</scope><name>getBackgroundColour</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__modm__architecture__gpio" kind="group">
     <compoundname>modm_architecture_gpio</compoundname>
     <title>General Purpose Input/Output</title>
@@ -11,12 +11,8 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>GPIOs are modeled as individual classes with an interface consisting out of a common set of static methods.</para>
-<para><heading level="2">Using GPIOs</heading>
-</para>
-<para>These classes are used to create architecture independent definitions for hardware pins which then can be used as template parameters for miscellaneous device drivers.</para>
-<para>Example of a platform-independent blinking light:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="platform_8hpp" kindref="compound">modm/platform.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<para>GPIOs are modeled as individual classes with an interface consisting out of a common set of static methods.</para><para><heading level="2">Using GPIOs</heading>
+</para><para>These classes are used to create architecture independent definitions for hardware pins which then can be used as template parameters for miscellaneous device drivers.</para><para>Example of a platform-independent blinking light:</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="platform_8hpp" kindref="compound">modm/platform.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Led<sp/>=<sp/>GpioOutputB0;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -28,9 +24,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Led::toggle();</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__modm__architecture__delay_1gacf0606c81a2e71403a44a768b16e5268" kindref="member">modm::delayMilliseconds</ref>(500);</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting></para>
-<para>You can use the common definitions of <computeroutput><ref refid="structmodm_1_1_gpio" kindref="compound">modm::Gpio</ref></computeroutput> to express your intention for setting a pin. However, you can also use anything that casts to <computeroutput>bool</computeroutput>.</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="normal">Led::set(<ref refid="structmodm_1_1_gpio_1a17454096f07c8ae16d603ff46ad53c6a" kindref="member">modm::Gpio::High</ref>);<sp/></highlight><highlight class="comment">//<sp/>Turns<sp/>Led<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+</programlisting></para><para>You can use the common definitions of <computeroutput><ref refid="structmodm_1_1_gpio" kindref="compound">modm::Gpio</ref></computeroutput> to express your intention for setting a pin. However, you can also use anything that casts to <computeroutput>bool</computeroutput>.</para><para><programlisting><codeline><highlight class="normal">Led::set(<ref refid="structmodm_1_1_gpio_1a17454096f07c8ae16d603ff46ad53c6a" kindref="member">modm::Gpio::High</ref>);<sp/></highlight><highlight class="comment">//<sp/>Turns<sp/>Led<sp/>on</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal">Led::set(<ref refid="structmodm_1_1_gpio_1a85ddb071ba8af1c2b89b4e8c079ea58f" kindref="member">modm::Gpio::Low</ref>);<sp/></highlight><highlight class="comment">//<sp/>Turns<sp/>Led<sp/>off</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal">Led::set(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline><highlight class="normal">Led::set(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
@@ -38,10 +32,7 @@
 <codeline><highlight class="normal">Led::set(0);</highlight></codeline>
 <codeline><highlight class="normal">Led::set();</highlight></codeline>
 <codeline><highlight class="normal">Led::reset();</highlight></codeline>
-</programlisting></para>
-<para><simplesect kind="warning"><para>&quot;Initialize your GPIOs&quot; Call <computeroutput>Gpio::setInput()</computeroutput> or <computeroutput>Gpio::setOutput()</computeroutput> before the first use, otherwise the GPIO state may be undefined! </para>
-</simplesect>
-</para>
-    </detaileddescription>
+</programlisting></para><para><simplesect kind="warning"><para>&quot;Initialize your GPIOs&quot; Call <computeroutput>Gpio::setInput()</computeroutput> or <computeroutput>Gpio::setOutput()</computeroutput> before the first use, otherwise the GPIO state may be undefined! </para></simplesect>
+</para>    </detaileddescription>
   </compounddef>
 </doxygen>

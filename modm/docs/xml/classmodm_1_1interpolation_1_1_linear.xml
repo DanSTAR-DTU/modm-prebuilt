@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1interpolation_1_1_linear" kind="class" language="C++" prot="public">
     <compoundname>modm::interpolation::Linear</compoundname>
     <includes refid="linear_8hpp" local="no">modm/math/interpolation/linear.hpp</includes>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="41" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="41" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="41" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1interpolation_1_1_linear_1a4d7daef1dae9f7118d59811998421682" prot="public" static="no">
         <type>T::SecondType</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="42" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="42" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1interpolation_1_1_linear_1aa5eb075d01cffacde634200bb738fdc2" prot="public" static="no">
         <type><ref refid="group__arithmetic__traits_1ga1eea33fb09849213b4d3d36cac81594c" kindref="member">modm::SignedType</ref>&lt; <ref refid="classmodm_1_1interpolation_1_1_linear_1a4d7daef1dae9f7118d59811998421682" kindref="member">OutputType</ref> &gt;</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="44" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="44" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="44" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1interpolation_1_1_linear_1adafe92b1564a44118f5a9d124aa71c77" prot="public" static="no">
         <type><ref refid="group__arithmetic__traits_1ga4aa9b205cd091d24be9d4b873a91d6f5" kindref="member">modm::WideType</ref>&lt; <ref refid="classmodm_1_1interpolation_1_1_linear_1aa5eb075d01cffacde634200bb738fdc2" kindref="member">OutputSignedType</ref> &gt;</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="45" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="45" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="45" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="67" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="67" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="67" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1interpolation_1_1_linear_1a577e632752cbc61a8ef64d8abcb3f239" prot="private" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="68" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="68" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="68" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="68" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -113,31 +113,27 @@
           <declname>numberOfPoints</declname>
         </param>
         <briefdescription>
-<para>Constructor. </para>
-        </briefdescription>
+<para>Constructor. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>supportingPoints</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Supporting points of the curve. Needs to be an Array of modm::Pair&lt;&gt;. </para>
-</parameterdescription>
+<para>Supporting points of the curve. Needs to be an Array of modm::Pair&lt;&gt;. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>numberOfPoints</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>length of <computeroutput>supportingPoints</computeroutput> </para>
-</parameterdescription>
+<para>length of <computeroutput>supportingPoints</computeroutput> </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="55" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="55" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1interpolation_1_1_linear_1a628e86c5bd48fc1d6a5f2b8d284d6d5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1interpolation_1_1_linear_1a4d7daef1dae9f7118d59811998421682" kindref="member">OutputType</ref></type>
@@ -149,25 +145,21 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Perform a linear interpolation. </para>
-        </briefdescription>
+<para>Perform a linear interpolation. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>input value </para>
-</parameterdescription>
+<para>input value </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>interpolated value </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>interpolated value </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="64" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="64" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -178,21 +170,18 @@
 <parametername>T</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Any specialization of modm::Pair&lt;&gt; </para>
-</parameterdescription>
+<para>Any specialization of modm::Pair&lt;&gt; </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>Accessor</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Accessor class. <ref refid="classmodm_1_1_can" kindref="compound">Can</ref> be <ref refid="classmodm_1_1accessor_1_1_ram" kindref="compound">modm::accessor::Ram</ref>, <ref refid="classmodm_1_1accessor_1_1_flash" kindref="compound">modm::accessor::Flash</ref> or any self defined accessor class. Default is <ref refid="classmodm_1_1accessor_1_1_ram" kindref="compound">modm::accessor::Ram</ref>. </para>
-</parameterdescription>
+<para>Accessor class. <ref refid="classmodm_1_1_can" kindref="compound">Can</ref> be <ref refid="classmodm_1_1accessor_1_1_ram" kindref="compound">modm::accessor::Ram</ref>, <ref refid="classmodm_1_1accessor_1_1_flash" kindref="compound">modm::accessor::Flash</ref> or any self defined accessor class. Default is <ref refid="classmodm_1_1accessor_1_1_ram" kindref="compound">modm::accessor::Ram</ref>. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="38" bodyend="69"/>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" line="39" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp" bodystart="38" bodyend="69"/>
     <listofallmembers>
       <member refid="classmodm_1_1interpolation_1_1_linear_1a8c830dd5bfcca24572fd7ba6b6c78992" prot="public" virt="non-virtual"><scope>modm::interpolation::Linear</scope><name>InputType</name></member>
       <member refid="classmodm_1_1interpolation_1_1_linear_1a628e86c5bd48fc1d6a5f2b8d284d6d5e" prot="public" virt="non-virtual"><scope>modm::interpolation::Linear</scope><name>interpolate</name></member>

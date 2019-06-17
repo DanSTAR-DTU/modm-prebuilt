@@ -1,63 +1,63 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="misc_8hpp" kind="file" language="C++">
     <compoundname>misc.hpp</compoundname>
     <includes local="no">cstddef</includes>
     <includes local="no">cmath</includes>
     <includes local="no">stdint.h</includes>
     <includes refid="architecture_2utils_8hpp" local="no">modm/architecture/utils.hpp</includes>
-    <includedby refid="math_2utils_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils.hpp</includedby>
-    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <includedby refid="math_2utils_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
     <incdepgraph>
-      <node id="3887">
-        <label>stdint.h</label>
-      </node>
-      <node id="3886">
-        <label>cmath</label>
-      </node>
-      <node id="3888">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="3889" relation="include">
-        </childnode>
-      </node>
-      <node id="3885">
-        <label>cstddef</label>
-      </node>
-      <node id="3889">
+      <node id="3901">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="3884">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp</label>
+      <node id="3899">
+        <label>stdint.h</label>
+      </node>
+      <node id="3898">
+        <label>cmath</label>
+      </node>
+      <node id="3896">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp</label>
         <link refid="misc_8hpp"/>
-        <childnode refid="3885" relation="include">
+        <childnode refid="3897" relation="include">
         </childnode>
-        <childnode refid="3886" relation="include">
+        <childnode refid="3898" relation="include">
         </childnode>
-        <childnode refid="3887" relation="include">
+        <childnode refid="3899" relation="include">
         </childnode>
-        <childnode refid="3888" relation="include">
+        <childnode refid="3900" relation="include">
         </childnode>
+      </node>
+      <node id="3900">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="3901" relation="include">
+        </childnode>
+      </node>
+      <node id="3897">
+        <label>cstddef</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3891">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils.hpp</label>
-        <link refid="math_2utils_8hpp"/>
-        <childnode refid="3892" relation="include">
-        </childnode>
-      </node>
-      <node id="3892">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+      <node id="3904">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
         <link refid="math_8hpp"/>
       </node>
-      <node id="3890">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp</label>
+      <node id="3902">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp</label>
         <link refid="misc_8hpp"/>
-        <childnode refid="3891" relation="include">
+        <childnode refid="3903" relation="include">
         </childnode>
-        <childnode refid="3892" relation="include">
+        <childnode refid="3904" relation="include">
+        </childnode>
+      </node>
+      <node id="3903">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils.hpp</label>
+        <link refid="math_2utils_8hpp"/>
+        <childnode refid="3904" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -66,6 +66,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp"/>
   </compounddef>
 </doxygen>

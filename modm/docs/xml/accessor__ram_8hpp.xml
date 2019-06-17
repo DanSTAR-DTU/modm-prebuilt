@@ -1,245 +1,245 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="accessor__ram_8hpp" kind="file" language="C++">
     <compoundname>accessor_ram.hpp</compoundname>
     <includes local="no">cstddef</includes>
     <includes refid="architecture_2utils_8hpp" local="no">modm/architecture/utils.hpp</includes>
-    <includedby refid="accessor_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor.hpp</includedby>
-    <includedby refid="interface_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface.hpp</includedby>
+    <includedby refid="accessor_8hpp" local="no">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/accessor.hpp</includedby>
+    <includedby refid="interface_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</includedby>
     <incdepgraph>
-      <node id="704">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="705" relation="include">
-        </childnode>
-      </node>
-      <node id="703">
-        <label>cstddef</label>
-      </node>
-      <node id="702">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor_ram.hpp</label>
-        <link refid="accessor__ram_8hpp"/>
-        <childnode refid="703" relation="include">
-        </childnode>
-        <childnode refid="704" relation="include">
-        </childnode>
-      </node>
-      <node id="705">
+      <node id="711">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
+      <node id="708">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/accessor_ram.hpp</label>
+        <link refid="accessor__ram_8hpp"/>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+      </node>
+      <node id="710">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="711" relation="include">
+        </childnode>
+      </node>
+      <node id="709">
+        <label>cstddef</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="709">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic.hpp</label>
-        <link refid="atomic_8hpp"/>
+      <node id="739">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
+        <link refid="math_8hpp"/>
       </node>
-      <node id="721">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp</label>
-        <link refid="i2c__multiplexer_8hpp"/>
-        <childnode refid="712" relation="include">
-        </childnode>
+      <node id="719">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp</label>
+        <link refid="architecture_8hpp"/>
       </node>
-      <node id="728">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp</label>
-        <link refid="spi__master__3_8hpp"/>
-        <childnode refid="725" relation="include">
-        </childnode>
-      </node>
-      <node id="727">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_2.hpp</label>
-        <link refid="spi__master__2_8hpp"/>
-        <childnode refid="725" relation="include">
-        </childnode>
-      </node>
-      <node id="731">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/lagrange.hpp</label>
-        <link refid="lagrange_8hpp"/>
-        <childnode refid="732" relation="include">
-        </childnode>
-        <childnode refid="733" relation="include">
-        </childnode>
-      </node>
-      <node id="729">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing.hpp</label>
-        <link refid="processing_8hpp"/>
-      </node>
-      <node id="714">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/macros.hpp</label>
-        <link refid="resumable_2macros_8hpp"/>
-        <childnode refid="715" relation="include">
-        </childnode>
-        <childnode refid="730" relation="include">
-        </childnode>
-        <childnode refid="729" relation="include">
+      <node id="718">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
+        <link refid="interface_8hpp"/>
+        <childnode refid="719" relation="include">
         </childnode>
       </node>
       <node id="713">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture.hpp</label>
-        <link refid="architecture_8hpp"/>
-      </node>
-      <node id="710">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/queue.hpp</label>
-        <link refid="architecture_2driver_2atomic_2queue_8hpp"/>
-        <childnode refid="709" relation="include">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/accessor.hpp</label>
+        <link refid="accessor_8hpp"/>
+        <childnode refid="714" relation="include">
         </childnode>
-      </node>
-      <node id="719">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_device.hpp</label>
-        <link refid="i2c__device_8hpp"/>
-        <childnode refid="712" relation="include">
-        </childnode>
-        <childnode refid="720" relation="include">
-        </childnode>
-      </node>
-      <node id="712">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
-        <link refid="interface_8hpp"/>
-        <childnode refid="713" relation="include">
-        </childnode>
-      </node>
-      <node id="730">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp</label>
-        <link refid="resumable_2resumable_8hpp"/>
         <childnode refid="716" relation="include">
         </childnode>
-        <childnode refid="729" relation="include">
-        </childnode>
-      </node>
-      <node id="724">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/bitbang_spi_master.hpp</label>
-        <link refid="bitbang__spi__master_8hpp"/>
-        <childnode refid="725" relation="include">
-        </childnode>
-      </node>
-      <node id="720">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
-        <link refid="bme280_8hpp"/>
-      </node>
-      <node id="715">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp</label>
-        <link refid="nested__resumable_8hpp"/>
-        <childnode refid="716" relation="include">
-        </childnode>
-        <childnode refid="729" relation="include">
-        </childnode>
-      </node>
-      <node id="716">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable.hpp</label>
-        <link refid="resumable_8hpp"/>
         <childnode refid="717" relation="include">
         </childnode>
         <childnode refid="718" relation="include">
         </childnode>
-        <childnode refid="719" relation="include">
+        <childnode refid="737" relation="include">
         </childnode>
-        <childnode refid="721" relation="include">
-        </childnode>
-        <childnode refid="722" relation="include">
-        </childnode>
-        <childnode refid="720" relation="include">
-        </childnode>
-        <childnode refid="729" relation="include">
-        </childnode>
-      </node>
-      <node id="718">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp</label>
-        <link refid="gpio__expander_8hpp"/>
-        <childnode refid="712" relation="include">
-        </childnode>
-      </node>
-      <node id="707">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor.hpp</label>
-        <link refid="accessor_8hpp"/>
-        <childnode refid="708" relation="include">
-        </childnode>
-        <childnode refid="710" relation="include">
-        </childnode>
-        <childnode refid="711" relation="include">
-        </childnode>
-        <childnode refid="712" relation="include">
-        </childnode>
-        <childnode refid="731" relation="include">
-        </childnode>
-        <childnode refid="734" relation="include">
-        </childnode>
-      </node>
-      <node id="706">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor_ram.hpp</label>
-        <link refid="accessor__ram_8hpp"/>
-        <childnode refid="707" relation="include">
-        </childnode>
-        <childnode refid="712" relation="include">
-        </childnode>
-      </node>
-      <node id="725">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
-        <link refid="platform_8hpp"/>
-      </node>
-      <node id="733">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
-        <link refid="math_8hpp"/>
-      </node>
-      <node id="726">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp</label>
-        <link refid="spi__master__1_8hpp"/>
-        <childnode refid="725" relation="include">
+        <childnode refid="740" relation="include">
         </childnode>
       </node>
       <node id="722">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi_master.hpp</label>
-        <link refid="spi__master_8hpp"/>
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable.hpp</label>
+        <link refid="resumable_8hpp"/>
         <childnode refid="723" relation="include">
-        </childnode>
-        <childnode refid="712" relation="include">
         </childnode>
         <childnode refid="724" relation="include">
         </childnode>
-        <childnode refid="726" relation="include">
+        <childnode refid="725" relation="include">
         </childnode>
         <childnode refid="727" relation="include">
         </childnode>
         <childnode refid="728" relation="include">
         </childnode>
-      </node>
-      <node id="708">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp</label>
-        <link refid="architecture_2driver_2atomic_2container_8hpp"/>
-        <childnode refid="709" relation="include">
+        <childnode refid="726" relation="include">
+        </childnode>
+        <childnode refid="735" relation="include">
         </childnode>
       </node>
-      <node id="732">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation.hpp</label>
-        <link refid="interpolation_8hpp"/>
-        <childnode refid="733" relation="include">
+      <node id="712">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/accessor_ram.hpp</label>
+        <link refid="accessor__ram_8hpp"/>
+        <childnode refid="713" relation="include">
+        </childnode>
+        <childnode refid="718" relation="include">
         </childnode>
       </node>
-      <node id="723">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/spi_device.hpp</label>
-        <link refid="spi__device_8hpp"/>
-        <childnode refid="712" relation="include">
+      <node id="725">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_device.hpp</label>
+        <link refid="i2c__device_8hpp"/>
+        <childnode refid="718" relation="include">
+        </childnode>
+        <childnode refid="726" relation="include">
         </childnode>
       </node>
-      <node id="717">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp</label>
-        <link refid="block__device_8hpp"/>
-        <childnode refid="712" relation="include">
+      <node id="740">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp</label>
+        <link refid="linear_8hpp"/>
+        <childnode refid="738" relation="include">
         </childnode>
-      </node>
-      <node id="711">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp</label>
-        <link refid="assert_8hpp"/>
-        <childnode refid="712" relation="include">
-        </childnode>
-        <childnode refid="714" relation="include">
+        <childnode refid="739" relation="include">
         </childnode>
       </node>
       <node id="734">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation/linear.hpp</label>
-        <link refid="linear_8hpp"/>
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp</label>
+        <link refid="spi__master__3_8hpp"/>
+        <childnode refid="731" relation="include">
+        </childnode>
+      </node>
+      <node id="724">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp</label>
+        <link refid="gpio__expander_8hpp"/>
+        <childnode refid="718" relation="include">
+        </childnode>
+      </node>
+      <node id="716">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/queue.hpp</label>
+        <link refid="architecture_2driver_2atomic_2queue_8hpp"/>
+        <childnode refid="715" relation="include">
+        </childnode>
+      </node>
+      <node id="733">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_2.hpp</label>
+        <link refid="spi__master__2_8hpp"/>
+        <childnode refid="731" relation="include">
+        </childnode>
+      </node>
+      <node id="728">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi_master.hpp</label>
+        <link refid="spi__master_8hpp"/>
+        <childnode refid="729" relation="include">
+        </childnode>
+        <childnode refid="718" relation="include">
+        </childnode>
+        <childnode refid="730" relation="include">
+        </childnode>
         <childnode refid="732" relation="include">
         </childnode>
         <childnode refid="733" relation="include">
+        </childnode>
+        <childnode refid="734" relation="include">
+        </childnode>
+      </node>
+      <node id="721">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp</label>
+        <link refid="nested__resumable_8hpp"/>
+        <childnode refid="722" relation="include">
+        </childnode>
+        <childnode refid="735" relation="include">
+        </childnode>
+      </node>
+      <node id="723">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/block_device.hpp</label>
+        <link refid="block__device_8hpp"/>
+        <childnode refid="718" relation="include">
+        </childnode>
+      </node>
+      <node id="715">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic.hpp</label>
+        <link refid="atomic_8hpp"/>
+      </node>
+      <node id="726">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
+        <link refid="bme280_8hpp"/>
+      </node>
+      <node id="729">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi_device.hpp</label>
+        <link refid="spi__device_8hpp"/>
+        <childnode refid="718" relation="include">
+        </childnode>
+      </node>
+      <node id="720">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/macros.hpp</label>
+        <link refid="resumable_2macros_8hpp"/>
+        <childnode refid="721" relation="include">
+        </childnode>
+        <childnode refid="736" relation="include">
+        </childnode>
+        <childnode refid="735" relation="include">
+        </childnode>
+      </node>
+      <node id="717">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp</label>
+        <link refid="assert_8hpp"/>
+        <childnode refid="718" relation="include">
+        </childnode>
+        <childnode refid="720" relation="include">
+        </childnode>
+      </node>
+      <node id="737">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation/lagrange.hpp</label>
+        <link refid="lagrange_8hpp"/>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+      </node>
+      <node id="731">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+      <node id="735">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</label>
+        <link refid="processing_8hpp"/>
+      </node>
+      <node id="738">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation.hpp</label>
+        <link refid="interpolation_8hpp"/>
+        <childnode refid="739" relation="include">
+        </childnode>
+      </node>
+      <node id="736">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp</label>
+        <link refid="resumable_2resumable_8hpp"/>
+        <childnode refid="722" relation="include">
+        </childnode>
+        <childnode refid="735" relation="include">
+        </childnode>
+      </node>
+      <node id="714">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp</label>
+        <link refid="architecture_2driver_2atomic_2container_8hpp"/>
+        <childnode refid="715" relation="include">
+        </childnode>
+      </node>
+      <node id="732">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp</label>
+        <link refid="spi__master__1_8hpp"/>
+        <childnode refid="731" relation="include">
+        </childnode>
+      </node>
+      <node id="727">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp</label>
+        <link refid="i2c__multiplexer_8hpp"/>
+        <childnode refid="718" relation="include">
+        </childnode>
+      </node>
+      <node id="730">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/bitbang_spi_master.hpp</label>
+        <link refid="bitbang__spi__master_8hpp"/>
+        <childnode refid="731" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -250,6 +250,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/accessor_ram.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/accessor_ram.hpp"/>
   </compounddef>
 </doxygen>

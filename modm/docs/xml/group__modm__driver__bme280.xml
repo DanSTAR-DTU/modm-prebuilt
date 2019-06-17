@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__modm__driver__bme280" kind="group">
     <compoundname>modm_driver_bme280</compoundname>
     <title>BME280 Pressure Sensor</title>
@@ -11,8 +11,6 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>The BME280 is a high precision digital temperature, pressure and humidity sensor with I2C interface.</para>
-<para>It is known that many BME280-modules suffer from self-heating (I2C pull-ups?). So the reported temperature is about 1 to 3 degree higher than with other sensors. Forced ventilation can drop the temperature by 2 to 3 degrees. </para>
-    </detaileddescription>
+<para>The BME280 is a high precision digital temperature, pressure and humidity sensor with I2C interface.</para><para>It is known that many BME280-modules suffer from self-heating (I2C pull-ups?). So the reported temperature is about 1 to 3 degree higher than with other sensors. Forced ventilation can drop the temperature by 2 to 3 degrees. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

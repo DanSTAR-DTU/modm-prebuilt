@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1_nested_resumable" kind="class" language="C++" prot="public">
     <compoundname>modm::NestedResumable</compoundname>
     <includes refid="nested__resumable_8hpp" local="no">modm/processing/resumable/nested_resumable.hpp</includes>
@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="148" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="148" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="148" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="148" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1_nested_resumable_1a7db3b24540a09af4f484318806cd905d" prot="private" static="no" mutable="no">
         <type>rf::State</type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="149" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="149" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="149" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="149" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -46,13 +46,12 @@
         <argsstring>()</argsstring>
         <name>NestedResumable</name>
         <briefdescription>
-<para>Construct a new class with nested resumable functions. </para>
-        </briefdescription>
+<para>Construct a new class with nested resumable functions. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="36" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="36" bodyend="43"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="36" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="36" bodyend="43"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -62,13 +61,12 @@
         <argsstring>()</argsstring>
         <name>stopResumable</name>
         <briefdescription>
-<para>Force all resumable functions to stop running at the current nesting level. </para>
-        </briefdescription>
+<para>Force all resumable functions to stop running at the current nesting level. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="48" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="48" bodyend="55"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="48" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="48" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_nested_resumable_1a264e13e3deb4b8cfc026b3e0878634d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -78,13 +76,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if a resumable function is running at the current nesting level, else <computeroutput>false</computeroutput> </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if a resumable function is running at the current nesting level, else <computeroutput>false</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="59" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="59" bodyend="62"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="59" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="59" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_nested_resumable_1a9d2533f899a91e764498123bc26705c0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int8_t</type>
@@ -94,13 +90,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>the nesting depth in the current resumable function, or -1 if called outside any resumable function </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para>the nesting depth in the current resumable function, or -1 if called outside any resumable function </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="66" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="66" bodyend="69"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="66" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="66" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_nested_resumable_1a4a262915b4bf9b2f45b63432c80bbbba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; ReturnType &gt; resumable</type>
@@ -113,34 +107,27 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Run the resumable function.</para>
-<para>You need to implement this method in you subclass yourself.</para>
-<para><simplesect kind="return"><para>&gt;<computeroutput>NestingError</computeroutput> if still running, &lt;=<computeroutput>NestingError</computeroutput> if it has finished. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para>Run the resumable function.</para><para>You need to implement this method in you subclass yourself.</para><para><simplesect kind="return"><para>&gt;<computeroutput>NestingError</computeroutput> if still running, &lt;=<computeroutput>NestingError</computeroutput> if it has finished. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="80" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="80" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><simplesect kind="author"><para>Niklas Hauser </para>
-</simplesect>
+<para><simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 <parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>Levels</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>maximum number of nesting levels (should be &lt;128): max(number of resumable functions that are called within resumable functions) + 1 </para>
-</parameterdescription>
+<para>maximum number of nesting levels (should be &lt;128): max(number of resumable functions that are called within resumable functions) + 1 </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="31" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="30" bodyend="150"/>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" line="31" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/nested_resumable.hpp" bodystart="30" bodyend="150"/>
     <listofallmembers>
       <member refid="classmodm_1_1_nested_resumable_1a4a262915b4bf9b2f45b63432c80bbbba" prot="public" virt="non-virtual"><scope>modm::NestedResumable</scope><name>function</name></member>
       <member refid="classmodm_1_1_nested_resumable_1a9d2533f899a91e764498123bc26705c0" prot="public" virt="non-virtual"><scope>modm::NestedResumable</scope><name>getResumableDepth</name></member>

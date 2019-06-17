@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__modm__debug" kind="group">
     <compoundname>modm_debug</compoundname>
     <title>Logging</title>
@@ -12,8 +12,7 @@
     <innerclass refid="classmodm_1_1log_1_1_style" prot="public">modm::log::Style</innerclass>
     <innernamespace refid="namespacemodm_1_1log">modm::log</innernamespace>
       <sectiondef kind="enum">
-      <memberdef kind="enum" id="group__modm__debug_1gab363317856672ff8274a151df368c400" prot="public" static="no" strong="no">
-        <type></type>
+      <memberdef kind="enum" id="group__modm__debug_1gab363317856672ff8274a151df368c400" prot="public" static="no">
         <name>Level</name>
         <enumvalue id="group__modm__debug_1ggab363317856672ff8274a151df368c400a118b1d7a3569c9d4ea14303a06f351ad" prot="public">
           <name>DEBUG</name>
@@ -51,14 +50,12 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
-<para>Log levels. </para>
-        </briefdescription>
+<para>Log levels. </para>        </briefdescription>
         <detaileddescription>
-<para>DEBUG &lt; INFO &lt; WARNING &lt; ERROR &lt; DISABLED </para>
-        </detaileddescription>
+<para>DEBUG &lt; INFO &lt; WARNING &lt; ERROR &lt; DISABLED </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/level.hpp" line="33" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/level.hpp" bodystart="32" bodyend="39"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/level.hpp" line="33" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/level.hpp" bodystart="32" bodyend="39"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -66,161 +63,121 @@
         <name>MODM_LOG_LEVEL</name>
         <initializer><ref refid="group__modm__debug_1ggab363317856672ff8274a151df368c400a118b1d7a3569c9d4ea14303a06f351ad" kindref="member">modm::log::DEBUG</ref></initializer>
         <briefdescription>
-<para>Default log level. </para>
-        </briefdescription>
+<para>Default log level. </para>        </briefdescription>
         <detaileddescription>
-<para>Define to set the level of the logging to a defined value for each file. To change the logging level in a source file use <computeroutput>#undef</computeroutput> </para>
-<para><programlisting><codeline><highlight class="normal">#undef<sp/><sp/>MODM_LOG_LEVEL</highlight></codeline>
+<para>Define to set the level of the logging to a defined value for each file. To change the logging level in a source file use <computeroutput>#undef</computeroutput> </para><para><programlisting><codeline><highlight class="normal">#undef<sp/><sp/>MODM_LOG_LEVEL</highlight></codeline>
 <codeline><highlight class="normal">#define<sp/>MODM_LOG_LEVEL<sp/>modm::log::INFO</highlight></codeline>
-</programlisting></para>
-<para>DEBUG &lt; INFO &lt; WARNING &lt; ERROR &lt; DISABLED </para>
-        </detaileddescription>
+</programlisting></para><para>DEBUG &lt; INFO &lt; WARNING &lt; ERROR &lt; DISABLED </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/level.hpp" line="59" column="10" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/level.hpp" bodystart="59" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/level.hpp" line="59" column="10" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/level.hpp" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__debug_1gaffbd265a04b04fa5b933017d91e676eb" prot="public" static="no">
         <name>MODM_LOG_OFF</name>
         <initializer>if ( true ){}	\
 	else <ref refid="namespacemodm_1_1log_1ae9143446ab426d7e3ebf45751c11e66a" kindref="member">modm::log::debug</ref></initializer>
         <briefdescription>
-<para>Turn off messages print. </para>
-        </briefdescription>
+<para>Turn off messages print. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="120" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="120" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="120" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__debug_1ga31bd6931a8999d2c639cc8c4f0c6b3d0" prot="public" static="no">
         <name>MODM_LOG_DEBUG</name>
         <initializer>if (<ref refid="bme280__data__impl__fp_8hpp_1acdef3d1a3caa5702d1bdf59083b4041e" kindref="member">MODM_LOG_LEVEL</ref> &gt; <ref refid="group__modm__debug_1ggab363317856672ff8274a151df368c400a118b1d7a3569c9d4ea14303a06f351ad" kindref="member">modm::log::DEBUG</ref>){} \
 	else <ref refid="namespacemodm_1_1log_1ae9143446ab426d7e3ebf45751c11e66a" kindref="member">modm::log::debug</ref></initializer>
         <briefdescription>
-<para>Output stream for debug messages. </para>
-        </briefdescription>
+<para>Output stream for debug messages. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="128" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="128" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="128" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="128" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__debug_1gaa818d31e0c2792328f81da25f256b79e" prot="public" static="no">
         <name>MODM_LOG_INFO</name>
         <initializer>if (<ref refid="bme280__data__impl__fp_8hpp_1acdef3d1a3caa5702d1bdf59083b4041e" kindref="member">MODM_LOG_LEVEL</ref> &gt; <ref refid="group__modm__debug_1ggab363317856672ff8274a151df368c400a1807bd32e8c3560dd2ee1b1b2ac72bc8" kindref="member">modm::log::INFO</ref>){}	\
 	else <ref refid="namespacemodm_1_1log_1a9c4f35b0f684671a61be871f3c72a5b4" kindref="member">modm::log::info</ref></initializer>
         <briefdescription>
-<para>Output stream for info messages. </para>
-        </briefdescription>
+<para>Output stream for info messages. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="136" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="136" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="136" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__debug_1ga52f16607e67579b1edfe50c9a411f916" prot="public" static="no">
         <name>MODM_LOG_WARNING</name>
         <initializer>if (<ref refid="bme280__data__impl__fp_8hpp_1acdef3d1a3caa5702d1bdf59083b4041e" kindref="member">MODM_LOG_LEVEL</ref> &gt; <ref refid="group__modm__debug_1ggab363317856672ff8274a151df368c400a79c7f3c3c7c4d80d9c53d4f5295581c4" kindref="member">modm::log::WARNING</ref>){}	\
 	else <ref refid="namespacemodm_1_1log_1a4410a5a427bdee73d6e1fbddca0bc21a" kindref="member">modm::log::warning</ref></initializer>
         <briefdescription>
-<para>Output stream for warnings. </para>
-        </briefdescription>
+<para>Output stream for warnings. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="144" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="144" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="144" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__debug_1gadf3ebf7b7d086653da99e9a5db3e72f2" prot="public" static="no">
         <name>MODM_LOG_ERROR</name>
         <initializer>if (<ref refid="bme280__data__impl__fp_8hpp_1acdef3d1a3caa5702d1bdf59083b4041e" kindref="member">MODM_LOG_LEVEL</ref> &gt; <ref refid="group__modm__debug_1ggab363317856672ff8274a151df368c400a09fa1eafa88c29c1bd3b46e08399f70d" kindref="member">modm::log::ERROR</ref>){}	\
 	else <ref refid="namespacemodm_1_1log_1a71f14f07bca90829ad7f4d01b4a346d5" kindref="member">modm::log::error</ref></initializer>
         <briefdescription>
-<para>Output stream for error messages. </para>
-        </briefdescription>
+<para>Output stream for error messages. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="152" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="152" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="152" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="152" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__debug_1ga8de29f7c8bbf1a81cc6e71ac602032d3" prot="public" static="no">
         <name>FILENAME</name>
         <briefdescription>
-<para>Filename of the current file. </para>
-        </briefdescription>
+<para>Filename of the current file. </para>        </briefdescription>
         <detaileddescription>
-<para>In contrast to <computeroutput><bold>FILE</bold></computeroutput> the path to the file is omitted (if this feature is available, otherwise this macro will resolve to <computeroutput><bold>FILE</bold></computeroutput>). </para>
-        </detaileddescription>
+<para>In contrast to <computeroutput><bold>FILE</bold></computeroutput> the path to the file is omitted (if this feature is available, otherwise this macro will resolve to <computeroutput><bold>FILE</bold></computeroutput>). </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="166" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="166" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="166" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="166" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__debug_1gaea53f8d30480950a86190379561a688b" prot="public" static="no">
         <name>MODM_FILE_INFO</name>
         <briefdescription>
-<para>String containing the filename and the current line. </para>
-        </briefdescription>
+<para>String containing the filename and the current line. </para>        </briefdescription>
         <detaileddescription>
 <para>Will generate something like: <programlisting><codeline><highlight class="normal">&quot;file.cpp<sp/>(123)<sp/>&gt;&gt;<sp/>&quot;</highlight></codeline>
-</programlisting></para>
-<para>This can be very useful the track the origin of log-messages: <programlisting><codeline><highlight class="normal">MODM_LOG_DEBUG<sp/><sp/><sp/>&lt;&lt;<sp/>MODM_FILE_INFO</highlight></codeline>
+</programlisting></para><para>This can be very useful the track the origin of log-messages: <programlisting><codeline><highlight class="normal">MODM_LOG_DEBUG<sp/><sp/><sp/>&lt;&lt;<sp/>MODM_FILE_INFO</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;...<sp/>something<sp/>has<sp/>happened<sp/>...&quot;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>modm::endl;</highlight></codeline>
-</programlisting></para>
-<para>This will result into: <programlisting><codeline><highlight class="normal">file.cpp<sp/>(123)<sp/>&gt;&gt;<sp/>...<sp/>something<sp/>has<sp/>happened<sp/>...</highlight></codeline>
-</programlisting> </para>
-        </detaileddescription>
+</programlisting></para><para>This will result into: <programlisting><codeline><highlight class="normal">file.cpp<sp/>(123)<sp/>&gt;&gt;<sp/>...<sp/>something<sp/>has<sp/>happened<sp/>...</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="190" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="190" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="190" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="190" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>The <computeroutput><ref refid="classmodm_1_1log_1_1_logger" kindref="compound">modm::log::Logger</ref></computeroutput> uses a <computeroutput><ref refid="classmodm_1_1_i_o_stream" kindref="compound">modm::IOStream</ref></computeroutput> to read messages and write them to a given output device.</para>
-<para>Write a log message with streams:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="group__modm__debug_1ga31bd6931a8999d2c639cc8c4f0c6b3d0" kindref="member">MODM_LOG_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;i=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>y=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>y<sp/>&lt;&lt;<sp/><ref refid="group__modm__io_1gabe969be1dd7e086eae347fff42a13903" kindref="member">modm::flush</ref>;</highlight></codeline>
-</programlisting></para>
-<para>The name of the stream represents the log level of the message. Available are:</para>
-<para><itemizedlist>
-<listitem><para><computeroutput>MODM_LOG_DEBUG</computeroutput></para>
-</listitem><listitem><para><computeroutput>MODM_LOG_INFO</computeroutput></para>
-</listitem><listitem><para><computeroutput>MODM_LOG_WARNING</computeroutput></para>
-</listitem><listitem><para><computeroutput>MODM_LOG_ERROR</computeroutput></para>
-</listitem></itemizedlist>
-</para>
-<para>A log message can also be generated separately:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a[3]<sp/>=<sp/>{1,2,3};</highlight></codeline>
+<para>The <computeroutput><ref refid="classmodm_1_1log_1_1_logger" kindref="compound">modm::log::Logger</ref></computeroutput> uses a <computeroutput><ref refid="classmodm_1_1_i_o_stream" kindref="compound">modm::IOStream</ref></computeroutput> to read messages and write them to a given output device.</para><para>Write a log message with streams:</para><para><programlisting><codeline><highlight class="normal"><ref refid="group__modm__debug_1ga31bd6931a8999d2c639cc8c4f0c6b3d0" kindref="member">MODM_LOG_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;i=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>y=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>y<sp/>&lt;&lt;<sp/><ref refid="group__modm__io_1gabe969be1dd7e086eae347fff42a13903" kindref="member">modm::flush</ref>;</highlight></codeline>
+</programlisting></para><para>The name of the stream represents the log level of the message. Available are:</para><para><itemizedlist>
+<listitem><para><computeroutput>MODM_LOG_DEBUG</computeroutput></para></listitem><listitem><para><computeroutput>MODM_LOG_INFO</computeroutput></para></listitem><listitem><para><computeroutput>MODM_LOG_WARNING</computeroutput></para></listitem><listitem><para><computeroutput>MODM_LOG_ERROR</computeroutput></para></listitem></itemizedlist>
+</para><para>A log message can also be generated separately:</para><para><programlisting><codeline><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a[3]<sp/>=<sp/>{1,2,3};</highlight></codeline>
 <codeline><highlight class="normal"><ref refid="group__modm__debug_1ga31bd6931a8999d2c639cc8c4f0c6b3d0" kindref="member">MODM_LOG_DEBUG</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;a<sp/>=<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(a);<sp/>++i)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__modm__debug_1ga31bd6931a8999d2c639cc8c4f0c6b3d0" kindref="member">MODM_LOG_DEBUG</ref><sp/>&lt;&lt;<sp/>a[i]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
 <codeline><highlight class="normal"><ref refid="group__modm__debug_1ga31bd6931a8999d2c639cc8c4f0c6b3d0" kindref="member">MODM_LOG_DEBUG</ref><sp/>&lt;&lt;<sp/><ref refid="group__modm__io_1gabe969be1dd7e086eae347fff42a13903" kindref="member">modm::flush</ref>;</highlight></codeline>
-</programlisting></para>
-<para><heading level="3">Flow of a call</heading>
-</para>
-<para>This is to give an estimation how many resources a call of the logger use. All considerations are for a PC program.</para>
-<para>The given call is:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="group__modm__debug_1ga31bd6931a8999d2c639cc8c4f0c6b3d0" kindref="member">MODM_LOG_DEBUG</ref><sp/>&lt;&lt;<sp/>123456;</highlight></codeline>
-</programlisting></para>
-<para>The macro resolves to:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__modm__debug_1gacdef3d1a3caa5702d1bdf59083b4041e" kindref="member">MODM_LOG_LEVEL</ref><sp/>&lt;=<sp/><ref refid="group__modm__debug_1ggab363317856672ff8274a151df368c400a118b1d7a3569c9d4ea14303a06f351ad" kindref="member">modm::log::DEBUG</ref>)</highlight></codeline>
+</programlisting></para><para><heading level="3">Flow of a call</heading>
+</para><para>This is to give an estimation how many resources a call of the logger use. All considerations are for a PC program.</para><para>The given call is:</para><para><programlisting><codeline><highlight class="normal"><ref refid="group__modm__debug_1ga31bd6931a8999d2c639cc8c4f0c6b3d0" kindref="member">MODM_LOG_DEBUG</ref><sp/>&lt;&lt;<sp/>123456;</highlight></codeline>
+</programlisting></para><para>The macro resolves to:</para><para><programlisting><codeline><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__modm__debug_1gacdef3d1a3caa5702d1bdf59083b4041e" kindref="member">MODM_LOG_LEVEL</ref><sp/>&lt;=<sp/><ref refid="group__modm__debug_1ggab363317856672ff8274a151df368c400a118b1d7a3569c9d4ea14303a06f351ad" kindref="member">modm::log::DEBUG</ref>)</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemodm_1_1log_1ae9143446ab426d7e3ebf45751c11e66a" kindref="member">modm::log::debug</ref></highlight></codeline>
-</programlisting></para>
-<para><itemizedlist>
+</programlisting></para><para><itemizedlist>
 <listitem><para><computeroutput><ref refid="namespacemodm_1_1log_1ae9143446ab426d7e3ebf45751c11e66a" kindref="member">modm::log::debug</ref></computeroutput> is an instance of <computeroutput>modm::Logger</computeroutput>: Call of <computeroutput>modm::Logger::operator &lt;&lt; (T)</computeroutput> (with <computeroutput>T = int32_t</computeroutput>) which is inline<itemizedlist>
-<listitem><para><computeroutput>IOStream::operator \&lt;\&lt; (T)</computeroutput> (with <computeroutput>T = int32_t</computeroutput>) is inline</para>
-</listitem><listitem><para><computeroutput>IOStream::writeInteger(int32_t)</computeroutput></para>
-</listitem></itemizedlist>
-</para>
-</listitem><listitem><para><computeroutput>IOStream::writeInteger(int32_t)</computeroutput> will create the formatted string</para>
-</listitem><listitem><para>virtual call of <computeroutput>IODevice::write(const char*)</computeroutput></para>
-</listitem><listitem><para>redirect to <computeroutput>std::cout</computeroutput></para>
-</listitem></itemizedlist>
-</para>
-<para>In sum there are two nested method calls with one of them being virtual. </para>
-    </detaileddescription>
+<listitem><para><computeroutput>IOStream::operator \&lt;\&lt; (T)</computeroutput> (with <computeroutput>T = int32_t</computeroutput>) is inline</para></listitem><listitem><para><computeroutput>IOStream::writeInteger(int32_t)</computeroutput></para></listitem></itemizedlist>
+</para></listitem><listitem><para><computeroutput>IOStream::writeInteger(int32_t)</computeroutput> will create the formatted string</para></listitem><listitem><para>virtual call of <computeroutput>IODevice::write(const char*)</computeroutput></para></listitem><listitem><para>redirect to <computeroutput>std::cout</computeroutput></para></listitem></itemizedlist>
+</para><para>In sum there are two nested method calls with one of them being virtual. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

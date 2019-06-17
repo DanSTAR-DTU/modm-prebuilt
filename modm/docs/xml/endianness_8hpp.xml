@@ -1,75 +1,75 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="endianness_8hpp" kind="file" language="C++">
     <compoundname>endianness.hpp</compoundname>
     <includes local="no">stdint.h</includes>
     <includes refid="bit__operation_8hpp" local="yes">bit_operation.hpp</includes>
     <includes refid="detect_8hpp" local="no">modm/architecture/detect.hpp</includes>
-    <includedby refid="math_2utils_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils.hpp</includedby>
-    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <includedby refid="math_2utils_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
     <incdepgraph>
-      <node id="3875">
-        <label>stdint.h</label>
-      </node>
-      <node id="3878">
-        <label>cmath</label>
-      </node>
-      <node id="3874">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp</label>
-        <link refid="endianness_8hpp"/>
-        <childnode refid="3875" relation="include">
-        </childnode>
-        <childnode refid="3876" relation="include">
-        </childnode>
-        <childnode refid="3879" relation="include">
-        </childnode>
-      </node>
-      <node id="3880">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="3879" relation="include">
-        </childnode>
-      </node>
-      <node id="3877">
-        <label>cstddef</label>
-      </node>
-      <node id="3879">
+      <node id="3891">
         <label>modm/architecture/detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="3876">
+      <node id="3887">
+        <label>stdint.h</label>
+      </node>
+      <node id="3890">
+        <label>cmath</label>
+      </node>
+      <node id="3886">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp</label>
+        <link refid="endianness_8hpp"/>
+        <childnode refid="3887" relation="include">
+        </childnode>
+        <childnode refid="3888" relation="include">
+        </childnode>
+        <childnode refid="3891" relation="include">
+        </childnode>
+      </node>
+      <node id="3892">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="3891" relation="include">
+        </childnode>
+      </node>
+      <node id="3888">
         <label>bit_operation.hpp</label>
         <link refid="bit__operation_8hpp"/>
-        <childnode refid="3877" relation="include">
+        <childnode refid="3889" relation="include">
         </childnode>
-        <childnode refid="3878" relation="include">
+        <childnode refid="3890" relation="include">
         </childnode>
-        <childnode refid="3875" relation="include">
+        <childnode refid="3887" relation="include">
         </childnode>
-        <childnode refid="3879" relation="include">
+        <childnode refid="3891" relation="include">
         </childnode>
-        <childnode refid="3880" relation="include">
+        <childnode refid="3892" relation="include">
         </childnode>
+      </node>
+      <node id="3889">
+        <label>cstddef</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3882">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils.hpp</label>
-        <link refid="math_2utils_8hpp"/>
-        <childnode refid="3883" relation="include">
-        </childnode>
-      </node>
-      <node id="3881">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp</label>
-        <link refid="endianness_8hpp"/>
-        <childnode refid="3882" relation="include">
-        </childnode>
-        <childnode refid="3883" relation="include">
-        </childnode>
-      </node>
-      <node id="3883">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+      <node id="3895">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
         <link refid="math_8hpp"/>
+      </node>
+      <node id="3893">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp</label>
+        <link refid="endianness_8hpp"/>
+        <childnode refid="3894" relation="include">
+        </childnode>
+        <childnode refid="3895" relation="include">
+        </childnode>
+      </node>
+      <node id="3894">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils.hpp</label>
+        <link refid="math_2utils_8hpp"/>
+        <childnode refid="3895" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innernamespace refid="namespacemodm">modm</innernamespace>
@@ -77,6 +77,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp"/>
   </compounddef>
 </doxygen>

@@ -1,18 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__modm__architecture__memory" kind="group">
     <compoundname>modm_architecture_memory</compoundname>
     <title>Memory Traits</title>
       <sectiondef kind="enum">
-      <memberdef kind="enum" id="group__modm__architecture__memory_1ga4ab452f5d1300a45f045af588fc25fb2" prot="public" static="no" strong="yes">
-        <type>uint16_t</type>
+      <memberdef kind="enum" id="group__modm__architecture__memory_1ga4ab452f5d1300a45f045af588fc25fb2" prot="public" static="no">
         <name>MemoryTrait</name>
         <enumvalue id="group__modm__architecture__memory_1gga4ab452f5d1300a45f045af588fc25fb2a2291ccc152726cc20596b2285652d62c" prot="public">
           <name>AccessSBus</name>
           <initializer>= Bit0</initializer>
           <briefdescription>
-<para>Memory is accessible via System-Bus. </para>
-          </briefdescription>
+<para>Memory is accessible via System-Bus. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -20,8 +18,7 @@
           <name>AccessDBus</name>
           <initializer>= Bit1</initializer>
           <briefdescription>
-<para>Memory is accessible via Data-Bus. </para>
-          </briefdescription>
+<para>Memory is accessible via Data-Bus. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -29,8 +26,7 @@
           <name>AccessIBus</name>
           <initializer>= Bit2</initializer>
           <briefdescription>
-<para>Memory is accessible via Instruction-Bus. </para>
-          </briefdescription>
+<para>Memory is accessible via Instruction-Bus. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -38,8 +34,7 @@
           <name>AccessDMA</name>
           <initializer>= Bit3</initializer>
           <briefdescription>
-<para>Memory is accessible via DMA. </para>
-          </briefdescription>
+<para>Memory is accessible via DMA. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -47,8 +42,7 @@
           <name>AccessDMA2D</name>
           <initializer>= Bit4</initializer>
           <briefdescription>
-<para>Memory is accessible via 2D DMA. </para>
-          </briefdescription>
+<para>Memory is accessible via 2D DMA. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -56,8 +50,7 @@
           <name>TypeCoreCoupled</name>
           <initializer>= Bit13</initializer>
           <briefdescription>
-<para>Memory is coupled closely to the core. </para>
-          </briefdescription>
+<para>Memory is coupled closely to the core. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -65,8 +58,7 @@
           <name>TypeNonVolatile</name>
           <initializer>= Bit14</initializer>
           <briefdescription>
-<para>Memory is non-volatile (battery-backed) </para>
-          </briefdescription>
+<para>Memory is non-volatile (battery-backed) </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -74,19 +66,17 @@
           <name>TypeExternal</name>
           <initializer>= Bit15</initializer>
           <briefdescription>
-<para>Memory is external RAM. </para>
-          </briefdescription>
+<para>Memory is external RAM. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Describes access and type of dynamic memory. </para>
-        </detaileddescription>
+<para>Describes access and type of dynamic memory. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="28" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="26" bodyend="41"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="28" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="26" bodyend="41"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -98,11 +88,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>A memory can have multiple traits. </para>
-        </detaileddescription>
+<para>A memory can have multiple traits. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="45" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="45" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="45" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -115,11 +104,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Fast code memory is accessible by at least the I-Bus and it is core-coupled. Fallback memory on exhaustion is not core-coupled. </para>
-        </detaileddescription>
+<para>Fast code memory is accessible by at least the I-Bus and it is core-coupled. Fallback memory on exhaustion is not core-coupled. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="51" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="51" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="51" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__architecture__memory_1ga1d786bf0457f54b3bde696161c7d0715" prot="public" static="no" mutable="no">
         <type>constexpr MemoryTraits</type>
@@ -130,11 +118,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Fast data memory is accessible by at least the D-Bus and it is core coupled. Fallback memory on exhaustion is not core-coupled. </para>
-        </detaileddescription>
+<para>Fast data memory is accessible by at least the D-Bus and it is core coupled. Fallback memory on exhaustion is not core-coupled. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="55" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="55" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="55" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__architecture__memory_1ga4943c1af3733c164aa541dffa7972019" prot="public" static="no" mutable="no">
         <type>constexpr MemoryTraits</type>
@@ -145,11 +132,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMA-able memory is accessible by at least the S-Bus and DMA. There is no fallback memory on exhaustion. </para>
-        </detaileddescription>
+<para>DMA-able memory is accessible by at least the S-Bus and DMA. There is no fallback memory on exhaustion. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="60" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="60" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="60" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__architecture__memory_1gac74d8199f23144e2af47e9ccf72f5a78" prot="public" static="no" mutable="no">
         <type>constexpr MemoryTraits</type>
@@ -160,11 +146,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMA-able memory is accessible by at least the S-Bus and 2D DMA. There is no fallback memory on exhaustion. </para>
-        </detaileddescription>
+<para>DMA-able memory is accessible by at least the S-Bus and 2D DMA. There is no fallback memory on exhaustion. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="64" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="64" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="64" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__architecture__memory_1gab4a17216559951bcee7bca4115ffc0f3" prot="public" static="no" mutable="no">
         <type>constexpr MemoryTraits</type>
@@ -175,11 +160,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>External memory is accessible by at least the S-Bus and it is external. Fallback memory on exhaustion is internal. </para>
-        </detaileddescription>
+<para>External memory is accessible by at least the S-Bus and it is external. Fallback memory on exhaustion is internal. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="69" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="69" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="69" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__architecture__memory_1ga8c685b0abc10fbae2b743a12c46b5599" prot="public" static="no" mutable="no">
         <type>constexpr MemoryTraits</type>
@@ -190,11 +174,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Backup memory is accessible by at least the S-Bus and it is non-volatile. There is no fallback memory on exhaustion. </para>
-        </detaileddescription>
+<para>Backup memory is accessible by at least the S-Bus and it is non-volatile. There is no fallback memory on exhaustion. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="73" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="73" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="73" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__architecture__memory_1ga08155d1288c3fd230809c6bffb2df227" prot="public" static="no" mutable="no">
         <type>constexpr MemoryTraits</type>
@@ -205,11 +188,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Default memory is DMA-able. </para>
-        </detaileddescription>
+<para>Default memory is DMA-able. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="77" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="77" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="77" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="77" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -230,14 +212,11 @@
         </briefdescription>
         <detaileddescription>
 <para>Request object memory with defined traits. <programlisting><codeline><highlight class="normal">Foo<sp/>*p<sp/>=<sp/>new<sp/>(modm::MemoryFastData)<sp/>Foo;</highlight></codeline>
-</programlisting></para>
-<para><simplesect kind="note"><para>Memory traits are ignored on AVRs. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+</programlisting></para><para><simplesect kind="note"><para>Memory traits are ignored on AVRs. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="90" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="90" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__architecture__memory_1ga1e47c38606910db6123992b33608b202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -256,14 +235,11 @@
         </briefdescription>
         <detaileddescription>
 <para>Request array memory with defined traits. <programlisting><codeline><highlight class="normal">uint32_t<sp/>*p<sp/>=<sp/>new<sp/>(modm::MemoryFastData)<sp/>uint32_t[200];</highlight></codeline>
-</programlisting></para>
-<para><simplesect kind="note"><para>Memory traits are ignored on AVRs. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+</programlisting></para><para><simplesect kind="note"><para>Memory traits are ignored on AVRs. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="101" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="101" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

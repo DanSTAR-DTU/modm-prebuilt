@@ -1,174 +1,174 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="spi__base_8hpp" kind="file" language="C++">
     <compoundname>spi_base.hpp</compoundname>
     <includes local="no">stdint.h</includes>
     <includes refid="device_8hpp" local="yes">../device.hpp</includes>
     <includes refid="register_8hpp" local="no">modm/architecture/interface/register.hpp</includes>
-    <includedby refid="spi__hal__1_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_1.hpp</includedby>
-    <includedby refid="spi__hal__2_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_2.hpp</includedby>
-    <includedby refid="spi__hal__3_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_3.hpp</includedby>
-    <includedby refid="platform_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <includedby refid="spi__hal__1_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_1.hpp</includedby>
+    <includedby refid="spi__hal__2_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_2.hpp</includedby>
+    <includedby refid="spi__hal__3_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_3.hpp</includedby>
+    <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <incdepgraph>
-      <node id="6002">
+      <node id="6014">
         <label>stdarg.h</label>
       </node>
-      <node id="5993">
-        <label>../device.hpp</label>
-        <link refid="device_8hpp"/>
-        <childnode refid="5992" relation="include">
-        </childnode>
-        <childnode refid="5994" relation="include">
-        </childnode>
-        <childnode refid="5996" relation="include">
-        </childnode>
-        <childnode refid="5997" relation="include">
-        </childnode>
-      </node>
-      <node id="5997">
-        <label>system_stm32f4xx.h</label>
-      </node>
-      <node id="5992">
-        <label>stdint.h</label>
-      </node>
-      <node id="5999">
-        <label>modm/math/utils/bit_constants.hpp</label>
-        <link refid="bit__constants_8hpp"/>
-        <childnode refid="5992" relation="include">
-        </childnode>
-      </node>
-      <node id="5991">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp</label>
-        <link refid="spi__base_8hpp"/>
-        <childnode refid="5992" relation="include">
-        </childnode>
-        <childnode refid="5993" relation="include">
-        </childnode>
-        <childnode refid="5998" relation="include">
-        </childnode>
-      </node>
-      <node id="5998">
-        <label>modm/architecture/interface/register.hpp</label>
-        <link refid="register_8hpp"/>
-        <childnode refid="5992" relation="include">
-        </childnode>
-        <childnode refid="5999" relation="include">
-        </childnode>
-        <childnode refid="5995" relation="include">
-        </childnode>
-        <childnode refid="6000" relation="include">
-        </childnode>
-      </node>
-      <node id="5994">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="5995" relation="include">
-        </childnode>
-      </node>
-      <node id="6001">
-        <label>cstddef</label>
-      </node>
-      <node id="5995">
+      <node id="6007">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="6006">
-        <label>iodevice_wrapper.hpp</label>
-        <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="5992" relation="include">
-        </childnode>
-        <childnode refid="6005" relation="include">
-        </childnode>
+      <node id="6009">
+        <label>system_stm32f4xx.h</label>
       </node>
       <node id="6004">
-        <label>type_traits</label>
+        <label>stdint.h</label>
       </node>
-      <node id="5996">
-        <label>stm32f446xx.h</label>
-      </node>
-      <node id="6005">
+      <node id="6017">
         <label>iodevice.hpp</label>
         <link refid="iodevice_8hpp"/>
       </node>
-      <node id="6000">
+      <node id="6018">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="6004" relation="include">
+        </childnode>
+        <childnode refid="6017" relation="include">
+        </childnode>
+      </node>
+      <node id="6012">
         <label>modm/io/iostream.hpp</label>
         <link refid="iostream_8hpp"/>
-        <childnode refid="6001" relation="include">
+        <childnode refid="6013" relation="include">
         </childnode>
-        <childnode refid="5994" relation="include">
+        <childnode refid="6006" relation="include">
         </childnode>
-        <childnode refid="6002" relation="include">
+        <childnode refid="6014" relation="include">
         </childnode>
-        <childnode refid="6003" relation="include">
+        <childnode refid="6015" relation="include">
         </childnode>
+        <childnode refid="6016" relation="include">
+        </childnode>
+        <childnode refid="6017" relation="include">
+        </childnode>
+        <childnode refid="6018" relation="include">
+        </childnode>
+      </node>
+      <node id="6003">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp</label>
+        <link refid="spi__base_8hpp"/>
         <childnode refid="6004" relation="include">
         </childnode>
         <childnode refid="6005" relation="include">
         </childnode>
-        <childnode refid="6006" relation="include">
+        <childnode refid="6010" relation="include">
         </childnode>
       </node>
-      <node id="6003">
+      <node id="6006">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="6007" relation="include">
+        </childnode>
+      </node>
+      <node id="6010">
+        <label>modm/architecture/interface/register.hpp</label>
+        <link refid="register_8hpp"/>
+        <childnode refid="6004" relation="include">
+        </childnode>
+        <childnode refid="6011" relation="include">
+        </childnode>
+        <childnode refid="6007" relation="include">
+        </childnode>
+        <childnode refid="6012" relation="include">
+        </childnode>
+      </node>
+      <node id="6005">
+        <label>../device.hpp</label>
+        <link refid="device_8hpp"/>
+        <childnode refid="6004" relation="include">
+        </childnode>
+        <childnode refid="6006" relation="include">
+        </childnode>
+        <childnode refid="6008" relation="include">
+        </childnode>
+        <childnode refid="6009" relation="include">
+        </childnode>
+      </node>
+      <node id="6013">
+        <label>cstddef</label>
+      </node>
+      <node id="6016">
+        <label>type_traits</label>
+      </node>
+      <node id="6008">
+        <label>stm32f446xx.h</label>
+      </node>
+      <node id="6011">
+        <label>modm/math/utils/bit_constants.hpp</label>
+        <link refid="bit__constants_8hpp"/>
+        <childnode refid="6004" relation="include">
+        </childnode>
+      </node>
+      <node id="6015">
         <label>inttypes.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="6013">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_3.hpp</label>
-        <link refid="spi__hal__3_8hpp"/>
-        <childnode refid="6014" relation="include">
-        </childnode>
-        <childnode refid="6010" relation="include">
-        </childnode>
-      </node>
-      <node id="6014">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp</label>
+      <node id="6026">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp</label>
         <link refid="spi__master__3_8hpp"/>
-        <childnode refid="6010" relation="include">
+        <childnode refid="6022" relation="include">
         </childnode>
       </node>
-      <node id="6012">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_2.hpp</label>
+      <node id="6024">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_2.hpp</label>
         <link refid="spi__master__2_8hpp"/>
-        <childnode refid="6010" relation="include">
+        <childnode refid="6022" relation="include">
         </childnode>
       </node>
-      <node id="6008">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_1.hpp</label>
-        <link refid="spi__hal__1_8hpp"/>
-        <childnode refid="6009" relation="include">
-        </childnode>
-        <childnode refid="6010" relation="include">
-        </childnode>
-      </node>
-      <node id="6007">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp</label>
+      <node id="6019">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp</label>
         <link refid="spi__base_8hpp"/>
-        <childnode refid="6008" relation="include">
+        <childnode refid="6020" relation="include">
         </childnode>
-        <childnode refid="6011" relation="include">
+        <childnode refid="6023" relation="include">
         </childnode>
-        <childnode refid="6013" relation="include">
+        <childnode refid="6025" relation="include">
         </childnode>
-        <childnode refid="6010" relation="include">
+        <childnode refid="6022" relation="include">
         </childnode>
       </node>
-      <node id="6010">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+      <node id="6020">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_1.hpp</label>
+        <link refid="spi__hal__1_8hpp"/>
+        <childnode refid="6021" relation="include">
+        </childnode>
+        <childnode refid="6022" relation="include">
+        </childnode>
+      </node>
+      <node id="6022">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>
-      <node id="6009">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp</label>
-        <link refid="spi__master__1_8hpp"/>
-        <childnode refid="6010" relation="include">
+      <node id="6025">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_3.hpp</label>
+        <link refid="spi__hal__3_8hpp"/>
+        <childnode refid="6026" relation="include">
+        </childnode>
+        <childnode refid="6022" relation="include">
         </childnode>
       </node>
-      <node id="6011">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_2.hpp</label>
+      <node id="6023">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_2.hpp</label>
         <link refid="spi__hal__2_8hpp"/>
-        <childnode refid="6012" relation="include">
+        <childnode refid="6024" relation="include">
         </childnode>
-        <childnode refid="6010" relation="include">
+        <childnode refid="6022" relation="include">
+        </childnode>
+      </node>
+      <node id="6021">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp</label>
+        <link refid="spi__master__1_8hpp"/>
+        <childnode refid="6022" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -179,6 +179,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp"/>
   </compounddef>
 </doxygen>

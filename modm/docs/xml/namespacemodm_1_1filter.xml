@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="namespacemodm_1_1filter" kind="namespace" language="C++">
     <compoundname>modm::filter</compoundname>
     <innerclass refid="classmodm_1_1filter_1_1_debounce" prot="public">modm::filter::Debounce</innerclass>
@@ -8,15 +8,10 @@
     <innerclass refid="classmodm_1_1filter_1_1_moving_average" prot="public">modm::filter::MovingAverage</innerclass>
     <innerclass refid="classmodm_1_1filter_1_1_ramp" prot="public">modm::filter::Ramp</innerclass>
     <briefdescription>
-<para>A finit impulse response (FIR) filter implementation. </para>
-    </briefdescription>
+<para>A finit impulse response (FIR) filter implementation. </para>    </briefdescription>
     <detaileddescription>
-<para>g[n] = SUM(h[k]x[n-k])</para>
-<para><xrefsect id="todo_1_todo000006"><xreftitle>Todo</xreftitle><xrefdescription></xrefdescription></xrefsect></para>
-<para><simplesect kind="author"><para>Kevin Laeufer </para>
-</simplesect>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/debounce.hpp" line="22" column="1"/>
+<para>g[n] = SUM(h[k]x[n-k])</para><para><xrefsect id="todo_1_todo000006"><xreftitle>Todo</xreftitle><xrefdescription></xrefdescription></xrefsect></para><para><simplesect kind="author"><para>Kevin Laeufer </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/debounce.hpp" line="22" column="1"/>
   </compounddef>
 </doxygen>
