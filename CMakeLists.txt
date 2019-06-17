@@ -24,7 +24,6 @@ SET(MODM_INCLUDE
 	${CMAKE_CURRENT_SOURCE_DIR}/modm/src
 	${CMAKE_CURRENT_SOURCE_DIR}/modm/ext/cmsis/core
 	${CMAKE_CURRENT_SOURCE_DIR}/modm/ext/cmsis/device
-	${CMAKE_CURRENT_SOURCE_DIR}/modm/ext/crashcatcher/include
 	${CMAKE_CURRENT_SOURCE_DIR}/modm/ext
 PARENT_SCOPE)
 

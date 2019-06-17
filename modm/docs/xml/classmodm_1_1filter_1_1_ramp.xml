@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1filter_1_1_ramp" kind="class" language="C++" prot="public">
     <compoundname>modm::filter::Ramp</compoundname>
     <includes refid="ramp_8hpp" local="no">modm/math/filter/ramp.hpp</includes>
@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="73" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" bodystart="73" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="73" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1filter_1_1_ramp_1a2437df90fe79bc239b7e0d4e9fc0306c" prot="private" static="no" mutable="no">
         <type>T</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="74" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" bodystart="74" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="74" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1filter_1_1_ramp_1aa00e21078ab83afc5ac8a58f45bf466b" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="75" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" bodystart="75" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="75" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1filter_1_1_ramp_1a240c01db01d41d7cd727dc81c93dae13" prot="private" static="no" mutable="no">
         <type>T</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="77" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" bodystart="77" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="77" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1filter_1_1_ramp_1a34e03498c8e6159b25cf670fb7438a8b" prot="private" static="no" mutable="no">
         <type>T</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="78" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" bodystart="78" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="78" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" bodystart="78" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -95,41 +95,35 @@
           <defval>T()</defval>
         </param>
         <briefdescription>
-<para>Create a ramp generator. </para>
-        </briefdescription>
+<para>Create a ramp generator. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>increment</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Step size for positive direction </para>
-</parameterdescription>
+<para>Step size for positive direction </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>decrement</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Step size for the negative direction. <bold>Needs to be positive!</bold> </para>
-</parameterdescription>
+<para>Step size for the negative direction. <bold>Needs to be positive!</bold> </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>initialValue</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Starting value</para>
-</parameterdescription>
+<para>Starting value</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="warning"><para>Both values for increment and decrement needs to be positive! </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="warning"><para>Both values for increment and decrement needs to be positive! </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="52" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="52" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1filter_1_1_ramp_1aaeefea48a502345943ecf954b42d531b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -146,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="57" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="57" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1filter_1_1_ramp_1a3d101fdae691e39a0c29b57dc9651d5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -154,13 +148,12 @@
         <argsstring>()</argsstring>
         <name>update</name>
         <briefdescription>
-<para>Calculate the next step. </para>
-        </briefdescription>
+<para>Calculate the next step. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="61" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="61" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1filter_1_1_ramp_1a82c40d0ee22cc6262c2ee97ac4eb4cd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -178,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="64" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="64" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1filter_1_1_ramp_1a9ba173ea7e5d696e76b44aff6baf8220" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const T &amp;</type>
@@ -191,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="67" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="67" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1filter_1_1_ramp_1a9d20650340312dac7704ea99bc651141" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -204,21 +197,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="70" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="70" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para><ref refid="classmodm_1_1filter_1_1_ramp" kindref="compound">Ramp</ref>. </para>
-    </briefdescription>
+<para><ref refid="classmodm_1_1filter_1_1_ramp" kindref="compound">Ramp</ref>. </para>    </briefdescription>
     <detaileddescription>
-<para>The output value is incremented or decremented at every call to update until target has been reached by increment or decrement.</para>
-<para>The final value is always set to target after several calls to update.</para>
-<para>Example: <xrefsect id="todo_1_todo000009"><xreftitle>Todo</xreftitle><xrefdescription><para>example</para>
-</xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000010"><xreftitle>Todo</xreftitle><xrefdescription><para>documentation</para>
-</xrefdescription></xrefsect></para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" bodystart="38" bodyend="79"/>
+<para>The output value is incremented or decremented at every call to update until target has been reached by increment or decrement.</para><para>The final value is always set to target after several calls to update.</para><para>Example: <xrefsect id="todo_1_todo000009"><xreftitle>Todo</xreftitle><xrefdescription><para>example</para></xrefdescription></xrefsect></para><para><xrefsect id="todo_1_todo000010"><xreftitle>Todo</xreftitle><xrefdescription><para>documentation</para></xrefdescription></xrefsect></para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" line="39" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp" bodystart="38" bodyend="79"/>
     <listofallmembers>
       <member refid="classmodm_1_1filter_1_1_ramp_1a34e03498c8e6159b25cf670fb7438a8b" prot="private" virt="non-virtual"><scope>modm::filter::Ramp</scope><name>decrement</name></member>
       <member refid="classmodm_1_1filter_1_1_ramp_1a9ba173ea7e5d696e76b44aff6baf8220" prot="public" virt="non-virtual"><scope>modm::filter::Ramp</scope><name>getValue</name></member>

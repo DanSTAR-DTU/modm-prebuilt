@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="namespacemodm" kind="namespace" language="C++">
     <compoundname>modm</compoundname>
     <innerclass refid="classmodm_1_1_adc" prot="public">modm::Adc</innerclass>
@@ -97,13 +97,13 @@
     <innernamespace refid="namespacemodm_1_1bme280data">modm::bme280data</innernamespace>
     <innernamespace refid="namespacemodm_1_1can">modm::can</innernamespace>
     <innernamespace refid="namespacemodm_1_1clock">modm::clock</innernamespace>
+    <innernamespace refid="namespacemodm_1_1cortex">modm::cortex</innernamespace>
     <innernamespace refid="namespacemodm_1_1detail">modm::detail</innernamespace>
     <innernamespace refid="namespacemodm_1_1filter">modm::filter</innernamespace>
     <innernamespace refid="namespacemodm_1_1interpolation">modm::interpolation</innernamespace>
     <innernamespace refid="namespacemodm_1_1literals">modm::literals</innernamespace>
     <innernamespace refid="namespacemodm_1_1log">modm::log</innernamespace>
     <innernamespace refid="namespacemodm_1_1math">modm::math</innernamespace>
-    <innernamespace refid="namespacemodm_1_1modm">modm::modm</innernamespace>
     <innernamespace refid="namespacemodm_1_1one__wire">modm::one_wire</innernamespace>
     <innernamespace refid="namespacemodm_1_1platform">modm::platform</innernamespace>
     <innernamespace refid="namespacemodm_1_1pt">modm::pt</innernamespace>
@@ -115,13 +115,12 @@
         <argsstring></argsstring>
         <name>Register8</name>
         <briefdescription>
-<para><ref refid="structmodm_1_1_register" kindref="compound">Register</ref> class with 8-bit wide underlying type. </para>
-        </briefdescription>
+<para><ref refid="structmodm_1_1_register" kindref="compound">Register</ref> class with 8-bit wide underlying type. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="98" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="98" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="98" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__architecture__register_1ga40997210e0b33d038e50059246a6c35f" prot="public" static="no">
         <type><ref refid="structmodm_1_1_register" kindref="compound">Register</ref>&lt; uint16_t &gt;</type>
@@ -129,13 +128,12 @@
         <argsstring></argsstring>
         <name>Register16</name>
         <briefdescription>
-<para><ref refid="structmodm_1_1_register" kindref="compound">Register</ref> class with 16-bit wide underlying type. </para>
-        </briefdescription>
+<para><ref refid="structmodm_1_1_register" kindref="compound">Register</ref> class with 16-bit wide underlying type. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="99" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="99" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="99" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__architecture__register_1ga6e710bba1e576562f1b48d3fac68c3fd" prot="public" static="no">
         <type><ref refid="structmodm_1_1_register" kindref="compound">Register</ref>&lt; uint32_t &gt;</type>
@@ -143,75 +141,53 @@
         <argsstring></argsstring>
         <name>Register32</name>
         <briefdescription>
-<para><ref refid="structmodm_1_1_register" kindref="compound">Register</ref> class with 32-bit wide underlying type. </para>
-        </briefdescription>
+<para><ref refid="structmodm_1_1_register" kindref="compound">Register</ref> class with 32-bit wide underlying type. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="100" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="100" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="100" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="100" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <memberdef kind="typedef" id="group__modm__architecture__register_1gacdf81ef59f08411232bb3e7c8be57762" prot="public" static="no">
-        <templateparamlist>
-          <param>
-            <type>typename Enum</type>
-            <defval>uint8_t</defval>
-          </param>
-        </templateparamlist>
         <type><ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref>&lt; Enum, uint8_t &gt;</type>
         <definition>using modm::Flags8 = typedef Flags&lt;Enum, uint8_t&gt;</definition>
         <argsstring></argsstring>
         <name>Flags8</name>
         <briefdescription>
-<para><ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> class with 8-bit wide underlying type. </para>
-        </briefdescription>
+<para><ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> class with 8-bit wide underlying type. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="393" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="393" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="393" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="393" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__architecture__register_1ga5cddf799f2474c0da233eeb750474b18" prot="public" static="no">
-        <templateparamlist>
-          <param>
-            <type>typename Enum</type>
-            <defval>uint16_t</defval>
-          </param>
-        </templateparamlist>
         <type><ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref>&lt; Enum, uint16_t &gt;</type>
         <definition>using modm::Flags16 = typedef Flags&lt;Enum, uint16_t&gt;</definition>
         <argsstring></argsstring>
         <name>Flags16</name>
         <briefdescription>
-<para><ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> class with 16-bit wide underlying type. </para>
-        </briefdescription>
+<para><ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> class with 16-bit wide underlying type. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="395" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="395" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="395" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="395" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__architecture__register_1ga4bbc612ddbc2cf239e7c5baeabfa8a0d" prot="public" static="no">
-        <templateparamlist>
-          <param>
-            <type>typename Enum</type>
-            <defval>uint32_t</defval>
-          </param>
-        </templateparamlist>
         <type><ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref>&lt; Enum, uint32_t &gt;</type>
         <definition>using modm::Flags32 = typedef Flags&lt;Enum, uint32_t&gt;</definition>
         <argsstring></argsstring>
         <name>Flags32</name>
         <briefdescription>
-<para><ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> class with 32-bit wide underlying type. </para>
-        </briefdescription>
+<para><ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> class with 32-bit wide underlying type. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="397" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="397" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="397" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="397" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -227,11 +203,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Flushes the output stream. This manipulator simply calls the stream&apos;s <ref refid="group__modm__io_1gabe969be1dd7e086eae347fff42a13903" kindref="member">flush()</ref> member function. </para>
-        </detaileddescription>
+<para>Flushes the output stream. This manipulator simply calls the stream&apos;s <ref refid="group__modm__io_1gabe969be1dd7e086eae347fff42a13903" kindref="member">flush()</ref> member function. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="249" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" bodystart="249" bodyend="250"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="249" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" bodystart="249" bodyend="250"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__io_1ga25d1ec416bcd6a8b8d1d280c99fd2d55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">IOStream</ref> &amp;</type>
@@ -248,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="254" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" bodystart="254" bodyend="255"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="254" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" bodystart="254" bodyend="255"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__io_1gaa3870b0cd1e55a28adf436bdd45d7eaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">IOStream</ref> &amp;</type>
@@ -260,13 +235,12 @@
           <declname>ios</declname>
         </param>
         <briefdescription>
-<para>set the output mode to binary style </para>
-        </briefdescription>
+<para>set the output mode to binary style </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="259" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" bodystart="259" bodyend="260"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="259" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" bodystart="259" bodyend="260"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__io_1gaf61485290089e35ac0a897af1c37d4f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">IOStream</ref> &amp;</type>
@@ -278,13 +252,12 @@
           <declname>ios</declname>
         </param>
         <briefdescription>
-<para>set the output mode to hexadecimal style </para>
-        </briefdescription>
+<para>set the output mode to hexadecimal style </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="264" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" bodystart="264" bodyend="265"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="264" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" bodystart="264" bodyend="265"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__io_1ga684e638463534cfdac4cb3f31faa35a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">IOStream</ref> &amp;</type>
@@ -296,13 +269,12 @@
           <declname>ios</declname>
         </param>
         <briefdescription>
-<para>set the output mode to ASCII style </para>
-        </briefdescription>
+<para>set the output mode to ASCII style </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="269" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" bodystart="269" bodyend="270"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="269" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" bodystart="269" bodyend="270"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__io_1ga95e54d2dc105f141b3319157b70e3648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">IOStream</ref> &amp;</type>
@@ -314,13 +286,12 @@
           <declname>ios</declname>
         </param>
         <briefdescription>
-<para>Set the foreground colour on ANSI terminals. </para>
-        </briefdescription>
+<para>Set the foreground colour on ANSI terminals. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="274" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="274" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__io_1gace81ca5d67327501c5d10daff12bccf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">IOStream</ref> &amp;</type>
@@ -337,7 +308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="277" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="277" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__io_1gaf1149fc714213a39df7fe1d7e82184dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">IOStream</ref> &amp;</type>
@@ -354,7 +325,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="280" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="280" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__io_1ga0ba66e273e02afe2b580a77315924c1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">IOStream</ref> &amp;</type>
@@ -371,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="283" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="283" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__io_1gae6f479911a2706520d6355834b2fa7c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">IOStream</ref> &amp;</type>
@@ -388,7 +359,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="286" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="286" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__io_1ga3438c4139324e0ce05430b371995f885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">IOStream</ref> &amp;</type>
@@ -405,7 +376,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="289" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="289" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__io_1ga42c49cf650c6bba34cfd712dcea739c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">IOStream</ref> &amp;</type>
@@ -422,7 +393,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="292" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="292" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__io_1ga1c7fa6a962b858dd5760b3c9e0a9edeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">IOStream</ref> &amp;</type>
@@ -439,7 +410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="295" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp" line="295" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -454,7 +425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="24" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" bodystart="24" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="24" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__math__units_1ga30af1fac499efa181bc4708e24c577d1" prot="public" static="no">
         <type>uint32_t</type>
@@ -467,7 +438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="29" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" bodystart="29" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="29" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__math__units_1ga03efd30b9bcb8788d36e4b55228ea6dd" prot="public" static="no">
         <type>uint32_t</type>
@@ -480,7 +451,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="34" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" bodystart="34" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="34" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__math__units_1ga4f017ee3fdf26cb780b0df55356f031c" prot="public" static="no">
         <type>uint16_t</type>
@@ -493,7 +464,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" bodystart="39" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="39" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__units_1gafc7bd3891947ef9d6b3cc0d6b77db457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -515,7 +486,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="25" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="25" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__units_1ga5b32614a70970e9df66d00d174e011d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -537,7 +508,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="26" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="26" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__units_1ga2020ec8d88e38c63e7104fd91c721e10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -559,7 +530,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="27" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="27" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__units_1ga3b9715e5f69365216889e85a265d81ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -581,7 +552,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="30" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="30" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__units_1gaf31b3ba53e2eef7b3d4780d5f6ef0c30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -603,7 +574,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="31" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="31" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__units_1gaef886c89016768744f89476c3d87f1cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -625,7 +596,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="32" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="32" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__units_1ga71a525699779b80ef319bb4efe1e4ec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -647,7 +618,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="35" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="35" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__units_1ga9ce2bf9e99d363dd23d9835cb8db88f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -669,7 +640,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="36" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="36" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__units_1gae90901c790a783cdf1e3afa277051399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -691,7 +662,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="37" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="37" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__units_1gaa849cad2910e94feb4a7f31a6dacbb1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -713,7 +684,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/units.hpp" line="40" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/units.hpp" line="40" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -729,7 +700,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="24" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="24" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="24" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga6cd002ab50e9098b051162dc153a9027" prot="public" static="no" mutable="no">
         <type>constexpr uint8_t</type>
@@ -743,7 +714,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="25" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="25" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="25" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga321c02afc0736ac2e00e7345160ecd15" prot="public" static="no" mutable="no">
         <type>constexpr uint8_t</type>
@@ -757,7 +728,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="26" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="26" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="26" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1gaba1b09d91059e91dfeb9f3de71d78b88" prot="public" static="no" mutable="no">
         <type>constexpr uint8_t</type>
@@ -771,7 +742,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="27" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="27" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="27" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga6af49a714dae4f25e5abf3651bfa78da" prot="public" static="no" mutable="no">
         <type>constexpr uint8_t</type>
@@ -785,7 +756,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="28" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="28" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="28" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1gaaf03e0045f592f171a2b890e86362471" prot="public" static="no" mutable="no">
         <type>constexpr uint8_t</type>
@@ -799,7 +770,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="29" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="29" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="29" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga1e6b1e4cc43ac4e146cdc5033b594e88" prot="public" static="no" mutable="no">
         <type>constexpr uint8_t</type>
@@ -813,7 +784,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="30" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="30" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="30" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1gaa1ac8e305f378973a4e5eb9af8c878c5" prot="public" static="no" mutable="no">
         <type>constexpr uint8_t</type>
@@ -827,7 +798,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="31" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="31" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="31" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1gaec33615d542182fef47fce64bd1bda68" prot="public" static="no" mutable="no">
         <type>constexpr uint16_t</type>
@@ -841,7 +812,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="32" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="32" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="32" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga622b926d825113ebd3dce00a6e4dab9b" prot="public" static="no" mutable="no">
         <type>constexpr uint16_t</type>
@@ -855,7 +826,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="33" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="33" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="33" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga8bccc12f46dc23d8e9dde7ebef902f7c" prot="public" static="no" mutable="no">
         <type>constexpr uint16_t</type>
@@ -869,7 +840,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="34" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="34" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="34" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga21a4a87d64bcb1dfbaf346a9cb1b8711" prot="public" static="no" mutable="no">
         <type>constexpr uint16_t</type>
@@ -883,7 +854,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="35" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="35" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="35" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1gafaece4a97c420e6a4ebe85a3ceabc1f8" prot="public" static="no" mutable="no">
         <type>constexpr uint16_t</type>
@@ -897,7 +868,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="36" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="36" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="36" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga17e9994f5624f7ce7c5d1653e60dd3d0" prot="public" static="no" mutable="no">
         <type>constexpr uint16_t</type>
@@ -911,7 +882,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="37" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="37" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="37" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga9c16d83237a5ea2541ce977ecaa8ccfe" prot="public" static="no" mutable="no">
         <type>constexpr uint16_t</type>
@@ -925,7 +896,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="38" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="38" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="38" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1gacb3f481f5bc52c7a08cf1b710c87abf8" prot="public" static="no" mutable="no">
         <type>constexpr uint16_t</type>
@@ -939,7 +910,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="39" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="39" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1gafaad0d5cd5990e8827fc3a86eb2406ac" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -953,7 +924,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="40" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="40" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1gade5f68fc9cb58a187d19799042eb0757" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -967,7 +938,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="41" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="41" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="41" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga0fbf2302b43e9a15fe25590e0cde5ad1" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -981,7 +952,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="42" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="42" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga6da4ebb26f61c13d39244605c2eb198a" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -995,7 +966,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="43" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="43" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="43" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1gab4fd232fe4cdf951354261f3a8c49dd5" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -1009,7 +980,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="44" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="44" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="44" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1gafea9762eaf05b5a0472b3adb3acc058f" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -1023,7 +994,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="45" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="45" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="45" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga5e1881d9f26e8dc474fb36b89562ae8d" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -1037,7 +1008,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="46" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="46" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="46" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga82d65d1e5f5fce8b2e86a3b9d11730a6" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -1051,7 +1022,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="47" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="47" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="47" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga11b288ca4c3081b3ced3dc2585f6c502" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -1065,7 +1036,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="48" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="48" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="48" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1gaabad2869a5008b8cda28d2040dfe7a54" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -1079,7 +1050,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="49" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="49" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="49" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga8c1f16ba584d2b07937045035356e570" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -1093,7 +1064,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="50" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="50" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="50" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1gae76888fcd842cb913770739d1969c272" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -1107,7 +1078,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="51" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="51" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="51" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga71a08ac0d7e3cf1f2004849d75bdaab7" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -1121,7 +1092,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="52" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="52" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="52" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga5d6600a4f72f10f0929cbb7f5165fcfd" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -1135,7 +1106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="53" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="53" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="53" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga46eff7d0f9804d0dc18bba658b67ac59" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -1149,7 +1120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="54" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="54" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="54" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__utils_1ga92a89a5cc50bd2b4cc805e2381bc5a11" prot="public" static="no" mutable="no">
         <type>constexpr uint32_t</type>
@@ -1163,7 +1134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="55" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="55" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" line="55" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_constants.hpp" bodystart="55" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1177,15 +1148,13 @@
           <declname>n</declname>
         </param>
         <briefdescription>
-<para>Exchange the two nibbles of a byte. </para>
-        </briefdescription>
+<para>Exchange the two nibbles of a byte. </para>        </briefdescription>
         <detaileddescription>
 <para><programlisting><codeline><highlight class="normal">0xab<sp/>=&gt;<sp/>0xba</highlight></codeline>
-</programlisting> </para>
-        </detaileddescription>
+</programlisting> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="38" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="38" bodyend="52"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="38" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="38" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga76bafefd41e9954c8a95ef516947f019" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1201,13 +1170,12 @@
           <declname>b</declname>
         </param>
         <briefdescription>
-<para>Exchange two byte. </para>
-        </briefdescription>
+<para>Exchange two byte. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="56" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="56" bodyend="61"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="56" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="56" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga0e50dc2ed3c5aeddc5b0f94bd850bbae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint16_t</type>
@@ -1219,15 +1187,13 @@
           <declname>n</declname>
         </param>
         <briefdescription>
-<para>Exchange the two bytes of a 16-bit integer. </para>
-        </briefdescription>
+<para>Exchange the two bytes of a 16-bit integer. </para>        </briefdescription>
         <detaileddescription>
 <para><programlisting><codeline><highlight class="normal">0xabcd<sp/>=&gt;<sp/>0xcdab</highlight></codeline>
-</programlisting> </para>
-        </detaileddescription>
+</programlisting> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="71" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="71" bodyend="98"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="71" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="71" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga7008c2fdf9c8b9cb4869979220cc221a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t</type>
@@ -1239,15 +1205,13 @@
           <declname>n</declname>
         </param>
         <briefdescription>
-<para>Exchange the four bytes of a 32-bit integer. </para>
-        </briefdescription>
+<para>Exchange the four bytes of a 32-bit integer. </para>        </briefdescription>
         <detaileddescription>
 <para><programlisting><codeline><highlight class="normal">0xabcdefgh<sp/>=&gt;<sp/>0xghefcdab</highlight></codeline>
-</programlisting> </para>
-        </detaileddescription>
+</programlisting> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="108" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="108" bodyend="121"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="108" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="108" bodyend="121"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga7e5ae44a5c76a8deaac54480dcaf1aa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1268,7 +1232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="124" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="124" bodyend="129"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="124" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="124" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gaf059b757726ddbd2bd65c5cde94ea191" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint8_t</type>
@@ -1280,16 +1244,13 @@
           <declname>n</declname>
         </param>
         <briefdescription>
-<para>Reverse the bits in a byte. </para>
-        </briefdescription>
+<para>Reverse the bits in a byte. </para>        </briefdescription>
         <detaileddescription>
 <para><programlisting><codeline><highlight class="normal">0b01110100<sp/>=&gt;<sp/>0b00101110</highlight></codeline>
-</programlisting></para>
-<para>15 clock cycles on an AVR, without call + return. </para>
-        </detaileddescription>
+</programlisting></para><para>15 clock cycles on an AVR, without call + return. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="142" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="142" bodyend="158"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="142" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="142" bodyend="158"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga21d50f72ee3eea7c6cfec85c9960c049" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint16_t</type>
@@ -1301,13 +1262,12 @@
           <declname>n</declname>
         </param>
         <briefdescription>
-<para>Reverse the bits in a 16-bit integer. </para>
-        </briefdescription>
+<para>Reverse the bits in a 16-bit integer. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="164" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="164" bodyend="182"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="164" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="164" bodyend="182"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga9dde46a0dced1c1aabd0f169633540cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t</type>
@@ -1319,13 +1279,12 @@
           <declname>n</declname>
         </param>
         <briefdescription>
-<para>Reverse the bits in a 32-bit integer. </para>
-        </briefdescription>
+<para>Reverse the bits in a 32-bit integer. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="188" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="188" bodyend="206"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="188" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="188" bodyend="206"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gad8ca8a97b6f8b1f20e73ca32d717dcb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>constexpr int8_t</type>
@@ -1344,23 +1303,20 @@
 <parametername>-1</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>if no bit set in value </para>
-</parameterdescription>
+<para>if no bit set in value </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>n</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>position of leftmost bit </para>
-</parameterdescription>
+<para>position of leftmost bit </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="220" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="220" bodyend="223"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="220" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" bodystart="220" bodyend="223"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gaf87b61c94640fb831d3e5a4c4e5d5e54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::size_t</type>
@@ -1372,14 +1328,12 @@
           <declname>n</declname>
         </param>
         <briefdescription>
-<para>Count the number of bits set. </para>
-        </briefdescription>
+<para>Count the number of bits set. </para>        </briefdescription>
         <detaileddescription>
-<para>16 clock cycles on an AVR, without call + return. </para>
-        </detaileddescription>
+<para>16 clock cycles on an AVR, without call + return. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="232" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="232" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gad44c478120365254aa1ee9387ebf7e6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::size_t</type>
@@ -1391,14 +1345,12 @@
           <declname>n</declname>
         </param>
         <briefdescription>
-<para>Count the number of bits set. </para>
-        </briefdescription>
+<para>Count the number of bits set. </para>        </briefdescription>
         <detaileddescription>
-<para>33 clock cycles on an AVR, without call + return. </para>
-        </detaileddescription>
+<para>33 clock cycles on an AVR, without call + return. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="240" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="240" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gae0d037914bc24d4e7d9ef3bd7875c106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::size_t</type>
@@ -1410,13 +1362,12 @@
           <declname>n</declname>
         </param>
         <briefdescription>
-<para>Count the number of bits set. </para>
-        </briefdescription>
+<para>Count the number of bits set. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="244" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/bit_operation.hpp" line="244" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1426,13 +1377,12 @@
         <argsstring>()</argsstring>
         <name>isBigEndian</name>
         <briefdescription>
-<para>checks if current architecture is big endian </para>
-        </briefdescription>
+<para>checks if current architecture is big endian </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="28" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="28" bodyend="31"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="28" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="28" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga7c894de412bf85a4aa1267d98fa4f54d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>constexpr bool</type>
@@ -1440,13 +1390,12 @@
         <argsstring>()</argsstring>
         <name>isLittleEndian</name>
         <briefdescription>
-<para>checks if current architecture is little endian </para>
-        </briefdescription>
+<para>checks if current architecture is little endian </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="35" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="35" bodyend="38"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="35" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="35" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga74f1bba34ce161a34e3e4929c72c0b18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint16_t</type>
@@ -1463,7 +1412,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="42" bodyend="49"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="42" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="42" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga89290bd7631981b82f9b7e73a8c8aefc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int16_t</type>
@@ -1480,7 +1429,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="52" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="52" bodyend="55"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="52" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="52" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gad94b4c4f7a73c242d4d4b3fac74942c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t</type>
@@ -1497,7 +1446,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="58" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="58" bodyend="65"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="58" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="58" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gae5427b8adba982dbfc90908a8c7cd2a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int32_t</type>
@@ -1514,7 +1463,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="68" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="68" bodyend="71"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="68" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="68" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gaccf0f6763e19980c7e13cc290efee8c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint16_t</type>
@@ -1531,7 +1480,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="74" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="74" bodyend="81"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="74" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="74" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga2f483f2c4164f2dc41bce16ea891e2e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int16_t</type>
@@ -1548,7 +1497,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="84" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="84" bodyend="87"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="84" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="84" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gaf9b4c1e8636b0bfb1fd32e73d803a5d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t</type>
@@ -1565,7 +1514,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="90" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="90" bodyend="97"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="90" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="90" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gaff16d1a02befbc605efc0bd8eeb8a7eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int32_t</type>
@@ -1582,7 +1531,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="100" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="100" bodyend="103"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="100" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="100" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga7fee2ac5cac51ff58f8a73b184cf0272" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint16_t</type>
@@ -1599,7 +1548,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="107" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="107" bodyend="114"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="107" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="107" bodyend="114"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga8ff15f8dd119979a92282b509665b6b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int16_t</type>
@@ -1616,7 +1565,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="117" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="117" bodyend="120"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="117" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="117" bodyend="120"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gad789b4631e10757beea62d0b035daac1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t</type>
@@ -1633,7 +1582,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="123" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="123" bodyend="130"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="123" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="123" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga849d72afae2d2f3fa9168ffd042ebadc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int32_t</type>
@@ -1650,7 +1599,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="133" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="133" bodyend="136"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="133" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="133" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga0a3d77b988d61f170ba1f341a9731956" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint16_t</type>
@@ -1667,7 +1616,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="139" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="139" bodyend="146"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="139" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="139" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gaacb7d7c5041c08bf7fcf1734ef995cf5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int16_t</type>
@@ -1684,7 +1633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="149" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="149" bodyend="152"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="149" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="149" bodyend="152"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga931b548d9b9ae92409e6666f053394d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t</type>
@@ -1701,7 +1650,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="155" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="155" bodyend="162"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="155" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="155" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gabf818a3c3a336f65afb39f15a17785c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int32_t</type>
@@ -1718,19 +1667,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="165" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="165" bodyend="168"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" line="165" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/endianness.hpp" bodystart="165" bodyend="168"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
-      <memberdef kind="enum" id="group__modm__architecture__assert_1gaf22c76f51642c50723ba439c5e080726" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="group__modm__architecture__assert_1gaf22c76f51642c50723ba439c5e080726" prot="public" static="no">
         <name>Abandonment</name>
         <enumvalue id="group__modm__architecture__assert_1ggaf22c76f51642c50723ba439c5e080726a60a3629ef6a8f991f45d7a85f2458544" prot="public">
           <name>DontCare</name>
           <initializer>= Bit0</initializer>
           <briefdescription>
-<para>Do not care about failure. </para>
-          </briefdescription>
+<para>Do not care about failure. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -1738,8 +1685,7 @@
           <name>Ignore</name>
           <initializer>= Bit1</initializer>
           <briefdescription>
-<para>Safe to ignore this failure. </para>
-          </briefdescription>
+<para>Safe to ignore this failure. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -1747,29 +1693,25 @@
           <name>Fail</name>
           <initializer>= Bit2</initializer>
           <briefdescription>
-<para>This failure is reason for abandonment. </para>
-          </briefdescription>
+<para>This failure is reason for abandonment. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Describes abandonment type of assertions. </para>
-        </detaileddescription>
+<para>Describes abandonment type of assertions. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="28" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" bodystart="26" bodyend="32"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="28" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" bodystart="26" bodyend="32"/>
       </memberdef>
-      <memberdef kind="enum" id="group__modm__architecture__memory_1ga4ab452f5d1300a45f045af588fc25fb2" prot="public" static="no" strong="yes">
-        <type>uint16_t</type>
+      <memberdef kind="enum" id="group__modm__architecture__memory_1ga4ab452f5d1300a45f045af588fc25fb2" prot="public" static="no">
         <name>MemoryTrait</name>
         <enumvalue id="group__modm__architecture__memory_1gga4ab452f5d1300a45f045af588fc25fb2a2291ccc152726cc20596b2285652d62c" prot="public">
           <name>AccessSBus</name>
           <initializer>= Bit0</initializer>
           <briefdescription>
-<para>Memory is accessible via System-Bus. </para>
-          </briefdescription>
+<para>Memory is accessible via System-Bus. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -1777,8 +1719,7 @@
           <name>AccessDBus</name>
           <initializer>= Bit1</initializer>
           <briefdescription>
-<para>Memory is accessible via Data-Bus. </para>
-          </briefdescription>
+<para>Memory is accessible via Data-Bus. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -1786,8 +1727,7 @@
           <name>AccessIBus</name>
           <initializer>= Bit2</initializer>
           <briefdescription>
-<para>Memory is accessible via Instruction-Bus. </para>
-          </briefdescription>
+<para>Memory is accessible via Instruction-Bus. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -1795,8 +1735,7 @@
           <name>AccessDMA</name>
           <initializer>= Bit3</initializer>
           <briefdescription>
-<para>Memory is accessible via DMA. </para>
-          </briefdescription>
+<para>Memory is accessible via DMA. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -1804,8 +1743,7 @@
           <name>AccessDMA2D</name>
           <initializer>= Bit4</initializer>
           <briefdescription>
-<para>Memory is accessible via 2D DMA. </para>
-          </briefdescription>
+<para>Memory is accessible via 2D DMA. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -1813,8 +1751,7 @@
           <name>TypeCoreCoupled</name>
           <initializer>= Bit13</initializer>
           <briefdescription>
-<para>Memory is coupled closely to the core. </para>
-          </briefdescription>
+<para>Memory is coupled closely to the core. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -1822,8 +1759,7 @@
           <name>TypeNonVolatile</name>
           <initializer>= Bit14</initializer>
           <briefdescription>
-<para>Memory is non-volatile (battery-backed) </para>
-          </briefdescription>
+<para>Memory is non-volatile (battery-backed) </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -1831,22 +1767,19 @@
           <name>TypeExternal</name>
           <initializer>= Bit15</initializer>
           <briefdescription>
-<para>Memory is external RAM. </para>
-          </briefdescription>
+<para>Memory is external RAM. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Describes access and type of dynamic memory. </para>
-        </detaileddescription>
+<para>Describes access and type of dynamic memory. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="28" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="26" bodyend="41"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="28" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="26" bodyend="41"/>
       </memberdef>
-      <memberdef kind="enum" id="group__modm__io_1ga1dba65d23c24229cfe3c9af7912a566f" prot="public" static="no" strong="yes">
-        <type></type>
+      <memberdef kind="enum" id="group__modm__io_1ga1dba65d23c24229cfe3c9af7912a566f" prot="public" static="no">
         <name>IOBuffer</name>
         <enumvalue id="group__modm__io_1gga1dba65d23c24229cfe3c9af7912a566fa8460a7bd968d7951d287d235476ecf5c" prot="public">
           <name>DiscardIfFull</name>
@@ -1865,14 +1798,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>The preferred behavior when the <ref refid="classmodm_1_1_i_o_device" kindref="compound">IODevice</ref> buffer is full </para>
-        </detaileddescription>
+<para>The preferred behavior when the <ref refid="classmodm_1_1_i_o_device" kindref="compound">IODevice</ref> buffer is full </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iodevice_wrapper.hpp" line="29" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/io/iodevice_wrapper.hpp" bodystart="27" bodyend="32"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iodevice_wrapper.hpp" line="29" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iodevice_wrapper.hpp" bodystart="27" bodyend="32"/>
       </memberdef>
-      <memberdef kind="enum" id="group__modm__processing__timer_1ga619927ca5dffdb82e1c77b41941d63cd" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="group__modm__processing__timer_1ga619927ca5dffdb82e1c77b41941d63cd" prot="public" static="no">
         <name>PeriodicTimerState</name>
         <enumvalue id="group__modm__processing__timer_1gga619927ca5dffdb82e1c77b41941d63cdac23e2b09ebe6bf4cb5e2a9abe85c0be2" prot="public">
           <name>Stopped</name>
@@ -1901,14 +1832,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Possible states of a timer </para>
-        </detaileddescription>
+<para>Possible states of a timer </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" line="28" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" bodystart="26" bodyend="32"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" line="28" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" bodystart="26" bodyend="32"/>
       </memberdef>
-      <memberdef kind="enum" id="group__modm__processing__timer_1gacc7987b8fe7071d9cd993829ee005298" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="group__modm__processing__timer_1gacc7987b8fe7071d9cd993829ee005298" prot="public" static="no">
         <name>TimeoutState</name>
         <enumvalue id="group__modm__processing__timer_1ggacc7987b8fe7071d9cd993829ee005298ac23e2b09ebe6bf4cb5e2a9abe85c0be2" prot="public">
           <name>Stopped</name>
@@ -1937,11 +1866,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Possible states of a timeout </para>
-        </detaileddescription>
+<para>Possible states of a timeout </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="30" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="28" bodyend="34"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="30" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="28" bodyend="34"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -1953,11 +1881,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Signature of the assertion handlers </para>
-        </detaileddescription>
+<para>Signature of the assertion handlers </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="36" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" bodystart="39" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="36" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__architecture__memory_1ga5479d542cc0b8c0a291e61e4cec9199f" prot="public" static="no">
         <type><ref refid="group__modm__architecture__register_1ga5cddf799f2474c0da233eeb750474b18" kindref="member">Flags16</ref>&lt; <ref refid="group__modm__architecture__memory_1ga4ab452f5d1300a45f045af588fc25fb2" kindref="member">MemoryTrait</ref> &gt;</type>
@@ -1967,11 +1894,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>A memory can have multiple traits. </para>
-        </detaileddescription>
+<para>A memory can have multiple traits. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="45" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="45" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="45" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1a96081deb5846427f1f58ac487cd4a81e" prot="public" static="no">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; float, 1 &gt;</type>
@@ -1984,7 +1910,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp" line="110" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp" bodystart="110" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp" line="110" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1abe22ebef25cbd179a282e56cc5406f22" prot="public" static="no">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; int16_t, 1 &gt;</type>
@@ -1997,7 +1923,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp" line="111" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp" bodystart="111" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp" line="111" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1a2fbdc151f1633ce4fc5cba0d4782dbc5" prot="public" static="no">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; float, 2 &gt;</type>
@@ -2010,7 +1936,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="313" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="313" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="313" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="313" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1a22bb7ec3f4adb733a0d401c28e23c860" prot="public" static="no">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; int16_t, 2 &gt;</type>
@@ -2023,7 +1949,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="314" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="314" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="314" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="314" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1a03170ecdf2ceb689caf28c9e2399ae48" prot="public" static="no">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; uint16_t, 2 &gt;</type>
@@ -2036,7 +1962,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="315" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="315" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="315" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" bodystart="315" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1a9ede7bbd1ddf7f201e7ee3f79b1a2037" prot="public" static="no">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; float, 3 &gt;</type>
@@ -2049,7 +1975,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" line="212" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" bodystart="212" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" line="212" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" bodystart="212" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1afd798430cb7c02d9e662bafc50f86ecd" prot="public" static="no">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; int16_t, 3 &gt;</type>
@@ -2062,7 +1988,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" line="213" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" bodystart="213" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" line="213" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" bodystart="213" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1a2b9fb5b00bc095bd3247b42d6639669b" prot="public" static="no">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; uint16_t, 3 &gt;</type>
@@ -2075,7 +2001,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" line="214" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" bodystart="214" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" line="214" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" bodystart="214" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1af68704a93666f14df36af47dddcb1c44" prot="public" static="no">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; float, 4 &gt;</type>
@@ -2088,7 +2014,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" line="257" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" bodystart="257" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" line="257" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" bodystart="257" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1aeba304a165df622da3b0e49e6dbf20e2" prot="public" static="no">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; int16_t, 4 &gt;</type>
@@ -2101,7 +2027,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" line="258" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" bodystart="258" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" line="258" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" bodystart="258" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1aeb6573b08bf2944d78ae9f65e5b6eda5" prot="public" static="no">
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; uint16_t, 4 &gt;</type>
@@ -2114,7 +2040,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" line="259" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" bodystart="259" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" line="259" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" bodystart="259" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1ae756cd9ef0c6405463fd9da1173a6415" prot="public" static="no">
         <type><ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; float, 1, 1 &gt;</type>
@@ -2127,7 +2053,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="233" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" bodystart="233" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="233" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp" bodystart="233" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1a0e065373c0ab7361f7523b48786c25ea" prot="public" static="no">
         <type><ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; float, 2, 2 &gt;</type>
@@ -2140,7 +2066,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="234" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" bodystart="234" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="234" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1ad44c9d689f351ba387b62a566438aea2" prot="public" static="no">
         <type><ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; float, 3, 3 &gt;</type>
@@ -2153,7 +2079,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="235" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" bodystart="235" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="235" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp" bodystart="235" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1ace750dd4f74f45e255d4d6175dcad667" prot="public" static="no">
         <type><ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; float, 4, 4 &gt;</type>
@@ -2166,14 +2092,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="236" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" bodystart="236" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="236" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp" bodystart="236" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__arithmetic__traits_1ga4aa9b205cd091d24be9d4b873a91d6f5" prot="public" static="no">
-        <templateparamlist>
-          <param>
-            <type>typename T</type>
-          </param>
-        </templateparamlist>
         <type>typename detail::WideType&lt; T &gt;::type</type>
         <definition>using modm::WideType = typedef typename detail::WideType&lt;T&gt;::type</definition>
         <argsstring></argsstring>
@@ -2184,14 +2105,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" line="183" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" bodystart="183" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" line="183" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" bodystart="183" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__arithmetic__traits_1ga1eea33fb09849213b4d3d36cac81594c" prot="public" static="no">
-        <templateparamlist>
-          <param>
-            <type>typename T</type>
-          </param>
-        </templateparamlist>
         <type>typename detail::MakeSigned&lt; T &gt;::type</type>
         <definition>using modm::SignedType = typedef typename detail::MakeSigned&lt;T&gt;::type</definition>
         <argsstring></argsstring>
@@ -2202,14 +2118,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" line="186" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" bodystart="186" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" line="186" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" bodystart="186" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__arithmetic__traits_1ga231b53d5b4f33431499b959367c9a620" prot="public" static="no">
-        <templateparamlist>
-          <param>
-            <type>typename T</type>
-          </param>
-        </templateparamlist>
         <type>typename detail::MakeUnsigned&lt; T &gt;::type</type>
         <definition>using modm::UnsignedType = typedef typename detail::MakeUnsigned&lt;T&gt;::type</definition>
         <argsstring></argsstring>
@@ -2220,7 +2131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" line="189" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" bodystart="189" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" line="189" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/arithmetic_traits.hpp" bodystart="189" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__processing__timer_1ga3d265ef7be475824993d2f3f38e0abec" prot="public" static="no">
         <type><ref refid="classmodm_1_1_generic_periodic_timer" kindref="compound">GenericPeriodicTimer</ref>&lt; ::<ref refid="classmodm_1_1_clock" kindref="compound">modm::Clock</ref>, <ref refid="group__modm__processing__timer_1ga842ffd54d7e497f11c85118cd2a52570" kindref="member">ShortTimestamp</ref> &gt;</type>
@@ -2230,13 +2141,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Periodic software timer for up to 32 seconds with millisecond resolution.</para>
-<para>Extra care must be taken when not calling the isExpired() method for more than 32 seconds. Due to an overflow in the implementation this might add an additional delay of up to 32s ticks in the worst case. Always call restart() or restart(time) before reusing the timer to avoid this behaviour.</para>
-<para>If you need a longer time period, use PeriodicTimer. </para>
-        </detaileddescription>
+<para>Periodic software timer for up to 32 seconds with millisecond resolution.</para><para>Extra care must be taken when not calling the isExpired() method for more than 32 seconds. Due to an overflow in the implementation this might add an additional delay of up to 32s ticks in the worst case. Always call restart() or restart(time) before reusing the timer to avoid this behaviour.</para><para>If you need a longer time period, use PeriodicTimer. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" line="105" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" bodystart="105" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" line="105" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" bodystart="105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__processing__timer_1gafd9875f046c1bd3358612162e7ad8839" prot="public" static="no">
         <type><ref refid="classmodm_1_1_generic_periodic_timer" kindref="compound">GenericPeriodicTimer</ref>&lt; ::<ref refid="classmodm_1_1_clock" kindref="compound">modm::Clock</ref>, <ref refid="group__modm__processing__timer_1ga8f3b60fc7930db595007904dc1e2090d" kindref="member">Timestamp</ref> &gt;</type>
@@ -2246,11 +2154,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Periodic software timer for up to 24 days with millisecond resolution. </para>
-        </detaileddescription>
+<para>Periodic software timer for up to 24 days with millisecond resolution. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" line="109" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" bodystart="109" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" line="109" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__processing__timer_1ga5942cb6169725e55e37487efc326851b" prot="public" static="no">
         <type><ref refid="classmodm_1_1_generic_timeout" kindref="compound">GenericTimeout</ref>&lt; ::<ref refid="classmodm_1_1_clock" kindref="compound">modm::Clock</ref>, <ref refid="group__modm__processing__timer_1ga842ffd54d7e497f11c85118cd2a52570" kindref="member">ShortTimestamp</ref> &gt;</type>
@@ -2260,13 +2167,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Software timeout for up to 32 seconds with millisecond resolution.</para>
-<para>Extra care must be taken when not calling the isExpired() method for more than 32 seconds. Due to an overflow in the implementation this might add an additional delay of up to 32s ticks in the worst case. Always call restart(time) before reusing the timer to avoid this behaviour.</para>
-<para>If you need a longer time period, use Timeout. </para>
-        </detaileddescription>
+<para>Software timeout for up to 32 seconds with millisecond resolution.</para><para>Extra care must be taken when not calling the isExpired() method for more than 32 seconds. Due to an overflow in the implementation this might add an additional delay of up to 32s ticks in the worst case. Always call restart(time) before reusing the timer to avoid this behaviour.</para><para>If you need a longer time period, use Timeout. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="134" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="134" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="134" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="134" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__processing__timer_1ga527fc57fdfcde22d06c2c1b913ec4d58" prot="public" static="no">
         <type><ref refid="classmodm_1_1_generic_timeout" kindref="compound">GenericTimeout</ref>&lt; ::<ref refid="classmodm_1_1_clock" kindref="compound">modm::Clock</ref>, <ref refid="group__modm__processing__timer_1ga8f3b60fc7930db595007904dc1e2090d" kindref="member">Timestamp</ref> &gt;</type>
@@ -2276,11 +2180,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Software timeout for up to 24 days with millisecond resolution. </para>
-        </detaileddescription>
+<para>Software timeout for up to 24 days with millisecond resolution. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="138" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="138" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="138" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="138" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__processing__timer_1ga842ffd54d7e497f11c85118cd2a52570" prot="public" static="no">
         <type><ref refid="classmodm_1_1_generic_timestamp" kindref="compound">GenericTimestamp</ref>&lt; uint16_t &gt;</type>
@@ -2290,11 +2193,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>16bit timestamp, which can hold up to 65 seconds at millisecond resolution. </para>
-        </detaileddescription>
+<para>16bit timestamp, which can hold up to 65 seconds at millisecond resolution. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" line="114" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" bodystart="114" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" line="114" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" bodystart="114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__processing__timer_1ga8f3b60fc7930db595007904dc1e2090d" prot="public" static="no">
         <type><ref refid="classmodm_1_1_generic_timestamp" kindref="compound">GenericTimestamp</ref>&lt; uint32_t &gt;</type>
@@ -2304,11 +2206,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>32bit timestamp, which can hold up to 49 days at millisecond resolution. </para>
-        </detaileddescription>
+<para>32bit timestamp, which can hold up to 49 days at millisecond resolution. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" line="118" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" bodystart="118" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" line="118" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" bodystart="118" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -2321,11 +2222,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Fast code memory is accessible by at least the I-Bus and it is core-coupled. Fallback memory on exhaustion is not core-coupled. </para>
-        </detaileddescription>
+<para>Fast code memory is accessible by at least the I-Bus and it is core-coupled. Fallback memory on exhaustion is not core-coupled. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="51" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="51" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="51" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__architecture__memory_1ga1d786bf0457f54b3bde696161c7d0715" prot="public" static="no" mutable="no">
         <type>constexpr <ref refid="group__modm__architecture__memory_1ga5479d542cc0b8c0a291e61e4cec9199f" kindref="member">MemoryTraits</ref></type>
@@ -2336,11 +2236,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Fast data memory is accessible by at least the D-Bus and it is core coupled. Fallback memory on exhaustion is not core-coupled. </para>
-        </detaileddescription>
+<para>Fast data memory is accessible by at least the D-Bus and it is core coupled. Fallback memory on exhaustion is not core-coupled. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="55" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="55" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="55" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__architecture__memory_1ga4943c1af3733c164aa541dffa7972019" prot="public" static="no" mutable="no">
         <type>constexpr <ref refid="group__modm__architecture__memory_1ga5479d542cc0b8c0a291e61e4cec9199f" kindref="member">MemoryTraits</ref></type>
@@ -2351,11 +2250,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMA-able memory is accessible by at least the S-Bus and DMA. There is no fallback memory on exhaustion. </para>
-        </detaileddescription>
+<para>DMA-able memory is accessible by at least the S-Bus and DMA. There is no fallback memory on exhaustion. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="60" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="60" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="60" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__architecture__memory_1gac74d8199f23144e2af47e9ccf72f5a78" prot="public" static="no" mutable="no">
         <type>constexpr <ref refid="group__modm__architecture__memory_1ga5479d542cc0b8c0a291e61e4cec9199f" kindref="member">MemoryTraits</ref></type>
@@ -2366,11 +2264,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMA-able memory is accessible by at least the S-Bus and 2D DMA. There is no fallback memory on exhaustion. </para>
-        </detaileddescription>
+<para>DMA-able memory is accessible by at least the S-Bus and 2D DMA. There is no fallback memory on exhaustion. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="64" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="64" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="64" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__architecture__memory_1gab4a17216559951bcee7bca4115ffc0f3" prot="public" static="no" mutable="no">
         <type>constexpr <ref refid="group__modm__architecture__memory_1ga5479d542cc0b8c0a291e61e4cec9199f" kindref="member">MemoryTraits</ref></type>
@@ -2381,11 +2278,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>External memory is accessible by at least the S-Bus and it is external. Fallback memory on exhaustion is internal. </para>
-        </detaileddescription>
+<para>External memory is accessible by at least the S-Bus and it is external. Fallback memory on exhaustion is internal. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="69" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="69" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="69" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__architecture__memory_1ga8c685b0abc10fbae2b743a12c46b5599" prot="public" static="no" mutable="no">
         <type>constexpr <ref refid="group__modm__architecture__memory_1ga5479d542cc0b8c0a291e61e4cec9199f" kindref="member">MemoryTraits</ref></type>
@@ -2396,11 +2292,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Backup memory is accessible by at least the S-Bus and it is non-volatile. There is no fallback memory on exhaustion. </para>
-        </detaileddescription>
+<para>Backup memory is accessible by at least the S-Bus and it is non-volatile. There is no fallback memory on exhaustion. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="73" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="73" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="73" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__modm__architecture__memory_1ga08155d1288c3fd230809c6bffb2df227" prot="public" static="no" mutable="no">
         <type>constexpr <ref refid="group__modm__architecture__memory_1ga5479d542cc0b8c0a291e61e4cec9199f" kindref="member">MemoryTraits</ref></type>
@@ -2411,14 +2306,26 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Default memory is DMA-able. </para>
-        </detaileddescription>
+<para>Default memory is DMA-able. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="77" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="77" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="77" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" bodystart="77" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
+      <memberdef kind="function" id="group__modm__architecture__build__id_1gaac7e7e205bbced786315f5f5e7d165cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::array&lt; uint8_t, 20 &gt; &amp;</type>
+        <definition>const std::array&lt;uint8_t, 20&gt;&amp; modm::build_id</definition>
+        <argsstring>()</argsstring>
+        <name>build_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the GNU Build ID as a 160-bit SHA1 array. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/build_id.hpp" line="27" column="1"/>
+      </memberdef>
       <memberdef kind="function" id="namespacemodm_1aec9a27daba54314a860c714c611db4b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">modm::IOStream</ref> &amp;</type>
         <definition>modm::IOStream&amp; modm::operator&lt;&lt;</definition>
@@ -2438,7 +2345,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/can.hpp" line="121" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/can.hpp" line="121" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__architecture__delay_1gac74a1138fd586eafa8cd4c1928f4ccab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2452,11 +2359,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Spin for nanoseconds. This function is implemented as best-effort and its resolution will be very coarse especially on platforms with very slow clocks. </para>
-        </detaileddescription>
+<para>Spin for nanoseconds. This function is implemented as best-effort and its resolution will be very coarse especially on platforms with very slow clocks. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/delay.hpp" line="28" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/delay.hpp" line="28" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__architecture__delay_1ga03e5053cd9552409229bec06accb44b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2470,11 +2376,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Spin for microseconds. </para>
-        </detaileddescription>
+<para>Spin for microseconds. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/delay.hpp" line="33" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/delay.hpp" line="33" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__architecture__delay_1gacf0606c81a2e71403a44a768b16e5268" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2488,11 +2393,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Spin for milliseconds. </para>
-        </detaileddescription>
+<para>Spin for milliseconds. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/delay.hpp" line="38" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/delay.hpp" line="38" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacemodm_1af514f7f31e849247fd759cae0d641642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">modm::IOStream</ref> &amp;</type>
@@ -2513,7 +2417,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c.hpp" line="132" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c.hpp" line="132" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacemodm_1a666cd54b8a68da34d49dc4ed0c1aac73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">modm::IOStream</ref> &amp;</type>
@@ -2534,7 +2438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c.hpp" line="135" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c.hpp" line="135" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacemodm_1a62b18dcf6a8961133b322f90c3127a85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">modm::IOStream</ref> &amp;</type>
@@ -2555,7 +2459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c.hpp" line="138" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c.hpp" line="138" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacemodm_1a8dd7d284c829b485675446c43c88d23d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">modm::IOStream</ref> &amp;</type>
@@ -2576,7 +2480,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c.hpp" line="141" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c.hpp" line="141" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__architecture__unaligned_1ga452f44a964c3bcaa351e12ea8d74800e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2598,11 +2502,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Accesses a memory location using a unaligned-safe method. </para>
-        </detaileddescription>
+<para>Accesses a memory location using a unaligned-safe method. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/unaligned.hpp" line="69" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/unaligned.hpp" bodystart="69" bodyend="72"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/unaligned.hpp" line="69" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/unaligned.hpp" bodystart="69" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="namespacemodm_1a8da458774cdb0f36cf3251e652bb9651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i_o_stream" kindref="compound">modm::IOStream</ref> &amp;</type>
@@ -2623,7 +2526,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/smart_pointer.hpp" line="135" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/smart_pointer.hpp" line="135" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__geometry_1ga1745aa721c8c9d9c4874beab9901cfee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>constexpr float</type>
@@ -2640,7 +2543,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="56" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="56" bodyend="59"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="56" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="56" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__geometry_1ga4734f4cf28f5ddbcda202dc5663be292" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>constexpr float</type>
@@ -2657,7 +2560,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="63" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="63" bodyend="66"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="63" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="63" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__geometry_1ga443b6b5dbba5177fc4e90894ca576655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -2678,24 +2581,23 @@
           <declname>l</declname>
         </param>
         <briefdescription>
-<para>Stream operator to <bold>modm::Location&lt;T&gt;</bold> </para>
-        </briefdescription>
+<para>Stream operator to <bold>modm::Location&lt;T&gt;</bold> </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp" line="129" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp" line="129" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="namespacemodm_1ad9e4b207b4772724c2b5e3a994355f61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacemodm_1ad85d8387eb13fe8bb4cd5abf9d7a0bd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class T</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmodm_1_1_quaternion" kindref="compound">Quaternion</ref>&lt; T &gt;</type>
-        <definition>Quaternion&lt;T&gt; modm::operator *</definition>
+        <definition>Quaternion&lt;T&gt; modm::operator*</definition>
         <argsstring>(const T &amp;lhs, const Quaternion&lt; T &gt; &amp;rhs)</argsstring>
-        <name>operator *</name>
+        <name>operator*</name>
         <param>
           <type>const T &amp;</type>
           <declname>lhs</declname>
@@ -2710,9 +2612,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="108" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp" line="110" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="namespacemodm_1a5f0828b5057c75f9b3e36ae4d0e0c52b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="namespacemodm_1adabcf6385638e9efc4984e356c7990f5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename U</type>
@@ -2722,9 +2624,9 @@
           </param>
         </templateparamlist>
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; T, 1 &gt;</type>
-        <definition>static Vector&lt;T, 1&gt; modm::operator *</definition>
+        <definition>static Vector&lt;T, 1&gt; modm::operator*</definition>
         <argsstring>(const U &amp;lhs, const Vector&lt; T, 1 &gt; &amp;rhs)</argsstring>
-        <name>operator *</name>
+        <name>operator*</name>
         <param>
           <type>const U &amp;</type>
           <declname>lhs</declname>
@@ -2739,7 +2641,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp" line="105" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp" bodystart="105" bodyend="108"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp" line="105" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp" bodystart="105" bodyend="108"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__geometry_1gae0dab16035b9f12ce06bed0aa87f8e31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -2760,24 +2662,23 @@
           <declname>c</declname>
         </param>
         <briefdescription>
-<para>Stream operator for <bold>modm::Vector&lt;U, 2&gt;</bold> </para>
-        </briefdescription>
+<para>Stream operator for <bold>modm::Vector&lt;U, 2&gt;</bold> </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="325" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="325" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group__modm__math__geometry_1ga903d98b7e7359bb9fb1a61221582a663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__modm__math__geometry_1gab1734ee8a7599e982c08365302ced3ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename U</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; U, 2 &gt;</type>
-        <definition>Vector&lt;U, 2&gt; modm::operator *</definition>
+        <definition>Vector&lt;U, 2&gt; modm::operator*</definition>
         <argsstring>(float scale, const Vector&lt; U, 2 &gt; &amp;vector)</argsstring>
-        <name>operator *</name>
+        <name>operator*</name>
         <param>
           <type>float</type>
           <declname>scale</declname>
@@ -2787,13 +2688,12 @@
           <declname>vector</declname>
         </param>
         <briefdescription>
-<para>Scalar multiplication. </para>
-        </briefdescription>
+<para>Scalar multiplication. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="334" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="334" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__geometry_1ga3c7c922ac55292dc07237d75b17dc2b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -2814,15 +2714,14 @@
           <declname>vector</declname>
         </param>
         <briefdescription>
-<para>Scalar division. </para>
-        </briefdescription>
+<para>Scalar division. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="342" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp" line="342" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="namespacemodm_1aaa1cf42335ad02924b52e94196520aaf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="namespacemodm_1a49a5790ea15ec72682a76ef76b210ef0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename U</type>
@@ -2832,9 +2731,9 @@
           </param>
         </templateparamlist>
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; T, 3 &gt;</type>
-        <definition>static Vector&lt;T, 3&gt; modm::operator *</definition>
+        <definition>static Vector&lt;T, 3&gt; modm::operator*</definition>
         <argsstring>(const U &amp;lhs, const Vector&lt; T, 3 &gt; &amp;rhs)</argsstring>
-        <name>operator *</name>
+        <name>operator*</name>
         <param>
           <type>const U &amp;</type>
           <declname>lhs</declname>
@@ -2849,9 +2748,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" line="200" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" bodystart="200" bodyend="203"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" line="200" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" bodystart="200" bodyend="203"/>
       </memberdef>
-      <memberdef kind="function" id="namespacemodm_1a17435fd4ab788c8eedba0ead376ee3ec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="namespacemodm_1a13c67841a86b324af3f0d234e68d8fff" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -2861,9 +2760,9 @@
           </param>
         </templateparamlist>
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; U, 3 &gt;</type>
-        <definition>static Vector&lt;U, 3&gt; modm::operator *</definition>
+        <definition>static Vector&lt;U, 3&gt; modm::operator*</definition>
         <argsstring>(const Matrix&lt; T, 3, 3 &gt; &amp;lhs, const Vector&lt; U, 3 &gt; &amp;rhs)</argsstring>
-        <name>operator *</name>
+        <name>operator*</name>
         <param>
           <type>const <ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; T, 3, 3 &gt; &amp;</type>
           <declname>lhs</declname>
@@ -2878,9 +2777,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" line="206" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" bodystart="206" bodyend="209"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" line="206" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp" bodystart="206" bodyend="209"/>
       </memberdef>
-      <memberdef kind="function" id="namespacemodm_1aa449f1ee817a9d7dbf2fe14bfc61149d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="namespacemodm_1a5b7742f45b7255c8a7dccb84ccc31f66" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename U</type>
@@ -2890,9 +2789,9 @@
           </param>
         </templateparamlist>
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; T, 4 &gt;</type>
-        <definition>static Vector&lt;T,4&gt; modm::operator *</definition>
+        <definition>static Vector&lt;T,4&gt; modm::operator*</definition>
         <argsstring>(const U &amp;lhs, const Vector&lt; T, 4 &gt; &amp;rhs)</argsstring>
-        <name>operator *</name>
+        <name>operator*</name>
         <param>
           <type>const U &amp;</type>
           <declname>lhs</declname>
@@ -2907,9 +2806,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" line="246" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" bodystart="246" bodyend="249"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" line="246" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" bodystart="246" bodyend="249"/>
       </memberdef>
-      <memberdef kind="function" id="namespacemodm_1af8884135cb7a8f6c1f07cc965c7f73a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="namespacemodm_1a6dcb6c02d7f8c41f87cf2cc4bf7b64e0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -2919,9 +2818,9 @@
           </param>
         </templateparamlist>
         <type><ref refid="classmodm_1_1_vector" kindref="compound">Vector</ref>&lt; U, 4 &gt;</type>
-        <definition>static Vector&lt;U,4&gt; modm::operator *</definition>
+        <definition>static Vector&lt;U,4&gt; modm::operator*</definition>
         <argsstring>(const Matrix&lt; T, 4, 4 &gt; &amp;lhs, const Vector&lt; U, 4 &gt; &amp;rhs)</argsstring>
-        <name>operator *</name>
+        <name>operator*</name>
         <param>
           <type>const <ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref>&lt; T, 4, 4 &gt; &amp;</type>
           <declname>lhs</declname>
@@ -2936,7 +2835,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" line="252" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" bodystart="252" bodyend="255"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" line="252" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp" bodystart="252" bodyend="255"/>
       </memberdef>
       <memberdef kind="function" id="namespacemodm_1a2db61e11d39d5bcbbd068b69b8f5f86d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -2970,7 +2869,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="230" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="230" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacemodm_1ac7d7fafff11c95af54480776c48f7ca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -2992,7 +2891,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="242" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="242" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacemodm_1a64a4409e7094c3591df137f18fd5cbea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -3014,7 +2913,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="247" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="247" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__matrix_1ga92ab7864d3c8a369ef9cb7d5703db07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -3036,46 +2935,42 @@
           <declname>m</declname>
         </param>
         <briefdescription>
-<para>Calculate the determinant. </para>
-        </briefdescription>
+<para>Calculate the determinant. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>m</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref> </para>
-</parameterdescription>
+<para><ref refid="classmodm_1_1_matrix" kindref="compound">Matrix</ref> </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="257" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/matrix.hpp" line="257" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="namespacemodm_1a98a3dc8285465b536389f5cf83598984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacemodm_1af6ef30aee5d1f52e6e43c93f63bde624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename U</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmodm_1_1_saturated" kindref="compound">Saturated</ref>&lt; U &gt;</type>
-        <definition>Saturated&lt;U&gt; modm::operator -</definition>
+        <definition>Saturated&lt;U&gt; modm::operator-</definition>
         <argsstring>(const Saturated&lt; U &gt; &amp;x)</argsstring>
-        <name>operator -</name>
+        <name>operator-</name>
         <param>
           <type>const <ref refid="classmodm_1_1_saturated" kindref="compound">Saturated</ref>&lt; U &gt; &amp;</type>
           <declname>x</declname>
         </param>
         <briefdescription>
-<para>Invert value. </para>
-        </briefdescription>
+<para>Invert value. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/saturated/saturated.hpp" line="98" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/saturated/saturated.hpp" line="98" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacemodm_1a5e02197831663b0f7f475c15fc9e8035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -3092,24 +2987,23 @@
           <declname>x</declname>
         </param>
         <briefdescription>
-<para>Calculate the absolute value. </para>
-        </briefdescription>
+<para>Calculate the absolute value. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/saturated/saturated.hpp" line="103" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/saturated/saturated.hpp" line="103" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="namespacemodm_1a40a1bbd59a6db14a553af88ad8074071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacemodm_1a09aa3003d7d55f4271426e1883aea44c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename U</type>
           </param>
         </templateparamlist>
         <type><ref refid="classmodm_1_1_saturated" kindref="compound">Saturated</ref>&lt; U &gt;</type>
-        <definition>Saturated&lt;U&gt; modm::operator -</definition>
+        <definition>Saturated&lt;U&gt; modm::operator-</definition>
         <argsstring>(const Saturated&lt; U &gt; &amp;a, const Saturated&lt; U &gt; &amp;b)</argsstring>
-        <name>operator -</name>
+        <name>operator-</name>
         <param>
           <type>const <ref refid="classmodm_1_1_saturated" kindref="compound">Saturated</ref>&lt; U &gt; &amp;</type>
           <declname>a</declname>
@@ -3124,7 +3018,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/saturated/saturated.hpp" line="107" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/saturated/saturated.hpp" line="107" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacemodm_1ae56e6de2c2d00edd73126375b2ecad17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -3150,7 +3044,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/saturated/saturated.hpp" line="111" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/saturated/saturated.hpp" line="111" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacemodm_1a1b11396b1710fc53864a744c8411c6a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -3176,18 +3070,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/saturated/saturated.hpp" line="115" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/saturated/saturated.hpp" line="115" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="namespacemodm_1ad8ebc8b7b3aae074696dbf214d9e978e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="namespacemodm_1a9b05ac14150f69bfe4247a4050d268eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename U</type>
           </param>
         </templateparamlist>
         <type>bool</type>
-        <definition>bool modm::operator !=</definition>
+        <definition>bool modm::operator!=</definition>
         <argsstring>(const Saturated&lt; U &gt; &amp;a, const Saturated&lt; U &gt; &amp;b)</argsstring>
-        <name>operator !=</name>
+        <name>operator!=</name>
         <param>
           <type>const <ref refid="classmodm_1_1_saturated" kindref="compound">Saturated</ref>&lt; U &gt; &amp;</type>
           <declname>a</declname>
@@ -3202,7 +3096,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/saturated/saturated.hpp" line="119" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/saturated/saturated.hpp" line="119" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gaec13941291730157912e182afefe1be0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -3216,12 +3110,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Fast check if a float variable is positive</para>
-<para>Checks only the sign bit for the AVR. </para>
-        </detaileddescription>
+<para>Fast check if a float variable is positive</para><para>Checks only the sign bit for the AVR. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="36" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="36" bodyend="39"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="36" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="36" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga5df53b0ad92fb8fa06b5dc17a16b1ed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>constexpr uint32_t</type>
@@ -3239,14 +3131,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Compile time and runtime exponentiation</para>
-<para>Calculates base raised to the power of exponent. If base and exponent are compile-time constants, the results is calculated at compile time. Otherwise the result is computed at runtime, which might be very expensive.</para>
-<para><programlisting><codeline><highlight class="normal">constexpr<sp/>int<sp/>value<sp/>=<sp/>modm::pow(10,<sp/>2);</highlight></codeline>
-</programlisting> </para>
-        </detaileddescription>
+<para>Compile time and runtime exponentiation</para><para>Calculates base raised to the power of exponent. If base and exponent are compile-time constants, the results is calculated at compile time. Otherwise the result is computed at runtime, which might be very expensive.</para><para><programlisting><codeline><highlight class="normal">constexpr<sp/>int<sp/>value<sp/>=<sp/>modm::pow(10,<sp/>2);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="55" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="55" bodyend="58"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="55" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="55" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga0911b63c9be749d20800b5f99fb6d4a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -3267,33 +3156,28 @@
           <declname>b</declname>
         </param>
         <briefdescription>
-<para>This does what you think it does. </para>
-        </briefdescription>
+<para>This does what you think it does. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>a</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A thing of arbitrary type. </para>
-</parameterdescription>
+<para>A thing of arbitrary type. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>b</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Another thing of arbitrary type. </para>
-</parameterdescription>
+<para>Another thing of arbitrary type. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The lesser of the parameters.</para>
-</simplesect>
-This is the simple classic generic implementation. It will work on temporary expressions, since they are only evaluated once, unlike a preprocessor macro. </para>
-        </detaileddescription>
+<simplesect kind="return"><para>The lesser of the parameters.</para></simplesect>
+This is the simple classic generic implementation. It will work on temporary expressions, since they are only evaluated once, unlike a preprocessor macro. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="73" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="73" bodyend="79"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="73" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="73" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga222358293aace9c4f19a45cb3850f8ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -3314,33 +3198,28 @@ This is the simple classic generic implementation. It will work on temporary exp
           <declname>b</declname>
         </param>
         <briefdescription>
-<para>This does what you think it does. </para>
-        </briefdescription>
+<para>This does what you think it does. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>a</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A thing of arbitrary type. </para>
-</parameterdescription>
+<para>A thing of arbitrary type. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>b</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Another thing of arbitrary type. </para>
-</parameterdescription>
+<para>Another thing of arbitrary type. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The greater of the parameters.</para>
-</simplesect>
-This is the simple classic generic implementation. It will work on temporary expressions, since they are only evaluated once, unlike a preprocessor macro. </para>
-        </detaileddescription>
+<simplesect kind="return"><para>The greater of the parameters.</para></simplesect>
+This is the simple classic generic implementation. It will work on temporary expressions, since they are only evaluated once, unlike a preprocessor macro. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="94" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="94" bodyend="100"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="94" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="94" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1gaa89d150ac3c4c69a60307dd6c39f9c23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -3365,41 +3244,35 @@ This is the simple classic generic implementation. It will work on temporary exp
           <declname>c</declname>
         </param>
         <briefdescription>
-<para>This does what you think it does. </para>
-        </briefdescription>
+<para>This does what you think it does. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>a</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A thing of arbitrary type. </para>
-</parameterdescription>
+<para>A thing of arbitrary type. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>b</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Another thing of arbitrary type. </para>
-</parameterdescription>
+<para>Another thing of arbitrary type. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>c</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Something else of arbitrary type. </para>
-</parameterdescription>
+<para>Something else of arbitrary type. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The greater of the three parameters.</para>
-</simplesect>
-This is the simple classic generic implementation. It will work on temporary expressions, since they are only evaluated once, unlike a preprocessor macro. </para>
-        </detaileddescription>
+<simplesect kind="return"><para>The greater of the three parameters.</para></simplesect>
+This is the simple classic generic implementation. It will work on temporary expressions, since they are only evaluated once, unlike a preprocessor macro. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="116" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="116" bodyend="120"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="116" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="116" bodyend="120"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga63941abd87426c326fd3d968c2fd2256" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -3427,41 +3300,35 @@ This is the simple classic generic implementation. It will work on temporary exp
           <declname>compare</declname>
         </param>
         <briefdescription>
-<para>This does what you think it does. </para>
-        </briefdescription>
+<para>This does what you think it does. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>a</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A thing of arbitrary type. </para>
-</parameterdescription>
+<para>A thing of arbitrary type. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>b</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Another thing of arbitrary type. </para>
-</parameterdescription>
+<para>Another thing of arbitrary type. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>compare</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A comparison functor. </para>
-</parameterdescription>
+<para>A comparison functor. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The lesser of the parameters.</para>
-</simplesect>
-This will work on temporary expressions, since they are only evaluated once, unlike a preprocessor macro. </para>
-        </detaileddescription>
+<simplesect kind="return"><para>The lesser of the parameters.</para></simplesect>
+This will work on temporary expressions, since they are only evaluated once, unlike a preprocessor macro. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="135" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="135" bodyend="141"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="135" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="135" bodyend="141"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__math__utils_1ga2a4606035f3c0e99d2bf894251b81b04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -3489,41 +3356,35 @@ This will work on temporary expressions, since they are only evaluated once, unl
           <declname>compare</declname>
         </param>
         <briefdescription>
-<para>This does what you think it does. </para>
-        </briefdescription>
+<para>This does what you think it does. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>a</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A thing of arbitrary type. </para>
-</parameterdescription>
+<para>A thing of arbitrary type. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>b</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Another thing of arbitrary type. </para>
-</parameterdescription>
+<para>Another thing of arbitrary type. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>compare</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A comparison functor. </para>
-</parameterdescription>
+<para>A comparison functor. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The greater of the parameters.</para>
-</simplesect>
-This will work on temporary expressions, since they are only evaluated once, unlike a preprocessor macro. </para>
-        </detaileddescription>
+<simplesect kind="return"><para>The greater of the parameters.</para></simplesect>
+This will work on temporary expressions, since they are only evaluated once, unlike a preprocessor macro. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="156" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="156" bodyend="162"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" line="156" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/misc.hpp" bodystart="156" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="namespacemodm_1a739f5a0e5096e70586eacd3771363444" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -3549,7 +3410,7 @@ This will work on temporary expressions, since they are only evaluated once, unl
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" line="122" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" bodystart="123" bodyend="127"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" line="122" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" bodystart="123" bodyend="127"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__utils_1gac9a2e3b1c445ec26b3a24543db1731dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3559,17 +3420,16 @@ This will work on temporary expressions, since they are only evaluated once, unl
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Dummy function for default function pointers. </para>
-        </detaileddescription>
+<para>Dummy function for default function pointers. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils/dummy.hpp" line="26" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils/dummy.hpp" line="26" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="21" column="1"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/container.hpp" line="21" column="1"/>
   </compounddef>
 </doxygen>

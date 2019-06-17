@@ -1,18 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__modm__architecture__assert" kind="group">
     <compoundname>modm_architecture_assert</compoundname>
     <title>Assertions</title>
       <sectiondef kind="enum">
-      <memberdef kind="enum" id="group__modm__architecture__assert_1gaf22c76f51642c50723ba439c5e080726" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="group__modm__architecture__assert_1gaf22c76f51642c50723ba439c5e080726" prot="public" static="no">
         <name>Abandonment</name>
         <enumvalue id="group__modm__architecture__assert_1ggaf22c76f51642c50723ba439c5e080726a60a3629ef6a8f991f45d7a85f2458544" prot="public">
           <name>DontCare</name>
           <initializer>= Bit0</initializer>
           <briefdescription>
-<para>Do not care about failure. </para>
-          </briefdescription>
+<para>Do not care about failure. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -20,8 +18,7 @@
           <name>Ignore</name>
           <initializer>= Bit1</initializer>
           <briefdescription>
-<para>Safe to ignore this failure. </para>
-          </briefdescription>
+<para>Safe to ignore this failure. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -29,19 +26,17 @@
           <name>Fail</name>
           <initializer>= Bit2</initializer>
           <briefdescription>
-<para>This failure is reason for abandonment. </para>
-          </briefdescription>
+<para>This failure is reason for abandonment. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Describes abandonment type of assertions. </para>
-        </detaileddescription>
+<para>Describes abandonment type of assertions. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="28" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" bodystart="26" bodyend="32"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="28" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" bodystart="26" bodyend="32"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -53,11 +48,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Signature of the assertion handlers </para>
-        </detaileddescription>
+<para>Signature of the assertion handlers </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="36" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" bodystart="39" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="36" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -85,15 +79,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Assert a condition to be true with failure identifier. This assert is always included in the source code. <simplesect kind="return"><para>result of condition evaluation</para>
-</simplesect>
-<simplesect kind="note"><para>On AVR targets the failure identifier string is placed in Flash memory! </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para>Assert a condition to be true with failure identifier. This assert is always included in the source code. <simplesect kind="return"><para>result of condition evaluation</para></simplesect>
+<simplesect kind="note"><para>On AVR targets the failure identifier string is placed in Flash memory! </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="69" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="69" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__architecture__assert_1ga30f972d5576059fc223eb1103fe410d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -123,15 +114,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Assert a condition to be true with failure identifier and context. This assert is always included in the source code. <simplesect kind="return"><para>result of condition evaluation</para>
-</simplesect>
-<simplesect kind="note"><para>On AVR targets the failure identifier string is placed in Flash memory! </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para>Assert a condition to be true with failure identifier and context. This assert is always included in the source code. <simplesect kind="return"><para>result of condition evaluation</para></simplesect>
+<simplesect kind="note"><para>On AVR targets the failure identifier string is placed in Flash memory! </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="81" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="81" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__architecture__assert_1ga5550f5d2d8e1c93ea54dab9b3ceece0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -157,15 +145,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Assert a condition to be true with failure identifier. This assert is only triggered in the source code on debug builds! <simplesect kind="return"><para>result of condition evaluation</para>
-</simplesect>
-<simplesect kind="note"><para>On AVR targets the strings are placed in Flash memory! </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para>Assert a condition to be true with failure identifier. This assert is only triggered in the source code on debug builds! <simplesect kind="return"><para>result of condition evaluation</para></simplesect>
+<simplesect kind="note"><para>On AVR targets the strings are placed in Flash memory! </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="93" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="93" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__architecture__assert_1gafc6fdce377db677c250069879e8b54d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -195,15 +180,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Assert a condition to be true with failure identifier and context. This assert is only triggered in the source code on debug builds! <simplesect kind="return"><para>result of condition evaluation</para>
-</simplesect>
-<simplesect kind="note"><para>On AVR targets the strings are placed in Flash memory! </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para>Assert a condition to be true with failure identifier and context. This assert is only triggered in the source code on debug builds! <simplesect kind="return"><para>result of condition evaluation</para></simplesect>
+<simplesect kind="note"><para>On AVR targets the strings are placed in Flash memory! </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="105" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="105" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__architecture__assert_1ga167476628ef21d7f3c88a79d7a90b7a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -229,12 +211,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Overwriteable abandonment handler for all targets.</para>
-<para>You should overwrite this handler for custom failure behaviour like blinking LEDs and outputting the failure string via a serial connection. </para>
-        </detaileddescription>
+<para>Overwriteable abandonment handler for all targets.</para><para>You should overwrite this handler for custom failure behaviour like blinking LEDs and outputting the failure string via a serial connection. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="116" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="116" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -244,42 +224,28 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>This adds a function to the list of assertion handlers to execute on assertion failure. Note that this macro does not give you any influence over the order of handler execution on assertion failure. Do not write assertion handlers that depend on any ordered execution!</para>
-<para><simplesect kind="warning"><para>On AVR targets the failure identifier resides in Flash memory!</para>
-</simplesect>
+<para>This adds a function to the list of assertion handlers to execute on assertion failure. Note that this macro does not give you any influence over the order of handler execution on assertion failure. Do not write assertion handlers that depend on any ordered execution!</para><para><simplesect kind="warning"><para>On AVR targets the failure identifier resides in Flash memory!</para></simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>handler</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A function of signature <computeroutput>AssertionHandler</computeroutput>. </para>
-</parameterdescription>
+<para>A function of signature <computeroutput>AssertionHandler</computeroutput>. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="57" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" bodystart="57" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" line="57" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/assert.hpp" bodystart="57" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>These functions allow you to assert a condition at runtime and define failure handlers in your application that can decide what to do with this assertion and provide custom functionality.</para>
-<para>Each assertion has the form <computeroutput>modm_assert(condition, module, location, failure)</computeroutput>, where the condition is a boolean and rest are strings, so that a simple string compare can be used to match for module, location or failure. For example, the identifier <computeroutput>&quot;can&quot;, &quot;init&quot;, &quot;timeout&quot;</computeroutput> describes a timeout failure in the CAN initializer function. The assert <computeroutput>modm_assert_debug(condition, module, location, failure)</computeroutput> is only available on debug builds and is removed from the code for a release build.</para>
-<para>The user can define one or multiple assertion handlers in any part of the application using the <computeroutput><ref refid="group__modm__architecture__assert_1ga16bc9b4ebefe47d1417ec75f99b30ee6" kindref="member">MODM_ASSERTION_HANDLER(function)</ref></computeroutput> macro. All assertion handlers will be executed when an assertion fails anywhere in the code and get passed the identifier string.</para>
-<para><simplesect kind="note"><para>The order of assertion handler execution is undefined and must not been relied upon for any functionality!</para>
-</simplesect>
-<simplesect kind="warning"><para>Assertion handlers may be executed in interrupt context!</para>
-</simplesect>
-Depending on the information in the failure identifier, the assertion handler returns <computeroutput>Abandonment::DontCare</computeroutput> if the failure is not of interest, or <computeroutput>Abandonment::Ignore</computeroutput> for recoverable failures, or <computeroutput>Abandonment::Fail</computeroutput> for failures that do not allow normal program continuation. The program is aborted, if any assertion handler returns <computeroutput>Abandonment::Fail</computeroutput>, all assertion handlers return <computeroutput>Abandonment::DontCare</computeroutput> or no assertion handlers have been defined in the application. Only if one or many assertion handlers return <computeroutput>Abandonment::Ignore</computeroutput> and the remainder returns <computeroutput>Abandonment::DontCare</computeroutput>, only then is the assertion ignored.</para>
-<para><simplesect kind="note"><para>It is intended that the assertion handlers do not block (forever), so that all assertion handlers can get called.</para>
-</simplesect>
-On program abandonment <computeroutput>modm_abandon(module, location, failure)</computeroutput> is called, which exits the program silently by default. Only on hosted an formatted error string is output by default. It is therefore recommended to overwrite this function on embedded targets for custom behavior like blinking an LED and printing to a serial connection.</para>
-<para><simplesect kind="warning"><para>The abandonment handler may also be executed in interrupt context! </para>
-</simplesect>
-</para>
-    </detaileddescription>
+<para>These functions allow you to assert a condition at runtime and define failure handlers in your application that can decide what to do with this assertion and provide custom functionality.</para><para>Each assertion has the form <computeroutput>modm_assert(condition, module, location, failure)</computeroutput>, where the condition is a boolean and rest are strings, so that a simple string compare can be used to match for module, location or failure. For example, the identifier <computeroutput>&quot;can&quot;, &quot;init&quot;, &quot;timeout&quot;</computeroutput> describes a timeout failure in the CAN initializer function. The assert <computeroutput>modm_assert_debug(condition, module, location, failure)</computeroutput> is only available on debug builds and is removed from the code for a release build.</para><para>The user can define one or multiple assertion handlers in any part of the application using the <computeroutput><ref refid="group__modm__architecture__assert_1ga16bc9b4ebefe47d1417ec75f99b30ee6" kindref="member">MODM_ASSERTION_HANDLER(function)</ref></computeroutput> macro. All assertion handlers will be executed when an assertion fails anywhere in the code and get passed the identifier string.</para><para><simplesect kind="note"><para>The order of assertion handler execution is undefined and must not been relied upon for any functionality!</para></simplesect>
+<simplesect kind="warning"><para>Assertion handlers may be executed in interrupt context!</para></simplesect>
+Depending on the information in the failure identifier, the assertion handler returns <computeroutput>Abandonment::DontCare</computeroutput> if the failure is not of interest, or <computeroutput>Abandonment::Ignore</computeroutput> for recoverable failures, or <computeroutput>Abandonment::Fail</computeroutput> for failures that do not allow normal program continuation. The program is aborted, if any assertion handler returns <computeroutput>Abandonment::Fail</computeroutput>, all assertion handlers return <computeroutput>Abandonment::DontCare</computeroutput> or no assertion handlers have been defined in the application. Only if one or many assertion handlers return <computeroutput>Abandonment::Ignore</computeroutput> and the remainder returns <computeroutput>Abandonment::DontCare</computeroutput>, only then is the assertion ignored.</para><para><simplesect kind="note"><para>It is intended that the assertion handlers do not block (forever), so that all assertion handlers can get called.</para></simplesect>
+On program abandonment <computeroutput>modm_abandon(module, location, failure)</computeroutput> is called, which exits the program silently by default. Only on hosted an formatted error string is output by default. It is therefore recommended to overwrite this function on embedded targets for custom behavior like blinking an LED and printing to a serial connection.</para><para><simplesect kind="warning"><para>The abandonment handler may also be executed in interrupt context! </para></simplesect>
+</para>    </detaileddescription>
   </compounddef>
 </doxygen>

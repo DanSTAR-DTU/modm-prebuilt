@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structmodm_1_1_configuration" kind="struct" language="C++" prot="public">
     <compoundname>modm::Configuration</compoundname>
     <basecompoundref refid="structmodm_1_1_flags_operators" prot="public" virt="non-virtual">modm::FlagsOperators&lt; Parent::EnumType, Parent::UnderlyingType &gt;</basecompoundref>
@@ -38,13 +38,12 @@
           <declname>config</declname>
         </param>
         <briefdescription>
-<para>clears and sets a new configuration in a <ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> register </para>
-        </briefdescription>
+<para>clears and sets a new configuration in a <ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> register </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="583" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="583" bodyend="584"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="583" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="583" bodyend="584"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_configuration_1a59636838699c9ba89267fcb801e01a81" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -56,13 +55,12 @@
           <declname>parent</declname>
         </param>
         <briefdescription>
-<para>clears the configuration in a <ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> register </para>
-        </briefdescription>
+<para>clears the configuration in a <ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> register </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="587" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="587" bodyend="588"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="587" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="587" bodyend="588"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_configuration_1ac29740c6f4c3adf62b7fdacdea673331" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>constexpr Enum</type>
@@ -74,13 +72,12 @@
           <declname>parent</declname>
         </param>
         <briefdescription>
-<para>returns the configuration from a <ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> register </para>
-        </briefdescription>
+<para>returns the configuration from a <ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> register </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="591" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="591" bodyend="592"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="591" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="591" bodyend="592"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-type">
@@ -95,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="563" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="563" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="563" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="563" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1_configuration_1a96d52bacb9baf91a1377b67b6cd4a404" prot="private" static="no">
         <type>UnderlyingType</type>
@@ -108,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="564" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="564" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="564" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="564" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1_configuration_1a3273d71424f9af03e693db618fc11356" prot="private" static="no">
         <type>Parent::EnumType</type>
@@ -121,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="565" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="565" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="565" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="565" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -135,13 +132,12 @@
           <declname>config</declname>
         </param>
         <briefdescription>
-<para>explicit constructor for the underlying type </para>
-        </briefdescription>
+<para>explicit constructor for the underlying type </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="569" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="569" bodyend="570"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="569" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="569" bodyend="570"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_configuration_1a6290307c60e58959878d0fcee2139d5c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -153,13 +149,12 @@
           <declname>config</declname>
         </param>
         <briefdescription>
-<para>explicit constructor for the enum type </para>
-        </briefdescription>
+<para>explicit constructor for the enum type </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="572" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="572" bodyend="573"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="572" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="572" bodyend="573"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_configuration_1a065e33a67abe6e57966ce718c6456b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>constexpr</type>
@@ -171,13 +166,12 @@
           <declname>o</declname>
         </param>
         <briefdescription>
-<para>copy constructor </para>
-        </briefdescription>
+<para>copy constructor </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="576" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="576" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_configuration_1a3bf31e71f6913ca780a55e367a033d46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>constexpr</type>
@@ -189,13 +183,12 @@
           <declname>o</declname>
         </param>
         <briefdescription>
-<para>move constructor </para>
-        </briefdescription>
+<para>move constructor </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="578" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="578" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -205,27 +198,20 @@
         <argsstring>()</argsstring>
         <name>mask</name>
         <briefdescription>
-<para>returns the shifted mask for this configuration </para>
-        </briefdescription>
+<para>returns the shifted mask for this configuration </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="596" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="596" bodyend="597"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="596" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="596" bodyend="597"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Class for accessing a configuration in a register.</para>
-<para>A configuration is a combination of bits, whose meaning is different from their numerical value. A typical example is a 2-bit prescaler with the values [0,1,2,3] correspond to the meanings [Div1, Div2, Div4, Div8].</para>
-<para>The <ref refid="structmodm_1_1_configuration" kindref="compound">Configuration</ref> class belongs to a specific <ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> class and connects a corresponding Sascha Schade enum with a specific mask and bit position. This means that the <ref refid="structmodm_1_1_configuration" kindref="compound">Configuration</ref> class will mask and shift the values whenever needed. However, shifting is only done when the Position template parameter is non-zero.</para>
-<para>To understand when shifting is necessary, consider the following two scenarios:<orderedlist>
-<listitem><para>There is only one prescaler configuration at bit position 4, and</para>
-</listitem><listitem><para>There are two or more prescaler configurations at several bit positions.</para>
-</listitem></orderedlist>
-</para>
-<para>For the first scenario, no shifting is required, as we can declare the prescaler values already in the shifted position: <programlisting><codeline><highlight class="normal">enum<sp/>class</highlight></codeline>
+<para>Class for accessing a configuration in a register.</para><para>A configuration is a combination of bits, whose meaning is different from their numerical value. A typical example is a 2-bit prescaler with the values [0,1,2,3] correspond to the meanings [Div1, Div2, Div4, Div8].</para><para>The <ref refid="structmodm_1_1_configuration" kindref="compound">Configuration</ref> class belongs to a specific <ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> class and connects a corresponding Sascha Schade enum with a specific mask and bit position. This means that the <ref refid="structmodm_1_1_configuration" kindref="compound">Configuration</ref> class will mask and shift the values whenever needed. However, shifting is only done when the Position template parameter is non-zero.</para><para>To understand when shifting is necessary, consider the following two scenarios:<orderedlist>
+<listitem><para>There is only one prescaler configuration at bit position 4, and</para></listitem><listitem><para>There are two or more prescaler configurations at several bit positions.</para></listitem></orderedlist>
+</para><para>For the first scenario, no shifting is required, as we can declare the prescaler values already in the shifted position: <programlisting><codeline><highlight class="normal">enum<sp/>class</highlight></codeline>
 <codeline><highlight class="normal">Prescaler<sp/>:<sp/>uint8_t</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Div1<sp/>=<sp/>(0<sp/>&lt;&lt;<sp/>4),</highlight></codeline>
@@ -234,8 +220,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Div8<sp/>=<sp/>(3<sp/>&lt;&lt;<sp/>4),</highlight></codeline>
 <codeline><highlight class="normal">};</highlight></codeline>
 <codeline><highlight class="normal">typedef<sp/>Configuration&lt;Control_t,<sp/>Prescaler,<sp/>(0b11<sp/>&lt;&lt;<sp/>4)&gt;<sp/>Prescaler_t;</highlight></codeline>
-</programlisting></para>
-<para>For the second scenario, shifting is required: <programlisting><codeline><highlight class="normal">enum<sp/>class</highlight></codeline>
+</programlisting></para><para>For the second scenario, shifting is required: <programlisting><codeline><highlight class="normal">enum<sp/>class</highlight></codeline>
 <codeline><highlight class="normal">Prescaler<sp/>:<sp/>uint8_t</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Div1<sp/>=<sp/>0,</highlight></codeline>
@@ -247,8 +232,7 @@
 <codeline><highlight class="normal">typedef<sp/>Configuration&lt;Control_t,<sp/>Prescaler,<sp/>0b11,<sp/>4&gt;<sp/>Prescaler_t;</highlight></codeline>
 <codeline><highlight class="normal">//<sp/>shift<sp/>position<sp/>6</highlight></codeline>
 <codeline><highlight class="normal">typedef<sp/>Configuration&lt;Control_t,<sp/>Prescaler,<sp/>0b11,<sp/>6&gt;<sp/>Prescaler2_t;</highlight></codeline>
-</programlisting></para>
-<para>However, clever choice of the mask and shift position values can minimize shifting. <programlisting><codeline><highlight class="normal">enum<sp/>class</highlight></codeline>
+</programlisting></para><para>However, clever choice of the mask and shift position values can minimize shifting. <programlisting><codeline><highlight class="normal">enum<sp/>class</highlight></codeline>
 <codeline><highlight class="normal">Prescaler<sp/>:<sp/>uint8_t</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Div1<sp/>=<sp/>(0<sp/>&lt;&lt;<sp/>4),</highlight></codeline>
@@ -260,45 +244,37 @@
 <codeline><highlight class="normal">typedef<sp/>Configuration&lt;Control_t,<sp/>Prescaler,<sp/>(0b11<sp/>&lt;&lt;<sp/>4)&gt;<sp/>Prescaler_t;</highlight></codeline>
 <codeline><highlight class="normal">//<sp/>shift<sp/>position<sp/>6,<sp/>shifted<sp/>only<sp/>by<sp/>2<sp/>bits</highlight></codeline>
 <codeline><highlight class="normal">typedef<sp/>Configuration&lt;Control_t,<sp/>Prescaler,<sp/>(0b11<sp/>&lt;&lt;<sp/>4),<sp/>2&gt;<sp/>Prescaler2_t;</highlight></codeline>
-</programlisting></para>
-<para>This is especially useful on CPUs, which do not have a barrelshifter like the AVRs.</para>
-<para><parameterlist kind="templateparam"><parameteritem>
+</programlisting></para><para>This is especially useful on CPUs, which do not have a barrelshifter like the AVRs.</para><para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>Parent</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the <ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> class to which this configuration belongs to </para>
-</parameterdescription>
+<para>the <ref refid="structmodm_1_1_flags" kindref="compound">Flags</ref> class to which this configuration belongs to </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>Enum</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>a strongly-typed enum containing the configuration values </para>
-</parameterdescription>
+<para>a strongly-typed enum containing the configuration values </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>Mask</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the (unshifted) bit mask corresponding to the enum values </para>
-</parameterdescription>
+<para>the (unshifted) bit mask corresponding to the enum values </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>Position</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>how many bits the configuration values need to be shifted</para>
-</parameterdescription>
+<para>how many bits the configuration values need to be shifted</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="author"><para>Niklas Hauser </para>
-</simplesect>
-</para>
-    </detaileddescription>
+<simplesect kind="author"><para>Niklas Hauser </para></simplesect>
+</para>    </detaileddescription>
     <inheritancegraph>
       <node id="180">
         <label>modm::Register&lt; Parent::UnderlyingType &gt;</label>
@@ -335,7 +311,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="561" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="560" bodyend="603"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="561" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="560" bodyend="603"/>
     <listofallmembers>
       <member refid="structmodm_1_1_configuration_1a5ec48a181b69a0449fea9f4be17e43ba" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>Configuration</name></member>
       <member refid="structmodm_1_1_configuration_1a6290307c60e58959878d0fcee2139d5c" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>Configuration</name></member>
@@ -351,11 +327,11 @@
       <member refid="structmodm_1_1_flags_operators_1a5a15da92c03131959f00fe3122d3f2b0" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>FlagsOperators</name></member>
       <member refid="structmodm_1_1_configuration_1ac29740c6f4c3adf62b7fdacdea673331" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>get</name></member>
       <member refid="structmodm_1_1_configuration_1aedefe9e8396caa9a6364562759a155ae" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>mask</name></member>
-      <member refid="structmodm_1_1_flags_operators_1a6031bdd8b83beec16778740188ea6ab2" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>operator &amp;</name></member>
       <member refid="structmodm_1_1_register_1aca49e332e09a999a9c10182c44a0ddff" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>operator bool</name></member>
       <member refid="structmodm_1_1_register_1a959d3b687497e1485faec27887cd8925" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>operator!</name></member>
-      <member refid="structmodm_1_1_flags_operators_1a1d38805ab12378f42f0e942cd5b0ba9a" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>operator&amp;=</name></member>
-      <member refid="structmodm_1_1_flags_operators_1a2e55f60e8053f75e96ff00da5b967dde" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>operator&amp;=</name></member>
+      <member refid="structmodm_1_1_flags_operators_1a1a22f48deee83c98157648b5fab35b19" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>operator&amp;</name></member>
+      <member refid="structmodm_1_1_flags_operators_1aa37c7eae13739d1f79fae64329034b6c" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>operator&amp;=</name></member>
+      <member refid="structmodm_1_1_flags_operators_1a42b56aa9bcbda706bcaf5fc86df01bcb" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>operator&amp;=</name></member>
       <member refid="structmodm_1_1_flags_operators_1a92001e0adca0280cd7bc248543635c6a" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>operator=</name></member>
       <member refid="structmodm_1_1_flags_operators_1a0baf85508f4708a386420aad5749c460" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>operator=</name></member>
       <member refid="structmodm_1_1_flags_operators_1acd0240578bf6dde719f39464c82002be" prot="public" virt="non-virtual"><scope>modm::Configuration</scope><name>operator^</name></member>

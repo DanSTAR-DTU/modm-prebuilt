@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structmodm_1_1platform_1_1_gpio" kind="struct" language="C++" prot="public">
     <compoundname>modm::platform::Gpio</compoundname>
     <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_set" prot="public" virt="non-virtual">modm::platform::GpioSet&lt; Gpios... &gt;</derivedcompoundref>
@@ -57,15 +57,13 @@
     <derivedcompoundref refid="classmodm_1_1platform_1_1_gpio_unused" prot="public" virt="non-virtual">modm::platform::GpioUnused</derivedcompoundref>
     <includes refid="base_8hpp" local="no">modm/platform/gpio/base.hpp</includes>
       <sectiondef kind="public-type">
-      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6d" prot="public" static="no" strong="yes">
-        <type></type>
+      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6d" prot="public" static="no">
         <name>InputType</name>
         <enumvalue id="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6dac8df43648942ec3a9aec140f07f47b7c" prot="public">
           <name>Floating</name>
           <initializer>= 0x0</initializer>
           <briefdescription>
-<para>floating on input </para>
-          </briefdescription>
+<para>floating on input </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -73,8 +71,7 @@
           <name>PullUp</name>
           <initializer>= 0x1</initializer>
           <briefdescription>
-<para>pull-up on input </para>
-          </briefdescription>
+<para>pull-up on input </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -82,8 +79,7 @@
           <name>PullDown</name>
           <initializer>= 0x2</initializer>
           <briefdescription>
-<para>pull-down on input </para>
-          </briefdescription>
+<para>pull-down on input </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -93,17 +89,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="31" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="29" bodyend="35"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="31" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="29" bodyend="35"/>
       </memberdef>
-      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1ad68170d2e3d45721421375623c8f5a61" prot="public" static="no" strong="yes">
-        <type></type>
+      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1ad68170d2e3d45721421375623c8f5a61" prot="public" static="no">
         <name>OutputType</name>
         <enumvalue id="structmodm_1_1platform_1_1_gpio_1ad68170d2e3d45721421375623c8f5a61ae5914f527c36b22ce79ba8231491b63f" prot="public">
           <name>PushPull</name>
           <initializer>= 0x0</initializer>
           <briefdescription>
-<para>push-pull on output </para>
-          </briefdescription>
+<para>push-pull on output </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -111,8 +105,7 @@
           <name>OpenDrain</name>
           <initializer>= 0x1</initializer>
           <briefdescription>
-<para>open-drain on output </para>
-          </briefdescription>
+<para>open-drain on output </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -122,10 +115,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="37" bodyend="42"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="39" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="37" bodyend="42"/>
       </memberdef>
-      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09" prot="public" static="no" strong="yes">
-        <type></type>
+      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09" prot="public" static="no">
         <name>OutputSpeed</name>
         <enumvalue id="structmodm_1_1platform_1_1_gpio_1ab7da9c5cdb55f0fad1955686331a5a09a28d0edd045e05cf5af64e35ae0c4c6ef" prot="public">
           <name>Low</name>
@@ -155,8 +147,7 @@
           <name>VeryHigh</name>
           <initializer>= 0x3</initializer>
           <briefdescription>
-<para>30 pF (80 MHz Output max speed on 15 pF) </para>
-          </briefdescription>
+<para>30 pF (80 MHz Output max speed on 15 pF) </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -198,10 +189,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="46" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="44" bodyend="55"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="46" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="44" bodyend="55"/>
       </memberdef>
-      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1a5f683814888fa5a34c2bcf2db9b803a5" prot="public" static="no" strong="yes">
-        <type></type>
+      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1a5f683814888fa5a34c2bcf2db9b803a5" prot="public" static="no">
         <name>InputTrigger</name>
         <enumvalue id="structmodm_1_1platform_1_1_gpio_1a5f683814888fa5a34c2bcf2db9b803a5a5b0a1c3bcd3397b6e692a26fe8427564" prot="public">
           <name>RisingEdge</name>
@@ -230,10 +220,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="59" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="57" bodyend="63"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="59" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="57" bodyend="63"/>
       </memberdef>
-      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19b" prot="public" static="no" strong="yes">
-        <type></type>
+      <memberdef kind="enum" id="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19b" prot="public" static="no">
         <name>Port</name>
         <enumvalue id="structmodm_1_1platform_1_1_gpio_1a9a07d4a7c6f41489fa3bf81b98e8a19ba7fc56270e7a70fa81a5935b72eacbe29" prot="public">
           <name>A</name>
@@ -276,13 +265,12 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
-<para>The Port a <ref refid="structmodm_1_1platform_1_1_gpio" kindref="compound">Gpio</ref> Pin is connected to. </para>
-        </briefdescription>
+<para>The Port a <ref refid="structmodm_1_1platform_1_1_gpio" kindref="compound">Gpio</ref> Pin is connected to. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="68" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="66" bodyend="74"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="68" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="66" bodyend="74"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -619,7 +607,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="28" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="27" bodyend="217"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" line="28" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp" bodystart="27" bodyend="217"/>
     <listofallmembers>
       <member refid="structmodm_1_1platform_1_1_gpio_1a5f683814888fa5a34c2bcf2db9b803a5" prot="public" virt="non-virtual"><scope>modm::platform::Gpio</scope><name>InputTrigger</name></member>
       <member refid="structmodm_1_1platform_1_1_gpio_1aadfb2c40d2066e11c0e176332c5a9d6d" prot="public" virt="non-virtual"><scope>modm::platform::Gpio</scope><name>InputType</name></member>

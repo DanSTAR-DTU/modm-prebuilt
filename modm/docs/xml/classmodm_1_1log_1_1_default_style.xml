@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1log_1_1_default_style" kind="class" language="C++" prot="public">
     <compoundname>modm::log::DefaultStyle</compoundname>
     <includes refid="style_8hpp" local="no">modm/debug/logger/style.hpp</includes>
@@ -18,13 +18,12 @@
           <declname>argv</declname>
         </param>
         <briefdescription>
-<para>parse arguments that are given with the start of the program </para>
-        </briefdescription>
+<para>parse arguments that are given with the start of the program </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" line="34" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" bodystart="34" bodyend="38"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" line="34" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" bodystart="34" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1log_1_1_default_style_1a113703dcd13436885bc1dbff9f2c0708" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -36,13 +35,12 @@
           <declname>c</declname>
         </param>
         <briefdescription>
-<para>Write one char to the sink. </para>
-        </briefdescription>
+<para>Write one char to the sink. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" bodystart="42" bodyend="45"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" line="42" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" bodystart="42" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1log_1_1_default_style_1a0b44484573030b5184f969824838102c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -54,13 +52,12 @@
           <declname>s</declname>
         </param>
         <briefdescription>
-<para>Write a string that terminates with <computeroutput>&apos;\0&apos;</computeroutput> to the sink. </para>
-        </briefdescription>
+<para>Write a string that terminates with <computeroutput>&apos;\0&apos;</computeroutput> to the sink. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" line="49" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" bodystart="49" bodyend="52"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" line="49" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" bodystart="49" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1log_1_1_default_style_1a224fe0e2437df13f43804693897d12d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -68,24 +65,20 @@
         <argsstring>()</argsstring>
         <name>flush</name>
         <briefdescription>
-<para>The message is complete and can be written/send/displayed. </para>
-        </briefdescription>
+<para>The message is complete and can be written/send/displayed. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" line="56" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" bodystart="56" bodyend="58"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" line="56" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" bodystart="56" bodyend="58"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>This is an empty style. </para>
-    </briefdescription>
+<para>This is an empty style. </para>    </briefdescription>
     <detaileddescription>
-<para><simplesect kind="author"><para>Martin Rosekeit <ulink url="mailto:martin.rosekeit@rwth-aachen.de">martin.rosekeit@rwth-aachen.de</ulink> </para>
-</simplesect>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" line="30" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" bodystart="29" bodyend="59"/>
+<para><simplesect kind="author"><para>Martin Rosekeit <ulink url="mailto:martin.rosekeit@rwth-aachen.de">martin.rosekeit@rwth-aachen.de</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" line="30" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/style.hpp" bodystart="29" bodyend="59"/>
     <listofallmembers>
       <member refid="classmodm_1_1log_1_1_default_style_1a224fe0e2437df13f43804693897d12d8" prot="public" virt="non-virtual"><scope>modm::log::DefaultStyle</scope><name>flush</name></member>
       <member refid="classmodm_1_1log_1_1_default_style_1a8a0892e993784fcb09b83d56d6a4ad8d" prot="public" virt="non-virtual"><scope>modm::log::DefaultStyle</scope><name>parseArg</name></member>

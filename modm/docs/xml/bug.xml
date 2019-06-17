@@ -1,17 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="bug" kind="page">
     <compoundname>bug</compoundname>
     <title>Bug List</title>
-    <briefdescription>
-    </briefdescription>
     <detaileddescription>
 <para><variablelist>
-<varlistentry><term>Module <ref refid="group__modm__cmsis__device" kindref="compound">modm_cmsis_device</ref>  </term></varlistentry>
-<listitem><para><anchor id="bug_1_bug000001"/>&quot;Discrepancies between documentation and headers&quot; These CMSIS headers should reflect what&apos;s written in the documentation, however, in our experience there may be small differences in naming, behavior and availability between it and this implementation. Since ST is not interested in addressing these issues, please contribute <ulink url="https://github.com/modm-io/cmsis-header-stm32/tree/master/patches">to our patch list</ulink>.</para>
-</listitem>
+<varlistentry><term><anchor id="bug_1_bug000001"/>Module <ref refid="group__modm__cmsis__device" kindref="compound">modm_cmsis_device</ref>  </term></varlistentry>
+<listitem><para>&quot;Discrepancies between documentation and headers&quot; These CMSIS headers should reflect what&apos;s written in the documentation, however, in our experience there may be small differences in naming, behavior and availability between it and this implementation. Since ST is not interested in addressing these issues, please contribute [to our patch list][patches].</para></listitem>
 </variablelist>
-</para>
-    </detaileddescription>
+</para>    </detaileddescription>
   </compounddef>
 </doxygen>

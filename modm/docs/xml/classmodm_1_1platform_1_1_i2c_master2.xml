@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1platform_1_1_i2c_master2" kind="class" language="C++" prot="public">
     <compoundname>modm::platform::I2cMaster2</compoundname>
     <basecompoundref refid="classmodm_1_1_i2c_master" prot="public" virt="non-virtual">modm::I2cMaster</basecompoundref>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" bodystart="39" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="39" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="44" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" bodystart="44" bodyend="62"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="44" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" bodystart="44" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_i2c_master2_1a9522658f90d810d6aeea6733b55efaa8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -77,21 +77,18 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Set up the I2C module for master operation.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Set up the I2C module for master operation.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>rate</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><computeroutput>Standard</computeroutput> or <computeroutput>Fast</computeroutput>, <computeroutput>High</computeroutput> datarate is not supported </para>
-</parameterdescription>
+<para><computeroutput>Standard</computeroutput> or <computeroutput>Fast</computeroutput>, <computeroutput>High</computeroutput> datarate is not supported </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="72" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" bodystart="72" bodyend="118"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="72" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" bodystart="72" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_i2c_master2_1a4309851eb3eae5c97380650eaa71c1f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -113,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="122" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="122" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_i2c_master2_1a6d1db511c02a8600b2dfc2d8ad563137" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_i2c_master_1aaeba2d490d4a099a1d45cd713106b3e8" kindref="member">Error</ref></type>
@@ -126,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="125" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="125" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_i2c_master2_1a5214fd6868512bfb63e1419f0fb98e24" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -139,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="128" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="128" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -166,20 +163,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="133" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="133" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><ref refid="classmodm_1_1_i2c_master" kindref="compound">I2cMaster</ref> implementation of I2C2 module.</para>
-<para>Interrupts must be enabled.</para>
-<para><simplesect kind="author"><para>Georgi Grinshpun </para>
-</simplesect>
-<simplesect kind="author"><para>Niklas Hauser </para>
-</simplesect>
-</para>
-    </detaileddescription>
+<para><ref refid="classmodm_1_1_i2c_master" kindref="compound">I2cMaster</ref> implementation of I2C2 module.</para><para>Interrupts must be enabled.</para><para><simplesect kind="author"><para>Georgi Grinshpun </para></simplesect>
+<simplesect kind="author"><para>Niklas Hauser </para></simplesect>
+</para>    </detaileddescription>
     <inheritancegraph>
       <node id="1271">
         <label>modm::platform::I2cMaster2</label>
@@ -228,7 +220,7 @@
         <link refid="classmodm_1_1_peripheral_driver"/>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="37" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" bodystart="36" bodyend="134"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" line="37" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp" bodystart="36" bodyend="134"/>
     <listofallmembers>
       <member refid="classmodm_1_1_peripheral_driver_1a5c336ff9889c347e7eadb810bf984ebd" prot="public" virt="non-virtual"><scope>modm::platform::I2cMaster2</scope><name>assertBaudrateInTolerance</name></member>
       <member refid="structmodm_1_1_i2c_1acc3232e086891a4564399117a4e0e450" prot="public" virt="non-virtual"><scope>modm::platform::I2cMaster2</scope><name>ConfigurationHandler</name></member>

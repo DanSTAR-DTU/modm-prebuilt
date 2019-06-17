@@ -15,8 +15,8 @@
 
 // this should be able to be generated instead of using Macros for this.
 #include "adc_interrupt_2.hpp"
-#include "adc_interrupt_1.hpp"
 #include "adc_interrupt_3.hpp"
+#include "adc_interrupt_1.hpp"
 extern "C" void
 ADC_IRQHandler(void)
 {
@@ -24,10 +24,10 @@ ADC_IRQHandler(void)
 	if (modm::platform::AdcInterrupt2::getInterruptFlags()) {
 		modm::platform::AdcInterrupt2::handler();
 	}
-	if (modm::platform::AdcInterrupt1::getInterruptFlags()) {
-		modm::platform::AdcInterrupt1::handler();
-	}
 	if (modm::platform::AdcInterrupt3::getInterruptFlags()) {
 		modm::platform::AdcInterrupt3::handler();
+	}
+	if (modm::platform::AdcInterrupt1::getInterruptFlags()) {
+		modm::platform::AdcInterrupt1::handler();
 	}
 }

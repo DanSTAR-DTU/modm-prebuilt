@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1_polygon2_d" kind="class" language="C++" prot="public">
     <compoundname>modm::Polygon2D</compoundname>
     <basecompoundref refid="classmodm_1_1_point_set2_d" prot="public" virt="non-virtual">modm::PointSet2D&lt; T &gt;</basecompoundref>
@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="44" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" bodystart="44" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="44" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1_polygon2_d_1a4582f299c62959e7550aa0751d9d3fad" prot="private" static="no">
         <type>typename <ref refid="classmodm_1_1_point_set2_d" kindref="compound">PointSet2D</ref>&lt; T &gt;::<ref refid="classmodm_1_1_point_set2_d_1a7e72fd08abf050ddad5faedee7235a4e" kindref="member">PointType</ref></type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="45" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" bodystart="45" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="45" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -50,13 +50,12 @@
           <declname>n</declname>
         </param>
         <briefdescription>
-<para>Constructs a polygon capable of holding n points. </para>
-        </briefdescription>
+<para>Constructs a polygon capable of holding n points. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="50" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="50" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_polygon2_d_1ae270bdf79adf71a01ebce27ab6b5f079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -73,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="52" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="52" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_polygon2_d_1a4f8a30073d262aa9fa612cb8449ba72d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -90,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="54" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="54" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_polygon2_d_1a076252850d36bcd5694d5675297fca39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_polygon2_d" kindref="compound">Polygon2D</ref> &amp;</type>
@@ -107,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="57" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="57" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_polygon2_d_1a3bb7078cbd94ed52af70494af4adb2ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1_polygon2_d" kindref="compound">Polygon2D</ref> &amp;</type>
@@ -119,13 +118,12 @@
           <declname>point</declname>
         </param>
         <briefdescription>
-<para>append a point to the polygon </para>
-        </briefdescription>
+<para>append a point to the polygon </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="60" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="60" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_polygon2_d_1adb66c10a6954012d6a517a312ced40ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -137,15 +135,12 @@
           <declname>other</declname>
         </param>
         <briefdescription>
-<para>Check if a intersection exists. </para>
-        </briefdescription>
+<para>Check if a intersection exists. </para>        </briefdescription>
         <detaileddescription>
-<para><xrefsect id="todo_1_todo000014"><xreftitle>Todo</xreftitle><xrefdescription><para>Currently a brute force approach is used here, needs to be optimized </para>
-</xrefdescription></xrefsect></para>
-        </detaileddescription>
+<para><xrefsect id="todo_1_todo000014"><xreftitle>Todo</xreftitle><xrefdescription><para>Currently a brute force approach is used here, needs to be optimized </para></xrefdescription></xrefsect></para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="70" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="70" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_polygon2_d_1a7c2d1f6a103e822ffaafdb25df2416df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -157,13 +152,12 @@
           <declname>circle</declname>
         </param>
         <briefdescription>
-<para>Check if a intersection exists. </para>
-        </briefdescription>
+<para>Check if a intersection exists. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="74" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="74" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_polygon2_d_1a3975e7e9e21661d57ee63269da4a6a71" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -175,13 +169,12 @@
           <declname>segment</declname>
         </param>
         <briefdescription>
-<para>Check if a intersection exists. </para>
-        </briefdescription>
+<para>Check if a intersection exists. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="78" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="78" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_polygon2_d_1aed6bdeca9a8151aec8c5549112dae2bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -193,13 +186,12 @@
           <declname>segment</declname>
         </param>
         <briefdescription>
-<para>Check if a intersection exists. </para>
-        </briefdescription>
+<para>Check if a intersection exists. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="82" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="82" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_polygon2_d_1a187d2ec1ca27ee251c208abb8895b222" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -215,13 +207,12 @@
           <declname>intersectionPoints</declname>
         </param>
         <briefdescription>
-<para>Calculate the intersection point(s) </para>
-        </briefdescription>
+<para>Calculate the intersection point(s) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="88" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="88" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_polygon2_d_1adbd1e635cdb8f9f07923f671c5abd8d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -235,28 +226,19 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Check if the point is contained inside the area of the polygon.</para>
-<para>The borders of the polygon are included in the area of the polygon.</para>
-<para><simplesect kind="warning"><para>Only works for convex polygons!</para>
-</simplesect>
-<simplesect kind="return"><para><computeroutput>true</computeroutput> if point is contained in the area, <computeroutput>false</computeroutput> if it is outside. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para>Check if the point is contained inside the area of the polygon.</para><para>The borders of the polygon are included in the area of the polygon.</para><para><simplesect kind="warning"><para>Only works for convex polygons!</para></simplesect>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if point is contained in the area, <computeroutput>false</computeroutput> if it is outside. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="102" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp" line="102" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Polygon. </para>
-    </briefdescription>
+<para>Polygon. </para>    </briefdescription>
     <detaileddescription>
-<para>The Polygon class provides a vector of points. The polygon is implicit closed, which means the first and the last point are connected.</para>
-<para><simplesect kind="author"><para>Fabian Greif </para>
-</simplesect>
-</para>
-    </detaileddescription>
+<para>The Polygon class provides a vector of points. The polygon is implicit closed, which means the first and the last point are connected.</para><para><simplesect kind="author"><para>Fabian Greif </para></simplesect>
+</para>    </detaileddescription>
     <inheritancegraph>
       <node id="1450">
         <label>modm::PointSet2D&lt; T &gt;</label>
@@ -288,7 +270,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="32" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" bodystart="32" bodyend="-1"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" line="32" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp" bodystart="32" bodyend="-1"/>
     <listofallmembers>
       <member refid="classmodm_1_1_point_set2_d_1a3c3124dc4e7b5c19c5f1d9b81b73593b" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>append</name></member>
       <member refid="classmodm_1_1_point_set2_d_1a825a8904e5b7c215e14e701cec3dcb0c" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>begin</name></member>
@@ -304,11 +286,11 @@
       <member refid="classmodm_1_1_polygon2_d_1aed6bdeca9a8151aec8c5549112dae2bb" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>intersects</name></member>
       <member refid="classmodm_1_1_polygon2_d_1adbd1e635cdb8f9f07923f671c5abd8d0" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>isInside</name></member>
       <member refid="classmodm_1_1_point_set2_d_1a6537a20cebaa1b163dfee8fc0c10ca7b" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>iterator</name></member>
-      <member refid="classmodm_1_1_point_set2_d_1a3ceca55e7fb57d259f3e13cb0d98a6d1" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>operator []</name></member>
-      <member refid="classmodm_1_1_point_set2_d_1a766dbb8b8f765b9c1a06a4c7c2fea731" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>operator []</name></member>
       <member refid="classmodm_1_1_polygon2_d_1a3bb7078cbd94ed52af70494af4adb2ba" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>operator&lt;&lt;</name></member>
       <member refid="classmodm_1_1_polygon2_d_1a076252850d36bcd5694d5675297fca39" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>operator=</name></member>
       <member refid="classmodm_1_1_point_set2_d_1ac6d67c2559c2121572d4bd32ed5c544e" prot="public" virt="non-virtual" ambiguityscope="modm::PointSet2D::"><scope>modm::Polygon2D</scope><name>operator=</name></member>
+      <member refid="classmodm_1_1_point_set2_d_1ae239a4a440b5867fd847371e30045b05" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>operator[]</name></member>
+      <member refid="classmodm_1_1_point_set2_d_1a4084179e55dcf783094f75eece1d6c73" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>operator[]</name></member>
       <member refid="classmodm_1_1_point_set2_d_1aa2d7405b9089475830b82efd6f8f1e62" prot="protected" virt="non-virtual"><scope>modm::Polygon2D</scope><name>points</name></member>
       <member refid="classmodm_1_1_point_set2_d_1abce1a4df708458b3f7aee60cb54595e6" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>PointSet2D</name></member>
       <member refid="classmodm_1_1_point_set2_d_1a22314345a40be5fc38cf661421ea0962" prot="public" virt="non-virtual"><scope>modm::Polygon2D</scope><name>PointSet2D</name></member>

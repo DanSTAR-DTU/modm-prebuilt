@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__modm__platform__can" kind="group">
     <compoundname>modm_platform_can</compoundname>
     <title>Controller Area Network (CAN)</title>
@@ -9,8 +9,7 @@
     <innergroup refid="group__modm__platform__can__1">Instance 1</innergroup>
     <innergroup refid="group__modm__platform__can__2">Instance 2</innergroup>
       <sectiondef kind="enum">
-      <memberdef kind="enum" id="group__modm__platform__can_1ga6667adccb58f77a0331d06e55b8cf070" prot="public" static="no" strong="no">
-        <type></type>
+      <memberdef kind="enum" id="group__modm__platform__can_1ga6667adccb58f77a0331d06e55b8cf070" prot="public" static="no">
         <name>ErrorCode</name>
         <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a93cc21c76103b733dc112b198c92573a" prot="public">
           <name>CAN_ERROR_PASSIVE_MODE</name>
@@ -178,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" line="25" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" bodystart="24" bodyend="49"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" line="25" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" bodystart="24" bodyend="49"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

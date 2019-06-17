@@ -1,19 +1,17 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1platform_1_1_spi_master3" kind="class" language="C++" prot="public">
     <compoundname>modm::platform::SpiMaster3</compoundname>
     <basecompoundref refid="classmodm_1_1_spi_master" prot="public" virt="non-virtual">modm::SpiMaster</basecompoundref>
     <includes refid="spi__master__3_8hpp" local="no">modm/platform/spi/spi_master_3.hpp</includes>
       <sectiondef kind="public-type">
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_master3_1a8d13232f454309718050f419cf2c1cf8" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_master3_1a8d13232f454309718050f419cf2c1cf8" prot="public" static="no">
         <name>DataMode</name>
         <enumvalue id="classmodm_1_1platform_1_1_spi_master3_1a8d13232f454309718050f419cf2c1cf8a315436bae0e85636381fc939db06aee5" prot="public">
           <name>Mode0</name>
           <initializer>= 0b00</initializer>
           <briefdescription>
-<para>clock normal, sample on rising edge </para>
-          </briefdescription>
+<para>clock normal, sample on rising edge </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -21,8 +19,7 @@
           <name>Mode1</name>
           <initializer>= SPI_CR1_CPHA</initializer>
           <briefdescription>
-<para>clock normal, sample on falling edge </para>
-          </briefdescription>
+<para>clock normal, sample on falling edge </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -30,8 +27,7 @@
           <name>Mode2</name>
           <initializer>= SPI_CR1_CPOL</initializer>
           <briefdescription>
-<para>clock inverted, sample on falling edge </para>
-          </briefdescription>
+<para>clock inverted, sample on falling edge </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -39,22 +35,19 @@
           <name>Mode3</name>
           <initializer>= SPI_CR1_CPOL | SPI_CR1_CPHA</initializer>
           <briefdescription>
-<para>clock inverted, sample on rising edge </para>
-          </briefdescription>
+<para>clock inverted, sample on rising edge </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
-<para><ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> Data Mode, Mode0 is the most common mode. </para>
-        </briefdescription>
+<para><ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> Data Mode, Mode0 is the most common mode. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="50" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="48" bodyend="56"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="50" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="48" bodyend="56"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_master3_1a3ca70b393051f70f24d19b26f2b4ca64" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_master3_1a3ca70b393051f70f24d19b26f2b4ca64" prot="public" static="no">
         <name>DataOrder</name>
         <enumvalue id="classmodm_1_1platform_1_1_spi_master3_1a3ca70b393051f70f24d19b26f2b4ca64aee850a31af8a5060a68542cb34339c50" prot="public">
           <name>MsbFirst</name>
@@ -73,13 +66,12 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
-<para><ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> Data Order, MsbFirst is the most common mode. </para>
-        </briefdescription>
+<para><ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> Data Order, MsbFirst is the most common mode. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="61" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="59" bodyend="64"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="61" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="59" bodyend="64"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_spi_master3_1a54b75ecdafe75ab6f17795c21421d6de" prot="public" static="no">
         <type><ref refid="classmodm_1_1platform_1_1_spi_hal3" kindref="compound">SpiHal3</ref></type>
@@ -92,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="45" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="45" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="45" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -107,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="40" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="40" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1platform_1_1_spi_master3_1a9351082f3266034a1738e30a5416e947" prot="private" static="yes" mutable="no">
         <type>uint8_t</type>
@@ -120,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="41" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="41" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="41" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1platform_1_1_spi_master3_1acb63ff455fe28c1aea08b97bb73e52b6" prot="private" static="yes" mutable="no">
         <type>void *</type>
@@ -133,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="42" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="42" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1platform_1_1_spi_master3_1a9bd10e78a35415bf1ca750f9c301980d" prot="private" static="yes" mutable="no">
         <type><ref refid="structmodm_1_1_spi_1a0d609550a29c439aa83e5999f584447d" kindref="member">ConfigurationHandler</ref></type>
@@ -146,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="43" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="43" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="43" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="43" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -168,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="69" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="69" bodyend="81"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="69" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="69" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master3_1a268cb35da471d2967d7744d25f28f644" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -197,7 +189,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="86" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="86" bodyend="122"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="86" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="86" bodyend="122"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master3_1ac72455a879a74981da77ba500a3d6cd9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -214,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="125" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="125" bodyend="128"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="125" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="125" bodyend="128"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master3_1ac5ebcd29f1d30d303a6d102b653bb63e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -231,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="131" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="131" bodyend="134"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="131" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="131" bodyend="134"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master3_1ab621c5719f7a27752f87a17f96601c74" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -253,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="138" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="138" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master3_1afd23f950d0575d0391f8088cd339f9ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -270,7 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="141" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="141" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master3_1a6f9f70f74f2841fb0a45f5369d27531e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint8_t</type>
@@ -287,7 +279,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="145" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="145" bodyend="148"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="145" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="145" bodyend="148"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master3_1af97ae86553cbb897fedff1a82be14653" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -312,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="151" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="151" bodyend="154"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="151" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="151" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master3_1a64b43bf08b77df41ac1ad3d9b6d1e1a9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; uint8_t &gt;</type>
@@ -329,7 +321,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="158" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="158" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_spi_master3_1a63a1dcb8f6c410c96a6697e22f69ff77" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; void &gt;</type>
@@ -354,18 +346,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="161" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="161" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Serial peripheral interface (SPI3).</para>
-<para>Simple unbuffered implementation.</para>
-<para><simplesect kind="author"><para>Niklas Hauser </para>
-</simplesect>
-</para>
-    </detaileddescription>
+<para>Serial peripheral interface (SPI3).</para><para>Simple unbuffered implementation.</para><para><simplesect kind="author"><para>Niklas Hauser </para></simplesect>
+</para>    </detaileddescription>
     <inheritancegraph>
       <node id="1571">
         <label>modm::PeripheralDriver</label>
@@ -414,7 +402,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="39" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="38" bodyend="163"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" line="39" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp" bodystart="38" bodyend="163"/>
     <listofallmembers>
       <member refid="classmodm_1_1platform_1_1_spi_master3_1ab621c5719f7a27752f87a17f96601c74" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster3</scope><name>acquire</name></member>
       <member refid="classmodm_1_1_peripheral_driver_1a5c336ff9889c347e7eadb810bf984ebd" prot="public" virt="non-virtual"><scope>modm::platform::SpiMaster3</scope><name>assertBaudrateInTolerance</name></member>

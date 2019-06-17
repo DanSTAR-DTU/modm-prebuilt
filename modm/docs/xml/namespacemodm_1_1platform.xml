@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="namespacemodm_1_1platform" kind="namespace" language="C++">
     <compoundname>modm::platform</compoundname>
     <innerclass refid="classmodm_1_1platform_1_1_adc1" prot="public">modm::platform::Adc1</innerclass>
@@ -112,8 +112,7 @@
     <innerclass refid="classmodm_1_1platform_1_1_usart_hal3" prot="public">modm::platform::UsartHal3</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_usart_hal6" prot="public">modm::platform::UsartHal6</innerclass>
       <sectiondef kind="enum">
-      <memberdef kind="enum" id="group__modm__platform__can_1ga6667adccb58f77a0331d06e55b8cf070" prot="public" static="no" strong="no">
-        <type></type>
+      <memberdef kind="enum" id="group__modm__platform__can_1ga6667adccb58f77a0331d06e55b8cf070" prot="public" static="no">
         <name>ErrorCode</name>
         <enumvalue id="group__modm__platform__can_1gga6667adccb58f77a0331d06e55b8cf070a93cc21c76103b733dc112b198c92573a" prot="public">
           <name>CAN_ERROR_PASSIVE_MODE</name>
@@ -281,10 +280,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" line="25" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" bodystart="24" bodyend="49"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" line="25" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" bodystart="24" bodyend="49"/>
       </memberdef>
-      <memberdef kind="enum" id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55" prot="public" static="no" strong="yes">
-        <type></type>
+      <memberdef kind="enum" id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55" prot="public" static="no">
         <name>Peripheral</name>
         <enumvalue id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55a06507d1398bc031f63ec72c71a4e191e" prot="public">
           <name>BitBang</name>
@@ -692,22 +690,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/core/peripherals.hpp" line="20" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/core/peripherals.hpp" bodystart="18" bodyend="78"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/core/peripherals.hpp" line="20" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/core/peripherals.hpp" bodystart="18" bodyend="78"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="namespacemodm_1_1platform_1a6602a07fb8f21fb7fc440c0d0e27ca39" prot="public" static="no">
+      <memberdef kind="typedef" id="namespacemodm_1_1platform_1af0545f4f3722008b654a94f2625e1824" prot="public" static="no">
         <type><ref refid="classmodm_1_1platform_1_1_rcc" kindref="compound">Rcc</ref></type>
-        <definition>using modm::platform::ClockControl = typedef Rcc</definition>
+        <definition>using modm::platform::instead = typedef Rcc</definition>
         <argsstring></argsstring>
-        <name>ClockControl</name>
+        <name>instead</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" line="280" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" bodystart="280" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" line="280" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" bodystart="280" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1_1platform_1a1741981ded5a57530c304f4df920fa35" prot="public" static="no">
         <type>void(*</type>
@@ -720,13 +718,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" line="23" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" bodystart="23" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" line="23" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp" line="27" column="1"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp" line="27" column="1"/>
   </compounddef>
 </doxygen>

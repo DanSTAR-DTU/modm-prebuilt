@@ -1,64 +1,64 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="semaphore_8hpp" kind="file" language="C++">
     <compoundname>semaphore.hpp</compoundname>
     <includes local="no">stdint.h</includes>
     <includes refid="protothread_2macros_8hpp" local="yes">macros.hpp</includes>
-    <includedby refid="protothread_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread.hpp</includedby>
-    <includedby refid="processing_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing.hpp</includedby>
+    <includedby refid="protothread_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread.hpp</includedby>
+    <includedby refid="processing_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</includedby>
     <incdepgraph>
-      <node id="7228">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp</label>
-        <link refid="semaphore_8hpp"/>
-        <childnode refid="7229" relation="include">
-        </childnode>
-        <childnode refid="7230" relation="include">
+      <node id="7242">
+        <label>macros.hpp</label>
+        <link refid="protothread_2macros_8hpp"/>
+        <childnode refid="7243" relation="include">
         </childnode>
       </node>
-      <node id="7229">
-        <label>stdint.h</label>
-      </node>
-      <node id="7231">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="7232" relation="include">
-        </childnode>
-      </node>
-      <node id="7232">
+      <node id="7244">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="7230">
-        <label>macros.hpp</label>
-        <link refid="protothread_2macros_8hpp"/>
-        <childnode refid="7231" relation="include">
+      <node id="7241">
+        <label>stdint.h</label>
+      </node>
+      <node id="7243">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="7244" relation="include">
+        </childnode>
+      </node>
+      <node id="7240">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp</label>
+        <link refid="semaphore_8hpp"/>
+        <childnode refid="7241" relation="include">
+        </childnode>
+        <childnode refid="7242" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7233">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp</label>
-        <link refid="semaphore_8hpp"/>
-        <childnode refid="7234" relation="include">
+      <node id="7246">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread.hpp</label>
+        <link refid="protothread_8hpp"/>
+        <childnode refid="7247" relation="include">
         </childnode>
-        <childnode refid="7236" relation="include">
+        <childnode refid="7248" relation="include">
         </childnode>
       </node>
-      <node id="7236">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing.hpp</label>
-        <link refid="processing_8hpp"/>
-      </node>
-      <node id="7235">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
+      <node id="7247">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
         <link refid="bme280_8hpp"/>
       </node>
-      <node id="7234">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread.hpp</label>
-        <link refid="protothread_8hpp"/>
-        <childnode refid="7235" relation="include">
+      <node id="7245">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp</label>
+        <link refid="semaphore_8hpp"/>
+        <childnode refid="7246" relation="include">
         </childnode>
-        <childnode refid="7236" relation="include">
+        <childnode refid="7248" relation="include">
         </childnode>
+      </node>
+      <node id="7248">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</label>
+        <link refid="processing_8hpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classmodm_1_1pt_1_1_semaphore" prot="public">modm::pt::Semaphore</innerclass>
@@ -68,6 +68,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp"/>
   </compounddef>
 </doxygen>

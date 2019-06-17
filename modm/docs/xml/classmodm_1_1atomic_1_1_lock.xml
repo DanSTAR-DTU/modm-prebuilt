@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1atomic_1_1_lock" kind="class" language="C++" prot="public">
     <compoundname>modm::atomic::Lock</compoundname>
     <includes refid="architecture_2interface_2atomic__lock_8hpp" local="no">modm/architecture/interface/atomic_lock.hpp</includes>
@@ -15,14 +15,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/atomic_lock.hpp" line="53" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/atomic_lock.hpp" line="53" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Critical section</para>
-<para>Typical usage: <programlisting><codeline><highlight class="normal">function()</highlight></codeline>
+<para>Critical section</para><para>Typical usage: <programlisting><codeline><highlight class="normal">function()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>some<sp/>code<sp/>with<sp/>interrupts<sp/>enabled</highlight></codeline>
 <codeline></codeline>
@@ -37,9 +36,8 @@
 <codeline></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>other<sp/>code<sp/>with<sp/>interrupts<sp/>enabled</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting> </para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/atomic_lock.hpp" line="50" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/atomic_lock.hpp" bodystart="49" bodyend="54"/>
+</programlisting> </para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/atomic_lock.hpp" line="50" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/atomic_lock.hpp" bodystart="49" bodyend="54"/>
     <listofallmembers>
       <member refid="classmodm_1_1atomic_1_1_lock_1a1ba0949d4619139eeb5e1eba1b1be0d6" prot="public" virt="non-virtual"><scope>modm::atomic::Lock</scope><name>Lock</name></member>
     </listofallmembers>

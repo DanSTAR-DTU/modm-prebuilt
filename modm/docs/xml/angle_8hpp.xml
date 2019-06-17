@@ -1,208 +1,208 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="angle_8hpp" kind="file" language="C++">
     <compoundname>angle.hpp</compoundname>
     <includes local="no">cmath</includes>
     <includes local="no">math.h</includes>
-    <includedby refid="vector2_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp</includedby>
-    <includedby refid="location__2d_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp</includedby>
-    <includedby refid="geometry_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry.hpp</includedby>
-    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <includedby refid="vector2_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp</includedby>
+    <includedby refid="location__2d_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp</includedby>
+    <includedby refid="geometry_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
     <incdepgraph>
-      <node id="2743">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp</label>
-        <link refid="angle_8hpp"/>
-        <childnode refid="2744" relation="include">
-        </childnode>
-        <childnode refid="2745" relation="include">
-        </childnode>
-      </node>
-      <node id="2744">
+      <node id="2756">
         <label>cmath</label>
       </node>
-      <node id="2745">
+      <node id="2755">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp</label>
+        <link refid="angle_8hpp"/>
+        <childnode refid="2756" relation="include">
+        </childnode>
+        <childnode refid="2757" relation="include">
+        </childnode>
+      </node>
+      <node id="2757">
         <label>math.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2746">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp</label>
-        <link refid="angle_8hpp"/>
-        <childnode refid="2747" relation="include">
+      <node id="2764">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
+        <link refid="math_8hpp"/>
+      </node>
+      <node id="2762">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/line_2d.hpp</label>
+        <link refid="line__2d_8hpp"/>
+        <childnode refid="2761" relation="include">
         </childnode>
-        <childnode refid="2760" relation="include">
+        <childnode refid="2763" relation="include">
         </childnode>
-        <childnode refid="2751" relation="include">
-        </childnode>
-        <childnode refid="2752" relation="include">
+        <childnode refid="2764" relation="include">
         </childnode>
       </node>
-      <node id="2754">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp</label>
+      <node id="2773">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp</label>
+        <link refid="lu__decomposition_8hpp"/>
+        <childnode refid="2764" relation="include">
+        </childnode>
+      </node>
+      <node id="2766">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/polygon_2d.hpp</label>
         <link refid="polygon__2d_8hpp"/>
-        <childnode refid="2753" relation="include">
+        <childnode refid="2765" relation="include">
         </childnode>
-        <childnode refid="2755" relation="include">
-        </childnode>
-        <childnode refid="2749" relation="include">
-        </childnode>
-        <childnode refid="2751" relation="include">
-        </childnode>
-        <childnode refid="2752" relation="include">
-        </childnode>
-      </node>
-      <node id="2760">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp</label>
-        <link refid="location__2d_8hpp"/>
-        <childnode refid="2751" relation="include">
-        </childnode>
-        <childnode refid="2752" relation="include">
-        </childnode>
-      </node>
-      <node id="2748">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp</label>
-        <link refid="vector_8hpp"/>
-        <childnode refid="2749" relation="include">
-        </childnode>
-        <childnode refid="2756" relation="include">
-        </childnode>
-        <childnode refid="2747" relation="include">
-        </childnode>
-        <childnode refid="2757" relation="include">
-        </childnode>
-        <childnode refid="2758" relation="include">
-        </childnode>
-        <childnode refid="2759" relation="include">
-        </childnode>
-        <childnode refid="2750" relation="include">
-        </childnode>
-        <childnode refid="2753" relation="include">
-        </childnode>
-        <childnode refid="2755" relation="include">
-        </childnode>
-        <childnode refid="2760" relation="include">
-        </childnode>
-        <childnode refid="2751" relation="include">
+        <childnode refid="2767" relation="include">
         </childnode>
         <childnode refid="2761" relation="include">
         </childnode>
-        <childnode refid="2752" relation="include">
+        <childnode refid="2763" relation="include">
+        </childnode>
+        <childnode refid="2764" relation="include">
+        </childnode>
+      </node>
+      <node id="2768">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp</label>
+        <link refid="vector1_8hpp"/>
+        <childnode refid="2760" relation="include">
+        </childnode>
+        <childnode refid="2764" relation="include">
         </childnode>
       </node>
       <node id="2758">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp</label>
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp</label>
+        <link refid="angle_8hpp"/>
+        <childnode refid="2759" relation="include">
+        </childnode>
+        <childnode refid="2772" relation="include">
+        </childnode>
+        <childnode refid="2763" relation="include">
+        </childnode>
+        <childnode refid="2764" relation="include">
+        </childnode>
+      </node>
+      <node id="2770">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector4.hpp</label>
         <link refid="vector4_8hpp"/>
-        <childnode refid="2748" relation="include">
+        <childnode refid="2760" relation="include">
         </childnode>
-        <childnode refid="2752" relation="include">
-        </childnode>
-      </node>
-      <node id="2747">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp</label>
-        <link refid="vector2_8hpp"/>
-        <childnode refid="2748" relation="include">
-        </childnode>
-        <childnode refid="2754" relation="include">
-        </childnode>
-        <childnode refid="2752" relation="include">
+        <childnode refid="2764" relation="include">
         </childnode>
       </node>
-      <node id="2755">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/ray_2d.hpp</label>
+      <node id="2767">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/ray_2d.hpp</label>
         <link refid="ray__2d_8hpp"/>
-        <childnode refid="2754" relation="include">
+        <childnode refid="2766" relation="include">
         </childnode>
-        <childnode refid="2752" relation="include">
-        </childnode>
-      </node>
-      <node id="2757">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp</label>
-        <link refid="vector3_8hpp"/>
-        <childnode refid="2748" relation="include">
-        </childnode>
-        <childnode refid="2752" relation="include">
-        </childnode>
-      </node>
-      <node id="2756">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/vector1.hpp</label>
-        <link refid="vector1_8hpp"/>
-        <childnode refid="2748" relation="include">
-        </childnode>
-        <childnode refid="2752" relation="include">
-        </childnode>
-      </node>
-      <node id="2753">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/line_segment_2d.hpp</label>
-        <link refid="line__segment__2d_8hpp"/>
-        <childnode refid="2749" relation="include">
-        </childnode>
-        <childnode refid="2754" relation="include">
-        </childnode>
-        <childnode refid="2755" relation="include">
-        </childnode>
-        <childnode refid="2751" relation="include">
-        </childnode>
-        <childnode refid="2752" relation="include">
+        <childnode refid="2764" relation="include">
         </childnode>
       </node>
       <node id="2759">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/point_set_2d.hpp</label>
-        <link refid="point__set__2d_8hpp"/>
-        <childnode refid="2749" relation="include">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector2.hpp</label>
+        <link refid="vector2_8hpp"/>
+        <childnode refid="2760" relation="include">
         </childnode>
-        <childnode refid="2750" relation="include">
+        <childnode refid="2766" relation="include">
         </childnode>
-        <childnode refid="2753" relation="include">
-        </childnode>
-        <childnode refid="2754" relation="include">
-        </childnode>
-        <childnode refid="2755" relation="include">
-        </childnode>
-        <childnode refid="2751" relation="include">
-        </childnode>
-        <childnode refid="2752" relation="include">
-        </childnode>
-      </node>
-      <node id="2751">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry.hpp</label>
-        <link refid="geometry_8hpp"/>
-        <childnode refid="2752" relation="include">
-        </childnode>
-      </node>
-      <node id="2752">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
-        <link refid="math_8hpp"/>
-      </node>
-      <node id="2750">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/line_2d.hpp</label>
-        <link refid="line__2d_8hpp"/>
-        <childnode refid="2749" relation="include">
-        </childnode>
-        <childnode refid="2751" relation="include">
-        </childnode>
-        <childnode refid="2752" relation="include">
+        <childnode refid="2764" relation="include">
         </childnode>
       </node>
       <node id="2761">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/lu_decomposition.hpp</label>
-        <link refid="lu__decomposition_8hpp"/>
-        <childnode refid="2752" relation="include">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp</label>
+        <link refid="circle__2d_8hpp"/>
+        <childnode refid="2762" relation="include">
+        </childnode>
+        <childnode refid="2765" relation="include">
+        </childnode>
+        <childnode refid="2766" relation="include">
+        </childnode>
+        <childnode refid="2767" relation="include">
+        </childnode>
+        <childnode refid="2763" relation="include">
+        </childnode>
+        <childnode refid="2764" relation="include">
         </childnode>
       </node>
-      <node id="2749">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/circle_2d.hpp</label>
-        <link refid="circle__2d_8hpp"/>
-        <childnode refid="2750" relation="include">
+      <node id="2769">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector3.hpp</label>
+        <link refid="vector3_8hpp"/>
+        <childnode refid="2760" relation="include">
         </childnode>
-        <childnode refid="2753" relation="include">
+        <childnode refid="2764" relation="include">
         </childnode>
-        <childnode refid="2754" relation="include">
+      </node>
+      <node id="2771">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/point_set_2d.hpp</label>
+        <link refid="point__set__2d_8hpp"/>
+        <childnode refid="2761" relation="include">
         </childnode>
-        <childnode refid="2755" relation="include">
+        <childnode refid="2762" relation="include">
         </childnode>
-        <childnode refid="2751" relation="include">
+        <childnode refid="2765" relation="include">
         </childnode>
-        <childnode refid="2752" relation="include">
+        <childnode refid="2766" relation="include">
+        </childnode>
+        <childnode refid="2767" relation="include">
+        </childnode>
+        <childnode refid="2763" relation="include">
+        </childnode>
+        <childnode refid="2764" relation="include">
+        </childnode>
+      </node>
+      <node id="2765">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/line_segment_2d.hpp</label>
+        <link refid="line__segment__2d_8hpp"/>
+        <childnode refid="2761" relation="include">
+        </childnode>
+        <childnode refid="2766" relation="include">
+        </childnode>
+        <childnode refid="2767" relation="include">
+        </childnode>
+        <childnode refid="2763" relation="include">
+        </childnode>
+        <childnode refid="2764" relation="include">
+        </childnode>
+      </node>
+      <node id="2760">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp</label>
+        <link refid="vector_8hpp"/>
+        <childnode refid="2761" relation="include">
+        </childnode>
+        <childnode refid="2768" relation="include">
+        </childnode>
+        <childnode refid="2759" relation="include">
+        </childnode>
+        <childnode refid="2769" relation="include">
+        </childnode>
+        <childnode refid="2770" relation="include">
+        </childnode>
+        <childnode refid="2771" relation="include">
+        </childnode>
+        <childnode refid="2762" relation="include">
+        </childnode>
+        <childnode refid="2765" relation="include">
+        </childnode>
+        <childnode refid="2767" relation="include">
+        </childnode>
+        <childnode refid="2772" relation="include">
+        </childnode>
+        <childnode refid="2763" relation="include">
+        </childnode>
+        <childnode refid="2773" relation="include">
+        </childnode>
+        <childnode refid="2764" relation="include">
+        </childnode>
+      </node>
+      <node id="2763">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry.hpp</label>
+        <link refid="geometry_8hpp"/>
+        <childnode refid="2764" relation="include">
+        </childnode>
+      </node>
+      <node id="2772">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/location_2d.hpp</label>
+        <link refid="location__2d_8hpp"/>
+        <childnode refid="2763" relation="include">
+        </childnode>
+        <childnode refid="2764" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -218,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="24" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="24" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="24" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="angle_8hpp_1a958e4508ed28ee5cc04249144312c15f" prot="public" static="no">
         <name>M_PI_2</name>
@@ -229,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="28" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="28" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="28" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="angle_8hpp_1aeb24420b096a677f3a2dc5a72b36bf22" prot="public" static="no">
         <name>M_PI_4</name>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="32" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="32" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="32" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="angle_8hpp_1a333b8c19e9861e0819243b069999f0d3" prot="public" static="no">
         <name>M_TWOPI</name>
@@ -251,7 +251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="36" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="36" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="36" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="angle_8hpp_1a08dfac3cca9601a02fc88356cc078e1d" prot="public" static="no">
         <name>M_1_PI</name>
@@ -262,7 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="40" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="40" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="40" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="angle_8hpp_1a97f6d6514d3d3dd50c3a2a6d622673db" prot="public" static="no">
         <name>M_2_PI</name>
@@ -273,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="44" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="44" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="44" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="angle_8hpp_1a66b3ab30f1332874326ed93969e496e0" prot="public" static="no">
         <name>M_SQRT2</name>
@@ -284,13 +284,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="49" column="9" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="49" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="49" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="49" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp"/>
   </compounddef>
 </doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1filter_1_1_moving_average" kind="class" language="C++" prot="public">
     <compoundname>modm::filter::MovingAverage</compoundname>
     <includes refid="moving__average_8hpp" local="no">modm/math/filter/moving_average.hpp</includes>
@@ -25,7 +25,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="61" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="65" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="61" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="65" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="79" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="79" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="79" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1filter_1_1_moving_average_1a603581fb4b098159f67ab61740fd8658" prot="private" static="no" mutable="no">
         <type>T</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="80" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="80" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="80" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1filter_1_1_moving_average_1a4b85788d1d085e95a6edb90af1c367ee" prot="private" static="no" mutable="no">
         <type>T</type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="81" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="81" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="81" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="81" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="68" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="88" bodyend="94"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="68" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="88" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1filter_1_1_moving_average_1af3fd8560a5fb6f1dd89ecd39d1b77ae2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -98,13 +98,12 @@
           <declname>input</declname>
         </param>
         <briefdescription>
-<para>Append new value. </para>
-        </briefdescription>
+<para>Append new value. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="72" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="100" bodyend="111"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="72" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="100" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1filter_1_1_moving_average_1a4dbaa1fb9e750bcb4157502d044ae4d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const T</type>
@@ -112,46 +111,36 @@
         <argsstring>() const</argsstring>
         <name>getValue</name>
         <briefdescription>
-<para>Get filtered value. </para>
-        </briefdescription>
+<para>Get filtered value. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="76" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="118" bodyend="121"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="76" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="118" bodyend="121"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Moving average filter. </para>
-    </briefdescription>
+<para>Moving average filter. </para>    </briefdescription>
     <detaileddescription>
-<para>Calculates the average of N newest values, i.a. the sum of the last N values have been passed to update(...), divided by N. If less than N values have been passed to the filter, the division factor is still N, so missing values are assumed to be zero.</para>
-<para>For integer types this implementation stores the current sum of all values in the buffer and updates this value with every call of <ref refid="classmodm_1_1filter_1_1_moving_average_1af3fd8560a5fb6f1dd89ecd39d1b77ae2" kindref="member">update()</ref> by subtracting the overwritten buffer index and adding the new one.</para>
-<para>Due to numerical instabillity for floating value types, inside the update function the sum has to be recalculated making it less efficient.</para>
-<para>The internal sum is always up to date and the <ref refid="classmodm_1_1filter_1_1_moving_average_1a4dbaa1fb9e750bcb4157502d044ae4d8" kindref="member">getValue()</ref> method consists of only one division.</para>
-<para><simplesect kind="warning"><para>Input range is limited by the following equation <programlisting><codeline><highlight class="normal">N<sp/>*<sp/>input::maxValue<sp/>&lt;<sp/>T::maxValue<sp/></highlight></codeline>
-</programlisting> The sum off the last N input values must not be greater than the maximum value of T, otherwise an overflow will occur.</para>
-</simplesect>
+<para>Calculates the average of N newest values, i.a. the sum of the last N values have been passed to update(...), divided by N. If less than N values have been passed to the filter, the division factor is still N, so missing values are assumed to be zero.</para><para>For integer types this implementation stores the current sum of all values in the buffer and updates this value with every call of <ref refid="classmodm_1_1filter_1_1_moving_average_1af3fd8560a5fb6f1dd89ecd39d1b77ae2" kindref="member">update()</ref> by subtracting the overwritten buffer index and adding the new one.</para><para>Due to numerical instabillity for floating value types, inside the update function the sum has to be recalculated making it less efficient.</para><para>The internal sum is always up to date and the <ref refid="classmodm_1_1filter_1_1_moving_average_1a4dbaa1fb9e750bcb4157502d044ae4d8" kindref="member">getValue()</ref> method consists of only one division.</para><para><simplesect kind="warning"><para>Input range is limited by the following equation <programlisting><codeline><highlight class="normal">N<sp/>*<sp/>input::maxValue<sp/>&lt;<sp/>T::maxValue<sp/></highlight></codeline>
+</programlisting> The sum off the last N input values must not be greater than the maximum value of T, otherwise an overflow will occur.</para></simplesect>
 <parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>T</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Input type </para>
-</parameterdescription>
+<para>Input type </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>N</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Number of samples (maximum is 65356 or 2**16) </para>
-</parameterdescription>
+<para>Number of samples (maximum is 65356 or 2**16) </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="59" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="58" bodyend="82"/>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" line="59" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/moving_average.hpp" bodystart="58" bodyend="82"/>
     <listofallmembers>
       <member refid="classmodm_1_1filter_1_1_moving_average_1a603581fb4b098159f67ab61740fd8658" prot="private" virt="non-virtual"><scope>modm::filter::MovingAverage</scope><name>buffer</name></member>
       <member refid="classmodm_1_1filter_1_1_moving_average_1a4dbaa1fb9e750bcb4157502d044ae4d8" prot="public" virt="non-virtual"><scope>modm::filter::MovingAverage</scope><name>getValue</name></member>

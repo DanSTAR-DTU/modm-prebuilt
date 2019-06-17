@@ -1,75 +1,75 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="utils_8hpp" kind="file" language="C++">
     <compoundname>utils.hpp</compoundname>
     <includes refid="architecture_2utils_8hpp" local="no">modm/architecture/utils.hpp</includes>
     <includes refid="allocator_8hpp" local="yes">utils/allocator.hpp</includes>
     <includes refid="dummy_8hpp" local="yes">utils/dummy.hpp</includes>
     <incdepgraph>
-      <node id="1709">
-        <label>allocator/static.hpp</label>
-        <link refid="static_8hpp"/>
-        <childnode refid="1706" relation="include">
-        </childnode>
-      </node>
-      <node id="1711">
-        <label>utils/dummy.hpp</label>
-        <link refid="dummy_8hpp"/>
-      </node>
-      <node id="1702">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="1703" relation="include">
-        </childnode>
-      </node>
-      <node id="1705">
-        <label>allocator/dynamic.hpp</label>
-        <link refid="dynamic_8hpp"/>
-        <childnode refid="1706" relation="include">
-        </childnode>
-      </node>
-      <node id="1710">
-        <label>allocator/block.hpp</label>
-        <link refid="block_8hpp"/>
-        <childnode refid="1706" relation="include">
-        </childnode>
-      </node>
-      <node id="1708">
-        <label>new</label>
-      </node>
-      <node id="1704">
-        <label>utils/allocator.hpp</label>
-        <link refid="allocator_8hpp"/>
-        <childnode refid="1705" relation="include">
-        </childnode>
-        <childnode refid="1709" relation="include">
-        </childnode>
-        <childnode refid="1710" relation="include">
-        </childnode>
-      </node>
-      <node id="1707">
-        <label>cstddef</label>
-      </node>
-      <node id="1703">
+      <node id="1715">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="1701">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils.hpp</label>
-        <link refid="utils_8hpp"/>
-        <childnode refid="1702" relation="include">
-        </childnode>
-        <childnode refid="1704" relation="include">
-        </childnode>
-        <childnode refid="1711" relation="include">
+      <node id="1721">
+        <label>allocator/static.hpp</label>
+        <link refid="static_8hpp"/>
+        <childnode refid="1718" relation="include">
         </childnode>
       </node>
-      <node id="1706">
+      <node id="1722">
+        <label>allocator/block.hpp</label>
+        <link refid="block_8hpp"/>
+        <childnode refid="1718" relation="include">
+        </childnode>
+      </node>
+      <node id="1713">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils.hpp</label>
+        <link refid="utils_8hpp"/>
+        <childnode refid="1714" relation="include">
+        </childnode>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1723" relation="include">
+        </childnode>
+      </node>
+      <node id="1714">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="1715" relation="include">
+        </childnode>
+      </node>
+      <node id="1717">
+        <label>allocator/dynamic.hpp</label>
+        <link refid="dynamic_8hpp"/>
+        <childnode refid="1718" relation="include">
+        </childnode>
+      </node>
+      <node id="1716">
+        <label>utils/allocator.hpp</label>
+        <link refid="allocator_8hpp"/>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+      </node>
+      <node id="1720">
+        <label>new</label>
+      </node>
+      <node id="1719">
+        <label>cstddef</label>
+      </node>
+      <node id="1723">
+        <label>utils/dummy.hpp</label>
+        <link refid="dummy_8hpp"/>
+      </node>
+      <node id="1718">
         <label>allocator_base.hpp</label>
         <link refid="allocator__base_8hpp"/>
-        <childnode refid="1707" relation="include">
+        <childnode refid="1719" relation="include">
         </childnode>
-        <childnode refid="1708" relation="include">
+        <childnode refid="1720" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -77,6 +77,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/utils.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils.hpp"/>
   </compounddef>
 </doxygen>

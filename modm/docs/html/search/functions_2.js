@@ -11,5 +11,6 @@ var searchData=
   ['blue',['blue',['../group__modm__io.html#gae6f479911a2706520d6355834b2fa7c4',1,'modm']]],
   ['bme280',['Bme280',['../classmodm_1_1_bme280.html#aaf4b3fc997752ac74a4563c464f149fe',1,'modm::Bme280']]],
   ['boundeddeque',['BoundedDeque',['../classmodm_1_1_bounded_deque.html#ac3e12ae31276790c19d4568afabc79dc',1,'modm::BoundedDeque']]],
-  ['bps',['bps',['../group__modm__math__units.html#ga71a525699779b80ef319bb4efe1e4ec9',1,'modm']]]
+  ['bps',['bps',['../group__modm__math__units.html#ga71a525699779b80ef319bb4efe1e4ec9',1,'modm']]],
+  ['build_5fid',['build_id',['../group__modm__architecture__build__id.html#gaac7e7e205bbced786315f5f5e7d165cf',1,'modm']]]
 ];

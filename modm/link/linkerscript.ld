@@ -119,6 +119,12 @@ SECTIONS
 		__assertion_table_end = .;
 	} >FLASH
 
+	.build_id :
+	{
+		__build_id = .;
+		KEEP(*(.note.gnu.build-id))
+	} > FLASH
+
 
 	.fastcode : ALIGN(4)
 	{
@@ -194,6 +200,9 @@ SECTIONS
 		LONG(__data_load)
 		LONG(__data_start)
 		LONG(__data_end)
+		LONG(__fastdata_load)
+		LONG(__fastdata_start)
+		LONG(__fastdata_end)
 		__table_copy_intern_end = .;
 	} >FLASH
 

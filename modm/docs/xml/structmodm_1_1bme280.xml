@@ -1,12 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structmodm_1_1bme280" kind="struct" language="C++" prot="public">
     <compoundname>modm::bme280</compoundname>
     <derivedcompoundref refid="classmodm_1_1_bme280" prot="public" virt="non-virtual">modm::Bme280&lt; I2cMaster &gt;</derivedcompoundref>
     <includes refid="bme280_8hpp" local="no">modm/driver/pressure/bme280.hpp</includes>
       <sectiondef kind="public-type">
-      <memberdef kind="enum" id="structmodm_1_1bme280_1a221472e8dd0353bfad01fa22753fdf17" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="structmodm_1_1bme280_1a221472e8dd0353bfad01fa22753fdf17" prot="public" static="no">
         <name>CtrlHum</name>
         <enumvalue id="structmodm_1_1bme280_1a221472e8dd0353bfad01fa22753fdf17aeab8b86bffe34f5859a393c3a3e8bfa3" prot="public">
           <name>OSRS_H2</name>
@@ -38,10 +37,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="91" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="89" bodyend="95"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="91" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="89" bodyend="95"/>
       </memberdef>
-      <memberdef kind="enum" id="structmodm_1_1bme280_1ab6e9d26f95cde8d1b23f1559d1f5579b" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="structmodm_1_1bme280_1ab6e9d26f95cde8d1b23f1559d1f5579b" prot="public" static="no">
         <name>Status</name>
         <enumvalue id="structmodm_1_1bme280_1ab6e9d26f95cde8d1b23f1559d1f5579ba9b7df9879757641ee2e74593308ad606" prot="public">
           <name>MEASURING</name>
@@ -65,10 +63,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="101" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="99" bodyend="104"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="101" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="99" bodyend="104"/>
       </memberdef>
-      <memberdef kind="enum" id="structmodm_1_1bme280_1ae3688f0d05874d1fee06af97281707e4" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="structmodm_1_1bme280_1ae3688f0d05874d1fee06af97281707e4" prot="public" static="no">
         <name>CtrlMeas</name>
         <enumvalue id="structmodm_1_1bme280_1ae3688f0d05874d1fee06af97281707e4a45101cb65a56ca3d5375dbd22ccbfdbe" prot="public">
           <name>OSRS_T2</name>
@@ -140,10 +137,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="110" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="108" bodyend="119"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="110" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="108" bodyend="119"/>
       </memberdef>
-      <memberdef kind="enum" id="structmodm_1_1bme280_1a3986d1de2ce7dcc1250b55b0b4e05789" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="structmodm_1_1bme280_1a3986d1de2ce7dcc1250b55b0b4e05789" prot="public" static="no">
         <name>Mode</name>
         <enumvalue id="structmodm_1_1bme280_1a3986d1de2ce7dcc1250b55b0b4e05789a243924bfd56a682be235638b53961e09" prot="public">
           <name>Sleep</name>
@@ -175,10 +171,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="124" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="122" bodyend="128"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="124" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="122" bodyend="128"/>
       </memberdef>
-      <memberdef kind="enum" id="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dc" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dc" prot="public" static="no">
         <name>Oversampling</name>
         <enumvalue id="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dcad9c8f187972e6320a34e9c40b4cba605" prot="public">
           <name>Skipped</name>
@@ -234,10 +229,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="134" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="132" bodyend="141"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="134" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="132" bodyend="141"/>
       </memberdef>
-      <memberdef kind="enum" id="structmodm_1_1bme280_1a91a7856aae86f523cc84215eed274888" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="structmodm_1_1bme280_1a91a7856aae86f523cc84215eed274888" prot="public" static="no">
         <name>Config</name>
         <enumvalue id="structmodm_1_1bme280_1a91a7856aae86f523cc84215eed274888a689540994616845b273bad1697a5e3c8" prot="public">
           <name>T_SB_2</name>
@@ -301,10 +295,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="149" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="147" bodyend="157"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="149" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="147" bodyend="157"/>
       </memberdef>
-      <memberdef kind="enum" id="structmodm_1_1bme280_1aee54ed9877f47ce1150a9c72641a2586" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="structmodm_1_1bme280_1aee54ed9877f47ce1150a9c72641a2586" prot="public" static="no">
         <name>TimeStandby</name>
         <enumvalue id="structmodm_1_1bme280_1aee54ed9877f47ce1150a9c72641a2586ab364a0dd72c8b86a4dc295d2041e6a57" prot="public">
           <name>Us500</name>
@@ -376,10 +369,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="162" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="160" bodyend="171"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="162" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="160" bodyend="171"/>
       </memberdef>
-      <memberdef kind="enum" id="structmodm_1_1bme280_1acecc1c055668a788131845d6e9a3b0a8" prot="public" static="no" strong="yes">
-        <type>uint8_t</type>
+      <memberdef kind="enum" id="structmodm_1_1bme280_1acecc1c055668a788131845d6e9a3b0a8" prot="public" static="no">
         <name>FilterSettings</name>
         <enumvalue id="structmodm_1_1bme280_1acecc1c055668a788131845d6e9a3b0a8ad15305d7a4e34e02489c74a5ef542f36" prot="public">
           <name>Off</name>
@@ -427,7 +419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="176" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="174" bodyend="182"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="176" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="174" bodyend="182"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1a59ed724b2dd720cc7ddd8be1957ca6a0" prot="public" static="no">
         <type><ref refid="structmodm_1_1bme280data_1_1_calibration" kindref="compound">modm::bme280data::Calibration</ref></type>
@@ -440,7 +432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="34" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="34" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="34" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1a55590ac02e613e7cb445ee06c026fcf5" prot="public" static="no">
         <type><ref refid="classmodm_1_1bme280data_1_1_data" kindref="compound">modm::bme280data::Data</ref></type>
@@ -453,7 +445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="35" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="35" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="35" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1a2f1363585982a6aa78a679946ed70fcd" prot="public" static="no">
         <type><ref refid="structmodm_1_1bme280data_1_1_data_base" kindref="compound">modm::bme280data::DataBase</ref></type>
@@ -466,7 +458,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="36" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="36" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="36" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1abdd56edb09635287e8544ccc29773d46" prot="public" static="no">
         <type><ref refid="classmodm_1_1bme280data_1_1_data_double" kindref="compound">modm::bme280data::DataDouble</ref></type>
@@ -479,7 +471,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="38" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="38" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="38" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1af073fa36b2ac6e68061d9ace1de675ad" prot="public" static="no">
         <type><ref refid="group__modm__architecture__register_1gacdf81ef59f08411232bb3e7c8be57762" kindref="member">modm::Flags8</ref>&lt; <ref refid="structmodm_1_1bme280_1a221472e8dd0353bfad01fa22753fdf17" kindref="member">CtrlHum</ref> &gt;</type>
@@ -492,7 +484,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="96" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="96" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="96" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="96" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1abbbc4fddfadce36633f657ff34f03d5b" prot="public" static="no">
         <type><ref refid="group__modm__architecture__register_1gacdf81ef59f08411232bb3e7c8be57762" kindref="member">modm::Flags8</ref>&lt; <ref refid="structmodm_1_1bme280_1ab6e9d26f95cde8d1b23f1559d1f5579b" kindref="member">Status</ref> &gt;</type>
@@ -505,7 +497,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="105" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="105" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="105" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1ac3b485aaeefac3429b0d7356ca98cef2" prot="public" static="no">
         <type><ref refid="group__modm__architecture__register_1gacdf81ef59f08411232bb3e7c8be57762" kindref="member">modm::Flags8</ref>&lt; <ref refid="structmodm_1_1bme280_1ae3688f0d05874d1fee06af97281707e4" kindref="member">CtrlMeas</ref> &gt;</type>
@@ -518,7 +510,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="120" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="120" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="120" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1af3828d58ad74b363558b64bf10915cbf" prot="public" static="no">
         <type><ref refid="structmodm_1_1_configuration" kindref="compound">Configuration</ref>&lt; <ref refid="structmodm_1_1bme280_1ac3b485aaeefac3429b0d7356ca98cef2" kindref="member">CtrlMeas_t</ref>, <ref refid="structmodm_1_1bme280_1a3986d1de2ce7dcc1250b55b0b4e05789" kindref="member">Mode</ref>,(<ref refid="group__modm__utils_1ga6cd002ab50e9098b051162dc153a9027" kindref="member">Bit1</ref>|<ref refid="group__modm__utils_1ga203c48bdc0ee80f631cdd258b10ac2ec" kindref="member">Bit0</ref>) &gt;</type>
@@ -531,7 +523,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="129" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="129" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="129" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1ab63583d4a4d1d93d8132851aa03daf8f" prot="public" static="no">
         <type><ref refid="structmodm_1_1_configuration" kindref="compound">Configuration</ref>&lt; <ref refid="structmodm_1_1bme280_1ac3b485aaeefac3429b0d7356ca98cef2" kindref="member">CtrlMeas_t</ref>, <ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dc" kindref="member">Oversampling</ref>,(<ref refid="group__modm__utils_1ga321c02afc0736ac2e00e7345160ecd15" kindref="member">Bit2</ref>|<ref refid="group__modm__utils_1ga6cd002ab50e9098b051162dc153a9027" kindref="member">Bit1</ref>|<ref refid="group__modm__utils_1ga203c48bdc0ee80f631cdd258b10ac2ec" kindref="member">Bit0</ref>), 2 &gt;</type>
@@ -544,7 +536,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="142" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="142" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="142" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1a999300749d11de457d334323aac3370c" prot="public" static="no">
         <type><ref refid="structmodm_1_1_configuration" kindref="compound">Configuration</ref>&lt; <ref refid="structmodm_1_1bme280_1ac3b485aaeefac3429b0d7356ca98cef2" kindref="member">CtrlMeas_t</ref>, <ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dc" kindref="member">Oversampling</ref>,(<ref refid="group__modm__utils_1ga321c02afc0736ac2e00e7345160ecd15" kindref="member">Bit2</ref>|<ref refid="group__modm__utils_1ga6cd002ab50e9098b051162dc153a9027" kindref="member">Bit1</ref>|<ref refid="group__modm__utils_1ga203c48bdc0ee80f631cdd258b10ac2ec" kindref="member">Bit0</ref>), 5 &gt;</type>
@@ -557,7 +549,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="143" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="143" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="143" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1ae4625e7b3fd67192243d56a589a8076c" prot="public" static="no">
         <type><ref refid="structmodm_1_1_configuration" kindref="compound">Configuration</ref>&lt; <ref refid="structmodm_1_1bme280_1af073fa36b2ac6e68061d9ace1de675ad" kindref="member">CtrlHum_t</ref>, <ref refid="structmodm_1_1bme280_1ac9e6098549be3021a80f641487b752dc" kindref="member">Oversampling</ref>,(<ref refid="group__modm__utils_1ga321c02afc0736ac2e00e7345160ecd15" kindref="member">Bit2</ref>|<ref refid="group__modm__utils_1ga6cd002ab50e9098b051162dc153a9027" kindref="member">Bit1</ref>|<ref refid="group__modm__utils_1ga203c48bdc0ee80f631cdd258b10ac2ec" kindref="member">Bit0</ref>), 0 &gt;</type>
@@ -570,7 +562,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="144" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="144" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="144" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1a0f7a932685ec8f93564bfe3b03c58e27" prot="public" static="no">
         <type><ref refid="group__modm__architecture__register_1gacdf81ef59f08411232bb3e7c8be57762" kindref="member">modm::Flags8</ref>&lt; <ref refid="structmodm_1_1bme280_1a91a7856aae86f523cc84215eed274888" kindref="member">Config</ref> &gt;</type>
@@ -583,7 +575,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="158" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="158" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="158" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="158" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1bme280_1aba739fb48c5d367880e19552a64b62e9" prot="public" static="no">
         <type><ref refid="structmodm_1_1_configuration" kindref="compound">Configuration</ref>&lt; <ref refid="structmodm_1_1bme280_1a0f7a932685ec8f93564bfe3b03c58e27" kindref="member">Config_t</ref>, <ref refid="structmodm_1_1bme280_1aee54ed9877f47ce1150a9c72641a2586" kindref="member">TimeStandby</ref>,(<ref refid="group__modm__utils_1gaa1ac8e305f378973a4e5eb9af8c878c5" kindref="member">Bit7</ref>|<ref refid="group__modm__utils_1ga1e6b1e4cc43ac4e146cdc5033b594e88" kindref="member">Bit6</ref>|<ref refid="group__modm__utils_1gaaf03e0045f592f171a2b890e86362471" kindref="member">Bit5</ref>) &gt;</type>
@@ -596,7 +588,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="172" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="172" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="172" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="172" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -615,7 +607,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="32" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="31" bodyend="195"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="32" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="31" bodyend="195"/>
     <listofallmembers>
       <member refid="structmodm_1_1bme280_1a59ed724b2dd720cc7ddd8be1957ca6a0" prot="public" virt="non-virtual"><scope>modm::bme280</scope><name>Calibration</name></member>
       <member refid="structmodm_1_1bme280_1a91a7856aae86f523cc84215eed274888" prot="public" virt="non-virtual"><scope>modm::bme280</scope><name>Config</name></member>

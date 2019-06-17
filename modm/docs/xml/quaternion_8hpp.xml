@@ -1,51 +1,51 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="quaternion_8hpp" kind="file" language="C++">
     <compoundname>quaternion.hpp</compoundname>
     <includes local="no">cmath</includes>
     <includes local="no">stdint.h</includes>
     <includes local="yes">quaternion_impl.hpp</includes>
-    <includedby refid="geometry_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry.hpp</includedby>
-    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <includedby refid="geometry_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
     <incdepgraph>
-      <node id="3112">
+      <node id="3124">
         <label>stdint.h</label>
       </node>
-      <node id="3110">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp</label>
-        <link refid="quaternion_8hpp"/>
-        <childnode refid="3111" relation="include">
-        </childnode>
-        <childnode refid="3112" relation="include">
-        </childnode>
-        <childnode refid="3113" relation="include">
-        </childnode>
-      </node>
-      <node id="3111">
+      <node id="3123">
         <label>cmath</label>
       </node>
-      <node id="3113">
+      <node id="3122">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp</label>
+        <link refid="quaternion_8hpp"/>
+        <childnode refid="3123" relation="include">
+        </childnode>
+        <childnode refid="3124" relation="include">
+        </childnode>
+        <childnode refid="3125" relation="include">
+        </childnode>
+      </node>
+      <node id="3125">
         <label>quaternion_impl.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3114">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp</label>
-        <link refid="quaternion_8hpp"/>
-        <childnode refid="3115" relation="include">
-        </childnode>
-        <childnode refid="3116" relation="include">
-        </childnode>
-      </node>
-      <node id="3115">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry.hpp</label>
-        <link refid="geometry_8hpp"/>
-        <childnode refid="3116" relation="include">
-        </childnode>
-      </node>
-      <node id="3116">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+      <node id="3128">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
         <link refid="math_8hpp"/>
+      </node>
+      <node id="3126">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp</label>
+        <link refid="quaternion_8hpp"/>
+        <childnode refid="3127" relation="include">
+        </childnode>
+        <childnode refid="3128" relation="include">
+        </childnode>
+      </node>
+      <node id="3127">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry.hpp</label>
+        <link refid="geometry_8hpp"/>
+        <childnode refid="3128" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classmodm_1_1_vector" prot="public">modm::Vector</innerclass>
@@ -56,6 +56,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/quaternion.hpp"/>
   </compounddef>
 </doxygen>

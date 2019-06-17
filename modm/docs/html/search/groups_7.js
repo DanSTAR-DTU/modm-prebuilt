@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['gnu_20build_20id',['GNU Build ID',['../group__modm__architecture__build__id.html',1,'']]],
   ['general_20purpose_20input_2foutput',['General Purpose Input/Output',['../group__modm__architecture__gpio.html',1,'']]],
   ['gpio_20expanders',['GPIO Expanders',['../group__modm__architecture__gpio__expander.html',1,'']]],
   ['general_20purpose_20registers',['General Purpose Registers',['../group__modm__architecture__register.html',1,'']]],

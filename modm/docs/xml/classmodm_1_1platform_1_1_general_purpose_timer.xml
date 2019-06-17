@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1platform_1_1_general_purpose_timer" kind="class" language="C++" prot="public">
     <compoundname>modm::platform::GeneralPurposeTimer</compoundname>
     <basecompoundref refid="classmodm_1_1platform_1_1_basic_timer" prot="public" virt="non-virtual">modm::platform::BasicTimer</basecompoundref>
@@ -16,8 +16,7 @@
     <derivedcompoundref refid="classmodm_1_1platform_1_1_timer9" prot="public" virt="non-virtual">modm::platform::Timer9</derivedcompoundref>
     <includes refid="general__purpose__base_8hpp" local="no">modm/platform/timer/general_purpose_base.hpp</includes>
       <sectiondef kind="public-type">
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a4f017a249b3dcf933902761eb4ebbb05" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a4f017a249b3dcf933902761eb4ebbb05" prot="public" static="no">
         <name>DmaRequestEnable</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1a4f017a249b3dcf933902761eb4ebbb05a06933067aafd48425d67bcb01bba5cb6" prot="public">
           <name>Update</name>
@@ -81,10 +80,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="30" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="29" bodyend="38"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="30" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="29" bodyend="38"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a4ab766ffb6c442dbd8cf383fcc7bc3f7" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a4ab766ffb6c442dbd8cf383fcc7bc3f7" prot="public" static="no">
         <name>Interrupt</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1a4ab766ffb6c442dbd8cf383fcc7bc3f7a06933067aafd48425d67bcb01bba5cb6" prot="public">
           <name>Update</name>
@@ -156,10 +154,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="41" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="40" bodyend="50"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="41" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="40" bodyend="50"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1ab8691bfc494af58e76d759882db5911a" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1ab8691bfc494af58e76d759882db5911a" prot="public" static="no">
         <name>InterruptFlag</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1ab8691bfc494af58e76d759882db5911aa06933067aafd48425d67bcb01bba5cb6" prot="public">
           <name>Update</name>
@@ -263,10 +260,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="54" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="53" bodyend="67"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="54" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="53" bodyend="67"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a163e2460141ab5b0e114a88d6a7e56dc" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a163e2460141ab5b0e114a88d6a7e56dc" prot="public" static="no">
         <name>SlaveModeTrigger</name>
         <briefdescription>
         </briefdescription>
@@ -274,10 +270,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="71" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="70" bodyend="72"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="71" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="70" bodyend="72"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a9b86fefeb2b8bb680d2e7caa35628727" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a9b86fefeb2b8bb680d2e7caa35628727" prot="public" static="no">
         <name>SlaveMode</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1a9b86fefeb2b8bb680d2e7caa35628727ab9f5c797ebbf55adccdd8539a65a0241" prot="public">
           <name>Disabled</name>
@@ -291,8 +286,7 @@
           <name>Encoder1</name>
           <initializer>= TIM_SMCR_SMS_0</initializer>
           <briefdescription>
-<para>Counter counts up/down on TI2FP2 edge depending on TI1FP1 level. </para>
-          </briefdescription>
+<para>Counter counts up/down on TI2FP2 edge depending on TI1FP1 level. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -300,8 +294,7 @@
           <name>Encoder2</name>
           <initializer>= TIM_SMCR_SMS_1</initializer>
           <briefdescription>
-<para>Counter counts up/down on TI1FP1 edge depending on TI2FP2 level. </para>
-          </briefdescription>
+<para>Counter counts up/down on TI1FP1 edge depending on TI2FP2 level. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -309,8 +302,7 @@
           <name>Encoder3</name>
           <initializer>= TIM_SMCR_SMS_1 | TIM_SMCR_SMS_0</initializer>
           <briefdescription>
-<para>Counter counts up/down on both TI1FP1 and TI2FP2 edges depending on the level of the other input. </para>
-          </briefdescription>
+<para>Counter counts up/down on both TI1FP1 and TI2FP2 edges depending on the level of the other input. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -320,10 +312,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="75" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="74" bodyend="83"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="75" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="74" bodyend="83"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a1fe4a077f9e662eb8af4fca59a0a734c" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a1fe4a077f9e662eb8af4fca59a0a734c" prot="public" static="no">
         <name>Mode</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1a1fe4a077f9e662eb8af4fca59a0a734caa771e4a30d4558abdc5937d1a36fed9d" prot="public">
           <name>UpCounter</name>
@@ -361,8 +352,7 @@
           <name>CenterAligned1</name>
           <initializer>=                 TIM_CR1_CMS_0</initializer>
           <briefdescription>
-<para>Output compare flags only set when counting down. </para>
-          </briefdescription>
+<para>Output compare flags only set when counting down. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -370,8 +360,7 @@
           <name>CenterAligned2</name>
           <initializer>= TIM_CR1_CMS_1</initializer>
           <briefdescription>
-<para>Output compare flags only set when counting up. </para>
-          </briefdescription>
+<para>Output compare flags only set when counting up. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -379,8 +368,7 @@
           <name>CenterAligned3</name>
           <initializer>= TIM_CR1_CMS_1 | TIM_CR1_CMS_0</initializer>
           <briefdescription>
-<para>Output compare flags set when counting up and down (default) </para>
-          </briefdescription>
+<para>Output compare flags set when counting up and down (default) </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -390,17 +378,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="86" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="85" bodyend="95"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="86" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="85" bodyend="95"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a5352910894a1b58d7e166a293b51a162" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a5352910894a1b58d7e166a293b51a162" prot="public" static="no">
         <name>OutputCompareMode</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1a5352910894a1b58d7e166a293b51a162a3cab03c00dbd11bc3569afa0748013f0" prot="public">
           <name>Inactive</name>
           <initializer>= 0</initializer>
           <briefdescription>
-<para>Output is independent from the compare result. </para>
-          </briefdescription>
+<para>Output is independent from the compare result. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -408,8 +394,7 @@
           <name>HighOnMatch</name>
           <initializer>= TIM_CCMR1_OC1M_0</initializer>
           <briefdescription>
-<para>Output is forced high on match. </para>
-          </briefdescription>
+<para>Output is forced high on match. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -417,8 +402,7 @@
           <name>LowOnMatch</name>
           <initializer>= TIM_CCMR1_OC1M_1</initializer>
           <briefdescription>
-<para>Output is forced low on match. </para>
-          </briefdescription>
+<para>Output is forced low on match. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -426,8 +410,7 @@
           <name>Toggle</name>
           <initializer>= TIM_CCMR1_OC1M_1 | TIM_CCMR1_OC1M_0</initializer>
           <briefdescription>
-<para>Output is toggled on match. </para>
-          </briefdescription>
+<para>Output is toggled on match. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -435,8 +418,7 @@
           <name>ForceInactive</name>
           <initializer>= TIM_CCMR1_OC1M_2</initializer>
           <briefdescription>
-<para>Output is forced low. </para>
-          </briefdescription>
+<para>Output is forced low. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -444,8 +426,7 @@
           <name>ForceActive</name>
           <initializer>= TIM_CCMR1_OC1M_2 | TIM_CCMR1_OC1M_0</initializer>
           <briefdescription>
-<para>Output is forced high. </para>
-          </briefdescription>
+<para>Output is forced high. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -471,9 +452,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
-<para>PWM Mode 1.</para>
-<para>While up-counting, channel is active as long as count is less than channel capture/compare register, else inactive. In downcounting, channel is inactive as long as count exceeds capture/compare register, else active </para>
-          </detaileddescription>
+<para>PWM Mode 1.</para><para>While up-counting, channel is active as long as count is less than channel capture/compare register, else inactive. In downcounting, channel is inactive as long as count exceeds capture/compare register, else active </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1a5352910894a1b58d7e166a293b51a162a6e13e320529007be6ddee8cdb7e8b492" prot="public">
           <name>Pwm2</name>
@@ -481,9 +460,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
-<para>PWM mode 2.</para>
-<para>In upcounting, channel is inactive as long as count is less than capture/compare register, else active. In downcounting, channel is active as long as count exceeds capture/compare register, else inactive. </para>
-          </detaileddescription>
+<para>PWM mode 2.</para><para>In upcounting, channel is inactive as long as count is less than capture/compare register, else active. In downcounting, channel is active as long as count exceeds capture/compare register, else inactive. </para>          </detaileddescription>
         </enumvalue>
         <briefdescription>
         </briefdescription>
@@ -491,10 +468,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="98" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="97" bodyend="134"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="98" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="97" bodyend="134"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1adc75f312c3b30bf7552a7e0d5873369c" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1adc75f312c3b30bf7552a7e0d5873369c" prot="public" static="no">
         <name>OutputComparePreload</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1adc75f312c3b30bf7552a7e0d5873369cabcfaccebf745acfd5e75351095a5394a" prot="public">
           <name>Disable</name>
@@ -518,10 +494,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="138" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="137" bodyend="141"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="138" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="137" bodyend="141"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a553e8248847d265617456bf040e7f97c" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a553e8248847d265617456bf040e7f97c" prot="public" static="no">
         <name>OutputComparePolarity</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1a553e8248847d265617456bf040e7f97ca5d51eb090a6bb620cf3aa90c6e5b0797" prot="public">
           <name>ActiveHigh</name>
@@ -545,10 +520,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="145" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="144" bodyend="148"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="145" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="144" bodyend="148"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a176bb4227ea0210d299c014508e260e1" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a176bb4227ea0210d299c014508e260e1" prot="public" static="no">
         <name>InputCaptureMapping</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1a176bb4227ea0210d299c014508e260e1a09737cca7676f2b79125d30202e8425a" prot="public">
           <name>InputOwn</name>
@@ -577,15 +551,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>If more than one Compare Channel is available they are always paired. (A channel with an odd number is paired with the next even numbered channel) It is possible to choose as trigger for the input capture functionality either the own timer input or the input associated with the paired channel.</para>
-<para>For working with Internal Triggers, TRC can also be selected. </para>
-        </detaileddescription>
+<para>If more than one Compare Channel is available they are always paired. (A channel with an odd number is paired with the next even numbered channel) It is possible to choose as trigger for the input capture functionality either the own timer input or the input associated with the paired channel.</para><para>For working with Internal Triggers, TRC can also be selected. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="159" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="158" bodyend="163"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="159" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="158" bodyend="163"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1aab1812d8de2db99712c704124a3a5cc8" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1aab1812d8de2db99712c704124a3a5cc8" prot="public" static="no">
         <name>InputCapturePolarity</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1aab1812d8de2db99712c704124a3a5cc8a4475404a8e17049853e83d014a833ca1" prot="public">
           <name>Rising</name>
@@ -617,10 +588,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="166" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="165" bodyend="170"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="166" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="165" bodyend="170"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a0e1e28883cd04ceeb50b9a6021530ea0" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a0e1e28883cd04ceeb50b9a6021530ea0" prot="public" static="no">
         <name>InputCapturePrescaler</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1a0e1e28883cd04ceeb50b9a6021530ea0a0265654857f7b6ac0b716d3b07999e32" prot="public">
           <name>Div1</name>
@@ -660,10 +630,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="173" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="172" bodyend="178"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="173" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="172" bodyend="178"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1ae01229bf3de06e608d019847c4d8aa88" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1ae01229bf3de06e608d019847c4d8aa88" prot="public" static="no">
         <name>PinState</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1ae01229bf3de06e608d019847c4d8aa88abcfaccebf745acfd5e75351095a5394a" prot="public">
           <name>Disable</name>
@@ -687,10 +656,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="181" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="180" bodyend="184"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="181" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="180" bodyend="184"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a8f1ee5d70f2fa8a2c7c3407b7a64fe13" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_general_purpose_timer_1a8f1ee5d70f2fa8a2c7c3407b7a64fe13" prot="public" static="no">
         <name>DeadTimeResolution</name>
         <enumvalue id="classmodm_1_1platform_1_1_general_purpose_timer_1a8f1ee5d70f2fa8a2c7c3407b7a64fe13ae7168cf8c5bc480ed9befec75bf7e0a2" prot="public">
           <name>From0With125nsStep</name>
@@ -731,7 +699,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="188" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="187" bodyend="194"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="188" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="187" bodyend="194"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_general_purpose_timer_1ac7d100f5ce9ced97fe2828daee1d4429" prot="public" static="no">
         <type><ref refid="group__modm__architecture__register_1ga4bbc612ddbc2cf239e7c5baeabfa8a0d" kindref="member">modm::Flags32</ref>&lt; <ref refid="classmodm_1_1platform_1_1_basic_timer_1a6ab330516e8221330ec2db8319992b15" kindref="member">Interrupt</ref> &gt;</type>
@@ -744,7 +712,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="51" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="51" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="51" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_general_purpose_timer_1ac3e47cde0c42ebdb9d9820320e60be78" prot="public" static="no">
         <type><ref refid="group__modm__architecture__register_1ga4bbc612ddbc2cf239e7c5baeabfa8a0d" kindref="member">modm::Flags32</ref>&lt; <ref refid="classmodm_1_1platform_1_1_basic_timer_1a77c851e009c1a0239dabf9f3451766a2" kindref="member">InterruptFlag</ref> &gt;</type>
@@ -757,7 +725,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="68" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="68" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="68" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_general_purpose_timer_1a2cf510bd108af0acb60f6c51dd6d1dbc" prot="public" static="no">
         <type><ref refid="group__modm__architecture__register_1ga4bbc612ddbc2cf239e7c5baeabfa8a0d" kindref="member">modm::Flags32</ref>&lt; <ref refid="classmodm_1_1platform_1_1_general_purpose_timer_1a5352910894a1b58d7e166a293b51a162" kindref="member">OutputCompareMode</ref> &gt;</type>
@@ -770,7 +738,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="135" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="135" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="135" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="135" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -796,12 +764,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Set operation mode of the timer</para>
-<para>In Encoder mode the encoder channels A and B must be connected to channel 1 and 2 of the timer (e.g. TIM2_CH1 and TIM2_CH2). </para>
-        </detaileddescription>
+<para>Set operation mode of the timer</para><para>In Encoder mode the encoder channels A and B must be connected to channel 1 and 2 of the timer (e.g. TIM2_CH1 and TIM2_CH2). </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="204" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="204" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_general_purpose_timer_1a6d26a0dbc78b6659a91da1489986af57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -823,37 +789,32 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Configure output channel 1..4.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Configure output channel 1..4.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>channel</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>[1..4] </para>
-</parameterdescription>
+<para>[1..4] </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>mode</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Output compare mode </para>
-</parameterdescription>
+<para>Output compare mode </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>compareValue</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Preloaded output compare value (can be changed later via <ref refid="classmodm_1_1platform_1_1_general_purpose_timer_1a347e30fbb1c1159423216da07ac98442" kindref="member">setCompareValue()</ref>) </para>
-</parameterdescription>
+<para>Preloaded output compare value (can be changed later via <ref refid="classmodm_1_1platform_1_1_general_purpose_timer_1a347e30fbb1c1159423216da07ac98442" kindref="member">setCompareValue()</ref>) </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="224" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="224" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_general_purpose_timer_1a347e30fbb1c1159423216da07ac98442" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -871,29 +832,25 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Set compare value for channel 1..4.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Set compare value for channel 1..4.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>channel</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>[1..4] </para>
-</parameterdescription>
+<para>[1..4] </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Compare value </para>
-</parameterdescription>
+<para>Compare value </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="234" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="234" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_general_purpose_timer_1ae747e8964b2088106d8b3a408d625ec8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint16_t</type>
@@ -907,23 +864,19 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Read compare value for channel 1..4.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Read compare value for channel 1..4.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>channel</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>[1..4] </para>
-</parameterdescription>
+<para>[1..4] </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Current compare value </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<simplesect kind="return"><para>Current compare value </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="243" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="243" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -955,11 +908,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>TODO Description </para>
-        </detaileddescription>
+<para>TODO Description </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="212" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="212" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1068,7 +1020,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="27" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="26" bodyend="244"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" line="27" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp" bodystart="26" bodyend="244"/>
     <listofallmembers>
       <member refid="classmodm_1_1platform_1_1_basic_timer_1a5b2488893edd8afd43e8b4750256c391" prot="public" virt="non-virtual"><scope>modm::platform::GeneralPurposeTimer</scope><name>acknowledgeInterruptFlags</name></member>
       <member refid="classmodm_1_1platform_1_1_basic_timer_1a0b5960f797e53edc6d6787e4edc81298" prot="public" virt="non-virtual"><scope>modm::platform::GeneralPurposeTimer</scope><name>applyAndReset</name></member>

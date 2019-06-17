@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1_block_allocator" kind="class" language="C++" prot="public">
     <compoundname>modm::BlockAllocator</compoundname>
     <includes refid="block__allocator_8hpp" local="no">modm/architecture/driver/heap/block_allocator.hpp</includes>
@@ -25,7 +25,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="43" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" bodystart="43" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="43" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" bodystart="43" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="89" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" bodystart="89" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="89" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1_block_allocator_1a6e358db387d4762ea16bb3328b8bbd6e" prot="private" static="no" mutable="no">
         <type>T *</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="90" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" bodystart="90" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="90" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1_block_allocator_1a0486c292e0fbd987b79815e807d3f823" prot="private" static="no" mutable="no">
         <type>T *</type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="92" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" bodystart="92" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="92" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" bodystart="92" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -86,30 +86,25 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Initialize the raw memory.</para>
-<para>Needs to called before any calls to <ref refid="classmodm_1_1_block_allocator_1ad799bc0f29e607125794f10a101060a1" kindref="member">allocate()</ref> or <ref refid="classmodm_1_1_block_allocator_1a27f3f78857863586ad373cd8b56a5873" kindref="member">free()</ref>. Must be called only once!</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Initialize the raw memory.</para><para>Needs to called before any calls to <ref refid="classmodm_1_1_block_allocator_1ad799bc0f29e607125794f10a101060a1" kindref="member">allocate()</ref> or <ref refid="classmodm_1_1_block_allocator_1a27f3f78857863586ad373cd8b56a5873" kindref="member">free()</ref>. Must be called only once!</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>heapStart</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Needs to point to the first available byte </para>
-</parameterdescription>
+<para>Needs to point to the first available byte </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>heapEnd</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Needs to point directly above the last available memory position. </para>
-</parameterdescription>
+<para>Needs to point directly above the last available memory position. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="59" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="59" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_block_allocator_1ad799bc0f29e607125794f10a101060a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void *</type>
@@ -123,11 +118,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Allocate memory </para>
-        </detaileddescription>
+<para>Allocate memory </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="66" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="66" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_block_allocator_1a27f3f78857863586ad373cd8b56a5873" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -141,21 +135,18 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Free memory in O(1)</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Free memory in O(1)</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>ptr</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Must be the same pointer previously acquired by <ref refid="classmodm_1_1_block_allocator_1ad799bc0f29e607125794f10a101060a1" kindref="member">allocate()</ref>. </para>
-</parameterdescription>
+<para>Must be the same pointer previously acquired by <ref refid="classmodm_1_1_block_allocator_1ad799bc0f29e607125794f10a101060a1" kindref="member">allocate()</ref>. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="76" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="76" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_block_allocator_1a9345958c5bc1661b0dea5a295aa2e3f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::size_t</type>
@@ -168,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="80" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="80" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -187,35 +178,30 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="85" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="85" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Memory allocator.</para>
-<para><parameterlist kind="templateparam"><parameteritem>
+<para>Memory allocator.</para><para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>T</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>TODO</para>
-</parameterdescription>
+<para>TODO</para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>BLOCK_SIZE</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Size of one allocatable block in words (sizeof(T) bytes) (BLOCKSIZE * sizeof(T) * n) - 4 has to be dividable by 4 for every n</para>
-</parameterdescription>
+<para>Size of one allocatable block in words (sizeof(T) bytes) (BLOCKSIZE * sizeof(T) * n) - 4 has to be dividable by 4 for every n</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="author"><para>Fabian Greif </para>
-</simplesect>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="42" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" bodystart="41" bodyend="93"/>
+<simplesect kind="author"><para>Fabian Greif </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" line="42" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/heap/block_allocator.hpp" bodystart="41" bodyend="93"/>
     <listofallmembers>
       <member refid="classmodm_1_1_block_allocator_1a1e5ce5e45056b47427f67a3a9e5353e9" prot="private" virt="non-virtual"><scope>modm::BlockAllocator</scope><name>alignPointer</name></member>
       <member refid="classmodm_1_1_block_allocator_1ad799bc0f29e607125794f10a101060a1" prot="public" virt="non-virtual"><scope>modm::BlockAllocator</scope><name>allocate</name></member>

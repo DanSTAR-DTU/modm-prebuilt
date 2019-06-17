@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structmodm_1_1_pid_1_1_parameter" kind="struct" language="C++" prot="public">
     <compoundname>modm::Pid::Parameter</compoundname>
     <includes refid="pid_8hpp" local="no">modm/math/filter/pid.hpp</includes>
@@ -10,13 +10,12 @@
         <argsstring></argsstring>
         <name>kp</name>
         <briefdescription>
-<para>Proportional gain multiplied with ScaleFactor. </para>
-        </briefdescription>
+<para>Proportional gain multiplied with ScaleFactor. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="94" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="94" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="94" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmodm_1_1_pid_1_1_parameter_1afeac83175b9c88c111867884cf794556" prot="private" static="no" mutable="no">
         <type>T</type>
@@ -24,13 +23,12 @@
         <argsstring></argsstring>
         <name>ki</name>
         <briefdescription>
-<para>Integral gain multiplied with ScaleFactor. </para>
-        </briefdescription>
+<para>Integral gain multiplied with ScaleFactor. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="95" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="95" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="95" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmodm_1_1_pid_1_1_parameter_1a6cdfd24b75c664f6b5b43e6815d73741" prot="private" static="no" mutable="no">
         <type>T</type>
@@ -38,13 +36,12 @@
         <argsstring></argsstring>
         <name>kd</name>
         <briefdescription>
-<para>Differential gain multiplied with ScaleFactor. </para>
-        </briefdescription>
+<para>Differential gain multiplied with ScaleFactor. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="96" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="96" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="96" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="96" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmodm_1_1_pid_1_1_parameter_1a0d0f55e347cbed968284ecc179efe48f" prot="private" static="no" mutable="no">
         <type>T</type>
@@ -52,13 +49,12 @@
         <argsstring></argsstring>
         <name>maxErrorSum</name>
         <briefdescription>
-<para>integral will be limited to this value </para>
-        </briefdescription>
+<para>integral will be limited to this value </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="98" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="98" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="98" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmodm_1_1_pid_1_1_parameter_1ac7b09ebd59ef813e2131e9de05368a2d" prot="private" static="no" mutable="no">
         <type>T</type>
@@ -66,13 +62,12 @@
         <argsstring></argsstring>
         <name>maxOutput</name>
         <briefdescription>
-<para>output will be limited to this value </para>
-        </briefdescription>
+<para>output will be limited to this value </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="99" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="99" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="99" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="99" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -87,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="101" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="101" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="101" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="101" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -124,13 +119,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="todo_1_todo000008"><xreftitle>Todo</xreftitle><xrefdescription><para>description why we use float here! </para>
-<para>calculate maxErrorSum from the parameters </para>
-</xrefdescription></xrefsect></para>
-        </detaileddescription>
+<para><xrefsect id="todo_1_todo000008"><xreftitle>Todo</xreftitle><xrefdescription><para>description why we use float here! </para><para>calculate maxErrorSum from the parameters </para></xrefdescription></xrefsect></para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="70" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="70" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_pid_1_1_parameter_1a2d5684eaeb06032563a2902191a851d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -147,7 +139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="74" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="74" bodyend="76"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="74" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="74" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_pid_1_1_parameter_1aa282344094c81e46595308b62426b457" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -164,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="79" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="79" bodyend="81"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="79" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="79" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_pid_1_1_parameter_1ab24a2a654db367b5017566d32029d4eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -181,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="84" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="84" bodyend="86"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="84" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="84" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_pid_1_1_parameter_1af22ed0a5356395e27f2ee82536cacca5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -198,15 +190,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="89" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="89" bodyend="91"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="89" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="89" bodyend="91"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para><ref refid="structmodm_1_1_pid_1_1_parameter" kindref="compound">Parameter</ref> for a PID calculation. </para>
-    </briefdescription>
+<para><ref refid="structmodm_1_1_pid_1_1_parameter" kindref="compound">Parameter</ref> for a PID calculation. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="67" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="66" bodyend="102"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" line="67" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/pid.hpp" bodystart="66" bodyend="102"/>
     <listofallmembers>
       <member refid="structmodm_1_1_pid_1_1_parameter_1a6cdfd24b75c664f6b5b43e6815d73741" prot="private" virt="non-virtual"><scope>modm::Pid::Parameter</scope><name>kd</name></member>
       <member refid="structmodm_1_1_pid_1_1_parameter_1afeac83175b9c88c111867884cf794556" prot="private" virt="non-virtual"><scope>modm::Pid::Parameter</scope><name>ki</name></member>

@@ -13,5 +13,5 @@ var searchData=
   ['ulpinxt',['UlpiNxt',['../classmodm_1_1platform_1_1_gpio_c3.html#a2ebb9795fe2c40ab2e0523b03bf334bb',1,'modm::platform::GpioC3']]],
   ['ulpistp',['UlpiStp',['../classmodm_1_1platform_1_1_gpio_c0.html#afe863bb6540caaa9b2972e21c9e02788',1,'modm::platform::GpioC0']]],
   ['underlyingtype',['UnderlyingType',['../structmodm_1_1_register.html#a01eabc4e19471d308132e16098f245cd',1,'modm::Register']]],
-  ['unsignedtype',['UnsignedType',['../structmodm_1_1_arithmetic_traits.html#a3d1bedd400eae0c649bfe8de668772a6',1,'modm::ArithmeticTraits::UnsignedType()'],['../group__arithmetic__traits.html#ga231b53d5b4f33431499b959367c9a620',1,'modm::UnsignedType()']]]
+  ['unsignedtype',['UnsignedType',['../group__arithmetic__traits.html#ga231b53d5b4f33431499b959367c9a620',1,'modm']]]
 ];

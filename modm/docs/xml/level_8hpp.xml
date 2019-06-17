@@ -1,70 +1,70 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="level_8hpp" kind="file" language="C++">
     <compoundname>level.hpp</compoundname>
-    <includedby refid="logger_2logger_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp</includedby>
+    <includedby refid="logger_2logger_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp</includedby>
     <invincdepgraph>
-      <node id="1878">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data_impl_fp.hpp</label>
-        <link refid="bme280__data__impl__fp_8hpp"/>
-        <childnode refid="1876" relation="include">
-        </childnode>
+      <node id="1885">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/debug.hpp</label>
+        <link refid="debug_2debug_8hpp"/>
       </node>
-      <node id="1879">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data_impl_double.hpp</label>
-        <link refid="bme280__data__impl__double_8hpp"/>
-        <childnode refid="1876" relation="include">
-        </childnode>
-      </node>
-      <node id="1875">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug.hpp</label>
-        <link refid="debug_8hpp"/>
-      </node>
-      <node id="1870">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/level.hpp</label>
-        <link refid="level_8hpp"/>
-        <childnode refid="1871" relation="include">
-        </childnode>
-      </node>
-      <node id="1872">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger.hpp</label>
+      <node id="1884">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger.hpp</label>
         <link refid="logger_8hpp"/>
-        <childnode refid="1873" relation="include">
+        <childnode refid="1885" relation="include">
         </childnode>
-        <childnode refid="1874" relation="include">
+        <childnode refid="1886" relation="include">
         </childnode>
-        <childnode refid="1875" relation="include">
-        </childnode>
-      </node>
-      <node id="1876">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp</label>
-        <link refid="bme280__data_8hpp"/>
-        <childnode refid="1877" relation="include">
+        <childnode refid="1887" relation="include">
         </childnode>
       </node>
-      <node id="1871">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp</label>
+      <node id="1882">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/level.hpp</label>
+        <link refid="level_8hpp"/>
+        <childnode refid="1883" relation="include">
+        </childnode>
+      </node>
+      <node id="1883">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp</label>
         <link refid="logger_2logger_8hpp"/>
-        <childnode refid="1872" relation="include">
+        <childnode refid="1884" relation="include">
         </childnode>
-        <childnode refid="1876" relation="include">
+        <childnode refid="1888" relation="include">
         </childnode>
-        <childnode refid="1878" relation="include">
+        <childnode refid="1890" relation="include">
         </childnode>
-        <childnode refid="1879" relation="include">
+        <childnode refid="1891" relation="include">
         </childnode>
       </node>
-      <node id="1874">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/imp/std.hpp</label>
-        <link refid="std_8hpp"/>
+      <node id="1891">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data_impl_double.hpp</label>
+        <link refid="bme280__data__impl__double_8hpp"/>
+        <childnode refid="1888" relation="include">
+        </childnode>
       </node>
-      <node id="1877">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
+      <node id="1890">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data_impl_fp.hpp</label>
+        <link refid="bme280__data__impl__fp_8hpp"/>
+        <childnode refid="1888" relation="include">
+        </childnode>
+      </node>
+      <node id="1889">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
         <link refid="bme280_8hpp"/>
       </node>
-      <node id="1873">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/debug.hpp</label>
-        <link refid="debug_2debug_8hpp"/>
+      <node id="1888">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp</label>
+        <link refid="bme280__data_8hpp"/>
+        <childnode refid="1889" relation="include">
+        </childnode>
+      </node>
+      <node id="1886">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/imp/std.hpp</label>
+        <link refid="std_8hpp"/>
+      </node>
+      <node id="1887">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug.hpp</label>
+        <link refid="debug_8hpp"/>
       </node>
     </invincdepgraph>
     <innernamespace refid="namespacemodm">modm</innernamespace>
@@ -74,24 +74,20 @@
         <name>MODM_LOG_LEVEL</name>
         <initializer><ref refid="group__modm__debug_1ggab363317856672ff8274a151df368c400a118b1d7a3569c9d4ea14303a06f351ad" kindref="member">modm::log::DEBUG</ref></initializer>
         <briefdescription>
-<para>Default log level. </para>
-        </briefdescription>
+<para>Default log level. </para>        </briefdescription>
         <detaileddescription>
-<para>Define to set the level of the logging to a defined value for each file. To change the logging level in a source file use <computeroutput>#undef</computeroutput> </para>
-<para><programlisting><codeline><highlight class="normal">#undef<sp/><sp/>MODM_LOG_LEVEL</highlight></codeline>
+<para>Define to set the level of the logging to a defined value for each file. To change the logging level in a source file use <computeroutput>#undef</computeroutput> </para><para><programlisting><codeline><highlight class="normal">#undef<sp/><sp/>MODM_LOG_LEVEL</highlight></codeline>
 <codeline><highlight class="normal">#define<sp/>MODM_LOG_LEVEL<sp/>modm::log::INFO</highlight></codeline>
-</programlisting></para>
-<para>DEBUG &lt; INFO &lt; WARNING &lt; ERROR &lt; DISABLED </para>
-        </detaileddescription>
+</programlisting></para><para>DEBUG &lt; INFO &lt; WARNING &lt; ERROR &lt; DISABLED </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/level.hpp" line="59" column="10" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/level.hpp" bodystart="59" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/level.hpp" line="59" column="10" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/level.hpp" bodystart="59" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/debug/logger/level.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/level.hpp"/>
   </compounddef>
 </doxygen>

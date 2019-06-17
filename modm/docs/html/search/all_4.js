@@ -85,6 +85,8 @@ var searchData=
   ['break',['Break',['../classmodm_1_1platform_1_1_advanced_control_timer.html#ac9b813ea78b2cd405dabc90438d359c2ae4c38d6d45baf080943d323dd51a2ce8',1,'modm::platform::AdvancedControlTimer::Break()'],['../classmodm_1_1platform_1_1_general_purpose_timer.html#a4ab766ffb6c442dbd8cf383fcc7bc3f7ae4c38d6d45baf080943d323dd51a2ce8',1,'modm::platform::GeneralPurposeTimer::Break()'],['../classmodm_1_1platform_1_1_general_purpose_timer.html#ab8691bfc494af58e76d759882db5911aae4c38d6d45baf080943d323dd51a2ce8',1,'modm::platform::GeneralPurposeTimer::Break()']]],
   ['buffer',['buffer',['../structmodm_1_1_i2c_transaction_1_1_writing.html#a346466f9f1a00e46bbdc39f67a5e2221',1,'modm::I2cTransaction::Writing::buffer()'],['../structmodm_1_1_i2c_transaction_1_1_reading.html#a005d4dc3d855c314e45d9cdc333f556e',1,'modm::I2cTransaction::Reading::buffer()'],['../classmodm_1_1_i2c_write_transaction.html#a57c5c0ac3491d8ac335b6897c78ad248',1,'modm::I2cWriteTransaction::buffer()'],['../classmodm_1_1_i2c_read_transaction.html#ac4e9e65532b42a60caa8749043aea008',1,'modm::I2cReadTransaction::buffer()']]],
   ['bug_20list',['Bug List',['../bug.html',1,'']]],
+  ['build_5fid',['build_id',['../group__modm__architecture__build__id.html#gaac7e7e205bbced786315f5f5e7d165cf',1,'modm']]],
+  ['build_5fid_2ehpp',['build_id.hpp',['../build__id_8hpp.html',1,'']]],
   ['busbusy',['BusBusy',['../classmodm_1_1_i2c_master.html#aaeba2d490d4a099a1d45cd713106b3e8aa2575641a386e96d4981f9069a59dbfa',1,'modm::I2cMaster']]],
   ['buscondition',['BusCondition',['../classmodm_1_1_i2c_master.html#aaeba2d490d4a099a1d45cd713106b3e8ac61259eafa8417c3438d27e43dd087fb',1,'modm::I2cMaster']]],
   ['busstate',['BusState',['../classmodm_1_1_can.html#a0914c89eaf4b5f5f8a302c7fc18b2a1e',1,'modm::Can']]],

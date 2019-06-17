@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1_resumable" kind="class" language="C++" prot="public">
     <compoundname>modm::Resumable</compoundname>
     <includes refid="resumable_2resumable_8hpp" local="no">modm/processing/resumable/resumable.hpp</includes>
@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="271" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="271" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="271" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="271" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="114" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="114" bodyend="117"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="114" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="114" bodyend="117"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -48,13 +48,12 @@
         <argsstring>()</argsstring>
         <name>stopAllResumables</name>
         <briefdescription>
-<para>Force all resumable functions to stop running. </para>
-        </briefdescription>
+<para>Force all resumable functions to stop running. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="122" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="122" bodyend="128"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="122" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="122" bodyend="128"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_resumable_1a9380d3c94670c1527792d09675ca0463" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -66,13 +65,12 @@
           <declname>id</declname>
         </param>
         <briefdescription>
-<para>Force the specified resumable function to stop running. </para>
-        </briefdescription>
+<para>Force the specified resumable function to stop running. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="132" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="132" bodyend="139"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="132" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="132" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_resumable_1a0c740e13791ac3e3a80291b7a5f4fe94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -86,13 +84,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if the specified resumable function is running, else <computeroutput>false</computeroutput> </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if the specified resumable function is running, else <computeroutput>false</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="143" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="143" bodyend="146"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="143" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="143" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_resumable_1a1809254b9ee44c4c8a18848c9c5da887" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -102,13 +98,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if any resumable function of this class is running, else <computeroutput>false</computeroutput> </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if any resumable function of this class is running, else <computeroutput>false</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="150" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="150" bodyend="158"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="150" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="150" bodyend="158"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_resumable_1a1dfe1ea6df251c28620d7f2d2ff1b3e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -122,13 +116,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if any of the specified resumable function are running, else <computeroutput>false</computeroutput> </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if any of the specified resumable function are running, else <computeroutput>false</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="162" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="162" bodyend="170"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="162" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="162" bodyend="170"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_resumable_1add237012a198066220d1223e2b308f14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -142,13 +134,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if all of the specified resumable function are running, else <computeroutput>false</computeroutput> </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if all of the specified resumable function are running, else <computeroutput>false</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="174" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="174" bodyend="183"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="174" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="174" bodyend="183"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_resumable_1a54150e987abca974321b00e3b928c453" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -162,32 +152,27 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if none of the specified resumable function are running, else <computeroutput>false</computeroutput> </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if none of the specified resumable function are running, else <computeroutput>false</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="187" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="187" bodyend="190"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="187" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="187" bodyend="190"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><simplesect kind="author"><para>Niklas Hauser </para>
-</simplesect>
+<para><simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 <parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>Functions</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the number of resumable functions that are available in this class. Must be non-zero! </para>
-</parameterdescription>
+<para>the number of resumable functions that are available in this class. Must be non-zero! </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="110" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="109" bodyend="272"/>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" line="110" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/resumable/resumable.hpp" bodystart="109" bodyend="272"/>
     <listofallmembers>
       <member refid="classmodm_1_1_resumable_1add237012a198066220d1223e2b308f14" prot="public" virt="non-virtual"><scope>modm::Resumable</scope><name>areAllResumablesRunning</name></member>
       <member refid="classmodm_1_1_resumable_1a1809254b9ee44c4c8a18848c9c5da887" prot="public" virt="non-virtual"><scope>modm::Resumable</scope><name>areAnyResumablesRunning</name></member>

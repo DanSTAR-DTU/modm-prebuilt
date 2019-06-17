@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1platform_1_1_spi_base" kind="class" language="C++" prot="public">
     <compoundname>modm::platform::SpiBase</compoundname>
     <derivedcompoundref refid="classmodm_1_1platform_1_1_spi_hal1" prot="public" virt="non-virtual">modm::platform::SpiHal1</derivedcompoundref>
@@ -7,8 +7,7 @@
     <derivedcompoundref refid="classmodm_1_1platform_1_1_spi_hal3" prot="public" virt="non-virtual">modm::platform::SpiHal3</derivedcompoundref>
     <includes refid="spi__base_8hpp" local="no">modm/platform/spi/spi_base.hpp</includes>
       <sectiondef kind="public-type">
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1a745714247fefafd092aa814b9b28b89c" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1a745714247fefafd092aa814b9b28b89c" prot="public" static="no">
         <name>Interrupt</name>
         <enumvalue id="classmodm_1_1platform_1_1_spi_base_1a745714247fefafd092aa814b9b28b89ca7c1542456914359e7983a1ce09503e71" prot="public">
           <name>RxBufferNotEmpty</name>
@@ -40,10 +39,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="40" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="38" bodyend="44"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="40" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="38" bodyend="44"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1a1d62b5dfd3ac6e6b9d4612650fa4075b" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1a1d62b5dfd3ac6e6b9d4612650fa4075b" prot="public" static="no">
         <name>InterruptFlag</name>
         <enumvalue id="classmodm_1_1platform_1_1_spi_base_1a1d62b5dfd3ac6e6b9d4612650fa4075bafbf9bf8dff8e951ef0d59933e1046691" prot="public">
           <name>TxBufferEmpty</name>
@@ -107,17 +105,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="49" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="47" bodyend="57"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="49" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="47" bodyend="57"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1a6fb6949d12a2e2d7e7edde26946b3621" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1a6fb6949d12a2e2d7e7edde26946b3621" prot="public" static="no">
         <name>MasterSelection</name>
         <enumvalue id="classmodm_1_1platform_1_1_spi_base_1a6fb6949d12a2e2d7e7edde26946b3621afe25c0ad752c03ce2361025c235b63e1" prot="public">
           <name>Slave</name>
           <initializer>= 0</initializer>
           <briefdescription>
-<para>Configure SPI as Slave. </para>
-          </briefdescription>
+<para>Configure SPI as Slave. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -125,8 +121,7 @@
           <name>Master</name>
           <initializer>= SPI_CR1_MSTR</initializer>
           <briefdescription>
-<para>Configure SPI as Master. </para>
-          </briefdescription>
+<para>Configure SPI as Master. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -144,17 +139,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="62" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="60" bodyend="66"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="62" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="60" bodyend="66"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1a3f5ae7a8cadae3146e9d1be46cc927b5" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1a3f5ae7a8cadae3146e9d1be46cc927b5" prot="public" static="no">
         <name>DataMode</name>
         <enumvalue id="classmodm_1_1platform_1_1_spi_base_1a3f5ae7a8cadae3146e9d1be46cc927b5a315436bae0e85636381fc939db06aee5" prot="public">
           <name>Mode0</name>
           <initializer>= 0b00</initializer>
           <briefdescription>
-<para>clock normal, sample on rising edge </para>
-          </briefdescription>
+<para>clock normal, sample on rising edge </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -162,8 +155,7 @@
           <name>Mode1</name>
           <initializer>= SPI_CR1_CPHA</initializer>
           <briefdescription>
-<para>clock normal, sample on falling edge </para>
-          </briefdescription>
+<para>clock normal, sample on falling edge </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -171,8 +163,7 @@
           <name>Mode2</name>
           <initializer>= SPI_CR1_CPOL</initializer>
           <briefdescription>
-<para>clock inverted, sample on falling edge </para>
-          </briefdescription>
+<para>clock inverted, sample on falling edge </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -180,8 +171,7 @@
           <name>Mode3</name>
           <initializer>= SPI_CR1_CPOL | SPI_CR1_CPHA</initializer>
           <briefdescription>
-<para>clock inverted, sample on rising edge </para>
-          </briefdescription>
+<para>clock inverted, sample on rising edge </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -199,10 +189,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="70" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="68" bodyend="77"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="70" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="68" bodyend="77"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1ac950829992e41aa965a3ee4b31f0bebe" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1ac950829992e41aa965a3ee4b31f0bebe" prot="public" static="no">
         <name>DataOrder</name>
         <enumvalue id="classmodm_1_1platform_1_1_spi_base_1ac950829992e41aa965a3ee4b31f0bebeaee850a31af8a5060a68542cb34339c50" prot="public">
           <name>MsbFirst</name>
@@ -234,10 +223,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="81" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="79" bodyend="85"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="81" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="79" bodyend="85"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1a7248733c75aa675204924170c888308b" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1a7248733c75aa675204924170c888308b" prot="public" static="no">
         <name>DataSize</name>
         <enumvalue id="classmodm_1_1platform_1_1_spi_base_1a7248733c75aa675204924170c888308ba17434210d4ad0740bc77b2b161241758" prot="public">
           <name>Bit8</name>
@@ -269,10 +257,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="89" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="87" bodyend="93"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="89" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="87" bodyend="93"/>
       </memberdef>
-      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1a6fbd2186a894217e3e6bea2afba3a2e5" prot="public" static="no" strong="yes">
-        <type>uint32_t</type>
+      <memberdef kind="enum" id="classmodm_1_1platform_1_1_spi_base_1a6fbd2186a894217e3e6bea2afba3a2e5" prot="public" static="no">
         <name>Prescaler</name>
         <enumvalue id="classmodm_1_1platform_1_1_spi_base_1a6fbd2186a894217e3e6bea2afba3a2e5aed4892f9a54cc655fb648cac223bc83b" prot="public">
           <name>Div2</name>
@@ -344,7 +331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="97" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="95" bodyend="106"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="97" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="95" bodyend="106"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_spi_base_1aaa9f4b6181a8b53993374ce5178bbf2b" prot="public" static="no">
         <type><ref refid="group__modm__architecture__register_1ga4bbc612ddbc2cf239e7c5baeabfa8a0d" kindref="member">modm::Flags32</ref>&lt; <ref refid="classmodm_1_1platform_1_1_spi_base_1a745714247fefafd092aa814b9b28b89c" kindref="member">Interrupt</ref> &gt;</type>
@@ -357,7 +344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="45" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="45" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="45" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmodm_1_1platform_1_1_spi_base_1aa7fe72f6ca5a2e69aa94f2ff019caf5a" prot="public" static="no">
         <type><ref refid="group__modm__architecture__register_1ga4bbc612ddbc2cf239e7c5baeabfa8a0d" kindref="member">modm::Flags32</ref>&lt; <ref refid="classmodm_1_1platform_1_1_spi_base_1a1d62b5dfd3ac6e6b9d4612650fa4075b" kindref="member">InterruptFlag</ref> &gt;</type>
@@ -370,18 +357,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="58" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="58" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="58" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="58" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Base class for the SPI classes</para>
-<para>Provides some common enum that do not depend on the specific SPI.</para>
-<para><simplesect kind="author"><para>Kevin Laeufer </para>
-</simplesect>
-</para>
-    </detaileddescription>
+<para>Base class for the SPI classes</para><para>Provides some common enum that do not depend on the specific SPI.</para><para><simplesect kind="author"><para>Kevin Laeufer </para></simplesect>
+</para>    </detaileddescription>
     <inheritancegraph>
       <node id="1524">
         <label>modm::platform::SpiBase</label>
@@ -406,7 +389,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="36" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="35" bodyend="108"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" line="36" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp" bodystart="35" bodyend="108"/>
     <listofallmembers>
       <member refid="classmodm_1_1platform_1_1_spi_base_1a3f5ae7a8cadae3146e9d1be46cc927b5" prot="public" virt="non-virtual"><scope>modm::platform::SpiBase</scope><name>DataMode</name></member>
       <member refid="classmodm_1_1platform_1_1_spi_base_1ac950829992e41aa965a3ee4b31f0bebe" prot="public" virt="non-virtual"><scope>modm::platform::SpiBase</scope><name>DataOrder</name></member>

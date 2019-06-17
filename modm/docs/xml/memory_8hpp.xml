@@ -1,125 +1,125 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="memory_8hpp" kind="file" language="C++">
     <compoundname>memory.hpp</compoundname>
     <includes local="no">stdint.h</includes>
     <includes refid="architecture_2utils_8hpp" local="no">modm/architecture/utils.hpp</includes>
     <includes refid="register_8hpp" local="no">modm/architecture/interface/register.hpp</includes>
-    <includedby refid="interface_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface.hpp</includedby>
-    <includedby refid="heap__table_8hpp" local="no">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/core/heap_table.hpp</includedby>
+    <includedby refid="interface_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</includedby>
+    <includedby refid="heap__table_8hpp" local="no">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/core/heap_table.hpp</includedby>
     <incdepgraph>
-      <node id="1233">
+      <node id="1245">
         <label>stdarg.h</label>
       </node>
-      <node id="1226">
-        <label>stdint.h</label>
-      </node>
-      <node id="1230">
-        <label>modm/math/utils/bit_constants.hpp</label>
-        <link refid="bit__constants_8hpp"/>
-        <childnode refid="1226" relation="include">
-        </childnode>
-      </node>
-      <node id="1225">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp</label>
-        <link refid="memory_8hpp"/>
-        <childnode refid="1226" relation="include">
-        </childnode>
-        <childnode refid="1227" relation="include">
-        </childnode>
-        <childnode refid="1229" relation="include">
-        </childnode>
-      </node>
-      <node id="1229">
-        <label>modm/architecture/interface/register.hpp</label>
-        <link refid="register_8hpp"/>
-        <childnode refid="1226" relation="include">
-        </childnode>
-        <childnode refid="1230" relation="include">
-        </childnode>
-        <childnode refid="1228" relation="include">
-        </childnode>
-        <childnode refid="1231" relation="include">
-        </childnode>
-      </node>
-      <node id="1227">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="1228" relation="include">
-        </childnode>
-      </node>
-      <node id="1232">
-        <label>cstddef</label>
-      </node>
-      <node id="1228">
+      <node id="1240">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="1237">
-        <label>iodevice_wrapper.hpp</label>
-        <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="1226" relation="include">
-        </childnode>
-        <childnode refid="1236" relation="include">
-        </childnode>
+      <node id="1238">
+        <label>stdint.h</label>
       </node>
-      <node id="1235">
-        <label>type_traits</label>
-      </node>
-      <node id="1236">
+      <node id="1248">
         <label>iodevice.hpp</label>
         <link refid="iodevice_8hpp"/>
       </node>
-      <node id="1231">
+      <node id="1249">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="1238" relation="include">
+        </childnode>
+        <childnode refid="1248" relation="include">
+        </childnode>
+      </node>
+      <node id="1243">
         <label>modm/io/iostream.hpp</label>
         <link refid="iostream_8hpp"/>
-        <childnode refid="1232" relation="include">
+        <childnode refid="1244" relation="include">
         </childnode>
-        <childnode refid="1227" relation="include">
+        <childnode refid="1239" relation="include">
         </childnode>
-        <childnode refid="1233" relation="include">
+        <childnode refid="1245" relation="include">
         </childnode>
-        <childnode refid="1234" relation="include">
+        <childnode refid="1246" relation="include">
         </childnode>
-        <childnode refid="1235" relation="include">
+        <childnode refid="1247" relation="include">
         </childnode>
-        <childnode refid="1236" relation="include">
+        <childnode refid="1248" relation="include">
         </childnode>
-        <childnode refid="1237" relation="include">
+        <childnode refid="1249" relation="include">
         </childnode>
       </node>
-      <node id="1234">
-        <label>inttypes.h</label>
+      <node id="1239">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="1240" relation="include">
+        </childnode>
       </node>
-    </incdepgraph>
-    <invincdepgraph>
       <node id="1241">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform/core/heap_table.hpp</label>
-        <link refid="heap__table_8hpp"/>
+        <label>modm/architecture/interface/register.hpp</label>
+        <link refid="register_8hpp"/>
+        <childnode refid="1238" relation="include">
+        </childnode>
         <childnode refid="1242" relation="include">
         </childnode>
+        <childnode refid="1240" relation="include">
+        </childnode>
+        <childnode refid="1243" relation="include">
+        </childnode>
       </node>
-      <node id="1240">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture.hpp</label>
-        <link refid="architecture_8hpp"/>
+      <node id="1244">
+        <label>cstddef</label>
       </node>
-      <node id="1238">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp</label>
+      <node id="1247">
+        <label>type_traits</label>
+      </node>
+      <node id="1237">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp</label>
         <link refid="memory_8hpp"/>
+        <childnode refid="1238" relation="include">
+        </childnode>
         <childnode refid="1239" relation="include">
         </childnode>
         <childnode refid="1241" relation="include">
         </childnode>
       </node>
-      <node id="1239">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
-        <link refid="interface_8hpp"/>
-        <childnode refid="1240" relation="include">
+      <node id="1242">
+        <label>modm/math/utils/bit_constants.hpp</label>
+        <link refid="bit__constants_8hpp"/>
+        <childnode refid="1238" relation="include">
         </childnode>
       </node>
-      <node id="1242">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/platform.hpp</label>
+      <node id="1246">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1252">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp</label>
+        <link refid="architecture_8hpp"/>
+      </node>
+      <node id="1251">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
+        <link refid="interface_8hpp"/>
+        <childnode refid="1252" relation="include">
+        </childnode>
+      </node>
+      <node id="1254">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
+      </node>
+      <node id="1253">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/core/heap_table.hpp</label>
+        <link refid="heap__table_8hpp"/>
+        <childnode refid="1254" relation="include">
+        </childnode>
+      </node>
+      <node id="1250">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp</label>
+        <link refid="memory_8hpp"/>
+        <childnode refid="1251" relation="include">
+        </childnode>
+        <childnode refid="1253" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innernamespace refid="namespacemodm">modm</innernamespace>
@@ -141,14 +141,11 @@
         </briefdescription>
         <detaileddescription>
 <para>Request object memory with defined traits. <programlisting><codeline><highlight class="normal">Foo<sp/>*p<sp/>=<sp/>new<sp/>(modm::MemoryFastData)<sp/>Foo;</highlight></codeline>
-</programlisting></para>
-<para><simplesect kind="note"><para>Memory traits are ignored on AVRs. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+</programlisting></para><para><simplesect kind="note"><para>Memory traits are ignored on AVRs. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="90" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="90" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__modm__architecture__memory_1ga1e47c38606910db6123992b33608b202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -167,20 +164,17 @@
         </briefdescription>
         <detaileddescription>
 <para>Request array memory with defined traits. <programlisting><codeline><highlight class="normal">uint32_t<sp/>*p<sp/>=<sp/>new<sp/>(modm::MemoryFastData)<sp/>uint32_t[200];</highlight></codeline>
-</programlisting></para>
-<para><simplesect kind="note"><para>Memory traits are ignored on AVRs. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+</programlisting></para><para><simplesect kind="note"><para>Memory traits are ignored on AVRs. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="101" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp" line="101" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/memory.hpp"/>
   </compounddef>
 </doxygen>

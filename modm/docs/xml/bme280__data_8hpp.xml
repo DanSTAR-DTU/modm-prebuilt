@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="bme280__data_8hpp" kind="file" language="C++">
     <compoundname>bme280_data.hpp</compoundname>
     <includes local="no">stdio.h</includes>
@@ -7,171 +7,171 @@
     <includes refid="logger_2logger_8hpp" local="no">modm/debug/logger/logger.hpp</includes>
     <includes refid="bme280__data__impl__fp_8hpp" local="yes">bme280_data_impl_fp.hpp</includes>
     <includes refid="bme280__data__impl__double_8hpp" local="yes">bme280_data_impl_double.hpp</includes>
-    <includedby refid="bme280_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</includedby>
+    <includedby refid="bme280_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</includedby>
     <incdepgraph>
-      <node id="2050">
+      <node id="2062">
         <label>stdarg.h</label>
       </node>
-      <node id="2057">
-        <label>style.hpp</label>
-        <link refid="style_8hpp"/>
-        <childnode refid="2053" relation="include">
-        </childnode>
-        <childnode refid="2058" relation="include">
-        </childnode>
+      <node id="2059">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
       </node>
-      <node id="2060">
-        <label>style/prefix.hpp</label>
-        <link refid="prefix_8hpp"/>
-        <childnode refid="2061" relation="include">
-        </childnode>
-        <childnode refid="2057" relation="include">
-        </childnode>
-        <childnode refid="2062" relation="include">
-        </childnode>
-      </node>
-      <node id="2063">
-        <label>bme280_data_impl_fp.hpp</label>
-        <link refid="bme280__data__impl__fp_8hpp"/>
-        <childnode refid="2043" relation="include">
-        </childnode>
-        <childnode refid="2044" relation="include">
-        </childnode>
-        <childnode refid="2051" relation="include">
-        </childnode>
-        <childnode refid="2045" relation="include">
-        </childnode>
-      </node>
-      <node id="2055">
-        <label>stdint.h</label>
-      </node>
-      <node id="2064">
-        <label>bme280_data_impl_double.hpp</label>
-        <link refid="bme280__data__impl__double_8hpp"/>
-        <childnode refid="2043" relation="include">
-        </childnode>
-        <childnode refid="2044" relation="include">
-        </childnode>
-        <childnode refid="2045" relation="include">
-        </childnode>
-      </node>
-      <node id="2044">
-        <label>cmath</label>
-      </node>
-      <node id="2056">
+      <node id="2068">
         <label>level.hpp</label>
         <link refid="level_8hpp"/>
       </node>
-      <node id="2042">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp</label>
-        <link refid="bme280__data_8hpp"/>
-        <childnode refid="2043" relation="include">
+      <node id="2067">
+        <label>stdint.h</label>
+      </node>
+      <node id="2069">
+        <label>style.hpp</label>
+        <link refid="style_8hpp"/>
+        <childnode refid="2065" relation="include">
         </childnode>
-        <childnode refid="2044" relation="include">
-        </childnode>
-        <childnode refid="2045" relation="include">
-        </childnode>
-        <childnode refid="2063" relation="include">
-        </childnode>
-        <childnode refid="2064" relation="include">
+        <childnode refid="2070" relation="include">
         </childnode>
       </node>
-      <node id="2045">
+      <node id="2065">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
+      </node>
+      <node id="2057">
         <label>modm/debug/logger/logger.hpp</label>
         <link refid="logger_2logger_8hpp"/>
-        <childnode refid="2046" relation="include">
+        <childnode refid="2058" relation="include">
         </childnode>
-        <childnode refid="2048" relation="include">
+        <childnode refid="2060" relation="include">
+        </childnode>
+        <childnode refid="2068" relation="include">
+        </childnode>
+        <childnode refid="2069" relation="include">
+        </childnode>
+        <childnode refid="2071" relation="include">
+        </childnode>
+        <childnode refid="2072" relation="include">
+        </childnode>
+      </node>
+      <node id="2056">
+        <label>cmath</label>
+      </node>
+      <node id="2076">
+        <label>bme280_data_impl_double.hpp</label>
+        <link refid="bme280__data__impl__double_8hpp"/>
+        <childnode refid="2055" relation="include">
         </childnode>
         <childnode refid="2056" relation="include">
         </childnode>
         <childnode refid="2057" relation="include">
         </childnode>
-        <childnode refid="2059" relation="include">
-        </childnode>
-        <childnode refid="2060" relation="include">
-        </childnode>
       </node>
-      <node id="2058">
-        <label>style_impl.hpp</label>
-      </node>
-      <node id="2046">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="2047" relation="include">
+      <node id="2066">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="2067" relation="include">
+        </childnode>
+        <childnode refid="2065" relation="include">
         </childnode>
       </node>
-      <node id="2062">
-        <label>prefix_impl.hpp</label>
-      </node>
-      <node id="2059">
-        <label>style_wrapper.hpp</label>
-        <link refid="style__wrapper_8hpp"/>
-        <childnode refid="2053" relation="include">
+      <node id="2075">
+        <label>bme280_data_impl_fp.hpp</label>
+        <link refid="bme280__data__impl__fp_8hpp"/>
+        <childnode refid="2055" relation="include">
+        </childnode>
+        <childnode refid="2056" relation="include">
+        </childnode>
+        <childnode refid="2063" relation="include">
         </childnode>
         <childnode refid="2057" relation="include">
         </childnode>
       </node>
-      <node id="2049">
-        <label>cstddef</label>
-      </node>
-      <node id="2047">
-        <label>detect.hpp</label>
-        <link refid="detect_8hpp"/>
-      </node>
-      <node id="2054">
-        <label>iodevice_wrapper.hpp</label>
-        <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="2055" relation="include">
+      <node id="2072">
+        <label>style/prefix.hpp</label>
+        <link refid="prefix_8hpp"/>
+        <childnode refid="2073" relation="include">
         </childnode>
-        <childnode refid="2053" relation="include">
+        <childnode refid="2069" relation="include">
+        </childnode>
+        <childnode refid="2074" relation="include">
         </childnode>
       </node>
-      <node id="2052">
-        <label>type_traits</label>
-      </node>
-      <node id="2053">
-        <label>iodevice.hpp</label>
-        <link refid="iodevice_8hpp"/>
-      </node>
-      <node id="2048">
+      <node id="2060">
         <label>modm/io/iostream.hpp</label>
         <link refid="iostream_8hpp"/>
-        <childnode refid="2049" relation="include">
+        <childnode refid="2061" relation="include">
         </childnode>
-        <childnode refid="2046" relation="include">
+        <childnode refid="2058" relation="include">
         </childnode>
-        <childnode refid="2050" relation="include">
+        <childnode refid="2062" relation="include">
         </childnode>
-        <childnode refid="2051" relation="include">
+        <childnode refid="2063" relation="include">
         </childnode>
-        <childnode refid="2052" relation="include">
+        <childnode refid="2064" relation="include">
         </childnode>
-        <childnode refid="2053" relation="include">
+        <childnode refid="2065" relation="include">
         </childnode>
-        <childnode refid="2054" relation="include">
+        <childnode refid="2066" relation="include">
         </childnode>
       </node>
-      <node id="2043">
-        <label>stdio.h</label>
+      <node id="2070">
+        <label>style_impl.hpp</label>
+      </node>
+      <node id="2071">
+        <label>style_wrapper.hpp</label>
+        <link refid="style__wrapper_8hpp"/>
+        <childnode refid="2065" relation="include">
+        </childnode>
+        <childnode refid="2069" relation="include">
+        </childnode>
+      </node>
+      <node id="2054">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp</label>
+        <link refid="bme280__data_8hpp"/>
+        <childnode refid="2055" relation="include">
+        </childnode>
+        <childnode refid="2056" relation="include">
+        </childnode>
+        <childnode refid="2057" relation="include">
+        </childnode>
+        <childnode refid="2075" relation="include">
+        </childnode>
+        <childnode refid="2076" relation="include">
+        </childnode>
+      </node>
+      <node id="2058">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="2059" relation="include">
+        </childnode>
+      </node>
+      <node id="2074">
+        <label>prefix_impl.hpp</label>
       </node>
       <node id="2061">
+        <label>cstddef</label>
+      </node>
+      <node id="2064">
+        <label>type_traits</label>
+      </node>
+      <node id="2055">
+        <label>stdio.h</label>
+      </node>
+      <node id="2073">
         <label>cstring</label>
       </node>
-      <node id="2051">
+      <node id="2063">
         <label>inttypes.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2065">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp</label>
-        <link refid="bme280__data_8hpp"/>
-        <childnode refid="2066" relation="include">
-        </childnode>
-      </node>
-      <node id="2066">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
+      <node id="2078">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
         <link refid="bme280_8hpp"/>
+      </node>
+      <node id="2077">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp</label>
+        <link refid="bme280__data_8hpp"/>
+        <childnode refid="2078" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classmodm_1_1_bme280" prot="public">modm::Bme280</innerclass>
@@ -191,13 +191,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="23" column="10" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="23" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="23" column="10" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp"/>
   </compounddef>
 </doxygen>

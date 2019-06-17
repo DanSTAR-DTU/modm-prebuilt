@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structmodm_1_1_i2c_transaction_1_1_writing" kind="struct" language="C++" prot="public">
     <compoundname>modm::I2cTransaction::Writing</compoundname>
     <includes refid="i2c__transaction_8hpp" local="no">modm/architecture/interface/i2c_transaction.hpp</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" line="68" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" bodystart="68" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" line="68" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmodm_1_1_i2c_transaction_1_1_writing_1ab5c7cfd11139ea907d2eab954d49e0bb" prot="public" static="no" mutable="no">
         <type>std::size_t</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" line="69" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" bodystart="69" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" line="69" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmodm_1_1_i2c_transaction_1_1_writing_1a69986b70058d9cbb1935ffeda0ac4441" prot="public" static="no" mutable="no">
         <type><ref refid="structmodm_1_1_i2c_1aec4012822851f4abbe0ed0dc03c24cbb" kindref="member">OperationAfterWrite</ref></type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" line="70" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" bodystart="70" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" line="70" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" bodystart="70" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -65,44 +65,39 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Contains the information required to begin a write operation.</para>
-<para><parameterlist kind="param"><parameteritem>
+<para>Contains the information required to begin a write operation.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>buffer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>buffer containing the data to write to the slave </para>
-</parameterdescription>
+<para>buffer containing the data to write to the slave </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>length</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>number of bytes to be written </para>
-</parameterdescription>
+<para>number of bytes to be written </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>next</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>operation following the successful writing to the slave </para>
-</parameterdescription>
+<para>operation following the successful writing to the slave </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" line="63" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" bodystart="63" bodyend="66"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" line="63" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" bodystart="63" bodyend="66"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" line="55" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" bodystart="54" bodyend="71"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" line="55" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_transaction.hpp" bodystart="54" bodyend="71"/>
     <listofallmembers>
       <member refid="structmodm_1_1_i2c_transaction_1_1_writing_1a346466f9f1a00e46bbdc39f67a5e2221" prot="public" virt="non-virtual"><scope>modm::I2cTransaction::Writing</scope><name>buffer</name></member>
       <member refid="structmodm_1_1_i2c_transaction_1_1_writing_1ab5c7cfd11139ea907d2eab954d49e0bb" prot="public" virt="non-virtual"><scope>modm::I2cTransaction::Writing</scope><name>length</name></member>

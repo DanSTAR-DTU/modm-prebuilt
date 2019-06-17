@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="group__modm__math__interpolation" kind="group">
     <compoundname>modm_math_interpolation</compoundname>
     <title>Interpolation Methods</title>
@@ -9,11 +9,8 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Simple interpolation methods between a list of points.</para>
-<para><heading level="2">Linear Interpolation</heading>
-</para>
-<para>Example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>Definition<sp/>of<sp/>the<sp/>supporting<sp/>points.<sp/>The<sp/>first<sp/>type<sp/>is<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<para>Simple interpolation methods between a list of points.</para><para><heading level="2">Linear Interpolation</heading>
+</para><para>Example:</para><para><programlisting><codeline><highlight class="comment">//<sp/>Definition<sp/>of<sp/>the<sp/>supporting<sp/>points.<sp/>The<sp/>first<sp/>type<sp/>is<sp/>the</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>input<sp/>type,<sp/>the<sp/>second<sp/>the<sp/>output<sp/>type</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Point<sp/>=<sp/><ref refid="classmodm_1_1_pair" kindref="compound">modm::Pair&lt;int8_t, int16_t&gt;</ref>;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -33,9 +30,7 @@
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal">int8_t<sp/><sp/>a<sp/>=<sp/>40;</highlight></codeline>
 <codeline><highlight class="normal">int16_t<sp/>b<sp/>=<sp/>value.interpolate(a);</highlight></codeline>
-</programlisting></para>
-<para>Example with supporting points read from flash:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>Definition<sp/>of<sp/>a<sp/>supporting<sp/>point</highlight><highlight class="normal"></highlight></codeline>
+</programlisting></para><para>Example with supporting points read from flash:</para><para><programlisting><codeline><highlight class="comment">//<sp/>Definition<sp/>of<sp/>a<sp/>supporting<sp/>point</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Point<sp/>=<sp/><ref refid="classmodm_1_1_pair" kindref="compound">modm::Pair&lt;int8_t, int16_t&gt;</ref>;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Array<sp/>of<sp/>supporting<sp/>points<sp/>in<sp/>flash</highlight><highlight class="normal"></highlight></codeline>
@@ -57,11 +52,8 @@
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal">int8_t<sp/><sp/>a<sp/>=<sp/>20;</highlight></codeline>
 <codeline><highlight class="normal">int16_t<sp/>b<sp/>=<sp/>value.interpolate(a);</highlight></codeline>
-</programlisting></para>
-<para><heading level="2">Lagrange Interpolation</heading>
-</para>
-<para>Example:</para>
-<para><programlisting filename=".cpp"><codeline><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Point<sp/>=<sp/><ref refid="classmodm_1_1_pair" kindref="compound">modm::Pair&lt;float, float&gt;</ref>;</highlight></codeline>
+</programlisting></para><para><heading level="2">Lagrange Interpolation</heading>
+</para><para>Example:</para><para><programlisting><codeline><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Point<sp/>=<sp/><ref refid="classmodm_1_1_pair" kindref="compound">modm::Pair&lt;float, float&gt;</ref>;</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>interpolate<sp/>x^2<sp/>over<sp/>the<sp/>range<sp/>of<sp/>1<sp/>&lt;=<sp/>x<sp/>&lt;=<sp/>3</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal">Point<sp/>points[3]<sp/>=</highlight></codeline>
@@ -76,10 +68,7 @@
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>output<sp/>=<sp/>value.interpolate(1.5f);</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>output<sp/>=&gt;<sp/>2.25;</highlight></codeline>
-</programlisting></para>
-<para><simplesect kind="warning"><para>Only floating points types are allowed as second type of <computeroutput><ref refid="classmodm_1_1_pair" kindref="compound">modm::Pair</ref></computeroutput>, otherwise the calculation will deliver wrong results!</para>
-</simplesect>
-See <ulink url="http://en.wikipedia.org/wiki/Lagrange_interpolation">Wikipedia</ulink>. </para>
-    </detaileddescription>
+</programlisting></para><para><simplesect kind="warning"><para>Only floating points types are allowed as second type of <computeroutput><ref refid="classmodm_1_1_pair" kindref="compound">modm::Pair</ref></computeroutput>, otherwise the calculation will deliver wrong results!</para></simplesect>
+See <ulink url="http://en.wikipedia.org/wiki/Lagrange_interpolation">Wikipedia</ulink>. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1atomic_1_1_flag" kind="class" language="C++" prot="public">
     <compoundname>modm::atomic::Flag</compoundname>
     <includes refid="flag_8hpp" local="no">modm/architecture/driver/atomic/flag.hpp</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="99" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" bodystart="99" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="99" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" bodystart="99" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="50" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="50" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1atomic_1_1_flag_1a1ac5b8124b90941d96e8b8f6a81f9a80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="52" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="52" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1atomic_1_1_flag_1a6e8605da1113daebdcb8bfe93758662a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1atomic_1_1_flag" kindref="compound">Flag</ref> &amp;</type>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="55" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="55" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1atomic_1_1_flag_1a74bfecb5de7c0830e28ea62a94ccb56b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -77,13 +77,12 @@
         <argsstring>() const</argsstring>
         <name>test</name>
         <briefdescription>
-<para>Check state of the flag. </para>
-        </briefdescription>
+<para>Check state of the flag. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="61" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" bodystart="61" bodyend="64"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="61" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" bodystart="61" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1atomic_1_1_flag_1a3a36ffc59a7151834e4d17187b2901f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -91,13 +90,12 @@
         <argsstring>()</argsstring>
         <name>set</name>
         <briefdescription>
-<para>Set flag. </para>
-        </briefdescription>
+<para>Set flag. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="70" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" bodystart="70" bodyend="73"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="70" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" bodystart="70" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1atomic_1_1_flag_1ae594f85072478ed3008822df378c068d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -105,13 +103,12 @@
         <argsstring>()</argsstring>
         <name>reset</name>
         <briefdescription>
-<para>Clear flag. </para>
-        </briefdescription>
+<para>Clear flag. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="79" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" bodystart="79" bodyend="82"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="79" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" bodystart="79" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1atomic_1_1_flag_1af79522890bc3810cbda44571770a58d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -123,21 +120,18 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Sets the flag to a new value and returns the old one. </para>
-        </briefdescription>
+<para>Sets the flag to a new value and returns the old one. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="88" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" bodystart="88" bodyend="96"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="88" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" bodystart="88" bodyend="96"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para><ref refid="classmodm_1_1atomic_1_1_flag" kindref="compound">Flag</ref> to signal events between interrupts and the main-loop. </para>
-    </briefdescription>
+<para><ref refid="classmodm_1_1atomic_1_1_flag" kindref="compound">Flag</ref> to signal events between interrupts and the main-loop. </para>    </briefdescription>
     <detaileddescription>
-<para>This class is quite handy when exchanging flags between a interrupt routine and the main-loop.</para>
-<para><programlisting><codeline><highlight class="normal">modm::atomic::Flag<sp/>isrFlag;</highlight></codeline>
+<para>This class is quite handy when exchanging flags between a interrupt routine and the main-loop.</para><para><programlisting><codeline><highlight class="normal">modm::atomic::Flag<sp/>isrFlag;</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">ISR()<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
@@ -148,12 +142,9 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>flag<sp/>=<sp/>isrFlag.testAndSet(false);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting></para>
-<para><simplesect kind="author"><para>Fabian Greif </para>
-</simplesect>
-</para>
-    </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="48" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" bodystart="47" bodyend="100"/>
+</programlisting></para><para><simplesect kind="author"><para>Fabian Greif </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" line="48" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp" bodystart="47" bodyend="100"/>
     <listofallmembers>
       <member refid="classmodm_1_1atomic_1_1_flag_1a9bcfe8e82eed2cd923bdde89eadda16d" prot="public" virt="non-virtual"><scope>modm::atomic::Flag</scope><name>Flag</name></member>
       <member refid="classmodm_1_1atomic_1_1_flag_1a1ac5b8124b90941d96e8b8f6a81f9a80" prot="public" virt="non-virtual"><scope>modm::atomic::Flag</scope><name>Flag</name></member>

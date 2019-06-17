@@ -31,7 +31,11 @@
 
 // ----------------------------------------------------------------------------
 static modm::atomic::Queue<modm::can::Message, 32> txQueue;
-static modm::atomic::Queue<modm::can::Message, 32> rxQueue;
+struct RxMessage {
+    modm::can::Message message;
+    uint8_t filter_id;
+};
+static modm::atomic::Queue<RxMessage, 32> rxQueue;
 // ----------------------------------------------------------------------------
 void
 modm::platform::Can1::initializeWithPrescaler(
@@ -141,7 +145,7 @@ sendMailbox(const modm::can::Message& message, uint32_t mailboxId)
 // Low level function to receive a message from mailbox.
 // Called by Rx Interrupt or by getMessage.
 static void
-readMailbox(modm::can::Message& message, uint32_t mailboxId)
+readMailbox(modm::can::Message& message, uint32_t mailboxId, uint8_t* filter_id)
 {
 	CAN_FIFOMailBox_TypeDef* mailbox = &CAN1->sFIFOMailBox[mailboxId];
 
@@ -157,6 +161,8 @@ readMailbox(modm::can::Message& message, uint32_t mailboxId)
 	message.setRemoteTransmitRequest(rir & CAN_RI0R_RTR);
 
 	message.length = mailbox->RDTR & CAN_TDT1R_DLC;
+	if(filter_id != nullptr)
+        (*filter_id) = (mailbox->RDTR & CAN_RDT1R_FMI) >> CAN_RDT1R_FMI_Pos;
 
 	uint8_t * modm_may_alias data = message.data;
 	reinterpret_cast<uint32_t *>(data)[0] = mailbox->RDLR;
@@ -209,13 +215,13 @@ MODM_ISR(CAN1_RX0)
 		CAN1->RF0R = CAN_RF0R_FOVR0 | CAN_RF0R_RFOM0;
 	}
 
-	modm::can::Message message;
-	readMailbox(message, 0);
+	RxMessage rxMessage;
+	readMailbox(rxMessage.message, 0, &(rxMessage.filter_id));
 
 	// Release FIFO (access the next message)
 	CAN1->RF0R = CAN_RF0R_RFOM0;
 
-	if (!rxQueue.push(message)) {
+	if (!rxQueue.push(rxMessage)) {
 		modm::ErrorReport::report(modm::platform::CAN1_FIFO0_OVERFLOW);
 	}
 }
@@ -234,13 +240,13 @@ MODM_ISR(CAN1_RX1)
 		CAN1->RF1R = CAN_RF1R_FOVR1 | CAN_RF1R_RFOM1;
 	}
 
-	modm::can::Message message;
-	readMailbox(message, 1);
+	RxMessage rxMessage;
+	readMailbox(rxMessage.message, 1, &(rxMessage.filter_id));
 
 	// Release FIFO (access the next message)
 	CAN1->RF1R = CAN_RF1R_RFOM1;
 
-	if (!rxQueue.push(message)) {
+	if (!rxQueue.push(rxMessage)) {
 		modm::ErrorReport::report(modm::platform::CAN1_FIFO1_OVERFLOW);
 	}
 }
@@ -286,7 +292,7 @@ modm::platform::Can1::isMessageAvailable()
 
 // ----------------------------------------------------------------------------
 bool
-modm::platform::Can1::getMessage(can::Message& message)
+modm::platform::Can1::getMessage(can::Message& message, uint8_t *filter_id)
 {
 	if (rxQueue.isEmpty())
 	{
@@ -294,7 +300,9 @@ modm::platform::Can1::getMessage(can::Message& message)
 		return false;
 	}
 	else {
-		memcpy(&message, &rxQueue.get(), sizeof(message));
+        auto& rxMessage = rxQueue.get();
+		memcpy(&message, &rxMessage.message, sizeof(message));
+        if(filter_id != nullptr) (*filter_id) = rxMessage.filter_id;
 		rxQueue.pop();
 		return true;
 	}

@@ -1,167 +1,167 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="interpolation_8hpp" kind="file" language="C++">
     <compoundname>interpolation.hpp</compoundname>
     <includes refid="linear_8hpp" local="yes">interpolation/linear.hpp</includes>
     <includes refid="lagrange_8hpp" local="yes">interpolation/lagrange.hpp</includes>
-    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
     <incdepgraph>
-      <node id="3423">
+      <node id="3435">
         <label>stdarg.h</label>
       </node>
-      <node id="3412">
-        <label>limits</label>
-      </node>
-      <node id="3411">
-        <label>cstdint</label>
-      </node>
-      <node id="3409">
-        <label>stdint.h</label>
-      </node>
-      <node id="3428">
-        <label>interpolation/lagrange.hpp</label>
-        <link refid="lagrange_8hpp"/>
-        <childnode refid="3409" relation="include">
-        </childnode>
-        <childnode refid="3413" relation="include">
-        </childnode>
-        <childnode refid="3415" relation="include">
-        </childnode>
-        <childnode refid="3416" relation="include">
-        </childnode>
-        <childnode refid="3429" relation="include">
-        </childnode>
-      </node>
-      <node id="3414">
-        <label>cmath</label>
-      </node>
-      <node id="3421">
-        <label>modm/architecture/interface/accessor_flash.hpp</label>
-        <link refid="accessor__flash_8hpp"/>
-        <childnode refid="3419" relation="include">
-        </childnode>
-        <childnode refid="3422" relation="include">
-        </childnode>
-      </node>
-      <node id="3419">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="3420" relation="include">
-        </childnode>
-      </node>
-      <node id="3429">
-        <label>lagrange_impl.hpp</label>
-      </node>
-      <node id="3415">
-        <label>modm/container/pair.hpp</label>
-        <link refid="pair_8hpp"/>
-      </node>
-      <node id="3416">
-        <label>modm/architecture/interface/accessor.hpp</label>
-        <link refid="accessor_8hpp"/>
-        <childnode refid="3417" relation="include">
-        </childnode>
-        <childnode refid="3421" relation="include">
-        </childnode>
-      </node>
-      <node id="3418">
-        <label>cstddef</label>
-      </node>
-      <node id="3417">
-        <label>modm/architecture/interface/accessor_ram.hpp</label>
-        <link refid="accessor__ram_8hpp"/>
-        <childnode refid="3418" relation="include">
-        </childnode>
-        <childnode refid="3419" relation="include">
-        </childnode>
-      </node>
-      <node id="3420">
+      <node id="3432">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="3426">
-        <label>iodevice_wrapper.hpp</label>
-        <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="3409" relation="include">
+      <node id="3428">
+        <label>modm/architecture/interface/accessor.hpp</label>
+        <link refid="accessor_8hpp"/>
+        <childnode refid="3429" relation="include">
         </childnode>
-        <childnode refid="3425" relation="include">
+        <childnode refid="3433" relation="include">
         </childnode>
       </node>
-      <node id="3413">
-        <label>type_traits</label>
+      <node id="3424">
+        <label>limits</label>
       </node>
-      <node id="3425">
+      <node id="3429">
+        <label>modm/architecture/interface/accessor_ram.hpp</label>
+        <link refid="accessor__ram_8hpp"/>
+        <childnode refid="3430" relation="include">
+        </childnode>
+        <childnode refid="3431" relation="include">
+        </childnode>
+      </node>
+      <node id="3420">
+        <label>interpolation/linear.hpp</label>
+        <link refid="linear_8hpp"/>
+        <childnode refid="3421" relation="include">
+        </childnode>
+        <childnode refid="3422" relation="include">
+        </childnode>
+        <childnode refid="3427" relation="include">
+        </childnode>
+        <childnode refid="3428" relation="include">
+        </childnode>
+        <childnode refid="3439" relation="include">
+        </childnode>
+      </node>
+      <node id="3423">
+        <label>cstdint</label>
+      </node>
+      <node id="3421">
+        <label>stdint.h</label>
+      </node>
+      <node id="3437">
         <label>iodevice.hpp</label>
         <link refid="iodevice_8hpp"/>
       </node>
-      <node id="3422">
+      <node id="3426">
+        <label>cmath</label>
+      </node>
+      <node id="3438">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="3421" relation="include">
+        </childnode>
+        <childnode refid="3437" relation="include">
+        </childnode>
+      </node>
+      <node id="3434">
         <label>modm/io/iostream.hpp</label>
         <link refid="iostream_8hpp"/>
-        <childnode refid="3418" relation="include">
+        <childnode refid="3430" relation="include">
         </childnode>
-        <childnode refid="3419" relation="include">
+        <childnode refid="3431" relation="include">
         </childnode>
+        <childnode refid="3435" relation="include">
+        </childnode>
+        <childnode refid="3436" relation="include">
+        </childnode>
+        <childnode refid="3425" relation="include">
+        </childnode>
+        <childnode refid="3437" relation="include">
+        </childnode>
+        <childnode refid="3438" relation="include">
+        </childnode>
+      </node>
+      <node id="3431">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="3432" relation="include">
+        </childnode>
+      </node>
+      <node id="3440">
+        <label>interpolation/lagrange.hpp</label>
+        <link refid="lagrange_8hpp"/>
+        <childnode refid="3421" relation="include">
+        </childnode>
+        <childnode refid="3425" relation="include">
+        </childnode>
+        <childnode refid="3427" relation="include">
+        </childnode>
+        <childnode refid="3428" relation="include">
+        </childnode>
+        <childnode refid="3441" relation="include">
+        </childnode>
+      </node>
+      <node id="3427">
+        <label>modm/container/pair.hpp</label>
+        <link refid="pair_8hpp"/>
+      </node>
+      <node id="3422">
+        <label>modm/math/utils/arithmetic_traits.hpp</label>
+        <link refid="arithmetic__traits_8hpp"/>
         <childnode refid="3423" relation="include">
         </childnode>
         <childnode refid="3424" relation="include">
-        </childnode>
-        <childnode refid="3413" relation="include">
         </childnode>
         <childnode refid="3425" relation="include">
         </childnode>
         <childnode refid="3426" relation="include">
         </childnode>
       </node>
-      <node id="3407">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation.hpp</label>
+      <node id="3441">
+        <label>lagrange_impl.hpp</label>
+      </node>
+      <node id="3430">
+        <label>cstddef</label>
+      </node>
+      <node id="3419">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation.hpp</label>
         <link refid="interpolation_8hpp"/>
-        <childnode refid="3408" relation="include">
+        <childnode refid="3420" relation="include">
         </childnode>
-        <childnode refid="3428" relation="include">
-        </childnode>
-      </node>
-      <node id="3410">
-        <label>modm/math/utils/arithmetic_traits.hpp</label>
-        <link refid="arithmetic__traits_8hpp"/>
-        <childnode refid="3411" relation="include">
-        </childnode>
-        <childnode refid="3412" relation="include">
-        </childnode>
-        <childnode refid="3413" relation="include">
-        </childnode>
-        <childnode refid="3414" relation="include">
+        <childnode refid="3440" relation="include">
         </childnode>
       </node>
-      <node id="3408">
-        <label>interpolation/linear.hpp</label>
-        <link refid="linear_8hpp"/>
-        <childnode refid="3409" relation="include">
+      <node id="3425">
+        <label>type_traits</label>
+      </node>
+      <node id="3433">
+        <label>modm/architecture/interface/accessor_flash.hpp</label>
+        <link refid="accessor__flash_8hpp"/>
+        <childnode refid="3431" relation="include">
         </childnode>
-        <childnode refid="3410" relation="include">
-        </childnode>
-        <childnode refid="3415" relation="include">
-        </childnode>
-        <childnode refid="3416" relation="include">
-        </childnode>
-        <childnode refid="3427" relation="include">
+        <childnode refid="3434" relation="include">
         </childnode>
       </node>
-      <node id="3424">
+      <node id="3436">
         <label>inttypes.h</label>
       </node>
-      <node id="3427">
+      <node id="3439">
         <label>linear_impl.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3431">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+      <node id="3443">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
         <link refid="math_8hpp"/>
       </node>
-      <node id="3430">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation.hpp</label>
+      <node id="3442">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation.hpp</label>
         <link refid="interpolation_8hpp"/>
-        <childnode refid="3431" relation="include">
+        <childnode refid="3443" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -171,6 +171,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/interpolation.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/interpolation.hpp"/>
   </compounddef>
 </doxygen>

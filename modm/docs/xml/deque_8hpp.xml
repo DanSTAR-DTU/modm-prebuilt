@@ -1,66 +1,66 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="deque_8hpp" kind="file" language="C++">
     <compoundname>deque.hpp</compoundname>
     <includes local="no">cstddef</includes>
     <includes local="no">cstdint</includes>
     <includes local="no">type_traits</includes>
     <includes local="yes">deque_impl.hpp</includes>
-    <includedby refid="container_2queue_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp</includedby>
-    <includedby refid="stack_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/stack.hpp</includedby>
-    <includedby refid="container_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container.hpp</includedby>
+    <includedby refid="container_2queue_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/queue.hpp</includedby>
+    <includedby refid="stack_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/stack.hpp</includedby>
+    <includedby refid="container_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container.hpp</includedby>
     <incdepgraph>
-      <node id="1715">
+      <node id="1727">
         <label>cstdint</label>
       </node>
-      <node id="1717">
+      <node id="1725">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/deque.hpp</label>
+        <link refid="deque_8hpp"/>
+        <childnode refid="1726" relation="include">
+        </childnode>
+        <childnode refid="1727" relation="include">
+        </childnode>
+        <childnode refid="1728" relation="include">
+        </childnode>
+        <childnode refid="1729" relation="include">
+        </childnode>
+      </node>
+      <node id="1729">
         <label>deque_impl.hpp</label>
       </node>
-      <node id="1713">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/deque.hpp</label>
-        <link refid="deque_8hpp"/>
-        <childnode refid="1714" relation="include">
-        </childnode>
-        <childnode refid="1715" relation="include">
-        </childnode>
-        <childnode refid="1716" relation="include">
-        </childnode>
-        <childnode refid="1717" relation="include">
-        </childnode>
-      </node>
-      <node id="1714">
+      <node id="1726">
         <label>cstddef</label>
       </node>
-      <node id="1716">
+      <node id="1728">
         <label>type_traits</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1720">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container.hpp</label>
-        <link refid="container_8hpp"/>
-      </node>
-      <node id="1721">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/stack.hpp</label>
-        <link refid="stack_8hpp"/>
-        <childnode refid="1720" relation="include">
-        </childnode>
-      </node>
-      <node id="1718">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/deque.hpp</label>
-        <link refid="deque_8hpp"/>
-        <childnode refid="1719" relation="include">
-        </childnode>
-        <childnode refid="1721" relation="include">
-        </childnode>
-        <childnode refid="1720" relation="include">
-        </childnode>
-      </node>
-      <node id="1719">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/queue.hpp</label>
+      <node id="1731">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/queue.hpp</label>
         <link refid="container_2queue_8hpp"/>
-        <childnode refid="1720" relation="include">
+        <childnode refid="1732" relation="include">
         </childnode>
+      </node>
+      <node id="1730">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/deque.hpp</label>
+        <link refid="deque_8hpp"/>
+        <childnode refid="1731" relation="include">
+        </childnode>
+        <childnode refid="1733" relation="include">
+        </childnode>
+        <childnode refid="1732" relation="include">
+        </childnode>
+      </node>
+      <node id="1733">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/stack.hpp</label>
+        <link refid="stack_8hpp"/>
+        <childnode refid="1732" relation="include">
+        </childnode>
+      </node>
+      <node id="1732">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container.hpp</label>
+        <link refid="container_8hpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classmodm_1_1_bounded_deque" prot="public">modm::BoundedDeque</innerclass>
@@ -70,6 +70,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/container/deque.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/deque.hpp"/>
   </compounddef>
 </doxygen>

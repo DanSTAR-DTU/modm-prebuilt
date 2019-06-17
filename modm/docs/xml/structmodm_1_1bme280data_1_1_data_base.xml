@@ -1,20 +1,18 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structmodm_1_1bme280data_1_1_data_base" kind="struct" language="C++" prot="public">
     <compoundname>modm::bme280data::DataBase</compoundname>
     <derivedcompoundref refid="classmodm_1_1bme280data_1_1_data" prot="public" virt="non-virtual">modm::bme280data::Data</derivedcompoundref>
     <derivedcompoundref refid="classmodm_1_1bme280data_1_1_data_double" prot="public" virt="non-virtual">modm::bme280data::DataDouble</derivedcompoundref>
     <includes refid="bme280__data_8hpp" local="no">modm/driver/pressure/bme280_data.hpp</includes>
       <sectiondef kind="protected-type">
-      <memberdef kind="enum" id="structmodm_1_1bme280data_1_1_data_base_1af6b6b2f160ccc5a701e8a4c52df0c77b" prot="protected" static="no" strong="no">
-        <type></type>
+      <memberdef kind="enum" id="structmodm_1_1bme280data_1_1_data_base_1af6b6b2f160ccc5a701e8a4c52df0c77b" prot="protected" static="no">
         <name>@0</name>
         <enumvalue id="structmodm_1_1bme280data_1_1_data_base_1af6b6b2f160ccc5a701e8a4c52df0c77ba886b210636a5897aa0db0fd8e8539b87" prot="protected">
           <name>HUMIDITY_CALCULATED</name>
           <initializer>= Bit2</initializer>
           <briefdescription>
-<para>Remember if the raw data was already converted to calibrated humidity. </para>
-          </briefdescription>
+<para>Remember if the raw data was already converted to calibrated humidity. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -22,8 +20,7 @@
           <name>TEMPERATURE_CALCULATED</name>
           <initializer>= Bit1</initializer>
           <briefdescription>
-<para>Remember if the raw data was already converted to calibrated temperature. </para>
-          </briefdescription>
+<para>Remember if the raw data was already converted to calibrated temperature. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -31,8 +28,7 @@
           <name>PRESSURE_CALCULATED</name>
           <initializer>= Bit0</initializer>
           <briefdescription>
-<para>Remember if the raw data was already converted to calibrated pressure. </para>
-          </briefdescription>
+<para>Remember if the raw data was already converted to calibrated pressure. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -42,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="119" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="118" bodyend="126"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="119" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="118" bodyend="126"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -62,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="72" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="72" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="72" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="structmodm_1_1bme280data_1_1_data_base_1af3e5f8c225368114e652b8594b16a58d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -75,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="75" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="75" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="75" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="75" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -90,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="104" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="104" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="104" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="104" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmodm_1_1bme280data_1_1_data_base_1a80c9b71642ef23dc2c987662ce0111d7" prot="protected" static="no" mutable="no">
         <type>uint8_t</type>
@@ -100,11 +96,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>The raw data that was read from the sensor 0 .. 2 pressure data 3 .. 5 temperatur data 6 .. 7 humidity data </para>
-        </detaileddescription>
+<para>The raw data that was read from the sensor 0 .. 2 pressure data 3 .. 5 temperatur data 6 .. 7 humidity data </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="111" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="111" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="111" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmodm_1_1bme280data_1_1_data_base_1a8dc2153aac5cce57c51cab197f9a2853" prot="protected" static="no" mutable="no">
         <type>uint8_t</type>
@@ -117,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="116" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="116" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="116" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="116" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -132,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="79" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="79" bodyend="82"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="79" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="79" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1bme280data_1_1_data_base_1a87b2e5f8ef99cfb0482aefdf681333ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structmodm_1_1bme280data_1_1_calibration" kindref="compound">Calibration</ref> &amp;</type>
@@ -145,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="86" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="86" bodyend="88"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="86" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="86" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1bme280data_1_1_data_base_1a976d4ce1a1e6654bafdbb21cbb35d3e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -153,13 +148,12 @@
         <argsstring>()</argsstring>
         <name>rawTemperatureTouched</name>
         <briefdescription>
-<para>Notify data class about changed buffer of raw temperature data. </para>
-        </briefdescription>
+<para>Notify data class about changed buffer of raw temperature data. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="93" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="93" bodyend="93"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="93" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="93" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1bme280data_1_1_data_base_1aa82be88305b961c19c11f29cadfe0cb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -167,13 +161,12 @@
         <argsstring>()</argsstring>
         <name>rawPressureTouched</name>
         <briefdescription>
-<para>Notify data class about changed buffer of raw pressure data. </para>
-        </briefdescription>
+<para>Notify data class about changed buffer of raw pressure data. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="97" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="97" bodyend="97"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="97" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="97" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1bme280data_1_1_data_base_1a26938923b1531ea6d450104d3e8752e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -181,13 +174,12 @@
         <argsstring>()</argsstring>
         <name>rawHumidityTouched</name>
         <briefdescription>
-<para>Notify data class about changed buffer of raw pressure data. </para>
-        </briefdescription>
+<para>Notify data class about changed buffer of raw pressure data. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="101" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="101" bodyend="101"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="101" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="101" bodyend="101"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -225,7 +217,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="70" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="68" bodyend="127"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" line="70" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp" bodystart="68" bodyend="127"/>
     <listofallmembers>
       <member refid="structmodm_1_1bme280data_1_1_data_base_1af3e5f8c225368114e652b8594b16a58d" prot="public" virt="non-virtual"><scope>modm::bme280data::DataBase</scope><name>::Bme280Test</name></member>
       <member refid="structmodm_1_1bme280data_1_1_data_base_1a39bc59193cf80a72ed2afc32c1ca6110" prot="public" virt="non-virtual"><scope>modm::bme280data::DataBase</scope><name>::modm::Bme280</name></member>

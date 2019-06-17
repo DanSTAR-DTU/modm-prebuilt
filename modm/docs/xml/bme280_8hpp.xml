@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="bme280_8hpp" kind="file" language="C++">
     <compoundname>bme280.hpp</compoundname>
     <includes refid="protothread_8hpp" local="no">modm/processing/protothread.hpp</includes>
@@ -10,453 +10,453 @@
     <includes refid="bme280__data_8hpp" local="yes">bme280_data.hpp</includes>
     <includes local="yes">bme280_impl.hpp</includes>
     <incdepgraph>
-      <node id="1989">
-        <label>protothread/semaphore.hpp</label>
-        <link refid="semaphore_8hpp"/>
-        <childnode refid="1985" relation="include">
-        </childnode>
-        <childnode refid="1986" relation="include">
+      <node id="1998">
+        <label>macros.hpp</label>
+        <link refid="protothread_2macros_8hpp"/>
+        <childnode refid="1999" relation="include">
         </childnode>
       </node>
-      <node id="2000">
+      <node id="2012">
         <label>stdarg.h</label>
       </node>
+      <node id="2000">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="2007">
+        <label>modm/architecture/interface/accessor.hpp</label>
+        <link refid="accessor_8hpp"/>
+        <childnode refid="2008" relation="include">
+        </childnode>
+        <childnode refid="2010" relation="include">
+        </childnode>
+      </node>
       <node id="2021">
+        <label>modm/architecture/interface/gpio.hpp</label>
+        <link refid="gpio_8hpp"/>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+      </node>
+      <node id="2033">
         <label>limits</label>
       </node>
-      <node id="2040">
+      <node id="2002">
+        <label>modm/processing/resumable.hpp</label>
+        <link refid="resumable_8hpp"/>
+        <childnode refid="2003" relation="include">
+        </childnode>
+        <childnode refid="2018" relation="include">
+        </childnode>
+      </node>
+      <node id="2030">
+        <label>timer/timestamp.hpp</label>
+        <link refid="timestamp_8hpp"/>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="2011" relation="include">
+        </childnode>
+        <childnode refid="2031" relation="include">
+        </childnode>
+      </node>
+      <node id="2008">
+        <label>modm/architecture/interface/accessor_ram.hpp</label>
+        <link refid="accessor__ram_8hpp"/>
+        <childnode refid="2009" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+      </node>
+      <node id="2019">
+        <label>modm/architecture/interface/i2c_device.hpp</label>
+        <link refid="i2c__device_8hpp"/>
+        <childnode refid="2020" relation="include">
+        </childnode>
+        <childnode refid="2023" relation="include">
+        </childnode>
+        <childnode refid="2024" relation="include">
+        </childnode>
+        <childnode refid="2002" relation="include">
+        </childnode>
+      </node>
+      <node id="2052">
         <label>bme280_impl.hpp</label>
       </node>
       <node id="2032">
-        <label>style.hpp</label>
-        <link refid="style_8hpp"/>
-        <childnode refid="2003" relation="include">
-        </childnode>
-        <childnode refid="2033" relation="include">
-        </childnode>
+        <label>cstdint</label>
+      </node>
+      <node id="2043">
+        <label>level.hpp</label>
+        <link refid="level_8hpp"/>
+      </node>
+      <node id="1997">
+        <label>stdint.h</label>
       </node>
       <node id="2035">
-        <label>style/prefix.hpp</label>
-        <link refid="prefix_8hpp"/>
+        <label>timer/timeout.hpp</label>
+        <link refid="timeout_8hpp"/>
         <childnode refid="2036" relation="include">
         </childnode>
-        <childnode refid="2032" relation="include">
+        <childnode refid="2030" relation="include">
         </childnode>
         <childnode refid="2037" relation="include">
         </childnode>
       </node>
       <node id="2020">
-        <label>cstdint</label>
-      </node>
-      <node id="2038">
-        <label>bme280_data_impl_fp.hpp</label>
-        <link refid="bme280__data__impl__fp_8hpp"/>
-        <childnode refid="2029" relation="include">
+        <label>i2c.hpp</label>
+        <link refid="i2c_8hpp"/>
+        <childnode refid="2021" relation="include">
         </childnode>
         <childnode refid="2022" relation="include">
-        </childnode>
-        <childnode refid="2001" relation="include">
-        </childnode>
-        <childnode refid="2030" relation="include">
-        </childnode>
-      </node>
-      <node id="2018">
-        <label>timer/timestamp.hpp</label>
-        <link refid="timestamp_8hpp"/>
-        <childnode refid="1985" relation="include">
-        </childnode>
-        <childnode refid="1999" relation="include">
-        </childnode>
-        <childnode refid="2019" relation="include">
-        </childnode>
-      </node>
-      <node id="1985">
-        <label>stdint.h</label>
-      </node>
-      <node id="1994">
-        <label>modm/math/utils/bit_constants.hpp</label>
-        <link refid="bit__constants_8hpp"/>
-        <childnode refid="1985" relation="include">
-        </childnode>
-      </node>
-      <node id="2039">
-        <label>bme280_data_impl_double.hpp</label>
-        <link refid="bme280__data__impl__double_8hpp"/>
-        <childnode refid="2029" relation="include">
-        </childnode>
-        <childnode refid="2022" relation="include">
-        </childnode>
-        <childnode refid="2030" relation="include">
-        </childnode>
-      </node>
-      <node id="2022">
-        <label>cmath</label>
-      </node>
-      <node id="2031">
-        <label>level.hpp</label>
-        <link refid="level_8hpp"/>
-      </node>
-      <node id="1992">
-        <label>macros.hpp</label>
-        <link refid="resumable_2macros_8hpp"/>
-        <childnode refid="1993" relation="include">
-        </childnode>
-        <childnode refid="1987" relation="include">
-        </childnode>
-      </node>
-      <node id="2012">
-        <label>i2c_transaction.hpp</label>
-        <link refid="i2c__transaction_8hpp"/>
-        <childnode refid="2008" relation="include">
-        </childnode>
-      </node>
-      <node id="1984">
-        <label>protothread/protothread.hpp</label>
-        <link refid="protothread_2protothread_8hpp"/>
-        <childnode refid="1985" relation="include">
-        </childnode>
-        <childnode refid="1986" relation="include">
-        </childnode>
-      </node>
-      <node id="2028">
-        <label>bme280_data.hpp</label>
-        <link refid="bme280__data_8hpp"/>
-        <childnode refid="2029" relation="include">
-        </childnode>
-        <childnode refid="2022" relation="include">
-        </childnode>
-        <childnode refid="2030" relation="include">
-        </childnode>
-        <childnode refid="2038" relation="include">
-        </childnode>
-        <childnode refid="2039" relation="include">
-        </childnode>
-      </node>
-      <node id="2007">
-        <label>modm/architecture/interface/i2c_device.hpp</label>
-        <link refid="i2c__device_8hpp"/>
-        <childnode refid="2008" relation="include">
         </childnode>
         <childnode refid="2011" relation="include">
         </childnode>
-        <childnode refid="2012" relation="include">
+      </node>
+      <node id="2044">
+        <label>style.hpp</label>
+        <link refid="style_8hpp"/>
+        <childnode refid="2015" relation="include">
         </childnode>
-        <childnode refid="1990" relation="include">
+        <childnode refid="2045" relation="include">
         </childnode>
       </node>
-      <node id="2025">
-        <label>timeout_impl.hpp</label>
+      <node id="2015">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
       </node>
-      <node id="2030">
+      <node id="1995">
+        <label>modm/processing/protothread.hpp</label>
+        <link refid="protothread_8hpp"/>
+        <childnode refid="1996" relation="include">
+        </childnode>
+        <childnode refid="2001" relation="include">
+        </childnode>
+      </node>
+      <node id="2042">
         <label>modm/debug/logger/logger.hpp</label>
         <link refid="logger_2logger_8hpp"/>
-        <childnode refid="1987" relation="include">
-        </childnode>
         <childnode refid="1999" relation="include">
         </childnode>
-        <childnode refid="2031" relation="include">
+        <childnode refid="2011" relation="include">
         </childnode>
-        <childnode refid="2032" relation="include">
+        <childnode refid="2043" relation="include">
+        </childnode>
+        <childnode refid="2044" relation="include">
+        </childnode>
+        <childnode refid="2046" relation="include">
+        </childnode>
+        <childnode refid="2047" relation="include">
+        </childnode>
+      </node>
+      <node id="2034">
+        <label>cmath</label>
+      </node>
+      <node id="2051">
+        <label>bme280_data_impl_double.hpp</label>
+        <link refid="bme280__data__impl__double_8hpp"/>
+        <childnode refid="2041" relation="include">
         </childnode>
         <childnode refid="2034" relation="include">
         </childnode>
-        <childnode refid="2035" relation="include">
+        <childnode refid="2042" relation="include">
         </childnode>
-      </node>
-      <node id="2009">
-        <label>modm/architecture/interface/gpio.hpp</label>
-        <link refid="gpio_8hpp"/>
-        <childnode refid="1985" relation="include">
-        </childnode>
-        <childnode refid="1987" relation="include">
-        </childnode>
-      </node>
-      <node id="1998">
-        <label>modm/architecture/interface/accessor_flash.hpp</label>
-        <link refid="accessor__flash_8hpp"/>
-        <childnode refid="1987" relation="include">
-        </childnode>
-        <childnode refid="1999" relation="include">
-        </childnode>
-      </node>
-      <node id="2027">
-        <label>periodic_timer_impl.hpp</label>
-      </node>
-      <node id="1991">
-        <label>resumable/resumable.hpp</label>
-        <link refid="resumable_2resumable_8hpp"/>
-        <childnode refid="1992" relation="include">
-        </childnode>
-        <childnode refid="1987" relation="include">
-        </childnode>
-        <childnode refid="1985" relation="include">
-        </childnode>
-        <childnode refid="2005" relation="include">
-        </childnode>
-      </node>
-      <node id="2033">
-        <label>style_impl.hpp</label>
       </node>
       <node id="2016">
-        <label>modm/architecture/interface/register.hpp</label>
-        <link refid="register_8hpp"/>
-        <childnode refid="1985" relation="include">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="1997" relation="include">
         </childnode>
-        <childnode refid="1994" relation="include">
+        <childnode refid="2015" relation="include">
         </childnode>
-        <childnode refid="1988" relation="include">
+      </node>
+      <node id="2018">
+        <label>resumable/nested_resumable.hpp</label>
+        <link refid="nested__resumable_8hpp"/>
+        <childnode refid="2004" relation="include">
         </childnode>
         <childnode refid="1999" relation="include">
         </childnode>
-      </node>
-      <node id="1987">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="1988" relation="include">
+        <childnode refid="1997" relation="include">
         </childnode>
       </node>
-      <node id="2017">
-        <label>modm/processing/timer.hpp</label>
-        <link refid="timer_8hpp"/>
-        <childnode refid="2018" relation="include">
+      <node id="2037">
+        <label>timeout_impl.hpp</label>
+      </node>
+      <node id="2050">
+        <label>bme280_data_impl_fp.hpp</label>
+        <link refid="bme280__data__impl__fp_8hpp"/>
+        <childnode refid="2041" relation="include">
         </childnode>
-        <childnode refid="2023" relation="include">
+        <childnode refid="2034" relation="include">
         </childnode>
-        <childnode refid="2026" relation="include">
+        <childnode refid="2013" relation="include">
+        </childnode>
+        <childnode refid="2042" relation="include">
         </childnode>
       </node>
-      <node id="1982">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
-        <link refid="bme280_8hpp"/>
-        <childnode refid="1983" relation="include">
+      <node id="2047">
+        <label>style/prefix.hpp</label>
+        <link refid="prefix_8hpp"/>
+        <childnode refid="2048" relation="include">
         </childnode>
-        <childnode refid="1990" relation="include">
+        <childnode refid="2044" relation="include">
         </childnode>
-        <childnode refid="2007" relation="include">
+        <childnode refid="2049" relation="include">
         </childnode>
-        <childnode refid="2016" relation="include">
-        </childnode>
-        <childnode refid="2017" relation="include">
-        </childnode>
-        <childnode refid="2028" relation="include">
-        </childnode>
-        <childnode refid="2040" relation="include">
+      </node>
+      <node id="2022">
+        <label>modm/architecture/interface/delay.hpp</label>
+        <link refid="architecture_2interface_2delay_8hpp"/>
+        <childnode refid="1997" relation="include">
         </childnode>
       </node>
       <node id="2011">
-        <label>i2c_master.hpp</label>
-        <link refid="i2c__master_8hpp"/>
-        <childnode refid="2008" relation="include">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="2009" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
         </childnode>
         <childnode refid="2012" relation="include">
         </childnode>
         <childnode refid="2013" relation="include">
         </childnode>
-      </node>
-      <node id="2006">
-        <label>resumable/nested_resumable.hpp</label>
-        <link refid="nested__resumable_8hpp"/>
-        <childnode refid="1992" relation="include">
-        </childnode>
-        <childnode refid="1987" relation="include">
-        </childnode>
-        <childnode refid="1985" relation="include">
-        </childnode>
-      </node>
-      <node id="1990">
-        <label>modm/processing/resumable.hpp</label>
-        <link refid="resumable_8hpp"/>
-        <childnode refid="1991" relation="include">
-        </childnode>
-        <childnode refid="2006" relation="include">
-        </childnode>
-      </node>
-      <node id="2024">
-        <label>modm/architecture/interface/clock.hpp</label>
-        <link refid="clock_8hpp"/>
-        <childnode refid="1987" relation="include">
-        </childnode>
-        <childnode refid="2018" relation="include">
-        </childnode>
-      </node>
-      <node id="2015">
-        <label>modm/math/units.hpp</label>
-        <link refid="units_8hpp"/>
-        <childnode refid="1985" relation="include">
-        </childnode>
-        <childnode refid="1987" relation="include">
-        </childnode>
-      </node>
-      <node id="2037">
-        <label>prefix_impl.hpp</label>
-      </node>
-      <node id="2013">
-        <label>peripheral.hpp</label>
-        <link refid="peripheral_8hpp"/>
-        <childnode refid="1985" relation="include">
-        </childnode>
-        <childnode refid="1997" relation="include">
-        </childnode>
         <childnode refid="2014" relation="include">
         </childnode>
         <childnode refid="2015" relation="include">
         </childnode>
-      </node>
-      <node id="2026">
-        <label>timer/periodic_timer.hpp</label>
-        <link refid="periodic__timer_8hpp"/>
-        <childnode refid="2023" relation="include">
-        </childnode>
-        <childnode refid="2027" relation="include">
+        <childnode refid="2016" relation="include">
         </childnode>
       </node>
-      <node id="2034">
-        <label>style_wrapper.hpp</label>
-        <link refid="style__wrapper_8hpp"/>
-        <childnode refid="2003" relation="include">
+      <node id="2039">
+        <label>periodic_timer_impl.hpp</label>
+      </node>
+      <node id="1994">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
+        <link refid="bme280_8hpp"/>
+        <childnode refid="1995" relation="include">
         </childnode>
-        <childnode refid="2032" relation="include">
+        <childnode refid="2002" relation="include">
+        </childnode>
+        <childnode refid="2019" relation="include">
+        </childnode>
+        <childnode refid="2028" relation="include">
+        </childnode>
+        <childnode refid="2029" relation="include">
+        </childnode>
+        <childnode refid="2040" relation="include">
+        </childnode>
+        <childnode refid="2052" relation="include">
         </childnode>
       </node>
-      <node id="1995">
-        <label>modm/architecture/interface/accessor.hpp</label>
-        <link refid="accessor_8hpp"/>
-        <childnode refid="1996" relation="include">
+      <node id="1996">
+        <label>protothread/protothread.hpp</label>
+        <link refid="protothread_2protothread_8hpp"/>
+        <childnode refid="1997" relation="include">
         </childnode>
         <childnode refid="1998" relation="include">
         </childnode>
       </node>
-      <node id="1997">
-        <label>cstddef</label>
+      <node id="2045">
+        <label>style_impl.hpp</label>
       </node>
-      <node id="1996">
-        <label>modm/architecture/interface/accessor_ram.hpp</label>
-        <link refid="accessor__ram_8hpp"/>
-        <childnode refid="1997" relation="include">
+      <node id="2046">
+        <label>style_wrapper.hpp</label>
+        <link refid="style__wrapper_8hpp"/>
+        <childnode refid="2015" relation="include">
         </childnode>
-        <childnode refid="1987" relation="include">
+        <childnode refid="2044" relation="include">
         </childnode>
       </node>
-      <node id="2008">
-        <label>i2c.hpp</label>
-        <link refid="i2c_8hpp"/>
-        <childnode refid="2009" relation="include">
+      <node id="2040">
+        <label>bme280_data.hpp</label>
+        <link refid="bme280__data_8hpp"/>
+        <childnode refid="2041" relation="include">
         </childnode>
-        <childnode refid="2010" relation="include">
+        <childnode refid="2034" relation="include">
+        </childnode>
+        <childnode refid="2042" relation="include">
+        </childnode>
+        <childnode refid="2050" relation="include">
+        </childnode>
+        <childnode refid="2051" relation="include">
+        </childnode>
+      </node>
+      <node id="1999">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="2000" relation="include">
+        </childnode>
+      </node>
+      <node id="2004">
+        <label>macros.hpp</label>
+        <link refid="resumable_2macros_8hpp"/>
+        <childnode refid="2005" relation="include">
         </childnode>
         <childnode refid="1999" relation="include">
         </childnode>
       </node>
-      <node id="1988">
-        <label>detect.hpp</label>
-        <link refid="detect_8hpp"/>
-      </node>
-      <node id="1986">
-        <label>macros.hpp</label>
-        <link refid="protothread_2macros_8hpp"/>
-        <childnode refid="1987" relation="include">
+      <node id="2028">
+        <label>modm/architecture/interface/register.hpp</label>
+        <link refid="register_8hpp"/>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="2006" relation="include">
+        </childnode>
+        <childnode refid="2000" relation="include">
+        </childnode>
+        <childnode refid="2011" relation="include">
         </childnode>
       </node>
-      <node id="2004">
-        <label>iodevice_wrapper.hpp</label>
-        <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="1985" relation="include">
+      <node id="2005">
+        <label>modm/architecture/interface/assert.hpp</label>
+        <link refid="assert_8hpp"/>
+        <childnode refid="1997" relation="include">
         </childnode>
-        <childnode refid="2003" relation="include">
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2006" relation="include">
+        </childnode>
+        <childnode refid="2007" relation="include">
         </childnode>
       </node>
-      <node id="2010">
-        <label>modm/architecture/interface/delay.hpp</label>
-        <link refid="architecture_2interface_2delay_8hpp"/>
-        <childnode refid="1985" relation="include">
+      <node id="2001">
+        <label>protothread/semaphore.hpp</label>
+        <link refid="semaphore_8hpp"/>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="1998" relation="include">
+        </childnode>
+      </node>
+      <node id="2026">
+        <label>modm/math/tolerance.hpp</label>
+        <link refid="tolerance_8hpp"/>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="2027" relation="include">
         </childnode>
       </node>
       <node id="2023">
-        <label>timer/timeout.hpp</label>
-        <link refid="timeout_8hpp"/>
-        <childnode refid="2024" relation="include">
+        <label>i2c_master.hpp</label>
+        <link refid="i2c__master_8hpp"/>
+        <childnode refid="2020" relation="include">
         </childnode>
-        <childnode refid="2018" relation="include">
+        <childnode refid="2024" relation="include">
         </childnode>
         <childnode refid="2025" relation="include">
         </childnode>
       </node>
-      <node id="2002">
-        <label>type_traits</label>
+      <node id="2049">
+        <label>prefix_impl.hpp</label>
       </node>
-      <node id="2003">
-        <label>iodevice.hpp</label>
-        <link refid="iodevice_8hpp"/>
-      </node>
-      <node id="1999">
-        <label>modm/io/iostream.hpp</label>
-        <link refid="iostream_8hpp"/>
-        <childnode refid="1997" relation="include">
-        </childnode>
-        <childnode refid="1987" relation="include">
-        </childnode>
-        <childnode refid="2000" relation="include">
-        </childnode>
-        <childnode refid="2001" relation="include">
-        </childnode>
-        <childnode refid="2002" relation="include">
-        </childnode>
-        <childnode refid="2003" relation="include">
-        </childnode>
-        <childnode refid="2004" relation="include">
-        </childnode>
-      </node>
-      <node id="2029">
-        <label>stdio.h</label>
-      </node>
-      <node id="2019">
+      <node id="2031">
         <label>modm/math/utils/arithmetic_traits.hpp</label>
         <link refid="arithmetic__traits_8hpp"/>
-        <childnode refid="2020" relation="include">
+        <childnode refid="2032" relation="include">
         </childnode>
-        <childnode refid="2021" relation="include">
+        <childnode refid="2033" relation="include">
         </childnode>
-        <childnode refid="2002" relation="include">
+        <childnode refid="2014" relation="include">
         </childnode>
-        <childnode refid="2022" relation="include">
-        </childnode>
-      </node>
-      <node id="1983">
-        <label>modm/processing/protothread.hpp</label>
-        <link refid="protothread_8hpp"/>
-        <childnode refid="1984" relation="include">
-        </childnode>
-        <childnode refid="1989" relation="include">
+        <childnode refid="2034" relation="include">
         </childnode>
       </node>
       <node id="2036">
-        <label>cstring</label>
+        <label>modm/architecture/interface/clock.hpp</label>
+        <link refid="clock_8hpp"/>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2030" relation="include">
+        </childnode>
+      </node>
+      <node id="2009">
+        <label>cstddef</label>
+      </node>
+      <node id="2024">
+        <label>i2c_transaction.hpp</label>
+        <link refid="i2c__transaction_8hpp"/>
+        <childnode refid="2020" relation="include">
+        </childnode>
+      </node>
+      <node id="2038">
+        <label>timer/periodic_timer.hpp</label>
+        <link refid="periodic__timer_8hpp"/>
+        <childnode refid="2035" relation="include">
+        </childnode>
+        <childnode refid="2039" relation="include">
+        </childnode>
+      </node>
+      <node id="2029">
+        <label>modm/processing/timer.hpp</label>
+        <link refid="timer_8hpp"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2035" relation="include">
+        </childnode>
+        <childnode refid="2038" relation="include">
+        </childnode>
       </node>
       <node id="2014">
-        <label>modm/math/tolerance.hpp</label>
-        <link refid="tolerance_8hpp"/>
-        <childnode refid="1985" relation="include">
+        <label>type_traits</label>
+      </node>
+      <node id="2003">
+        <label>resumable/resumable.hpp</label>
+        <link refid="resumable_2resumable_8hpp"/>
+        <childnode refid="2004" relation="include">
         </childnode>
-        <childnode refid="2015" relation="include">
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="2017" relation="include">
         </childnode>
       </node>
-      <node id="1993">
-        <label>modm/architecture/interface/assert.hpp</label>
-        <link refid="assert_8hpp"/>
-        <childnode refid="1985" relation="include">
-        </childnode>
-        <childnode refid="1987" relation="include">
-        </childnode>
-        <childnode refid="1994" relation="include">
-        </childnode>
-        <childnode refid="1995" relation="include">
+      <node id="2006">
+        <label>modm/math/utils/bit_constants.hpp</label>
+        <link refid="bit__constants_8hpp"/>
+        <childnode refid="1997" relation="include">
         </childnode>
       </node>
-      <node id="2005">
+      <node id="2041">
+        <label>stdio.h</label>
+      </node>
+      <node id="2048">
+        <label>cstring</label>
+      </node>
+      <node id="2010">
+        <label>modm/architecture/interface/accessor_flash.hpp</label>
+        <link refid="accessor__flash_8hpp"/>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2011" relation="include">
+        </childnode>
+      </node>
+      <node id="2027">
+        <label>modm/math/units.hpp</label>
+        <link refid="units_8hpp"/>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+      </node>
+      <node id="2017">
         <label>initializer_list</label>
       </node>
-      <node id="2001">
+      <node id="2013">
         <label>inttypes.h</label>
+      </node>
+      <node id="2025">
+        <label>peripheral.hpp</label>
+        <link refid="peripheral_8hpp"/>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="2009" relation="include">
+        </childnode>
+        <childnode refid="2026" relation="include">
+        </childnode>
+        <childnode refid="2027" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="classmodm_1_1_bme280" prot="public">modm::Bme280</innerclass>
@@ -467,6 +467,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp"/>
   </compounddef>
 </doxygen>

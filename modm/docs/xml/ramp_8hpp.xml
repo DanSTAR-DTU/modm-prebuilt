@@ -1,39 +1,39 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="ramp_8hpp" kind="file" language="C++">
     <compoundname>ramp.hpp</compoundname>
     <includes local="yes">ramp_impl.hpp</includes>
-    <includedby refid="filter_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter.hpp</includedby>
-    <includedby refid="math_8hpp" local="yes">/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <includedby refid="filter_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
     <incdepgraph>
-      <node id="2668">
+      <node id="2680">
         <label>ramp_impl.hpp</label>
       </node>
-      <node id="2667">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp</label>
+      <node id="2679">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp</label>
         <link refid="ramp_8hpp"/>
-        <childnode refid="2668" relation="include">
+        <childnode refid="2680" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2670">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter.hpp</label>
-        <link refid="filter_8hpp"/>
-        <childnode refid="2671" relation="include">
-        </childnode>
-      </node>
-      <node id="2669">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp</label>
-        <link refid="ramp_8hpp"/>
-        <childnode refid="2670" relation="include">
-        </childnode>
-        <childnode refid="2671" relation="include">
-        </childnode>
-      </node>
-      <node id="2671">
-        <label>/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math.hpp</label>
+      <node id="2683">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
         <link refid="math_8hpp"/>
+      </node>
+      <node id="2682">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter.hpp</label>
+        <link refid="filter_8hpp"/>
+        <childnode refid="2683" relation="include">
+        </childnode>
+      </node>
+      <node id="2681">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp</label>
+        <link refid="ramp_8hpp"/>
+        <childnode refid="2682" relation="include">
+        </childnode>
+        <childnode refid="2683" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classmodm_1_1filter_1_1_ramp" prot="public">modm::filter::Ramp</innerclass>
@@ -43,6 +43,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/ramp.hpp"/>
   </compounddef>
 </doxygen>

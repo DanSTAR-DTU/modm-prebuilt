@@ -12,6 +12,7 @@ var searchData=
   ['modm_2darchitecture_2dassert_2edox',['modm-architecture-assert.dox',['../modm-architecture-assert_8dox.html',1,'']]],
   ['modm_2darchitecture_2datomic_2edox',['modm-architecture-atomic.dox',['../modm-architecture-atomic_8dox.html',1,'']]],
   ['modm_2darchitecture_2dblock_2ddevice_2edox',['modm-architecture-block-device.dox',['../modm-architecture-block-device_8dox.html',1,'']]],
+  ['modm_2darchitecture_2dbuild_2did_2edox',['modm-architecture-build-id.dox',['../modm-architecture-build-id_8dox.html',1,'']]],
   ['modm_2darchitecture_2dcan_2edox',['modm-architecture-can.dox',['../modm-architecture-can_8dox.html',1,'']]],
   ['modm_2darchitecture_2dclock_2edox',['modm-architecture-clock.dox',['../modm-architecture-clock_8dox.html',1,'']]],
   ['modm_2darchitecture_2ddelay_2edox',['modm-architecture-delay.dox',['../modm-architecture-delay_8dox.html',1,'']]],

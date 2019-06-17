@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classmodm_1_1_adc_interrupt" kind="class" language="C++" prot="public">
     <compoundname>modm::AdcInterrupt</compoundname>
     <basecompoundref refid="classmodm_1_1_adc" prot="public" virt="non-virtual">modm::Adc</basecompoundref>
@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp" line="52" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp" bodystart="52" bodyend="-1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp" line="52" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp" bodystart="52" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -39,15 +39,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp" line="56" column="1"/>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp" line="56" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Basic interrupt-based interface of an ADC.</para>
-<para>This class allows you to attach functions to the ADC Conversion Complete Interrupt via function pointers. Be aware however, that this implementation is slower and requires more resources than writing the function code directly into the interrupt service routines.</para>
-<para>This interface allows for asynchronous operation: <programlisting><codeline><highlight class="normal">void<sp/>interruptComplete()</highlight></codeline>
+<para>Basic interrupt-based interface of an ADC.</para><para>This class allows you to attach functions to the ADC Conversion Complete Interrupt via function pointers. Be aware however, that this implementation is slower and requires more resources than writing the function code directly into the interrupt service routines.</para><para>This interface allows for asynchronous operation: <programlisting><codeline><highlight class="normal">void<sp/>interruptComplete()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>value<sp/>=<sp/>Adc::getValue();</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
@@ -58,13 +56,9 @@
 <codeline><highlight class="normal">//<sp/>start<sp/>a<sp/>new<sp/>conversion<sp/>on<sp/>channel<sp/>3</highlight></codeline>
 <codeline><highlight class="normal">AdcInterrupt::setChannel(3);</highlight></codeline>
 <codeline><highlight class="normal">AdcInterrupt::startConversion();</highlight></codeline>
-</programlisting></para>
-<para><simplesect kind="see"><para><ref refid="classmodm_1_1_adc" kindref="compound">Adc</ref> for the synchronous method.</para>
-</simplesect>
-<simplesect kind="author"><para>Niklas Hauser </para>
-</simplesect>
-</para>
-    </detaileddescription>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="classmodm_1_1_adc" kindref="compound">Adc</ref> for the synchronous method.</para></simplesect>
+<simplesect kind="author"><para>Niklas Hauser </para></simplesect>
+</para>    </detaileddescription>
     <inheritancegraph>
       <node id="33">
         <label>modm::Adc</label>
@@ -119,7 +113,7 @@
         <link refid="classmodm_1_1_peripheral_driver"/>
       </node>
     </collaborationgraph>
-    <location file="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp" line="50" column="1" bodyfile="/home/amar/classes/danstar/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp" bodystart="49" bodyend="58"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp" line="50" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp" bodystart="49" bodyend="58"/>
     <listofallmembers>
       <member refid="classmodm_1_1_peripheral_driver_1a5c336ff9889c347e7eadb810bf984ebd" prot="public" virt="non-virtual"><scope>modm::AdcInterrupt</scope><name>assertBaudrateInTolerance</name></member>
       <member refid="classmodm_1_1_adc_interrupt_1ac6499e1da71c84be0d10c9c107939a97" prot="public" virt="non-virtual"><scope>modm::AdcInterrupt</scope><name>attachInterruptHandler</name></member>
