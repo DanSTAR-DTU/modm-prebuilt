@@ -25,7 +25,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="121" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="121" bodyend="124"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="121" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="121" bodyend="124"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -33,28 +33,28 @@
     <detaileddescription>
 <para>Message with a 11-Bit Identifier. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1584">
+      <node id="1588">
         <label>modm::platform::CanFilter::StandardIdentifier</label>
         <link refid="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier"/>
-        <childnode refid="1585" relation="public-inheritance">
+        <childnode refid="1589" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1585">
+      <node id="1589">
         <label>modm::platform::CanFilter::Identifier</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1586">
+      <node id="1590">
         <label>modm::platform::CanFilter::StandardIdentifier</label>
         <link refid="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier"/>
-        <childnode refid="1587" relation="public-inheritance">
+        <childnode refid="1591" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1587">
+      <node id="1591">
         <label>modm::platform::CanFilter::Identifier</label>
       </node>
     </collaborationgraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="119" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="118" bodyend="125"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="119" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="118" bodyend="125"/>
     <listofallmembers>
       <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_1a6591070ecba68518b07293616cbf04e0" prot="protected" virt="non-virtual"><scope>modm::platform::CanFilter::StandardIdentifier</scope><name>Identifier</name></member>
       <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_1a3e1b978b82576e2661ef82e724bf4d07" prot="public" virt="non-virtual"><scope>modm::platform::CanFilter::StandardIdentifier</scope><name>operator uint32_t</name></member>

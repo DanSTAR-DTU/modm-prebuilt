@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="49" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="49" bodyend="52"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="49" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="49" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1log_1_1_logger_1adbec87916751e9e96a41875209512157" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -52,7 +52,7 @@
 </programlisting></para><para>With modm_always_inline all these functions are gone. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="78" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="79" bodyend="83"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="78" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="79" bodyend="83"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="86" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="86" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1log_1_1_logger_1a94b5a46bafffd999417d1d49b21b26d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmodm_1_1log_1_1_logger" kindref="compound">Logger</ref> &amp;</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="89" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="89" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -95,30 +95,30 @@
 <para>It is used by the macros defined below. This class overloads the shift-operator so that it is possible to write different message types to the logger.</para><para><simplesect kind="author"><para>Martin Rosekeit <ulink url="mailto:martin.rosekeit@rwth-aachen.de">martin.rosekeit@rwth-aachen.de</ulink> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1375">
+      <node id="1379">
         <label>modm::IOStream</label>
         <link refid="classmodm_1_1_i_o_stream"/>
       </node>
-      <node id="1374">
+      <node id="1378">
         <label>modm::log::Logger</label>
         <link refid="classmodm_1_1log_1_1_logger"/>
-        <childnode refid="1375" relation="public-inheritance">
+        <childnode refid="1379" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1377">
+      <node id="1381">
         <label>modm::IOStream</label>
         <link refid="classmodm_1_1_i_o_stream"/>
       </node>
-      <node id="1376">
+      <node id="1380">
         <label>modm::log::Logger</label>
         <link refid="classmodm_1_1log_1_1_logger"/>
-        <childnode refid="1377" relation="public-inheritance">
+        <childnode refid="1381" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="47" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="46" bodyend="90"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" line="47" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/logger/logger.hpp" bodystart="46" bodyend="90"/>
     <listofallmembers>
       <member refid="classmodm_1_1_i_o_stream_1ab5a45629b6ac8a07828d31a417cae5f7" prot="public" virt="non-virtual"><scope>modm::log::Logger</scope><name>ascii</name></member>
       <member refid="classmodm_1_1_i_o_stream_1a2ec24a2c020997b5704df1d9ac99264c" prot="public" virt="non-virtual"><scope>modm::log::Logger</scope><name>bin</name></member>

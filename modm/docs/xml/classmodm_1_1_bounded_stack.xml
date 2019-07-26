@@ -23,18 +23,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="142">
-        <label>modm::BoundedStack&lt; T, N, Container &gt;</label>
-        <link refid="classmodm_1_1_bounded_stack"/>
-        <childnode refid="143" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="143">
-        <label>modm::Stack&lt; T, Container &gt;</label>
-        <link refid="classmodm_1_1_stack"/>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="144">
         <label>modm::BoundedStack&lt; T, N, Container &gt;</label>
         <link refid="classmodm_1_1_bounded_stack"/>
@@ -45,8 +33,20 @@
         <label>modm::Stack&lt; T, Container &gt;</label>
         <link refid="classmodm_1_1_stack"/>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="146">
+        <label>modm::BoundedStack&lt; T, N, Container &gt;</label>
+        <link refid="classmodm_1_1_bounded_stack"/>
+        <childnode refid="147" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>modm::Stack&lt; T, Container &gt;</label>
+        <link refid="classmodm_1_1_stack"/>
+      </node>
     </collaborationgraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/stack.hpp" line="106" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/stack.hpp" bodystart="105" bodyend="107"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/container/stack.hpp" line="106" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/container/stack.hpp" bodystart="105" bodyend="107"/>
     <listofallmembers>
       <member refid="classmodm_1_1_stack_1aba2f1e88f5be68215509f72226721b6e" prot="protected" virt="non-virtual"><scope>modm::BoundedStack</scope><name>c</name></member>
       <member refid="classmodm_1_1_stack_1af0ed90ffbe21423970d61e9e53376a12" prot="public" virt="non-virtual"><scope>modm::BoundedStack</scope><name>get</name></member>

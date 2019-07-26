@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" line="34" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" bodystart="34" bodyend="37"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" line="34" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" bodystart="34" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_tolerance_1a98f40de93c8cbc7b683c0c171837b3f8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>constexpr float</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" line="40" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" bodystart="40" bodyend="43"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" line="40" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" bodystart="40" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_tolerance_1a8213127e7c77bfcdb2e4d0e712034507" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>constexpr bool</type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" line="46" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" bodystart="46" bodyend="49"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" line="46" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" bodystart="46" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_tolerance_1a0d53708a9e63373544dd730700570c8a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>constexpr bool</type>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" line="52" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" bodystart="52" bodyend="55"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" line="52" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" bodystart="52" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_tolerance_1aee04bf1bf08985f286b032a516077210" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -120,14 +120,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" line="59" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" bodystart="59" bodyend="63"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" line="59" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" bodystart="59" bodyend="63"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>This class checks if values are within a certain tolerance.</para><para>This can be used to guarantee the quality of certain parameters, mostly baudrate or datarate. </para>    </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" line="31" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" bodystart="29" bodyend="64"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" line="31" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/tolerance.hpp" bodystart="29" bodyend="64"/>
     <listofallmembers>
       <member refid="classmodm_1_1_tolerance_1a0b2d12082b57c2562257805e1bff62f3" prot="public" virt="non-virtual"><scope>modm::Tolerance</scope><name>absoluteError</name></member>
       <member refid="classmodm_1_1_tolerance_1aee04bf1bf08985f286b032a516077210" prot="public" virt="non-virtual"><scope>modm::Tolerance</scope><name>assertValueInTolerance</name></member>

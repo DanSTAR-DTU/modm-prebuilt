@@ -4,76 +4,76 @@
     <compoundname>one_wire.hpp</compoundname>
     <includes refid="architecture_2utils_8hpp" local="no">modm/architecture/utils.hpp</includes>
     <includes refid="peripheral_8hpp" local="no">modm/architecture/interface/peripheral.hpp</includes>
-    <includedby refid="interface_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</includedby>
+    <includedby refid="interface_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</includedby>
     <incdepgraph>
-      <node id="1257">
+      <node id="1272">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="1259">
+      <node id="1274">
         <label>stdint.h</label>
       </node>
-      <node id="1255">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/one_wire.hpp</label>
-        <link refid="one__wire_8hpp"/>
-        <childnode refid="1256" relation="include">
-        </childnode>
-        <childnode refid="1258" relation="include">
-        </childnode>
-      </node>
-      <node id="1256">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="1257" relation="include">
-        </childnode>
-      </node>
-      <node id="1261">
-        <label>modm/math/tolerance.hpp</label>
-        <link refid="tolerance_8hpp"/>
-        <childnode refid="1259" relation="include">
-        </childnode>
-        <childnode refid="1262" relation="include">
-        </childnode>
-      </node>
-      <node id="1260">
-        <label>cstddef</label>
-      </node>
-      <node id="1262">
+      <node id="1277">
         <label>modm/math/units.hpp</label>
         <link refid="units_8hpp"/>
-        <childnode refid="1259" relation="include">
+        <childnode refid="1274" relation="include">
         </childnode>
-        <childnode refid="1256" relation="include">
+        <childnode refid="1271" relation="include">
         </childnode>
       </node>
-      <node id="1258">
+      <node id="1273">
         <label>modm/architecture/interface/peripheral.hpp</label>
         <link refid="peripheral_8hpp"/>
-        <childnode refid="1259" relation="include">
+        <childnode refid="1274" relation="include">
         </childnode>
-        <childnode refid="1260" relation="include">
+        <childnode refid="1275" relation="include">
         </childnode>
-        <childnode refid="1261" relation="include">
+        <childnode refid="1276" relation="include">
         </childnode>
-        <childnode refid="1262" relation="include">
+        <childnode refid="1277" relation="include">
+        </childnode>
+      </node>
+      <node id="1271">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="1272" relation="include">
+        </childnode>
+      </node>
+      <node id="1275">
+        <label>cstddef</label>
+      </node>
+      <node id="1276">
+        <label>modm/math/tolerance.hpp</label>
+        <link refid="tolerance_8hpp"/>
+        <childnode refid="1274" relation="include">
+        </childnode>
+        <childnode refid="1277" relation="include">
+        </childnode>
+      </node>
+      <node id="1270">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/one_wire.hpp</label>
+        <link refid="one__wire_8hpp"/>
+        <childnode refid="1271" relation="include">
+        </childnode>
+        <childnode refid="1273" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1265">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp</label>
+      <node id="1280">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp</label>
         <link refid="architecture_8hpp"/>
       </node>
-      <node id="1264">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
+      <node id="1279">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
         <link refid="interface_8hpp"/>
-        <childnode refid="1265" relation="include">
+        <childnode refid="1280" relation="include">
         </childnode>
       </node>
-      <node id="1263">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/one_wire.hpp</label>
+      <node id="1278">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/one_wire.hpp</label>
         <link refid="one__wire_8hpp"/>
-        <childnode refid="1264" relation="include">
+        <childnode refid="1279" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -83,6 +83,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/one_wire.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/one_wire.hpp"/>
   </compounddef>
 </doxygen>

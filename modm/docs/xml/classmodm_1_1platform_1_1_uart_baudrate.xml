@@ -23,7 +23,7 @@
 <para>Returns the highest Oversampling Mode that is possible for this configuration. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" line="47" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" bodystart="47" bodyend="50"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" line="47" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" bodystart="47" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_baudrate_1a157f3c96da74c09991bd8bbdbe07efbb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -76,7 +76,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" line="63" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" bodystart="63" bodyend="95"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" line="63" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" bodystart="63" bodyend="95"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -85,7 +85,7 @@
 <para>This class provides several helper functions to calculate the values for the fractional baudrate generator.</para><para>All of these functions are <computeroutput>constexpr</computeroutput> functions which allow compile time evaluation. If you really need to change the baudrate at runtime, consider calculating the register values at compile time, storing them in your program, then switching them at runtime. This will save you a <emphasis>lot</emphasis> of flash and execution time.</para><para><simplesect kind="author"><para>Kevin Laeufer </para></simplesect>
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" line="41" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" bodystart="40" bodyend="97"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" line="41" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp" bodystart="40" bodyend="97"/>
     <listofallmembers>
       <member refid="classmodm_1_1platform_1_1_uart_baudrate_1a157f3c96da74c09991bd8bbdbe07efbb" prot="public" virt="non-virtual"><scope>modm::platform::UartBaudrate</scope><name>getBrr</name></member>
       <member refid="classmodm_1_1platform_1_1_uart_baudrate_1af060524d0a87f0616db2253752a0fb9a" prot="public" virt="non-virtual"><scope>modm::platform::UartBaudrate</scope><name>getOversamplingMode</name></member>

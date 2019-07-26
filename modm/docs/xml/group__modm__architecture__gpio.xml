@@ -19,7 +19,7 @@
 <codeline><highlight class="normal">Led::setOutput();</highlight></codeline>
 <codeline><highlight class="normal">Led::set();</highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Led::toggle();</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__modm__architecture__delay_1gacf0606c81a2e71403a44a768b16e5268" kindref="member">modm::delayMilliseconds</ref>(500);</highlight></codeline>

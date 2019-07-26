@@ -3,69 +3,69 @@
   <compounddef id="protothread_2macros_8hpp" kind="file" language="C++">
     <compoundname>macros.hpp</compoundname>
     <includes refid="architecture_2utils_8hpp" local="no">modm/architecture/utils.hpp</includes>
-    <includedby refid="protothread_2protothread_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/protothread.hpp</includedby>
-    <includedby refid="semaphore_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp</includedby>
-    <includedby refid="processing_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</includedby>
+    <includedby refid="protothread_2protothread_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/protothread.hpp</includedby>
+    <includedby refid="semaphore_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp</includedby>
+    <includedby refid="processing_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</includedby>
     <incdepgraph>
-      <node id="7177">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp</label>
-        <link refid="protothread_2macros_8hpp"/>
-        <childnode refid="7178" relation="include">
-        </childnode>
-      </node>
-      <node id="7179">
+      <node id="7245">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="7178">
+      <node id="7243">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp</label>
+        <link refid="protothread_2macros_8hpp"/>
+        <childnode refid="7244" relation="include">
+        </childnode>
+      </node>
+      <node id="7244">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="7179" relation="include">
+        <childnode refid="7245" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7180">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp</label>
-        <link refid="protothread_2macros_8hpp"/>
-        <childnode refid="7181" relation="include">
-        </childnode>
-        <childnode refid="7185" relation="include">
-        </childnode>
-        <childnode refid="7184" relation="include">
-        </childnode>
-      </node>
-      <node id="7182">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread.hpp</label>
-        <link refid="protothread_8hpp"/>
-        <childnode refid="7183" relation="include">
-        </childnode>
-        <childnode refid="7184" relation="include">
-        </childnode>
-      </node>
-      <node id="7183">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
+      <node id="7249">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
         <link refid="bme280_8hpp"/>
       </node>
-      <node id="7181">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/protothread.hpp</label>
+      <node id="7248">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread.hpp</label>
+        <link refid="protothread_8hpp"/>
+        <childnode refid="7249" relation="include">
+        </childnode>
+        <childnode refid="7250" relation="include">
+        </childnode>
+      </node>
+      <node id="7246">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp</label>
+        <link refid="protothread_2macros_8hpp"/>
+        <childnode refid="7247" relation="include">
+        </childnode>
+        <childnode refid="7251" relation="include">
+        </childnode>
+        <childnode refid="7250" relation="include">
+        </childnode>
+      </node>
+      <node id="7247">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/protothread.hpp</label>
         <link refid="protothread_2protothread_8hpp"/>
-        <childnode refid="7182" relation="include">
+        <childnode refid="7248" relation="include">
         </childnode>
-        <childnode refid="7184" relation="include">
-        </childnode>
-      </node>
-      <node id="7185">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp</label>
-        <link refid="semaphore_8hpp"/>
-        <childnode refid="7182" relation="include">
-        </childnode>
-        <childnode refid="7184" relation="include">
+        <childnode refid="7250" relation="include">
         </childnode>
       </node>
-      <node id="7184">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</label>
+      <node id="7250">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</label>
         <link refid="processing_8hpp"/>
+      </node>
+      <node id="7251">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp</label>
+        <link refid="semaphore_8hpp"/>
+        <childnode refid="7248" relation="include">
+        </childnode>
+        <childnode refid="7250" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
       <sectiondef kind="user-defined">
@@ -79,7 +79,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="28" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="28" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="28" column="9" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga146c4bb0e1f9f2020cd12b8dd7ff076e" prot="public" static="no">
         <name>PT_END</name>
@@ -91,7 +91,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="38" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="38" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="38" column="9" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga7593fae8873b594580319c407dd81ad6" prot="public" static="no">
         <name>PT_YIELD</name>
@@ -102,7 +102,7 @@
 <para>Yield protothread till next call to its run(). </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="46" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="46" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="46" column="9" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga3b5d03ed0a607155806a4f5f7a6570b2" prot="public" static="no">
         <name>PT_WAIT_WHILE</name>
@@ -113,7 +113,7 @@
 <para>Cause protothread to wait <bold>while</bold> given condition is true. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="55" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="55" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="55" column="9" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga742a4c6aa99440473f54651233ebd28b" prot="public" static="no">
         <name>PT_WAIT_UNTIL</name>
@@ -124,7 +124,7 @@
 <para>Cause protothread to wait <bold>until</bold> given condition is true. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="66" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="66" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="66" column="9" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga62b66f563af59f459841f9cfe42b5496" prot="public" static="no">
         <name>PT_WAIT_THREAD</name>
@@ -135,7 +135,7 @@
 <para>Cause protothread to wait until given child protothread completes. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="71" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="71" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="71" column="9" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga74af1993d763f937b2282d27dc23349a" prot="public" static="no">
         <name>PT_SPAWN</name>
@@ -146,7 +146,7 @@
 <para>Restart and spawn given child protothread and wait until it completes. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="75" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="75" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="75" column="9" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1gaeb2e9a2948001a68950eb6d8b26f0dbd" prot="public" static="no">
         <name>PT_CALL</name>
@@ -157,7 +157,7 @@
 <para>Calls a given resumable function and returns whether it completed successfully or not. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="87" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="87" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="87" column="9" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1ga0c880659ee8887e4fa796017599bc022" prot="public" static="no">
         <name>PT_RESTART</name>
@@ -168,7 +168,7 @@
 <para>Reset protothread to start from the beginning</para><para>In the next executing cycle the protothread will restart its execution at its PT_BEGIN. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="106" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="106" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="106" column="9" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__modm__processing__protothread_1gaff926c0a76940ee9862be03f69605257" prot="public" static="no">
         <name>PT_EXIT</name>
@@ -179,13 +179,13 @@
 <para>Stop and exit from protothread. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="114" column="9" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="114" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" line="114" column="9" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp" bodystart="114" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp"/>
   </compounddef>
 </doxygen>

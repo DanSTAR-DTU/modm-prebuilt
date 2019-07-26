@@ -15,14 +15,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/atomic_lock.hpp" line="70" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/atomic_lock.hpp" line="70" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Opposite to <ref refid="classmodm_1_1atomic_1_1_lock" kindref="compound">atomic::Lock</ref></para><para>Use this class to create a block of code with interrupts enabled inside a locked block.</para><para>Most of the time you won&apos;t need this class. But on some rare times it is useful. The modm::Scheduler is an example for that. </para>    </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/atomic_lock.hpp" line="67" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/atomic_lock.hpp" bodystart="66" bodyend="71"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/atomic_lock.hpp" line="67" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/atomic_lock.hpp" bodystart="66" bodyend="71"/>
     <listofallmembers>
       <member refid="classmodm_1_1atomic_1_1_unlock_1a9de53b86ef2240c3a4af3cc453ddc926" prot="public" virt="non-virtual"><scope>modm::atomic::Unlock</scope><name>Unlock</name></member>
     </listofallmembers>

@@ -2,35 +2,35 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="error__code_8hpp" kind="file" language="C++">
     <compoundname>error_code.hpp</compoundname>
-    <includedby refid="can__1_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</includedby>
-    <includedby refid="can__2_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</includedby>
-    <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <includedby refid="can__1_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</includedby>
+    <includedby refid="can__2_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</includedby>
+    <includedby refid="platform_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <invincdepgraph>
-      <node id="4419">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp</label>
+      <node id="4463">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp</label>
         <link refid="error__code_8hpp"/>
-        <childnode refid="4420" relation="include">
+        <childnode refid="4464" relation="include">
         </childnode>
-        <childnode refid="4422" relation="include">
+        <childnode refid="4466" relation="include">
         </childnode>
-        <childnode refid="4421" relation="include">
-        </childnode>
-      </node>
-      <node id="4420">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</label>
-        <link refid="can__1_8hpp"/>
-        <childnode refid="4421" relation="include">
+        <childnode refid="4465" relation="include">
         </childnode>
       </node>
-      <node id="4422">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</label>
-        <link refid="can__2_8hpp"/>
-        <childnode refid="4421" relation="include">
-        </childnode>
-      </node>
-      <node id="4421">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
+      <node id="4465">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
+      </node>
+      <node id="4466">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</label>
+        <link refid="can__2_8hpp"/>
+        <childnode refid="4465" relation="include">
+        </childnode>
+      </node>
+      <node id="4464">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</label>
+        <link refid="can__1_8hpp"/>
+        <childnode refid="4465" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innernamespace refid="namespacemodm">modm</innernamespace>
@@ -39,6 +39,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp"/>
   </compounddef>
 </doxygen>

@@ -2,16 +2,16 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="platform_2core_2atomic__lock_8hpp" kind="file" language="C++">
     <compoundname>atomic_lock.hpp</compoundname>
-    <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <includedby refid="platform_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <invincdepgraph>
-      <node id="825">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/core/atomic_lock.hpp</label>
+      <node id="836">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/core/atomic_lock.hpp</label>
         <link refid="platform_2core_2atomic__lock_8hpp"/>
-        <childnode refid="826" relation="include">
+        <childnode refid="837" relation="include">
         </childnode>
       </node>
-      <node id="826">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
+      <node id="837">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>
     </invincdepgraph>
@@ -19,6 +19,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/core/atomic_lock.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/core/atomic_lock.hpp"/>
   </compounddef>
 </doxygen>

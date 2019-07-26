@@ -37,6 +37,8 @@ public:
 	{
 		using Type = std::tuple<MemoryTraits, const uint32_t*, const uint32_t*, size_t>;
 		const void* table;
+		friend class HeapTable;
+		size_t offset{0};
 	public:
 		using iterator_category = std::input_iterator_tag;
 		using value_type = Type;

@@ -182,6 +182,7 @@ SECTIONS
 	} >RAM
 
 
+	g_crashCatcherStack = . - 500;
     
 
 	/* TABLES! TABLES! ALL THE TABLES YOU COULD EVER WANT! TABLES! */

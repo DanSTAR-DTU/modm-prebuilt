@@ -25,7 +25,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="88" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="88" bodyend="91"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="88" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="88" bodyend="91"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -33,17 +33,6 @@
     <detaileddescription>
 <para>Message with a 29-Bit Identifier. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="229">
-        <label>modm::platform::CanFilter::ExtendedIdentifier</label>
-        <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier"/>
-        <childnode refid="230" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="230">
-        <label>modm::platform::CanFilter::Identifier</label>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="231">
         <label>modm::platform::CanFilter::ExtendedIdentifier</label>
         <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier"/>
@@ -53,8 +42,19 @@
       <node id="232">
         <label>modm::platform::CanFilter::Identifier</label>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="233">
+        <label>modm::platform::CanFilter::ExtendedIdentifier</label>
+        <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier"/>
+        <childnode refid="234" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>modm::platform::CanFilter::Identifier</label>
+      </node>
     </collaborationgraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="86" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="85" bodyend="92"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="86" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="85" bodyend="92"/>
     <listofallmembers>
       <member refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_1a2fbc8f665f859957732ec58ad11689fa" prot="public" virt="non-virtual"><scope>modm::platform::CanFilter::ExtendedIdentifier</scope><name>ExtendedIdentifier</name></member>
       <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_1a6591070ecba68518b07293616cbf04e0" prot="protected" virt="non-virtual"><scope>modm::platform::CanFilter::ExtendedIdentifier</scope><name>Identifier</name></member>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="79" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="79" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="79" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="79" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -34,7 +34,7 @@
 <para>Normalize the given angle to [-Pi,Pi] by repeatedly adding/subtracting 2*Pi. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="88" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="88" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_angle_1a12e4bbe9cb8fa255ec77c821f582f672" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -52,7 +52,7 @@
 </programlisting> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="101" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="101" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_angle_1a941012886789d60779433358aa94202e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -88,7 +88,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="112" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="112" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_angle_1ad7fa85c53ed6f1c23ca26c7aa18dde91" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>constexpr float</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="115" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="115" bodyend="118"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="115" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="115" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_angle_1a2a14bb7ee75cdb9371487a78567e0c45" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>constexpr float</type>
@@ -122,14 +122,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="121" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="121" bodyend="124"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="121" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="121" bodyend="124"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Collection of functions for handling of angles. </para>    </briefdescription>
     <detaileddescription>
 <para>Angles are always represented by float values in the range from -Pi to Pi. </para>    </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="77" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="76" bodyend="125"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" line="77" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/angle.hpp" bodystart="76" bodyend="125"/>
     <listofallmembers>
       <member refid="classmodm_1_1_angle_1aa1e080d6fa9c59487fd848ac40def9d1" prot="public" virt="non-virtual"><scope>modm::Angle</scope><name>normalize</name></member>
       <member refid="classmodm_1_1_angle_1a941012886789d60779433358aa94202e" prot="public" virt="non-virtual"><scope>modm::Angle</scope><name>perpendicular</name></member>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="32" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" bodystart="32" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="32" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" bodystart="32" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="58" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" bodystart="58" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="58" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" bodystart="58" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -49,7 +49,7 @@
 <para>Attach a Global Error Handler Function.</para><para>This handler is used to report severe errors (Buffer Overflows in Peripheral Drivers etc.). The error code is architecture dependent. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="41" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="41" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_error_report_1a47bb88f2e6e7a495c82701eef2fa3947" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -62,7 +62,7 @@
 <para>Remove Error Handler. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="47" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="47" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_error_report_1a0ebe683cb8959bbb968fe347094cf46a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="50" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" bodystart="50" bodyend="53"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="50" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" bodystart="50" bodyend="53"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="56" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="56" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -102,7 +102,7 @@
     <detaileddescription>
 <para>Global error reporter</para><para>Used to report severe errors at one place.</para><para><simplesect kind="author"><para>Fabian Greif </para></simplesect>
 </para>    </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="30" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" bodystart="29" bodyend="59"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" line="30" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp" bodystart="29" bodyend="59"/>
     <listofallmembers>
       <member refid="classmodm_1_1_error_report_1a0db5b8e67139560ec8d5fd06f94d3ca7" prot="public" virt="non-virtual"><scope>modm::ErrorReport</scope><name>attach</name></member>
       <member refid="classmodm_1_1_error_report_1a47bb88f2e6e7a495c82701eef2fa3947" prot="public" virt="non-virtual"><scope>modm::ErrorReport</scope><name>detach</name></member>

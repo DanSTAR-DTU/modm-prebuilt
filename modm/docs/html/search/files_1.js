@@ -4,6 +4,7 @@ var searchData=
   ['basic_5fbase_2ehpp',['basic_base.hpp',['../basic__base_8hpp.html',1,'']]],
   ['bit_5fconstants_2ehpp',['bit_constants.hpp',['../bit__constants_8hpp.html',1,'']]],
   ['bit_5foperation_2ehpp',['bit_operation.hpp',['../bit__operation_8hpp.html',1,'']]],
+  ['bitbang_5fmaster_2ehpp',['bitbang_master.hpp',['../bitbang__master_8hpp.html',1,'']]],
   ['bitbang_5fspi_5fmaster_2ehpp',['bitbang_spi_master.hpp',['../bitbang__spi__master_8hpp.html',1,'']]],
   ['block_2ehpp',['block.hpp',['../block_8hpp.html',1,'']]],
   ['block_5fallocator_2ehpp',['block_allocator.hpp',['../block__allocator_8hpp.html',1,'']]],

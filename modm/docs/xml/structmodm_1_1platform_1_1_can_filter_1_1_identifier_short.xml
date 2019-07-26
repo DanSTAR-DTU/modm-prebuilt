@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="159" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="159" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="159" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="159" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="154" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="154" bodyend="157"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="154" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="154" bodyend="157"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="163" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="163" bodyend="166"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="163" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="163" bodyend="166"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -58,23 +58,23 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1335">
+      <node id="1339">
         <label>modm::platform::CanFilter::StandardIdentifierShort</label>
         <link refid="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier_short"/>
-        <childnode refid="1333" relation="public-inheritance">
+        <childnode refid="1337" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1333">
+      <node id="1337">
         <label>modm::platform::CanFilter::IdentifierShort</label>
       </node>
-      <node id="1334">
+      <node id="1338">
         <label>modm::platform::CanFilter::ExtendedIdentifierShort</label>
         <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short"/>
-        <childnode refid="1333" relation="public-inheritance">
+        <childnode refid="1337" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="151" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="150" bodyend="167"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="151" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="150" bodyend="167"/>
     <listofallmembers>
       <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1a9c9d64674d4620c1c9a8bdf7bdcdfb8c" prot="protected" virt="non-virtual"><scope>modm::platform::CanFilter::IdentifierShort</scope><name>IdentifierShort</name></member>
       <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1a972e0df59d0f4495a282a0141ba96998" prot="public" virt="non-virtual"><scope>modm::platform::CanFilter::IdentifierShort</scope><name>operator uint16_t</name></member>

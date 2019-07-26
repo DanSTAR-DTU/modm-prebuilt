@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="32" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="30" bodyend="37"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="32" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="30" bodyend="37"/>
       </memberdef>
       <memberdef kind="enum" id="structmodm_1_1_spi_1a738c2058b5a1778735b4c78df0bb6839" prot="public" static="no">
         <name>DataOrder</name>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="42" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="40" bodyend="45"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="42" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="40" bodyend="45"/>
       </memberdef>
       <memberdef kind="typedef" id="structmodm_1_1_spi_1a0d609550a29c439aa83e5999f584447d" prot="public" static="no">
         <type>void(*)()</type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="27" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="27" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="27" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="27" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -92,42 +92,42 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1519">
+      <node id="1523">
         <label>modm::platform::BitBangSpiMaster&lt; Sck, Mosi, Miso &gt;</label>
         <link refid="classmodm_1_1platform_1_1_bit_bang_spi_master"/>
-        <childnode refid="1518" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1517">
-        <label>modm::Spi</label>
-        <link refid="structmodm_1_1_spi"/>
-      </node>
-      <node id="1520">
-        <label>modm::platform::SpiMaster1</label>
-        <link refid="classmodm_1_1platform_1_1_spi_master1"/>
-        <childnode refid="1518" relation="public-inheritance">
+        <childnode refid="1522" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1521">
+        <label>modm::Spi</label>
+        <link refid="structmodm_1_1_spi"/>
+      </node>
+      <node id="1524">
+        <label>modm::platform::SpiMaster1</label>
+        <link refid="classmodm_1_1platform_1_1_spi_master1"/>
+        <childnode refid="1522" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1525">
         <label>modm::platform::SpiMaster2</label>
         <link refid="classmodm_1_1platform_1_1_spi_master2"/>
-        <childnode refid="1518" relation="public-inheritance">
+        <childnode refid="1522" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1526">
+        <label>modm::platform::SpiMaster3</label>
+        <link refid="classmodm_1_1platform_1_1_spi_master3"/>
+        <childnode refid="1522" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1522">
-        <label>modm::platform::SpiMaster3</label>
-        <link refid="classmodm_1_1platform_1_1_spi_master3"/>
-        <childnode refid="1518" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1518">
         <label>modm::SpiMaster</label>
         <link refid="classmodm_1_1_spi_master"/>
-        <childnode refid="1517" relation="public-inheritance">
+        <childnode refid="1521" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="25" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="24" bodyend="46"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" line="25" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/spi.hpp" bodystart="24" bodyend="46"/>
     <listofallmembers>
       <member refid="structmodm_1_1_spi_1a0d609550a29c439aa83e5999f584447d" prot="public" virt="non-virtual"><scope>modm::Spi</scope><name>ConfigurationHandler</name></member>
       <member refid="structmodm_1_1_spi_1a00c4c03fc5d3c23c677740fb804ae820" prot="public" virt="non-virtual"><scope>modm::Spi</scope><name>DataMode</name></member>

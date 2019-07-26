@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp" line="32" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp" bodystart="32" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp" line="32" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp" bodystart="32" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp" line="36" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp" bodystart="107" bodyend="115"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp" line="36" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp" bodystart="107" bodyend="115"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -61,30 +61,6 @@
     <detaileddescription>
 <para>Interface of an I2C Multiplexer.</para><para>All I2C multiplexer driver should implement this interface. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1299">
-        <label>modm::I2c</label>
-        <link refid="structmodm_1_1_i2c"/>
-      </node>
-      <node id="1297">
-        <label>modm::I2cMaster</label>
-        <link refid="classmodm_1_1_i2c_master"/>
-        <childnode refid="1298" relation="public-inheritance">
-        </childnode>
-        <childnode refid="1299" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1298">
-        <label>modm::PeripheralDriver</label>
-        <link refid="classmodm_1_1_peripheral_driver"/>
-      </node>
-      <node id="1296">
-        <label>modm::I2cMultiplexerChannel&lt; multiplexer, channel &gt;</label>
-        <link refid="classmodm_1_1_i2c_multiplexer_channel"/>
-        <childnode refid="1297" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="1303">
         <label>modm::I2c</label>
         <link refid="structmodm_1_1_i2c"/>
@@ -107,8 +83,32 @@
         <childnode refid="1301" relation="public-inheritance">
         </childnode>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1307">
+        <label>modm::I2c</label>
+        <link refid="structmodm_1_1_i2c"/>
+      </node>
+      <node id="1305">
+        <label>modm::I2cMaster</label>
+        <link refid="classmodm_1_1_i2c_master"/>
+        <childnode refid="1306" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1307" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="1304">
+        <label>modm::I2cMultiplexerChannel&lt; multiplexer, channel &gt;</label>
+        <link refid="classmodm_1_1_i2c_multiplexer_channel"/>
+        <childnode refid="1305" relation="public-inheritance">
+        </childnode>
+      </node>
     </collaborationgraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp" line="30" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp" bodystart="29" bodyend="37"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp" line="30" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_multiplexer.hpp" bodystart="29" bodyend="37"/>
     <listofallmembers>
       <member refid="classmodm_1_1_peripheral_driver_1a5c336ff9889c347e7eadb810bf984ebd" prot="public" virt="non-virtual"><scope>modm::I2cMultiplexerChannel</scope><name>assertBaudrateInTolerance</name></member>
       <member refid="structmodm_1_1_i2c_1acc3232e086891a4564399117a4e0e450" prot="public" virt="non-virtual"><scope>modm::I2cMultiplexerChannel</scope><name>ConfigurationHandler</name></member>

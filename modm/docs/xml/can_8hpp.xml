@@ -4,161 +4,161 @@
     <compoundname>can.hpp</compoundname>
     <includes refid="peripheral_8hpp" local="no">modm/architecture/interface/peripheral.hpp</includes>
     <includes refid="can__message_8hpp" local="yes">can_message.hpp</includes>
-    <includedby refid="interface_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</includedby>
-    <includedby refid="can__1_8hpp" local="no">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</includedby>
-    <includedby refid="can__filter_8hpp" local="no">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp</includedby>
-    <includedby refid="can__2_8hpp" local="no">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</includedby>
+    <includedby refid="interface_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</includedby>
+    <includedby refid="can__1_8hpp" local="no">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</includedby>
+    <includedby refid="can__filter_8hpp" local="no">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp</includedby>
+    <includedby refid="can__2_8hpp" local="no">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</includedby>
     <incdepgraph>
-      <node id="867">
+      <node id="880">
         <label>stdarg.h</label>
       </node>
-      <node id="864">
-        <label>detect.hpp</label>
-        <link refid="detect_8hpp"/>
-      </node>
-      <node id="859">
-        <label>stdint.h</label>
-      </node>
-      <node id="870">
-        <label>iodevice.hpp</label>
-        <link refid="iodevice_8hpp"/>
-      </node>
-      <node id="865">
+      <node id="878">
         <label>can_message.hpp</label>
         <link refid="can__message_8hpp"/>
-        <childnode refid="859" relation="include">
+        <childnode refid="872" relation="include">
         </childnode>
-        <childnode refid="866" relation="include">
+        <childnode refid="879" relation="include">
         </childnode>
-        <childnode refid="863" relation="include">
-        </childnode>
-      </node>
-      <node id="871">
-        <label>iodevice_wrapper.hpp</label>
-        <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="859" relation="include">
-        </childnode>
-        <childnode refid="870" relation="include">
-        </childnode>
-      </node>
-      <node id="857">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/can.hpp</label>
-        <link refid="can_8hpp"/>
-        <childnode refid="858" relation="include">
-        </childnode>
-        <childnode refid="865" relation="include">
-        </childnode>
-      </node>
-      <node id="866">
-        <label>modm/io/iostream.hpp</label>
-        <link refid="iostream_8hpp"/>
-        <childnode refid="860" relation="include">
-        </childnode>
-        <childnode refid="863" relation="include">
-        </childnode>
-        <childnode refid="867" relation="include">
-        </childnode>
-        <childnode refid="868" relation="include">
-        </childnode>
-        <childnode refid="869" relation="include">
-        </childnode>
-        <childnode refid="870" relation="include">
-        </childnode>
-        <childnode refid="871" relation="include">
-        </childnode>
-      </node>
-      <node id="863">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="864" relation="include">
-        </childnode>
-      </node>
-      <node id="861">
-        <label>modm/math/tolerance.hpp</label>
-        <link refid="tolerance_8hpp"/>
-        <childnode refid="859" relation="include">
-        </childnode>
-        <childnode refid="862" relation="include">
-        </childnode>
-      </node>
-      <node id="860">
-        <label>cstddef</label>
-      </node>
-      <node id="869">
-        <label>type_traits</label>
-      </node>
-      <node id="862">
-        <label>modm/math/units.hpp</label>
-        <link refid="units_8hpp"/>
-        <childnode refid="859" relation="include">
-        </childnode>
-        <childnode refid="863" relation="include">
-        </childnode>
-      </node>
-      <node id="868">
-        <label>inttypes.h</label>
-      </node>
-      <node id="858">
-        <label>modm/architecture/interface/peripheral.hpp</label>
-        <link refid="peripheral_8hpp"/>
-        <childnode refid="859" relation="include">
-        </childnode>
-        <childnode refid="860" relation="include">
-        </childnode>
-        <childnode refid="861" relation="include">
-        </childnode>
-        <childnode refid="862" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="874">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp</label>
-        <link refid="architecture_8hpp"/>
-      </node>
-      <node id="873">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
-        <link refid="interface_8hpp"/>
-        <childnode refid="874" relation="include">
-        </childnode>
-      </node>
-      <node id="875">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</label>
-        <link refid="can__1_8hpp"/>
         <childnode refid="876" relation="include">
-        </childnode>
-      </node>
-      <node id="878">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</label>
-        <link refid="can__2_8hpp"/>
-        <childnode refid="876" relation="include">
-        </childnode>
-      </node>
-      <node id="872">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/can.hpp</label>
-        <link refid="can_8hpp"/>
-        <childnode refid="873" relation="include">
-        </childnode>
-        <childnode refid="875" relation="include">
-        </childnode>
-        <childnode refid="877" relation="include">
-        </childnode>
-        <childnode refid="878" relation="include">
         </childnode>
       </node>
       <node id="877">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp</label>
-        <link refid="can__filter_8hpp"/>
-        <childnode refid="875" relation="include">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="872">
+        <label>stdint.h</label>
+      </node>
+      <node id="879">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="873" relation="include">
         </childnode>
-        <childnode refid="878" relation="include">
+        <childnode refid="876" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+      </node>
+      <node id="875">
+        <label>modm/math/units.hpp</label>
+        <link refid="units_8hpp"/>
+        <childnode refid="872" relation="include">
         </childnode>
         <childnode refid="876" relation="include">
         </childnode>
       </node>
+      <node id="884">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="872" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+      </node>
+      <node id="871">
+        <label>modm/architecture/interface/peripheral.hpp</label>
+        <link refid="peripheral_8hpp"/>
+        <childnode refid="872" relation="include">
+        </childnode>
+        <childnode refid="873" relation="include">
+        </childnode>
+        <childnode refid="874" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+      </node>
       <node id="876">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="877" relation="include">
+        </childnode>
+      </node>
+      <node id="873">
+        <label>cstddef</label>
+      </node>
+      <node id="882">
+        <label>type_traits</label>
+      </node>
+      <node id="874">
+        <label>modm/math/tolerance.hpp</label>
+        <link refid="tolerance_8hpp"/>
+        <childnode refid="872" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+      </node>
+      <node id="870">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/can.hpp</label>
+        <link refid="can_8hpp"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="878" relation="include">
+        </childnode>
+      </node>
+      <node id="881">
+        <label>inttypes.h</label>
+      </node>
+      <node id="883">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="887">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp</label>
+        <link refid="architecture_8hpp"/>
+      </node>
+      <node id="890">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp</label>
+        <link refid="can__filter_8hpp"/>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+      </node>
+      <node id="889">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
+      </node>
+      <node id="891">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</label>
+        <link refid="can__2_8hpp"/>
+        <childnode refid="889" relation="include">
+        </childnode>
+      </node>
+      <node id="886">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
+        <link refid="interface_8hpp"/>
+        <childnode refid="887" relation="include">
+        </childnode>
+      </node>
+      <node id="888">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</label>
+        <link refid="can__1_8hpp"/>
+        <childnode refid="889" relation="include">
+        </childnode>
+      </node>
+      <node id="885">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/can.hpp</label>
+        <link refid="can_8hpp"/>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+        <childnode refid="891" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classmodm_1_1_can" prot="public">modm::Can</innerclass>
@@ -167,6 +167,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/can.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/can.hpp"/>
   </compounddef>
 </doxygen>

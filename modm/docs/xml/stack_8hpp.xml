@@ -5,56 +5,56 @@
     <includes local="no">cstddef</includes>
     <includes local="no">stdint.h</includes>
     <includes refid="deque_8hpp" local="yes">deque.hpp</includes>
-    <includedby refid="container_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container.hpp</includedby>
+    <includedby refid="container_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/container.hpp</includedby>
     <incdepgraph>
-      <node id="1806">
+      <node id="1822">
         <label>cstdint</label>
       </node>
-      <node id="1804">
+      <node id="1820">
         <label>stdint.h</label>
       </node>
-      <node id="1805">
-        <label>deque.hpp</label>
-        <link refid="deque_8hpp"/>
-        <childnode refid="1803" relation="include">
-        </childnode>
-        <childnode refid="1806" relation="include">
-        </childnode>
-        <childnode refid="1807" relation="include">
-        </childnode>
-        <childnode refid="1808" relation="include">
-        </childnode>
-      </node>
-      <node id="1802">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/stack.hpp</label>
-        <link refid="stack_8hpp"/>
-        <childnode refid="1803" relation="include">
-        </childnode>
-        <childnode refid="1804" relation="include">
-        </childnode>
-        <childnode refid="1805" relation="include">
-        </childnode>
-      </node>
-      <node id="1808">
+      <node id="1824">
         <label>deque_impl.hpp</label>
       </node>
-      <node id="1803">
+      <node id="1818">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/container/stack.hpp</label>
+        <link refid="stack_8hpp"/>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
+        </childnode>
+        <childnode refid="1821" relation="include">
+        </childnode>
+      </node>
+      <node id="1819">
         <label>cstddef</label>
       </node>
-      <node id="1807">
+      <node id="1821">
+        <label>deque.hpp</label>
+        <link refid="deque_8hpp"/>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+      </node>
+      <node id="1823">
         <label>type_traits</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1809">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/stack.hpp</label>
-        <link refid="stack_8hpp"/>
-        <childnode refid="1810" relation="include">
-        </childnode>
-      </node>
-      <node id="1810">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container.hpp</label>
+      <node id="1826">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/container.hpp</label>
         <link refid="container_8hpp"/>
+      </node>
+      <node id="1825">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/container/stack.hpp</label>
+        <link refid="stack_8hpp"/>
+        <childnode refid="1826" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classmodm_1_1_stack" prot="public">modm::Stack</innerclass>
@@ -64,6 +64,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/stack.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/container/stack.hpp"/>
   </compounddef>
 </doxygen>

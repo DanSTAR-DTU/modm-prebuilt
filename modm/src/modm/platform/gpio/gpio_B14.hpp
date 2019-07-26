@@ -16,10 +16,7 @@
 #include "base.hpp"
 #include "set.hpp"
 
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /// @cond
@@ -83,13 +80,13 @@ public:
 	inline static void set(bool status) { PinSet::set(status); }
 	inline static void reset() { PinSet::reset(); }
 	inline static void toggle() {
-		if (isSet()) reset();
-		else         set();
+		if (isSet()) { reset(); }
+		else         { set();   }
 	}
 	inline static bool isSet() { return (GPIOB->ODR & mask); }
 	// stop documentation inherited
 	inline static void configure(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::configure(type, speed); }
-	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50)  { PinSet::setOutput(type, speed); }
+	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::setOutput(type, speed); }
 	// GpioInput
 	// start documentation inherited
 	inline static void setInput() { PinSet::setInput(); }
@@ -142,15 +139,17 @@ public:
 		}
 	}
 	inline static bool getExternalInterruptFlag() { return (EXTI->PR & mask); }
-	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR |= mask; }
+	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR = mask; }
 	// GpioIO
 	// start documentation inherited
 	inline static Direction getDirection() {
 		uint32_t mode = (GPIOB->MODER & mask2);
-		if (mode == (i(Mode::Input) << pin * 2))
+		if (mode == (i(Mode::Input) << pin * 2)) {
 			return Direction::In;
-		if (mode == (i(Mode::Output) << pin * 2))
+		}
+		if (mode == (i(Mode::Output) << pin * 2)) {
 			return Direction::Out;
+		}
 		return Direction::Special;
 	}
 	// end documentation inherited
@@ -304,8 +303,6 @@ struct GpioB14::Rts<Peripheral::Usart3>
 };
 /// @endcond
 
-} // namespace platform
-
-} // namespace modm
+} // namespace modm::platform
 
 #endif // MODM_STM32_GPIO_PIN_B14_HPP

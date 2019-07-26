@@ -157,7 +157,7 @@ private:
 
 BlinkingLight light;
 
-while (1) {
+while (true) {
     light.run();
 }
 ```

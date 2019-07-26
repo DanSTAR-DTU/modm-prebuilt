@@ -52,7 +52,7 @@
 <para>ROM Commands</para><para>After the bus master has detected a presence pulse, it can issue a ROM command. These commands operate on the unique 64-bit ROM codes of each slave device and allow the master to single out a specific device if many are present on the 1-Wire bus.</para><para>These commands also allow the master to determine how many and what types of devices are present on the bus or if any device has experienced an alarm condition.</para><para>There are five ROM commands, and each command is 8 bits long. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/one_wire.hpp" line="43" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/one_wire.hpp" bodystart="42" bodyend="49"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/one_wire.hpp" line="43" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/one_wire.hpp" bodystart="42" bodyend="49"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

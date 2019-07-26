@@ -3,34 +3,34 @@
   <compounddef id="error__report_8hpp" kind="file" language="C++">
     <compoundname>error_report.hpp</compoundname>
     <includes local="no">stdint.h</includes>
-    <includedby refid="debug_2debug_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/debug.hpp</includedby>
-    <includedby refid="debug_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug.hpp</includedby>
+    <includedby refid="debug_2debug_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/debug.hpp</includedby>
+    <includedby refid="debug_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug.hpp</includedby>
     <incdepgraph>
-      <node id="1856">
+      <node id="1872">
         <label>stdint.h</label>
       </node>
-      <node id="1855">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp</label>
+      <node id="1871">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp</label>
         <link refid="error__report_8hpp"/>
-        <childnode refid="1856" relation="include">
+        <childnode refid="1872" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1858">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/debug.hpp</label>
+      <node id="1874">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/debug.hpp</label>
         <link refid="debug_2debug_8hpp"/>
       </node>
-      <node id="1857">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp</label>
+      <node id="1873">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp</label>
         <link refid="error__report_8hpp"/>
-        <childnode refid="1858" relation="include">
+        <childnode refid="1874" relation="include">
         </childnode>
-        <childnode refid="1859" relation="include">
+        <childnode refid="1875" relation="include">
         </childnode>
       </node>
-      <node id="1859">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug.hpp</label>
+      <node id="1875">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug.hpp</label>
         <link refid="debug_8hpp"/>
       </node>
     </invincdepgraph>
@@ -40,6 +40,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp"/>
   </compounddef>
 </doxygen>

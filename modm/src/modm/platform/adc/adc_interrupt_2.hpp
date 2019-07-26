@@ -47,8 +47,7 @@ public:
 		AdcInterrupt2::handler = handler;
 	}
 
-public:
-	static Handler handler;
+    static Handler handler;
 };
 
 }	// namespace platform

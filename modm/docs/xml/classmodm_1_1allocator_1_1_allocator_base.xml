@@ -33,7 +33,7 @@
 <para>Constructs an object of type T (the template parameter) on the location pointed by p using its copy constructor to initialize its value to <computeroutput>value</computeroutput>.</para><para>Notice that this does not allocate space for the element, it should already be available at p. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" line="47" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" bodystart="47" bodyend="51"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" line="47" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" bodystart="47" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1allocator_1_1_allocator_base_1a3ac0e1c924c98d1ac554f27c218cd574" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -50,7 +50,7 @@
 <para>Destroys the object of type T (the template parameter) pointed by p.</para><para>Notice that this does not deallocate space for the element. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" line="62" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" bodystart="62" bodyend="65"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" line="62" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" bodystart="62" bodyend="65"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" line="68" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" bodystart="68" bodyend="70"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" line="68" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" bodystart="68" bodyend="70"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -96,7 +96,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" line="34" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" bodystart="33" bodyend="71"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" line="34" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/utils/allocator/allocator_base.hpp" bodystart="33" bodyend="71"/>
     <listofallmembers>
       <member refid="classmodm_1_1allocator_1_1_allocator_base_1a609f717f38153960b28c8b7894c53761" prot="protected" virt="non-virtual"><scope>modm::allocator::AllocatorBase</scope><name>AllocatorBase</name></member>
       <member refid="classmodm_1_1allocator_1_1_allocator_base_1aa00e230191734784a8e0576871016fac" prot="public" virt="non-virtual"><scope>modm::allocator::AllocatorBase</scope><name>construct</name></member>

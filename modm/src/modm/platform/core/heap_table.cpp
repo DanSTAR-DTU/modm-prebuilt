@@ -26,9 +26,22 @@ extern "C" const table_pool_t __table_heap_end[];
 
 namespace modm::platform
 {
+extern const uint32_t *fault_storage_heap_start;
 HeapTable::Iterator
 HeapTable::begin()
 {
+	if (fault_storage_heap_start)
+	{
+		for (auto t = __table_heap_start; t < __table_heap_end; t++)
+		{
+			if (t->start <= fault_storage_heap_start and fault_storage_heap_start < t->end)
+			{
+				auto it = Iterator(reinterpret_cast<const void*>(t));
+				it.offset = (size_t)fault_storage_heap_start - (size_t)t->start;
+				return it;
+			}
+		}
+	}
 	return Iterator(reinterpret_cast<const void*>(__table_heap_start));
 }
 
@@ -46,7 +59,8 @@ HeapTable::Iterator::Type
 HeapTable::Iterator::operator*() const
 {
 	const auto t{reinterpret_cast<const table_pool_t*>(table)};
-	return {MemoryTraits(t->traits), t->start, t->end, (size_t)t->end - (size_t)t->start};
+	const uint32_t *const start = (const uint32_t *)((size_t)t->start + offset);
+	return {MemoryTraits(t->traits), start, t->end, (size_t)t->end - (size_t)start};
 }
 
 HeapTable::Iterator&

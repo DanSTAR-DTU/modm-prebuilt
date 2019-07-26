@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__modm__build" kind="group">
+    <compoundname>modm_build</compoundname>
+    <title>Build System Generators</title>
+    <innergroup refid="group__modm__build__cmake">CMake Build Script Generator</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This parent module defines a common set of functionality that is independent of the specific build system generator implementation. This includes straight-forward options like project name and build path but also more complicated configuration for programming your target via AvrDude or OpenOCD and debugging via GDB.</para><para>Note that this module does not compile your project, you will need to choose the <computeroutput>modm:build:scons</computeroutput> or <computeroutput>modm:build:cmake</computeroutput> submodule for that, or provide your own build system.**</para><para><heading level="2">Using OpenOCD</heading>
+</para><para>For accessing your ARM Cortex-M based device, we use OpenOCD by default and generate a <computeroutput>modm/openocd.cfg</computeroutput> file with the target specific configuration:</para><para><itemizedlist>
+<listitem><para>Search directories passed via the <computeroutput>openocd.search</computeroutput> metadata key.</para></listitem><listitem><para>User configuration files passed via the <computeroutput>openocd.configfile</computeroutput> metadata key. Your custom <computeroutput>modm:build:openocd.cfg</computeroutput> is added here too.</para></listitem><listitem><para>The target specific programming command <computeroutput>modm_program elffile</computeroutput></para></listitem></itemizedlist>
+</para><para>You can now upload your program in a one-line command:</para><para><programlisting><codeline><highlight class="normal">openocd<sp/>-f<sp/>modm/openocd.cfg<sp/>-c<sp/>&quot;modm_program<sp/>path/to/project.elf&quot;</highlight></codeline>
+</programlisting> <programlisting><codeline><highlight class="normal">Open<sp/>On-Chip<sp/>Debugger<sp/>0.10.0</highlight></codeline>
+<codeline><highlight class="normal">adapter<sp/>speed:<sp/>2000<sp/>kHz</highlight></codeline>
+<codeline><highlight class="normal">adapter_nsrst_delay:<sp/>100</highlight></codeline>
+<codeline><highlight class="normal">none<sp/>separate</highlight></codeline>
+<codeline><highlight class="normal">srst_only<sp/>separate<sp/>srst_nogate<sp/>srst_open_drain<sp/>connect_deassert_srst</highlight></codeline>
+<codeline><highlight class="normal">program_debug</highlight></codeline>
+<codeline><highlight class="normal">Info<sp/>:<sp/>clock<sp/>speed<sp/>1800<sp/>kHz</highlight></codeline>
+<codeline><highlight class="normal">Info<sp/>:<sp/>STLINK<sp/>v2<sp/>JTAG<sp/>v28<sp/>API<sp/>v2<sp/>SWIM<sp/>v18<sp/>VID<sp/>0x0483<sp/>PID<sp/>0x374B</highlight></codeline>
+<codeline><highlight class="normal">Info<sp/>:<sp/>using<sp/>stlink<sp/>api<sp/>v2</highlight></codeline>
+<codeline><highlight class="normal">Info<sp/>:<sp/>Target<sp/>voltage:<sp/>3.260972</highlight></codeline>
+<codeline><highlight class="normal">Info<sp/>:<sp/>stm32f4x.cpu:<sp/>hardware<sp/>has<sp/>6<sp/>breakpoints,<sp/>4<sp/>watchpoints</highlight></codeline>
+<codeline><highlight class="normal">adapter<sp/>speed:<sp/>1800<sp/>kHz</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Programming<sp/>Started<sp/>**</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>erase<sp/>enabled</highlight></codeline>
+<codeline><highlight class="normal">Info<sp/>:<sp/>device<sp/>id<sp/>=<sp/>0x10006434</highlight></codeline>
+<codeline><highlight class="normal">Info<sp/>:<sp/>flash<sp/>size<sp/>=<sp/>2048kbytes</highlight></codeline>
+<codeline><highlight class="normal">wrote<sp/>16384<sp/>bytes<sp/>from<sp/>file<sp/>path/to/project.elf<sp/>in<sp/>0.589551s<sp/>(27.139<sp/>KiB/s)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Programming<sp/>Finished<sp/>**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Verify<sp/>Started<sp/>**</highlight></codeline>
+<codeline><highlight class="normal">verified<sp/>13064<sp/>bytes<sp/>in<sp/>0.328969s<sp/>(38.781<sp/>KiB/s)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Verified<sp/>OK<sp/>**</highlight></codeline>
+<codeline><highlight class="normal">adapter<sp/>speed:<sp/>1800<sp/>kHz</highlight></codeline>
+<codeline><highlight class="normal">target<sp/>halted<sp/>due<sp/>to<sp/>debug-request,<sp/>current<sp/>mode:<sp/>Thread</highlight></codeline>
+<codeline><highlight class="normal">xPSR:<sp/>0x01000000<sp/>pc:<sp/>0x0800263c<sp/>msp:<sp/>0x10000be0</highlight></codeline>
+<codeline><highlight class="normal">shutdown<sp/>command<sp/>invoked</highlight></codeline>
+</programlisting></para><para><heading level="2">Using GDB</heading>
+</para><para>For debugging your program on ARM Cortex-M device, we provide the <computeroutput>modm/gdbinit</computeroutput> and <computeroutput>modm/openocd_gdbinit</computeroutput> files for the <computeroutput>arm-none-eabi-gdb</computeroutput> debugger connected to your target via OpenOCD.</para><para>Two commands are provided for convenience:</para><para><itemizedlist>
+<listitem><para><computeroutput>restart</computeroutput> resets the device and halts.</para></listitem><listitem><para><computeroutput>rerun</computeroutput> resets the device and continues execution.</para></listitem></itemizedlist>
+</para><para>GDB is configured in TUI mode and continues running the target after attaching, but <emphasis>does not</emphasis> load an ELF file! Please pass the ELF file as a command line argument.</para><para>You can start your debug session by launching OpenOCD and then GDB:</para><para><programlisting><codeline><highlight class="normal">#<sp/>Run<sp/>OpenOCD<sp/>without<sp/>any<sp/>commands<sp/>in<sp/>the<sp/>background</highlight></codeline>
+<codeline><highlight class="normal">openocd<sp/>-f<sp/>modm/openocd.cfg</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Open<sp/>another<sp/>shell<sp/>with<sp/>your<sp/>projects<sp/>ELF<sp/>file</highlight></codeline>
+<codeline><highlight class="normal">arm-none-eabi-gdb<sp/>-x<sp/>modm/gdbinit<sp/>-x<sp/>modm/openocd_gdbinit<sp/>path/to/project.elf</highlight></codeline>
+</programlisting></para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/>┌——main.cpp———————————————————————————————————————————————————————┐</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&gt;│194<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DRAW(x+1,<sp/>y+3);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│195<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DRAW(x+2,<sp/>y+3);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│196<sp/><sp/><sp/><sp/><sp/>#else<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│197<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DRAW(x<sp/><sp/>,<sp/>y<sp/><sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│198<sp/><sp/><sp/><sp/><sp/>#endif<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│199<sp/><sp/><sp/><sp/><sp/>#undef<sp/>DRAW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│200<sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│201<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│202<sp/><sp/><sp/><sp/><sp/>static<sp/>inline<sp/>void<sp/>drawScreen(framebuffer_t<sp/>before,<sp/>frame│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>└—————————————————————————————————————————————————————————————————┘</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&gt;│0x80017a0<sp/>&lt;game_of_life()+1692&gt;<sp/>strh.w<sp/>r3,<sp/>[r4,<sp/>r12,<sp/>lsl<sp/>#1]<sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│0x80017a4<sp/>&lt;game_of_life()+1696&gt;<sp/>add<sp/><sp/><sp/><sp/>r0,<sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│0x80017a6<sp/>&lt;game_of_life()+1698&gt;<sp/>ldr<sp/><sp/><sp/><sp/>r2,<sp/>[r2,<sp/>#0]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│0x80017a8<sp/>&lt;game_of_life()+1700&gt;<sp/>strh.w<sp/>r3,<sp/>[r2,<sp/>r0,<sp/>lsl<sp/>#1]<sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│0x80017ac<sp/>&lt;game_of_life()+1704&gt;<sp/>ldr<sp/><sp/><sp/><sp/>r3,<sp/>[sp,<sp/>#12]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│0x80017ae<sp/>&lt;game_of_life()+1706&gt;<sp/>ldr<sp/><sp/><sp/><sp/>r2,<sp/>[sp,<sp/>#0]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│0x80017b0<sp/>&lt;game_of_life()+1708&gt;<sp/>add<sp/><sp/><sp/><sp/>r2,<sp/>r3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│0x80017b2<sp/>&lt;game_of_life()+1710&gt;<sp/>ldrb<sp/><sp/><sp/>r3,<sp/>[r7,<sp/>r1]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│0x80017b4<sp/>&lt;game_of_life()+1712&gt;<sp/>strb<sp/><sp/><sp/>r3,<sp/>[r2,<sp/>r1]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>└—————————————————————————————————————————————————————————————————┘</highlight></codeline>
+<codeline><highlight class="normal">extended-r<sp/>Remote<sp/>target<sp/>In:<sp/>game_of_life<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>L194<sp/><sp/>PC:<sp/>0x80017a0</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Program<sp/>received<sp/>signal<sp/>SIGINT,<sp/>Interrupt.</highlight></codeline>
+<codeline><highlight class="normal">0x080017a0<sp/>in<sp/>drawPixel<sp/>(color=&lt;optimized<sp/>out&gt;,<sp/>y=42,<sp/>x=578)<sp/>at<sp/>main.c</highlight></codeline>
+<codeline><highlight class="normal">(gdb)</highlight></codeline>
+</programlisting></para><para><simplesect kind="warning"><para>&quot;Be careful attaching to a running target&quot; Due to the OpenOCD implementation, the target is halted for a very short period of time, while the device&apos;s debug peripheral is initialized. This time is dependent on the debug adapter and may range from just a few milliseconds to hundreds. Make sure your hardware can handle that!</para></simplesect>
+<heading level="2">Using AvrDude</heading>
+</para><para>Unfortunately AvrDude does not support a user configuration file like OpenOCD does, so there is no convenient one-line command to issue. You have to use the wrapper support of the specific build system.</para><para><heading level="2">Compiler Options</heading>
+</para><para>We maintain a common set of compiler options for all build system generator, so that they all have feature parity. We currently only support compiling modm with GCC for AVR, ARM Cortex-M and x86/posix with the options mentioned in the <ulink url="https://gcc.gnu.org/onlinedocs/gcc/Option-Summary.html">offical GCC options documentation</ulink>.</para><para>You can find all compiler options inside the generated build script for your project, the options presented here are only the most important ones.</para><para><heading level="4">Shared for C and C++</heading>
+</para><para><itemizedlist>
+<listitem><para><computeroutput>-W{all, extra}</computeroutput>: a basic set of warnings.</para></listitem><listitem><para><computeroutput>-Werror={format, maybe-uninitialized, overflow, sign-compare}</computeroutput>: these warnings are treated as errors.</para></listitem><listitem><para><computeroutput>-f{data, function}-sections</computeroutput>: puts data and functions into their own linker section.</para></listitem><listitem><para><computeroutput>-funsigned-{char, bitfields}</computeroutput>: modm tries to use <computeroutput>stdint.h</computeroutput> types everywhere, but just in case.</para></listitem></itemizedlist>
+</para><para>For <emphasis>release builds</emphasis>:</para><para><itemizedlist>
+<listitem><para><computeroutput>-Os</computeroutput>: optimize for smaller size.</para></listitem></itemizedlist>
+</para><para>For <emphasis>debug builds</emphasis>:</para><para><itemizedlist>
+<listitem><para><computeroutput>-Og</computeroutput>: optimize for debugging experience.</para></listitem></itemizedlist>
+</para><para><heading level="4">Only C</heading>
+</para><para><itemizedlist>
+<listitem><para><computeroutput>-std=gnu11</computeroutput>: use C11 with GNU extensions (for <computeroutput>asm volatile</computeroutput>).</para></listitem></itemizedlist>
+</para><para><heading level="4">Only C++</heading>
+</para><para><itemizedlist>
+<listitem><para><computeroutput>-std=c++17</computeroutput>: use C++17</para></listitem><listitem><para><computeroutput>-fno-exceptions</computeroutput>: no exceptions.</para></listitem><listitem><para><computeroutput>-fno-rtti</computeroutput>: no run-time type information.</para></listitem></itemizedlist>
+</para><para><heading level="4">Linker</heading>
+</para><para><itemizedlist>
+<listitem><para><computeroutput>--gc-section</computeroutput>: garbage collecting sections throws out a lot of unused data/code.</para></listitem><listitem><para><computeroutput>-L{linkdir} -Tlinkerscript.ld</computeroutput>: modm uses a custom linkerscript.</para></listitem></itemizedlist>
+</para><para><heading level="3">Only AVR</heading>
+</para><para><itemizedlist>
+<listitem><para><computeroutput>-mmcu={target}</computeroutput>: the target to compile for.</para></listitem></itemizedlist>
+</para><para><heading level="3">Only ARM Cortex-M</heading>
+</para><para><itemizedlist>
+<listitem><para><computeroutput>-mcpu=cortex-m{type}</computeroutput>: the target to compile for.</para></listitem><listitem><para><computeroutput>-mthumb</computeroutput>: only Thumb2 instruction set is supported.</para></listitem><listitem><para><computeroutput>-mfloat-abi=hard</computeroutput>: if FPU available use the fastest ABI available.</para></listitem><listitem><para><computeroutput>-mfpu=fpv{4, 5}-{sp}-d16</computeroutput>: single or double precision FPU.</para></listitem><listitem><para><computeroutput>-fsingle-precision-constant</computeroutput>: if SP-FPU, treat all FP constants as SP.</para></listitem><listitem><para><computeroutput>-Wdouble-promotion</computeroutput>: if SP-FPU, warn if FPs are promoted to doubles.</para></listitem></itemizedlist>
+</para><para>In addition, these linker options are added:</para><para><itemizedlist>
+<listitem><para><computeroutput>-nostartfiles</computeroutput>: modm implements its own startup script.</para></listitem><listitem><para><computeroutput>--specs=nano.specs</computeroutput>: use Newlib Nano.</para></listitem><listitem><para><computeroutput>--specs=nosys.specs</computeroutput>: modm does not use C stdlib features.</para></listitem><listitem><para><computeroutput>-wrap,_{calloc, malloc, realloc, free}_r</computeroutput>: reimplemented Newlib with our own allocator.</para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

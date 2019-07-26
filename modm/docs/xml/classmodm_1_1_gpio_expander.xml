@@ -15,7 +15,7 @@
 <para>This contains the underlying type that can hold the bits of the entire port. This value is implementation defined, it may also be <computeroutput>uint16_t</computeroutput>. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="57" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" bodystart="57" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="57" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" bodystart="57" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -30,7 +30,7 @@
 <para>This holds the width of the port as number of bits and can be used in drivers to assert the correct requirements </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="53" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" bodystart="53" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="53" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" bodystart="53" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -49,7 +49,7 @@
 <para>A type containing a unique identifier for each pin. This is mostly a bit mask, however, since this is implementation defined it can also be an index.Returns the <emphasis>index</emphasis> of the pin as a constexpr function. The mapping is implementation defined, however, as an implementation hint when using a bit mask, you should use <computeroutput><ref refid="group__modm__math__utils_1gad8ca8a97b6f8b1f20e73ca32d717dcb7" kindref="member">modm::leftmostBit()</ref></computeroutput> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="72" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="72" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="77" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="77" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1ae5881d8681366f460b2f0453d0f0678d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -86,7 +86,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="82" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="82" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1a28580aa613ee9da1ec8bf2d7d2d5211a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -104,7 +104,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="87" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="87" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1a4bdeea78b07f8f3ad9d77d22e9d2308d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -122,7 +122,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="92" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="92" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1a006c8dcfde188b210378867a687044ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -144,7 +144,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="97" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="97" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1afe488bc21d63dd2dc3bd65bf7bf26502" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -161,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="101" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="101" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1ad61d5b99ae9fe42f686932032a661897" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_gpio_1a5c167852e8d86eded53f554eabace79b" kindref="member">modm::Gpio::Direction</ref></type>
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="105" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="105" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1a1b0579087c24a4d8c42e511d55876870" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -195,7 +195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="110" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="110" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1aefd0a3ce972a52133cb75470dec7bfcc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -213,7 +213,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="116" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="116" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1a0ff2d45b32740b6fe5852f68060c2039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -226,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="120" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="120" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1a53548c5f110e3df75eeb8f53cea0dddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -244,7 +244,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="126" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="126" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1afaf1513fe1b5e8551bfb30a12e3abd92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -261,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="130" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="130" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1af419c1b7d2a42fd7fd5f5fe061183b91" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>Pins</type>
@@ -274,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="135" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="135" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1a5966fd722d4268b4fdac841c94bb7786" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>Pins</type>
@@ -287,7 +287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="139" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="139" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_gpio_expander_1a896cbb620e84ccaba5b420c373664fb1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>Pins</type>
@@ -300,7 +300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="143" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="143" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -313,7 +313,7 @@
 <simplesect kind="see"><para><ref refid="classmodm_1_1_gpio_i_o" kindref="compound">modm::GpioIO</ref></para></simplesect>
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="48" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" bodystart="47" bodyend="145"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" line="48" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/gpio_expander.hpp" bodystart="47" bodyend="145"/>
     <listofallmembers>
       <member refid="classmodm_1_1_gpio_expander_1ad61d5b99ae9fe42f686932032a661897" prot="public" virt="non-virtual"><scope>modm::GpioExpander</scope><name>getDirection</name></member>
       <member refid="classmodm_1_1_gpio_expander_1af419c1b7d2a42fd7fd5f5fe061183b91" prot="public" virt="non-virtual"><scope>modm::GpioExpander</scope><name>getDirections</name></member>

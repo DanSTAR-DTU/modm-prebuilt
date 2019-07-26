@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" line="117" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" bodystart="117" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" line="117" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" bodystart="117" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -42,7 +42,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" line="68" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" bodystart="68" bodyend="71"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" line="68" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" bodystart="68" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1pt_1_1_semaphore_1a08448026d80df889cf78d17250526f89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -57,7 +57,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" line="91" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" bodystart="91" bodyend="101"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" line="91" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" bodystart="91" bodyend="101"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1pt_1_1_semaphore_1a4ad53508e0f6bb5a68e4e6b41782bad0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -70,7 +70,7 @@
 <para>The &quot;release&quot; or &quot;signal&quot; operation increments the counter inside the semaphore, which eventually will cause waiting protothreads to continue executing. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" line="111" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" bodystart="111" bodyend="114"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" line="111" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" bodystart="111" bodyend="114"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -81,7 +81,7 @@
 </para><para>Credit tracking:<itemizedlist>
 <listitem><para><computeroutput>initial</computeroutput> = 0</para></listitem><listitem><para><ref refid="classmodm_1_1pt_1_1_semaphore_1a08448026d80df889cf78d17250526f89" kindref="member">acquire()</ref> to increment (credit)</para></listitem><listitem><para><ref refid="classmodm_1_1pt_1_1_semaphore_1a4ad53508e0f6bb5a68e4e6b41782bad0" kindref="member">release()</ref> to consume (debit)</para></listitem></itemizedlist>
 </para><para>As protothreads implement a form cooperative multithreading no synchronisation is needed for accessing global variables or for critical sections. Just don&apos;t use <ref refid="group__modm__processing__protothread_1ga7593fae8873b594580319c407dd81ad6" kindref="member">PT_YIELD()</ref> or <ref refid="group__modm__processing__protothread_1ga742a4c6aa99440473f54651233ebd28b" kindref="member">PT_WAIT_UNTIL()</ref> inside a critical sections and you&apos;re fine.</para><para>Therefore there&apos;s no Mutex implementation, it isn&apos;t needed. </para>    </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" line="61" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" bodystart="60" bodyend="118"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" line="61" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp" bodystart="60" bodyend="118"/>
     <listofallmembers>
       <member refid="classmodm_1_1pt_1_1_semaphore_1a08448026d80df889cf78d17250526f89" prot="public" virt="non-virtual"><scope>modm::pt::Semaphore</scope><name>acquire</name></member>
       <member refid="classmodm_1_1pt_1_1_semaphore_1ac4de7620941b9ad3b5182f62ed47bdc7" prot="protected" virt="non-virtual"><scope>modm::pt::Semaphore</scope><name>count</name></member>

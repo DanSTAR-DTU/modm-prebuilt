@@ -25,7 +25,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="180" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="180" bodyend="186"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="180" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="180" bodyend="186"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -34,17 +34,6 @@
 <para>Generate an identifier for the Dual Filter mode from an extended (29-bit) identifier.</para><para><simplesect kind="warning"><para>Uses only the upper 14-bit of the 29-bit identifier! The lower 15-bit will be don&apos;t care! </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="234">
-        <label>modm::platform::CanFilter::IdentifierShort</label>
-      </node>
-      <node id="233">
-        <label>modm::platform::CanFilter::ExtendedIdentifierShort</label>
-        <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short"/>
-        <childnode refid="234" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="236">
         <label>modm::platform::CanFilter::IdentifierShort</label>
       </node>
@@ -54,8 +43,19 @@
         <childnode refid="236" relation="public-inheritance">
         </childnode>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="238">
+        <label>modm::platform::CanFilter::IdentifierShort</label>
+      </node>
+      <node id="237">
+        <label>modm::platform::CanFilter::ExtendedIdentifierShort</label>
+        <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short"/>
+        <childnode refid="238" relation="public-inheritance">
+        </childnode>
+      </node>
     </collaborationgraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="178" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="177" bodyend="187"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" line="178" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp" bodystart="177" bodyend="187"/>
     <listofallmembers>
       <member refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short_1a5bd1bcf630384092f86c58fba34ebfe7" prot="public" virt="non-virtual"><scope>modm::platform::CanFilter::ExtendedIdentifierShort</scope><name>ExtendedIdentifierShort</name></member>
       <member refid="structmodm_1_1platform_1_1_can_filter_1_1_identifier_short_1a9c9d64674d4620c1c9a8bdf7bdcdfb8c" prot="protected" virt="non-virtual"><scope>modm::platform::CanFilter::ExtendedIdentifierShort</scope><name>IdentifierShort</name></member>

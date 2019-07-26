@@ -63,7 +63,7 @@ public:
 	getBrr()
 	{
 		constexpr uint32_t scalar = (baudrate * 16l > clockrate) ? 8 : 16;
-		constexpr uint32_t max = (scalar == 16) ? 65536 : 32768;
+		constexpr uint32_t max = (scalar == 16) ? 65'536 : 32'768;
 
 		// calculate the fractional prescaler value
 		constexpr float pre_raw = static_cast<float>(clockrate) / (baudrate);

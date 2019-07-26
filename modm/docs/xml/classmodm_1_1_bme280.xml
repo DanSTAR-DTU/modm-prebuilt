@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="241" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="241" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="241" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="241" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1_bme280_1abb63ef2f9bdfe7c4618ef17659382751" prot="private" static="no" mutable="no">
         <type>uint8_t</type>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="244" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="244" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="244" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="244" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmodm_1_1_bme280_1a1e3defcd57ec8390549240dcdd9788d9" prot="private" static="no" mutable="no">
         <type>uint8_t</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="247" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="247" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="247" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="247" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -87,7 +87,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="211" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="211" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_bme280_1aacccfa527c8efae8b899d9ef9ccf1030" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="216" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="216" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_bme280_1a79038a6f75240af78989543d310ed5a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="224" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="224" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_bme280_1aa9faba977df390d6090c70df85a2b91d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structmodm_1_1_resumable_result" kindref="compound">modm::ResumableResult</ref>&lt; bool &gt;</type>
@@ -156,7 +156,7 @@
 <para>Start a single measurement in forced mode. Sensor will go to standby after this. To reduce bus traffic only the absolute necessary register (CTRL_MEAS) is written. If oversampling of humidity shall be changed, another method must be used. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="230" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="230" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1_bme280_1a3d43c6366577d8989a16bfc20a67278a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structmodm_1_1bme280_1a55590ac02e613e7cb445ee06c026fcf5" kindref="member">Data</ref> &amp;</type>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="237" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="237" bodyend="238"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="237" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="237" bodyend="238"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -186,73 +186,73 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="123">
+      <node id="125">
         <label>modm::bme280</label>
         <link refid="structmodm_1_1bme280"/>
       </node>
-      <node id="124">
+      <node id="126">
         <label>modm::I2cDevice&lt; I2cMaster, 1 &gt;</label>
         <link refid="classmodm_1_1_i2c_device"/>
-        <childnode refid="125" relation="protected-inheritance">
+        <childnode refid="127" relation="protected-inheritance">
         </childnode>
       </node>
-      <node id="125">
+      <node id="127">
         <label>modm::NestedResumable&lt; NestingLevels+1 &gt;</label>
         <link refid="classmodm_1_1_nested_resumable"/>
       </node>
-      <node id="122">
+      <node id="124">
         <label>modm::Bme280&lt; I2cMaster &gt;</label>
         <link refid="classmodm_1_1_bme280"/>
-        <childnode refid="123" relation="public-inheritance">
+        <childnode refid="125" relation="public-inheritance">
         </childnode>
-        <childnode refid="124" relation="public-inheritance">
+        <childnode refid="126" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="127">
+      <node id="129">
         <label>modm::bme280</label>
         <link refid="structmodm_1_1bme280"/>
       </node>
-      <node id="130">
+      <node id="132">
         <label>modm::I2cWriteReadTransaction</label>
         <link refid="classmodm_1_1_i2c_write_read_transaction"/>
-        <childnode refid="131" relation="public-inheritance">
+        <childnode refid="133" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="128">
+      <node id="130">
         <label>modm::I2cDevice&lt; I2cMaster, 1 &gt;</label>
         <link refid="classmodm_1_1_i2c_device"/>
-        <childnode refid="129" relation="protected-inheritance">
+        <childnode refid="131" relation="protected-inheritance">
         </childnode>
-        <childnode refid="130" relation="usage">
+        <childnode refid="132" relation="usage">
           <edgelabel>transaction</edgelabel>
         </childnode>
       </node>
-      <node id="129">
+      <node id="131">
         <label>modm::NestedResumable&lt; NestingLevels+1 &gt;</label>
         <link refid="classmodm_1_1_nested_resumable"/>
       </node>
-      <node id="132">
+      <node id="134">
         <label>modm::I2c</label>
         <link refid="structmodm_1_1_i2c"/>
       </node>
-      <node id="131">
+      <node id="133">
         <label>modm::I2cTransaction</label>
         <link refid="classmodm_1_1_i2c_transaction"/>
-        <childnode refid="132" relation="public-inheritance">
+        <childnode refid="134" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="126">
+      <node id="128">
         <label>modm::Bme280&lt; I2cMaster &gt;</label>
         <link refid="classmodm_1_1_bme280"/>
-        <childnode refid="127" relation="public-inheritance">
+        <childnode refid="129" relation="public-inheritance">
         </childnode>
-        <childnode refid="128" relation="public-inheritance">
+        <childnode refid="130" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="28" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="28" bodyend="-1"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" line="28" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp" bodystart="28" bodyend="-1"/>
     <listofallmembers>
       <member refid="classmodm_1_1_i2c_device_1af69c9510f28ffa17808595ef0ba594cd" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>attachConfigurationHandler</name></member>
       <member refid="classmodm_1_1_bme280_1aaf4b3fc997752ac74a4563c464f149fe" prot="public" virt="non-virtual"><scope>modm::Bme280</scope><name>Bme280</name></member>

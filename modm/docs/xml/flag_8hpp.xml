@@ -3,28 +3,28 @@
   <compounddef id="flag_8hpp" kind="file" language="C++">
     <compoundname>flag.hpp</compoundname>
     <includes refid="architecture_2interface_2atomic__lock_8hpp" local="no">modm/architecture/interface/atomic_lock.hpp</includes>
-    <includedby refid="atomic_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic.hpp</includedby>
+    <includedby refid="atomic_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic.hpp</includedby>
     <incdepgraph>
-      <node id="528">
+      <node id="538">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp</label>
+        <link refid="flag_8hpp"/>
+        <childnode refid="539" relation="include">
+        </childnode>
+      </node>
+      <node id="539">
         <label>modm/architecture/interface/atomic_lock.hpp</label>
         <link refid="architecture_2interface_2atomic__lock_8hpp"/>
       </node>
-      <node id="527">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp</label>
-        <link refid="flag_8hpp"/>
-        <childnode refid="528" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="530">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic.hpp</label>
+      <node id="541">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic.hpp</label>
         <link refid="atomic_8hpp"/>
       </node>
-      <node id="529">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp</label>
+      <node id="540">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp</label>
         <link refid="flag_8hpp"/>
-        <childnode refid="530" relation="include">
+        <childnode refid="541" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -35,6 +35,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/driver/atomic/flag.hpp"/>
   </compounddef>
 </doxygen>

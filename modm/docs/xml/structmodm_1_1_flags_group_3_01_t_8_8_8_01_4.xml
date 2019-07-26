@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="465" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="465" bodyend="465"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="465" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="465" bodyend="465"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_flags_group_3_01_t_8_8_8_01_4_1a6cbfc0390435ab6d80ac6d832be578d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="468" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="468" bodyend="469"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="468" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="468" bodyend="469"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_flags_group_3_01_t_8_8_8_01_4_1a320ec614137ccbcd3540cbb92d6d947e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="471" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="471" bodyend="472"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="471" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="471" bodyend="472"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_flags_group_3_01_t_8_8_8_01_4_1a307f9674cd6e35740546eebdd1570aa9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="475" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="475" bodyend="476"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="475" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="475" bodyend="476"/>
       </memberdef>
       <memberdef kind="function" id="structmodm_1_1_flags_group_3_01_t_8_8_8_01_4_1a4e96e9b3e4ce73189ce03f17b9d039a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="478" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="478" bodyend="479"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="478" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="478" bodyend="479"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -116,36 +116,36 @@
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="250">
+      <node id="254">
         <label>modm::FlagsGroup&lt; T... &gt;</label>
         <link refid="structmodm_1_1_flags_group_3_01_t_8_8_8_01_4"/>
-        <childnode refid="251" relation="public-inheritance">
+        <childnode refid="255" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="251">
+      <node id="255">
         <label>modm::Register&lt; T::UnderlyingType &gt;</label>
         <link refid="structmodm_1_1_register"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="254">
+      <node id="258">
         <label>T</label>
       </node>
-      <node id="252">
+      <node id="256">
         <label>modm::FlagsGroup&lt; T... &gt;</label>
         <link refid="structmodm_1_1_flags_group_3_01_t_8_8_8_01_4"/>
-        <childnode refid="253" relation="public-inheritance">
+        <childnode refid="257" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="253">
+      <node id="257">
         <label>modm::Register&lt; T::UnderlyingType &gt;</label>
         <link refid="structmodm_1_1_register"/>
-        <childnode refid="254" relation="usage">
+        <childnode refid="258" relation="usage">
           <edgelabel>value</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="463" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="458" bodyend="481"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" line="463" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp" bodystart="458" bodyend="481"/>
     <listofallmembers>
       <member refid="structmodm_1_1_flags_group_3_01_t_8_8_8_01_4_1a6522d55f5c7ad5be50451989df4aee51" prot="public" virt="non-virtual"><scope>modm::FlagsGroup&lt; T... &gt;</scope><name>FlagsGroup</name></member>
       <member refid="structmodm_1_1_flags_group_3_01_t_8_8_8_01_4_1a6cbfc0390435ab6d80ac6d832be578d8" prot="public" virt="non-virtual"><scope>modm::FlagsGroup&lt; T... &gt;</scope><name>FlagsGroup</name></member>

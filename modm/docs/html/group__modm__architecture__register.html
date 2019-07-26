@@ -100,6 +100,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga37de536c84e4014ca93a0c771ae8b07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0fd05bf2b80fcbe189a29fb7599ba868"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__modm__architecture__register.html#ga0fd05bf2b80fcbe189a29fb7599ba868">MODM_TYPE_FLAGS</a>(Parent)</td></tr>
 <tr class="separator:ga0fd05bf2b80fcbe189a29fb7599ba868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef88c899ce1e82a5fa8fbe7625276d71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__modm__architecture__register.html#gaef88c899ce1e82a5fa8fbe7625276d71">MODM_FLAGS_CONFIG</a>(Parent,  Config)</td></tr>
+<tr class="separator:gaef88c899ce1e82a5fa8fbe7625276d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabd73ce6ec9b57c64d6f0a6205f023435"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__modm__architecture__register.html#gabd73ce6ec9b57c64d6f0a6205f023435">modm::Register8</a> = <a class="el" href="structmodm_1_1_register.html">Register</a>&lt; uint8_t &gt;</td></tr>
 <tr class="separator:gabd73ce6ec9b57c64d6f0a6205f023435"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga40997210e0b33d038e50059246a6c35f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__modm__architecture__register.html#ga40997210e0b33d038e50059246a6c35f">modm::Register16</a> = <a class="el" href="structmodm_1_1_register.html">Register</a>&lt; uint16_t &gt;</td></tr>
@@ -230,6 +232,43 @@ Macros</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Enum</td><td>a strongly-typed enum containing the bit masks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaef88c899ce1e82a5fa8fbe7625276d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaef88c899ce1e82a5fa8fbe7625276d71">&#9670;&nbsp;</a></span>MODM_FLAGS_CONFIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MODM_FLAGS_CONFIG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Parent, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Config&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This macro creates a <code>Config_t</code> type out of the <code>Parent</code> and <code>Config</code> enum. The mask is taken from a <code>Parent::Config_Mask</code> field containing the ORed bits of the configuration.</p>
+<dl class="section note"><dt>Note</dt><dd>This macro does not allow using the configuration position. Please use the <code><a class="el" href="structmodm_1_1_configuration.html">modm::Configuration</a></code> class manually in that case.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Parent</td><td>a Flags Enum </td></tr>
+    <tr><td class="paramname">Config</td><td>a Config Enum </td></tr>
   </table>
   </dd>
 </dl>

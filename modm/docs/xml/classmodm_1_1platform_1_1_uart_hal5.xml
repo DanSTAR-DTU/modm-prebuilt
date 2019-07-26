@@ -20,7 +20,7 @@
 <para>Disable Parity or Enable Odd/Even Parity</para><para>This method assumes 8 databits + 1 parity bit Remember to enable the clock but not the UART peripheral before setting the party. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="50" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="50" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="55" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="55" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1aedafe3a181cab3658155d79f9c1cc18d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="59" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="59" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1a1050648e4f579aa792e192c6410e1053" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -76,7 +76,7 @@
 <para>Initialize <ref refid="classmodm_1_1_uart" kindref="compound">Uart</ref> HAL Peripheral</para><para>Enables clocks, the UART peripheral (but neither TX nor RX) Sets baudrate and parity. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="69" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="69" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1a283bf238621407a9812c612ab77c3711" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -110,7 +110,7 @@
 <para>Initialize <ref refid="classmodm_1_1_uart" kindref="compound">Uart</ref> HAL Peripheral</para><para>Enables clocks, the UART peripheral (but neither TX nor RX) Sets baudrate and parity. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="80" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="80" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1aa954170b0a8f157ed71e55c8e219bcdd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -135,7 +135,7 @@
 <para>Initialize <ref refid="classmodm_1_1_uart" kindref="compound">Uart</ref> HAL Peripheral</para><para>Enables clocks, the UART peripheral (but neither TX nor RX) Sets raw brr, parity and oversampling mode. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="88" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="88" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1a4abfb536dd4a7f5820398182d0d84250" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -152,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="94" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="94" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1a0163d825dc5499de62e4f30ee34ed382" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -170,7 +170,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="103" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="103" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1a18df54e2b89d42750ad743bb996f0391" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -188,7 +188,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="113" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="113" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1a244e8c62982dd2dcb1c5b58f383f2a94" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -205,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="117" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="117" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1aa69a42da1fa794842b1ade937a4aa7d0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -222,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="121" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="121" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1ae2e0528fb42eb5de25e7759449ead682" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -235,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="125" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="125" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1ac31b094d4b70ee7c3102f817fbd38e57" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -248,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="129" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="129" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1a98ccfb2e16eab3252d7ff279c374c59c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -261,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="133" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="133" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1a9b3a21c1eecfb59ab92af68adaa30cfa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -274,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="137" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="137" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1a8a1cfab12c0f515a7f7b86472c36d7d1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -295,7 +295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="140" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="140" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1af0e8f0b5c89fac0644890ebbda0a4c0f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -312,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="143" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="143" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1a3ac2cf8d1882491e3f2300f2cca89f3e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -329,7 +329,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="146" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="146" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1a3de605b9faf79c79c3739d72d9f01406" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classmodm_1_1platform_1_1_uart_base_1a918f65a6ffc3f0f1a6c64b9088e4dc5b" kindref="member">InterruptFlag_t</ref></type>
@@ -342,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="149" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="149" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classmodm_1_1platform_1_1_uart_hal5_1ae57f5a6aa9917949a9c0adb5ca55a6cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -360,7 +360,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="157" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="157" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -369,30 +369,30 @@
 <para>Universal asynchronous receiver transmitter (<ref refid="classmodm_1_1platform_1_1_uart_hal5" kindref="compound">UartHal5</ref>)</para><para>Not available on the low- and medium density devices.</para><para>Very basic implementation that exposes more hardware features than the regular Usart classes.</para><para><simplesect kind="author"><para>Kevin Laeufer </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1746">
+      <node id="1750">
         <label>modm::platform::UartHal5</label>
         <link refid="classmodm_1_1platform_1_1_uart_hal5"/>
-        <childnode refid="1747" relation="public-inheritance">
+        <childnode refid="1751" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1747">
+      <node id="1751">
         <label>modm::platform::UartBase</label>
         <link refid="classmodm_1_1platform_1_1_uart_base"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1748">
+      <node id="1752">
         <label>modm::platform::UartHal5</label>
         <link refid="classmodm_1_1platform_1_1_uart_hal5"/>
-        <childnode refid="1749" relation="public-inheritance">
+        <childnode refid="1753" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1749">
+      <node id="1753">
         <label>modm::platform::UartBase</label>
         <link refid="classmodm_1_1platform_1_1_uart_base"/>
       </node>
     </collaborationgraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="40" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" bodystart="39" bodyend="158"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" line="40" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp" bodystart="39" bodyend="158"/>
     <listofallmembers>
       <member refid="classmodm_1_1platform_1_1_uart_hal5_1ae57f5a6aa9917949a9c0adb5ca55a6cc" prot="public" virt="non-virtual"><scope>modm::platform::UartHal5</scope><name>acknowledgeInterruptFlags</name></member>
       <member refid="classmodm_1_1platform_1_1_uart_hal5_1aedafe3a181cab3658155d79f9c1cc18d" prot="public" virt="non-virtual"><scope>modm::platform::UartHal5</scope><name>disable</name></member>

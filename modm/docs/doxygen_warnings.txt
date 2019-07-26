@@ -1,80 +1,82 @@
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp:776: warning: Reached end of file while still inside a (nested) comment. Nesting level 2 (probable line reference: 682, 673)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp:118: warning: Internal inconsistency: scope for class modm::detail::MakeSigned< Vector< T, N > > not found!
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp:122: warning: Internal inconsistency: scope for class modm::detail::MakeUnsigned< Vector< T, N > > not found!
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp:126: warning: Internal inconsistency: scope for class modm::detail::WideType< Vector< T, N > > not found!
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp:795: warning: Reached end of file while still inside a (nested) comment. Nesting level 2 (probable line reference: 682, 673)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp:118: warning: Internal inconsistency: scope for class modm::detail::MakeSigned< Vector< T, N > > not found!
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp:122: warning: Internal inconsistency: scope for class modm::detail::MakeUnsigned< Vector< T, N > > not found!
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp:126: warning: Internal inconsistency: scope for class modm::detail::WideType< Vector< T, N > > not found!
 warning: Include graph for 'platform.hpp' not generated, too many nodes. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Included by graph for 'device.hpp' not generated, too many nodes. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Included by graph for 'base.hpp' not generated, too many nodes. Consider increasing DOT_GRAPH_MAX_NODES.
 warning: Included by graph for 'set.hpp' not generated, too many nodes. Consider increasing DOT_GRAPH_MAX_NODES.
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/docs/dox/modm-processing-resumable.dox:31: warning: explicit link request to 'Functions' could not be resolved
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/docs/dox/modm-processing-resumable.dox:32: warning: explicit link request to 'Functions' could not be resolved
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp:108: warning: argument 'configuration' of command @param is not found in the argument list of modm::I2cMaster::start(I2cTransaction *transaction, ConfigurationHandler handler=nullptr)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp:117: warning: The following parameters of modm::I2cMaster::start(I2cTransaction *transaction, ConfigurationHandler handler=nullptr) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/dox/modm-processing-resumable.dox:31: warning: explicit link request to 'Functions' could not be resolved
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/dox/modm-processing-resumable.dox:32: warning: explicit link request to 'Functions' could not be resolved
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp:108: warning: argument 'configuration' of command @param is not found in the argument list of modm::I2cMaster::start(I2cTransaction *transaction, ConfigurationHandler handler=nullptr)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp:117: warning: The following parameters of modm::I2cMaster::start(I2cTransaction *transaction, ConfigurationHandler handler=nullptr) are not documented:
   parameter 'handler'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp:43: warning: argument 'device' of command @param is not found in the argument list of modm::IOStream::IOStream(IODevice &odevice)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp:50: warning: The following parameters of modm::IOStream::IOStream(IODevice &odevice) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp:43: warning: argument 'device' of command @param is not found in the argument list of modm::IOStream::IOStream(IODevice &odevice)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp:50: warning: The following parameters of modm::IOStream::IOStream(IODevice &odevice) are not documented:
   parameter 'odevice'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc1::acknowledgeInterruptFlags(const InterruptFlag_t flags)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:352: warning: The following parameters of modm::platform::Adc1::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc1::acknowledgeInterruptFlags(const InterruptFlag_t flags)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:352: warning: The following parameters of modm::platform::Adc1::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
   parameter 'flags'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc1::enableInterrupt(const Interrupt_t interrupt)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc2::acknowledgeInterruptFlags(const InterruptFlag_t flags)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:352: warning: The following parameters of modm::platform::Adc2::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc1::enableInterrupt(const Interrupt_t interrupt)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc2::acknowledgeInterruptFlags(const InterruptFlag_t flags)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:352: warning: The following parameters of modm::platform::Adc2::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
   parameter 'flags'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc2::enableInterrupt(const Interrupt_t interrupt)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc3::acknowledgeInterruptFlags(const InterruptFlag_t flags)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:352: warning: The following parameters of modm::platform::Adc3::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc2::enableInterrupt(const Interrupt_t interrupt)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc3::acknowledgeInterruptFlags(const InterruptFlag_t flags)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:352: warning: The following parameters of modm::platform::Adc3::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
   parameter 'flags'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc3::enableInterrupt(const Interrupt_t interrupt)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp:95: warning: argument 'bitrate' of command @param is not found in the argument list of modm::platform::Can1::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp:111: warning: The following parameters of modm::platform::Can1::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc3::enableInterrupt(const Interrupt_t interrupt)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp:95: warning: argument 'bitrate' of command @param is not found in the argument list of modm::platform::Can1::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp:111: warning: The following parameters of modm::platform::Can1::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true) are not documented:
   parameter 'startupMode'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp:95: warning: argument 'bitrate' of command @param is not found in the argument list of modm::platform::Can2::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp:111: warning: The following parameters of modm::platform::Can2::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp:95: warning: argument 'bitrate' of command @param is not found in the argument list of modm::platform::Can2::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp:111: warning: The following parameters of modm::platform::Can2::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true) are not documented:
   parameter 'startupMode'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_1.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster1::initialize()
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster2::initialize()
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster3::initialize()
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp:184: warning: The following parameters of modm::platform::Rcc::enablePll(PllSource source, uint8_t pllM, uint16_t pllN, uint8_t pllP, uint32_t waitCycles=2048) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_1.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster1::initialize()
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster2::initialize()
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster3::initialize()
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp:184: warning: The following parameters of modm::platform::Rcc::enablePll(PllSource source, uint8_t pllM, uint16_t pllN, uint8_t pllP, uint32_t waitCycles=2048) are not documented:
   parameter 'pllP'
   parameter 'waitCycles'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/docs/README.md:5: warning: Unexpected html tag <img> found within <a href=...> context
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/docs/README.md:22: warning: Unexpected html tag <img> found within <a href=...> context
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/docs/README.md:33: warning: unable to resolve reference to `https:' for \ref command
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/docs/README.md:240: warning: unable to resolve reference to `https:' for \ref command
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc1::enableInterrupt(const Interrupt_t interrupt)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc1::acknowledgeInterruptFlags(const InterruptFlag_t flags)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:352: warning: The following parameters of modm::platform::Adc1::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/README.md:5: warning: Unexpected html tag <img> found within <a href=...> context
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/README.md:22: warning: Unexpected html tag <img> found within <a href=...> context
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/README.md:33: warning: unable to resolve reference to `https:' for \ref command
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/README.md:153: warning: expected <td> or <th> tag but found <tr> instead!
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/README.md:244: warning: unable to resolve reference to `https:' for \ref command
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc1::enableInterrupt(const Interrupt_t interrupt)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc1::acknowledgeInterruptFlags(const InterruptFlag_t flags)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:352: warning: The following parameters of modm::platform::Adc1::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
   parameter 'flags'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc2::enableInterrupt(const Interrupt_t interrupt)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc2::acknowledgeInterruptFlags(const InterruptFlag_t flags)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:352: warning: The following parameters of modm::platform::Adc2::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc2::enableInterrupt(const Interrupt_t interrupt)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc2::acknowledgeInterruptFlags(const InterruptFlag_t flags)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:352: warning: The following parameters of modm::platform::Adc2::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
   parameter 'flags'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc3::enableInterrupt(const Interrupt_t interrupt)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc3::acknowledgeInterruptFlags(const InterruptFlag_t flags)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:352: warning: The following parameters of modm::platform::Adc3::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc3::enableInterrupt(const Interrupt_t interrupt)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc3::acknowledgeInterruptFlags(const InterruptFlag_t flags)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:352: warning: The following parameters of modm::platform::Adc3::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
   parameter 'flags'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp:95: warning: argument 'bitrate' of command @param is not found in the argument list of modm::platform::Can1::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp:111: warning: The following parameters of modm::platform::Can1::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp:95: warning: argument 'bitrate' of command @param is not found in the argument list of modm::platform::Can1::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp:111: warning: The following parameters of modm::platform::Can1::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true) are not documented:
   parameter 'startupMode'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp:95: warning: argument 'bitrate' of command @param is not found in the argument list of modm::platform::Can2::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp:111: warning: The following parameters of modm::platform::Can2::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp:95: warning: argument 'bitrate' of command @param is not found in the argument list of modm::platform::Can2::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp:111: warning: The following parameters of modm::platform::Can2::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true) are not documented:
   parameter 'startupMode'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp:108: warning: argument 'configuration' of command @param is not found in the argument list of modm::I2cMaster::start(I2cTransaction *transaction, ConfigurationHandler handler=nullptr)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp:117: warning: The following parameters of modm::I2cMaster::start(I2cTransaction *transaction, ConfigurationHandler handler=nullptr) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp:108: warning: argument 'configuration' of command @param is not found in the argument list of modm::I2cMaster::start(I2cTransaction *transaction, ConfigurationHandler handler=nullptr)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp:117: warning: The following parameters of modm::I2cMaster::start(I2cTransaction *transaction, ConfigurationHandler handler=nullptr) are not documented:
   parameter 'handler'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_1.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster1::initialize()
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster2::initialize()
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster3::initialize()
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp:43: warning: argument 'device' of command @param is not found in the argument list of modm::IOStream::IOStream(IODevice &odevice)
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp:50: warning: The following parameters of modm::IOStream::IOStream(IODevice &odevice) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_1.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster1::initialize()
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster2::initialize()
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster3::initialize()
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp:43: warning: argument 'device' of command @param is not found in the argument list of modm::IOStream::IOStream(IODevice &odevice)
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp:50: warning: The following parameters of modm::IOStream::IOStream(IODevice &odevice) are not documented:
   parameter 'odevice'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp:184: warning: The following parameters of modm::platform::Rcc::enablePll(PllSource source, uint8_t pllM, uint16_t pllN, uint8_t pllP, uint32_t waitCycles=2048) are not documented:
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp:184: warning: The following parameters of modm::platform::Rcc::enablePll(PllSource source, uint8_t pllM, uint16_t pllN, uint8_t pllP, uint32_t waitCycles=2048) are not documented:
   parameter 'pllP'
   parameter 'waitCycles'
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/docs/dox/modm-processing-resumable.dox:31: warning: explicit link request to 'Functions' could not be resolved
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/docs/dox/modm-processing-resumable.dox:32: warning: explicit link request to 'Functions' could not be resolved
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/docs/README.md:5: warning: Unexpected html tag <img> found within <a href=...> context
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/docs/README.md:22: warning: Unexpected html tag <img> found within <a href=...> context
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/docs/README.md:33: warning: unable to resolve reference to `https:' for \ref command
-/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/docs/README.md:240: warning: unable to resolve reference to `https:' for \ref command
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/dox/modm-processing-resumable.dox:31: warning: explicit link request to 'Functions' could not be resolved
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/dox/modm-processing-resumable.dox:32: warning: explicit link request to 'Functions' could not be resolved
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/README.md:5: warning: Unexpected html tag <img> found within <a href=...> context
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/README.md:22: warning: Unexpected html tag <img> found within <a href=...> context
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/README.md:33: warning: unable to resolve reference to `https:' for \ref command
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/README.md:153: warning: expected <td> or <th> tag but found <tr> instead!
+/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/docs/README.md:244: warning: unable to resolve reference to `https:' for \ref command

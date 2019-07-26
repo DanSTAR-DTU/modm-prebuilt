@@ -5,227 +5,227 @@
     <includes refid="device_8hpp" local="yes">../device.hpp</includes>
     <includes refid="connector_8hpp" local="no">modm/platform/gpio/connector.hpp</includes>
     <includes refid="i2c__master_8hpp" local="no">modm/architecture/interface/i2c_master.hpp</includes>
-    <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <includedby refid="platform_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <incdepgraph>
-      <node id="5952">
+      <node id="6012">
+        <label>unused.hpp</label>
+        <link refid="unused_8hpp"/>
+        <childnode refid="6005" relation="include">
+        </childnode>
+        <childnode refid="6006" relation="include">
+        </childnode>
+      </node>
+      <node id="6018">
         <label>stdarg.h</label>
       </node>
-      <node id="5935">
+      <node id="5997">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp</label>
+        <link refid="i2c__master__3_8hpp"/>
+        <childnode refid="5998" relation="include">
+        </childnode>
+        <childnode refid="6004" relation="include">
+        </childnode>
+        <childnode refid="6014" relation="include">
+        </childnode>
+      </node>
+      <node id="6005">
+        <label>base.hpp</label>
+        <link refid="base_8hpp"/>
+        <childnode refid="5998" relation="include">
+        </childnode>
+        <childnode refid="6006" relation="include">
+        </childnode>
+        <childnode refid="6007" relation="include">
+        </childnode>
+        <childnode refid="6010" relation="include">
+        </childnode>
+      </node>
+      <node id="6001">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="5940">
-        <label>modm/architecture/interface/gpio.hpp</label>
-        <link refid="gpio_8hpp"/>
-        <childnode refid="5933" relation="include">
-        </childnode>
-        <childnode refid="5934" relation="include">
-        </childnode>
-      </node>
-      <node id="5945">
-        <label>connector_detail.hpp</label>
-        <link refid="connector__detail_8hpp"/>
-        <childnode refid="5946" relation="include">
-        </childnode>
-        <childnode refid="5947" relation="include">
-        </childnode>
-      </node>
-      <node id="5937">
+      <node id="6003">
         <label>system_stm32f4xx.h</label>
       </node>
-      <node id="5944">
+      <node id="6014">
+        <label>modm/architecture/interface/i2c_master.hpp</label>
+        <link refid="i2c__master_8hpp"/>
+        <childnode refid="6015" relation="include">
+        </childnode>
+        <childnode refid="6022" relation="include">
+        </childnode>
+        <childnode refid="6023" relation="include">
+        </childnode>
+      </node>
+      <node id="5999">
+        <label>stdint.h</label>
+      </node>
+      <node id="6017">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="6008" relation="include">
+        </childnode>
+        <childnode refid="6000" relation="include">
+        </childnode>
+        <childnode refid="6018" relation="include">
+        </childnode>
+        <childnode refid="6019" relation="include">
+        </childnode>
+        <childnode refid="6013" relation="include">
+        </childnode>
+        <childnode refid="6020" relation="include">
+        </childnode>
+        <childnode refid="6021" relation="include">
+        </childnode>
+      </node>
+      <node id="6009">
+        <label>cmath</label>
+      </node>
+      <node id="6010">
         <label>modm/platform/core/peripherals.hpp</label>
         <link refid="peripherals_8hpp"/>
       </node>
-      <node id="5933">
-        <label>stdint.h</label>
-      </node>
-      <node id="5946">
-        <label>unused.hpp</label>
-        <link refid="unused_8hpp"/>
-        <childnode refid="5939" relation="include">
+      <node id="6007">
+        <label>modm/math/utils/bit_operation.hpp</label>
+        <link refid="bit__operation_8hpp"/>
+        <childnode refid="6008" relation="include">
         </childnode>
-        <childnode refid="5940" relation="include">
+        <childnode refid="6009" relation="include">
+        </childnode>
+        <childnode refid="5999" relation="include">
+        </childnode>
+        <childnode refid="6001" relation="include">
+        </childnode>
+        <childnode refid="6000" relation="include">
         </childnode>
       </node>
-      <node id="5949">
+      <node id="6025">
+        <label>modm/math/units.hpp</label>
+        <link refid="units_8hpp"/>
+        <childnode refid="5999" relation="include">
+        </childnode>
+        <childnode refid="6000" relation="include">
+        </childnode>
+      </node>
+      <node id="6021">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="5999" relation="include">
+        </childnode>
+        <childnode refid="6020" relation="include">
+        </childnode>
+      </node>
+      <node id="6022">
+        <label>i2c_transaction.hpp</label>
+        <link refid="i2c__transaction_8hpp"/>
+        <childnode refid="6015" relation="include">
+        </childnode>
+      </node>
+      <node id="6023">
+        <label>peripheral.hpp</label>
+        <link refid="peripheral_8hpp"/>
+        <childnode refid="5999" relation="include">
+        </childnode>
+        <childnode refid="6008" relation="include">
+        </childnode>
+        <childnode refid="6024" relation="include">
+        </childnode>
+        <childnode refid="6025" relation="include">
+        </childnode>
+      </node>
+      <node id="6015">
         <label>i2c.hpp</label>
         <link refid="i2c_8hpp"/>
-        <childnode refid="5940" relation="include">
+        <childnode refid="6006" relation="include">
         </childnode>
-        <childnode refid="5950" relation="include">
+        <childnode refid="6016" relation="include">
         </childnode>
-        <childnode refid="5951" relation="include">
+        <childnode refid="6017" relation="include">
         </childnode>
       </node>
-      <node id="5954">
+      <node id="5998">
+        <label>../device.hpp</label>
+        <link refid="device_8hpp"/>
+        <childnode refid="5999" relation="include">
+        </childnode>
+        <childnode refid="6000" relation="include">
+        </childnode>
+        <childnode refid="6002" relation="include">
+        </childnode>
+        <childnode refid="6003" relation="include">
+        </childnode>
+      </node>
+      <node id="6000">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="6001" relation="include">
+        </childnode>
+      </node>
+      <node id="6008">
+        <label>cstddef</label>
+      </node>
+      <node id="6016">
+        <label>modm/architecture/interface/delay.hpp</label>
+        <link refid="architecture_2interface_2delay_8hpp"/>
+        <childnode refid="5999" relation="include">
+        </childnode>
+      </node>
+      <node id="6011">
+        <label>connector_detail.hpp</label>
+        <link refid="connector__detail_8hpp"/>
+        <childnode refid="6012" relation="include">
+        </childnode>
+        <childnode refid="6013" relation="include">
+        </childnode>
+      </node>
+      <node id="6013">
+        <label>type_traits</label>
+      </node>
+      <node id="6006">
+        <label>modm/architecture/interface/gpio.hpp</label>
+        <link refid="gpio_8hpp"/>
+        <childnode refid="5999" relation="include">
+        </childnode>
+        <childnode refid="6000" relation="include">
+        </childnode>
+      </node>
+      <node id="6002">
+        <label>stm32f446xx.h</label>
+      </node>
+      <node id="6004">
+        <label>modm/platform/gpio/connector.hpp</label>
+        <link refid="connector_8hpp"/>
+        <childnode refid="6005" relation="include">
+        </childnode>
+        <childnode refid="6011" relation="include">
+        </childnode>
+      </node>
+      <node id="6024">
+        <label>modm/math/tolerance.hpp</label>
+        <link refid="tolerance_8hpp"/>
+        <childnode refid="5999" relation="include">
+        </childnode>
+        <childnode refid="6025" relation="include">
+        </childnode>
+      </node>
+      <node id="6019">
+        <label>inttypes.h</label>
+      </node>
+      <node id="6020">
         <label>iodevice.hpp</label>
         <link refid="iodevice_8hpp"/>
       </node>
-      <node id="5943">
-        <label>cmath</label>
-      </node>
-      <node id="5955">
-        <label>iodevice_wrapper.hpp</label>
-        <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="5933" relation="include">
-        </childnode>
-        <childnode refid="5954" relation="include">
-        </childnode>
-      </node>
-      <node id="5939">
-        <label>base.hpp</label>
-        <link refid="base_8hpp"/>
-        <childnode refid="5932" relation="include">
-        </childnode>
-        <childnode refid="5940" relation="include">
-        </childnode>
-        <childnode refid="5941" relation="include">
-        </childnode>
-        <childnode refid="5944" relation="include">
-        </childnode>
-      </node>
-      <node id="5950">
-        <label>modm/architecture/interface/delay.hpp</label>
-        <link refid="architecture_2interface_2delay_8hpp"/>
-        <childnode refid="5933" relation="include">
-        </childnode>
-      </node>
-      <node id="5951">
-        <label>modm/io/iostream.hpp</label>
-        <link refid="iostream_8hpp"/>
-        <childnode refid="5942" relation="include">
-        </childnode>
-        <childnode refid="5934" relation="include">
-        </childnode>
-        <childnode refid="5952" relation="include">
-        </childnode>
-        <childnode refid="5953" relation="include">
-        </childnode>
-        <childnode refid="5947" relation="include">
-        </childnode>
-        <childnode refid="5954" relation="include">
-        </childnode>
-        <childnode refid="5955" relation="include">
-        </childnode>
-      </node>
-      <node id="5934">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="5935" relation="include">
-        </childnode>
-      </node>
-      <node id="5941">
-        <label>modm/math/utils/bit_operation.hpp</label>
-        <link refid="bit__operation_8hpp"/>
-        <childnode refid="5942" relation="include">
-        </childnode>
-        <childnode refid="5943" relation="include">
-        </childnode>
-        <childnode refid="5933" relation="include">
-        </childnode>
-        <childnode refid="5935" relation="include">
-        </childnode>
-        <childnode refid="5934" relation="include">
-        </childnode>
-      </node>
-      <node id="5932">
-        <label>../device.hpp</label>
-        <link refid="device_8hpp"/>
-        <childnode refid="5933" relation="include">
-        </childnode>
-        <childnode refid="5934" relation="include">
-        </childnode>
-        <childnode refid="5936" relation="include">
-        </childnode>
-        <childnode refid="5937" relation="include">
-        </childnode>
-      </node>
-      <node id="5958">
-        <label>modm/math/tolerance.hpp</label>
-        <link refid="tolerance_8hpp"/>
-        <childnode refid="5933" relation="include">
-        </childnode>
-        <childnode refid="5959" relation="include">
-        </childnode>
-      </node>
-      <node id="5948">
-        <label>modm/architecture/interface/i2c_master.hpp</label>
-        <link refid="i2c__master_8hpp"/>
-        <childnode refid="5949" relation="include">
-        </childnode>
-        <childnode refid="5956" relation="include">
-        </childnode>
-        <childnode refid="5957" relation="include">
-        </childnode>
-      </node>
-      <node id="5942">
-        <label>cstddef</label>
-      </node>
-      <node id="5956">
-        <label>i2c_transaction.hpp</label>
-        <link refid="i2c__transaction_8hpp"/>
-        <childnode refid="5949" relation="include">
-        </childnode>
-      </node>
-      <node id="5938">
-        <label>modm/platform/gpio/connector.hpp</label>
-        <link refid="connector_8hpp"/>
-        <childnode refid="5939" relation="include">
-        </childnode>
-        <childnode refid="5945" relation="include">
-        </childnode>
-      </node>
-      <node id="5947">
-        <label>type_traits</label>
-      </node>
-      <node id="5936">
-        <label>stm32f446xx.h</label>
-      </node>
-      <node id="5931">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp</label>
-        <link refid="i2c__master__3_8hpp"/>
-        <childnode refid="5932" relation="include">
-        </childnode>
-        <childnode refid="5938" relation="include">
-        </childnode>
-        <childnode refid="5948" relation="include">
-        </childnode>
-      </node>
-      <node id="5959">
-        <label>modm/math/units.hpp</label>
-        <link refid="units_8hpp"/>
-        <childnode refid="5933" relation="include">
-        </childnode>
-        <childnode refid="5934" relation="include">
-        </childnode>
-      </node>
-      <node id="5953">
-        <label>inttypes.h</label>
-      </node>
-      <node id="5957">
-        <label>peripheral.hpp</label>
-        <link refid="peripheral_8hpp"/>
-        <childnode refid="5933" relation="include">
-        </childnode>
-        <childnode refid="5942" relation="include">
-        </childnode>
-        <childnode refid="5958" relation="include">
-        </childnode>
-        <childnode refid="5959" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="5961">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
-        <link refid="platform_8hpp"/>
-      </node>
-      <node id="5960">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp</label>
+      <node id="6026">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp</label>
         <link refid="i2c__master__3_8hpp"/>
-        <childnode refid="5961" relation="include">
+        <childnode refid="6027" relation="include">
         </childnode>
+      </node>
+      <node id="6027">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classmodm_1_1platform_1_1_i2c_master3" prot="public">modm::platform::I2cMaster3</innerclass>
@@ -235,6 +235,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp"/>
   </compounddef>
 </doxygen>

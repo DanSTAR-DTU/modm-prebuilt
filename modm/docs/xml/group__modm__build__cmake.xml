@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__modm__build__cmake" kind="group">
+    <compoundname>modm_build_cmake</compoundname>
+    <title>CMake Build Script Generator</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ulink url="http://cmake.org">CMake</ulink> is a widely used build tool supported by almost every IDE.</para><para>This module generates three files:</para><para><itemizedlist>
+<listitem><para>a <computeroutput>modm/repo.cmake</computeroutput> file: configures all required CMake tools with the right settings (also using information from the <computeroutput>modm:build</computeroutput> module) to compile the modm library.</para></listitem><listitem><para>a top-level <computeroutput>CMakeLists.txt</computeroutput>: configures CMake to build modm and your application.</para></listitem><listitem><para>a top-level <computeroutput>Makefile</computeroutput>: provides a convenience wrapper for calling CMake from the command line.</para></listitem></itemizedlist>
+</para><para>This module is intended to be used for integration with IDEs that natively only support CMake. It therefore only provides the bare minimum of features to compile and upload your application to your target. For additional build tools features see the <computeroutput>modm:build:scons</computeroutput> module.</para><para><heading level="2">Make Methods</heading>
+</para><para>The <computeroutput>Makefile</computeroutput> wrapper provides these convenience methods.</para><para><heading level="4">make cmake</heading>
+</para><para>Generates the CMake build folders and initializes the build system.</para><para><programlisting><codeline><highlight class="normal"><sp/>$<sp/>make<sp/>cmake</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">--<sp/>Configuring<sp/>done</highlight></codeline>
+<codeline><highlight class="normal">--<sp/>Generating<sp/>done</highlight></codeline>
+<codeline><highlight class="normal">--<sp/>Build<sp/>files<sp/>have<sp/>been<sp/>written<sp/>to:<sp/>build/{project.name}/cmake-build-release</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">--<sp/>Build<sp/>files<sp/>have<sp/>been<sp/>written<sp/>to:<sp/>build/{project.name}/cmake-build-debug</highlight></codeline>
+</programlisting></para><para><simplesect kind="note"><para>&quot;You must call this once before you can build!&quot; If you forget to call this first, the build will fail with this error message:</para></simplesect>
+~~~ $ make build-release Error: build/cmake-build-release is not a directory make: *** [build-release] Error 1 ~~~</para><para><heading level="4">make build-release</heading>
+</para><para><heading level="4">make build-debug</heading>
+</para><para>Compiles your application into an executable using the release or debug profile.</para><para><programlisting><codeline><highlight class="normal"><sp/>$<sp/>make<sp/>build-release</highlight></codeline>
+<codeline><highlight class="normal">Scanning<sp/>dependencies<sp/>of<sp/>target<sp/>blink_cmake</highlight></codeline>
+<codeline><highlight class="normal">[<sp/><sp/>3%]<sp/>Building<sp/>C<sp/>object<sp/>CMakeFiles/blink_cmake.dir/modm/ext/cmsis/device/peripherals.c.o</highlight></codeline>
+<codeline><highlight class="normal">[<sp/><sp/>7%]<sp/>Building<sp/>CXX<sp/>object<sp/>CMakeFiles/blink_cmake.dir/modm/src/modm/architecture/driver/atomic/flag.cpp.o</highlight></codeline>
+<codeline><highlight class="normal">[<sp/>19%]<sp/>Building<sp/>CXX<sp/>object<sp/>CMakeFiles/blink_cmake.dir/modm/src/modm/board/board.cpp.o</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">[<sp/>96%]<sp/>Building<sp/>CXX<sp/>object<sp/>CMakeFiles/blink_cmake.dir/main.cpp.o</highlight></codeline>
+<codeline><highlight class="normal">[100%]<sp/>Linking<sp/>CXX<sp/>executable<sp/>blink_cmake.elf</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>text<sp/><sp/><sp/><sp/>data<sp/><sp/><sp/><sp/><sp/>bss<sp/><sp/><sp/><sp/><sp/>dec<sp/><sp/><sp/><sp/><sp/>hex<sp/>filename</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>1596<sp/><sp/><sp/><sp/><sp/><sp/>52<sp/><sp/><sp/>20468<sp/><sp/><sp/>22116<sp/><sp/><sp/><sp/>5664<sp/>blink_cmake.elf</highlight></codeline>
+<codeline><highlight class="normal">[100%]<sp/>Built<sp/>target<sp/>blink_cmake.bin</highlight></codeline>
+<codeline><highlight class="normal">[100%]<sp/>Built<sp/>target<sp/>blink_cmake.hex</highlight></codeline>
+<codeline><highlight class="normal">[100%]<sp/>Built<sp/>target<sp/>blink_cmake.lss</highlight></codeline>
+</programlisting></para><para><heading level="4">make upload-release</heading>
+</para><para><heading level="4">make upload-debug</heading>
+</para><para>Writes the executable onto your target via AvrDude or OpenOCD. This is a convenience wrapper around the programming options and methods defined in the <computeroutput>modm:build</computeroutput> module. (* <emphasis>only AVR and ARM Cortex-M targets</emphasis>)</para><para><programlisting><codeline><highlight class="normal"><sp/>$<sp/>make<sp/>upload-release</highlight></codeline>
+<codeline><highlight class="normal">[100%]<sp/>Built<sp/>target<sp/>blink_cmake</highlight></codeline>
+<codeline><highlight class="normal">[100%]<sp/>Built<sp/>target<sp/>blink_cmake.bin</highlight></codeline>
+<codeline><highlight class="normal">[100%]<sp/>Built<sp/>target<sp/>blink_cmake.hex</highlight></codeline>
+<codeline><highlight class="normal">[100%]<sp/>Built<sp/>target<sp/>blink_cmake.lss</highlight></codeline>
+<codeline><highlight class="normal">Open<sp/>On-Chip<sp/>Debugger<sp/>0.10.0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">Info<sp/>:<sp/>using<sp/>stlink<sp/>api<sp/>v2</highlight></codeline>
+<codeline><highlight class="normal">Info<sp/>:<sp/>Target<sp/>voltage:<sp/>3.171034</highlight></codeline>
+<codeline><highlight class="normal">Info<sp/>:<sp/>stm32f1x.cpu:<sp/>hardware<sp/>has<sp/>6<sp/>breakpoints,<sp/>4<sp/>watchpoints</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Programming<sp/>Started<sp/>**</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>erase<sp/>enabled</highlight></codeline>
+<codeline><highlight class="normal">Info<sp/>:<sp/>device<sp/>id<sp/>=<sp/>0x20036410</highlight></codeline>
+<codeline><highlight class="normal">Info<sp/>:<sp/>flash<sp/>size<sp/>=<sp/>64kbytes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">wrote<sp/>2048<sp/>bytes<sp/>from<sp/>file<sp/>build/cmake-build-release/blink_cmake.elf<sp/>in<sp/>0.187893s<sp/>(10.644<sp/>KiB/s)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Programming<sp/>Finished<sp/>**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Verify<sp/>Started<sp/>**</highlight></codeline>
+<codeline><highlight class="normal">verified<sp/>1652<sp/>bytes<sp/>in<sp/>0.104584s<sp/>(15.426<sp/>KiB/s)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Verified<sp/>OK<sp/>**</highlight></codeline>
+<codeline><highlight class="normal">shutdown<sp/>command<sp/>invoked</highlight></codeline>
+</programlisting></para><para><heading level="4">make gdb</heading>
+</para><para><heading level="4">make gdb-release</heading>
+</para><para>Launches GDB with the debug or release executable. This is just a convenience wrapper for the debug functionality defined in the <computeroutput>modm:build</computeroutput> module. (* <emphasis>only ARM Cortex-M targets</emphasis>)</para><para>OpenOCD must already be running in the background**. Launch it by manually calling <computeroutput>make openocd</computeroutput> in another terminal.</para><para><heading level="4">make openocd</heading>
+</para><para>Starts OpenOCD with the modm specific configuration.</para><para><heading level="4">make clean</heading>
+</para><para>Removes the CMake build artifacts.</para><para><heading level="4">make cleanall</heading>
+</para><para>Removes the entire build folder. You must then first call <computeroutput>make cmake</computeroutput> before being able to build again.</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

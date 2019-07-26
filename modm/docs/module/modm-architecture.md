@@ -131,6 +131,7 @@ using modm::Register8 = typedef Register<uint8_t>;
 #define MODM_FLAGS16(Enum)
 #define MODM_FLAGS32(Enum)
 #define MODM_FLAGS8(Enum)
+#define MODM_FLAGS_CONFIG(Parent, Config)
 #define MODM_ISR(vector, ...)
 #define MODM_ISR_CALL(vector)
 #define MODM_ISR_DECL(vector)

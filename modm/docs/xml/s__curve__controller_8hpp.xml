@@ -4,41 +4,41 @@
     <compoundname>s_curve_controller.hpp</compoundname>
     <includes local="no">cmath</includes>
     <includes local="yes">s_curve_controller_impl.hpp</includes>
-    <includedby refid="filter_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter.hpp</includedby>
-    <includedby refid="math_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <includedby refid="filter_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/filter.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
     <incdepgraph>
-      <node id="2685">
+      <node id="2701">
         <label>cmath</label>
       </node>
-      <node id="2684">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp</label>
+      <node id="2700">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp</label>
         <link refid="s__curve__controller_8hpp"/>
-        <childnode refid="2685" relation="include">
+        <childnode refid="2701" relation="include">
         </childnode>
-        <childnode refid="2686" relation="include">
+        <childnode refid="2702" relation="include">
         </childnode>
       </node>
-      <node id="2686">
+      <node id="2702">
         <label>s_curve_controller_impl.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2689">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
+      <node id="2705">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
         <link refid="math_8hpp"/>
       </node>
-      <node id="2688">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter.hpp</label>
-        <link refid="filter_8hpp"/>
-        <childnode refid="2689" relation="include">
+      <node id="2703">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp</label>
+        <link refid="s__curve__controller_8hpp"/>
+        <childnode refid="2704" relation="include">
+        </childnode>
+        <childnode refid="2705" relation="include">
         </childnode>
       </node>
-      <node id="2687">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp</label>
-        <link refid="s__curve__controller_8hpp"/>
-        <childnode refid="2688" relation="include">
-        </childnode>
-        <childnode refid="2689" relation="include">
+      <node id="2704">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/filter.hpp</label>
+        <link refid="filter_8hpp"/>
+        <childnode refid="2705" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -49,6 +49,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp"/>
   </compounddef>
 </doxygen>

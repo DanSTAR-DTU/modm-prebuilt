@@ -39,7 +39,7 @@
 <para>Possible states of a timer </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" line="28" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" bodystart="26" bodyend="32"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" line="28" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" bodystart="26" bodyend="32"/>
       </memberdef>
       <memberdef kind="enum" id="group__modm__processing__timer_1gacc7987b8fe7071d9cd993829ee005298" prot="public" static="no">
         <name>TimeoutState</name>
@@ -73,7 +73,7 @@
 <para>Possible states of a timeout </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="30" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="28" bodyend="34"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="30" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="28" bodyend="34"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -88,7 +88,7 @@
 <para>Periodic software timer for up to 32 seconds with millisecond resolution.</para><para>Extra care must be taken when not calling the isExpired() method for more than 32 seconds. Due to an overflow in the implementation this might add an additional delay of up to 32s ticks in the worst case. Always call restart() or restart(time) before reusing the timer to avoid this behaviour.</para><para>If you need a longer time period, use PeriodicTimer. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" line="105" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" bodystart="105" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" line="105" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" bodystart="105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__processing__timer_1gafd9875f046c1bd3358612162e7ad8839" prot="public" static="no">
         <type>GenericPeriodicTimer&lt; ::<ref refid="classmodm_1_1_clock" kindref="compound">modm::Clock</ref>, Timestamp &gt;</type>
@@ -101,7 +101,7 @@
 <para>Periodic software timer for up to 24 days with millisecond resolution. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" line="109" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" bodystart="109" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" line="109" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__processing__timer_1ga5942cb6169725e55e37487efc326851b" prot="public" static="no">
         <type>GenericTimeout&lt; ::<ref refid="classmodm_1_1_clock" kindref="compound">modm::Clock</ref>, ShortTimestamp &gt;</type>
@@ -114,7 +114,7 @@
 <para>Software timeout for up to 32 seconds with millisecond resolution.</para><para>Extra care must be taken when not calling the isExpired() method for more than 32 seconds. Due to an overflow in the implementation this might add an additional delay of up to 32s ticks in the worst case. Always call restart(time) before reusing the timer to avoid this behaviour.</para><para>If you need a longer time period, use Timeout. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="134" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="134" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="134" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="134" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__processing__timer_1ga527fc57fdfcde22d06c2c1b913ec4d58" prot="public" static="no">
         <type>GenericTimeout&lt; ::<ref refid="classmodm_1_1_clock" kindref="compound">modm::Clock</ref>, Timestamp &gt;</type>
@@ -127,7 +127,7 @@
 <para>Software timeout for up to 24 days with millisecond resolution. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="138" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="138" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" line="138" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp" bodystart="138" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__processing__timer_1ga842ffd54d7e497f11c85118cd2a52570" prot="public" static="no">
         <type>GenericTimestamp&lt; uint16_t &gt;</type>
@@ -140,7 +140,7 @@
 <para>16bit timestamp, which can hold up to 65 seconds at millisecond resolution. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" line="114" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" bodystart="114" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" line="114" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" bodystart="114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__modm__processing__timer_1ga8f3b60fc7930db595007904dc1e2090d" prot="public" static="no">
         <type>GenericTimestamp&lt; uint32_t &gt;</type>
@@ -153,7 +153,7 @@
 <para>32bit timestamp, which can hold up to 49 days at millisecond resolution. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" line="118" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" bodystart="118" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" line="118" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp" bodystart="118" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

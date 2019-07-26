@@ -5,248 +5,248 @@
     <includes refid="dummy_8hpp" local="no">modm/utils/dummy.hpp</includes>
     <includes refid="adc__1_8hpp" local="yes">adc_1.hpp</includes>
     <includes refid="adc__interrupt_8hpp" local="no">modm/architecture/interface/adc_interrupt.hpp</includes>
-    <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
+    <includedby refid="platform_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <incdepgraph>
-      <node id="4214">
+      <node id="4270">
+        <label>unused.hpp</label>
+        <link refid="unused_8hpp"/>
+        <childnode refid="4264" relation="include">
+        </childnode>
+        <childnode refid="4265" relation="include">
+        </childnode>
+      </node>
+      <node id="4258">
         <label>stdarg.h</label>
       </node>
-      <node id="4203">
+      <node id="4264">
+        <label>base.hpp</label>
+        <link refid="base_8hpp"/>
+        <childnode refid="4245" relation="include">
+        </childnode>
+        <childnode refid="4265" relation="include">
+        </childnode>
+        <childnode refid="4266" relation="include">
+        </childnode>
+        <childnode refid="4268" relation="include">
+        </childnode>
+      </node>
+      <node id="4247">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="4221">
-        <label>modm/architecture/interface/gpio.hpp</label>
-        <link refid="gpio_8hpp"/>
-        <childnode refid="4200" relation="include">
-        </childnode>
-        <childnode refid="4202" relation="include">
-        </childnode>
-      </node>
-      <node id="4225">
-        <label>connector_detail.hpp</label>
-        <link refid="connector__detail_8hpp"/>
-        <childnode refid="4226" relation="include">
-        </childnode>
-        <childnode refid="4216" relation="include">
-        </childnode>
-      </node>
-      <node id="4227">
+      <node id="4271">
         <label>adc_1_impl.hpp</label>
       </node>
-      <node id="4205">
+      <node id="4249">
         <label>system_stm32f4xx.h</label>
       </node>
-      <node id="4224">
-        <label>modm/platform/core/peripherals.hpp</label>
-        <link refid="peripherals_8hpp"/>
-      </node>
-      <node id="4200">
-        <label>stdint.h</label>
-      </node>
-      <node id="4226">
-        <label>unused.hpp</label>
-        <link refid="unused_8hpp"/>
-        <childnode refid="4220" relation="include">
-        </childnode>
-        <childnode refid="4221" relation="include">
-        </childnode>
-      </node>
-      <node id="4217">
-        <label>iodevice.hpp</label>
-        <link refid="iodevice_8hpp"/>
-      </node>
-      <node id="4223">
-        <label>cmath</label>
-      </node>
-      <node id="4218">
-        <label>iodevice_wrapper.hpp</label>
-        <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="4200" relation="include">
-        </childnode>
-        <childnode refid="4217" relation="include">
-        </childnode>
-      </node>
-      <node id="4220">
-        <label>base.hpp</label>
-        <link refid="base_8hpp"/>
-        <childnode refid="4201" relation="include">
-        </childnode>
-        <childnode refid="4221" relation="include">
-        </childnode>
-        <childnode refid="4222" relation="include">
-        </childnode>
-        <childnode refid="4224" relation="include">
-        </childnode>
-      </node>
-      <node id="4213">
-        <label>modm/io/iostream.hpp</label>
-        <link refid="iostream_8hpp"/>
-        <childnode refid="4208" relation="include">
-        </childnode>
-        <childnode refid="4202" relation="include">
-        </childnode>
-        <childnode refid="4214" relation="include">
-        </childnode>
-        <childnode refid="4215" relation="include">
-        </childnode>
-        <childnode refid="4216" relation="include">
-        </childnode>
-        <childnode refid="4217" relation="include">
-        </childnode>
-        <childnode refid="4218" relation="include">
-        </childnode>
-      </node>
-      <node id="4228">
-        <label>modm/architecture/interface/adc_interrupt.hpp</label>
-        <link refid="adc__interrupt_8hpp"/>
-        <childnode refid="4206" relation="include">
-        </childnode>
-      </node>
-      <node id="4206">
-        <label>modm/architecture/interface/adc.hpp</label>
-        <link refid="adc_8hpp"/>
-        <childnode refid="4207" relation="include">
-        </childnode>
-      </node>
-      <node id="4202">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="4203" relation="include">
-        </childnode>
-      </node>
-      <node id="4199">
-        <label>adc_1.hpp</label>
-        <link refid="adc__1_8hpp"/>
-        <childnode refid="4200" relation="include">
-        </childnode>
-        <childnode refid="4201" relation="include">
-        </childnode>
-        <childnode refid="4206" relation="include">
-        </childnode>
-        <childnode refid="4211" relation="include">
-        </childnode>
-        <childnode refid="4219" relation="include">
-        </childnode>
-        <childnode refid="4227" relation="include">
-        </childnode>
-      </node>
-      <node id="4211">
-        <label>modm/architecture/interface/register.hpp</label>
-        <link refid="register_8hpp"/>
-        <childnode refid="4200" relation="include">
-        </childnode>
-        <childnode refid="4212" relation="include">
-        </childnode>
-        <childnode refid="4203" relation="include">
-        </childnode>
-        <childnode refid="4213" relation="include">
-        </childnode>
-      </node>
-      <node id="4222">
-        <label>modm/math/utils/bit_operation.hpp</label>
-        <link refid="bit__operation_8hpp"/>
-        <childnode refid="4208" relation="include">
-        </childnode>
-        <childnode refid="4223" relation="include">
-        </childnode>
-        <childnode refid="4200" relation="include">
-        </childnode>
-        <childnode refid="4203" relation="include">
-        </childnode>
-        <childnode refid="4202" relation="include">
-        </childnode>
-      </node>
-      <node id="4201">
-        <label>../device.hpp</label>
-        <link refid="device_8hpp"/>
-        <childnode refid="4200" relation="include">
-        </childnode>
-        <childnode refid="4202" relation="include">
-        </childnode>
-        <childnode refid="4204" relation="include">
-        </childnode>
-        <childnode refid="4205" relation="include">
-        </childnode>
-      </node>
-      <node id="4197">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp</label>
-        <link refid="adc__interrupt__1_8hpp"/>
-        <childnode refid="4198" relation="include">
-        </childnode>
-        <childnode refid="4199" relation="include">
-        </childnode>
-        <childnode refid="4228" relation="include">
-        </childnode>
-      </node>
-      <node id="4209">
-        <label>modm/math/tolerance.hpp</label>
-        <link refid="tolerance_8hpp"/>
-        <childnode refid="4200" relation="include">
-        </childnode>
-        <childnode refid="4210" relation="include">
-        </childnode>
-      </node>
-      <node id="4208">
-        <label>cstddef</label>
-      </node>
-      <node id="4198">
+      <node id="4242">
         <label>modm/utils/dummy.hpp</label>
         <link refid="dummy_8hpp"/>
       </node>
-      <node id="4219">
-        <label>modm/platform/gpio/connector.hpp</label>
-        <link refid="connector_8hpp"/>
-        <childnode refid="4220" relation="include">
+      <node id="4244">
+        <label>stdint.h</label>
+      </node>
+      <node id="4257">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="4252" relation="include">
         </childnode>
-        <childnode refid="4225" relation="include">
+        <childnode refid="4246" relation="include">
+        </childnode>
+        <childnode refid="4258" relation="include">
+        </childnode>
+        <childnode refid="4259" relation="include">
+        </childnode>
+        <childnode refid="4260" relation="include">
+        </childnode>
+        <childnode refid="4261" relation="include">
+        </childnode>
+        <childnode refid="4262" relation="include">
         </childnode>
       </node>
-      <node id="4216">
-        <label>type_traits</label>
+      <node id="4267">
+        <label>cmath</label>
       </node>
-      <node id="4204">
-        <label>stm32f446xx.h</label>
+      <node id="4268">
+        <label>modm/platform/core/peripherals.hpp</label>
+        <link refid="peripherals_8hpp"/>
       </node>
-      <node id="4212">
+      <node id="4250">
+        <label>modm/architecture/interface/adc.hpp</label>
+        <link refid="adc_8hpp"/>
+        <childnode refid="4251" relation="include">
+        </childnode>
+      </node>
+      <node id="4256">
         <label>modm/math/utils/bit_constants.hpp</label>
         <link refid="bit__constants_8hpp"/>
-        <childnode refid="4200" relation="include">
+        <childnode refid="4244" relation="include">
         </childnode>
       </node>
-      <node id="4210">
+      <node id="4266">
+        <label>modm/math/utils/bit_operation.hpp</label>
+        <link refid="bit__operation_8hpp"/>
+        <childnode refid="4252" relation="include">
+        </childnode>
+        <childnode refid="4267" relation="include">
+        </childnode>
+        <childnode refid="4244" relation="include">
+        </childnode>
+        <childnode refid="4247" relation="include">
+        </childnode>
+        <childnode refid="4246" relation="include">
+        </childnode>
+      </node>
+      <node id="4254">
         <label>modm/math/units.hpp</label>
         <link refid="units_8hpp"/>
-        <childnode refid="4200" relation="include">
+        <childnode refid="4244" relation="include">
         </childnode>
-        <childnode refid="4202" relation="include">
+        <childnode refid="4246" relation="include">
         </childnode>
       </node>
-      <node id="4215">
-        <label>inttypes.h</label>
+      <node id="4262">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="4244" relation="include">
+        </childnode>
+        <childnode refid="4261" relation="include">
+        </childnode>
       </node>
-      <node id="4207">
+      <node id="4243">
+        <label>adc_1.hpp</label>
+        <link refid="adc__1_8hpp"/>
+        <childnode refid="4244" relation="include">
+        </childnode>
+        <childnode refid="4245" relation="include">
+        </childnode>
+        <childnode refid="4250" relation="include">
+        </childnode>
+        <childnode refid="4255" relation="include">
+        </childnode>
+        <childnode refid="4263" relation="include">
+        </childnode>
+        <childnode refid="4271" relation="include">
+        </childnode>
+      </node>
+      <node id="4251">
         <label>modm/architecture/interface/peripheral.hpp</label>
         <link refid="peripheral_8hpp"/>
-        <childnode refid="4200" relation="include">
+        <childnode refid="4244" relation="include">
         </childnode>
-        <childnode refid="4208" relation="include">
+        <childnode refid="4252" relation="include">
         </childnode>
-        <childnode refid="4209" relation="include">
+        <childnode refid="4253" relation="include">
         </childnode>
-        <childnode refid="4210" relation="include">
+        <childnode refid="4254" relation="include">
         </childnode>
+      </node>
+      <node id="4245">
+        <label>../device.hpp</label>
+        <link refid="device_8hpp"/>
+        <childnode refid="4244" relation="include">
+        </childnode>
+        <childnode refid="4246" relation="include">
+        </childnode>
+        <childnode refid="4248" relation="include">
+        </childnode>
+        <childnode refid="4249" relation="include">
+        </childnode>
+      </node>
+      <node id="4255">
+        <label>modm/architecture/interface/register.hpp</label>
+        <link refid="register_8hpp"/>
+        <childnode refid="4244" relation="include">
+        </childnode>
+        <childnode refid="4256" relation="include">
+        </childnode>
+        <childnode refid="4247" relation="include">
+        </childnode>
+        <childnode refid="4257" relation="include">
+        </childnode>
+      </node>
+      <node id="4246">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="4247" relation="include">
+        </childnode>
+      </node>
+      <node id="4272">
+        <label>modm/architecture/interface/adc_interrupt.hpp</label>
+        <link refid="adc__interrupt_8hpp"/>
+        <childnode refid="4250" relation="include">
+        </childnode>
+      </node>
+      <node id="4252">
+        <label>cstddef</label>
+      </node>
+      <node id="4241">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp</label>
+        <link refid="adc__interrupt__1_8hpp"/>
+        <childnode refid="4242" relation="include">
+        </childnode>
+        <childnode refid="4243" relation="include">
+        </childnode>
+        <childnode refid="4272" relation="include">
+        </childnode>
+      </node>
+      <node id="4269">
+        <label>connector_detail.hpp</label>
+        <link refid="connector__detail_8hpp"/>
+        <childnode refid="4270" relation="include">
+        </childnode>
+        <childnode refid="4260" relation="include">
+        </childnode>
+      </node>
+      <node id="4265">
+        <label>modm/architecture/interface/gpio.hpp</label>
+        <link refid="gpio_8hpp"/>
+        <childnode refid="4244" relation="include">
+        </childnode>
+        <childnode refid="4246" relation="include">
+        </childnode>
+      </node>
+      <node id="4260">
+        <label>type_traits</label>
+      </node>
+      <node id="4248">
+        <label>stm32f446xx.h</label>
+      </node>
+      <node id="4263">
+        <label>modm/platform/gpio/connector.hpp</label>
+        <link refid="connector_8hpp"/>
+        <childnode refid="4264" relation="include">
+        </childnode>
+        <childnode refid="4269" relation="include">
+        </childnode>
+      </node>
+      <node id="4253">
+        <label>modm/math/tolerance.hpp</label>
+        <link refid="tolerance_8hpp"/>
+        <childnode refid="4244" relation="include">
+        </childnode>
+        <childnode refid="4254" relation="include">
+        </childnode>
+      </node>
+      <node id="4259">
+        <label>inttypes.h</label>
+      </node>
+      <node id="4261">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4229">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp</label>
-        <link refid="adc__interrupt__1_8hpp"/>
-        <childnode refid="4230" relation="include">
-        </childnode>
-      </node>
-      <node id="4230">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
+      <node id="4274">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
+      </node>
+      <node id="4273">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp</label>
+        <link refid="adc__interrupt__1_8hpp"/>
+        <childnode refid="4274" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classmodm_1_1platform_1_1_adc_interrupt1" prot="public">modm::platform::AdcInterrupt1</innerclass>
@@ -256,6 +256,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp"/>
   </compounddef>
 </doxygen>

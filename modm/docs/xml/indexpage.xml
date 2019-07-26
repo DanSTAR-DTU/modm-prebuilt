@@ -16,7 +16,7 @@
 <listitem><para>GPIO and GPIO expanders.</para></listitem><listitem><para>ADC and Analog.</para></listitem><listitem><para>UART, I<superscript>2</superscript>C, SPI, CAN.</para></listitem></itemizedlist>
 </para></listitem><listitem><para>Interfaces and drivers for many external I<superscript>2</superscript>C and SPI sensors and devices.</para></listitem><listitem><para>Debug/logging system with IOStream interface.</para></listitem><listitem><para>Lightweight, stackless threads and resumable functions using cooperative multitasking.</para></listitem><listitem><para>Useful filter, interpolation and geometric algorithms.</para></listitem><listitem><para>Lightweight unit testing system (suitable for AVRs).</para></listitem><listitem><para>Graphical user interface for small binary and color displays.</para></listitem><listitem><para>Hundreds of tests to ensure correct functionality.</para></listitem></itemizedlist>
 </para><para><heading level="2">Targets</heading>
-</para><para>modm can generate code for 76AVR and 917 STM32 devices, however, there are different levels of support and testing.</para><para><center></center></para><para><center><table rows="4" cols="6"><row>
+</para><para>modm can generate code for 76AVR and 958 STM32 devices, however, there are different levels of support and testing.</para><para><center></center></para><para><center><table rows="4" cols="6"><row>
 <entry thead="yes"><para>Device Family </para></entry><entry thead="yes"><para>Support </para></entry><entry thead="yes"><para>Device Family </para></entry><entry thead="yes"><para>Support </para></entry><entry thead="yes"><para>Device Family </para></entry><entry thead="yes"><para>Support  </para></entry></row>
 <row>
 <entry thead="no"><para>AVR </para></entry><entry thead="no"><para>★★★ </para></entry><entry thead="no"><para>STM32F2 </para></entry><entry thead="no"><para>★★★ </para></entry><entry thead="no"><para>STM32F7 </para></entry><entry thead="no"><para>★★★★ </para></entry></row>
@@ -26,7 +26,7 @@
 <entry thead="no"><para>STM32F1 </para></entry><entry thead="no"><para>★★★★ </para></entry><entry thead="no"><para>STM32F4 </para></entry><entry thead="no"><para>★★★★★ </para></entry><entry thead="no"><para>STM32G0 </para></entry><entry thead="no"><para>★★★★ </para></entry></row>
 </table>
 </center></para><para>All of these targets are compiling and booting correctly (★) and have GPIO and UART working (★★). Most targets have support for basic peripherals, like I2C, SPI and ADC (★★★) as well as complicated peripherals, like Timers, CAN and external memory (★★★★). We also use a few targets in everyday development, which are very well tested (★★★★★).</para><para>We are only a small team of developers and are limited in the amount of targets we can support and test in hardware. We have prepared, but currently not finished support for STM32F2, STM32L0 and STM32L1. <ulink url="https://github.com/modm-io/modm/issues">Open an issue</ulink> to ask if your specific target is supported out-of-the-box and what you can do if it&apos;s not.</para><para><heading level="3">Boards</heading>
-</para><para>We have out-of-box support for <ulink url="https://github.com/modm-io/modm/tree/develop/src/modm/board">several development boards</ulink> including documentation.</para><para><center></center></para><para><center><table rows="7" cols="4"><row>
+</para><para>We have out-of-box support for <ulink url="https://github.com/modm-io/modm/tree/develop/src/modm/board">several development boards</ulink> including documentation.</para><para><center></center></para><para><center><table rows="8" cols="4"><row>
 <entry thead="no"><para>AL-AVREB-CAN </para></entry><entry thead="no"><para>Arduino NANO </para></entry><entry thead="no"><para>Arduino UNO </para></entry><entry thead="no"><para>Black Pill </para></entry></row>
 <row>
 <entry thead="no"><para>Blue Pill </para></entry><entry thead="no"><para>DISCO-F051R8 </para></entry><entry thead="no"><para>DISCO-F072RB </para></entry><entry thead="no"><para>DISCO-F100RB </para></entry></row>
@@ -37,29 +37,31 @@
 <row>
 <entry thead="no"><para>NUCLEO-F042K6 </para></entry><entry thead="no"><para>NUCLEO-F103RB </para></entry><entry thead="no"><para>NUCLEO-F303K8 </para></entry><entry thead="no"><para>NUCLEO-F401RE </para></entry></row>
 <row>
-<entry thead="no"><para>NUCLEO-F411RE </para></entry><entry thead="no"><para>NUCLEO-F429ZI </para></entry><entry thead="no"><para>NUCLEO-G071RB </para></entry><entry thead="no"><para>NUCLEO-L432KC </para></entry></row>
+<entry thead="no"><para>NUCLEO-F411RE </para></entry><entry thead="no"><para>NUCLEO-F429ZI </para></entry><entry thead="no"><para>NUCLEO-F446RE </para></entry><entry thead="no"><para>NUCLEO-G071RB </para></entry></row>
 <row>
-<entry thead="no"><para>NUCLEO-L476RG </para></entry><entry thead="no"><para>OLIMEXINO-STM32 </para></entry><entry thead="no"><para>STM32F030F4P6-DEMO  </para></entry></row>
+<entry thead="no"><para>NUCLEO-L432KC </para></entry><entry thead="no"><para>NUCLEO-L476RG </para></entry><entry thead="no"><para>OLIMEXINO-STM32 </para></entry><entry thead="no"><para>STM32F030F4P6-DEMO </para></entry></row>
+<row>
+</row>
 </table>
-</center></para><para><center></center></para><para><heading level="3">Drivers</heading>
+</center></para><para><center> </center></para><para><center></center></para><para><center></center></para><para><heading level="3">Drivers</heading>
 </para><para>We also have a number of completely target-independent <ulink url="https://github.com/modm-io/modm/tree/develop/src/modm/driver">drivers for external devices</ulink> connected via I<superscript>2</superscript>C, SPI, UART, BitBang, etc. Most of these also give you access to the entire device so you can easily configure them for you specific needs.</para><para><center></center></para><para><center><table rows="9" cols="6"><row>
 <entry thead="no"><para>AD7280A </para></entry><entry thead="no"><para>AD7928 </para></entry><entry thead="no"><para>ADNS9800 </para></entry><entry thead="no"><para>ADS7843 </para></entry><entry thead="no"><para>AMS5915 </para></entry><entry thead="no"><para>SPI-FLASH </para></entry></row>
 <row>
-<entry thead="no"><para>BME280 </para></entry><entry thead="no"><para>BMP085 </para></entry><entry thead="no"><para>DRV832X </para></entry><entry thead="no"><para>DS1302 </para></entry><entry thead="no"><para>DS1631 </para></entry><entry thead="no"><para>DS18B20 </para></entry></row>
+<entry thead="no"><para>BME280 </para></entry><entry thead="no"><para>BMP085 </para></entry><entry thead="no"><para>BNO055 </para></entry><entry thead="no"><para>DRV832X </para></entry><entry thead="no"><para>DS1302 </para></entry><entry thead="no"><para>DS1631 </para></entry></row>
 <row>
-<entry thead="no"><para>EA-DOG </para></entry><entry thead="no"><para>FT245 </para></entry><entry thead="no"><para>FT6X06 </para></entry><entry thead="no"><para>HCLAx </para></entry><entry thead="no"><para>HD44780 </para></entry><entry thead="no"><para>HMC58x </para></entry></row>
+<entry thead="no"><para>DS18B20 </para></entry><entry thead="no"><para>EA-DOG </para></entry><entry thead="no"><para>FT245 </para></entry><entry thead="no"><para>FT6X06 </para></entry><entry thead="no"><para>HCLAx </para></entry><entry thead="no"><para>HD44780 </para></entry></row>
 <row>
-<entry thead="no"><para>HMC6343 </para></entry><entry thead="no"><para>I2C-EEPROM </para></entry><entry thead="no"><para>ITG3200 </para></entry><entry thead="no"><para>L3GD20 </para></entry><entry thead="no"><para>LAWICEL </para></entry><entry thead="no"><para>LIS302DL </para></entry></row>
+<entry thead="no"><para>HMC58x </para></entry><entry thead="no"><para>HMC6343 </para></entry><entry thead="no"><para>I2C-EEPROM </para></entry><entry thead="no"><para>ITG3200 </para></entry><entry thead="no"><para>L3GD20 </para></entry><entry thead="no"><para>LAWICEL </para></entry></row>
 <row>
-<entry thead="no"><para>LIS3DSH </para></entry><entry thead="no"><para>LM75 </para></entry><entry thead="no"><para>LSM303A </para></entry><entry thead="no"><para>LTC2984 </para></entry><entry thead="no"><para>MAX6966 </para></entry><entry thead="no"><para>MAX7219 </para></entry></row>
+<entry thead="no"><para>LIS302DL </para></entry><entry thead="no"><para>LIS3DSH </para></entry><entry thead="no"><para>LM75 </para></entry><entry thead="no"><para>LSM303A </para></entry><entry thead="no"><para>LTC2984 </para></entry><entry thead="no"><para>MAX6966 </para></entry></row>
 <row>
-<entry thead="no"><para>MCP23X17 </para></entry><entry thead="no"><para>MCP2515 </para></entry><entry thead="no"><para>NOKIA5110 </para></entry><entry thead="no"><para>NRF24 </para></entry><entry thead="no"><para>TFT-DISPLAY </para></entry><entry thead="no"><para>PAT9125EL </para></entry></row>
+<entry thead="no"><para>MAX7219 </para></entry><entry thead="no"><para>MCP23X17 </para></entry><entry thead="no"><para>MCP2515 </para></entry><entry thead="no"><para>NOKIA5110 </para></entry><entry thead="no"><para>NRF24 </para></entry><entry thead="no"><para>TFT-DISPLAY </para></entry></row>
 <row>
-<entry thead="no"><para>PCA8574 </para></entry><entry thead="no"><para>PCA9535 </para></entry><entry thead="no"><para>PCA9548A </para></entry><entry thead="no"><para>PCA9685 </para></entry><entry thead="no"><para>SIEMENS-S65 </para></entry><entry thead="no"><para>SIEMENS-S75 </para></entry></row>
+<entry thead="no"><para>PAT9125EL </para></entry><entry thead="no"><para>PCA8574 </para></entry><entry thead="no"><para>PCA9535 </para></entry><entry thead="no"><para>PCA9548A </para></entry><entry thead="no"><para>PCA9685 </para></entry><entry thead="no"><para>SIEMENS-S65 </para></entry></row>
 <row>
-<entry thead="no"><para>SSD1306 </para></entry><entry thead="no"><para>TCS3414 </para></entry><entry thead="no"><para>TCS3472 </para></entry><entry thead="no"><para>TMP102 </para></entry><entry thead="no"><para>TMP175 </para></entry><entry thead="no"><para>VL53L0 </para></entry></row>
+<entry thead="no"><para>SIEMENS-S75 </para></entry><entry thead="no"><para>SSD1306 </para></entry><entry thead="no"><para>TCS3414 </para></entry><entry thead="no"><para>TCS3472 </para></entry><entry thead="no"><para>TLC594X </para></entry><entry thead="no"><para>TMP102 </para></entry></row>
 <row>
-<entry thead="no"><para>VL6180 </para></entry><entry thead="no"><para>WS2812  </para></entry></row>
+<entry thead="no"><para>TMP175 </para></entry><entry thead="no"><para>VL53L0 </para></entry><entry thead="no"><para>VL6180 </para></entry><entry thead="no"><para>WS2812  </para></entry></row>
 </table>
 </center></para><para><center></center></para><para>Please see <ulink url="https://github.com/modm-io/modm/tree/develop/examples">our examples for a complete list</ulink> of tested targets and drivers.</para><para><heading level="2">How can I contribute?</heading>
 </para><para>The easiest way for you and the best way for us to see if something is unclear or missing, is if you use the library and give us some feedback by <ulink url="https://github.com/modm-io/modm/issues">filing a bug report</ulink> or if you have a fix already, <ulink url="https://github.com/modm-io/modm/pulls">opening a pull request</ulink>.</para><para>See https://github.com/modm-io/modm/tree/develop/CONTRIBUTING.md &quot;CONTRIBUTING.md&quot; for our contribution guidelines.</para><para>The modm project is maintained by Niklas Hauser (<ulink url="https://github.com/salkinium">@salkinium</ulink>) with significant contributions from Sascha Schade (<ulink url="https://github.com/strongly-typed">@strongly-typed</ulink>), Fabian Greif (<ulink url="https://github.com/dergraaf">@dergraaf</ulink>), Kevin Läufer (<ulink url="https://github.com/ekiwi">@ekiwi</ulink>), Martin Rosekeit (<ulink url="https://github.com/thundernail">@thundernail</ulink>), Daniel Krebs (<ulink url="https://github.com/daniel-k">@daniel-k</ulink>), Georgi Grinshpun (<ulink url="https://github.com/georgi-g">@georgi-g</ulink>) and <ulink url="https://github.com/modm-io/modm/blob/develop/AUTHORS">20more contributors</ulink>.</para><para><heading level="2">Folder structure</heading>

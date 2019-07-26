@@ -23,18 +23,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="139">
-        <label>modm::Queue&lt; T, Container &gt;</label>
-        <link refid="classmodm_1_1_queue"/>
-      </node>
-      <node id="138">
-        <label>modm::BoundedQueue&lt; T, N, Container &gt;</label>
-        <link refid="classmodm_1_1_bounded_queue"/>
-        <childnode refid="139" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="141">
         <label>modm::Queue&lt; T, Container &gt;</label>
         <link refid="classmodm_1_1_queue"/>
@@ -45,8 +33,20 @@
         <childnode refid="141" relation="public-inheritance">
         </childnode>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="143">
+        <label>modm::Queue&lt; T, Container &gt;</label>
+        <link refid="classmodm_1_1_queue"/>
+      </node>
+      <node id="142">
+        <label>modm::BoundedQueue&lt; T, N, Container &gt;</label>
+        <link refid="classmodm_1_1_bounded_queue"/>
+        <childnode refid="143" relation="public-inheritance">
+        </childnode>
+      </node>
     </collaborationgraph>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/queue.hpp" line="118" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="117" bodyend="119"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/container/queue.hpp" line="118" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/container/queue.hpp" bodystart="117" bodyend="119"/>
     <listofallmembers>
       <member refid="classmodm_1_1_queue_1a18a7367e7cdb1a0a8cc6bb9d6626747e" prot="protected" virt="non-virtual"><scope>modm::BoundedQueue</scope><name>c</name></member>
       <member refid="classmodm_1_1_queue_1a8830dfcadcc51f4a886bc31287bf8cbd" prot="public" virt="non-virtual"><scope>modm::BoundedQueue</scope><name>get</name></member>

@@ -6,59 +6,59 @@
     <includes local="no">stdint.h</includes>
     <includes refid="architecture_2utils_8hpp" local="no">modm/architecture/utils.hpp</includes>
     <includes local="yes">operator_impl.hpp</includes>
-    <includedby refid="math_2utils_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils.hpp</includedby>
-    <includedby refid="math_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
+    <includedby refid="math_2utils_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/utils.hpp</includedby>
+    <includedby refid="math_8hpp" local="yes">/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
     <incdepgraph>
-      <node id="3909">
+      <node id="3926">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="3907">
+      <node id="3924">
         <label>stdint.h</label>
       </node>
-      <node id="3906">
+      <node id="3923">
         <label>cmath</label>
       </node>
-      <node id="3908">
+      <node id="3922">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/utils/operator.hpp</label>
+        <link refid="operator_8hpp"/>
+        <childnode refid="3923" relation="include">
+        </childnode>
+        <childnode refid="3924" relation="include">
+        </childnode>
+        <childnode refid="3925" relation="include">
+        </childnode>
+        <childnode refid="3927" relation="include">
+        </childnode>
+      </node>
+      <node id="3925">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="3909" relation="include">
+        <childnode refid="3926" relation="include">
         </childnode>
       </node>
-      <node id="3905">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/operator.hpp</label>
-        <link refid="operator_8hpp"/>
-        <childnode refid="3906" relation="include">
-        </childnode>
-        <childnode refid="3907" relation="include">
-        </childnode>
-        <childnode refid="3908" relation="include">
-        </childnode>
-        <childnode refid="3910" relation="include">
-        </childnode>
-      </node>
-      <node id="3910">
+      <node id="3927">
         <label>operator_impl.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3913">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
-        <link refid="math_8hpp"/>
-      </node>
-      <node id="3912">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils.hpp</label>
+      <node id="3929">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/utils.hpp</label>
         <link refid="math_2utils_8hpp"/>
-        <childnode refid="3913" relation="include">
+        <childnode refid="3930" relation="include">
         </childnode>
       </node>
-      <node id="3911">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/operator.hpp</label>
+      <node id="3928">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/utils/operator.hpp</label>
         <link refid="operator_8hpp"/>
-        <childnode refid="3912" relation="include">
+        <childnode refid="3929" relation="include">
         </childnode>
-        <childnode refid="3913" relation="include">
+        <childnode refid="3930" relation="include">
         </childnode>
+      </node>
+      <node id="3930">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
+        <link refid="math_8hpp"/>
       </node>
     </invincdepgraph>
     <innernamespace refid="namespacemodm">modm</innernamespace>
@@ -79,13 +79,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/operator.hpp" line="22" column="1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/utils/operator.hpp" line="22" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/utils/operator.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/math/utils/operator.hpp"/>
   </compounddef>
 </doxygen>

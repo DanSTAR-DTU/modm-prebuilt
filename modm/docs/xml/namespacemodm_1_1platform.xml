@@ -10,10 +10,12 @@
     <innerclass refid="classmodm_1_1platform_1_1_adc_interrupt3" prot="public">modm::platform::AdcInterrupt3</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_advanced_control_timer" prot="public">modm::platform::AdvancedControlTimer</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_basic_timer" prot="public">modm::platform::BasicTimer</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master" prot="public">modm::platform::BitBangOneWireMaster</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_bit_bang_spi_master" prot="public">modm::platform::BitBangSpiMaster</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_can1" prot="public">modm::platform::Can1</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_can2" prot="public">modm::platform::Can2</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_can_filter" prot="public">modm::platform::CanFilter</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_fault_reporter" prot="public">modm::platform::FaultReporter</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_general_purpose_timer" prot="public">modm::platform::GeneralPurposeTimer</innerclass>
     <innerclass refid="structmodm_1_1platform_1_1_gpio" prot="public">modm::platform::Gpio</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_gpio_a0" prot="public">modm::platform::GpioA0</innerclass>
@@ -280,7 +282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" line="25" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" bodystart="24" bodyend="49"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" line="25" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp" bodystart="24" bodyend="49"/>
       </memberdef>
       <memberdef kind="enum" id="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55" prot="public" static="no">
         <name>Peripheral</name>
@@ -690,7 +692,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/core/peripherals.hpp" line="20" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/core/peripherals.hpp" bodystart="18" bodyend="78"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/core/peripherals.hpp" line="20" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/core/peripherals.hpp" bodystart="18" bodyend="78"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -705,7 +707,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" line="280" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" bodystart="280" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" line="280" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp" bodystart="280" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacemodm_1_1platform_1a1741981ded5a57530c304f4df920fa35" prot="public" static="no">
         <type>void(*</type>
@@ -718,13 +720,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" line="23" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" bodystart="23" bodyend="-1"/>
+        <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" line="23" column="1" bodyfile="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp" line="27" column="1"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="25" column="1"/>
   </compounddef>
 </doxygen>

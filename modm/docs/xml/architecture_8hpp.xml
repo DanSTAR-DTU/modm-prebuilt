@@ -5,58 +5,379 @@
     <includes refid="interface_8hpp" local="yes">architecture/interface.hpp</includes>
     <includes refid="architecture_2utils_8hpp" local="yes">architecture/utils.hpp</includes>
     <incdepgraph>
-      <node id="188">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp</label>
-        <link refid="architecture_8hpp"/>
-        <childnode refid="189" relation="include">
+      <node id="251">
+        <label>interface/spi_device.hpp</label>
+        <link refid="spi__device_8hpp"/>
+        <childnode refid="250" relation="include">
         </childnode>
-        <childnode refid="194" relation="include">
+        <childnode refid="252" relation="include">
         </childnode>
       </node>
-      <node id="189">
-        <label>architecture/interface.hpp</label>
-        <link refid="interface_8hpp"/>
-        <childnode refid="190" relation="include">
+      <node id="222">
+        <label>modm/processing/resumable.hpp</label>
+        <link refid="resumable_8hpp"/>
+        <childnode refid="223" relation="include">
         </childnode>
-        <childnode refid="191" relation="include">
+        <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="196" relation="include">
-        </childnode>
-        <childnode refid="192" relation="include">
-        </childnode>
-        <childnode refid="203" relation="include">
+      </node>
+      <node id="208">
+        <label>stdarg.h</label>
+      </node>
+      <node id="231">
+        <label>can_message.hpp</label>
+        <link refid="can__message_8hpp"/>
+        <childnode refid="200" relation="include">
         </childnode>
         <childnode refid="207" relation="include">
         </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>limits</label>
+      </node>
+      <node id="198">
+        <label>/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp</label>
+        <link refid="architecture_8hpp"/>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>detect.hpp</label>
+        <link refid="detect_8hpp"/>
+      </node>
+      <node id="228">
+        <label>cstdint</label>
+      </node>
+      <node id="244">
+        <label>i2c_master.hpp</label>
+        <link refid="i2c__master_8hpp"/>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>modm/architecture/interface/accessor_ram.hpp</label>
+        <link refid="accessor__ram_8hpp"/>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>stdint.h</label>
+      </node>
+      <node id="207">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
         <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
         </childnode>
         <childnode refid="210" relation="include">
         </childnode>
         <childnode refid="211" relation="include">
         </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>interface/build_id.hpp</label>
+        <link refid="build__id_8hpp"/>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>cmath</label>
+      </node>
+      <node id="221">
+        <label>interface/block_device.hpp</label>
+        <link refid="block__device_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="213">
+        <label>interface/adc.hpp</label>
+        <link refid="adc_8hpp"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>modm/math/utils/bit_constants.hpp</label>
+        <link refid="bit__constants_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>modm/math/utils/bit_operation.hpp</label>
+        <link refid="bit__operation_8hpp"/>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>interface/gpio_expander.hpp</label>
+        <link refid="gpio__expander_8hpp"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>interface/unaligned.hpp</label>
+        <link refid="architecture_2interface_2unaligned_8hpp"/>
+      </node>
+      <node id="218">
+        <label>interface/assert.hpp</label>
+        <link refid="assert_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>interface/spi.hpp</label>
+        <link refid="spi_8hpp"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>modm/math/units.hpp</label>
+        <link refid="units_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>modm/architecture/interface/accessor_flash.hpp</label>
+        <link refid="accessor__flash_8hpp"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>interface/uart.hpp</label>
+        <link refid="uart_8hpp"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>i2c_transaction.hpp</label>
+        <link refid="i2c__transaction_8hpp"/>
+        <childnode refid="242" relation="include">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>macros.hpp</label>
+        <link refid="resumable_2macros_8hpp"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>modm/architecture/interface/peripheral.hpp</label>
+        <link refid="peripheral_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>interface/atomic_lock.hpp</label>
+        <link refid="architecture_2interface_2atomic__lock_8hpp"/>
+      </node>
+      <node id="242">
+        <label>interface/i2c.hpp</label>
+        <link refid="i2c_8hpp"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>resumable/resumable.hpp</label>
+        <link refid="resumable_2resumable_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+      </node>
+      <node id="240">
+        <label>modm/architecture/interface/register.hpp</label>
+        <link refid="register_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>array</label>
+      </node>
+      <node id="233">
+        <label>modm/processing/timer/timestamp.hpp</label>
+        <link refid="timestamp_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="252">
+        <label>spi_master.hpp</label>
+        <link refid="spi__master_8hpp"/>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>interface/accessor.hpp</label>
+        <link refid="accessor_8hpp"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
+        <childnode refid="205" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>interface/adc_interrupt.hpp</label>
+        <link refid="adc__interrupt_8hpp"/>
+        <childnode refid="213" relation="include">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>cstddef</label>
+      </node>
+      <node id="246">
+        <label>interface/i2c_multiplexer.hpp</label>
+        <link refid="i2c__multiplexer_8hpp"/>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="243">
+        <label>interface/i2c_device.hpp</label>
+        <link refid="i2c__device_8hpp"/>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>interface/memory.hpp</label>
+        <link refid="memory_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>interface/interrupt.hpp</label>
+        <link refid="interrupt_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>interface/delay.hpp</label>
+        <link refid="architecture_2interface_2delay_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>architecture/interface.hpp</label>
+        <link refid="interface_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
         <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="220" relation="include">
         </childnode>
         <childnode refid="221" relation="include">
         </childnode>
-        <childnode refid="222" relation="include">
-        </childnode>
         <childnode refid="227" relation="include">
         </childnode>
-        <childnode refid="228" relation="include">
+        <childnode refid="230" relation="include">
         </childnode>
-        <childnode refid="229" relation="include">
+        <childnode refid="231" relation="include">
         </childnode>
         <childnode refid="232" relation="include">
-        </childnode>
-        <childnode refid="233" relation="include">
-        </childnode>
-        <childnode refid="234" relation="include">
-        </childnode>
-        <childnode refid="236" relation="include">
-        </childnode>
-        <childnode refid="235" relation="include">
         </childnode>
         <childnode refid="237" relation="include">
         </childnode>
@@ -64,431 +385,110 @@
         </childnode>
         <childnode refid="239" relation="include">
         </childnode>
-        <childnode refid="230" relation="include">
-        </childnode>
-        <childnode refid="240" relation="include">
-        </childnode>
-        <childnode refid="241" relation="include">
-        </childnode>
         <childnode refid="242" relation="include">
         </childnode>
         <childnode refid="243" relation="include">
         </childnode>
         <childnode refid="244" relation="include">
         </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>resumable/nested_resumable.hpp</label>
+        <link refid="nested__resumable_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>interface/clock.hpp</label>
+        <link refid="clock_8hpp"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>modm/math/utils/arithmetic_traits.hpp</label>
+        <link refid="arithmetic__traits_8hpp"/>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+      <node id="238">
+        <label>interface/gpio.hpp</label>
+        <link refid="gpio_8hpp"/>
+        <childnode refid="200" relation="include">
+        </childnode>
         <childnode refid="204" relation="include">
         </childnode>
       </node>
-      <node id="198">
-        <label>stdarg.h</label>
+      <node id="210">
+        <label>type_traits</label>
       </node>
-      <node id="195">
-        <label>detect.hpp</label>
-        <link refid="detect_8hpp"/>
-      </node>
-      <node id="191">
-        <label>interface/accessor.hpp</label>
-        <link refid="accessor_8hpp"/>
-        <childnode refid="192" relation="include">
-        </childnode>
-        <childnode refid="196" relation="include">
-        </childnode>
-      </node>
-      <node id="228">
-        <label>interface/gpio.hpp</label>
-        <link refid="gpio_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-      </node>
-      <node id="225">
-        <label>limits</label>
-      </node>
-      <node id="212">
-        <label>modm/processing/resumable.hpp</label>
-        <link refid="resumable_8hpp"/>
-        <childnode refid="213" relation="include">
+      <node id="215">
+        <label>modm/math/tolerance.hpp</label>
+        <link refid="tolerance_8hpp"/>
+        <childnode refid="200" relation="include">
         </childnode>
         <childnode refid="216" relation="include">
         </childnode>
       </node>
-      <node id="223">
-        <label>modm/processing/timer/timestamp.hpp</label>
-        <link refid="timestamp_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="197" relation="include">
-        </childnode>
-        <childnode refid="224" relation="include">
-        </childnode>
-      </node>
-      <node id="192">
-        <label>modm/architecture/interface/accessor_ram.hpp</label>
-        <link refid="accessor__ram_8hpp"/>
-        <childnode refid="193" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-      </node>
-      <node id="233">
-        <label>interface/i2c_device.hpp</label>
-        <link refid="i2c__device_8hpp"/>
-        <childnode refid="232" relation="include">
-        </childnode>
-        <childnode refid="234" relation="include">
-        </childnode>
-        <childnode refid="235" relation="include">
-        </childnode>
-        <childnode refid="212" relation="include">
-        </childnode>
-      </node>
-      <node id="218">
-        <label>cstdint</label>
-      </node>
-      <node id="190">
-        <label>stdint.h</label>
-      </node>
-      <node id="232">
-        <label>interface/i2c.hpp</label>
-        <link refid="i2c_8hpp"/>
-        <childnode refid="228" relation="include">
-        </childnode>
-        <childnode refid="227" relation="include">
-        </childnode>
-        <childnode refid="197" relation="include">
-        </childnode>
-      </node>
-      <node id="201">
-        <label>iodevice.hpp</label>
-        <link refid="iodevice_8hpp"/>
-      </node>
-      <node id="226">
-        <label>cmath</label>
-      </node>
-      <node id="229">
-        <label>interface/gpio_expander.hpp</label>
-        <link refid="gpio__expander_8hpp"/>
-        <childnode refid="228" relation="include">
-        </childnode>
-        <childnode refid="230" relation="include">
-        </childnode>
-        <childnode refid="212" relation="include">
+      <node id="230">
+        <label>interface/can.hpp</label>
+        <link refid="can_8hpp"/>
+        <childnode refid="214" relation="include">
         </childnode>
         <childnode refid="231" relation="include">
         </childnode>
       </node>
-      <node id="221">
-        <label>can_message.hpp</label>
-        <link refid="can__message_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="197" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-      </node>
-      <node id="202">
-        <label>iodevice_wrapper.hpp</label>
-        <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="201" relation="include">
-        </childnode>
-      </node>
-      <node id="242">
-        <label>spi_master.hpp</label>
-        <link refid="spi__master_8hpp"/>
-        <childnode refid="212" relation="include">
-        </childnode>
-        <childnode refid="240" relation="include">
-        </childnode>
-      </node>
-      <node id="216">
-        <label>resumable/nested_resumable.hpp</label>
-        <link refid="nested__resumable_8hpp"/>
-        <childnode refid="214" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-        <childnode refid="190" relation="include">
-        </childnode>
-      </node>
-      <node id="211">
-        <label>interface/block_device.hpp</label>
-        <link refid="block__device_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="212" relation="include">
-        </childnode>
-      </node>
-      <node id="240">
-        <label>interface/spi.hpp</label>
-        <link refid="spi_8hpp"/>
-        <childnode refid="204" relation="include">
-        </childnode>
-      </node>
-      <node id="239">
-        <label>interface/one_wire.hpp</label>
-        <link refid="one__wire_8hpp"/>
-        <childnode refid="194" relation="include">
-        </childnode>
-        <childnode refid="204" relation="include">
-        </childnode>
-      </node>
-      <node id="220">
-        <label>interface/can.hpp</label>
-        <link refid="can_8hpp"/>
-        <childnode refid="204" relation="include">
-        </childnode>
-        <childnode refid="221" relation="include">
-        </childnode>
-      </node>
-      <node id="217">
-        <label>interface/build_id.hpp</label>
-        <link refid="build__id_8hpp"/>
-        <childnode refid="218" relation="include">
-        </childnode>
-        <childnode refid="219" relation="include">
-        </childnode>
-      </node>
-      <node id="227">
-        <label>interface/delay.hpp</label>
-        <link refid="architecture_2interface_2delay_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-      </node>
-      <node id="197">
-        <label>modm/io/iostream.hpp</label>
-        <link refid="iostream_8hpp"/>
-        <childnode refid="193" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-        <childnode refid="198" relation="include">
-        </childnode>
-        <childnode refid="199" relation="include">
-        </childnode>
-        <childnode refid="200" relation="include">
-        </childnode>
-        <childnode refid="201" relation="include">
-        </childnode>
-        <childnode refid="202" relation="include">
-        </childnode>
-      </node>
-      <node id="207">
-        <label>interface/adc_interrupt.hpp</label>
-        <link refid="adc__interrupt_8hpp"/>
-        <childnode refid="203" relation="include">
-        </childnode>
-      </node>
-      <node id="210">
-        <label>interface/atomic_lock.hpp</label>
-        <link refid="architecture_2interface_2atomic__lock_8hpp"/>
-      </node>
-      <node id="203">
-        <label>interface/adc.hpp</label>
-        <link refid="adc_8hpp"/>
-        <childnode refid="204" relation="include">
-        </childnode>
-      </node>
-      <node id="241">
-        <label>interface/spi_device.hpp</label>
-        <link refid="spi__device_8hpp"/>
-        <childnode refid="240" relation="include">
-        </childnode>
-        <childnode refid="242" relation="include">
-        </childnode>
-      </node>
-      <node id="244">
-        <label>interface/unaligned.hpp</label>
-        <link refid="architecture_2interface_2unaligned_8hpp"/>
-      </node>
-      <node id="194">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="195" relation="include">
-        </childnode>
-      </node>
-      <node id="243">
-        <label>interface/uart.hpp</label>
-        <link refid="uart_8hpp"/>
-        <childnode refid="204" relation="include">
-        </childnode>
-      </node>
-      <node id="214">
-        <label>macros.hpp</label>
-        <link refid="resumable_2macros_8hpp"/>
-        <childnode refid="208" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-      </node>
-      <node id="230">
-        <label>modm/architecture/interface/register.hpp</label>
-        <link refid="register_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="209" relation="include">
-        </childnode>
-        <childnode refid="195" relation="include">
-        </childnode>
-        <childnode refid="197" relation="include">
-        </childnode>
-      </node>
-      <node id="231">
-        <label>modm/math/utils/bit_operation.hpp</label>
-        <link refid="bit__operation_8hpp"/>
-        <childnode refid="193" relation="include">
-        </childnode>
-        <childnode refid="226" relation="include">
-        </childnode>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="195" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-      </node>
-      <node id="208">
-        <label>interface/assert.hpp</label>
-        <link refid="assert_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-        <childnode refid="209" relation="include">
-        </childnode>
-        <childnode refid="191" relation="include">
-        </childnode>
-      </node>
-      <node id="205">
-        <label>modm/math/tolerance.hpp</label>
-        <link refid="tolerance_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="206" relation="include">
-        </childnode>
-      </node>
-      <node id="219">
-        <label>array</label>
-      </node>
-      <node id="234">
-        <label>i2c_master.hpp</label>
-        <link refid="i2c__master_8hpp"/>
-        <childnode refid="232" relation="include">
-        </childnode>
-        <childnode refid="235" relation="include">
-        </childnode>
-        <childnode refid="204" relation="include">
-        </childnode>
-      </node>
-      <node id="224">
-        <label>modm/math/utils/arithmetic_traits.hpp</label>
-        <link refid="arithmetic__traits_8hpp"/>
-        <childnode refid="218" relation="include">
-        </childnode>
-        <childnode refid="225" relation="include">
-        </childnode>
-        <childnode refid="200" relation="include">
-        </childnode>
-        <childnode refid="226" relation="include">
-        </childnode>
-      </node>
-      <node id="222">
-        <label>interface/clock.hpp</label>
-        <link refid="clock_8hpp"/>
-        <childnode refid="194" relation="include">
-        </childnode>
-        <childnode refid="223" relation="include">
-        </childnode>
-      </node>
-      <node id="193">
-        <label>cstddef</label>
-      </node>
-      <node id="237">
-        <label>interface/interrupt.hpp</label>
-        <link refid="interrupt_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-      </node>
-      <node id="235">
-        <label>i2c_transaction.hpp</label>
-        <link refid="i2c__transaction_8hpp"/>
-        <childnode refid="232" relation="include">
-        </childnode>
-      </node>
-      <node id="200">
-        <label>type_traits</label>
-      </node>
-      <node id="238">
-        <label>interface/memory.hpp</label>
-        <link refid="memory_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-        <childnode refid="230" relation="include">
-        </childnode>
-      </node>
-      <node id="213">
-        <label>resumable/resumable.hpp</label>
-        <link refid="resumable_2resumable_8hpp"/>
-        <childnode refid="214" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="215" relation="include">
-        </childnode>
-      </node>
-      <node id="209">
-        <label>modm/math/utils/bit_constants.hpp</label>
-        <link refid="bit__constants_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-      </node>
-      <node id="236">
-        <label>interface/i2c_multiplexer.hpp</label>
-        <link refid="i2c__multiplexer_8hpp"/>
-        <childnode refid="212" relation="include">
-        </childnode>
-      </node>
-      <node id="196">
-        <label>modm/architecture/interface/accessor_flash.hpp</label>
-        <link refid="accessor__flash_8hpp"/>
-        <childnode refid="194" relation="include">
-        </childnode>
-        <childnode refid="197" relation="include">
-        </childnode>
-      </node>
-      <node id="215">
+      <node id="225">
         <label>initializer_list</label>
       </node>
-      <node id="206">
-        <label>modm/math/units.hpp</label>
-        <link refid="units_8hpp"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="194" relation="include">
-        </childnode>
-      </node>
-      <node id="199">
+      <node id="209">
         <label>inttypes.h</label>
       </node>
-      <node id="204">
-        <label>modm/architecture/interface/peripheral.hpp</label>
-        <link refid="peripheral_8hpp"/>
-        <childnode refid="190" relation="include">
+      <node id="211">
+        <label>iodevice.hpp</label>
+        <link refid="iodevice_8hpp"/>
+      </node>
+      <node id="249">
+        <label>interface/one_wire.hpp</label>
+        <link refid="one__wire_8hpp"/>
+        <childnode refid="204" relation="include">
         </childnode>
-        <childnode refid="193" relation="include">
-        </childnode>
-        <childnode refid="205" relation="include">
-        </childnode>
-        <childnode refid="206" relation="include">
+        <childnode refid="214" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -496,6 +496,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp"/>
+    <location file="/home/nicolai/Danstar/software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp"/>
   </compounddef>
 </doxygen>

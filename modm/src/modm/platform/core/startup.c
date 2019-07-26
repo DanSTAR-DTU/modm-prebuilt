@@ -151,5 +151,5 @@ Reset_Handler(void)
 	main();
 
 	modm_assert_debug(0, "core", "main", "exit");
-	while(1) ;
+	for (;;) {}
 }
