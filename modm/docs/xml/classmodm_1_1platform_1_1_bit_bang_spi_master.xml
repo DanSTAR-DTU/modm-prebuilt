@@ -335,50 +335,50 @@
 <simplesect kind="see"><para>gpio </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="106">
+      <node id="108">
         <label>modm::platform::BitBangSpiMaster&lt; Sck, Mosi, Miso &gt;</label>
         <link refid="classmodm_1_1platform_1_1_bit_bang_spi_master"/>
-        <childnode refid="107" relation="public-inheritance">
+        <childnode refid="109" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="108">
+      <node id="110">
         <label>modm::PeripheralDriver</label>
         <link refid="classmodm_1_1_peripheral_driver"/>
       </node>
-      <node id="109">
+      <node id="111">
         <label>modm::Spi</label>
         <link refid="structmodm_1_1_spi"/>
       </node>
-      <node id="107">
+      <node id="109">
         <label>modm::SpiMaster</label>
         <link refid="classmodm_1_1_spi_master"/>
-        <childnode refid="108" relation="public-inheritance">
+        <childnode refid="110" relation="public-inheritance">
         </childnode>
-        <childnode refid="109" relation="public-inheritance">
+        <childnode refid="111" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="110">
+      <node id="112">
         <label>modm::platform::BitBangSpiMaster&lt; Sck, Mosi, Miso &gt;</label>
         <link refid="classmodm_1_1platform_1_1_bit_bang_spi_master"/>
-        <childnode refid="111" relation="public-inheritance">
+        <childnode refid="113" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="112">
+      <node id="114">
         <label>modm::PeripheralDriver</label>
         <link refid="classmodm_1_1_peripheral_driver"/>
       </node>
-      <node id="113">
+      <node id="115">
         <label>modm::Spi</label>
         <link refid="structmodm_1_1_spi"/>
       </node>
-      <node id="111">
+      <node id="113">
         <label>modm::SpiMaster</label>
         <link refid="classmodm_1_1_spi_master"/>
-        <childnode refid="112" relation="public-inheritance">
+        <childnode refid="114" relation="public-inheritance">
         </childnode>
-        <childnode refid="113" relation="public-inheritance">
+        <childnode refid="115" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

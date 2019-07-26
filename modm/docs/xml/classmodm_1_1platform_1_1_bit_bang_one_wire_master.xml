@@ -1,0 +1,538 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classmodm_1_1platform_1_1_bit_bang_one_wire_master" kind="class" language="C++" prot="public">
+    <compoundname>modm::platform::BitBangOneWireMaster</compoundname>
+    <includes refid="bitbang__master_8hpp" local="no">modm/platform/1-wire/bitbang_master.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Pin</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a0cb02093eb34820a19d47e221bad814f" prot="private" static="no">
+        <type>Pin</type>
+        <definition>using modm::platform::BitBangOneWireMaster&lt; Pin &gt;::PIN =  Pin</definition>
+        <argsstring></argsstring>
+        <name>PIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="48" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a4df770fbbc6cf957274dc75e908906f6" prot="protected" static="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int modm::platform::BitBangOneWireMaster&lt; Pin &gt;::A</definition>
+        <argsstring></argsstring>
+        <name>A</name>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="165" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a986cc04a221691356171c03565242c0c" prot="protected" static="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int modm::platform::BitBangOneWireMaster&lt; Pin &gt;::B</definition>
+        <argsstring></argsstring>
+        <name>B</name>
+        <initializer>= 64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="166" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a9c340933dc24bdeb3e234c3e737855f4" prot="protected" static="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int modm::platform::BitBangOneWireMaster&lt; Pin &gt;::C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <initializer>= 60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="167" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a1c35d60cf6b6ab9c13094962fff63525" prot="protected" static="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int modm::platform::BitBangOneWireMaster&lt; Pin &gt;::D</definition>
+        <argsstring></argsstring>
+        <name>D</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="168" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1aca7b6121bcb6c8146b2575a48254487b" prot="protected" static="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int modm::platform::BitBangOneWireMaster&lt; Pin &gt;::E</definition>
+        <argsstring></argsstring>
+        <name>E</name>
+        <initializer>= 9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="169" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1abd9d9d6206bb4e8c383afa36ddd2cc47" prot="protected" static="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int modm::platform::BitBangOneWireMaster&lt; Pin &gt;::F</definition>
+        <argsstring></argsstring>
+        <name>F</name>
+        <initializer>= 55</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="170" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1aac6e079df245e92694b634a088b58de1" prot="protected" static="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int modm::platform::BitBangOneWireMaster&lt; Pin &gt;::G</definition>
+        <argsstring></argsstring>
+        <name>G</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="171" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1aef15732b99dac3a0fcdeed35d1fd5e90" prot="protected" static="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int modm::platform::BitBangOneWireMaster&lt; Pin &gt;::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <initializer>= 480</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="172" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ac50d09fd3dc7117e275dccce4f39042a" prot="protected" static="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int modm::platform::BitBangOneWireMaster&lt; Pin &gt;::I</definition>
+        <argsstring></argsstring>
+        <name>I</name>
+        <initializer>= 70</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="173" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1af45946eb4d3d9cda49da4553c8d6b268" prot="protected" static="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int modm::platform::BitBangOneWireMaster&lt; Pin &gt;::J</definition>
+        <argsstring></argsstring>
+        <name>J</name>
+        <initializer>= 410</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="174" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a48d5aa55e31287c98bab1d53cecb569c" prot="protected" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t modm::platform::BitBangOneWireMaster&lt; Pin &gt;::lastDiscrepancy</definition>
+        <argsstring></argsstring>
+        <name>lastDiscrepancy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="177" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a58b94dd750ff79522338cc7b04a18b27" prot="protected" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t modm::platform::BitBangOneWireMaster&lt; Pin &gt;::lastFamilyDiscrepancy</definition>
+        <argsstring></argsstring>
+        <name>lastFamilyDiscrepancy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="178" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ae6a899d90939f0380e2b5bcc899df611" prot="protected" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool modm::platform::BitBangOneWireMaster&lt; Pin &gt;::lastDeviceFlag</definition>
+        <argsstring></argsstring>
+        <name>lastDeviceFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="179" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a4e4fc641672f9e0ac922b0cfe128e71e" prot="protected" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t modm::platform::BitBangOneWireMaster&lt; Pin &gt;::crc8</definition>
+        <argsstring></argsstring>
+        <name>crc8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="180" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1aa72244523175fd49bd99ad6206f5a2bd" prot="protected" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t modm::platform::BitBangOneWireMaster&lt; Pin &gt;::romBuffer[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>romBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="181" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a9660a3af154eb0cebc610ae51df947ed" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>template&lt; <ref refid="namespacemodm_1_1platform_1a9a75ca82fea26cd4f4948f93899d0f55" kindref="member">Peripheral</ref> _ &gt; class...</type>
+            <declname>Signals</declname>
+            <defname>Signals</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void modm::platform::BitBangOneWireMaster&lt; Pin &gt;::connect</definition>
+        <argsstring>()</argsstring>
+        <name>connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="52" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="52" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1afecbfd31fe9298cb48e9b6faef31e616" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class SystemClock</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void modm::platform::BitBangOneWireMaster&lt; Pin &gt;::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="65" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a6e33d779acd6d9c26ee16e0a2ca48b35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::BitBangOneWireMaster&lt; Pin &gt;::touchReset</definition>
+        <argsstring>()</argsstring>
+        <name>touchReset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate a 1-wire reset</para><para><simplesect kind="return"><para><computeroutput>true</computeroutput> devices detected, <linebreak/>
+ <computeroutput>false</computeroutput> failed to detect devices </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a903a1fdc483fe81f9780ede14148a12d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::BitBangOneWireMaster&lt; Pin &gt;::writeBit</definition>
+        <argsstring>(bool bit)</argsstring>
+        <name>writeBit</name>
+        <param>
+          <type>bool</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a 1-wire write bit.</para><para>Provides 10us recovery time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a50590d054da197df46e24761ba2d32d7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::BitBangOneWireMaster&lt; Pin &gt;::readBit</definition>
+        <argsstring>()</argsstring>
+        <name>readBit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a bit from the 1-wire bus and return it.</para><para>Provides 10us recovery time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a800c68317fb19d57974784dfa1e089b3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::BitBangOneWireMaster&lt; Pin &gt;::writeByte</definition>
+        <argsstring>(uint8_t data)</argsstring>
+        <name>writeByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Write 1-Wire data byte. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ad8da22d8ee66c57ab0df5708d5de94ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t modm::platform::BitBangOneWireMaster&lt; Pin &gt;::readByte</definition>
+        <argsstring>()</argsstring>
+        <name>readByte</name>
+        <briefdescription>
+<para>Read 1-Wire data byte and return it. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ac37b02b0877b8093a06fb46ff50752f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t modm::platform::BitBangOneWireMaster&lt; Pin &gt;::touchByte</definition>
+        <argsstring>(uint8_t data)</argsstring>
+        <name>touchByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Write a 1-Wire data byte and return the sampled result. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a0827eb33374767b078a7f3d8e254721e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::BitBangOneWireMaster&lt; Pin &gt;::verifyDevice</definition>
+        <argsstring>(const uint8_t *rom)</argsstring>
+        <name>verifyDevice</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>rom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Verify that the with the given ROM number is present</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>8-byte ROM number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> device presens verified, <linebreak/>
+ <computeroutput>false</computeroutput> device not present </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a751fbc830ab24ffe1f7f13638ff11392" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::BitBangOneWireMaster&lt; Pin &gt;::resetSearch</definition>
+        <argsstring>()</argsstring>
+        <name>resetSearch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset search state <simplesect kind="see"><para><ref refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ad5dc6fc069c49b27b8d78f9be7738bd9" kindref="member">searchNext()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a6e97882daa20fdb2b1843a0685a5a27e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::BitBangOneWireMaster&lt; Pin &gt;::resetSearch</definition>
+        <argsstring>(uint8_t familyCode)</argsstring>
+        <name>resetSearch</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>familyCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset search state and setup it to find the device type &apos;familyCode&apos; on the next call to <ref refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ad5dc6fc069c49b27b8d78f9be7738bd9" kindref="member">searchNext()</ref>.</para><para>This will accelerate the search because only devices of the given type will be considered. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ad5dc6fc069c49b27b8d78f9be7738bd9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::BitBangOneWireMaster&lt; Pin &gt;::searchNext</definition>
+        <argsstring>(uint8_t *rom)</argsstring>
+        <name>searchNext</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Perform the 1-Wire search algorithm on the 1-Wire bus using the existing search state.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">rom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>8 byte array which will be filled with ROM number of the device found. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> is a device is found. <computeroutput>rom</computeroutput> will contain the ROM number. <computeroutput>false</computeroutput> if no device found. This also marks the end of the search.</para></simplesect>
+<simplesect kind="see"><para><ref refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a751fbc830ab24ffe1f7f13638ff11392" kindref="member">resetSearch()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a7a0306de5399a96b0602cc8cc84f4ead" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void modm::platform::BitBangOneWireMaster&lt; Pin &gt;::searchSkipCurrentFamily</definition>
+        <argsstring>()</argsstring>
+        <name>searchSkipCurrentFamily</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the search to skip the current device type on the next call to <ref refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ad5dc6fc069c49b27b8d78f9be7738bd9" kindref="member">searchNext()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="154" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ad2ae3b210575d669d2254ca415e428d5" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t modm::platform::BitBangOneWireMaster&lt; Pin &gt;::crcUpdate</definition>
+        <argsstring>(uint8_t crc, uint8_t data)</argsstring>
+        <name>crcUpdate</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>crc</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a249e4869f719ea1b813ab98f69be8f96" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool modm::platform::BitBangOneWireMaster&lt; Pin &gt;::performSearch</definition>
+        <argsstring>()</argsstring>
+        <name>performSearch</name>
+        <briefdescription>
+<para>Perform the actual search algorithm. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="162" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Software emulation of a 1-wire master</para><para>1-Wire is extremely timing critical. This implementation relies on simple delay loops to achieve this timing. Any interrupt during the operation can disturb the timing.</para><para>You should make sure that no interrupt occurs during the 1-Wire transmissions, for example by disabling interrupts.</para><para>Based on the Maxim 1-Wire AppNote at <ulink url="http://www.maxim-ic.com/appnotes.cfm/appnote_number/126">http://www.maxim-ic.com/appnotes.cfm/appnote_number/126</ulink></para><para>1-Wire Search Algorithm based on AppNote 187 at <ulink url="http://www.maxim-ic.com/appnotes.cfm/appnote_number/187">http://www.maxim-ic.com/appnotes.cfm/appnote_number/187</ulink> </para>    </detaileddescription>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="47" column="1" bodyfile="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" bodystart="46" bodyend="182"/>
+    <listofallmembers>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a4df770fbbc6cf957274dc75e908906f6" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>A</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a986cc04a221691356171c03565242c0c" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>B</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a9c340933dc24bdeb3e234c3e737855f4" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>C</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a9660a3af154eb0cebc610ae51df947ed" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>connect</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a4e4fc641672f9e0ac922b0cfe128e71e" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>crc8</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ad2ae3b210575d669d2254ca415e428d5" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>crcUpdate</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a1c35d60cf6b6ab9c13094962fff63525" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>D</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1aca7b6121bcb6c8146b2575a48254487b" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>E</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1abd9d9d6206bb4e8c383afa36ddd2cc47" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>F</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1aac6e079df245e92694b634a088b58de1" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>G</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1aef15732b99dac3a0fcdeed35d1fd5e90" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>H</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ac50d09fd3dc7117e275dccce4f39042a" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>I</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1afecbfd31fe9298cb48e9b6faef31e616" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>initialize</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1af45946eb4d3d9cda49da4553c8d6b268" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>J</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ae6a899d90939f0380e2b5bcc899df611" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>lastDeviceFlag</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a48d5aa55e31287c98bab1d53cecb569c" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>lastDiscrepancy</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a58b94dd750ff79522338cc7b04a18b27" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>lastFamilyDiscrepancy</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a249e4869f719ea1b813ab98f69be8f96" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>performSearch</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a0cb02093eb34820a19d47e221bad814f" prot="private" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>PIN</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a50590d054da197df46e24761ba2d32d7" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>readBit</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ad8da22d8ee66c57ab0df5708d5de94ed" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>readByte</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a751fbc830ab24ffe1f7f13638ff11392" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>resetSearch</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a6e97882daa20fdb2b1843a0685a5a27e" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>resetSearch</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1aa72244523175fd49bd99ad6206f5a2bd" prot="protected" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>romBuffer</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ad5dc6fc069c49b27b8d78f9be7738bd9" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>searchNext</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a7a0306de5399a96b0602cc8cc84f4ead" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>searchSkipCurrentFamily</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1ac37b02b0877b8093a06fb46ff50752f5" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>touchByte</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a6e33d779acd6d9c26ee16e0a2ca48b35" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>touchReset</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a0827eb33374767b078a7f3d8e254721e" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>verifyDevice</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a903a1fdc483fe81f9780ede14148a12d" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>writeBit</name></member>
+      <member refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master_1a800c68317fb19d57974784dfa1e089b3" prot="public" virt="non-virtual"><scope>modm::platform::BitBangOneWireMaster</scope><name>writeByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

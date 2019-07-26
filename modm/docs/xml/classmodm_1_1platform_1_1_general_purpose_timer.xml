@@ -919,104 +919,104 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="267">
+      <node id="271">
         <label>modm::platform::AdvancedControlTimer</label>
         <link refid="classmodm_1_1platform_1_1_advanced_control_timer"/>
-        <childnode refid="265" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="270">
-        <label>modm::platform::Timer10</label>
-        <link refid="classmodm_1_1platform_1_1_timer10"/>
-        <childnode refid="265" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="271">
-        <label>modm::platform::Timer11</label>
-        <link refid="classmodm_1_1platform_1_1_timer11"/>
-        <childnode refid="265" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="272">
-        <label>modm::platform::Timer12</label>
-        <link refid="classmodm_1_1platform_1_1_timer12"/>
-        <childnode refid="265" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="273">
-        <label>modm::platform::Timer13</label>
-        <link refid="classmodm_1_1platform_1_1_timer13"/>
-        <childnode refid="265" relation="public-inheritance">
+        <childnode refid="269" relation="public-inheritance">
         </childnode>
       </node>
       <node id="274">
-        <label>modm::platform::Timer14</label>
-        <link refid="classmodm_1_1platform_1_1_timer14"/>
-        <childnode refid="265" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="266">
-        <label>modm::platform::BasicTimer</label>
-        <link refid="classmodm_1_1platform_1_1_basic_timer"/>
-      </node>
-      <node id="265">
-        <label>modm::platform::GeneralPurposeTimer</label>
-        <link refid="classmodm_1_1platform_1_1_general_purpose_timer"/>
-        <childnode refid="266" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="268">
-        <label>modm::platform::Timer1</label>
-        <link refid="classmodm_1_1platform_1_1_timer1"/>
-        <childnode refid="267" relation="public-inheritance">
+        <label>modm::platform::Timer10</label>
+        <link refid="classmodm_1_1platform_1_1_timer10"/>
+        <childnode refid="269" relation="public-inheritance">
         </childnode>
       </node>
       <node id="275">
-        <label>modm::platform::Timer2</label>
-        <link refid="classmodm_1_1platform_1_1_timer2"/>
-        <childnode refid="265" relation="public-inheritance">
+        <label>modm::platform::Timer11</label>
+        <link refid="classmodm_1_1platform_1_1_timer11"/>
+        <childnode refid="269" relation="public-inheritance">
         </childnode>
       </node>
       <node id="276">
-        <label>modm::platform::Timer3</label>
-        <link refid="classmodm_1_1platform_1_1_timer3"/>
-        <childnode refid="265" relation="public-inheritance">
+        <label>modm::platform::Timer12</label>
+        <link refid="classmodm_1_1platform_1_1_timer12"/>
+        <childnode refid="269" relation="public-inheritance">
         </childnode>
       </node>
       <node id="277">
-        <label>modm::platform::Timer4</label>
-        <link refid="classmodm_1_1platform_1_1_timer4"/>
-        <childnode refid="265" relation="public-inheritance">
+        <label>modm::platform::Timer13</label>
+        <link refid="classmodm_1_1platform_1_1_timer13"/>
+        <childnode refid="269" relation="public-inheritance">
         </childnode>
       </node>
       <node id="278">
-        <label>modm::platform::Timer5</label>
-        <link refid="classmodm_1_1platform_1_1_timer5"/>
-        <childnode refid="265" relation="public-inheritance">
+        <label>modm::platform::Timer14</label>
+        <link refid="classmodm_1_1platform_1_1_timer14"/>
+        <childnode refid="269" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="270">
+        <label>modm::platform::BasicTimer</label>
+        <link refid="classmodm_1_1platform_1_1_basic_timer"/>
+      </node>
       <node id="269">
-        <label>modm::platform::Timer8</label>
-        <link refid="classmodm_1_1platform_1_1_timer8"/>
-        <childnode refid="267" relation="public-inheritance">
+        <label>modm::platform::GeneralPurposeTimer</label>
+        <link refid="classmodm_1_1platform_1_1_general_purpose_timer"/>
+        <childnode refid="270" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>modm::platform::Timer1</label>
+        <link refid="classmodm_1_1platform_1_1_timer1"/>
+        <childnode refid="271" relation="public-inheritance">
         </childnode>
       </node>
       <node id="279">
+        <label>modm::platform::Timer2</label>
+        <link refid="classmodm_1_1platform_1_1_timer2"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>modm::platform::Timer3</label>
+        <link refid="classmodm_1_1platform_1_1_timer3"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>modm::platform::Timer4</label>
+        <link refid="classmodm_1_1platform_1_1_timer4"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>modm::platform::Timer5</label>
+        <link refid="classmodm_1_1platform_1_1_timer5"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>modm::platform::Timer8</label>
+        <link refid="classmodm_1_1platform_1_1_timer8"/>
+        <childnode refid="271" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="283">
         <label>modm::platform::Timer9</label>
         <link refid="classmodm_1_1platform_1_1_timer9"/>
-        <childnode refid="265" relation="public-inheritance">
+        <childnode refid="269" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="281">
+      <node id="285">
         <label>modm::platform::BasicTimer</label>
         <link refid="classmodm_1_1platform_1_1_basic_timer"/>
       </node>
-      <node id="280">
+      <node id="284">
         <label>modm::platform::GeneralPurposeTimer</label>
         <link refid="classmodm_1_1platform_1_1_general_purpose_timer"/>
-        <childnode refid="281" relation="public-inheritance">
+        <childnode refid="285" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

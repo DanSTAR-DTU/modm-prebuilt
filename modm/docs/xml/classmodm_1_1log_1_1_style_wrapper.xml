@@ -166,25 +166,25 @@
 <para><simplesect kind="author"><para>Martin Rosekeit <ulink url="mailto:martin.rosekeit@rwth-aachen.de">martin.rosekeit@rwth-aachen.de</ulink> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1606">
+      <node id="1610">
         <label>modm::log::StyleWrapper&lt; STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_style_wrapper"/>
-        <childnode refid="1607" relation="public-inheritance">
+        <childnode refid="1611" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1607">
+      <node id="1611">
         <label>modm::IODevice</label>
         <link refid="classmodm_1_1_i_o_device"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1608">
+      <node id="1612">
         <label>modm::log::StyleWrapper&lt; STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_style_wrapper"/>
-        <childnode refid="1609" relation="public-inheritance">
+        <childnode refid="1613" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1609">
+      <node id="1613">
         <label>modm::IODevice</label>
         <link refid="classmodm_1_1_i_o_device"/>
       </node>

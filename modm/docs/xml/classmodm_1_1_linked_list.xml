@@ -435,24 +435,24 @@
 <simplesect kind="author"><para>Fabian Greif </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="1369">
+      <node id="1373">
         <label>T</label>
       </node>
-      <node id="1367">
+      <node id="1371">
         <label>modm::LinkedList&lt; T, Allocator &gt;</label>
         <link refid="classmodm_1_1_linked_list"/>
-        <childnode refid="1368" relation="usage">
+        <childnode refid="1372" relation="usage">
           <edgelabel>front</edgelabel>
           <edgelabel>back</edgelabel>
         </childnode>
       </node>
-      <node id="1368">
+      <node id="1372">
         <label>modm::LinkedList&lt; T, Allocator &gt;::Node</label>
         <link refid="structmodm_1_1_linked_list_1_1_node"/>
-        <childnode refid="1368" relation="usage">
+        <childnode refid="1372" relation="usage">
           <edgelabel>next</edgelabel>
         </childnode>
-        <childnode refid="1369" relation="usage">
+        <childnode refid="1373" relation="usage">
           <edgelabel>value</edgelabel>
         </childnode>
       </node>

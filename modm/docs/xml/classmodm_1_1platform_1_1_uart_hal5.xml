@@ -369,25 +369,25 @@
 <para>Universal asynchronous receiver transmitter (<ref refid="classmodm_1_1platform_1_1_uart_hal5" kindref="compound">UartHal5</ref>)</para><para>Not available on the low- and medium density devices.</para><para>Very basic implementation that exposes more hardware features than the regular Usart classes.</para><para><simplesect kind="author"><para>Kevin Laeufer </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1746">
+      <node id="1750">
         <label>modm::platform::UartHal5</label>
         <link refid="classmodm_1_1platform_1_1_uart_hal5"/>
-        <childnode refid="1747" relation="public-inheritance">
+        <childnode refid="1751" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1747">
+      <node id="1751">
         <label>modm::platform::UartBase</label>
         <link refid="classmodm_1_1platform_1_1_uart_base"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1748">
+      <node id="1752">
         <label>modm::platform::UartHal5</label>
         <link refid="classmodm_1_1platform_1_1_uart_hal5"/>
-        <childnode refid="1749" relation="public-inheritance">
+        <childnode refid="1753" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1749">
+      <node id="1753">
         <label>modm::platform::UartBase</label>
         <link refid="classmodm_1_1platform_1_1_uart_base"/>
       </node>

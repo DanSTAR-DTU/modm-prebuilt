@@ -8,106 +8,106 @@
     <includedby refid="adc__interrupt__2_8hpp" local="no">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp</includedby>
     <includedby refid="adc__interrupt__3_8hpp" local="no">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_3.hpp</includedby>
     <incdepgraph>
-      <node id="768">
+      <node id="775">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="763">
+      <node id="770">
         <label>stdint.h</label>
       </node>
-      <node id="760">
+      <node id="767">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp</label>
         <link refid="adc__interrupt_8hpp"/>
-        <childnode refid="761" relation="include">
-        </childnode>
-      </node>
-      <node id="761">
-        <label>adc.hpp</label>
-        <link refid="adc_8hpp"/>
-        <childnode refid="762" relation="include">
-        </childnode>
-      </node>
-      <node id="767">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
         <childnode refid="768" relation="include">
         </childnode>
       </node>
-      <node id="765">
-        <label>modm/math/tolerance.hpp</label>
-        <link refid="tolerance_8hpp"/>
-        <childnode refid="763" relation="include">
-        </childnode>
-        <childnode refid="766" relation="include">
+      <node id="768">
+        <label>adc.hpp</label>
+        <link refid="adc_8hpp"/>
+        <childnode refid="769" relation="include">
         </childnode>
       </node>
-      <node id="764">
-        <label>cstddef</label>
-      </node>
-      <node id="766">
-        <label>modm/math/units.hpp</label>
-        <link refid="units_8hpp"/>
-        <childnode refid="763" relation="include">
-        </childnode>
-        <childnode refid="767" relation="include">
-        </childnode>
-      </node>
-      <node id="762">
-        <label>modm/architecture/interface/peripheral.hpp</label>
-        <link refid="peripheral_8hpp"/>
-        <childnode refid="763" relation="include">
-        </childnode>
-        <childnode refid="764" relation="include">
-        </childnode>
-        <childnode refid="765" relation="include">
-        </childnode>
-        <childnode refid="766" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="771">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp</label>
-        <link refid="architecture_8hpp"/>
-      </node>
-      <node id="770">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
-        <link refid="interface_8hpp"/>
-        <childnode refid="771" relation="include">
-        </childnode>
-      </node>
-      <node id="769">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp</label>
-        <link refid="adc__interrupt_8hpp"/>
-        <childnode refid="770" relation="include">
-        </childnode>
-        <childnode refid="772" relation="include">
-        </childnode>
-        <childnode refid="774" relation="include">
-        </childnode>
+      <node id="774">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
         <childnode refid="775" relation="include">
         </childnode>
       </node>
       <node id="772">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp</label>
-        <link refid="adc__interrupt__1_8hpp"/>
+        <label>modm/math/tolerance.hpp</label>
+        <link refid="tolerance_8hpp"/>
+        <childnode refid="770" relation="include">
+        </childnode>
         <childnode refid="773" relation="include">
         </childnode>
       </node>
+      <node id="771">
+        <label>cstddef</label>
+      </node>
       <node id="773">
+        <label>modm/math/units.hpp</label>
+        <link refid="units_8hpp"/>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="774" relation="include">
+        </childnode>
+      </node>
+      <node id="769">
+        <label>modm/architecture/interface/peripheral.hpp</label>
+        <link refid="peripheral_8hpp"/>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="778">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp</label>
+        <link refid="architecture_8hpp"/>
+      </node>
+      <node id="777">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
+        <link refid="interface_8hpp"/>
+        <childnode refid="778" relation="include">
+        </childnode>
+      </node>
+      <node id="776">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/adc_interrupt.hpp</label>
+        <link refid="adc__interrupt_8hpp"/>
+        <childnode refid="777" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+        <childnode refid="782" relation="include">
+        </childnode>
+      </node>
+      <node id="779">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp</label>
+        <link refid="adc__interrupt__1_8hpp"/>
+        <childnode refid="780" relation="include">
+        </childnode>
+      </node>
+      <node id="780">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>
-      <node id="775">
+      <node id="782">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_3.hpp</label>
         <link refid="adc__interrupt__3_8hpp"/>
-        <childnode refid="773" relation="include">
+        <childnode refid="780" relation="include">
         </childnode>
       </node>
-      <node id="774">
+      <node id="781">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp</label>
         <link refid="adc__interrupt__2_8hpp"/>
-        <childnode refid="773" relation="include">
+        <childnode refid="780" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

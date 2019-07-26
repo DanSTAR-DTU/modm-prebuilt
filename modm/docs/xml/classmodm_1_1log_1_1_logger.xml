@@ -95,26 +95,26 @@
 <para>It is used by the macros defined below. This class overloads the shift-operator so that it is possible to write different message types to the logger.</para><para><simplesect kind="author"><para>Martin Rosekeit <ulink url="mailto:martin.rosekeit@rwth-aachen.de">martin.rosekeit@rwth-aachen.de</ulink> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1375">
+      <node id="1379">
         <label>modm::IOStream</label>
         <link refid="classmodm_1_1_i_o_stream"/>
       </node>
-      <node id="1374">
+      <node id="1378">
         <label>modm::log::Logger</label>
         <link refid="classmodm_1_1log_1_1_logger"/>
-        <childnode refid="1375" relation="public-inheritance">
+        <childnode refid="1379" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1377">
+      <node id="1381">
         <label>modm::IOStream</label>
         <link refid="classmodm_1_1_i_o_stream"/>
       </node>
-      <node id="1376">
+      <node id="1380">
         <label>modm::log::Logger</label>
         <link refid="classmodm_1_1log_1_1_logger"/>
-        <childnode refid="1377" relation="public-inheritance">
+        <childnode refid="1381" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

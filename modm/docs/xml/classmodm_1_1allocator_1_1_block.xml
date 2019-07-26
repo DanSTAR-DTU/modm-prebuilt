@@ -103,18 +103,6 @@
 <para>Allocates a big block of memory and then distribute small pieces of it. The memory is not released until the destruction of the allocator. If more memory is needed a new block is allocated.</para><para>This technique is known as &quot;memory pool&quot;.</para><para><simplesect kind="author"><para>Fabian Greif </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="114">
-        <label>modm::allocator::Block&lt; T, BLOCKSIZE &gt;</label>
-        <link refid="classmodm_1_1allocator_1_1_block"/>
-        <childnode refid="115" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="115">
-        <label>modm::allocator::AllocatorBase&lt; T &gt;</label>
-        <link refid="classmodm_1_1allocator_1_1_allocator_base"/>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="116">
         <label>modm::allocator::Block&lt; T, BLOCKSIZE &gt;</label>
         <link refid="classmodm_1_1allocator_1_1_block"/>
@@ -122,6 +110,18 @@
         </childnode>
       </node>
       <node id="117">
+        <label>modm::allocator::AllocatorBase&lt; T &gt;</label>
+        <link refid="classmodm_1_1allocator_1_1_allocator_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="118">
+        <label>modm::allocator::Block&lt; T, BLOCKSIZE &gt;</label>
+        <link refid="classmodm_1_1allocator_1_1_block"/>
+        <childnode refid="119" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="119">
         <label>modm::allocator::AllocatorBase&lt; T &gt;</label>
         <link refid="classmodm_1_1allocator_1_1_allocator_base"/>
       </node>

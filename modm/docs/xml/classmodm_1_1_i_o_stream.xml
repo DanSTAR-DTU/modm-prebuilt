@@ -848,14 +848,14 @@
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1345">
+      <node id="1349">
         <label>modm::IOStream</label>
         <link refid="classmodm_1_1_i_o_stream"/>
       </node>
-      <node id="1346">
+      <node id="1350">
         <label>modm::log::Logger</label>
         <link refid="classmodm_1_1log_1_1_logger"/>
-        <childnode refid="1345" relation="public-inheritance">
+        <childnode refid="1349" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

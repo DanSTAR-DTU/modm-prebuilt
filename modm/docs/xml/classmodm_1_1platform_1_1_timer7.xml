@@ -296,26 +296,26 @@
 </programlisting></para><para><simplesect kind="author"><para>Fabian Greif </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1681">
+      <node id="1685">
         <label>modm::platform::BasicTimer</label>
         <link refid="classmodm_1_1platform_1_1_basic_timer"/>
       </node>
-      <node id="1680">
+      <node id="1684">
         <label>modm::platform::Timer7</label>
         <link refid="classmodm_1_1platform_1_1_timer7"/>
-        <childnode refid="1681" relation="public-inheritance">
+        <childnode refid="1685" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1683">
+      <node id="1687">
         <label>modm::platform::BasicTimer</label>
         <link refid="classmodm_1_1platform_1_1_basic_timer"/>
       </node>
-      <node id="1682">
+      <node id="1686">
         <label>modm::platform::Timer7</label>
         <link refid="classmodm_1_1platform_1_1_timer7"/>
-        <childnode refid="1683" relation="public-inheritance">
+        <childnode refid="1687" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

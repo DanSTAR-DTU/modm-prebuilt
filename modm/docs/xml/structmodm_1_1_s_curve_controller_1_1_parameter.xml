@@ -166,13 +166,13 @@
 </parameterlist>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="1412">
+      <node id="1414">
         <label>T</label>
       </node>
-      <node id="1411">
+      <node id="1413">
         <label>modm::SCurveController&lt; T &gt;::Parameter</label>
         <link refid="structmodm_1_1_s_curve_controller_1_1_parameter"/>
-        <childnode refid="1412" relation="usage">
+        <childnode refid="1414" relation="usage">
           <edgelabel>speedTarget</edgelabel>
           <edgelabel>speedMinimum</edgelabel>
           <edgelabel>kp</edgelabel>

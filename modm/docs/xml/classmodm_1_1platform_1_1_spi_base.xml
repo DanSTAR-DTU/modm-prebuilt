@@ -366,26 +366,26 @@
 <para>Base class for the SPI classes</para><para>Provides some common enum that do not depend on the specific SPI.</para><para><simplesect kind="author"><para>Kevin Laeufer </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1524">
+      <node id="1528">
         <label>modm::platform::SpiBase</label>
         <link refid="classmodm_1_1platform_1_1_spi_base"/>
       </node>
-      <node id="1525">
+      <node id="1529">
         <label>modm::platform::SpiHal1</label>
         <link refid="classmodm_1_1platform_1_1_spi_hal1"/>
-        <childnode refid="1524" relation="public-inheritance">
+        <childnode refid="1528" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1526">
+      <node id="1530">
         <label>modm::platform::SpiHal2</label>
         <link refid="classmodm_1_1platform_1_1_spi_hal2"/>
-        <childnode refid="1524" relation="public-inheritance">
+        <childnode refid="1528" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1527">
+      <node id="1531">
         <label>modm::platform::SpiHal3</label>
         <link refid="classmodm_1_1platform_1_1_spi_hal3"/>
-        <childnode refid="1524" relation="public-inheritance">
+        <childnode refid="1528" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

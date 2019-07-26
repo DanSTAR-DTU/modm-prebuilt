@@ -7,38 +7,38 @@
     <includedby refid="filter_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter.hpp</includedby>
     <includedby refid="math_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
     <incdepgraph>
-      <node id="2685">
+      <node id="2697">
         <label>cmath</label>
       </node>
-      <node id="2684">
+      <node id="2696">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp</label>
         <link refid="s__curve__controller_8hpp"/>
-        <childnode refid="2685" relation="include">
+        <childnode refid="2697" relation="include">
         </childnode>
-        <childnode refid="2686" relation="include">
+        <childnode refid="2698" relation="include">
         </childnode>
       </node>
-      <node id="2686">
+      <node id="2698">
         <label>s_curve_controller_impl.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2689">
+      <node id="2701">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
         <link refid="math_8hpp"/>
       </node>
-      <node id="2688">
+      <node id="2700">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter.hpp</label>
         <link refid="filter_8hpp"/>
-        <childnode refid="2689" relation="include">
+        <childnode refid="2701" relation="include">
         </childnode>
       </node>
-      <node id="2687">
+      <node id="2699">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_controller.hpp</label>
         <link refid="s__curve__controller_8hpp"/>
-        <childnode refid="2688" relation="include">
+        <childnode refid="2700" relation="include">
         </childnode>
-        <childnode refid="2689" relation="include">
+        <childnode refid="2701" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

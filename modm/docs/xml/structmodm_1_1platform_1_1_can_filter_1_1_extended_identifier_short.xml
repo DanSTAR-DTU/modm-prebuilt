@@ -34,17 +34,6 @@
 <para>Generate an identifier for the Dual Filter mode from an extended (29-bit) identifier.</para><para><simplesect kind="warning"><para>Uses only the upper 14-bit of the 29-bit identifier! The lower 15-bit will be don&apos;t care! </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="234">
-        <label>modm::platform::CanFilter::IdentifierShort</label>
-      </node>
-      <node id="233">
-        <label>modm::platform::CanFilter::ExtendedIdentifierShort</label>
-        <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short"/>
-        <childnode refid="234" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="236">
         <label>modm::platform::CanFilter::IdentifierShort</label>
       </node>
@@ -52,6 +41,17 @@
         <label>modm::platform::CanFilter::ExtendedIdentifierShort</label>
         <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short"/>
         <childnode refid="236" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="238">
+        <label>modm::platform::CanFilter::IdentifierShort</label>
+      </node>
+      <node id="237">
+        <label>modm::platform::CanFilter::ExtendedIdentifierShort</label>
+        <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short"/>
+        <childnode refid="238" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

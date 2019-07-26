@@ -137,26 +137,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1217">
+      <node id="1221">
         <label>modm::GpioPort</label>
         <link refid="classmodm_1_1_gpio_port"/>
       </node>
-      <node id="1216">
+      <node id="1220">
         <label>modm::platform::GpioPort&lt; StartGpio, Width &gt;</label>
         <link refid="classmodm_1_1platform_1_1_gpio_port"/>
-        <childnode refid="1217" relation="public-inheritance">
+        <childnode refid="1221" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1219">
+      <node id="1223">
         <label>modm::GpioPort</label>
         <link refid="classmodm_1_1_gpio_port"/>
       </node>
-      <node id="1218">
+      <node id="1222">
         <label>modm::platform::GpioPort&lt; StartGpio, Width &gt;</label>
         <link refid="classmodm_1_1platform_1_1_gpio_port"/>
-        <childnode refid="1219" relation="public-inheritance">
+        <childnode refid="1223" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

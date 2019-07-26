@@ -54,343 +54,343 @@
     <detaileddescription>
 <para>Input interface of an I/O pin.</para><para>The pin is not automatically set as an input after startup, so remember to call <computeroutput><ref refid="classmodm_1_1_gpio_input_1ac741d0cc55b24441ae9d22f8bdf49d39" kindref="member">setInput()</ref></computeroutput> after startup! </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1087">
+      <node id="1091">
         <label>modm::platform::GpioUnused</label>
         <link refid="classmodm_1_1platform_1_1_gpio_unused"/>
-        <childnode refid="1035" relation="public-inheritance">
+        <childnode refid="1039" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1085">
+      <node id="1089">
         <label>modm::platform::GpioH0</label>
         <link refid="classmodm_1_1platform_1_1_gpio_h0"/>
-        <childnode refid="1035" relation="public-inheritance">
+        <childnode refid="1039" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1086">
+      <node id="1090">
         <label>modm::platform::GpioH1</label>
         <link refid="classmodm_1_1platform_1_1_gpio_h1"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1068">
-        <label>modm::platform::GpioC0</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c0"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1069">
-        <label>modm::platform::GpioC1</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c1"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1076">
-        <label>modm::platform::GpioC2</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c2"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1077">
-        <label>modm::platform::GpioC3</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c3"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1078">
-        <label>modm::platform::GpioC4</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c4"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1079">
-        <label>modm::platform::GpioC5</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c5"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1080">
-        <label>modm::platform::GpioC6</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c6"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1081">
-        <label>modm::platform::GpioC7</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c7"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1082">
-        <label>modm::platform::GpioC8</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c8"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1083">
-        <label>modm::platform::GpioC9</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c9"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1035">
-        <label>modm::GpioIO</label>
-        <link refid="classmodm_1_1_gpio_i_o"/>
-        <childnode refid="1033" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1084">
-        <label>modm::platform::GpioD2</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_d2"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1037">
-        <label>modm::platform::GpioA0</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a0"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1038">
-        <label>modm::platform::GpioA1</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a1"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1045">
-        <label>modm::platform::GpioA2</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a2"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1046">
-        <label>modm::platform::GpioA3</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a3"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1047">
-        <label>modm::platform::GpioA4</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a4"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1048">
-        <label>modm::platform::GpioA5</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a5"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1049">
-        <label>modm::platform::GpioA6</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a6"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1050">
-        <label>modm::platform::GpioA7</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a7"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1051">
-        <label>modm::platform::GpioA8</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a8"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1052">
-        <label>modm::platform::GpioA9</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a9"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1039">
-        <label>modm::platform::GpioA10</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a10"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1040">
-        <label>modm::platform::GpioA11</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a11"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1041">
-        <label>modm::platform::GpioA12</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a12"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1042">
-        <label>modm::platform::GpioA13</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a13"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1043">
-        <label>modm::platform::GpioA14</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a14"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1053">
-        <label>modm::platform::GpioB0</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b0"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1044">
-        <label>modm::platform::GpioA15</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a15"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1054">
-        <label>modm::platform::GpioB1</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b1"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1060">
-        <label>modm::platform::GpioB2</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b2"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1061">
-        <label>modm::platform::GpioB3</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b3"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1062">
-        <label>modm::platform::GpioB4</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b4"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1063">
-        <label>modm::platform::GpioB5</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b5"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1064">
-        <label>modm::platform::GpioB6</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b6"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1065">
-        <label>modm::platform::GpioB7</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b7"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1066">
-        <label>modm::platform::GpioB8</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b8"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1067">
-        <label>modm::platform::GpioB9</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b9"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1055">
-        <label>modm::platform::GpioB10</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b10"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1056">
-        <label>modm::platform::GpioB12</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b12"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1057">
-        <label>modm::platform::GpioB13</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b13"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1058">
-        <label>modm::platform::GpioB14</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b14"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1059">
-        <label>modm::platform::GpioB15</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_b15"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1033">
-        <label>modm::GpioInput</label>
-        <link refid="classmodm_1_1_gpio_input"/>
-        <childnode refid="1034" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1036">
-        <label>modm::GpioExpanderPin&lt; GpioExpander, expander, pin &gt;</label>
-        <link refid="classmodm_1_1_gpio_expander_pin"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1070">
-        <label>modm::platform::GpioC10</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c10"/>
-        <childnode refid="1035" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1071">
-        <label>modm::platform::GpioC11</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c11"/>
-        <childnode refid="1035" relation="public-inheritance">
+        <childnode refid="1039" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1072">
-        <label>modm::platform::GpioC12</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c12"/>
-        <childnode refid="1035" relation="public-inheritance">
+        <label>modm::platform::GpioC0</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c0"/>
+        <childnode refid="1039" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1073">
-        <label>modm::platform::GpioC13</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c13"/>
-        <childnode refid="1035" relation="public-inheritance">
+        <label>modm::platform::GpioC1</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c1"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1080">
+        <label>modm::platform::GpioC2</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c2"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1081">
+        <label>modm::platform::GpioC3</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c3"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1082">
+        <label>modm::platform::GpioC4</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c4"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1083">
+        <label>modm::platform::GpioC5</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c5"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1084">
+        <label>modm::platform::GpioC6</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c6"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1085">
+        <label>modm::platform::GpioC7</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c7"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1086">
+        <label>modm::platform::GpioC8</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c8"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1087">
+        <label>modm::platform::GpioC9</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c9"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1039">
+        <label>modm::GpioIO</label>
+        <link refid="classmodm_1_1_gpio_i_o"/>
+        <childnode refid="1037" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1088">
+        <label>modm::platform::GpioD2</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_d2"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1041">
+        <label>modm::platform::GpioA0</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a0"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1042">
+        <label>modm::platform::GpioA1</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a1"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1049">
+        <label>modm::platform::GpioA2</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a2"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1050">
+        <label>modm::platform::GpioA3</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a3"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1051">
+        <label>modm::platform::GpioA4</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a4"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1052">
+        <label>modm::platform::GpioA5</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a5"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1053">
+        <label>modm::platform::GpioA6</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a6"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1054">
+        <label>modm::platform::GpioA7</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a7"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1055">
+        <label>modm::platform::GpioA8</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a8"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1056">
+        <label>modm::platform::GpioA9</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a9"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1043">
+        <label>modm::platform::GpioA10</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a10"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1044">
+        <label>modm::platform::GpioA11</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a11"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1045">
+        <label>modm::platform::GpioA12</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a12"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1046">
+        <label>modm::platform::GpioA13</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a13"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1047">
+        <label>modm::platform::GpioA14</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a14"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1057">
+        <label>modm::platform::GpioB0</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b0"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1048">
+        <label>modm::platform::GpioA15</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a15"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1058">
+        <label>modm::platform::GpioB1</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b1"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1064">
+        <label>modm::platform::GpioB2</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b2"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1065">
+        <label>modm::platform::GpioB3</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b3"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1066">
+        <label>modm::platform::GpioB4</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b4"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1067">
+        <label>modm::platform::GpioB5</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b5"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1068">
+        <label>modm::platform::GpioB6</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b6"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1069">
+        <label>modm::platform::GpioB7</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b7"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>modm::platform::GpioB8</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b8"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1071">
+        <label>modm::platform::GpioB9</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b9"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1059">
+        <label>modm::platform::GpioB10</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b10"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1060">
+        <label>modm::platform::GpioB12</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b12"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1061">
+        <label>modm::platform::GpioB13</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b13"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1062">
+        <label>modm::platform::GpioB14</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b14"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1063">
+        <label>modm::platform::GpioB15</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_b15"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1037">
+        <label>modm::GpioInput</label>
+        <link refid="classmodm_1_1_gpio_input"/>
+        <childnode refid="1038" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1040">
+        <label>modm::GpioExpanderPin&lt; GpioExpander, expander, pin &gt;</label>
+        <link refid="classmodm_1_1_gpio_expander_pin"/>
+        <childnode refid="1039" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1074">
-        <label>modm::platform::GpioC14</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c14"/>
-        <childnode refid="1035" relation="public-inheritance">
+        <label>modm::platform::GpioC10</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c10"/>
+        <childnode refid="1039" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1075">
-        <label>modm::platform::GpioC15</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_c15"/>
-        <childnode refid="1035" relation="public-inheritance">
+        <label>modm::platform::GpioC11</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c11"/>
+        <childnode refid="1039" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1034">
+      <node id="1076">
+        <label>modm::platform::GpioC12</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c12"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1077">
+        <label>modm::platform::GpioC13</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c13"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1078">
+        <label>modm::platform::GpioC14</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c14"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1079">
+        <label>modm::platform::GpioC15</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_c15"/>
+        <childnode refid="1039" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1038">
         <label>modm::Gpio</label>
         <link refid="structmodm_1_1_gpio"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1088">
+      <node id="1092">
         <label>modm::GpioInput</label>
         <link refid="classmodm_1_1_gpio_input"/>
-        <childnode refid="1089" relation="public-inheritance">
+        <childnode refid="1093" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1089">
+      <node id="1093">
         <label>modm::Gpio</label>
         <link refid="structmodm_1_1_gpio"/>
       </node>

@@ -7,42 +7,42 @@
     <includedby refid="adc__interrupt__3_8hpp" local="no">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_3.hpp</includedby>
     <includedby refid="utils_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils.hpp</includedby>
     <invincdepgraph>
-      <node id="7562">
+      <node id="7624">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils.hpp</label>
         <link refid="utils_8hpp"/>
       </node>
-      <node id="7558">
+      <node id="7620">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp</label>
         <link refid="adc__interrupt__1_8hpp"/>
-        <childnode refid="7559" relation="include">
+        <childnode refid="7621" relation="include">
         </childnode>
       </node>
-      <node id="7559">
+      <node id="7621">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>
-      <node id="7561">
+      <node id="7623">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_3.hpp</label>
         <link refid="adc__interrupt__3_8hpp"/>
-        <childnode refid="7559" relation="include">
+        <childnode refid="7621" relation="include">
         </childnode>
       </node>
-      <node id="7560">
+      <node id="7622">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp</label>
         <link refid="adc__interrupt__2_8hpp"/>
-        <childnode refid="7559" relation="include">
+        <childnode refid="7621" relation="include">
         </childnode>
       </node>
-      <node id="7557">
+      <node id="7619">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/utils/dummy.hpp</label>
         <link refid="dummy_8hpp"/>
-        <childnode refid="7558" relation="include">
+        <childnode refid="7620" relation="include">
         </childnode>
-        <childnode refid="7560" relation="include">
+        <childnode refid="7622" relation="include">
         </childnode>
-        <childnode refid="7561" relation="include">
+        <childnode refid="7623" relation="include">
         </childnode>
-        <childnode refid="7562" relation="include">
+        <childnode refid="7624" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

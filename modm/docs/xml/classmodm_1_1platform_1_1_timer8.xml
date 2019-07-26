@@ -715,30 +715,6 @@
 <simplesect kind="author"><para>Kevin Laeufer </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1685">
-        <label>modm::platform::AdvancedControlTimer</label>
-        <link refid="classmodm_1_1platform_1_1_advanced_control_timer"/>
-        <childnode refid="1686" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1687">
-        <label>modm::platform::BasicTimer</label>
-        <link refid="classmodm_1_1platform_1_1_basic_timer"/>
-      </node>
-      <node id="1686">
-        <label>modm::platform::GeneralPurposeTimer</label>
-        <link refid="classmodm_1_1platform_1_1_general_purpose_timer"/>
-        <childnode refid="1687" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1684">
-        <label>modm::platform::Timer8</label>
-        <link refid="classmodm_1_1platform_1_1_timer8"/>
-        <childnode refid="1685" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="1689">
         <label>modm::platform::AdvancedControlTimer</label>
         <link refid="classmodm_1_1platform_1_1_advanced_control_timer"/>
@@ -759,6 +735,30 @@
         <label>modm::platform::Timer8</label>
         <link refid="classmodm_1_1platform_1_1_timer8"/>
         <childnode refid="1689" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1693">
+        <label>modm::platform::AdvancedControlTimer</label>
+        <link refid="classmodm_1_1platform_1_1_advanced_control_timer"/>
+        <childnode refid="1694" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1695">
+        <label>modm::platform::BasicTimer</label>
+        <link refid="classmodm_1_1platform_1_1_basic_timer"/>
+      </node>
+      <node id="1694">
+        <label>modm::platform::GeneralPurposeTimer</label>
+        <link refid="classmodm_1_1platform_1_1_general_purpose_timer"/>
+        <childnode refid="1695" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1692">
+        <label>modm::platform::Timer8</label>
+        <link refid="classmodm_1_1platform_1_1_timer8"/>
+        <childnode refid="1693" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

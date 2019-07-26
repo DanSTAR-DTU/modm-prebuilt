@@ -10,10 +10,12 @@
     <innerclass refid="classmodm_1_1platform_1_1_adc_interrupt3" prot="public">modm::platform::AdcInterrupt3</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_advanced_control_timer" prot="public">modm::platform::AdvancedControlTimer</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_basic_timer" prot="public">modm::platform::BasicTimer</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_bit_bang_one_wire_master" prot="public">modm::platform::BitBangOneWireMaster</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_bit_bang_spi_master" prot="public">modm::platform::BitBangSpiMaster</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_can1" prot="public">modm::platform::Can1</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_can2" prot="public">modm::platform::Can2</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_can_filter" prot="public">modm::platform::CanFilter</innerclass>
+    <innerclass refid="classmodm_1_1platform_1_1_fault_reporter" prot="public">modm::platform::FaultReporter</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_general_purpose_timer" prot="public">modm::platform::GeneralPurposeTimer</innerclass>
     <innerclass refid="structmodm_1_1platform_1_1_gpio" prot="public">modm::platform::Gpio</innerclass>
     <innerclass refid="classmodm_1_1platform_1_1_gpio_a0" prot="public">modm::platform::GpioA0</innerclass>
@@ -725,6 +727,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp" line="27" column="1"/>
+    <location file="/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp" line="25" column="1"/>
   </compounddef>
 </doxygen>

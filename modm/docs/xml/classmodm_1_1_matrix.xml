@@ -814,13 +814,13 @@
 <simplesect kind="author"><para>Fabian Greif </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="1390">
+      <node id="1394">
         <label>T</label>
       </node>
-      <node id="1389">
+      <node id="1393">
         <label>modm::Matrix&lt; T, ROWS, COLUMNS &gt;</label>
         <link refid="classmodm_1_1_matrix"/>
-        <childnode refid="1390" relation="usage">
+        <childnode refid="1394" relation="usage">
           <edgelabel>element</edgelabel>
         </childnode>
       </node>

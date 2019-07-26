@@ -5,43 +5,43 @@
     <includes refid="gpio_8hpp" local="no">modm/architecture/interface/gpio.hpp</includes>
     <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <incdepgraph>
-      <node id="5713">
+      <node id="5774">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="5710">
+      <node id="5771">
         <label>modm/architecture/interface/gpio.hpp</label>
         <link refid="gpio_8hpp"/>
-        <childnode refid="5711" relation="include">
+        <childnode refid="5772" relation="include">
         </childnode>
-        <childnode refid="5712" relation="include">
+        <childnode refid="5773" relation="include">
         </childnode>
       </node>
-      <node id="5711">
+      <node id="5772">
         <label>stdint.h</label>
       </node>
-      <node id="5712">
+      <node id="5773">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="5713" relation="include">
+        <childnode refid="5774" relation="include">
         </childnode>
       </node>
-      <node id="5709">
+      <node id="5770">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/inverted.hpp</label>
         <link refid="inverted_8hpp"/>
-        <childnode refid="5710" relation="include">
+        <childnode refid="5771" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="5715">
+      <node id="5776">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>
-      <node id="5714">
+      <node id="5775">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/inverted.hpp</label>
         <link refid="inverted_8hpp"/>
-        <childnode refid="5715" relation="include">
+        <childnode refid="5776" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

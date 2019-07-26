@@ -6,30 +6,30 @@
     <includedby refid="debug_2debug_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/debug.hpp</includedby>
     <includedby refid="debug_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug.hpp</includedby>
     <incdepgraph>
-      <node id="1856">
+      <node id="1868">
         <label>stdint.h</label>
       </node>
-      <node id="1855">
+      <node id="1867">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp</label>
         <link refid="error__report_8hpp"/>
-        <childnode refid="1856" relation="include">
+        <childnode refid="1868" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1858">
+      <node id="1870">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/debug.hpp</label>
         <link refid="debug_2debug_8hpp"/>
       </node>
-      <node id="1857">
+      <node id="1869">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/error_report.hpp</label>
         <link refid="error__report_8hpp"/>
-        <childnode refid="1858" relation="include">
+        <childnode refid="1870" relation="include">
         </childnode>
-        <childnode refid="1859" relation="include">
+        <childnode refid="1871" relation="include">
         </childnode>
       </node>
-      <node id="1859">
+      <node id="1871">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug.hpp</label>
         <link refid="debug_8hpp"/>
       </node>

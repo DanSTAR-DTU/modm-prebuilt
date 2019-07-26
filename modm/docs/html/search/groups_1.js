@@ -9,5 +9,6 @@ var searchData=
   ['arm_20cmsis_2dcore',['ARM CMSIS-CORE',['../group__modm__cmsis__core.html',1,'']]],
   ['analog_2dto_2ddigital_20converter_20_28adc_29',['Analog-to-Digital Converter (ADC)',['../group__modm__platform__adc.html',1,'']]],
   ['arm_20cortex_2dm_20core',['ARM Cortex-M Core',['../group__modm__platform__cortex__m.html',1,'']]],
+  ['arm_20cortex_2dm_20fault_20reporters',['ARM Cortex-M Fault Reporters',['../group__modm__platform__fault.html',1,'']]],
   ['arm_20cortex_2dm_20systick',['ARM Cortex-M SysTick',['../group__modm__platform__systick.html',1,'']]]
 ];

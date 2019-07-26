@@ -404,38 +404,38 @@
 </para><para>You can set the buffer size using the <computeroutput>tx_buffer</computeroutput> and <computeroutput>rx_buffer</computeroutput> parameters.</para><para><simplesect kind="author"><para>Fabian Greif <ulink url="mailto:fabian.greif@rwth-aachen.de">fabian.greif@rwth-aachen.de</ulink> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="155">
+      <node id="157">
         <label>modm::Can</label>
         <link refid="classmodm_1_1_can"/>
-        <childnode refid="156" relation="public-inheritance">
+        <childnode refid="158" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="156">
+      <node id="158">
         <label>modm::PeripheralDriver</label>
         <link refid="classmodm_1_1_peripheral_driver"/>
       </node>
-      <node id="154">
+      <node id="156">
         <label>modm::platform::Can1</label>
         <link refid="classmodm_1_1platform_1_1_can1"/>
-        <childnode refid="155" relation="public-inheritance">
+        <childnode refid="157" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="158">
+      <node id="160">
         <label>modm::Can</label>
         <link refid="classmodm_1_1_can"/>
-        <childnode refid="159" relation="public-inheritance">
+        <childnode refid="161" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="159">
+      <node id="161">
         <label>modm::PeripheralDriver</label>
         <link refid="classmodm_1_1_peripheral_driver"/>
       </node>
-      <node id="157">
+      <node id="159">
         <label>modm::platform::Can1</label>
         <link refid="classmodm_1_1platform_1_1_can1"/>
-        <childnode refid="158" relation="public-inheritance">
+        <childnode refid="160" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

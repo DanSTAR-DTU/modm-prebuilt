@@ -419,44 +419,44 @@
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1313">
+      <node id="1317">
         <label>modm::I2cWriteReadTransaction</label>
         <link refid="classmodm_1_1_i2c_write_read_transaction"/>
-        <childnode refid="1310" relation="public-inheritance">
+        <childnode refid="1314" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1312">
+      <node id="1316">
         <label>modm::I2cReadTransaction</label>
         <link refid="classmodm_1_1_i2c_read_transaction"/>
-        <childnode refid="1310" relation="public-inheritance">
+        <childnode refid="1314" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1311">
+      <node id="1315">
         <label>modm::I2c</label>
         <link refid="structmodm_1_1_i2c"/>
       </node>
-      <node id="1310">
+      <node id="1314">
         <label>modm::I2cTransaction</label>
         <link refid="classmodm_1_1_i2c_transaction"/>
-        <childnode refid="1311" relation="public-inheritance">
+        <childnode refid="1315" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1314">
+      <node id="1318">
         <label>modm::I2cWriteTransaction</label>
         <link refid="classmodm_1_1_i2c_write_transaction"/>
-        <childnode refid="1310" relation="public-inheritance">
+        <childnode refid="1314" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1316">
+      <node id="1320">
         <label>modm::I2c</label>
         <link refid="structmodm_1_1_i2c"/>
       </node>
-      <node id="1315">
+      <node id="1319">
         <label>modm::I2cTransaction</label>
         <link refid="classmodm_1_1_i2c_transaction"/>
-        <childnode refid="1316" relation="public-inheritance">
+        <childnode refid="1320" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

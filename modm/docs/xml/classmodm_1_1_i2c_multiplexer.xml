@@ -178,38 +178,38 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1291">
+      <node id="1295">
         <label>modm::i2cMultiplexer</label>
         <link refid="structmodm_1_1i2c_multiplexer"/>
       </node>
-      <node id="1292">
+      <node id="1296">
         <label>modm::I2c</label>
         <link refid="structmodm_1_1_i2c"/>
       </node>
-      <node id="1290">
+      <node id="1294">
         <label>modm::I2cMultiplexer&lt; I2cMaster, I2cMultiplexerDevice &gt;</label>
         <link refid="classmodm_1_1_i2c_multiplexer"/>
-        <childnode refid="1291" relation="public-inheritance">
+        <childnode refid="1295" relation="public-inheritance">
         </childnode>
-        <childnode refid="1292" relation="public-inheritance">
+        <childnode refid="1296" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1294">
+      <node id="1298">
         <label>modm::i2cMultiplexer</label>
         <link refid="structmodm_1_1i2c_multiplexer"/>
       </node>
-      <node id="1295">
+      <node id="1299">
         <label>modm::I2c</label>
         <link refid="structmodm_1_1_i2c"/>
       </node>
-      <node id="1293">
+      <node id="1297">
         <label>modm::I2cMultiplexer&lt; I2cMaster, I2cMultiplexerDevice &gt;</label>
         <link refid="classmodm_1_1_i2c_multiplexer"/>
-        <childnode refid="1294" relation="public-inheritance">
+        <childnode refid="1298" relation="public-inheritance">
         </childnode>
-        <childnode refid="1295" relation="public-inheritance">
+        <childnode refid="1299" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

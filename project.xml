@@ -7,8 +7,10 @@
 		<option name=":docs:generate_module_docs">True</option>
 	</options>
 	<modules>
+		<module>:cmsis:device</module>
 		<module>:architecture:*</module>
 		<module>:container</module>
+		<module>:crashcatcher</module>
 		<module>:driver:bme280</module>
 		<module>:docs</module>
 		<module>:math:*</module>
@@ -17,8 +19,10 @@
 		<module>:platform:can:*</module>
 		<module>:platform:core</module>
 		<module>:platform:clock</module>
+		<module>:platform:fault</module>
 		<module>:platform:gpio</module>
 		<module>:platform:i2c:*</module>
+		<module>:platform:1-wire.bitbang</module>
 		<module>:platform:spi:*</module>
 		<module>:platform:spi.bitbang</module>
 		<module>:platform:timer:*</module>

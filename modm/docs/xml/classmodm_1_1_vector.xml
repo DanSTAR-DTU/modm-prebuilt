@@ -670,13 +670,13 @@
 </para></sect1>
     </detaileddescription>
     <collaborationgraph>
-      <node id="1810">
+      <node id="1814">
         <label>T</label>
       </node>
-      <node id="1809">
+      <node id="1813">
         <label>modm::Vector&lt; T, N &gt;</label>
         <link refid="classmodm_1_1_vector"/>
-        <childnode refid="1810" relation="usage">
+        <childnode refid="1814" relation="usage">
           <edgelabel>coords</edgelabel>
         </childnode>
       </node>

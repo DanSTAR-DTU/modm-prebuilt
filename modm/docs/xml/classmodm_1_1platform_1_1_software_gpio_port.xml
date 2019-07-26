@@ -160,30 +160,6 @@
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1509">
-        <label>modm::platform::SoftwareGpioPort&lt; Gpios &gt;</label>
-        <link refid="classmodm_1_1platform_1_1_software_gpio_port"/>
-        <childnode refid="1510" relation="public-inheritance">
-        </childnode>
-        <childnode refid="1511" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1511">
-        <label>modm::platform::GpioSet&lt; Gpios... &gt;</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_set"/>
-        <childnode refid="1512" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1510">
-        <label>modm::GpioPort</label>
-        <link refid="classmodm_1_1_gpio_port"/>
-      </node>
-      <node id="1512">
-        <label>modm::platform::Gpio</label>
-        <link refid="structmodm_1_1platform_1_1_gpio"/>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="1513">
         <label>modm::platform::SoftwareGpioPort&lt; Gpios &gt;</label>
         <link refid="classmodm_1_1platform_1_1_software_gpio_port"/>
@@ -203,6 +179,30 @@
         <link refid="classmodm_1_1_gpio_port"/>
       </node>
       <node id="1516">
+        <label>modm::platform::Gpio</label>
+        <link refid="structmodm_1_1platform_1_1_gpio"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1517">
+        <label>modm::platform::SoftwareGpioPort&lt; Gpios &gt;</label>
+        <link refid="classmodm_1_1platform_1_1_software_gpio_port"/>
+        <childnode refid="1518" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1519" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1519">
+        <label>modm::platform::GpioSet&lt; Gpios... &gt;</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_set"/>
+        <childnode refid="1520" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1518">
+        <label>modm::GpioPort</label>
+        <link refid="classmodm_1_1_gpio_port"/>
+      </node>
+      <node id="1520">
         <label>modm::platform::Gpio</label>
         <link refid="structmodm_1_1platform_1_1_gpio"/>
       </node>

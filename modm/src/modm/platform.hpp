@@ -15,6 +15,7 @@
 
 #include <modm/architecture/utils.hpp>
 
+#include "platform/1-wire/bitbang_master.hpp"
 #include "platform/adc/adc_1.hpp"
 #include "platform/adc/adc_2.hpp"
 #include "platform/adc/adc_3.hpp"
@@ -35,6 +36,8 @@
 #include "platform/core/heap_table.hpp"
 #include "platform/core/peripherals.hpp"
 #include "platform/core/unaligned.hpp"
+#include "platform/fault/fault.hpp"
+#include "platform/fault/fault_storage.hpp"
 #include "platform/gpio/base.hpp"
 #include "platform/gpio/connector.hpp"
 #include "platform/gpio/connector_detail.hpp"

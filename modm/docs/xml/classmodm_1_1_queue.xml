@@ -200,14 +200,14 @@
 <simplesect kind="author"><para>Fabian Greif </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1463">
+      <node id="1467">
         <label>modm::Queue&lt; T, Container &gt;</label>
         <link refid="classmodm_1_1_queue"/>
       </node>
-      <node id="1464">
+      <node id="1468">
         <label>modm::BoundedQueue&lt; T, Container &gt;</label>
         <link refid="classmodm_1_1_bounded_queue"/>
-        <childnode refid="1463" relation="public-inheritance">
+        <childnode refid="1467" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

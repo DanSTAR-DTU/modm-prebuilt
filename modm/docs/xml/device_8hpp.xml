@@ -78,339 +78,377 @@
     <includedby refid="uart__hal__5_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp</includedby>
     <includedby refid="uart__hal__6_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp</includedby>
     <incdepgraph>
-      <node id="4584">
+      <node id="4625">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="4586">
+      <node id="4627">
         <label>system_stm32f4xx.h</label>
       </node>
-      <node id="4582">
+      <node id="4623">
         <label>stdint.h</label>
       </node>
-      <node id="4583">
+      <node id="4624">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="4584" relation="include">
+        <childnode refid="4625" relation="include">
         </childnode>
       </node>
-      <node id="4581">
+      <node id="4622">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/device.hpp</label>
         <link refid="device_8hpp"/>
-        <childnode refid="4582" relation="include">
+        <childnode refid="4623" relation="include">
         </childnode>
-        <childnode refid="4583" relation="include">
+        <childnode refid="4624" relation="include">
         </childnode>
-        <childnode refid="4585" relation="include">
+        <childnode refid="4626" relation="include">
         </childnode>
-        <childnode refid="4586" relation="include">
+        <childnode refid="4627" relation="include">
         </childnode>
       </node>
-      <node id="4585">
+      <node id="4626">
         <label>stm32f446xx.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4630">
+      <node id="4672">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A0.hpp</label>
         <link refid="gpio___a0_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4697">
+      <node id="4739">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_6.hpp</label>
         <link refid="uart__hal__6_8hpp"/>
-        <childnode refid="4627" relation="include">
+        <childnode refid="4669" relation="include">
         </childnode>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4624">
+      <node id="4666">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_3.hpp</label>
         <link refid="uart__3_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4651">
+      <node id="4693">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B13.hpp</label>
         <link refid="gpio___b13_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4632">
+      <node id="4674">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A1.hpp</label>
         <link refid="gpio___a1_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4629">
+      <node id="4671">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/connector_detail.hpp</label>
         <link refid="connector__detail_8hpp"/>
-        <childnode refid="4600" relation="include">
+        <childnode refid="4641" relation="include">
         </childnode>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4598">
+      <node id="4639">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp</label>
         <link refid="rcc_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4658">
+      <node id="4700">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B6.hpp</label>
         <link refid="gpio___b6_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4690">
+      <node id="4732">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_base.hpp</label>
         <link refid="uart__base_8hpp"/>
-        <childnode refid="4622" relation="include">
+        <childnode refid="4664" relation="include">
+        </childnode>
+        <childnode refid="4733" relation="include">
+        </childnode>
+        <childnode refid="4734" relation="include">
+        </childnode>
+        <childnode refid="4665" relation="include">
+        </childnode>
+        <childnode refid="4735" relation="include">
+        </childnode>
+        <childnode refid="4666" relation="include">
+        </childnode>
+        <childnode refid="4736" relation="include">
+        </childnode>
+        <childnode refid="4667" relation="include">
+        </childnode>
+        <childnode refid="4737" relation="include">
+        </childnode>
+        <childnode refid="4668" relation="include">
+        </childnode>
+        <childnode refid="4738" relation="include">
+        </childnode>
+        <childnode refid="4669" relation="include">
+        </childnode>
+        <childnode refid="4739" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4691">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B10.hpp</label>
+        <link refid="gpio___b10_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4701">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B7.hpp</label>
+        <link refid="gpio___b7_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4702">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B8.hpp</label>
+        <link refid="gpio___b8_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4670">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/unused.hpp</label>
+        <link refid="unused_8hpp"/>
+        <childnode refid="4671" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4665">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_2.hpp</label>
+        <link refid="uart__2_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4713">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C3.hpp</label>
+        <link refid="gpio___c3_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4703">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B9.hpp</label>
+        <link refid="gpio___b9_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4723">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/port.hpp</label>
+        <link refid="port_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4649">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp</label>
+        <link refid="spi__master__3_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4668">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_5.hpp</label>
+        <link refid="uart__5_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4710">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C14.hpp</label>
+        <link refid="gpio___c14_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4714">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C4.hpp</label>
+        <link refid="gpio___c4_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4648">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_2.hpp</label>
+        <link refid="spi__master__2_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4667">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_4.hpp</label>
+        <link refid="uart__4_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4685">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A6.hpp</label>
+        <link refid="gpio___a6_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4715">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C5.hpp</label>
+        <link refid="gpio___c5_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4712">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C2.hpp</label>
+        <link refid="gpio___c2_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4636">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</label>
+        <link refid="can__1_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4686">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A7.hpp</label>
+        <link refid="gpio___a7_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4731">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/advanced_base.hpp</label>
+        <link refid="advanced__base_8hpp"/>
+        <childnode refid="4650" relation="include">
+        </childnode>
+        <childnode refid="4662" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4638">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</label>
+        <link refid="can__2_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4673">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/set.hpp</label>
+        <link refid="set_8hpp"/>
+        <childnode refid="4672" relation="include">
+        </childnode>
+        <childnode refid="4674" relation="include">
+        </childnode>
+        <childnode refid="4675" relation="include">
+        </childnode>
+        <childnode refid="4676" relation="include">
+        </childnode>
+        <childnode refid="4677" relation="include">
+        </childnode>
+        <childnode refid="4678" relation="include">
+        </childnode>
+        <childnode refid="4679" relation="include">
+        </childnode>
+        <childnode refid="4680" relation="include">
+        </childnode>
+        <childnode refid="4681" relation="include">
+        </childnode>
+        <childnode refid="4682" relation="include">
+        </childnode>
+        <childnode refid="4683" relation="include">
+        </childnode>
+        <childnode refid="4684" relation="include">
+        </childnode>
+        <childnode refid="4685" relation="include">
+        </childnode>
+        <childnode refid="4686" relation="include">
+        </childnode>
+        <childnode refid="4687" relation="include">
+        </childnode>
+        <childnode refid="4688" relation="include">
+        </childnode>
+        <childnode refid="4689" relation="include">
+        </childnode>
+        <childnode refid="4690" relation="include">
         </childnode>
         <childnode refid="4691" relation="include">
         </childnode>
         <childnode refid="4692" relation="include">
         </childnode>
-        <childnode refid="4623" relation="include">
-        </childnode>
         <childnode refid="4693" relation="include">
-        </childnode>
-        <childnode refid="4624" relation="include">
         </childnode>
         <childnode refid="4694" relation="include">
         </childnode>
-        <childnode refid="4625" relation="include">
-        </childnode>
         <childnode refid="4695" relation="include">
-        </childnode>
-        <childnode refid="4626" relation="include">
         </childnode>
         <childnode refid="4696" relation="include">
         </childnode>
-        <childnode refid="4627" relation="include">
-        </childnode>
         <childnode refid="4697" relation="include">
         </childnode>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4698" relation="include">
+        </childnode>
+        <childnode refid="4699" relation="include">
+        </childnode>
+        <childnode refid="4700" relation="include">
+        </childnode>
+        <childnode refid="4701" relation="include">
+        </childnode>
+        <childnode refid="4702" relation="include">
+        </childnode>
+        <childnode refid="4703" relation="include">
+        </childnode>
+        <childnode refid="4704" relation="include">
+        </childnode>
+        <childnode refid="4705" relation="include">
+        </childnode>
+        <childnode refid="4706" relation="include">
+        </childnode>
+        <childnode refid="4707" relation="include">
+        </childnode>
+        <childnode refid="4708" relation="include">
+        </childnode>
+        <childnode refid="4709" relation="include">
+        </childnode>
+        <childnode refid="4710" relation="include">
+        </childnode>
+        <childnode refid="4711" relation="include">
+        </childnode>
+        <childnode refid="4712" relation="include">
+        </childnode>
+        <childnode refid="4713" relation="include">
+        </childnode>
+        <childnode refid="4714" relation="include">
+        </childnode>
+        <childnode refid="4715" relation="include">
+        </childnode>
+        <childnode refid="4716" relation="include">
+        </childnode>
+        <childnode refid="4717" relation="include">
+        </childnode>
+        <childnode refid="4718" relation="include">
+        </childnode>
+        <childnode refid="4719" relation="include">
+        </childnode>
+        <childnode refid="4720" relation="include">
+        </childnode>
+        <childnode refid="4721" relation="include">
+        </childnode>
+        <childnode refid="4722" relation="include">
+        </childnode>
+        <childnode refid="4723" relation="include">
+        </childnode>
+        <childnode refid="4724" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4649">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B10.hpp</label>
-        <link refid="gpio___b10_8hpp"/>
-        <childnode refid="4590" relation="include">
+      <node id="4687">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A8.hpp</label>
+        <link refid="gpio___a8_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4659">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B7.hpp</label>
-        <link refid="gpio___b7_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4660">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B8.hpp</label>
-        <link refid="gpio___b8_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4628">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/unused.hpp</label>
-        <link refid="unused_8hpp"/>
-        <childnode refid="4629" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4623">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_2.hpp</label>
-        <link refid="uart__2_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4671">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C3.hpp</label>
-        <link refid="gpio___c3_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4661">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B9.hpp</label>
-        <link refid="gpio___b9_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4681">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/port.hpp</label>
-        <link refid="port_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4607">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp</label>
-        <link refid="spi__master__3_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4626">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_5.hpp</label>
-        <link refid="uart__5_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4668">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C14.hpp</label>
-        <link refid="gpio___c14_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4672">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C4.hpp</label>
-        <link refid="gpio___c4_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4606">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_2.hpp</label>
-        <link refid="spi__master__2_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4625">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_4.hpp</label>
-        <link refid="uart__4_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4643">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A6.hpp</label>
-        <link refid="gpio___a6_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4673">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C5.hpp</label>
-        <link refid="gpio___c5_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4670">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C2.hpp</label>
-        <link refid="gpio___c2_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4595">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</label>
-        <link refid="can__1_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4644">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A7.hpp</label>
-        <link refid="gpio___a7_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4689">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/advanced_base.hpp</label>
-        <link refid="advanced__base_8hpp"/>
-        <childnode refid="4608" relation="include">
-        </childnode>
-        <childnode refid="4620" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4597">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</label>
-        <link refid="can__2_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4631">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/set.hpp</label>
-        <link refid="set_8hpp"/>
-        <childnode refid="4630" relation="include">
-        </childnode>
-        <childnode refid="4632" relation="include">
-        </childnode>
-        <childnode refid="4633" relation="include">
-        </childnode>
-        <childnode refid="4634" relation="include">
-        </childnode>
-        <childnode refid="4635" relation="include">
-        </childnode>
-        <childnode refid="4636" relation="include">
-        </childnode>
-        <childnode refid="4637" relation="include">
-        </childnode>
-        <childnode refid="4638" relation="include">
-        </childnode>
-        <childnode refid="4639" relation="include">
-        </childnode>
-        <childnode refid="4640" relation="include">
-        </childnode>
+      <node id="4640">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp</label>
+        <link refid="base_8hpp"/>
         <childnode refid="4641" relation="include">
         </childnode>
-        <childnode refid="4642" relation="include">
-        </childnode>
-        <childnode refid="4643" relation="include">
-        </childnode>
-        <childnode refid="4644" relation="include">
-        </childnode>
-        <childnode refid="4645" relation="include">
-        </childnode>
-        <childnode refid="4646" relation="include">
-        </childnode>
-        <childnode refid="4647" relation="include">
-        </childnode>
-        <childnode refid="4648" relation="include">
-        </childnode>
-        <childnode refid="4649" relation="include">
-        </childnode>
-        <childnode refid="4650" relation="include">
-        </childnode>
-        <childnode refid="4651" relation="include">
-        </childnode>
-        <childnode refid="4652" relation="include">
-        </childnode>
-        <childnode refid="4653" relation="include">
-        </childnode>
-        <childnode refid="4654" relation="include">
-        </childnode>
-        <childnode refid="4655" relation="include">
-        </childnode>
-        <childnode refid="4656" relation="include">
-        </childnode>
-        <childnode refid="4657" relation="include">
-        </childnode>
-        <childnode refid="4658" relation="include">
-        </childnode>
-        <childnode refid="4659" relation="include">
-        </childnode>
-        <childnode refid="4660" relation="include">
-        </childnode>
-        <childnode refid="4661" relation="include">
-        </childnode>
-        <childnode refid="4662" relation="include">
-        </childnode>
-        <childnode refid="4663" relation="include">
-        </childnode>
-        <childnode refid="4664" relation="include">
-        </childnode>
-        <childnode refid="4665" relation="include">
-        </childnode>
-        <childnode refid="4666" relation="include">
-        </childnode>
-        <childnode refid="4667" relation="include">
-        </childnode>
-        <childnode refid="4668" relation="include">
-        </childnode>
-        <childnode refid="4669" relation="include">
-        </childnode>
         <childnode refid="4670" relation="include">
-        </childnode>
-        <childnode refid="4671" relation="include">
         </childnode>
         <childnode refid="4672" relation="include">
         </childnode>
@@ -434,33 +472,227 @@
         </childnode>
         <childnode refid="4682" relation="include">
         </childnode>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4683" relation="include">
+        </childnode>
+        <childnode refid="4684" relation="include">
+        </childnode>
+        <childnode refid="4685" relation="include">
+        </childnode>
+        <childnode refid="4686" relation="include">
+        </childnode>
+        <childnode refid="4687" relation="include">
+        </childnode>
+        <childnode refid="4688" relation="include">
+        </childnode>
+        <childnode refid="4689" relation="include">
+        </childnode>
+        <childnode refid="4690" relation="include">
+        </childnode>
+        <childnode refid="4691" relation="include">
+        </childnode>
+        <childnode refid="4692" relation="include">
+        </childnode>
+        <childnode refid="4693" relation="include">
+        </childnode>
+        <childnode refid="4694" relation="include">
+        </childnode>
+        <childnode refid="4695" relation="include">
+        </childnode>
+        <childnode refid="4696" relation="include">
+        </childnode>
+        <childnode refid="4697" relation="include">
+        </childnode>
+        <childnode refid="4698" relation="include">
+        </childnode>
+        <childnode refid="4699" relation="include">
+        </childnode>
+        <childnode refid="4700" relation="include">
+        </childnode>
+        <childnode refid="4701" relation="include">
+        </childnode>
+        <childnode refid="4702" relation="include">
+        </childnode>
+        <childnode refid="4703" relation="include">
+        </childnode>
+        <childnode refid="4704" relation="include">
+        </childnode>
+        <childnode refid="4705" relation="include">
+        </childnode>
+        <childnode refid="4706" relation="include">
+        </childnode>
+        <childnode refid="4707" relation="include">
+        </childnode>
+        <childnode refid="4708" relation="include">
+        </childnode>
+        <childnode refid="4709" relation="include">
+        </childnode>
+        <childnode refid="4710" relation="include">
+        </childnode>
+        <childnode refid="4711" relation="include">
+        </childnode>
+        <childnode refid="4712" relation="include">
+        </childnode>
+        <childnode refid="4713" relation="include">
+        </childnode>
+        <childnode refid="4714" relation="include">
+        </childnode>
+        <childnode refid="4715" relation="include">
+        </childnode>
+        <childnode refid="4716" relation="include">
+        </childnode>
+        <childnode refid="4717" relation="include">
+        </childnode>
+        <childnode refid="4718" relation="include">
+        </childnode>
+        <childnode refid="4719" relation="include">
+        </childnode>
+        <childnode refid="4720" relation="include">
+        </childnode>
+        <childnode refid="4721" relation="include">
+        </childnode>
+        <childnode refid="4722" relation="include">
+        </childnode>
+        <childnode refid="4723" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4645">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A8.hpp</label>
-        <link refid="gpio___a8_8hpp"/>
-        <childnode refid="4590" relation="include">
+      <node id="4664">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp</label>
+        <link refid="uart__1_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4599">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/base.hpp</label>
-        <link refid="base_8hpp"/>
-        <childnode refid="4600" relation="include">
+      <node id="4688">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A9.hpp</label>
+        <link refid="gpio___a9_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
-        <childnode refid="4628" relation="include">
+      </node>
+      <node id="4704">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C0.hpp</label>
+        <link refid="gpio___c0_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
+      </node>
+      <node id="4679">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A14.hpp</label>
+        <link refid="gpio___a14_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4696">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B2.hpp</label>
+        <link refid="gpio___b2_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4705">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C1.hpp</label>
+        <link refid="gpio___c1_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4725">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp</label>
+        <link refid="spi__base_8hpp"/>
+        <childnode refid="4726" relation="include">
+        </childnode>
+        <childnode refid="4727" relation="include">
+        </childnode>
+        <childnode refid="4728" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4680">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A15.hpp</label>
+        <link refid="gpio___a15_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4655">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp</label>
+        <link refid="timer__14_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4697">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B3.hpp</label>
+        <link refid="gpio___b3_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4629">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp</label>
+        <link refid="adc__1_8hpp"/>
         <childnode refid="4630" relation="include">
         </childnode>
         <childnode refid="4631" relation="include">
         </childnode>
+      </node>
+      <node id="4726">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_1.hpp</label>
+        <link refid="spi__hal__1_8hpp"/>
+        <childnode refid="4647" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4729">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp</label>
+        <link refid="basic__base_8hpp"/>
+        <childnode refid="4730" relation="include">
+        </childnode>
+        <childnode refid="4660" relation="include">
+        </childnode>
+        <childnode refid="4661" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4721">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_H0.hpp</label>
+        <link refid="gpio___h0_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4662">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_8.hpp</label>
+        <link refid="timer__8_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4637">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp</label>
+        <link refid="can__filter_8hpp"/>
+        <childnode refid="4636" relation="include">
+        </childnode>
+        <childnode refid="4638" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4677">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A12.hpp</label>
+        <link refid="gpio___a12_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4654">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_13.hpp</label>
+        <link refid="timer__13_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4628">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/device.hpp</label>
+        <link refid="device_8hpp"/>
+        <childnode refid="4629" relation="include">
+        </childnode>
         <childnode refid="4632" relation="include">
         </childnode>
-        <childnode refid="4633" relation="include">
-        </childnode>
         <childnode refid="4634" relation="include">
-        </childnode>
-        <childnode refid="4635" relation="include">
         </childnode>
         <childnode refid="4636" relation="include">
         </childnode>
@@ -471,68 +703,6 @@
         <childnode refid="4639" relation="include">
         </childnode>
         <childnode refid="4640" relation="include">
-        </childnode>
-        <childnode refid="4641" relation="include">
-        </childnode>
-        <childnode refid="4642" relation="include">
-        </childnode>
-        <childnode refid="4643" relation="include">
-        </childnode>
-        <childnode refid="4644" relation="include">
-        </childnode>
-        <childnode refid="4645" relation="include">
-        </childnode>
-        <childnode refid="4646" relation="include">
-        </childnode>
-        <childnode refid="4647" relation="include">
-        </childnode>
-        <childnode refid="4648" relation="include">
-        </childnode>
-        <childnode refid="4649" relation="include">
-        </childnode>
-        <childnode refid="4650" relation="include">
-        </childnode>
-        <childnode refid="4651" relation="include">
-        </childnode>
-        <childnode refid="4652" relation="include">
-        </childnode>
-        <childnode refid="4653" relation="include">
-        </childnode>
-        <childnode refid="4654" relation="include">
-        </childnode>
-        <childnode refid="4655" relation="include">
-        </childnode>
-        <childnode refid="4656" relation="include">
-        </childnode>
-        <childnode refid="4657" relation="include">
-        </childnode>
-        <childnode refid="4658" relation="include">
-        </childnode>
-        <childnode refid="4659" relation="include">
-        </childnode>
-        <childnode refid="4660" relation="include">
-        </childnode>
-        <childnode refid="4661" relation="include">
-        </childnode>
-        <childnode refid="4662" relation="include">
-        </childnode>
-        <childnode refid="4663" relation="include">
-        </childnode>
-        <childnode refid="4664" relation="include">
-        </childnode>
-        <childnode refid="4665" relation="include">
-        </childnode>
-        <childnode refid="4666" relation="include">
-        </childnode>
-        <childnode refid="4667" relation="include">
-        </childnode>
-        <childnode refid="4668" relation="include">
-        </childnode>
-        <childnode refid="4669" relation="include">
-        </childnode>
-        <childnode refid="4670" relation="include">
-        </childnode>
-        <childnode refid="4671" relation="include">
         </childnode>
         <childnode refid="4672" relation="include">
         </childnode>
@@ -554,181 +724,405 @@
         </childnode>
         <childnode refid="4681" relation="include">
         </childnode>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4682" relation="include">
         </childnode>
-      </node>
-      <node id="4622">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_1.hpp</label>
-        <link refid="uart__1_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4683" relation="include">
         </childnode>
-      </node>
-      <node id="4646">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A9.hpp</label>
-        <link refid="gpio___a9_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4662">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C0.hpp</label>
-        <link refid="gpio___c0_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4637">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A14.hpp</label>
-        <link refid="gpio___a14_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4654">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B2.hpp</label>
-        <link refid="gpio___b2_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4663">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C1.hpp</label>
-        <link refid="gpio___c1_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4683">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_base.hpp</label>
-        <link refid="spi__base_8hpp"/>
         <childnode refid="4684" relation="include">
         </childnode>
         <childnode refid="4685" relation="include">
         </childnode>
         <childnode refid="4686" relation="include">
         </childnode>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4687" relation="include">
         </childnode>
-      </node>
-      <node id="4638">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A15.hpp</label>
-        <link refid="gpio___a15_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4613">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_14.hpp</label>
-        <link refid="timer__14_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4655">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B3.hpp</label>
-        <link refid="gpio___b3_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4588">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp</label>
-        <link refid="adc__1_8hpp"/>
-        <childnode refid="4589" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4684">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_1.hpp</label>
-        <link refid="spi__hal__1_8hpp"/>
-        <childnode refid="4605" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4687">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/basic_base.hpp</label>
-        <link refid="basic__base_8hpp"/>
         <childnode refid="4688" relation="include">
         </childnode>
-        <childnode refid="4618" relation="include">
+        <childnode refid="4689" relation="include">
         </childnode>
-        <childnode refid="4619" relation="include">
+        <childnode refid="4690" relation="include">
         </childnode>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4691" relation="include">
+        </childnode>
+        <childnode refid="4692" relation="include">
+        </childnode>
+        <childnode refid="4693" relation="include">
+        </childnode>
+        <childnode refid="4694" relation="include">
+        </childnode>
+        <childnode refid="4695" relation="include">
+        </childnode>
+        <childnode refid="4696" relation="include">
+        </childnode>
+        <childnode refid="4697" relation="include">
+        </childnode>
+        <childnode refid="4698" relation="include">
+        </childnode>
+        <childnode refid="4699" relation="include">
+        </childnode>
+        <childnode refid="4700" relation="include">
+        </childnode>
+        <childnode refid="4701" relation="include">
+        </childnode>
+        <childnode refid="4702" relation="include">
+        </childnode>
+        <childnode refid="4703" relation="include">
+        </childnode>
+        <childnode refid="4704" relation="include">
+        </childnode>
+        <childnode refid="4705" relation="include">
+        </childnode>
+        <childnode refid="4706" relation="include">
+        </childnode>
+        <childnode refid="4707" relation="include">
+        </childnode>
+        <childnode refid="4708" relation="include">
+        </childnode>
+        <childnode refid="4709" relation="include">
+        </childnode>
+        <childnode refid="4710" relation="include">
+        </childnode>
+        <childnode refid="4711" relation="include">
+        </childnode>
+        <childnode refid="4712" relation="include">
+        </childnode>
+        <childnode refid="4713" relation="include">
+        </childnode>
+        <childnode refid="4714" relation="include">
+        </childnode>
+        <childnode refid="4715" relation="include">
+        </childnode>
+        <childnode refid="4716" relation="include">
+        </childnode>
+        <childnode refid="4717" relation="include">
+        </childnode>
+        <childnode refid="4718" relation="include">
+        </childnode>
+        <childnode refid="4719" relation="include">
+        </childnode>
+        <childnode refid="4720" relation="include">
+        </childnode>
+        <childnode refid="4721" relation="include">
+        </childnode>
+        <childnode refid="4722" relation="include">
+        </childnode>
+        <childnode refid="4643" relation="include">
+        </childnode>
+        <childnode refid="4644" relation="include">
+        </childnode>
+        <childnode refid="4645" relation="include">
+        </childnode>
+        <childnode refid="4725" relation="include">
+        </childnode>
+        <childnode refid="4729" relation="include">
+        </childnode>
+        <childnode refid="4732" relation="include">
+        </childnode>
+        <childnode refid="4734" relation="include">
+        </childnode>
+        <childnode refid="4735" relation="include">
+        </childnode>
+        <childnode refid="4736" relation="include">
+        </childnode>
+        <childnode refid="4737" relation="include">
+        </childnode>
+        <childnode refid="4738" relation="include">
+        </childnode>
+        <childnode refid="4739" relation="include">
         </childnode>
       </node>
-      <node id="4679">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_H0.hpp</label>
-        <link refid="gpio___h0_8hpp"/>
-        <childnode refid="4590" relation="include">
+      <node id="4630">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp</label>
+        <link refid="adc__interrupt__1_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4620">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_8.hpp</label>
-        <link refid="timer__8_8hpp"/>
-        <childnode refid="4590" relation="include">
+      <node id="4698">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B4.hpp</label>
+        <link refid="gpio___b4_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4596">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_filter.hpp</label>
-        <link refid="can__filter_8hpp"/>
-        <childnode refid="4595" relation="include">
-        </childnode>
-        <childnode refid="4597" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
+      <node id="4722">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_H1.hpp</label>
+        <link refid="gpio___h1_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4635">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A12.hpp</label>
-        <link refid="gpio___a12_8hpp"/>
-        <childnode refid="4590" relation="include">
+      <node id="4663">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_9.hpp</label>
+        <link refid="timer__9_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4612">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_13.hpp</label>
-        <link refid="timer__13_8hpp"/>
-        <childnode refid="4590" relation="include">
+      <node id="4678">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A13.hpp</label>
+        <link refid="gpio___a13_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4587">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/device.hpp</label>
-        <link refid="device_8hpp"/>
-        <childnode refid="4588" relation="include">
+      <node id="4653">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_12.hpp</label>
+        <link refid="timer__12_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
-        <childnode refid="4591" relation="include">
+      </node>
+      <node id="4631">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
+        <link refid="platform_8hpp"/>
+      </node>
+      <node id="4699">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B5.hpp</label>
+        <link refid="gpio___b5_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
-        <childnode refid="4593" relation="include">
-        </childnode>
-        <childnode refid="4595" relation="include">
-        </childnode>
-        <childnode refid="4596" relation="include">
-        </childnode>
-        <childnode refid="4597" relation="include">
-        </childnode>
-        <childnode refid="4598" relation="include">
-        </childnode>
-        <childnode refid="4599" relation="include">
-        </childnode>
-        <childnode refid="4630" relation="include">
+      </node>
+      <node id="4728">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_3.hpp</label>
+        <link refid="spi__hal__3_8hpp"/>
+        <childnode refid="4649" relation="include">
         </childnode>
         <childnode refid="4631" relation="include">
         </childnode>
-        <childnode refid="4632" relation="include">
+      </node>
+      <node id="4711">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C15.hpp</label>
+        <link refid="gpio___c15_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
-        <childnode refid="4633" relation="include">
+      </node>
+      <node id="4660">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp</label>
+        <link refid="timer__6_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4675">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A10.hpp</label>
+        <link refid="gpio___a10_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4652">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_11.hpp</label>
+        <link refid="timer__11_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4635">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_3.hpp</label>
+        <link refid="adc__interrupt__3_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4727">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_2.hpp</label>
+        <link refid="spi__hal__2_8hpp"/>
+        <childnode refid="4648" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4708">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C12.hpp</label>
+        <link refid="gpio___c12_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4661">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_7.hpp</label>
+        <link refid="timer__7_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4676">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A11.hpp</label>
+        <link refid="gpio___a11_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4651">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_10.hpp</label>
+        <link refid="timer__10_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4733">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp</label>
+        <link refid="uart__baudrate_8hpp"/>
+        <childnode refid="4664" relation="include">
+        </childnode>
+        <childnode refid="4734" relation="include">
+        </childnode>
+        <childnode refid="4665" relation="include">
+        </childnode>
+        <childnode refid="4735" relation="include">
+        </childnode>
+        <childnode refid="4666" relation="include">
+        </childnode>
+        <childnode refid="4736" relation="include">
+        </childnode>
+        <childnode refid="4667" relation="include">
+        </childnode>
+        <childnode refid="4737" relation="include">
+        </childnode>
+        <childnode refid="4668" relation="include">
+        </childnode>
+        <childnode refid="4738" relation="include">
+        </childnode>
+        <childnode refid="4669" relation="include">
+        </childnode>
+        <childnode refid="4739" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4681">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp</label>
+        <link refid="gpio___a2_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4633">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp</label>
+        <link refid="adc__interrupt__2_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4716">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C6.hpp</label>
+        <link refid="gpio___c6_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4709">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C13.hpp</label>
+        <link refid="gpio___c13_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4658">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_4.hpp</label>
+        <link refid="timer__4_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4682">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A3.hpp</label>
+        <link refid="gpio___a3_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4669">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_6.hpp</label>
+        <link refid="uart__6_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4689">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B0.hpp</label>
+        <link refid="gpio___b0_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4734">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_1.hpp</label>
+        <link refid="uart__hal__1_8hpp"/>
+        <childnode refid="4664" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4717">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C7.hpp</label>
+        <link refid="gpio___c7_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4706">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C10.hpp</label>
+        <link refid="gpio___c10_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4659">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_5.hpp</label>
+        <link refid="timer__5_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4683">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A4.hpp</label>
+        <link refid="gpio___a4_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4690">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B1.hpp</label>
+        <link refid="gpio___b1_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4634">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp</label>
+        <link refid="adc__3_8hpp"/>
+        <childnode refid="4635" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4735">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_2.hpp</label>
+        <link refid="uart__hal__2_8hpp"/>
+        <childnode refid="4665" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4718">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C8.hpp</label>
+        <link refid="gpio___c8_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4707">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C11.hpp</label>
+        <link refid="gpio___c11_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4656">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_2.hpp</label>
+        <link refid="timer__2_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4684">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A5.hpp</label>
+        <link refid="gpio___a5_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4643">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_1.hpp</label>
+        <link refid="i2c__master__1_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4641">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/connector.hpp</label>
+        <link refid="connector_8hpp"/>
+        <childnode refid="4642" relation="include">
+        </childnode>
+        <childnode refid="4629" relation="include">
+        </childnode>
+        <childnode refid="4632" relation="include">
         </childnode>
         <childnode refid="4634" relation="include">
         </childnode>
-        <childnode refid="4635" relation="include">
-        </childnode>
         <childnode refid="4636" relation="include">
         </childnode>
-        <childnode refid="4637" relation="include">
-        </childnode>
         <childnode refid="4638" relation="include">
-        </childnode>
-        <childnode refid="4639" relation="include">
-        </childnode>
-        <childnode refid="4640" relation="include">
-        </childnode>
-        <childnode refid="4641" relation="include">
-        </childnode>
-        <childnode refid="4642" relation="include">
         </childnode>
         <childnode refid="4643" relation="include">
         </childnode>
@@ -784,531 +1178,145 @@
         </childnode>
         <childnode refid="4669" relation="include">
         </childnode>
-        <childnode refid="4670" relation="include">
-        </childnode>
-        <childnode refid="4671" relation="include">
-        </childnode>
-        <childnode refid="4672" relation="include">
-        </childnode>
-        <childnode refid="4673" relation="include">
-        </childnode>
-        <childnode refid="4674" relation="include">
-        </childnode>
-        <childnode refid="4675" relation="include">
-        </childnode>
-        <childnode refid="4676" relation="include">
-        </childnode>
-        <childnode refid="4677" relation="include">
-        </childnode>
-        <childnode refid="4678" relation="include">
-        </childnode>
-        <childnode refid="4679" relation="include">
-        </childnode>
-        <childnode refid="4680" relation="include">
-        </childnode>
-        <childnode refid="4601" relation="include">
-        </childnode>
-        <childnode refid="4602" relation="include">
-        </childnode>
-        <childnode refid="4603" relation="include">
-        </childnode>
-        <childnode refid="4683" relation="include">
-        </childnode>
-        <childnode refid="4687" relation="include">
-        </childnode>
-        <childnode refid="4690" relation="include">
-        </childnode>
-        <childnode refid="4692" relation="include">
-        </childnode>
-        <childnode refid="4693" relation="include">
-        </childnode>
-        <childnode refid="4694" relation="include">
-        </childnode>
-        <childnode refid="4695" relation="include">
-        </childnode>
-        <childnode refid="4696" relation="include">
-        </childnode>
-        <childnode refid="4697" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4589">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_1.hpp</label>
-        <link refid="adc__interrupt__1_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4656">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B4.hpp</label>
-        <link refid="gpio___b4_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4680">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_H1.hpp</label>
-        <link refid="gpio___h1_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4621">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_9.hpp</label>
-        <link refid="timer__9_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4636">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A13.hpp</label>
-        <link refid="gpio___a13_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4611">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_12.hpp</label>
-        <link refid="timer__12_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4590">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
-        <link refid="platform_8hpp"/>
-      </node>
-      <node id="4657">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B5.hpp</label>
-        <link refid="gpio___b5_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4686">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_3.hpp</label>
-        <link refid="spi__hal__3_8hpp"/>
-        <childnode refid="4607" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4669">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C15.hpp</label>
-        <link refid="gpio___c15_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4618">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_6.hpp</label>
-        <link refid="timer__6_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4633">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A10.hpp</label>
-        <link refid="gpio___a10_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4610">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_11.hpp</label>
-        <link refid="timer__11_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4594">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_3.hpp</label>
-        <link refid="adc__interrupt__3_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4685">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_2.hpp</label>
-        <link refid="spi__hal__2_8hpp"/>
-        <childnode refid="4606" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4666">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C12.hpp</label>
-        <link refid="gpio___c12_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4619">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_7.hpp</label>
-        <link refid="timer__7_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4634">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A11.hpp</label>
-        <link refid="gpio___a11_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4609">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_10.hpp</label>
-        <link refid="timer__10_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4691">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_baudrate.hpp</label>
-        <link refid="uart__baudrate_8hpp"/>
-        <childnode refid="4622" relation="include">
-        </childnode>
-        <childnode refid="4692" relation="include">
-        </childnode>
-        <childnode refid="4623" relation="include">
-        </childnode>
-        <childnode refid="4693" relation="include">
-        </childnode>
-        <childnode refid="4624" relation="include">
-        </childnode>
-        <childnode refid="4694" relation="include">
-        </childnode>
-        <childnode refid="4625" relation="include">
-        </childnode>
-        <childnode refid="4695" relation="include">
-        </childnode>
-        <childnode refid="4626" relation="include">
-        </childnode>
-        <childnode refid="4696" relation="include">
-        </childnode>
-        <childnode refid="4627" relation="include">
-        </childnode>
-        <childnode refid="4697" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4639">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A2.hpp</label>
-        <link refid="gpio___a2_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4592">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_interrupt_2.hpp</label>
-        <link refid="adc__interrupt__2_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4674">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C6.hpp</label>
-        <link refid="gpio___c6_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4667">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C13.hpp</label>
-        <link refid="gpio___c13_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4616">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_4.hpp</label>
-        <link refid="timer__4_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4640">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A3.hpp</label>
-        <link refid="gpio___a3_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4627">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_6.hpp</label>
-        <link refid="uart__6_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4647">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B0.hpp</label>
-        <link refid="gpio___b0_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4692">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_1.hpp</label>
-        <link refid="uart__hal__1_8hpp"/>
-        <childnode refid="4622" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4675">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C7.hpp</label>
-        <link refid="gpio___c7_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4664">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C10.hpp</label>
-        <link refid="gpio___c10_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4617">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_5.hpp</label>
-        <link refid="timer__5_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4641">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A4.hpp</label>
-        <link refid="gpio___a4_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4648">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B1.hpp</label>
-        <link refid="gpio___b1_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4593">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp</label>
-        <link refid="adc__3_8hpp"/>
-        <childnode refid="4594" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4693">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_2.hpp</label>
-        <link refid="uart__hal__2_8hpp"/>
-        <childnode refid="4623" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4676">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C8.hpp</label>
-        <link refid="gpio___c8_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4665">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C11.hpp</label>
-        <link refid="gpio___c11_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4614">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_2.hpp</label>
-        <link refid="timer__2_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4642">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_A5.hpp</label>
-        <link refid="gpio___a5_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4601">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_1.hpp</label>
-        <link refid="i2c__master__1_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4600">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/connector.hpp</label>
-        <link refid="connector_8hpp"/>
-        <childnode refid="4588" relation="include">
-        </childnode>
-        <childnode refid="4591" relation="include">
-        </childnode>
-        <childnode refid="4593" relation="include">
-        </childnode>
-        <childnode refid="4595" relation="include">
-        </childnode>
-        <childnode refid="4597" relation="include">
-        </childnode>
-        <childnode refid="4601" relation="include">
-        </childnode>
-        <childnode refid="4602" relation="include">
-        </childnode>
-        <childnode refid="4603" relation="include">
-        </childnode>
-        <childnode refid="4604" relation="include">
-        </childnode>
-        <childnode refid="4605" relation="include">
-        </childnode>
-        <childnode refid="4606" relation="include">
-        </childnode>
-        <childnode refid="4607" relation="include">
-        </childnode>
-        <childnode refid="4608" relation="include">
-        </childnode>
-        <childnode refid="4609" relation="include">
-        </childnode>
-        <childnode refid="4610" relation="include">
-        </childnode>
-        <childnode refid="4611" relation="include">
-        </childnode>
-        <childnode refid="4612" relation="include">
-        </childnode>
-        <childnode refid="4613" relation="include">
-        </childnode>
-        <childnode refid="4614" relation="include">
-        </childnode>
-        <childnode refid="4615" relation="include">
-        </childnode>
-        <childnode refid="4616" relation="include">
-        </childnode>
-        <childnode refid="4617" relation="include">
-        </childnode>
-        <childnode refid="4618" relation="include">
-        </childnode>
-        <childnode refid="4619" relation="include">
-        </childnode>
-        <childnode refid="4620" relation="include">
-        </childnode>
-        <childnode refid="4621" relation="include">
-        </childnode>
-        <childnode refid="4622" relation="include">
-        </childnode>
-        <childnode refid="4623" relation="include">
-        </childnode>
-        <childnode refid="4624" relation="include">
-        </childnode>
-        <childnode refid="4625" relation="include">
-        </childnode>
-        <childnode refid="4626" relation="include">
-        </childnode>
-        <childnode refid="4627" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4591">
+      <node id="4632">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp</label>
         <link refid="adc__2_8hpp"/>
-        <childnode refid="4592" relation="include">
+        <childnode refid="4633" relation="include">
         </childnode>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4736">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_3.hpp</label>
+        <link refid="uart__hal__3_8hpp"/>
+        <childnode refid="4666" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4719">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp</label>
+        <link refid="gpio___c9_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4657">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_3.hpp</label>
+        <link refid="timer__3_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
       <node id="4694">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_3.hpp</label>
-        <link refid="uart__hal__3_8hpp"/>
-        <childnode refid="4624" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4677">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_C9.hpp</label>
-        <link refid="gpio___c9_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4615">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_3.hpp</label>
-        <link refid="timer__3_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4652">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B14.hpp</label>
         <link refid="gpio___b14_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4602">
+      <node id="4644">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp</label>
         <link refid="i2c__master__2_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4682">
+      <node id="4724">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/software_port.hpp</label>
         <link refid="software__port_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4737">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_4.hpp</label>
+        <link refid="uart__hal__4_8hpp"/>
+        <childnode refid="4667" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4720">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_D2.hpp</label>
+        <link refid="gpio___d2_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4647">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp</label>
+        <link refid="spi__master__1_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
       <node id="4695">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_4.hpp</label>
-        <link refid="uart__hal__4_8hpp"/>
-        <childnode refid="4625" relation="include">
-        </childnode>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4678">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_D2.hpp</label>
-        <link refid="gpio___d2_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4605">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_1.hpp</label>
-        <link refid="spi__master__1_8hpp"/>
-        <childnode refid="4590" relation="include">
-        </childnode>
-      </node>
-      <node id="4653">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B15.hpp</label>
         <link refid="gpio___b15_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4603">
+      <node id="4645">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp</label>
         <link refid="i2c__master__3_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4688">
+      <node id="4730">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/general_purpose_base.hpp</label>
         <link refid="general__purpose__base_8hpp"/>
-        <childnode refid="4689" relation="include">
+        <childnode refid="4731" relation="include">
         </childnode>
-        <childnode refid="4609" relation="include">
+        <childnode refid="4651" relation="include">
         </childnode>
-        <childnode refid="4610" relation="include">
+        <childnode refid="4652" relation="include">
         </childnode>
-        <childnode refid="4611" relation="include">
+        <childnode refid="4653" relation="include">
         </childnode>
-        <childnode refid="4612" relation="include">
+        <childnode refid="4654" relation="include">
         </childnode>
-        <childnode refid="4613" relation="include">
+        <childnode refid="4655" relation="include">
         </childnode>
-        <childnode refid="4614" relation="include">
+        <childnode refid="4656" relation="include">
         </childnode>
-        <childnode refid="4615" relation="include">
+        <childnode refid="4657" relation="include">
         </childnode>
-        <childnode refid="4616" relation="include">
+        <childnode refid="4658" relation="include">
         </childnode>
-        <childnode refid="4617" relation="include">
+        <childnode refid="4659" relation="include">
         </childnode>
-        <childnode refid="4621" relation="include">
+        <childnode refid="4663" relation="include">
         </childnode>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4604">
+      <node id="4646">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/bitbang_spi_master.hpp</label>
         <link refid="bitbang__spi__master_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4696">
+      <node id="4738">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/uart/uart_hal_5.hpp</label>
         <link refid="uart__hal__5_8hpp"/>
-        <childnode refid="4626" relation="include">
+        <childnode refid="4668" relation="include">
         </childnode>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
-      <node id="4608">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_1.hpp</label>
-        <link refid="timer__1_8hpp"/>
-        <childnode refid="4590" relation="include">
+      <node id="4642">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/1-wire/bitbang_master.hpp</label>
+        <link refid="bitbang__master_8hpp"/>
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
       <node id="4650">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_1.hpp</label>
+        <link refid="timer__1_8hpp"/>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4692">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/gpio/gpio_B12.hpp</label>
         <link refid="gpio___b12_8hpp"/>
-        <childnode refid="4590" relation="include">
+        <childnode refid="4631" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

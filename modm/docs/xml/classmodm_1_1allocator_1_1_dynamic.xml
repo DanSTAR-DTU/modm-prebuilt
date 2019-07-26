@@ -105,18 +105,6 @@
 <para>Wrapper for the underlying memory management. No additional management is done.</para><para><simplesect kind="author"><para>Fabian Greif </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="218">
-        <label>modm::allocator::AllocatorBase&lt; T &gt;</label>
-        <link refid="classmodm_1_1allocator_1_1_allocator_base"/>
-      </node>
-      <node id="217">
-        <label>modm::allocator::Dynamic&lt; T &gt;</label>
-        <link refid="classmodm_1_1allocator_1_1_dynamic"/>
-        <childnode refid="218" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="220">
         <label>modm::allocator::AllocatorBase&lt; T &gt;</label>
         <link refid="classmodm_1_1allocator_1_1_allocator_base"/>
@@ -125,6 +113,18 @@
         <label>modm::allocator::Dynamic&lt; T &gt;</label>
         <link refid="classmodm_1_1allocator_1_1_dynamic"/>
         <childnode refid="220" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="222">
+        <label>modm::allocator::AllocatorBase&lt; T &gt;</label>
+        <link refid="classmodm_1_1allocator_1_1_allocator_base"/>
+      </node>
+      <node id="221">
+        <label>modm::allocator::Dynamic&lt; T &gt;</label>
+        <link refid="classmodm_1_1allocator_1_1_dynamic"/>
+        <childnode refid="222" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

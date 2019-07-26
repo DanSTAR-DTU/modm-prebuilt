@@ -7,136 +7,136 @@
     <includedby refid="spi__master__3_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp</includedby>
     <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <incdepgraph>
-      <node id="6081">
+      <node id="6143">
         <label>stdarg.h</label>
       </node>
-      <node id="6074">
+      <node id="6136">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="6076">
+      <node id="6138">
         <label>system_stm32f4xx.h</label>
       </node>
-      <node id="6086">
+      <node id="6148">
         <label>spi_hal_3_impl.hpp</label>
       </node>
-      <node id="6071">
+      <node id="6133">
         <label>stdint.h</label>
       </node>
-      <node id="6084">
+      <node id="6146">
         <label>iodevice.hpp</label>
         <link refid="iodevice_8hpp"/>
       </node>
-      <node id="6085">
+      <node id="6147">
         <label>iodevice_wrapper.hpp</label>
         <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="6071" relation="include">
+        <childnode refid="6133" relation="include">
         </childnode>
-        <childnode refid="6084" relation="include">
+        <childnode refid="6146" relation="include">
         </childnode>
       </node>
-      <node id="6079">
+      <node id="6141">
         <label>modm/io/iostream.hpp</label>
         <link refid="iostream_8hpp"/>
-        <childnode refid="6080" relation="include">
+        <childnode refid="6142" relation="include">
         </childnode>
-        <childnode refid="6073" relation="include">
+        <childnode refid="6135" relation="include">
         </childnode>
-        <childnode refid="6081" relation="include">
+        <childnode refid="6143" relation="include">
         </childnode>
-        <childnode refid="6082" relation="include">
+        <childnode refid="6144" relation="include">
         </childnode>
-        <childnode refid="6083" relation="include">
+        <childnode refid="6145" relation="include">
         </childnode>
-        <childnode refid="6084" relation="include">
+        <childnode refid="6146" relation="include">
         </childnode>
-        <childnode refid="6085" relation="include">
+        <childnode refid="6147" relation="include">
         </childnode>
       </node>
-      <node id="6070">
+      <node id="6132">
         <label>spi_base.hpp</label>
         <link refid="spi__base_8hpp"/>
-        <childnode refid="6071" relation="include">
+        <childnode refid="6133" relation="include">
         </childnode>
-        <childnode refid="6072" relation="include">
+        <childnode refid="6134" relation="include">
         </childnode>
-        <childnode refid="6077" relation="include">
+        <childnode refid="6139" relation="include">
         </childnode>
       </node>
-      <node id="6073">
+      <node id="6135">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="6074" relation="include">
+        <childnode refid="6136" relation="include">
         </childnode>
       </node>
-      <node id="6077">
+      <node id="6139">
         <label>modm/architecture/interface/register.hpp</label>
         <link refid="register_8hpp"/>
-        <childnode refid="6071" relation="include">
+        <childnode refid="6133" relation="include">
         </childnode>
-        <childnode refid="6078" relation="include">
+        <childnode refid="6140" relation="include">
         </childnode>
-        <childnode refid="6074" relation="include">
+        <childnode refid="6136" relation="include">
         </childnode>
-        <childnode refid="6079" relation="include">
+        <childnode refid="6141" relation="include">
         </childnode>
       </node>
-      <node id="6072">
+      <node id="6134">
         <label>../device.hpp</label>
         <link refid="device_8hpp"/>
-        <childnode refid="6071" relation="include">
+        <childnode refid="6133" relation="include">
         </childnode>
-        <childnode refid="6073" relation="include">
+        <childnode refid="6135" relation="include">
         </childnode>
-        <childnode refid="6075" relation="include">
+        <childnode refid="6137" relation="include">
         </childnode>
-        <childnode refid="6076" relation="include">
+        <childnode refid="6138" relation="include">
         </childnode>
       </node>
-      <node id="6069">
+      <node id="6131">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_3.hpp</label>
         <link refid="spi__hal__3_8hpp"/>
-        <childnode refid="6070" relation="include">
+        <childnode refid="6132" relation="include">
         </childnode>
-        <childnode refid="6086" relation="include">
+        <childnode refid="6148" relation="include">
         </childnode>
       </node>
-      <node id="6080">
+      <node id="6142">
         <label>cstddef</label>
       </node>
-      <node id="6083">
+      <node id="6145">
         <label>type_traits</label>
       </node>
-      <node id="6075">
+      <node id="6137">
         <label>stm32f446xx.h</label>
       </node>
-      <node id="6078">
+      <node id="6140">
         <label>modm/math/utils/bit_constants.hpp</label>
         <link refid="bit__constants_8hpp"/>
-        <childnode refid="6071" relation="include">
+        <childnode refid="6133" relation="include">
         </childnode>
       </node>
-      <node id="6082">
+      <node id="6144">
         <label>inttypes.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="6088">
+      <node id="6150">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_master_3.hpp</label>
         <link refid="spi__master__3_8hpp"/>
-        <childnode refid="6089" relation="include">
+        <childnode refid="6151" relation="include">
         </childnode>
       </node>
-      <node id="6089">
+      <node id="6151">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>
-      <node id="6087">
+      <node id="6149">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/spi/spi_hal_3.hpp</label>
         <link refid="spi__hal__3_8hpp"/>
-        <childnode refid="6088" relation="include">
+        <childnode refid="6150" relation="include">
         </childnode>
-        <childnode refid="6089" relation="include">
+        <childnode refid="6151" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

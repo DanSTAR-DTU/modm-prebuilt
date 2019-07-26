@@ -782,77 +782,77 @@
     <detaileddescription>
 <para>IO class for Pin A15 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="500">
+      <node id="504">
         <label>modm::platform::Gpio</label>
         <link refid="structmodm_1_1platform_1_1_gpio"/>
       </node>
-      <node id="501">
+      <node id="505">
         <label>modm::GpioIO</label>
         <link refid="classmodm_1_1_gpio_i_o"/>
-        <childnode refid="502" relation="public-inheritance">
+        <childnode refid="506" relation="public-inheritance">
         </childnode>
-        <childnode refid="504" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="499">
-        <label>modm::platform::GpioA15</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a15"/>
-        <childnode refid="500" relation="public-inheritance">
-        </childnode>
-        <childnode refid="501" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="504">
-        <label>modm::GpioInput</label>
-        <link refid="classmodm_1_1_gpio_input"/>
-        <childnode refid="503" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="502">
-        <label>modm::GpioOutput</label>
-        <link refid="classmodm_1_1_gpio_output"/>
-        <childnode refid="503" relation="public-inheritance">
+        <childnode refid="508" relation="public-inheritance">
         </childnode>
       </node>
       <node id="503">
+        <label>modm::platform::GpioA15</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a15"/>
+        <childnode refid="504" relation="public-inheritance">
+        </childnode>
+        <childnode refid="505" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="508">
+        <label>modm::GpioInput</label>
+        <link refid="classmodm_1_1_gpio_input"/>
+        <childnode refid="507" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="506">
+        <label>modm::GpioOutput</label>
+        <link refid="classmodm_1_1_gpio_output"/>
+        <childnode refid="507" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="507">
         <label>modm::Gpio</label>
         <link refid="structmodm_1_1_gpio"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="506">
+      <node id="510">
         <label>modm::platform::Gpio</label>
         <link refid="structmodm_1_1platform_1_1_gpio"/>
       </node>
-      <node id="507">
+      <node id="511">
         <label>modm::GpioIO</label>
         <link refid="classmodm_1_1_gpio_i_o"/>
-        <childnode refid="508" relation="public-inheritance">
+        <childnode refid="512" relation="public-inheritance">
         </childnode>
-        <childnode refid="510" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="505">
-        <label>modm::platform::GpioA15</label>
-        <link refid="classmodm_1_1platform_1_1_gpio_a15"/>
-        <childnode refid="506" relation="public-inheritance">
-        </childnode>
-        <childnode refid="507" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="510">
-        <label>modm::GpioInput</label>
-        <link refid="classmodm_1_1_gpio_input"/>
-        <childnode refid="509" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="508">
-        <label>modm::GpioOutput</label>
-        <link refid="classmodm_1_1_gpio_output"/>
-        <childnode refid="509" relation="public-inheritance">
+        <childnode refid="514" relation="public-inheritance">
         </childnode>
       </node>
       <node id="509">
+        <label>modm::platform::GpioA15</label>
+        <link refid="classmodm_1_1platform_1_1_gpio_a15"/>
+        <childnode refid="510" relation="public-inheritance">
+        </childnode>
+        <childnode refid="511" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="514">
+        <label>modm::GpioInput</label>
+        <link refid="classmodm_1_1_gpio_input"/>
+        <childnode refid="513" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="512">
+        <label>modm::GpioOutput</label>
+        <link refid="classmodm_1_1_gpio_output"/>
+        <childnode refid="513" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="513">
         <label>modm::Gpio</label>
         <link refid="structmodm_1_1_gpio"/>
       </node>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a',['A',['../structmodm_1_1platform_1_1_gpio.html#a9a07d4a7c6f41489fa3bf81b98e8a19ba7fc56270e7a70fa81a5935b72eacbe29',1,'modm::platform::Gpio']]],
+  ['a',['A',['../classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#a4df770fbbc6cf957274dc75e908906f6',1,'modm::platform::BitBangOneWireMaster::A()'],['../structmodm_1_1platform_1_1_gpio.html#a9a07d4a7c6f41489fa3bf81b98e8a19ba7fc56270e7a70fa81a5935b72eacbe29',1,'modm::platform::Gpio::A()']]],
   ['abandonment',['Abandonment',['../group__modm__architecture__assert.html#gaf22c76f51642c50723ba439c5e080726',1,'modm']]],
   ['abs',['abs',['../classmodm_1_1_saturated.html#a29321a0fcf37a4d88292830593460a91',1,'modm::Saturated::abs()'],['../namespacemodm.html#a5e02197831663b0f7f475c15fc9e8035',1,'modm::abs()']]],
   ['absolute',['absolute',['../classmodm_1_1_saturated.html#a55ef621fa22c11338d3aae15a1ca1c88',1,'modm::Saturated']]],
@@ -101,5 +101,6 @@ var searchData=
   ['arm_20cmsis_2dcore',['ARM CMSIS-CORE',['../group__modm__cmsis__core.html',1,'']]],
   ['analog_2dto_2ddigital_20converter_20_28adc_29',['Analog-to-Digital Converter (ADC)',['../group__modm__platform__adc.html',1,'']]],
   ['arm_20cortex_2dm_20core',['ARM Cortex-M Core',['../group__modm__platform__cortex__m.html',1,'']]],
+  ['arm_20cortex_2dm_20fault_20reporters',['ARM Cortex-M Fault Reporters',['../group__modm__platform__fault.html',1,'']]],
   ['arm_20cortex_2dm_20systick',['ARM Cortex-M SysTick',['../group__modm__platform__systick.html',1,'']]]
 ];

@@ -6,29 +6,29 @@
     <includedby refid="can__2_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</includedby>
     <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <invincdepgraph>
-      <node id="4419">
+      <node id="4459">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/error_code.hpp</label>
         <link refid="error__code_8hpp"/>
-        <childnode refid="4420" relation="include">
+        <childnode refid="4460" relation="include">
         </childnode>
-        <childnode refid="4422" relation="include">
+        <childnode refid="4462" relation="include">
         </childnode>
-        <childnode refid="4421" relation="include">
+        <childnode refid="4461" relation="include">
         </childnode>
       </node>
-      <node id="4420">
+      <node id="4460">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</label>
         <link refid="can__1_8hpp"/>
-        <childnode refid="4421" relation="include">
+        <childnode refid="4461" relation="include">
         </childnode>
       </node>
-      <node id="4422">
+      <node id="4462">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</label>
         <link refid="can__2_8hpp"/>
-        <childnode refid="4421" relation="include">
+        <childnode refid="4461" relation="include">
         </childnode>
       </node>
-      <node id="4421">
+      <node id="4461">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>

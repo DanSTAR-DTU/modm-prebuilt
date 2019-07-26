@@ -276,38 +276,38 @@
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="180">
+      <node id="182">
         <label>modm::Register&lt; Parent::UnderlyingType &gt;</label>
         <link refid="structmodm_1_1_register"/>
       </node>
-      <node id="178">
+      <node id="180">
         <label>modm::Configuration&lt; Parent, Enum, Mask, Position &gt;</label>
         <link refid="structmodm_1_1_configuration"/>
-        <childnode refid="179" relation="public-inheritance">
+        <childnode refid="181" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="179">
+      <node id="181">
         <label>modm::FlagsOperators&lt; Parent::EnumType, Parent::UnderlyingType &gt;</label>
         <link refid="structmodm_1_1_flags_operators"/>
-        <childnode refid="180" relation="public-inheritance">
+        <childnode refid="182" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="183">
+      <node id="185">
         <label>modm::Register&lt; Parent::UnderlyingType &gt;</label>
         <link refid="structmodm_1_1_register"/>
       </node>
-      <node id="181">
+      <node id="183">
         <label>modm::Configuration&lt; Parent, Enum, Mask, Position &gt;</label>
         <link refid="structmodm_1_1_configuration"/>
-        <childnode refid="182" relation="public-inheritance">
+        <childnode refid="184" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="182">
+      <node id="184">
         <label>modm::FlagsOperators&lt; Parent::EnumType, Parent::UnderlyingType &gt;</label>
         <link refid="structmodm_1_1_flags_operators"/>
-        <childnode refid="183" relation="public-inheritance">
+        <childnode refid="185" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

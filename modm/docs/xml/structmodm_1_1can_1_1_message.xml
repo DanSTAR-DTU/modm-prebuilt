@@ -230,14 +230,14 @@
     <detaileddescription>
 <para>Representation of a CAN message </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="1395">
+      <node id="1399">
         <label>modm::can::Message::Flags</label>
         <link refid="structmodm_1_1can_1_1_message_1_1_flags"/>
       </node>
-      <node id="1394">
+      <node id="1398">
         <label>modm::can::Message</label>
         <link refid="structmodm_1_1can_1_1_message"/>
-        <childnode refid="1395" relation="usage">
+        <childnode refid="1399" relation="usage">
           <edgelabel>flags</edgelabel>
         </childnode>
       </node>

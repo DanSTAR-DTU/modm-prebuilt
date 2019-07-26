@@ -294,68 +294,68 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1245">
+      <node id="1249">
         <label>modm::I2cWriteReadTransaction</label>
         <link refid="classmodm_1_1_i2c_write_read_transaction"/>
-        <childnode refid="1243" relation="public-inheritance">
+        <childnode refid="1247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1248">
+        <label>modm::I2cReadTransaction</label>
+        <link refid="classmodm_1_1_i2c_read_transaction"/>
+        <childnode refid="1247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1243">
+        <label>modm::platform::I2cMaster1</label>
+        <link refid="classmodm_1_1platform_1_1_i2c_master1"/>
+        <childnode refid="1241" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1244">
-        <label>modm::I2cReadTransaction</label>
-        <link refid="classmodm_1_1_i2c_read_transaction"/>
-        <childnode refid="1243" relation="public-inheritance">
+        <label>modm::platform::I2cMaster2</label>
+        <link refid="classmodm_1_1platform_1_1_i2c_master2"/>
+        <childnode refid="1241" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1239">
-        <label>modm::platform::I2cMaster1</label>
-        <link refid="classmodm_1_1platform_1_1_i2c_master1"/>
-        <childnode refid="1237" relation="public-inheritance">
+      <node id="1245">
+        <label>modm::platform::I2cMaster3</label>
+        <link refid="classmodm_1_1platform_1_1_i2c_master3"/>
+        <childnode refid="1241" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1240">
-        <label>modm::platform::I2cMaster2</label>
-        <link refid="classmodm_1_1platform_1_1_i2c_master2"/>
-        <childnode refid="1237" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1241">
-        <label>modm::platform::I2cMaster3</label>
-        <link refid="classmodm_1_1platform_1_1_i2c_master3"/>
-        <childnode refid="1237" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1236">
         <label>modm::I2c</label>
         <link refid="structmodm_1_1_i2c"/>
       </node>
-      <node id="1243">
+      <node id="1247">
         <label>modm::I2cTransaction</label>
         <link refid="classmodm_1_1_i2c_transaction"/>
-        <childnode refid="1236" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1242">
-        <label>modm::I2cMultiplexer&lt; I2cMaster, I2cMultiplexerDevice &gt;</label>
-        <link refid="classmodm_1_1_i2c_multiplexer"/>
-        <childnode refid="1236" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1237">
-        <label>modm::I2cMaster</label>
-        <link refid="classmodm_1_1_i2c_master"/>
-        <childnode refid="1236" relation="public-inheritance">
+        <childnode refid="1240" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1246">
-        <label>modm::I2cWriteTransaction</label>
-        <link refid="classmodm_1_1_i2c_write_transaction"/>
-        <childnode refid="1243" relation="public-inheritance">
+        <label>modm::I2cMultiplexer&lt; I2cMaster, I2cMultiplexerDevice &gt;</label>
+        <link refid="classmodm_1_1_i2c_multiplexer"/>
+        <childnode refid="1240" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1238">
+      <node id="1241">
+        <label>modm::I2cMaster</label>
+        <link refid="classmodm_1_1_i2c_master"/>
+        <childnode refid="1240" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1250">
+        <label>modm::I2cWriteTransaction</label>
+        <link refid="classmodm_1_1_i2c_write_transaction"/>
+        <childnode refid="1247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1242">
         <label>modm::I2cMultiplexerChannel&lt; multiplexer, channel &gt;</label>
         <link refid="classmodm_1_1_i2c_multiplexer_channel"/>
-        <childnode refid="1237" relation="public-inheritance">
+        <childnode refid="1241" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

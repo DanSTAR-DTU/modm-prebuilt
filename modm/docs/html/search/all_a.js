@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['h',['H',['../structmodm_1_1platform_1_1_gpio.html#a9a07d4a7c6f41489fa3bf81b98e8a19bac1d9f50f86825a1a2302ec2449c17196',1,'modm::platform::Gpio']]],
+  ['h',['H',['../classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#aef15732b99dac3a0fcdeed35d1fd5e90',1,'modm::platform::BitBangOneWireMaster::H()'],['../structmodm_1_1platform_1_1_gpio.html#a9a07d4a7c6f41489fa3bf81b98e8a19bac1d9f50f86825a1a2302ec2449c17196',1,'modm::platform::Gpio::H()']]],
   ['h1',['H1',['../namespacemodm_1_1bme280data.html#ae9bb9dbe98df44350e5416ba96aacd82',1,'modm::bme280data::Calibration']]],
   ['h2',['H2',['../namespacemodm_1_1bme280data.html#add26205d4f76aebfcf014ee0fbb6b51d',1,'modm::bme280data::Calibration']]],
   ['h3',['H3',['../namespacemodm_1_1bme280data.html#aea6593a1808c66c98fb418bc0bfe8375',1,'modm::bme280data::Calibration']]],
@@ -11,6 +11,7 @@ var searchData=
   ['handler',['Handler',['../classmodm_1_1_adc_interrupt.html#af82ca0cd5901c58c2ec7e9a63cef8803',1,'modm::AdcInterrupt::Handler()'],['../classmodm_1_1_error_report.html#a1e10cc11c3507684daaec24e6b875897',1,'modm::ErrorReport::Handler()'],['../classmodm_1_1platform_1_1_adc_interrupt1.html#a7021390fd6da41e8746e3123f8acc59f',1,'modm::platform::AdcInterrupt1::handler()'],['../classmodm_1_1platform_1_1_adc_interrupt2.html#a8c7715f66f566e40cbb8254ead755547',1,'modm::platform::AdcInterrupt2::handler()'],['../classmodm_1_1platform_1_1_adc_interrupt3.html#a9eb88666ecc7f0d6c760e909afd59bd8',1,'modm::platform::AdcInterrupt3::handler()']]],
   ['hasinf',['hasInf',['../classmodm_1_1_vector_3_01_t_00_011_01_4.html#a35636b2004ee55f94acb31d7c6fb9f99',1,'modm::Vector&lt; T, 1 &gt;::hasInf()'],['../classmodm_1_1_vector_3_01_t_00_012_01_4.html#a4ba556f599c69878eb6c09b6b799db9b',1,'modm::Vector&lt; T, 2 &gt;::hasInf()'],['../classmodm_1_1_vector_3_01_t_00_013_01_4.html#ae66fd0eb21b35f898afded06eb708fa3',1,'modm::Vector&lt; T, 3 &gt;::hasInf()'],['../classmodm_1_1_matrix.html#ac1830dc1e9bca5400115e12a628b05e7',1,'modm::Matrix::hasInf()']]],
   ['hasnan',['hasNan',['../classmodm_1_1_vector_3_01_t_00_011_01_4.html#a34a3b0d84281a42666f9492774dcc4a8',1,'modm::Vector&lt; T, 1 &gt;::hasNan()'],['../classmodm_1_1_vector_3_01_t_00_012_01_4.html#ae881e8a6957a281e05c0b6a8b84e868d',1,'modm::Vector&lt; T, 2 &gt;::hasNan()'],['../classmodm_1_1_vector_3_01_t_00_013_01_4.html#a30e9a8604c429d5cfe9edaf65d61e348',1,'modm::Vector&lt; T, 3 &gt;::hasNan()'],['../classmodm_1_1_matrix.html#a9a8a6e93018e7cee81a54d6d7a6b415c',1,'modm::Matrix::hasNan()']]],
+  ['hasreport',['hasReport',['../classmodm_1_1platform_1_1_fault_reporter.html#a9d370b75db16a50d28fd2a7bb4222273',1,'modm::platform::FaultReporter']]],
   ['hdmicec',['HdmiCec',['../namespacemodm_1_1platform.html#a9a75ca82fea26cd4f4948f93899d0f55ad117722e9b66f1c795edbf81cc3024b5',1,'modm::platform']]],
   ['heap_5ftable_2ehpp',['heap_table.hpp',['../heap__table_8hpp.html',1,'']]],
   ['hex',['hex',['../classmodm_1_1_i_o_stream.html#a067f916e909f11b5c149d72a27d60b16',1,'modm::IOStream::hex()'],['../group__modm__io.html#gaf61485290089e35ac0a897af1c37d4f0',1,'modm::hex()']]],

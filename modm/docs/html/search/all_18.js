@@ -24,6 +24,7 @@ var searchData=
   ['vector_3c_20t_2c_202_20_3e',['Vector&lt; T, 2 &gt;',['../classmodm_1_1_vector_3_01_t_00_012_01_4.html',1,'modm']]],
   ['vector_3c_20t_2c_203_20_3e',['Vector&lt; T, 3 &gt;',['../classmodm_1_1_vector_3_01_t_00_013_01_4.html',1,'modm']]],
   ['vector_3c_20t_2c_204_20_3e',['Vector&lt; T, 4 &gt;',['../classmodm_1_1_vector_3_01_t_00_014_01_4.html',1,'modm']]],
+  ['verifydevice',['verifyDevice',['../classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#a0827eb33374767b078a7f3d8e254721e',1,'modm::platform::BitBangOneWireMaster']]],
   ['veryhigh',['VeryHigh',['../structmodm_1_1platform_1_1_gpio.html#ab7da9c5cdb55f0fad1955686331a5a09af0b44f10edcd3bdee6720430ac4111cd',1,'modm::platform::Gpio']]],
   ['vprintf',['vprintf',['../classmodm_1_1_i_o_stream.html#af52b1e90d3c9cf45a7549ef26b3e145f',1,'modm::IOStream']]],
   ['vsync',['Vsync',['../classmodm_1_1platform_1_1_gpio_b7.html#a52c10cd6964dedfd48de7b2c355d6c8b',1,'modm::platform::GpioB7']]]

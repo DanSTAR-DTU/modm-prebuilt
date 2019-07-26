@@ -7,148 +7,148 @@
     <includedby refid="timer_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer.hpp</includedby>
     <includedby refid="processing_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</includedby>
     <incdepgraph>
-      <node id="7390">
+      <node id="7452">
         <label>stdarg.h</label>
       </node>
-      <node id="7385">
+      <node id="7447">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="7397">
+      <node id="7459">
         <label>limits</label>
       </node>
-      <node id="7386">
+      <node id="7448">
         <label>modm/processing/timer/timestamp.hpp</label>
         <link refid="timestamp_8hpp"/>
-        <childnode refid="7387" relation="include">
+        <childnode refid="7449" relation="include">
         </childnode>
-        <childnode refid="7388" relation="include">
+        <childnode refid="7450" relation="include">
         </childnode>
-        <childnode refid="7395" relation="include">
+        <childnode refid="7457" relation="include">
         </childnode>
       </node>
-      <node id="7396">
+      <node id="7458">
         <label>cstdint</label>
       </node>
-      <node id="7387">
+      <node id="7449">
         <label>stdint.h</label>
       </node>
-      <node id="7382">
+      <node id="7444">
         <label>timeout.hpp</label>
         <link refid="timeout_8hpp"/>
-        <childnode refid="7383" relation="include">
+        <childnode refid="7445" relation="include">
         </childnode>
-        <childnode refid="7386" relation="include">
+        <childnode refid="7448" relation="include">
         </childnode>
-        <childnode refid="7399" relation="include">
+        <childnode refid="7461" relation="include">
         </childnode>
       </node>
-      <node id="7393">
+      <node id="7455">
         <label>iodevice.hpp</label>
         <link refid="iodevice_8hpp"/>
       </node>
-      <node id="7398">
+      <node id="7460">
         <label>cmath</label>
       </node>
-      <node id="7394">
+      <node id="7456">
         <label>iodevice_wrapper.hpp</label>
         <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="7387" relation="include">
+        <childnode refid="7449" relation="include">
         </childnode>
-        <childnode refid="7393" relation="include">
+        <childnode refid="7455" relation="include">
         </childnode>
       </node>
-      <node id="7399">
+      <node id="7461">
         <label>timeout_impl.hpp</label>
       </node>
-      <node id="7388">
+      <node id="7450">
         <label>modm/io/iostream.hpp</label>
         <link refid="iostream_8hpp"/>
-        <childnode refid="7389" relation="include">
+        <childnode refid="7451" relation="include">
         </childnode>
-        <childnode refid="7384" relation="include">
+        <childnode refid="7446" relation="include">
         </childnode>
-        <childnode refid="7390" relation="include">
+        <childnode refid="7452" relation="include">
         </childnode>
-        <childnode refid="7391" relation="include">
+        <childnode refid="7453" relation="include">
         </childnode>
-        <childnode refid="7392" relation="include">
+        <childnode refid="7454" relation="include">
         </childnode>
-        <childnode refid="7393" relation="include">
+        <childnode refid="7455" relation="include">
         </childnode>
-        <childnode refid="7394" relation="include">
+        <childnode refid="7456" relation="include">
         </childnode>
       </node>
-      <node id="7400">
+      <node id="7462">
         <label>periodic_timer_impl.hpp</label>
       </node>
-      <node id="7384">
+      <node id="7446">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="7385" relation="include">
+        <childnode refid="7447" relation="include">
         </childnode>
       </node>
-      <node id="7395">
+      <node id="7457">
         <label>modm/math/utils/arithmetic_traits.hpp</label>
         <link refid="arithmetic__traits_8hpp"/>
-        <childnode refid="7396" relation="include">
+        <childnode refid="7458" relation="include">
         </childnode>
-        <childnode refid="7397" relation="include">
+        <childnode refid="7459" relation="include">
         </childnode>
-        <childnode refid="7392" relation="include">
+        <childnode refid="7454" relation="include">
         </childnode>
-        <childnode refid="7398" relation="include">
+        <childnode refid="7460" relation="include">
         </childnode>
       </node>
-      <node id="7383">
+      <node id="7445">
         <label>modm/architecture/interface/clock.hpp</label>
         <link refid="clock_8hpp"/>
-        <childnode refid="7384" relation="include">
+        <childnode refid="7446" relation="include">
         </childnode>
-        <childnode refid="7386" relation="include">
+        <childnode refid="7448" relation="include">
         </childnode>
       </node>
-      <node id="7389">
+      <node id="7451">
         <label>cstddef</label>
       </node>
-      <node id="7381">
+      <node id="7443">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp</label>
         <link refid="periodic__timer_8hpp"/>
-        <childnode refid="7382" relation="include">
+        <childnode refid="7444" relation="include">
         </childnode>
-        <childnode refid="7400" relation="include">
+        <childnode refid="7462" relation="include">
         </childnode>
       </node>
-      <node id="7392">
+      <node id="7454">
         <label>type_traits</label>
       </node>
-      <node id="7391">
+      <node id="7453">
         <label>inttypes.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7403">
+      <node id="7465">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
         <link refid="bme280_8hpp"/>
       </node>
-      <node id="7404">
+      <node id="7466">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</label>
         <link refid="processing_8hpp"/>
       </node>
-      <node id="7401">
+      <node id="7463">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp</label>
         <link refid="periodic__timer_8hpp"/>
-        <childnode refid="7402" relation="include">
+        <childnode refid="7464" relation="include">
         </childnode>
-        <childnode refid="7404" relation="include">
+        <childnode refid="7466" relation="include">
         </childnode>
       </node>
-      <node id="7402">
+      <node id="7464">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer.hpp</label>
         <link refid="timer_8hpp"/>
-        <childnode refid="7403" relation="include">
+        <childnode refid="7465" relation="include">
         </childnode>
-        <childnode refid="7404" relation="include">
+        <childnode refid="7466" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

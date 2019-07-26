@@ -33,24 +33,24 @@
     <detaileddescription>
 <para>Message with a 11-Bit Identifier. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1584">
+      <node id="1588">
         <label>modm::platform::CanFilter::StandardIdentifier</label>
         <link refid="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier"/>
-        <childnode refid="1585" relation="public-inheritance">
+        <childnode refid="1589" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1585">
+      <node id="1589">
         <label>modm::platform::CanFilter::Identifier</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1586">
+      <node id="1590">
         <label>modm::platform::CanFilter::StandardIdentifier</label>
         <link refid="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier"/>
-        <childnode refid="1587" relation="public-inheritance">
+        <childnode refid="1591" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1587">
+      <node id="1591">
         <label>modm::platform::CanFilter::Identifier</label>
       </node>
     </collaborationgraph>

@@ -6,33 +6,33 @@
     <includedby refid="filter_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter.hpp</includedby>
     <includedby refid="math_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</includedby>
     <incdepgraph>
-      <node id="2691">
+      <node id="2703">
         <label>s_curve_generator_impl.hpp</label>
       </node>
-      <node id="2690">
+      <node id="2702">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_generator.hpp</label>
         <link refid="s__curve__generator_8hpp"/>
-        <childnode refid="2691" relation="include">
+        <childnode refid="2703" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2694">
+      <node id="2706">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math.hpp</label>
         <link refid="math_8hpp"/>
       </node>
-      <node id="2693">
+      <node id="2705">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter.hpp</label>
         <link refid="filter_8hpp"/>
-        <childnode refid="2694" relation="include">
+        <childnode refid="2706" relation="include">
         </childnode>
       </node>
-      <node id="2692">
+      <node id="2704">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/math/filter/s_curve_generator.hpp</label>
         <link refid="s__curve__generator_8hpp"/>
-        <childnode refid="2693" relation="include">
+        <childnode refid="2705" relation="include">
         </childnode>
-        <childnode refid="2694" relation="include">
+        <childnode refid="2706" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

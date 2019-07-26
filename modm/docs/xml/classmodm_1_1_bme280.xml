@@ -186,69 +186,69 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="123">
+      <node id="125">
         <label>modm::bme280</label>
         <link refid="structmodm_1_1bme280"/>
       </node>
-      <node id="124">
+      <node id="126">
         <label>modm::I2cDevice&lt; I2cMaster, 1 &gt;</label>
         <link refid="classmodm_1_1_i2c_device"/>
-        <childnode refid="125" relation="protected-inheritance">
+        <childnode refid="127" relation="protected-inheritance">
         </childnode>
       </node>
-      <node id="125">
+      <node id="127">
         <label>modm::NestedResumable&lt; NestingLevels+1 &gt;</label>
         <link refid="classmodm_1_1_nested_resumable"/>
       </node>
-      <node id="122">
+      <node id="124">
         <label>modm::Bme280&lt; I2cMaster &gt;</label>
         <link refid="classmodm_1_1_bme280"/>
-        <childnode refid="123" relation="public-inheritance">
+        <childnode refid="125" relation="public-inheritance">
         </childnode>
-        <childnode refid="124" relation="public-inheritance">
+        <childnode refid="126" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="127">
+      <node id="129">
         <label>modm::bme280</label>
         <link refid="structmodm_1_1bme280"/>
       </node>
-      <node id="130">
+      <node id="132">
         <label>modm::I2cWriteReadTransaction</label>
         <link refid="classmodm_1_1_i2c_write_read_transaction"/>
-        <childnode refid="131" relation="public-inheritance">
+        <childnode refid="133" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="128">
+      <node id="130">
         <label>modm::I2cDevice&lt; I2cMaster, 1 &gt;</label>
         <link refid="classmodm_1_1_i2c_device"/>
-        <childnode refid="129" relation="protected-inheritance">
+        <childnode refid="131" relation="protected-inheritance">
         </childnode>
-        <childnode refid="130" relation="usage">
+        <childnode refid="132" relation="usage">
           <edgelabel>transaction</edgelabel>
         </childnode>
       </node>
-      <node id="129">
+      <node id="131">
         <label>modm::NestedResumable&lt; NestingLevels+1 &gt;</label>
         <link refid="classmodm_1_1_nested_resumable"/>
       </node>
-      <node id="132">
+      <node id="134">
         <label>modm::I2c</label>
         <link refid="structmodm_1_1_i2c"/>
       </node>
-      <node id="131">
+      <node id="133">
         <label>modm::I2cTransaction</label>
         <link refid="classmodm_1_1_i2c_transaction"/>
-        <childnode refid="132" relation="public-inheritance">
+        <childnode refid="134" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="126">
+      <node id="128">
         <label>modm::Bme280&lt; I2cMaster &gt;</label>
         <link refid="classmodm_1_1_bme280"/>
-        <childnode refid="127" relation="public-inheritance">
+        <childnode refid="129" relation="public-inheritance">
         </childnode>
-        <childnode refid="128" relation="public-inheritance">
+        <childnode refid="130" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

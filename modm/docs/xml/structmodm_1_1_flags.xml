@@ -459,44 +459,44 @@
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="242">
+      <node id="246">
         <label>modm::FlagsOperators&lt; Enum, T &gt;</label>
         <link refid="structmodm_1_1_flags_operators"/>
-        <childnode refid="243" relation="public-inheritance">
+        <childnode refid="247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="243">
+      <node id="247">
         <label>modm::Register&lt; T &gt;</label>
         <link refid="structmodm_1_1_register"/>
       </node>
-      <node id="241">
+      <node id="245">
         <label>modm::Flags&lt; Enum, T &gt;</label>
         <link refid="structmodm_1_1_flags"/>
-        <childnode refid="242" relation="public-inheritance">
+        <childnode refid="246" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="247">
+      <node id="251">
         <label>T</label>
       </node>
-      <node id="245">
+      <node id="249">
         <label>modm::FlagsOperators&lt; Enum, T &gt;</label>
         <link refid="structmodm_1_1_flags_operators"/>
-        <childnode refid="246" relation="public-inheritance">
+        <childnode refid="250" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="246">
+      <node id="250">
         <label>modm::Register&lt; T &gt;</label>
         <link refid="structmodm_1_1_register"/>
-        <childnode refid="247" relation="usage">
+        <childnode refid="251" relation="usage">
           <edgelabel>value</edgelabel>
         </childnode>
       </node>
-      <node id="244">
+      <node id="248">
         <label>modm::Flags&lt; Enum, T &gt;</label>
         <link refid="structmodm_1_1_flags"/>
-        <childnode refid="245" relation="public-inheritance">
+        <childnode refid="249" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

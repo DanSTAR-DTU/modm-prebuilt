@@ -141,25 +141,25 @@
 </programlisting></para><para><simplesect kind="author"><para>Martin Rosekeit <ulink url="mailto:martin.rosekeit@rwth-aachen.de">martin.rosekeit@rwth-aachen.de</ulink> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1454">
+      <node id="1458">
         <label>modm::log::Prefix&lt; T, STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_prefix"/>
-        <childnode refid="1455" relation="public-inheritance">
+        <childnode refid="1459" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1455">
+      <node id="1459">
         <label>modm::log::Style&lt; STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_style"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1456">
+      <node id="1460">
         <label>modm::log::Prefix&lt; T, STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_prefix"/>
-        <childnode refid="1457" relation="public-inheritance">
+        <childnode refid="1461" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1457">
+      <node id="1461">
         <label>modm::log::Style&lt; STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_style"/>
       </node>

@@ -122,25 +122,25 @@
 <para>Allocates a big static block and distributes pieces of it during run-time. No reallocation is done when no more pieces are available.</para><para><simplesect kind="author"><para>Fabian Greif </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1594">
+      <node id="1598">
         <label>modm::allocator::Static&lt; T, N &gt;</label>
         <link refid="classmodm_1_1allocator_1_1_static"/>
-        <childnode refid="1595" relation="public-inheritance">
+        <childnode refid="1599" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1595">
+      <node id="1599">
         <label>modm::allocator::AllocatorBase&lt; T &gt;</label>
         <link refid="classmodm_1_1allocator_1_1_allocator_base"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1596">
+      <node id="1600">
         <label>modm::allocator::Static&lt; T, N &gt;</label>
         <link refid="classmodm_1_1allocator_1_1_static"/>
-        <childnode refid="1597" relation="public-inheritance">
+        <childnode refid="1601" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1597">
+      <node id="1601">
         <label>modm::allocator::AllocatorBase&lt; T &gt;</label>
         <link refid="classmodm_1_1allocator_1_1_allocator_base"/>
       </node>
