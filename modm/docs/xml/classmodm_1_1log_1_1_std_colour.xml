@@ -172,26 +172,26 @@
 <simplesect kind="author"><para>Martin Rosekeit <ulink url="mailto:martin.rosekeit@rwth-aachen.de">martin.rosekeit@rwth-aachen.de</ulink> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1599">
+      <node id="1603">
         <label>modm::log::Style&lt; STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_style"/>
       </node>
-      <node id="1598">
+      <node id="1602">
         <label>modm::log::StdColour&lt; TEXT, BACKGROUND, STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_std_colour"/>
-        <childnode refid="1599" relation="public-inheritance">
+        <childnode refid="1603" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1601">
+      <node id="1605">
         <label>modm::log::Style&lt; STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_style"/>
       </node>
-      <node id="1600">
+      <node id="1604">
         <label>modm::log::StdColour&lt; TEXT, BACKGROUND, STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_std_colour"/>
-        <childnode refid="1601" relation="public-inheritance">
+        <childnode refid="1605" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

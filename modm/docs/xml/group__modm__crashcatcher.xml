@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__modm__crashcatcher" kind="group">
+    <compoundname>modm_crashcatcher</compoundname>
+    <title>CrashCatcher</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>CrashCatcher hooks into the ARM Cortex-M HardFault handler and generates a coredump that can be used with CrashDebug for post-mortem debugging.</para><para><itemizedlist>
+<listitem><para><ulink url="https://github.com/adamgreen/CrashCatcher">https://github.com/adamgreen/CrashCatcher</ulink></para></listitem><listitem><para><ulink url="https://github.com/adamgreen/CrashDebug">https://github.com/adamgreen/CrashDebug</ulink> </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

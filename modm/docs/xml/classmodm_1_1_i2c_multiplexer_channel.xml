@@ -61,30 +61,6 @@
     <detaileddescription>
 <para>Interface of an I2C Multiplexer.</para><para>All I2C multiplexer driver should implement this interface. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1299">
-        <label>modm::I2c</label>
-        <link refid="structmodm_1_1_i2c"/>
-      </node>
-      <node id="1297">
-        <label>modm::I2cMaster</label>
-        <link refid="classmodm_1_1_i2c_master"/>
-        <childnode refid="1298" relation="public-inheritance">
-        </childnode>
-        <childnode refid="1299" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1298">
-        <label>modm::PeripheralDriver</label>
-        <link refid="classmodm_1_1_peripheral_driver"/>
-      </node>
-      <node id="1296">
-        <label>modm::I2cMultiplexerChannel&lt; multiplexer, channel &gt;</label>
-        <link refid="classmodm_1_1_i2c_multiplexer_channel"/>
-        <childnode refid="1297" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="1303">
         <label>modm::I2c</label>
         <link refid="structmodm_1_1_i2c"/>
@@ -105,6 +81,30 @@
         <label>modm::I2cMultiplexerChannel&lt; multiplexer, channel &gt;</label>
         <link refid="classmodm_1_1_i2c_multiplexer_channel"/>
         <childnode refid="1301" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1307">
+        <label>modm::I2c</label>
+        <link refid="structmodm_1_1_i2c"/>
+      </node>
+      <node id="1305">
+        <label>modm::I2cMaster</label>
+        <link refid="classmodm_1_1_i2c_master"/>
+        <childnode refid="1306" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1307" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="1304">
+        <label>modm::I2cMultiplexerChannel&lt; multiplexer, channel &gt;</label>
+        <link refid="classmodm_1_1_i2c_multiplexer_channel"/>
+        <childnode refid="1305" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -12,7 +12,7 @@ var searchData=
   ['geometrictraits_3c_20int32_5ft_20_3e',['GeometricTraits&lt; int32_t &gt;',['../structmodm_1_1_geometric_traits_3_01int32__t_01_4.html',1,'modm']]],
   ['geometrictraits_3c_20int8_5ft_20_3e',['GeometricTraits&lt; int8_t &gt;',['../structmodm_1_1_geometric_traits_3_01int8__t_01_4.html',1,'modm']]],
   ['geometrictraits_3c_20uint8_5ft_20_3e',['GeometricTraits&lt; uint8_t &gt;',['../structmodm_1_1_geometric_traits_3_01uint8__t_01_4.html',1,'modm']]],
-  ['gpio',['Gpio',['../structmodm_1_1platform_1_1_gpio.html',1,'modm::platform::Gpio'],['../structmodm_1_1_gpio.html',1,'modm::Gpio']]],
+  ['gpio',['Gpio',['../structmodm_1_1_gpio.html',1,'modm::Gpio'],['../structmodm_1_1platform_1_1_gpio.html',1,'modm::platform::Gpio']]],
   ['gpioa0',['GpioA0',['../classmodm_1_1platform_1_1_gpio_a0.html',1,'modm::platform']]],
   ['gpioa1',['GpioA1',['../classmodm_1_1platform_1_1_gpio_a1.html',1,'modm::platform']]],
   ['gpioa10',['GpioA10',['../classmodm_1_1platform_1_1_gpio_a10.html',1,'modm::platform']]],

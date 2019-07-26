@@ -8,150 +8,150 @@
     <includes refid="logger_2logger_8hpp" local="no">modm/debug/logger/logger.hpp</includes>
     <includedby refid="bme280__data_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp</includedby>
     <incdepgraph>
-      <node id="2112">
+      <node id="2124">
         <label>stdarg.h</label>
       </node>
-      <node id="2109">
+      <node id="2121">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="2117">
+      <node id="2129">
         <label>level.hpp</label>
         <link refid="level_8hpp"/>
       </node>
-      <node id="2116">
+      <node id="2128">
         <label>stdint.h</label>
       </node>
-      <node id="2118">
+      <node id="2130">
         <label>style.hpp</label>
         <link refid="style_8hpp"/>
-        <childnode refid="2114" relation="include">
+        <childnode refid="2126" relation="include">
         </childnode>
-        <childnode refid="2119" relation="include">
+        <childnode refid="2131" relation="include">
         </childnode>
       </node>
-      <node id="2114">
+      <node id="2126">
         <label>iodevice.hpp</label>
         <link refid="iodevice_8hpp"/>
       </node>
-      <node id="2107">
+      <node id="2119">
         <label>modm/debug/logger/logger.hpp</label>
         <link refid="logger_2logger_8hpp"/>
-        <childnode refid="2108" relation="include">
+        <childnode refid="2120" relation="include">
         </childnode>
-        <childnode refid="2110" relation="include">
+        <childnode refid="2122" relation="include">
+        </childnode>
+        <childnode refid="2129" relation="include">
+        </childnode>
+        <childnode refid="2130" relation="include">
+        </childnode>
+        <childnode refid="2132" relation="include">
+        </childnode>
+        <childnode refid="2133" relation="include">
+        </childnode>
+      </node>
+      <node id="2117">
+        <label>cmath</label>
+      </node>
+      <node id="2127">
+        <label>iodevice_wrapper.hpp</label>
+        <link refid="iodevice__wrapper_8hpp"/>
+        <childnode refid="2128" relation="include">
+        </childnode>
+        <childnode refid="2126" relation="include">
+        </childnode>
+      </node>
+      <node id="2115">
+        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data_impl_fp.hpp</label>
+        <link refid="bme280__data__impl__fp_8hpp"/>
+        <childnode refid="2116" relation="include">
         </childnode>
         <childnode refid="2117" relation="include">
         </childnode>
         <childnode refid="2118" relation="include">
         </childnode>
+        <childnode refid="2119" relation="include">
+        </childnode>
+      </node>
+      <node id="2133">
+        <label>style/prefix.hpp</label>
+        <link refid="prefix_8hpp"/>
+        <childnode refid="2134" relation="include">
+        </childnode>
+        <childnode refid="2130" relation="include">
+        </childnode>
+        <childnode refid="2135" relation="include">
+        </childnode>
+      </node>
+      <node id="2122">
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
+        <childnode refid="2123" relation="include">
+        </childnode>
         <childnode refid="2120" relation="include">
         </childnode>
+        <childnode refid="2124" relation="include">
+        </childnode>
+        <childnode refid="2118" relation="include">
+        </childnode>
+        <childnode refid="2125" relation="include">
+        </childnode>
+        <childnode refid="2126" relation="include">
+        </childnode>
+        <childnode refid="2127" relation="include">
+        </childnode>
+      </node>
+      <node id="2131">
+        <label>style_impl.hpp</label>
+      </node>
+      <node id="2132">
+        <label>style_wrapper.hpp</label>
+        <link refid="style__wrapper_8hpp"/>
+        <childnode refid="2126" relation="include">
+        </childnode>
+        <childnode refid="2130" relation="include">
+        </childnode>
+      </node>
+      <node id="2120">
+        <label>modm/architecture/utils.hpp</label>
+        <link refid="architecture_2utils_8hpp"/>
         <childnode refid="2121" relation="include">
         </childnode>
       </node>
-      <node id="2105">
-        <label>cmath</label>
-      </node>
-      <node id="2115">
-        <label>iodevice_wrapper.hpp</label>
-        <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="2116" relation="include">
-        </childnode>
-        <childnode refid="2114" relation="include">
-        </childnode>
-      </node>
-      <node id="2103">
-        <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data_impl_fp.hpp</label>
-        <link refid="bme280__data__impl__fp_8hpp"/>
-        <childnode refid="2104" relation="include">
-        </childnode>
-        <childnode refid="2105" relation="include">
-        </childnode>
-        <childnode refid="2106" relation="include">
-        </childnode>
-        <childnode refid="2107" relation="include">
-        </childnode>
-      </node>
-      <node id="2121">
-        <label>style/prefix.hpp</label>
-        <link refid="prefix_8hpp"/>
-        <childnode refid="2122" relation="include">
-        </childnode>
-        <childnode refid="2118" relation="include">
-        </childnode>
-        <childnode refid="2123" relation="include">
-        </childnode>
-      </node>
-      <node id="2110">
-        <label>modm/io/iostream.hpp</label>
-        <link refid="iostream_8hpp"/>
-        <childnode refid="2111" relation="include">
-        </childnode>
-        <childnode refid="2108" relation="include">
-        </childnode>
-        <childnode refid="2112" relation="include">
-        </childnode>
-        <childnode refid="2106" relation="include">
-        </childnode>
-        <childnode refid="2113" relation="include">
-        </childnode>
-        <childnode refid="2114" relation="include">
-        </childnode>
-        <childnode refid="2115" relation="include">
-        </childnode>
-      </node>
-      <node id="2119">
-        <label>style_impl.hpp</label>
-      </node>
-      <node id="2120">
-        <label>style_wrapper.hpp</label>
-        <link refid="style__wrapper_8hpp"/>
-        <childnode refid="2114" relation="include">
-        </childnode>
-        <childnode refid="2118" relation="include">
-        </childnode>
-      </node>
-      <node id="2108">
-        <label>modm/architecture/utils.hpp</label>
-        <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="2109" relation="include">
-        </childnode>
-      </node>
-      <node id="2123">
+      <node id="2135">
         <label>prefix_impl.hpp</label>
       </node>
-      <node id="2111">
+      <node id="2123">
         <label>cstddef</label>
       </node>
-      <node id="2113">
+      <node id="2125">
         <label>type_traits</label>
       </node>
-      <node id="2104">
+      <node id="2116">
         <label>stdio.h</label>
       </node>
-      <node id="2122">
+      <node id="2134">
         <label>cstring</label>
       </node>
-      <node id="2106">
+      <node id="2118">
         <label>inttypes.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2124">
+      <node id="2136">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data_impl_fp.hpp</label>
         <link refid="bme280__data__impl__fp_8hpp"/>
-        <childnode refid="2125" relation="include">
+        <childnode refid="2137" relation="include">
         </childnode>
       </node>
-      <node id="2126">
+      <node id="2138">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
         <link refid="bme280_8hpp"/>
       </node>
-      <node id="2125">
+      <node id="2137">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280_data.hpp</label>
         <link refid="bme280__data_8hpp"/>
-        <childnode refid="2126" relation="include">
+        <childnode refid="2138" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

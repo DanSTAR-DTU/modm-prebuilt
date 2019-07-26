@@ -183,38 +183,38 @@
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1325">
+      <node id="1329">
         <label>modm::I2c</label>
         <link refid="structmodm_1_1_i2c"/>
       </node>
-      <node id="1324">
+      <node id="1328">
         <label>modm::I2cTransaction</label>
         <link refid="classmodm_1_1_i2c_transaction"/>
-        <childnode refid="1325" relation="public-inheritance">
+        <childnode refid="1329" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1323">
+      <node id="1327">
         <label>modm::I2cWriteTransaction</label>
         <link refid="classmodm_1_1_i2c_write_transaction"/>
-        <childnode refid="1324" relation="public-inheritance">
+        <childnode refid="1328" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1328">
+      <node id="1332">
         <label>modm::I2c</label>
         <link refid="structmodm_1_1_i2c"/>
       </node>
-      <node id="1327">
+      <node id="1331">
         <label>modm::I2cTransaction</label>
         <link refid="classmodm_1_1_i2c_transaction"/>
-        <childnode refid="1328" relation="public-inheritance">
+        <childnode refid="1332" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1326">
+      <node id="1330">
         <label>modm::I2cWriteTransaction</label>
         <link refid="classmodm_1_1_i2c_write_transaction"/>
-        <childnode refid="1327" relation="public-inheritance">
+        <childnode refid="1331" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

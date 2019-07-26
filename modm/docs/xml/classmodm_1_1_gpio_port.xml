@@ -164,26 +164,26 @@
     <detaileddescription>
 <para>Input/output interface of a set of up to 16 I/O pins.</para><para>This class provides the interface for up to 16 parallel IOs. Be aware that the interface is the same regardless of the actual mapping of the IOs. For example, when a high octet <computeroutput>0xf400</computeroutput> is physically configured, the data will still be written and read as a low octet <computeroutput>0x00f4</computeroutput>. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1214">
+      <node id="1218">
         <label>modm::platform::SoftwareGpioPort&lt; Gpios &gt;</label>
         <link refid="classmodm_1_1platform_1_1_software_gpio_port"/>
-        <childnode refid="1211" relation="public-inheritance">
+        <childnode refid="1215" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1211">
+      <node id="1215">
         <label>modm::GpioPort</label>
         <link refid="classmodm_1_1_gpio_port"/>
       </node>
-      <node id="1212">
+      <node id="1216">
         <label>modm::GpioExpanderPort&lt; GpioExpander, expander, StartPin, Width, DataOrder &gt;</label>
         <link refid="classmodm_1_1_gpio_expander_port"/>
-        <childnode refid="1211" relation="public-inheritance">
+        <childnode refid="1215" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1213">
+      <node id="1217">
         <label>modm::platform::GpioPort&lt; StartGpio, Width &gt;</label>
         <link refid="classmodm_1_1platform_1_1_gpio_port"/>
-        <childnode refid="1211" relation="public-inheritance">
+        <childnode refid="1215" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

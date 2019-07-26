@@ -177,19 +177,19 @@
 <para>For each log level the logger provides a singleton. Because the format the log messages should be presented depends on the system and other circumstances. With the style-classes the user can set in the main-file the desired format of the output stream.</para><para>This classes take the stream from the loglevel device, modify it in the given way and pass it to the next style class or device.</para><para><simplesect kind="author"><para>Martin Rosekeit <ulink url="mailto:martin.rosekeit@rwth-aachen.de">martin.rosekeit@rwth-aachen.de</ulink> </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1604">
+      <node id="1608">
         <label>modm::log::StdColour&lt; STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_std_colour"/>
-        <childnode refid="1602" relation="public-inheritance">
+        <childnode refid="1606" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1603">
+      <node id="1607">
         <label>modm::log::Prefix&lt; STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_prefix"/>
-        <childnode refid="1602" relation="public-inheritance">
+        <childnode refid="1606" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1602">
+      <node id="1606">
         <label>modm::log::Style&lt; STYLE &gt;</label>
         <link refid="classmodm_1_1log_1_1_style"/>
       </node>

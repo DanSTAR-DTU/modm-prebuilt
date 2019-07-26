@@ -377,26 +377,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1221">
+      <node id="1225">
         <label>modm::platform::Gpio</label>
         <link refid="structmodm_1_1platform_1_1_gpio"/>
       </node>
-      <node id="1220">
+      <node id="1224">
         <label>modm::platform::GpioSet&lt; Gpios &gt;</label>
         <link refid="classmodm_1_1platform_1_1_gpio_set"/>
-        <childnode refid="1221" relation="public-inheritance">
+        <childnode refid="1225" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1223">
+      <node id="1227">
         <label>modm::platform::Gpio</label>
         <link refid="structmodm_1_1platform_1_1_gpio"/>
       </node>
-      <node id="1222">
+      <node id="1226">
         <label>modm::platform::GpioSet&lt; Gpios &gt;</label>
         <link refid="classmodm_1_1platform_1_1_gpio_set"/>
-        <childnode refid="1223" relation="public-inheritance">
+        <childnode refid="1227" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

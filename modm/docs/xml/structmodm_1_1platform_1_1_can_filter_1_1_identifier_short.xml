@@ -58,19 +58,19 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1335">
+      <node id="1339">
         <label>modm::platform::CanFilter::StandardIdentifierShort</label>
         <link refid="structmodm_1_1platform_1_1_can_filter_1_1_standard_identifier_short"/>
-        <childnode refid="1333" relation="public-inheritance">
+        <childnode refid="1337" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1333">
+      <node id="1337">
         <label>modm::platform::CanFilter::IdentifierShort</label>
       </node>
-      <node id="1334">
+      <node id="1338">
         <label>modm::platform::CanFilter::ExtendedIdentifierShort</label>
         <link refid="structmodm_1_1platform_1_1_can_filter_1_1_extended_identifier_short"/>
-        <childnode refid="1333" relation="public-inheritance">
+        <childnode refid="1337" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

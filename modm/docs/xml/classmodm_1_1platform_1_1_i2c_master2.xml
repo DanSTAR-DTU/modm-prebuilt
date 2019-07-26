@@ -173,30 +173,6 @@
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1271">
-        <label>modm::platform::I2cMaster2</label>
-        <link refid="classmodm_1_1platform_1_1_i2c_master2"/>
-        <childnode refid="1272" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1274">
-        <label>modm::I2c</label>
-        <link refid="structmodm_1_1_i2c"/>
-      </node>
-      <node id="1272">
-        <label>modm::I2cMaster</label>
-        <link refid="classmodm_1_1_i2c_master"/>
-        <childnode refid="1273" relation="public-inheritance">
-        </childnode>
-        <childnode refid="1274" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1273">
-        <label>modm::PeripheralDriver</label>
-        <link refid="classmodm_1_1_peripheral_driver"/>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="1275">
         <label>modm::platform::I2cMaster2</label>
         <link refid="classmodm_1_1platform_1_1_i2c_master2"/>
@@ -216,6 +192,30 @@
         </childnode>
       </node>
       <node id="1277">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1279">
+        <label>modm::platform::I2cMaster2</label>
+        <link refid="classmodm_1_1platform_1_1_i2c_master2"/>
+        <childnode refid="1280" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1282">
+        <label>modm::I2c</label>
+        <link refid="structmodm_1_1_i2c"/>
+      </node>
+      <node id="1280">
+        <label>modm::I2cMaster</label>
+        <link refid="classmodm_1_1_i2c_master"/>
+        <childnode refid="1281" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1282" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1281">
         <label>modm::PeripheralDriver</label>
         <link refid="classmodm_1_1_peripheral_driver"/>
       </node>

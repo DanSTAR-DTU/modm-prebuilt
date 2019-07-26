@@ -8,65 +8,65 @@
     <includes local="yes">rcc_impl.hpp</includes>
     <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <incdepgraph>
-      <node id="4446">
+      <node id="4486">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="4442">
+      <node id="4482">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp</label>
         <link refid="rcc_8hpp"/>
-        <childnode refid="4443" relation="include">
+        <childnode refid="4483" relation="include">
         </childnode>
-        <childnode refid="4444" relation="include">
+        <childnode refid="4484" relation="include">
         </childnode>
-        <childnode refid="4449" relation="include">
+        <childnode refid="4489" relation="include">
         </childnode>
-        <childnode refid="4450" relation="include">
+        <childnode refid="4490" relation="include">
         </childnode>
       </node>
-      <node id="4448">
+      <node id="4488">
         <label>system_stm32f4xx.h</label>
       </node>
-      <node id="4449">
+      <node id="4489">
         <label>modm/platform/core/peripherals.hpp</label>
         <link refid="peripherals_8hpp"/>
       </node>
-      <node id="4443">
+      <node id="4483">
         <label>stdint.h</label>
       </node>
-      <node id="4445">
+      <node id="4485">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="4446" relation="include">
+        <childnode refid="4486" relation="include">
         </childnode>
       </node>
-      <node id="4444">
+      <node id="4484">
         <label>../device.hpp</label>
         <link refid="device_8hpp"/>
-        <childnode refid="4443" relation="include">
+        <childnode refid="4483" relation="include">
         </childnode>
-        <childnode refid="4445" relation="include">
+        <childnode refid="4485" relation="include">
         </childnode>
-        <childnode refid="4447" relation="include">
+        <childnode refid="4487" relation="include">
         </childnode>
-        <childnode refid="4448" relation="include">
+        <childnode refid="4488" relation="include">
         </childnode>
       </node>
-      <node id="4450">
+      <node id="4490">
         <label>rcc_impl.hpp</label>
       </node>
-      <node id="4447">
+      <node id="4487">
         <label>stm32f446xx.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4451">
+      <node id="4491">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp</label>
         <link refid="rcc_8hpp"/>
-        <childnode refid="4452" relation="include">
+        <childnode refid="4492" relation="include">
         </childnode>
       </node>
-      <node id="4452">
+      <node id="4492">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>

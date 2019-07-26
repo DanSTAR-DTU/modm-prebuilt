@@ -6,196 +6,196 @@
     <includes refid="connector_8hpp" local="no">modm/platform/gpio/connector.hpp</includes>
     <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <incdepgraph>
-      <node id="6489">
+      <node id="6551">
         <label>stdarg.h</label>
       </node>
-      <node id="6482">
+      <node id="6544">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="6496">
+      <node id="6558">
         <label>modm/architecture/interface/gpio.hpp</label>
         <link refid="gpio_8hpp"/>
-        <childnode refid="6479" relation="include">
+        <childnode refid="6541" relation="include">
         </childnode>
-        <childnode refid="6481" relation="include">
+        <childnode refid="6543" relation="include">
         </childnode>
       </node>
-      <node id="6500">
+      <node id="6562">
         <label>connector_detail.hpp</label>
         <link refid="connector__detail_8hpp"/>
-        <childnode refid="6501" relation="include">
+        <childnode refid="6563" relation="include">
         </childnode>
-        <childnode refid="6491" relation="include">
+        <childnode refid="6553" relation="include">
         </childnode>
       </node>
-      <node id="6484">
+      <node id="6546">
         <label>system_stm32f4xx.h</label>
       </node>
-      <node id="6499">
+      <node id="6561">
         <label>modm/platform/core/peripherals.hpp</label>
         <link refid="peripherals_8hpp"/>
       </node>
-      <node id="6479">
+      <node id="6541">
         <label>stdint.h</label>
       </node>
-      <node id="6501">
+      <node id="6563">
         <label>unused.hpp</label>
         <link refid="unused_8hpp"/>
-        <childnode refid="6495" relation="include">
+        <childnode refid="6557" relation="include">
         </childnode>
-        <childnode refid="6496" relation="include">
+        <childnode refid="6558" relation="include">
         </childnode>
       </node>
-      <node id="6492">
+      <node id="6554">
         <label>iodevice.hpp</label>
         <link refid="iodevice_8hpp"/>
       </node>
-      <node id="6498">
+      <node id="6560">
         <label>cmath</label>
       </node>
-      <node id="6493">
+      <node id="6555">
         <label>iodevice_wrapper.hpp</label>
         <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="6479" relation="include">
+        <childnode refid="6541" relation="include">
         </childnode>
-        <childnode refid="6492" relation="include">
+        <childnode refid="6554" relation="include">
         </childnode>
       </node>
-      <node id="6495">
+      <node id="6557">
         <label>base.hpp</label>
         <link refid="base_8hpp"/>
-        <childnode refid="6480" relation="include">
+        <childnode refid="6542" relation="include">
         </childnode>
-        <childnode refid="6496" relation="include">
+        <childnode refid="6558" relation="include">
         </childnode>
-        <childnode refid="6497" relation="include">
+        <childnode refid="6559" relation="include">
         </childnode>
-        <childnode refid="6499" relation="include">
+        <childnode refid="6561" relation="include">
         </childnode>
       </node>
-      <node id="6487">
+      <node id="6549">
         <label>modm/io/iostream.hpp</label>
         <link refid="iostream_8hpp"/>
-        <childnode refid="6488" relation="include">
+        <childnode refid="6550" relation="include">
         </childnode>
-        <childnode refid="6481" relation="include">
+        <childnode refid="6543" relation="include">
         </childnode>
-        <childnode refid="6489" relation="include">
+        <childnode refid="6551" relation="include">
         </childnode>
-        <childnode refid="6490" relation="include">
+        <childnode refid="6552" relation="include">
         </childnode>
-        <childnode refid="6491" relation="include">
+        <childnode refid="6553" relation="include">
         </childnode>
-        <childnode refid="6492" relation="include">
+        <childnode refid="6554" relation="include">
         </childnode>
-        <childnode refid="6493" relation="include">
+        <childnode refid="6555" relation="include">
         </childnode>
       </node>
-      <node id="6481">
+      <node id="6543">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="6482" relation="include">
+        <childnode refid="6544" relation="include">
         </childnode>
       </node>
-      <node id="6478">
+      <node id="6540">
         <label>basic_base.hpp</label>
         <link refid="basic__base_8hpp"/>
-        <childnode refid="6479" relation="include">
+        <childnode refid="6541" relation="include">
         </childnode>
-        <childnode refid="6480" relation="include">
+        <childnode refid="6542" relation="include">
         </childnode>
-        <childnode refid="6485" relation="include">
+        <childnode refid="6547" relation="include">
         </childnode>
       </node>
-      <node id="6485">
+      <node id="6547">
         <label>modm/architecture/interface/register.hpp</label>
         <link refid="register_8hpp"/>
-        <childnode refid="6479" relation="include">
+        <childnode refid="6541" relation="include">
         </childnode>
-        <childnode refid="6486" relation="include">
+        <childnode refid="6548" relation="include">
         </childnode>
-        <childnode refid="6482" relation="include">
+        <childnode refid="6544" relation="include">
         </childnode>
-        <childnode refid="6487" relation="include">
+        <childnode refid="6549" relation="include">
         </childnode>
       </node>
-      <node id="6497">
+      <node id="6559">
         <label>modm/math/utils/bit_operation.hpp</label>
         <link refid="bit__operation_8hpp"/>
-        <childnode refid="6488" relation="include">
+        <childnode refid="6550" relation="include">
         </childnode>
-        <childnode refid="6498" relation="include">
+        <childnode refid="6560" relation="include">
         </childnode>
-        <childnode refid="6479" relation="include">
+        <childnode refid="6541" relation="include">
         </childnode>
-        <childnode refid="6482" relation="include">
+        <childnode refid="6544" relation="include">
         </childnode>
-        <childnode refid="6481" relation="include">
+        <childnode refid="6543" relation="include">
         </childnode>
       </node>
-      <node id="6480">
+      <node id="6542">
         <label>../device.hpp</label>
         <link refid="device_8hpp"/>
-        <childnode refid="6479" relation="include">
+        <childnode refid="6541" relation="include">
         </childnode>
-        <childnode refid="6481" relation="include">
+        <childnode refid="6543" relation="include">
         </childnode>
-        <childnode refid="6483" relation="include">
+        <childnode refid="6545" relation="include">
         </childnode>
-        <childnode refid="6484" relation="include">
+        <childnode refid="6546" relation="include">
         </childnode>
       </node>
-      <node id="6488">
+      <node id="6550">
         <label>cstddef</label>
       </node>
-      <node id="6476">
+      <node id="6538">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_2.hpp</label>
         <link refid="timer__2_8hpp"/>
-        <childnode refid="6477" relation="include">
+        <childnode refid="6539" relation="include">
         </childnode>
-        <childnode refid="6494" relation="include">
+        <childnode refid="6556" relation="include">
         </childnode>
       </node>
-      <node id="6494">
+      <node id="6556">
         <label>modm/platform/gpio/connector.hpp</label>
         <link refid="connector_8hpp"/>
-        <childnode refid="6495" relation="include">
+        <childnode refid="6557" relation="include">
         </childnode>
-        <childnode refid="6500" relation="include">
+        <childnode refid="6562" relation="include">
         </childnode>
       </node>
-      <node id="6491">
+      <node id="6553">
         <label>type_traits</label>
       </node>
-      <node id="6483">
+      <node id="6545">
         <label>stm32f446xx.h</label>
       </node>
-      <node id="6486">
+      <node id="6548">
         <label>modm/math/utils/bit_constants.hpp</label>
         <link refid="bit__constants_8hpp"/>
-        <childnode refid="6479" relation="include">
+        <childnode refid="6541" relation="include">
         </childnode>
       </node>
-      <node id="6477">
+      <node id="6539">
         <label>general_purpose_base.hpp</label>
         <link refid="general__purpose__base_8hpp"/>
-        <childnode refid="6478" relation="include">
+        <childnode refid="6540" relation="include">
         </childnode>
       </node>
-      <node id="6490">
+      <node id="6552">
         <label>inttypes.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="6503">
+      <node id="6565">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>
-      <node id="6502">
+      <node id="6564">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/timer/timer_2.hpp</label>
         <link refid="timer__2_8hpp"/>
-        <childnode refid="6503" relation="include">
+        <childnode refid="6565" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

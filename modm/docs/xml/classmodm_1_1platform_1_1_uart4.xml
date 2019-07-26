@@ -293,30 +293,6 @@
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1710">
-        <label>modm::platform::Uart4</label>
-        <link refid="classmodm_1_1platform_1_1_uart4"/>
-        <childnode refid="1711" relation="public-inheritance">
-        </childnode>
-        <childnode refid="1712" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1713">
-        <label>modm::PeripheralDriver</label>
-        <link refid="classmodm_1_1_peripheral_driver"/>
-      </node>
-      <node id="1711">
-        <label>modm::platform::UartBase</label>
-        <link refid="classmodm_1_1platform_1_1_uart_base"/>
-      </node>
-      <node id="1712">
-        <label>modm::Uart</label>
-        <link refid="classmodm_1_1_uart"/>
-        <childnode refid="1713" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="1714">
         <label>modm::platform::Uart4</label>
         <link refid="classmodm_1_1platform_1_1_uart4"/>
@@ -337,6 +313,30 @@
         <label>modm::Uart</label>
         <link refid="classmodm_1_1_uart"/>
         <childnode refid="1717" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1718">
+        <label>modm::platform::Uart4</label>
+        <link refid="classmodm_1_1platform_1_1_uart4"/>
+        <childnode refid="1719" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1720" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1721">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="1719">
+        <label>modm::platform::UartBase</label>
+        <link refid="classmodm_1_1platform_1_1_uart_base"/>
+      </node>
+      <node id="1720">
+        <label>modm::Uart</label>
+        <link refid="classmodm_1_1_uart"/>
+        <childnode refid="1721" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

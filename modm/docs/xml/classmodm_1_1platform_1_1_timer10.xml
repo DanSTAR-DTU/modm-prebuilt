@@ -759,38 +759,38 @@
 <simplesect kind="author"><para>Fabian Greif </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1622">
+      <node id="1626">
         <label>modm::platform::Timer10</label>
         <link refid="classmodm_1_1platform_1_1_timer10"/>
-        <childnode refid="1623" relation="public-inheritance">
+        <childnode refid="1627" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1624">
+      <node id="1628">
         <label>modm::platform::BasicTimer</label>
         <link refid="classmodm_1_1platform_1_1_basic_timer"/>
       </node>
-      <node id="1623">
+      <node id="1627">
         <label>modm::platform::GeneralPurposeTimer</label>
         <link refid="classmodm_1_1platform_1_1_general_purpose_timer"/>
-        <childnode refid="1624" relation="public-inheritance">
+        <childnode refid="1628" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1625">
+      <node id="1629">
         <label>modm::platform::Timer10</label>
         <link refid="classmodm_1_1platform_1_1_timer10"/>
-        <childnode refid="1626" relation="public-inheritance">
+        <childnode refid="1630" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1627">
+      <node id="1631">
         <label>modm::platform::BasicTimer</label>
         <link refid="classmodm_1_1platform_1_1_basic_timer"/>
       </node>
-      <node id="1626">
+      <node id="1630">
         <label>modm::platform::GeneralPurposeTimer</label>
         <link refid="classmodm_1_1platform_1_1_general_purpose_timer"/>
-        <childnode refid="1627" relation="public-inheritance">
+        <childnode refid="1631" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

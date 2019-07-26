@@ -355,30 +355,6 @@
 <para>Serial peripheral interface (SPI2).</para><para>Simple unbuffered implementation.</para><para><simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1563">
-        <label>modm::PeripheralDriver</label>
-        <link refid="classmodm_1_1_peripheral_driver"/>
-      </node>
-      <node id="1564">
-        <label>modm::Spi</label>
-        <link refid="structmodm_1_1_spi"/>
-      </node>
-      <node id="1561">
-        <label>modm::platform::SpiMaster2</label>
-        <link refid="classmodm_1_1platform_1_1_spi_master2"/>
-        <childnode refid="1562" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1562">
-        <label>modm::SpiMaster</label>
-        <link refid="classmodm_1_1_spi_master"/>
-        <childnode refid="1563" relation="public-inheritance">
-        </childnode>
-        <childnode refid="1564" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="1567">
         <label>modm::PeripheralDriver</label>
         <link refid="classmodm_1_1_peripheral_driver"/>
@@ -399,6 +375,30 @@
         <childnode refid="1567" relation="public-inheritance">
         </childnode>
         <childnode refid="1568" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1571">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="1572">
+        <label>modm::Spi</label>
+        <link refid="structmodm_1_1_spi"/>
+      </node>
+      <node id="1569">
+        <label>modm::platform::SpiMaster2</label>
+        <link refid="classmodm_1_1platform_1_1_spi_master2"/>
+        <childnode refid="1570" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1570">
+        <label>modm::SpiMaster</label>
+        <link refid="classmodm_1_1_spi_master"/>
+        <childnode refid="1571" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1572" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

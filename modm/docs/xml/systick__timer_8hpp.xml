@@ -7,73 +7,73 @@
     <includes refid="peripheral_8hpp" local="no">modm/architecture/interface/peripheral.hpp</includes>
     <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <incdepgraph>
-      <node id="4461">
+      <node id="4501">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="4454">
+      <node id="4494">
         <label>stdint.h</label>
       </node>
-      <node id="4455">
+      <node id="4495">
         <label>cmath</label>
       </node>
-      <node id="4460">
+      <node id="4500">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="4461" relation="include">
+        <childnode refid="4501" relation="include">
         </childnode>
       </node>
-      <node id="4458">
+      <node id="4498">
         <label>modm/math/tolerance.hpp</label>
         <link refid="tolerance_8hpp"/>
-        <childnode refid="4454" relation="include">
+        <childnode refid="4494" relation="include">
         </childnode>
-        <childnode refid="4459" relation="include">
+        <childnode refid="4499" relation="include">
         </childnode>
       </node>
-      <node id="4457">
+      <node id="4497">
         <label>cstddef</label>
       </node>
-      <node id="4453">
+      <node id="4493">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp</label>
         <link refid="systick__timer_8hpp"/>
-        <childnode refid="4454" relation="include">
+        <childnode refid="4494" relation="include">
         </childnode>
-        <childnode refid="4455" relation="include">
+        <childnode refid="4495" relation="include">
         </childnode>
-        <childnode refid="4456" relation="include">
+        <childnode refid="4496" relation="include">
         </childnode>
       </node>
-      <node id="4459">
+      <node id="4499">
         <label>modm/math/units.hpp</label>
         <link refid="units_8hpp"/>
-        <childnode refid="4454" relation="include">
+        <childnode refid="4494" relation="include">
         </childnode>
-        <childnode refid="4460" relation="include">
+        <childnode refid="4500" relation="include">
         </childnode>
       </node>
-      <node id="4456">
+      <node id="4496">
         <label>modm/architecture/interface/peripheral.hpp</label>
         <link refid="peripheral_8hpp"/>
-        <childnode refid="4454" relation="include">
+        <childnode refid="4494" relation="include">
         </childnode>
-        <childnode refid="4457" relation="include">
+        <childnode refid="4497" relation="include">
         </childnode>
-        <childnode refid="4458" relation="include">
+        <childnode refid="4498" relation="include">
         </childnode>
-        <childnode refid="4459" relation="include">
+        <childnode refid="4499" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4463">
+      <node id="4503">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>
-      <node id="4462">
+      <node id="4502">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/systick_timer.hpp</label>
         <link refid="systick__timer_8hpp"/>
-        <childnode refid="4463" relation="include">
+        <childnode refid="4503" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

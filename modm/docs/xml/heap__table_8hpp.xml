@@ -8,117 +8,117 @@
     <includes refid="memory_8hpp" local="no">modm/architecture/interface/memory.hpp</includes>
     <includedby refid="platform_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</includedby>
     <incdepgraph>
-      <node id="4478">
+      <node id="4518">
         <label>stdarg.h</label>
       </node>
-      <node id="4473">
+      <node id="4513">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="4469">
+      <node id="4509">
         <label>iterator</label>
       </node>
-      <node id="4468">
+      <node id="4508">
         <label>stdint.h</label>
       </node>
-      <node id="4481">
+      <node id="4521">
         <label>iodevice.hpp</label>
         <link refid="iodevice_8hpp"/>
       </node>
-      <node id="4482">
+      <node id="4522">
         <label>iodevice_wrapper.hpp</label>
         <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="4468" relation="include">
+        <childnode refid="4508" relation="include">
         </childnode>
-        <childnode refid="4481" relation="include">
+        <childnode refid="4521" relation="include">
         </childnode>
       </node>
-      <node id="4476">
+      <node id="4516">
         <label>modm/io/iostream.hpp</label>
         <link refid="iostream_8hpp"/>
-        <childnode refid="4477" relation="include">
+        <childnode refid="4517" relation="include">
         </childnode>
-        <childnode refid="4472" relation="include">
+        <childnode refid="4512" relation="include">
         </childnode>
-        <childnode refid="4478" relation="include">
+        <childnode refid="4518" relation="include">
         </childnode>
-        <childnode refid="4479" relation="include">
+        <childnode refid="4519" relation="include">
         </childnode>
-        <childnode refid="4480" relation="include">
+        <childnode refid="4520" relation="include">
         </childnode>
-        <childnode refid="4481" relation="include">
+        <childnode refid="4521" relation="include">
         </childnode>
-        <childnode refid="4482" relation="include">
+        <childnode refid="4522" relation="include">
         </childnode>
       </node>
-      <node id="4472">
+      <node id="4512">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="4473" relation="include">
+        <childnode refid="4513" relation="include">
         </childnode>
       </node>
-      <node id="4474">
+      <node id="4514">
         <label>modm/architecture/interface/register.hpp</label>
         <link refid="register_8hpp"/>
-        <childnode refid="4468" relation="include">
+        <childnode refid="4508" relation="include">
         </childnode>
-        <childnode refid="4475" relation="include">
+        <childnode refid="4515" relation="include">
         </childnode>
-        <childnode refid="4473" relation="include">
+        <childnode refid="4513" relation="include">
         </childnode>
-        <childnode refid="4476" relation="include">
+        <childnode refid="4516" relation="include">
         </childnode>
       </node>
-      <node id="4470">
+      <node id="4510">
         <label>tuple</label>
       </node>
-      <node id="4477">
+      <node id="4517">
         <label>cstddef</label>
       </node>
-      <node id="4467">
+      <node id="4507">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/core/heap_table.hpp</label>
         <link refid="heap__table_8hpp"/>
-        <childnode refid="4468" relation="include">
+        <childnode refid="4508" relation="include">
         </childnode>
-        <childnode refid="4469" relation="include">
+        <childnode refid="4509" relation="include">
         </childnode>
-        <childnode refid="4470" relation="include">
+        <childnode refid="4510" relation="include">
         </childnode>
-        <childnode refid="4471" relation="include">
+        <childnode refid="4511" relation="include">
         </childnode>
       </node>
-      <node id="4480">
+      <node id="4520">
         <label>type_traits</label>
       </node>
-      <node id="4471">
+      <node id="4511">
         <label>modm/architecture/interface/memory.hpp</label>
         <link refid="memory_8hpp"/>
-        <childnode refid="4468" relation="include">
+        <childnode refid="4508" relation="include">
         </childnode>
-        <childnode refid="4472" relation="include">
+        <childnode refid="4512" relation="include">
         </childnode>
-        <childnode refid="4474" relation="include">
+        <childnode refid="4514" relation="include">
         </childnode>
       </node>
-      <node id="4475">
+      <node id="4515">
         <label>modm/math/utils/bit_constants.hpp</label>
         <link refid="bit__constants_8hpp"/>
-        <childnode refid="4468" relation="include">
+        <childnode refid="4508" relation="include">
         </childnode>
       </node>
-      <node id="4479">
+      <node id="4519">
         <label>inttypes.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4484">
+      <node id="4524">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>
-      <node id="4483">
+      <node id="4523">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/core/heap_table.hpp</label>
         <link refid="heap__table_8hpp"/>
-        <childnode refid="4484" relation="include">
+        <childnode refid="4524" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

@@ -5,136 +5,136 @@
     <includes refid="logger_8hpp" local="yes">debug/logger.hpp</includes>
     <includes refid="error__report_8hpp" local="yes">debug/error_report.hpp</includes>
     <incdepgraph>
-      <node id="1818">
+      <node id="1830">
         <label>stdarg.h</label>
       </node>
-      <node id="1815">
+      <node id="1827">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="1811">
+      <node id="1823">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/debug/debug.hpp</label>
         <link refid="debug_2debug_8hpp"/>
-        <childnode refid="1812" relation="include">
+        <childnode refid="1824" relation="include">
         </childnode>
-        <childnode refid="1831" relation="include">
-        </childnode>
-      </node>
-      <node id="1812">
-        <label>debug/logger.hpp</label>
-        <link refid="logger_8hpp"/>
-        <childnode refid="1813" relation="include">
-        </childnode>
-        <childnode refid="1825" relation="include">
+        <childnode refid="1843" relation="include">
         </childnode>
       </node>
       <node id="1824">
+        <label>debug/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+      </node>
+      <node id="1836">
         <label>level.hpp</label>
         <link refid="level_8hpp"/>
       </node>
-      <node id="1823">
+      <node id="1835">
         <label>stdint.h</label>
       </node>
-      <node id="1825">
+      <node id="1837">
         <label>style.hpp</label>
         <link refid="style_8hpp"/>
-        <childnode refid="1821" relation="include">
+        <childnode refid="1833" relation="include">
         </childnode>
-        <childnode refid="1826" relation="include">
+        <childnode refid="1838" relation="include">
         </childnode>
       </node>
-      <node id="1821">
+      <node id="1833">
         <label>iodevice.hpp</label>
         <link refid="iodevice_8hpp"/>
       </node>
-      <node id="1813">
+      <node id="1825">
         <label>logger/logger.hpp</label>
         <link refid="logger_2logger_8hpp"/>
-        <childnode refid="1814" relation="include">
-        </childnode>
-        <childnode refid="1816" relation="include">
-        </childnode>
-        <childnode refid="1824" relation="include">
-        </childnode>
-        <childnode refid="1825" relation="include">
-        </childnode>
-        <childnode refid="1827" relation="include">
+        <childnode refid="1826" relation="include">
         </childnode>
         <childnode refid="1828" relation="include">
         </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1840" relation="include">
+        </childnode>
       </node>
-      <node id="1822">
+      <node id="1834">
         <label>iodevice_wrapper.hpp</label>
         <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="1823" relation="include">
+        <childnode refid="1835" relation="include">
         </childnode>
-        <childnode refid="1821" relation="include">
+        <childnode refid="1833" relation="include">
+        </childnode>
+      </node>
+      <node id="1840">
+        <label>style/prefix.hpp</label>
+        <link refid="prefix_8hpp"/>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1842" relation="include">
         </childnode>
       </node>
       <node id="1828">
-        <label>style/prefix.hpp</label>
-        <link refid="prefix_8hpp"/>
+        <label>modm/io/iostream.hpp</label>
+        <link refid="iostream_8hpp"/>
         <childnode refid="1829" relation="include">
         </childnode>
-        <childnode refid="1825" relation="include">
+        <childnode refid="1826" relation="include">
         </childnode>
         <childnode refid="1830" relation="include">
         </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
       </node>
-      <node id="1816">
-        <label>modm/io/iostream.hpp</label>
-        <link refid="iostream_8hpp"/>
-        <childnode refid="1817" relation="include">
+      <node id="1838">
+        <label>style_impl.hpp</label>
+      </node>
+      <node id="1839">
+        <label>style_wrapper.hpp</label>
+        <link refid="style__wrapper_8hpp"/>
+        <childnode refid="1833" relation="include">
         </childnode>
-        <childnode refid="1814" relation="include">
-        </childnode>
-        <childnode refid="1818" relation="include">
-        </childnode>
-        <childnode refid="1819" relation="include">
-        </childnode>
-        <childnode refid="1820" relation="include">
-        </childnode>
-        <childnode refid="1821" relation="include">
-        </childnode>
-        <childnode refid="1822" relation="include">
+        <childnode refid="1837" relation="include">
         </childnode>
       </node>
       <node id="1826">
-        <label>style_impl.hpp</label>
-      </node>
-      <node id="1827">
-        <label>style_wrapper.hpp</label>
-        <link refid="style__wrapper_8hpp"/>
-        <childnode refid="1821" relation="include">
-        </childnode>
-        <childnode refid="1825" relation="include">
-        </childnode>
-      </node>
-      <node id="1814">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="1815" relation="include">
+        <childnode refid="1827" relation="include">
         </childnode>
       </node>
-      <node id="1831">
+      <node id="1843">
         <label>debug/error_report.hpp</label>
         <link refid="error__report_8hpp"/>
-        <childnode refid="1823" relation="include">
+        <childnode refid="1835" relation="include">
         </childnode>
       </node>
-      <node id="1830">
+      <node id="1842">
         <label>prefix_impl.hpp</label>
       </node>
-      <node id="1817">
+      <node id="1829">
         <label>cstddef</label>
       </node>
-      <node id="1820">
+      <node id="1832">
         <label>type_traits</label>
       </node>
-      <node id="1829">
+      <node id="1841">
         <label>cstring</label>
       </node>
-      <node id="1819">
+      <node id="1831">
         <label>inttypes.h</label>
       </node>
     </incdepgraph>

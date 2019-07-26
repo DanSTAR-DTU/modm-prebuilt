@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['b',['B',['../classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#a986cc04a221691356171c03565242c0c',1,'modm::platform::BitBangOneWireMaster']]],
   ['back',['back',['../classmodm_1_1_doubly_linked_list.html#ac2bf3de4a44527c127904ec72025d725',1,'modm::DoublyLinkedList::back()'],['../classmodm_1_1_linked_list.html#a0c4c153009c49d2cd98fdae2df801edf',1,'modm::LinkedList::back()']]],
   ['basepoint',['basePoint',['../classmodm_1_1_ray2_d.html#ae3e8c146666b7f6b402cd64f99cd1117',1,'modm::Ray2D']]],
   ['bit0',['Bit0',['../group__modm__utils.html#ga203c48bdc0ee80f631cdd258b10ac2ec',1,'modm']]],

@@ -10,192 +10,192 @@
     <includedby refid="timer_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer.hpp</includedby>
     <includedby refid="processing_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</includedby>
     <incdepgraph>
-      <node id="7434">
+      <node id="7496">
         <label>stdarg.h</label>
       </node>
-      <node id="7433">
+      <node id="7495">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="7441">
+      <node id="7503">
         <label>limits</label>
       </node>
-      <node id="7428">
+      <node id="7490">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp</label>
         <link refid="timestamp_8hpp"/>
-        <childnode refid="7429" relation="include">
+        <childnode refid="7491" relation="include">
         </childnode>
-        <childnode refid="7430" relation="include">
+        <childnode refid="7492" relation="include">
         </childnode>
-        <childnode refid="7439" relation="include">
+        <childnode refid="7501" relation="include">
         </childnode>
       </node>
-      <node id="7440">
+      <node id="7502">
         <label>cstdint</label>
       </node>
-      <node id="7429">
+      <node id="7491">
         <label>stdint.h</label>
       </node>
-      <node id="7437">
+      <node id="7499">
         <label>iodevice.hpp</label>
         <link refid="iodevice_8hpp"/>
       </node>
-      <node id="7442">
+      <node id="7504">
         <label>cmath</label>
       </node>
-      <node id="7438">
+      <node id="7500">
         <label>iodevice_wrapper.hpp</label>
         <link refid="iodevice__wrapper_8hpp"/>
-        <childnode refid="7429" relation="include">
+        <childnode refid="7491" relation="include">
         </childnode>
-        <childnode refid="7437" relation="include">
+        <childnode refid="7499" relation="include">
         </childnode>
       </node>
-      <node id="7430">
+      <node id="7492">
         <label>modm/io/iostream.hpp</label>
         <link refid="iostream_8hpp"/>
-        <childnode refid="7431" relation="include">
+        <childnode refid="7493" relation="include">
         </childnode>
-        <childnode refid="7432" relation="include">
+        <childnode refid="7494" relation="include">
         </childnode>
-        <childnode refid="7434" relation="include">
+        <childnode refid="7496" relation="include">
         </childnode>
-        <childnode refid="7435" relation="include">
+        <childnode refid="7497" relation="include">
         </childnode>
-        <childnode refid="7436" relation="include">
+        <childnode refid="7498" relation="include">
         </childnode>
-        <childnode refid="7437" relation="include">
+        <childnode refid="7499" relation="include">
         </childnode>
-        <childnode refid="7438" relation="include">
+        <childnode refid="7500" relation="include">
         </childnode>
       </node>
-      <node id="7432">
+      <node id="7494">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="7433" relation="include">
+        <childnode refid="7495" relation="include">
         </childnode>
       </node>
-      <node id="7439">
+      <node id="7501">
         <label>modm/math/utils/arithmetic_traits.hpp</label>
         <link refid="arithmetic__traits_8hpp"/>
-        <childnode refid="7440" relation="include">
+        <childnode refid="7502" relation="include">
         </childnode>
-        <childnode refid="7441" relation="include">
+        <childnode refid="7503" relation="include">
         </childnode>
-        <childnode refid="7436" relation="include">
+        <childnode refid="7498" relation="include">
         </childnode>
-        <childnode refid="7442" relation="include">
+        <childnode refid="7504" relation="include">
         </childnode>
       </node>
-      <node id="7431">
+      <node id="7493">
         <label>cstddef</label>
       </node>
-      <node id="7436">
+      <node id="7498">
         <label>type_traits</label>
       </node>
-      <node id="7435">
+      <node id="7497">
         <label>inttypes.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7446">
+      <node id="7508">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture.hpp</label>
         <link refid="architecture_8hpp"/>
       </node>
-      <node id="7445">
+      <node id="7507">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface.hpp</label>
         <link refid="interface_8hpp"/>
-        <childnode refid="7446" relation="include">
+        <childnode refid="7508" relation="include">
         </childnode>
       </node>
-      <node id="7443">
+      <node id="7505">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timestamp.hpp</label>
         <link refid="timestamp_8hpp"/>
-        <childnode refid="7444" relation="include">
+        <childnode refid="7506" relation="include">
         </childnode>
-        <childnode refid="7452" relation="include">
+        <childnode refid="7514" relation="include">
         </childnode>
-        <childnode refid="7454" relation="include">
+        <childnode refid="7516" relation="include">
         </childnode>
-        <childnode refid="7456" relation="include">
+        <childnode refid="7518" relation="include">
         </childnode>
       </node>
-      <node id="7452">
+      <node id="7514">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/timeout.hpp</label>
         <link refid="timeout_8hpp"/>
-        <childnode refid="7453" relation="include">
+        <childnode refid="7515" relation="include">
         </childnode>
-        <childnode refid="7454" relation="include">
+        <childnode refid="7516" relation="include">
         </childnode>
-        <childnode refid="7456" relation="include">
+        <childnode refid="7518" relation="include">
         </childnode>
       </node>
-      <node id="7448">
+      <node id="7510">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp</label>
         <link refid="can__1_8hpp"/>
-        <childnode refid="7449" relation="include">
+        <childnode refid="7511" relation="include">
         </childnode>
       </node>
-      <node id="7447">
+      <node id="7509">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_bit_timings.hpp</label>
         <link refid="can__bit__timings_8hpp"/>
-        <childnode refid="7448" relation="include">
+        <childnode refid="7510" relation="include">
         </childnode>
-        <childnode refid="7450" relation="include">
+        <childnode refid="7512" relation="include">
         </childnode>
-        <childnode refid="7449" relation="include">
+        <childnode refid="7511" relation="include">
         </childnode>
       </node>
-      <node id="7450">
+      <node id="7512">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp</label>
         <link refid="can__2_8hpp"/>
-        <childnode refid="7449" relation="include">
+        <childnode refid="7511" relation="include">
         </childnode>
       </node>
-      <node id="7455">
+      <node id="7517">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
         <link refid="bme280_8hpp"/>
       </node>
-      <node id="7449">
+      <node id="7511">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform.hpp</label>
         <link refid="platform_8hpp"/>
       </node>
-      <node id="7456">
+      <node id="7518">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</label>
         <link refid="processing_8hpp"/>
       </node>
-      <node id="7444">
+      <node id="7506">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/clock.hpp</label>
         <link refid="clock_8hpp"/>
-        <childnode refid="7445" relation="include">
+        <childnode refid="7507" relation="include">
         </childnode>
-        <childnode refid="7447" relation="include">
+        <childnode refid="7509" relation="include">
         </childnode>
-        <childnode refid="7451" relation="include">
+        <childnode refid="7513" relation="include">
         </childnode>
-        <childnode refid="7452" relation="include">
+        <childnode refid="7514" relation="include">
         </childnode>
       </node>
-      <node id="7451">
+      <node id="7513">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/platform/clock/common.hpp</label>
         <link refid="common_8hpp"/>
-        <childnode refid="7449" relation="include">
+        <childnode refid="7511" relation="include">
         </childnode>
       </node>
-      <node id="7453">
+      <node id="7515">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer/periodic_timer.hpp</label>
         <link refid="periodic__timer_8hpp"/>
-        <childnode refid="7454" relation="include">
+        <childnode refid="7516" relation="include">
         </childnode>
-        <childnode refid="7456" relation="include">
+        <childnode refid="7518" relation="include">
         </childnode>
       </node>
-      <node id="7454">
+      <node id="7516">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/timer.hpp</label>
         <link refid="timer_8hpp"/>
-        <childnode refid="7455" relation="include">
+        <childnode refid="7517" relation="include">
         </childnode>
-        <childnode refid="7456" relation="include">
+        <childnode refid="7518" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

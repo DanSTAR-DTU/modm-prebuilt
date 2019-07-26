@@ -323,31 +323,31 @@
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1249">
-        <label>modm::NestedResumable&lt; NestingLevels+1 &gt;</label>
-        <link refid="classmodm_1_1_nested_resumable"/>
-      </node>
-      <node id="1248">
-        <label>modm::I2cDevice&lt; I2cMaster, NestingLevels, Transaction &gt;</label>
-        <link refid="classmodm_1_1_i2c_device"/>
-        <childnode refid="1249" relation="protected-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="1251">
+      <node id="1253">
         <label>modm::NestedResumable&lt; NestingLevels+1 &gt;</label>
         <link refid="classmodm_1_1_nested_resumable"/>
       </node>
       <node id="1252">
-        <label>Transaction</label>
-      </node>
-      <node id="1250">
         <label>modm::I2cDevice&lt; I2cMaster, NestingLevels, Transaction &gt;</label>
         <link refid="classmodm_1_1_i2c_device"/>
-        <childnode refid="1251" relation="protected-inheritance">
+        <childnode refid="1253" relation="protected-inheritance">
         </childnode>
-        <childnode refid="1252" relation="usage">
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1255">
+        <label>modm::NestedResumable&lt; NestingLevels+1 &gt;</label>
+        <link refid="classmodm_1_1_nested_resumable"/>
+      </node>
+      <node id="1256">
+        <label>Transaction</label>
+      </node>
+      <node id="1254">
+        <label>modm::I2cDevice&lt; I2cMaster, NestingLevels, Transaction &gt;</label>
+        <link refid="classmodm_1_1_i2c_device"/>
+        <childnode refid="1255" relation="protected-inheritance">
+        </childnode>
+        <childnode refid="1256" relation="usage">
           <edgelabel>transaction</edgelabel>
         </childnode>
       </node>

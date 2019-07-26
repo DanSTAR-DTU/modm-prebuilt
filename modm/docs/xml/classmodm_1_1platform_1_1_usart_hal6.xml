@@ -420,26 +420,26 @@
 <para>Universal asynchronous receiver transmitter (<ref refid="classmodm_1_1platform_1_1_usart_hal6" kindref="compound">UsartHal6</ref>)</para><para>Not available on the low- and medium density devices.</para><para>Very basic implementation that exposes more hardware features than the regular Usart classes.</para><para><simplesect kind="author"><para>Kevin Laeufer </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1799">
+      <node id="1803">
         <label>modm::platform::UartBase</label>
         <link refid="classmodm_1_1platform_1_1_uart_base"/>
       </node>
-      <node id="1798">
+      <node id="1802">
         <label>modm::platform::UsartHal6</label>
         <link refid="classmodm_1_1platform_1_1_usart_hal6"/>
-        <childnode refid="1799" relation="public-inheritance">
+        <childnode refid="1803" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1801">
+      <node id="1805">
         <label>modm::platform::UartBase</label>
         <link refid="classmodm_1_1platform_1_1_uart_base"/>
       </node>
-      <node id="1800">
+      <node id="1804">
         <label>modm::platform::UsartHal6</label>
         <link refid="classmodm_1_1platform_1_1_usart_hal6"/>
-        <childnode refid="1801" relation="public-inheritance">
+        <childnode refid="1805" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

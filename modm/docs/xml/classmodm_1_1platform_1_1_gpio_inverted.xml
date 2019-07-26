@@ -176,24 +176,24 @@
 </programlisting></para><para><simplesect kind="author"><para>Fabian Greif </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1091">
+      <node id="1095">
         <label>Pin</label>
       </node>
-      <node id="1090">
+      <node id="1094">
         <label>modm::platform::GpioInverted&lt; Pin &gt;</label>
         <link refid="classmodm_1_1platform_1_1_gpio_inverted"/>
-        <childnode refid="1091" relation="public-inheritance">
+        <childnode refid="1095" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1093">
+      <node id="1097">
         <label>Pin</label>
       </node>
-      <node id="1092">
+      <node id="1096">
         <label>modm::platform::GpioInverted&lt; Pin &gt;</label>
         <link refid="classmodm_1_1platform_1_1_gpio_inverted"/>
-        <childnode refid="1093" relation="public-inheritance">
+        <childnode refid="1097" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

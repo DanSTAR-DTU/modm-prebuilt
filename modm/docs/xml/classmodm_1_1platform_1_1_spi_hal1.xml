@@ -327,26 +327,26 @@
 <para>Serial peripheral interface (SPI1)</para><para>Very basic implementation that exposes more hardware features than the regular <ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> classes.</para><para><simplesect kind="author"><para>Kevin Laeufer </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1532">
+      <node id="1536">
         <label>modm::platform::SpiBase</label>
         <link refid="classmodm_1_1platform_1_1_spi_base"/>
       </node>
-      <node id="1531">
+      <node id="1535">
         <label>modm::platform::SpiHal1</label>
         <link refid="classmodm_1_1platform_1_1_spi_hal1"/>
-        <childnode refid="1532" relation="public-inheritance">
+        <childnode refid="1536" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1534">
+      <node id="1538">
         <label>modm::platform::SpiBase</label>
         <link refid="classmodm_1_1platform_1_1_spi_base"/>
       </node>
-      <node id="1533">
+      <node id="1537">
         <label>modm::platform::SpiHal1</label>
         <link refid="classmodm_1_1platform_1_1_spi_hal1"/>
-        <childnode refid="1534" relation="public-inheritance">
+        <childnode refid="1538" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

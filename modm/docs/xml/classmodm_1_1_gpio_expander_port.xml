@@ -281,32 +281,32 @@ Usage: <programlisting><codeline><highlight class="normal">typedef<sp/>modm::Pca
 <simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1005">
+      <node id="1009">
         <label>modm::GpioPort</label>
         <link refid="classmodm_1_1_gpio_port"/>
       </node>
-      <node id="1004">
+      <node id="1008">
         <label>modm::GpioExpanderPort&lt; GpioExpander, expander, StartPin, Width, DataOrder &gt;</label>
         <link refid="classmodm_1_1_gpio_expander_port"/>
-        <childnode refid="1005" relation="public-inheritance">
+        <childnode refid="1009" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1007">
+      <node id="1011">
         <label>modm::GpioPort</label>
         <link refid="classmodm_1_1_gpio_port"/>
       </node>
-      <node id="1006">
+      <node id="1010">
         <label>modm::GpioExpanderPort&lt; GpioExpander, expander, StartPin, Width, DataOrder &gt;</label>
         <link refid="classmodm_1_1_gpio_expander_port"/>
-        <childnode refid="1007" relation="public-inheritance">
+        <childnode refid="1011" relation="public-inheritance">
         </childnode>
-        <childnode refid="1008" relation="usage">
+        <childnode refid="1012" relation="usage">
           <edgelabel>ioExpander</edgelabel>
         </childnode>
       </node>
-      <node id="1008">
+      <node id="1012">
         <label>modm::GpioExpander</label>
         <link refid="classmodm_1_1_gpio_expander"/>
       </node>

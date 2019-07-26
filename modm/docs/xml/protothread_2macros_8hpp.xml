@@ -7,63 +7,63 @@
     <includedby refid="semaphore_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp</includedby>
     <includedby refid="processing_8hpp" local="yes">/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</includedby>
     <incdepgraph>
-      <node id="7177">
+      <node id="7239">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp</label>
         <link refid="protothread_2macros_8hpp"/>
-        <childnode refid="7178" relation="include">
+        <childnode refid="7240" relation="include">
         </childnode>
       </node>
-      <node id="7179">
+      <node id="7241">
         <label>detect.hpp</label>
         <link refid="detect_8hpp"/>
       </node>
-      <node id="7178">
+      <node id="7240">
         <label>modm/architecture/utils.hpp</label>
         <link refid="architecture_2utils_8hpp"/>
-        <childnode refid="7179" relation="include">
+        <childnode refid="7241" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7180">
+      <node id="7242">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/macros.hpp</label>
         <link refid="protothread_2macros_8hpp"/>
-        <childnode refid="7181" relation="include">
+        <childnode refid="7243" relation="include">
         </childnode>
-        <childnode refid="7185" relation="include">
+        <childnode refid="7247" relation="include">
         </childnode>
-        <childnode refid="7184" relation="include">
+        <childnode refid="7246" relation="include">
         </childnode>
       </node>
-      <node id="7182">
+      <node id="7244">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread.hpp</label>
         <link refid="protothread_8hpp"/>
-        <childnode refid="7183" relation="include">
+        <childnode refid="7245" relation="include">
         </childnode>
-        <childnode refid="7184" relation="include">
+        <childnode refid="7246" relation="include">
         </childnode>
       </node>
-      <node id="7183">
+      <node id="7245">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/driver/pressure/bme280.hpp</label>
         <link refid="bme280_8hpp"/>
       </node>
-      <node id="7181">
+      <node id="7243">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/protothread.hpp</label>
         <link refid="protothread_2protothread_8hpp"/>
-        <childnode refid="7182" relation="include">
+        <childnode refid="7244" relation="include">
         </childnode>
-        <childnode refid="7184" relation="include">
+        <childnode refid="7246" relation="include">
         </childnode>
       </node>
-      <node id="7185">
+      <node id="7247">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing/protothread/semaphore.hpp</label>
         <link refid="semaphore_8hpp"/>
-        <childnode refid="7182" relation="include">
+        <childnode refid="7244" relation="include">
         </childnode>
-        <childnode refid="7184" relation="include">
+        <childnode refid="7246" relation="include">
         </childnode>
       </node>
-      <node id="7184">
+      <node id="7246">
         <label>/home/nicolai/Documents/DanStar/Software-dolken/modm-prebuilt/modm/src/modm/processing.hpp</label>
         <link refid="processing_8hpp"/>
       </node>

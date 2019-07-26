@@ -1,0 +1,309 @@
+!!! warning "These module docs are in beta and may be incomplete."
+
+# modm:platform:fault: ARM Cortex-M Fault Reporters
+
+This module manages data storage for core dumps provided by the `:crashcatcher`
+module to investigate HardFault events via offline post-mortem debugging.
+The data is stored in the volatile memory designated for the heap.
+
+This works as follows:
+
+1. A HardFault occurs and is intercepted by CrashCatcher.
+2. CrashCatcher calls into this module to store the core dump in the heap as
+   defined by the linkerscript's `.table.heap` section, thus effectively
+   overwriting the heap, then reboots the device.
+3. On reboot, only the remaining heap memory is initialized, leaving the core
+   dump data intact.
+4. The application has no limitations other than a reduced total heap size!
+   It may access the report data at any time and use all hardware to send out
+   this report.
+5. After the application clears the report ands reboots, the heap will once 
+   again be fully available.
+
+
+## Restrictions on HardFault Entry
+
+A HardFault is a serious bug and should it happen your application is most likely
+compromised in some way. Here are some important points to take note of.
+
+1. The HardFault has a hardcoded priority of -1 and only the NMI and the Reset
+   exceptions have a higher priority (-2 and -3). This means ALL device interrupts
+   have a LOWER priority!
+2. The HardFault is a synchronous exception, it will NOT wait for anything to
+   complete, especially not the currently executing interrupt (if any).
+3. There are many reasons for the HardFault exception to be raised (e.g. accessing
+   invalid memory, executing undefined instructions, dividing by zero) making
+   it very difficult to recover in a generic way. It is therefore reasonable
+   to abandon execution (=> reboot) rather than resuming execution in an
+   increasingly unstable application.
+
+On HardFault entry, this module calls the function `modm_hardfault_entry()` which
+can be overwritten by the application to put the devices hardware in a safe mode.
+This can be as simple as disabling power to external components, however, its
+execution should be strictly time bound and NOT depend on other interrupts
+completing (they won't), which will cause a deadlock.
+
+```cpp
+void modm_hardfault_entry()
+{
+    Board::MotorDrivers::disable();
+    // return from this function as fast as possible
+}
+```
+
+After this function returns, this module will generate the coredump into the
+heap and reboot the device.
+
+
+## Reporting the Fault
+
+In order to recover from the HardFault the device is rebooted with a smaller
+heap. Once the `main()` function is reached, the application code should check
+for `FaultReporter::hasReport()` and then only initialize the bare minimum of
+Hardware to send this report to the developer.
+
+To access the report, use the `FaultReporter::begin()` and `FaultReporter::end()`
+functions which return a `const_iterator` of the actual core dump data, that can
+be used in a range-based for loop.
+
+Remember to call  `FaultReporter::clearAndReboot()` to clear the report, reboot
+the device and reclaim the full heap.
+
+```cpp
+int main()
+{
+    if (FaultReporter::hasReport()) // Check first after boot
+    {
+        Application::partialInitialize(); // Initialize only the necessary
+        reportBegin();
+        for (const uint8_t data : FaultReporter::buildId())
+            reportBuildId(data); // send each byte of Build ID
+        for (const uint8_t data : FaultReporter())
+            reportData(data); // send each byte of data
+        reportEnd(); // end the report
+        FaultReporter::clearAndReboot(); // clear the report and reboot
+        // never reached
+    }
+    // Normal initialization
+    Application::initialize();
+}
+```
+
+The application is able to use the heap, however, depending on the report size
+(controllable via the `report_level` option) the heap may be much smaller then
+normal. Make sure your application can deal with that.
+
+For complex applications which perhaps communicate asynchronously (CAN,
+Ethernet, Wireless) it may not be possible to send the report in one piece or
+at the same time. The report data remains available until you reboot, even after
+you've cleared the report.
+
+```cpp
+int main()
+{
+    const bool faultReport{FaultReporter::hasReport()};
+    FaultReporter::clear(); // only clear report but do not reboot
+    Application::initialize();
+
+    while(1)
+    {
+        doOtherStuff();
+        if (faultReport and applicationReady)
+        {
+            // Still valid AFTER clear, but BEFORE reboot
+            const auto id = FaultReporter::buildId();
+            auto begin = FaultReporter::begin();
+            auto end = FaultReporter::end();
+            //
+            Application::sendReport(id, begin, end);
+            // reboot when report has been fully sent
+        }
+    }
+}
+```
+
+
+## Using the Fault Report
+
+The fault report contains a core dump generated by CrashCatcher and is supposed
+to be used by CrashDebug to present the memory view to the GDB debugger.
+For this, you must use the ELF file that corresponds to the devices firmware,
+as well as copy the coredump data formatted as *hexadecimal* values into a text
+file, then call the debugger like this:
+
+```
+arm-none-eabi-gdb -tui executable.elf -ex "set target-charset ASCII" \
+    -ex "target remote | CrashDebug --elf executable.elf --dump coredump.txt"
+```
+
+Note that the `FaultReporter::buildId()` contains the GNU Build ID, which can
+help you find the right ELF file:
+
+```
+arm-none-eabi-readelf -n executable.elf
+
+Displaying notes found in: .build_id
+  Owner                 Data size Description
+  GNU                  0x00000014 NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: 59f08f7a37a7340799d9dba6b0c092bc3c9515c5
+```
+
+
+### Post-Mortem Debugging with SCons
+
+The `:build:scons` module provides a few helper methods for working with fault
+reports. You still need to copy the coredump data manually, however, the firmware
+selection is automated.
+
+The SCons build system will automatically cache the ELF file for the build id for
+every firmware upload (using `scons artifact`).
+When a fault is reported, you can tell SCons the firmware build id and it will use
+the corresponding ELF file automatically.
+
+```sh
+# Copy data into coredump.txt
+touch coredump.txt
+# Start postmortem debugging of executable with this build id
+scons postmortem firmware=59f08f7a37a7340799d9dba6b0c092bc3c9515c5
+```
+
+## Options
+#### report_level
+
+Fault Report Level: `core+stack+data` ∈ `{ core, core+stack, core+stack+data }`
+
+This module will try to store as much data as is available in the heap and any
+leftover data will be discarded. This means the application may not have any
+heap available after a reboot.
+
+You can control how much data is generated by choosing the right report level:
+
+- core: Just dumps the core registers, which describe where the fault occurred
+        and why. This is usually less than 250 Bytes.
+- stack: Dumps the main stack memory. This will get you a full backtrace, but
+         may take a few kB of space.
+- data: Dumps all memory sections containing static data: `.data`, `.fastdata`,
+        `.bss`. This allows you to see data that isn't related to your current
+        fault location, however, this can take several tens of kB of data.
+
+It is strongly recommended to choose the report level that generates less data
+than you heap size. The `scons size` output displays this very prominently,
+if the Data size is smaller than your Heap size, you're good to use the
+`core+stack+data` setting:
+
+```
+Data:      5.2 KiB (26.0% used) = 2285 B static (11.2%) + 3040 B stack (14.8%)
+(.bss + .data + .fastdata + .noinit + .stack)
+
+Heap:     14.8 KiB (74.0% available)
+(.heap1)
+```
+
+If Heap is smaller than the Data, you may need to switch to using only the
+`core+stack` setting:
+
+```
+Data:     11.2 KiB (56.0% used) = 8429 B static (41.2%) + 3040 B stack (14.8%)
+(.bss + .data + .fastdata + .noinit + .stack)
+
+Heap:      8.8 KiB (44.0% available)
+(.heap1)
+```
+## Content
+
+```cpp
+// Class
+class modm::platform::FaultReporter;
+// Function
+void modm_hardfault_entry();
+```
+## Dependencies
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: modm:platform:fault Pages: 1 -->
+<svg width="350pt" height="150pt"
+ viewBox="0.00 0.00 350.00 150.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 146)">
+<title>modm:platform:fault</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-146 346,-146 346,4 -4,4"/>
+<!-- modm_platform_fault -->
+<g id="node1" class="node">
+<title>modm_platform_fault</title>
+<polygon fill="#d3d3d3" stroke="#000000" stroke-width="2" points="208,-53 140,-53 140,0 208,0 208,-53"/>
+<text text-anchor="middle" x="174" y="-37.8" font-family="Times,serif" font-size="14.00" fill="#000000">modm:</text>
+<text text-anchor="middle" x="174" y="-22.8" font-family="Times,serif" font-size="14.00" fill="#000000">platform:</text>
+<text text-anchor="middle" x="174" y="-7.8" font-family="Times,serif" font-size="14.00" fill="#000000">fault</text>
+</g>
+<!-- modm_architecture_build_id -->
+<g id="node2" class="node">
+<title>modm_architecture_build_id</title>
+<g id="a_node2"><a xlink:href="../modm-architecture-build-id" xlink:title="modm:&#10;architecture:&#10;build_id">
+<polygon fill="#d3d3d3" stroke="#000000" points="84,-142 0,-142 0,-89 84,-89 84,-142"/>
+<text text-anchor="middle" x="42" y="-126.8" font-family="Times,serif" font-size="14.00" fill="#000000">modm:</text>
+<text text-anchor="middle" x="42" y="-111.8" font-family="Times,serif" font-size="14.00" fill="#000000">architecture:</text>
+<text text-anchor="middle" x="42" y="-96.8" font-family="Times,serif" font-size="14.00" fill="#000000">build_id</text>
+</a>
+</g>
+</g>
+<!-- modm_platform_fault&#45;&gt;modm_architecture_build_id -->
+<g id="edge1" class="edge">
+<title>modm_platform_fault&#45;&gt;modm_architecture_build_id</title>
+<path fill="none" stroke="#000000" d="M139.6631,-49.6514C124.5716,-59.8267 106.5854,-71.9537 90.1855,-83.0113"/>
+<polygon fill="#000000" stroke="#000000" points="88.1125,-80.1877 81.7778,-88.6801 92.0258,-85.9917 88.1125,-80.1877"/>
+</g>
+<!-- modm_cmsis_device -->
+<g id="node3" class="node">
+<title>modm_cmsis_device</title>
+<g id="a_node3"><a xlink:href="../modm-cmsis-device" xlink:title="modm:&#10;cmsis:&#10;device">
+<polygon fill="#d3d3d3" stroke="#000000" points="158,-142 102,-142 102,-89 158,-89 158,-142"/>
+<text text-anchor="middle" x="130" y="-126.8" font-family="Times,serif" font-size="14.00" fill="#000000">modm:</text>
+<text text-anchor="middle" x="130" y="-111.8" font-family="Times,serif" font-size="14.00" fill="#000000">cmsis:</text>
+<text text-anchor="middle" x="130" y="-96.8" font-family="Times,serif" font-size="14.00" fill="#000000">device</text>
+</a>
+</g>
+</g>
+<!-- modm_platform_fault&#45;&gt;modm_cmsis_device -->
+<g id="edge2" class="edge">
+<title>modm_platform_fault&#45;&gt;modm_cmsis_device</title>
+<path fill="none" stroke="#000000" d="M160.7985,-53.2029C156.6653,-61.5633 152.0361,-70.927 147.6475,-79.8039"/>
+<polygon fill="#000000" stroke="#000000" points="144.4865,-78.3004 143.1921,-88.8159 150.7615,-81.4027 144.4865,-78.3004"/>
+</g>
+<!-- modm_crashcatcher -->
+<g id="node4" class="node">
+<title>modm_crashcatcher</title>
+<g id="a_node4"><a xlink:href="../modm-crashcatcher" xlink:title="modm:&#10;crashcatcher">
+<polygon fill="#d3d3d3" stroke="#000000" points="260,-134.5 176,-134.5 176,-96.5 260,-96.5 260,-134.5"/>
+<text text-anchor="middle" x="218" y="-119.3" font-family="Times,serif" font-size="14.00" fill="#000000">modm:</text>
+<text text-anchor="middle" x="218" y="-104.3" font-family="Times,serif" font-size="14.00" fill="#000000">crashcatcher</text>
+</a>
+</g>
+</g>
+<!-- modm_platform_fault&#45;&gt;modm_crashcatcher -->
+<g id="edge3" class="edge">
+<title>modm_platform_fault&#45;&gt;modm_crashcatcher</title>
+<path fill="none" stroke="#000000" d="M187.2015,-53.2029C192.5268,-63.9746 198.6756,-76.4119 204.072,-87.3275"/>
+<polygon fill="#000000" stroke="#000000" points="201.0118,-89.035 208.5811,-96.4482 207.2868,-85.9327 201.0118,-89.035"/>
+</g>
+<!-- modm_platform -->
+<g id="node5" class="node">
+<title>modm_platform</title>
+<g id="a_node5"><a xlink:href="../modm-platform" xlink:title="modm:&#10;platform">
+<polygon fill="#d3d3d3" stroke="#000000" points="342,-134.5 278,-134.5 278,-96.5 342,-96.5 342,-134.5"/>
+<text text-anchor="middle" x="310" y="-119.3" font-family="Times,serif" font-size="14.00" fill="#000000">modm:</text>
+<text text-anchor="middle" x="310" y="-104.3" font-family="Times,serif" font-size="14.00" fill="#000000">platform</text>
+</a>
+</g>
+</g>
+<!-- modm_platform_fault&#45;&gt;modm_platform -->
+<g id="edge4" class="edge">
+<title>modm_platform_fault&#45;&gt;modm_platform</title>
+<path fill="none" stroke="#000000" d="M208.3185,-48.9585C227.7855,-61.6979 252.1795,-77.6616 272.1943,-90.7595"/>
+<polygon fill="#000000" stroke="#000000" points="270.4779,-93.8191 280.762,-96.3663 274.311,-87.9618 270.4779,-93.8191"/>
+</g>
+</g>
+</svg>
+

@@ -294,21 +294,21 @@
 <para><simplesect kind="author"><para>Fabian Greif </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="1357">
+      <node id="1361">
         <label>modm::Line2D&lt; T &gt;</label>
         <link refid="classmodm_1_1_line2_d"/>
-        <childnode refid="1358" relation="usage">
+        <childnode refid="1362" relation="usage">
           <edgelabel>directionVector</edgelabel>
           <edgelabel>point</edgelabel>
         </childnode>
       </node>
-      <node id="1359">
+      <node id="1363">
         <label>T</label>
       </node>
-      <node id="1358">
+      <node id="1362">
         <label>modm::Vector&lt; T, 2 &gt;</label>
         <link refid="classmodm_1_1_vector_3_01_t_00_012_01_4"/>
-        <childnode refid="1359" relation="usage">
+        <childnode refid="1363" relation="usage">
           <edgelabel>x</edgelabel>
           <edgelabel>y</edgelabel>
         </childnode>

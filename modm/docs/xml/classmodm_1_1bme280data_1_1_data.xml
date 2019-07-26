@@ -209,33 +209,33 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="195">
-        <label>modm::bme280data::DataBase</label>
-        <link refid="structmodm_1_1bme280data_1_1_data_base"/>
-      </node>
-      <node id="194">
-        <label>modm::bme280data::Data</label>
-        <link refid="classmodm_1_1bme280data_1_1_data"/>
-        <childnode refid="195" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="198">
-        <label>modm::bme280data::Calibration</label>
-        <link refid="structmodm_1_1bme280data_1_1_calibration"/>
-      </node>
       <node id="197">
         <label>modm::bme280data::DataBase</label>
         <link refid="structmodm_1_1bme280data_1_1_data_base"/>
-        <childnode refid="198" relation="usage">
-          <edgelabel>calibration</edgelabel>
-        </childnode>
       </node>
       <node id="196">
         <label>modm::bme280data::Data</label>
         <link refid="classmodm_1_1bme280data_1_1_data"/>
         <childnode refid="197" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="200">
+        <label>modm::bme280data::Calibration</label>
+        <link refid="structmodm_1_1bme280data_1_1_calibration"/>
+      </node>
+      <node id="199">
+        <label>modm::bme280data::DataBase</label>
+        <link refid="structmodm_1_1bme280data_1_1_data_base"/>
+        <childnode refid="200" relation="usage">
+          <edgelabel>calibration</edgelabel>
+        </childnode>
+      </node>
+      <node id="198">
+        <label>modm::bme280data::Data</label>
+        <link refid="classmodm_1_1bme280data_1_1_data"/>
+        <childnode refid="199" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

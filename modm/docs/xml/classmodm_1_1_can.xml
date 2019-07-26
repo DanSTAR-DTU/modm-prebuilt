@@ -314,37 +314,37 @@
     <detaileddescription>
 <para>Interface to the CAN bus </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="148">
+      <node id="150">
         <label>modm::Can</label>
         <link refid="classmodm_1_1_can"/>
-        <childnode refid="149" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="149">
-        <label>modm::PeripheralDriver</label>
-        <link refid="classmodm_1_1_peripheral_driver"/>
-      </node>
-      <node id="150">
-        <label>modm::platform::Can1</label>
-        <link refid="classmodm_1_1platform_1_1_can1"/>
-        <childnode refid="148" relation="public-inheritance">
+        <childnode refid="151" relation="public-inheritance">
         </childnode>
       </node>
       <node id="151">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="152">
+        <label>modm::platform::Can1</label>
+        <link refid="classmodm_1_1platform_1_1_can1"/>
+        <childnode refid="150" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="153">
         <label>modm::platform::Can2</label>
         <link refid="classmodm_1_1platform_1_1_can2"/>
-        <childnode refid="148" relation="public-inheritance">
+        <childnode refid="150" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="152">
+      <node id="154">
         <label>modm::Can</label>
         <link refid="classmodm_1_1_can"/>
-        <childnode refid="153" relation="public-inheritance">
+        <childnode refid="155" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="153">
+      <node id="155">
         <label>modm::PeripheralDriver</label>
         <link refid="classmodm_1_1_peripheral_driver"/>
       </node>

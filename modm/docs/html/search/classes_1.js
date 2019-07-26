@@ -1,6 +1,7 @@
 var searchData=
 [
   ['basictimer',['BasicTimer',['../classmodm_1_1platform_1_1_basic_timer.html',1,'modm::platform']]],
+  ['bitbangonewiremaster',['BitBangOneWireMaster',['../classmodm_1_1platform_1_1_bit_bang_one_wire_master.html',1,'modm::platform']]],
   ['bitbangspimaster',['BitBangSpiMaster',['../classmodm_1_1platform_1_1_bit_bang_spi_master.html',1,'modm::platform']]],
   ['block',['Block',['../classmodm_1_1allocator_1_1_block.html',1,'modm::allocator']]],
   ['blockallocator',['BlockAllocator',['../classmodm_1_1_block_allocator.html',1,'modm']]],

@@ -323,62 +323,62 @@
 <para>Interface for a <ref refid="structmodm_1_1_spi" kindref="compound">Spi</ref> Master with resource management, which allows to synchronize multiple drivers requesting hardware access.</para><para><simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1546">
+      <node id="1550">
         <label>modm::platform::BitBangSpiMaster&lt; Sck, Mosi, Miso &gt;</label>
         <link refid="classmodm_1_1platform_1_1_bit_bang_spi_master"/>
-        <childnode refid="1543" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1544">
-        <label>modm::PeripheralDriver</label>
-        <link refid="classmodm_1_1_peripheral_driver"/>
-      </node>
-      <node id="1545">
-        <label>modm::Spi</label>
-        <link refid="structmodm_1_1_spi"/>
-      </node>
-      <node id="1547">
-        <label>modm::platform::SpiMaster1</label>
-        <link refid="classmodm_1_1platform_1_1_spi_master1"/>
-        <childnode refid="1543" relation="public-inheritance">
+        <childnode refid="1547" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1548">
-        <label>modm::platform::SpiMaster2</label>
-        <link refid="classmodm_1_1platform_1_1_spi_master2"/>
-        <childnode refid="1543" relation="public-inheritance">
-        </childnode>
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
       </node>
       <node id="1549">
-        <label>modm::platform::SpiMaster3</label>
-        <link refid="classmodm_1_1platform_1_1_spi_master3"/>
-        <childnode refid="1543" relation="public-inheritance">
+        <label>modm::Spi</label>
+        <link refid="structmodm_1_1_spi"/>
+      </node>
+      <node id="1551">
+        <label>modm::platform::SpiMaster1</label>
+        <link refid="classmodm_1_1platform_1_1_spi_master1"/>
+        <childnode refid="1547" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1543">
+      <node id="1552">
+        <label>modm::platform::SpiMaster2</label>
+        <link refid="classmodm_1_1platform_1_1_spi_master2"/>
+        <childnode refid="1547" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1553">
+        <label>modm::platform::SpiMaster3</label>
+        <link refid="classmodm_1_1platform_1_1_spi_master3"/>
+        <childnode refid="1547" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1547">
         <label>modm::SpiMaster</label>
         <link refid="classmodm_1_1_spi_master"/>
-        <childnode refid="1544" relation="public-inheritance">
+        <childnode refid="1548" relation="public-inheritance">
         </childnode>
-        <childnode refid="1545" relation="public-inheritance">
+        <childnode refid="1549" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1551">
+      <node id="1555">
         <label>modm::PeripheralDriver</label>
         <link refid="classmodm_1_1_peripheral_driver"/>
       </node>
-      <node id="1552">
+      <node id="1556">
         <label>modm::Spi</label>
         <link refid="structmodm_1_1_spi"/>
       </node>
-      <node id="1550">
+      <node id="1554">
         <label>modm::SpiMaster</label>
         <link refid="classmodm_1_1_spi_master"/>
-        <childnode refid="1551" relation="public-inheritance">
+        <childnode refid="1555" relation="public-inheritance">
         </childnode>
-        <childnode refid="1552" relation="public-inheritance">
+        <childnode refid="1556" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -338,62 +338,62 @@
 <para>Interface of an <ref refid="classmodm_1_1_uart" kindref="compound">Uart</ref>.</para><para>Asynchronous and synchronous, buffered access to the <ref refid="classmodm_1_1_uart" kindref="compound">Uart</ref>.</para><para><simplesect kind="author"><para>Niklas Hauser </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1702">
+      <node id="1706">
         <label>modm::platform::Uart4</label>
         <link refid="classmodm_1_1platform_1_1_uart4"/>
-        <childnode refid="1700" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1703">
-        <label>modm::platform::Uart5</label>
-        <link refid="classmodm_1_1platform_1_1_uart5"/>
-        <childnode refid="1700" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1701">
-        <label>modm::PeripheralDriver</label>
-        <link refid="classmodm_1_1_peripheral_driver"/>
-      </node>
-      <node id="1704">
-        <label>modm::platform::Usart1</label>
-        <link refid="classmodm_1_1platform_1_1_usart1"/>
-        <childnode refid="1700" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1705">
-        <label>modm::platform::Usart2</label>
-        <link refid="classmodm_1_1platform_1_1_usart2"/>
-        <childnode refid="1700" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1706">
-        <label>modm::platform::Usart3</label>
-        <link refid="classmodm_1_1platform_1_1_usart3"/>
-        <childnode refid="1700" relation="public-inheritance">
+        <childnode refid="1704" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1707">
-        <label>modm::platform::Usart6</label>
-        <link refid="classmodm_1_1platform_1_1_usart6"/>
-        <childnode refid="1700" relation="public-inheritance">
+        <label>modm::platform::Uart5</label>
+        <link refid="classmodm_1_1platform_1_1_uart5"/>
+        <childnode refid="1704" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1700">
-        <label>modm::Uart</label>
-        <link refid="classmodm_1_1_uart"/>
-        <childnode refid="1701" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="1709">
+      <node id="1705">
         <label>modm::PeripheralDriver</label>
         <link refid="classmodm_1_1_peripheral_driver"/>
       </node>
       <node id="1708">
+        <label>modm::platform::Usart1</label>
+        <link refid="classmodm_1_1platform_1_1_usart1"/>
+        <childnode refid="1704" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1709">
+        <label>modm::platform::Usart2</label>
+        <link refid="classmodm_1_1platform_1_1_usart2"/>
+        <childnode refid="1704" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1710">
+        <label>modm::platform::Usart3</label>
+        <link refid="classmodm_1_1platform_1_1_usart3"/>
+        <childnode refid="1704" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1711">
+        <label>modm::platform::Usart6</label>
+        <link refid="classmodm_1_1platform_1_1_usart6"/>
+        <childnode refid="1704" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1704">
         <label>modm::Uart</label>
         <link refid="classmodm_1_1_uart"/>
-        <childnode refid="1709" relation="public-inheritance">
+        <childnode refid="1705" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1713">
+        <label>modm::PeripheralDriver</label>
+        <link refid="classmodm_1_1_peripheral_driver"/>
+      </node>
+      <node id="1712">
+        <label>modm::Uart</label>
+        <link refid="classmodm_1_1_uart"/>
+        <childnode refid="1713" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
