@@ -30,10 +30,10 @@ All of these tools should have their commands in the system path. With the excep
 
 6. Run `lbuild build` to regenerate the modm files.
 
-7. Update CMakeLists.txt in this repository if necessary to ensure any new directories with source and include files are compiled.
+7. Go to modm/docs and run `doxygen doxyfile.cfg` to generate documentations.
 
-7. Ensure the newly generated code compiles with the firmware and test on hardware as appropriate.
+8. Ensure the newly generated code compiles with the firmware and test on hardware as appropriate.
 
-8. Commit and push all changes.
+9. Commit and push all changes.
 
-9. Update repositories using this one as a submodule to use the new commit.
+10. Update repositories using this one as a submodule to use the new commit.

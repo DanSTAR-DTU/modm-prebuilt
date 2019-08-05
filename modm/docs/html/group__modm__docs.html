@@ -62,6 +62,12 @@ $(function() {
 <div class="title">Documentation Generator</div>  </div>
 </div><!--header-->
 <div class="contents">
+<p>This module creates the Doxygen groups and hierarchy according to the modm module structure into <code>modm/docs</code>.</p>
+<p>To generate the C++ documentation call Doxygen manually:</p>
+<div class="fragment"><div class="line">(cd <a class="code" href="namespacemodm.html">modm</a>/docs &amp;&amp; doxygen doxyfile.cfg)</div></div><!-- fragment --><p>Then open <code>modm/docs/html/index.html</code> in your web browser of choice.</p>
+<h2>Module Options</h2>
+<h3>modm:docs:enable_qch: Generate the Doxygen docs as Qt Help format (qch)</h3>
+<p>Generated with: <code>False in [True, False]</code> </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

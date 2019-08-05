@@ -15,11 +15,11 @@ your own build system.**
 
 ## Using OpenOCD
 
-For accessing your ARM Cortex-M based device, we use OpenOCD by default and generate a
-`modm/openocd.cfg` file with the target specific configuration:
+For accessing your ARM Cortex-M based device, we use OpenOCD by default and
+generate a `modm/openocd.cfg` file with the target specific configuration:
 
-- Search directories passed via the `openocd.search` metadata key.
-- User configuration files passed via the `openocd.configfile` metadata key.
+- Search directories passed via the `path.openocd` collector.
+- User configuration files passed via the `openocd.source` collector.
   Your custom `modm:build:openocd.cfg` is added here too.
 - The target specific programming command `modm_program elffile`
 
@@ -140,6 +140,7 @@ project, the options presented here are only the most important ones.
 - `-Werror={format, maybe-uninitialized, overflow, sign-compare}`: these warnings are treated as errors.
 - `-f{data, function}-sections`: puts data and functions into their own linker section.
 - `-funsigned-{char, bitfields}`: modm tries to use `stdint.h` types everywhere, but just in case.
+- `-fwrapv`: integer overflows wrap around according to 2s complement.
 
 For *release builds*:
 
@@ -187,7 +188,41 @@ In addition, these linker options are added:
 
 [options]: https://gcc.gnu.org/onlinedocs/gcc/Option-Summary.html
 
-<!--Links-->
-[bmp]: https://github.com/blacksphere/blackmagic
 
+## Module Options
+
+### modm:build:project.name: Project Name
+
+The project name defaults to the folder name you're calling lbuild from.
+
+It's used by your build system to name the executable and it may also be passed
+to your application via a string constant or CPP define.
+
+Generated with: `modm-prebuilt in [String]`
+### modm:build:build.path: Build Path
+
+The build path is defaulted to `build/{modm:build:project.name}`.
+
+If you have a lot of embedded projects, you may want to change the build path
+to a *common* directory so that you don't have `build/` folders everywhere.
+Remember to add your build path to your `.gitignore`.
+
+You should use a relative path instead of an absolute one, so that this option
+still works for other developers.
+
+Generated with: `build/modm-prebuilt in [Path]`
+### modm:build:openocd.cfg: Path to a custom OpenOCD configuration file
+
+If you have a custom configuration file for your target, it will get included
+by the generated `modm/openocd.cfg`.
+
+This is useful for not having to duplicate your config if you have several
+projects using the same target (like small bring-up and test projects).
+
+@note "Do not execute commands by default"
+    When providing your own config file, wrap your specific commands into functions
+    and do not execute them by default. A stray `init` or similar in your script
+    will mess with modm's ability to program and debug a device correctly.
+
+Generated with: `[] in [Path]`
  */

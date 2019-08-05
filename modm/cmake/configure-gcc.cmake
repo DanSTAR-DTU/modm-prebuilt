@@ -67,6 +67,10 @@ set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
 if(APPLE)
     # CMake adds system search paths on macOS for some reason
-    string(REPLACE "-Wl,-search_paths_first" "" CMAKE_C_LINK_FLAGS ${CMAKE_C_LINK_FLAGS})
-    string(REPLACE "-Wl,-search_paths_first" "" CMAKE_CXX_LINK_FLAGS ${CMAKE_CXX_LINK_FLAGS})
+    if(CMAKE_C_LINK_FLAGS)
+        string(REPLACE "-Wl,-search_paths_first" "" CMAKE_C_LINK_FLAGS ${CMAKE_C_LINK_FLAGS})
+    endif()
+    if (CMAKE_CXX_LINK_FLAGS)
+        string(REPLACE "-Wl,-search_paths_first" "" CMAKE_CXX_LINK_FLAGS ${CMAKE_CXX_LINK_FLAGS})
+    endif()
 endif()

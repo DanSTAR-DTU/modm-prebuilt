@@ -33,6 +33,7 @@
 #include "platform/core/atomic_lock.hpp"
 #include "platform/core/delay.hpp"
 #include "platform/core/flash_reader.hpp"
+#include "platform/core/hardware_init.hpp"
 #include "platform/core/heap_table.hpp"
 #include "platform/core/peripherals.hpp"
 #include "platform/core/unaligned.hpp"

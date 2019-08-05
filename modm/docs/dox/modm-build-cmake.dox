@@ -136,4 +136,17 @@ being able to build again.
 
 [cmake]: http://cmake.org
 
+
+## Module Options
+
+### modm:build:cmake:include_makefile: Generate a wrapper Makefile
+
+@warning "This overwrites any top-level `Makefile` file!"
+
+Generated with: `False in [True, False]`
+### modm:build:cmake:include_cmakelists: Generate a CMakeLists.txt
+
+@warning "This overwrites any top-level `CMakeLists.txt` file!"
+
+Generated with: `False in [True, False]`
  */

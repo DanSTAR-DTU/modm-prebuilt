@@ -64,6 +64,9 @@
 	/// Specifies that a variable (or function) lives in a particular section.
 	#define modm_section(s)
 
+	/// Marks a declaration as deprecated and displays a message.
+	#define modm_deprecated(msg)
+
 	/// Specifies that a function is placed in fastest executable memory.
 	/// @note This is not always SRAM, since Flash accelerators can be faster.
 	#define modm_fastcode
@@ -76,6 +79,9 @@
 
 	/// This branch is less likely to execute.
 	#define modm_unlikely(x) (x)
+
+	/// Mark a case statement as fallthrough.
+	#define modm_fallthrough
 
 	/// @}
 	/// @}
@@ -101,6 +107,7 @@
 	#define	MODM_CONCAT5x(a,b,c,d,e)	MODM_CONCAT5xx(a,b,c,d,e)
 	#define	MODM_CONCAT5xx(a,b,c,d,e)	a ## b ## c ## d ## e
 
+	#define MODM_ARRAY_SIZE(x)	(sizeof(x) / sizeof(x[0]))
 
 	#define modm_always_inline		inline __attribute__((always_inline))
 	#define modm_unused				__attribute__((unused))
@@ -112,6 +119,7 @@
 	#define modm_likely(x)			__builtin_expect(!!(x), 1)
 	#define modm_unlikely(x)		__builtin_expect(!!(x), 0)
 	#define modm_section(s)			__attribute__((section(s)))
+	#define modm_fallthrough		__attribute__((fallthrough))
 
 	#ifdef MODM_COMPILER_MINGW
 	 	// FIXME: Windows Object Format PE does not support weak symbols
@@ -136,18 +144,6 @@
 	#else
 	#	define modm_extern_c
 	#endif
-
-	#define MODM_ARRAY_SIZE(x)	(sizeof(x) / sizeof(x[0]))
-
-	#ifdef __has_cpp_attribute
-		#if __has_cpp_attribute(fallthrough)
-		#	define MODM_FALLTHROUGH [[fallthrough]]
-		#else
-		#	define MODM_FALLTHROUGH
-		#endif
-	#else
-	#	define MODM_FALLTHROUGH
-	#endif // _has_cpp_attribute
 
 
 #endif	// !__DOXYGEN__

@@ -4,7 +4,6 @@
 	</repositories>
 	<options>
 		<option name=":target">stm32f446ret</option>
-		<option name=":docs:generate_module_docs">True</option>
 		<option name=":build:cmake:include_makefile">False</option>
 		<option name=":build:cmake:include_cmakelists">False</option>
 	</options>

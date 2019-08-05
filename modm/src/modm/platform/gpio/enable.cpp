@@ -11,6 +11,7 @@
 // ----------------------------------------------------------------------------
 
 #include "../device.hpp"
+#include <modm/platform/core/hardware_init.hpp>
 
 void
 modm_gpio_enable(void)
@@ -39,8 +40,4 @@ modm_gpio_enable(void)
 		RCC_AHB1RSTR_GPIOHRST);
 }
 
-
-// .A000100 postfix since .hardware_init is sorted alphabetically and
-// this should be executed before application inits. Totally not a hack.
-modm_section(".hardware_init.A000100_modm_gpio_enable")
-uint32_t modm_gpio_enable_ptr = (uint32_t) &modm_gpio_enable;
+MODM_HARDWARE_INIT_ORDER(modm_gpio_enable, 80);

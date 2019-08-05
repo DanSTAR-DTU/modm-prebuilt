@@ -204,10 +204,10 @@ list(APPEND SOURCE_FILES
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/build_id.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/clock.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/cxxabi.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/default_handler.sx
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/delay.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/heap_newlib.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/heap_table.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/reset_handler.sx
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/startup.c
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/startup_platform.c
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/vectors.c
@@ -245,6 +245,6 @@ list(APPEND SOURCE_FILES
 )
 set_source_files_properties(
     ${CMAKE_CURRENT_LIST_DIR}/ext/crashcatcher/src/CrashCatcher_armv7m.S
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/default_handler.sx
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/reset_handler.sx
     PROPERTIES LANGUAGE CXX
 )

@@ -101,6 +101,12 @@ Collaboration diagram for CMake Build Script Generator:</div>
 <p>Removes the CMake build artifacts.</p>
 <h4>make cleanall</h4>
 <p>Removes the entire build folder. You must then first call <code>make cmake</code> before being able to build again.</p>
+<h2>Module Options</h2>
+<h3>modm:build:cmake:include_makefile: Generate a wrapper Makefile</h3>
+<dl class="section warning"><dt>Warning</dt><dd>"This overwrites any top-level `Makefile` file!"</dd></dl>
+<p>Generated with: <code>False in [True, False]</code> </p><h3>modm:build:cmake:include_cmakelists: Generate a CMakeLists.txt</h3>
+<dl class="section warning"><dt>Warning</dt><dd>"This overwrites any top-level `CMakeLists.txt` file!"</dd></dl>
+<p>Generated with: <code>False in [True, False]</code> </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
