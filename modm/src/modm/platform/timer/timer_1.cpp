@@ -37,6 +37,7 @@ modm::platform::Timer1::disable()
 void
 modm::platform::Timer1::setMode(Mode mode, SlaveMode slaveMode,
 		SlaveModeTrigger slaveModeTrigger, MasterMode masterMode
+		, MasterMode2 masterMode2
 		)
 {
 	// disable timer
@@ -52,7 +53,8 @@ modm::platform::Timer1::setMode(Mode mode, SlaveMode slaveMode,
 
 	// ARR Register is buffered, only Under/Overflow generates update interrupt
 	TIM1->CR1 = TIM_CR1_ARPE | TIM_CR1_URS | static_cast<uint32_t>(mode);
-	TIM1->CR2 = static_cast<uint32_t>(masterMode);
+	TIM1->CR2 = 	static_cast<uint32_t>(masterMode) |
+						static_cast<uint32_t>(masterMode2);
 	TIM1->SMCR = static_cast<uint32_t>(slaveMode) |
 						static_cast<uint32_t>(slaveModeTrigger);
 }

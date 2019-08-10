@@ -16,10 +16,7 @@
 #include "base.hpp"
 #include "set.hpp"
 
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /// @cond
@@ -83,13 +80,13 @@ public:
 	inline static void set(bool status) { PinSet::set(status); }
 	inline static void reset() { PinSet::reset(); }
 	inline static void toggle() {
-		if (isSet()) reset();
-		else         set();
+		if (isSet()) { reset(); }
+		else         { set();   }
 	}
 	inline static bool isSet() { return (GPIOC->ODR & mask); }
 	// stop documentation inherited
 	inline static void configure(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::configure(type, speed); }
-	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50)  { PinSet::setOutput(type, speed); }
+	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::setOutput(type, speed); }
 	// GpioInput
 	// start documentation inherited
 	inline static void setInput() { PinSet::setInput(); }
@@ -142,15 +139,17 @@ public:
 		}
 	}
 	inline static bool getExternalInterruptFlag() { return (EXTI->PR & mask); }
-	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR |= mask; }
+	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR = mask; }
 	// GpioIO
 	// start documentation inherited
 	inline static Direction getDirection() {
 		uint32_t mode = (GPIOC->MODER & mask2);
-		if (mode == (i(Mode::Input) << pin * 2))
+		if (mode == (i(Mode::Input) << pin * 2)) {
 			return Direction::In;
-		if (mode == (i(Mode::Output) << pin * 2))
+		}
+		if (mode == (i(Mode::Output) << pin * 2)) {
 			return Direction::Out;
+		}
 		return Direction::Special;
 	}
 	// end documentation inherited
@@ -173,7 +172,7 @@ public:
 	using Ckin = GpioSignal;
 	/// Connect to Uart5
 	using Cts = GpioSignal;
-	/// Connect to Sdio
+	/// Connect to Sdmmc1
 	using D1 = GpioSignal;
 	/// Connect to Dcmi
 	using D3 = GpioSignal;
@@ -218,8 +217,8 @@ public:
 	template< Peripheral peripheral >
 	struct D1 { static void connect();
 		static_assert(
-			(peripheral == Peripheral::Sdio),
-			"GpioC9::D1 only connects to Sdio!");
+			(peripheral == Peripheral::Sdmmc1),
+			"GpioC9::D1 only connects to Sdmmc1!");
 	};
 	template< Peripheral peripheral >
 	struct D3 { static void connect();
@@ -315,7 +314,7 @@ struct GpioC9::Cts<Peripheral::Uart5>
 	}
 };
 template<>
-struct GpioC9::D1<Peripheral::Sdio>
+struct GpioC9::D1<Peripheral::Sdmmc1>
 {
 	using Gpio = GpioC9;
 	static constexpr Gpio::Signal Signal = Gpio::Signal::D1;
@@ -364,8 +363,6 @@ struct GpioC9::Sda<Peripheral::I2c3>
 };
 /// @endcond
 
-} // namespace platform
-
-} // namespace modm
+} // namespace modm::platform
 
 #endif // MODM_STM32_GPIO_PIN_C9_HPP

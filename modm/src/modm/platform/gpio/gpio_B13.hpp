@@ -16,10 +16,7 @@
 #include "base.hpp"
 #include "set.hpp"
 
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /// @cond
@@ -83,13 +80,13 @@ public:
 	inline static void set(bool status) { PinSet::set(status); }
 	inline static void reset() { PinSet::reset(); }
 	inline static void toggle() {
-		if (isSet()) reset();
-		else         set();
+		if (isSet()) { reset(); }
+		else         { set();   }
 	}
 	inline static bool isSet() { return (GPIOB->ODR & mask); }
 	// stop documentation inherited
 	inline static void configure(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::configure(type, speed); }
-	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50)  { PinSet::setOutput(type, speed); }
+	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::setOutput(type, speed); }
 	// GpioInput
 	// start documentation inherited
 	inline static void setInput() { PinSet::setInput(); }
@@ -142,15 +139,17 @@ public:
 		}
 	}
 	inline static bool getExternalInterruptFlag() { return (EXTI->PR & mask); }
-	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR |= mask; }
+	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR = mask; }
 	// GpioIO
 	// start documentation inherited
 	inline static Direction getDirection() {
 		uint32_t mode = (GPIOB->MODER & mask2);
-		if (mode == (i(Mode::Input) << pin * 2))
+		if (mode == (i(Mode::Input) << pin * 2)) {
 			return Direction::In;
-		if (mode == (i(Mode::Output) << pin * 2))
+		}
+		if (mode == (i(Mode::Output) << pin * 2)) {
 			return Direction::Out;
+		}
 		return Direction::Special;
 	}
 	// end documentation inherited
@@ -175,6 +174,8 @@ public:
 	using Sck = GpioSignal;
 	/// Connect to Can2
 	using Tx = GpioSignal;
+	/// Connect to Eth
+	using Txd1 = GpioSignal;
 	/// Connect to UsbOtgHs
 	using UlpiD6 = GpioSignal;
 	/// Connect to UsbOtgHs
@@ -217,6 +218,12 @@ public:
 		static_assert(
 			(peripheral == Peripheral::Can2),
 			"GpioB13::Tx only connects to Can2!");
+	};
+	template< Peripheral peripheral >
+	struct Txd1 { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Eth),
+			"GpioB13::Txd1 only connects to Eth!");
 	};
 	template< Peripheral peripheral >
 	struct UlpiD6 { static void connect();
@@ -306,6 +313,18 @@ struct GpioB13::Tx<Peripheral::Can2>
 	}
 };
 template<>
+struct GpioB13::Txd1<Peripheral::Eth>
+{
+	using Gpio = GpioB13;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Txd1;
+	static constexpr int af = 11;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(11);
+	}
+};
+template<>
 struct GpioB13::UlpiD6<Peripheral::UsbOtgHs>
 {
 	using Gpio = GpioB13;
@@ -330,8 +349,6 @@ struct GpioB13::Vbus<Peripheral::UsbOtgHs>
 };
 /// @endcond
 
-} // namespace platform
-
-} // namespace modm
+} // namespace modm::platform
 
 #endif // MODM_STM32_GPIO_PIN_B13_HPP

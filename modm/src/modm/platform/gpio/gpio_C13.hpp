@@ -16,10 +16,7 @@
 #include "base.hpp"
 #include "set.hpp"
 
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /// @cond
@@ -83,13 +80,13 @@ public:
 	inline static void set(bool status) { PinSet::set(status); }
 	inline static void reset() { PinSet::reset(); }
 	inline static void toggle() {
-		if (isSet()) reset();
-		else         set();
+		if (isSet()) { reset(); }
+		else         { set();   }
 	}
 	inline static bool isSet() { return (GPIOC->ODR & mask); }
 	// stop documentation inherited
 	inline static void configure(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::configure(type, speed); }
-	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50)  { PinSet::setOutput(type, speed); }
+	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::setOutput(type, speed); }
 	// GpioInput
 	// start documentation inherited
 	inline static void setInput() { PinSet::setInput(); }
@@ -142,15 +139,17 @@ public:
 		}
 	}
 	inline static bool getExternalInterruptFlag() { return (EXTI->PR & mask); }
-	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR |= mask; }
+	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR = mask; }
 	// GpioIO
 	// start documentation inherited
 	inline static Direction getDirection() {
 		uint32_t mode = (GPIOC->MODER & mask2);
-		if (mode == (i(Mode::Input) << pin * 2))
+		if (mode == (i(Mode::Input) << pin * 2)) {
 			return Direction::In;
-		if (mode == (i(Mode::Output) << pin * 2))
+		}
+		if (mode == (i(Mode::Output) << pin * 2)) {
 			return Direction::Out;
+		}
 		return Direction::Special;
 	}
 	// end documentation inherited
@@ -166,9 +165,15 @@ public:
 	/// Connect to any software peripheral
 	using BitBang = GpioSignal;
 	/// Connect to Rtc
-	using Af1 = GpioSignal;
+	using OutAlarm = GpioSignal;
+	/// Connect to Rtc
+	using OutCalib = GpioSignal;
+	/// Connect to Rtc
+	using Tamp1 = GpioSignal;
+	/// Connect to Rtc
+	using Ts = GpioSignal;
 	/// Connect to Sys
-	using Wkup1 = GpioSignal;
+	using Wkup4 = GpioSignal;
 	/// @}
 #endif
 	/// @cond
@@ -179,16 +184,34 @@ public:
 			"GpioC13::BitBang only connects to software drivers!");
 	};
 	template< Peripheral peripheral >
-	struct Af1 { static void connect();
+	struct OutAlarm { static void connect();
 		static_assert(
 			(peripheral == Peripheral::Rtc),
-			"GpioC13::Af1 only connects to Rtc!");
+			"GpioC13::OutAlarm only connects to Rtc!");
 	};
 	template< Peripheral peripheral >
-	struct Wkup1 { static void connect();
+	struct OutCalib { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Rtc),
+			"GpioC13::OutCalib only connects to Rtc!");
+	};
+	template< Peripheral peripheral >
+	struct Tamp1 { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Rtc),
+			"GpioC13::Tamp1 only connects to Rtc!");
+	};
+	template< Peripheral peripheral >
+	struct Ts { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Rtc),
+			"GpioC13::Ts only connects to Rtc!");
+	};
+	template< Peripheral peripheral >
+	struct Wkup4 { static void connect();
 		static_assert(
 			(peripheral == Peripheral::Sys),
-			"GpioC13::Wkup1 only connects to Sys!");
+			"GpioC13::Wkup4 only connects to Sys!");
 	};
 	/// @endcond
 private:
@@ -206,10 +229,10 @@ struct GpioC13::BitBang<Peripheral::BitBang>
 	inline static void connect() {}
 };
 template<>
-struct GpioC13::Af1<Peripheral::Rtc>
+struct GpioC13::OutAlarm<Peripheral::Rtc>
 {
 	using Gpio = GpioC13;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::Af1;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::OutAlarm;
 	static constexpr int af = -1;
 	inline static void
 	connect()
@@ -217,10 +240,43 @@ struct GpioC13::Af1<Peripheral::Rtc>
 	}
 };
 template<>
-struct GpioC13::Wkup1<Peripheral::Sys>
+struct GpioC13::OutCalib<Peripheral::Rtc>
 {
 	using Gpio = GpioC13;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::Wkup1;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::OutCalib;
+	static constexpr int af = -1;
+	inline static void
+	connect()
+	{
+	}
+};
+template<>
+struct GpioC13::Tamp1<Peripheral::Rtc>
+{
+	using Gpio = GpioC13;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Tamp1;
+	static constexpr int af = -1;
+	inline static void
+	connect()
+	{
+	}
+};
+template<>
+struct GpioC13::Ts<Peripheral::Rtc>
+{
+	using Gpio = GpioC13;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Ts;
+	static constexpr int af = -1;
+	inline static void
+	connect()
+	{
+	}
+};
+template<>
+struct GpioC13::Wkup4<Peripheral::Sys>
+{
+	using Gpio = GpioC13;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Wkup4;
 	static constexpr int af = -1;
 	inline static void
 	connect()
@@ -229,8 +285,6 @@ struct GpioC13::Wkup1<Peripheral::Sys>
 };
 /// @endcond
 
-} // namespace platform
-
-} // namespace modm
+} // namespace modm::platform
 
 #endif // MODM_STM32_GPIO_PIN_C13_HPP

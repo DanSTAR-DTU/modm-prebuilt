@@ -364,17 +364,6 @@ public:
 	static void
 	disableFilter(uint8_t bank);
 
-	/**
-	 * Set the first filter bank for CAN2.
-	 *
-	 * All banks lower than this value belong to CAN1 then.
-	 * Only available on connectivity line devices.
-	 *
-	 * @param	startBank	The start bank for the CAN2 interface (Slave)
-	 * 						in the range 1 to 27.
-	 */
-	static void
-	setStartFilterBankForCan2(uint8_t startBank);
 private:
 	static void
 	setFilterBase(uint8_t bank, uint32_t flags, uint32_t fr1, uint32_t fr2);

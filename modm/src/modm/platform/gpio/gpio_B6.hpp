@@ -16,10 +16,7 @@
 #include "base.hpp"
 #include "set.hpp"
 
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /// @cond
@@ -83,13 +80,13 @@ public:
 	inline static void set(bool status) { PinSet::set(status); }
 	inline static void reset() { PinSet::reset(); }
 	inline static void toggle() {
-		if (isSet()) reset();
-		else         set();
+		if (isSet()) { reset(); }
+		else         { set();   }
 	}
 	inline static bool isSet() { return (GPIOB->ODR & mask); }
 	// stop documentation inherited
 	inline static void configure(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::configure(type, speed); }
-	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50)  { PinSet::setOutput(type, speed); }
+	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::setOutput(type, speed); }
 	// GpioInput
 	// start documentation inherited
 	inline static void setInput() { PinSet::setInput(); }
@@ -142,15 +139,17 @@ public:
 		}
 	}
 	inline static bool getExternalInterruptFlag() { return (EXTI->PR & mask); }
-	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR |= mask; }
+	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR = mask; }
 	// GpioIO
 	// start documentation inherited
 	inline static Direction getDirection() {
 		uint32_t mode = (GPIOB->MODER & mask2);
-		if (mode == (i(Mode::Input) << pin * 2))
+		if (mode == (i(Mode::Input) << pin * 2)) {
 			return Direction::In;
-		if (mode == (i(Mode::Output) << pin * 2))
+		}
+		if (mode == (i(Mode::Output) << pin * 2)) {
 			return Direction::Out;
+		}
 		return Direction::Special;
 	}
 	// end documentation inherited
@@ -175,6 +174,8 @@ public:
 	using D5 = GpioSignal;
 	/// Connect to I2c1
 	using Scl = GpioSignal;
+	/// Connect to Fmc
+	using Sdne1 = GpioSignal;
 	/// Connect to Usart1 or Can2
 	using Tx = GpioSignal;
 	/// @}
@@ -215,6 +216,12 @@ public:
 		static_assert(
 			(peripheral == Peripheral::I2c1),
 			"GpioB6::Scl only connects to I2c1!");
+	};
+	template< Peripheral peripheral >
+	struct Sdne1 { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Fmc),
+			"GpioB6::Sdne1 only connects to Fmc!");
 	};
 	template< Peripheral peripheral >
 	struct Tx { static void connect();
@@ -299,6 +306,18 @@ struct GpioB6::Scl<Peripheral::I2c1>
 	}
 };
 template<>
+struct GpioB6::Sdne1<Peripheral::Fmc>
+{
+	using Gpio = GpioB6;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Sdne1;
+	static constexpr int af = 12;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(12);
+	}
+};
+template<>
 struct GpioB6::Tx<Peripheral::Usart1>
 {
 	using Gpio = GpioB6;
@@ -324,8 +343,6 @@ struct GpioB6::Tx<Peripheral::Can2>
 };
 /// @endcond
 
-} // namespace platform
-
-} // namespace modm
+} // namespace modm::platform
 
 #endif // MODM_STM32_GPIO_PIN_B6_HPP

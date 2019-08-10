@@ -1,0 +1,26 @@
+/**
+
+@ingroup modm_platform_uart
+@defgroup modm_platform_uart_8 Instance 8
+
+
+
+
+## Module Options
+
+### modm:platform:uart:8:buffered: 
+
+
+
+Generated with: `True in [True, False]`
+### modm:platform:uart:8:buffer.tx: 
+
+
+
+Generated with: `250 in [1 .. 250 .. 65534]`
+### modm:platform:uart:8:buffer.rx: 
+
+
+
+Generated with: `16 in [1 .. 16 .. 65534]`
+ */

@@ -16,10 +16,7 @@
 #include "base.hpp"
 #include "set.hpp"
 
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /// @cond
@@ -83,13 +80,13 @@ public:
 	inline static void set(bool status) { PinSet::set(status); }
 	inline static void reset() { PinSet::reset(); }
 	inline static void toggle() {
-		if (isSet()) reset();
-		else         set();
+		if (isSet()) { reset(); }
+		else         { set();   }
 	}
 	inline static bool isSet() { return (GPIOA->ODR & mask); }
 	// stop documentation inherited
 	inline static void configure(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::configure(type, speed); }
-	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50)  { PinSet::setOutput(type, speed); }
+	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::setOutput(type, speed); }
 	// GpioInput
 	// start documentation inherited
 	inline static void setInput() { PinSet::setInput(); }
@@ -142,15 +139,17 @@ public:
 		}
 	}
 	inline static bool getExternalInterruptFlag() { return (EXTI->PR & mask); }
-	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR |= mask; }
+	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR = mask; }
 	// GpioIO
 	// start documentation inherited
 	inline static Direction getDirection() {
 		uint32_t mode = (GPIOA->MODER & mask2);
-		if (mode == (i(Mode::Input) << pin * 2))
+		if (mode == (i(Mode::Input) << pin * 2)) {
 			return Direction::In;
-		if (mode == (i(Mode::Output) << pin * 2))
+		}
+		if (mode == (i(Mode::Output) << pin * 2)) {
 			return Direction::Out;
+		}
 		return Direction::Special;
 	}
 	// end documentation inherited
@@ -171,12 +170,18 @@ public:
 	using Ch1n = GpioSignal;
 	/// Connect to Tim3
 	using Ch2 = GpioSignal;
+	/// Connect to Eth
+	using CrsDv = GpioSignal;
 	/// Connect to Adc1 or Adc2
 	using In7 = GpioSignal;
 	/// Connect to Spi1
 	using Mosi = GpioSignal;
+	/// Connect to Eth
+	using RxDv = GpioSignal;
 	/// Connect to I2s1
 	using Sd = GpioSignal;
+	/// Connect to Fmc
+	using Sdnwe = GpioSignal;
 	/// @}
 #endif
 	/// @cond
@@ -206,6 +211,12 @@ public:
 			"GpioA7::Ch2 only connects to Tim3!");
 	};
 	template< Peripheral peripheral >
+	struct CrsDv { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Eth),
+			"GpioA7::CrsDv only connects to Eth!");
+	};
+	template< Peripheral peripheral >
 	struct In7 { static void connect();
 		static_assert(
 			(peripheral == Peripheral::Adc1) ||
@@ -219,10 +230,22 @@ public:
 			"GpioA7::Mosi only connects to Spi1!");
 	};
 	template< Peripheral peripheral >
+	struct RxDv { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Eth),
+			"GpioA7::RxDv only connects to Eth!");
+	};
+	template< Peripheral peripheral >
 	struct Sd { static void connect();
 		static_assert(
 			(peripheral == Peripheral::I2s1),
 			"GpioA7::Sd only connects to I2s1!");
+	};
+	template< Peripheral peripheral >
+	struct Sdnwe { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Fmc),
+			"GpioA7::Sdnwe only connects to Fmc!");
 	};
 	/// @endcond
 private:
@@ -288,6 +311,18 @@ struct GpioA7::Ch2<Peripheral::Tim3>
 	}
 };
 template<>
+struct GpioA7::CrsDv<Peripheral::Eth>
+{
+	using Gpio = GpioA7;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::CrsDv;
+	static constexpr int af = 11;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(11);
+	}
+};
+template<>
 struct GpioA7::In7<Peripheral::Adc1>
 {
 	using Gpio = GpioA7;
@@ -332,6 +367,18 @@ struct GpioA7::Mosi<Peripheral::Spi1>
 	}
 };
 template<>
+struct GpioA7::RxDv<Peripheral::Eth>
+{
+	using Gpio = GpioA7;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::RxDv;
+	static constexpr int af = 11;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(11);
+	}
+};
+template<>
 struct GpioA7::Sd<Peripheral::I2s1>
 {
 	using Gpio = GpioA7;
@@ -343,10 +390,20 @@ struct GpioA7::Sd<Peripheral::I2s1>
 		setAlternateFunction(5);
 	}
 };
+template<>
+struct GpioA7::Sdnwe<Peripheral::Fmc>
+{
+	using Gpio = GpioA7;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Sdnwe;
+	static constexpr int af = 12;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(12);
+	}
+};
 /// @endcond
 
-} // namespace platform
-
-} // namespace modm
+} // namespace modm::platform
 
 #endif // MODM_STM32_GPIO_PIN_A7_HPP

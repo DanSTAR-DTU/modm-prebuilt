@@ -16,10 +16,7 @@
 #include "base.hpp"
 #include "set.hpp"
 
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /// @cond
@@ -83,13 +80,13 @@ public:
 	inline static void set(bool status) { PinSet::set(status); }
 	inline static void reset() { PinSet::reset(); }
 	inline static void toggle() {
-		if (isSet()) reset();
-		else         set();
+		if (isSet()) { reset(); }
+		else         { set();   }
 	}
 	inline static bool isSet() { return (GPIOA->ODR & mask); }
 	// stop documentation inherited
 	inline static void configure(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::configure(type, speed); }
-	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50)  { PinSet::setOutput(type, speed); }
+	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::setOutput(type, speed); }
 	// GpioInput
 	// start documentation inherited
 	inline static void setInput() { PinSet::setInput(); }
@@ -142,15 +139,17 @@ public:
 		}
 	}
 	inline static bool getExternalInterruptFlag() { return (EXTI->PR & mask); }
-	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR |= mask; }
+	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR = mask; }
 	// GpioIO
 	// start documentation inherited
 	inline static Direction getDirection() {
 		uint32_t mode = (GPIOA->MODER & mask2);
-		if (mode == (i(Mode::Input) << pin * 2))
+		if (mode == (i(Mode::Input) << pin * 2)) {
 			return Direction::In;
-		if (mode == (i(Mode::Output) << pin * 2))
+		}
+		if (mode == (i(Mode::Output) << pin * 2)) {
 			return Direction::Out;
+		}
 		return Direction::Special;
 	}
 	// end documentation inherited
@@ -169,6 +168,8 @@ public:
 	using Cec = GpioSignal;
 	/// Connect to Tim2
 	using Ch1 = GpioSignal;
+	/// Connect to Uart4
+	using De = GpioSignal;
 	/// Connect to Tim2
 	using Etr = GpioSignal;
 	/// Connect to Sys
@@ -199,6 +200,12 @@ public:
 		static_assert(
 			(peripheral == Peripheral::Tim2),
 			"GpioA15::Ch1 only connects to Tim2!");
+	};
+	template< Peripheral peripheral >
+	struct De { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Uart4),
+			"GpioA15::De only connects to Uart4!");
 	};
 	template< Peripheral peripheral >
 	struct Etr { static void connect();
@@ -269,6 +276,18 @@ struct GpioA15::Ch1<Peripheral::Tim2>
 	connect()
 	{
 		setAlternateFunction(1);
+	}
+};
+template<>
+struct GpioA15::De<Peripheral::Uart4>
+{
+	using Gpio = GpioA15;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::De;
+	static constexpr int af = 8;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(8);
 	}
 };
 template<>
@@ -357,8 +376,6 @@ struct GpioA15::Ws<Peripheral::I2s3>
 };
 /// @endcond
 
-} // namespace platform
-
-} // namespace modm
+} // namespace modm::platform
 
 #endif // MODM_STM32_GPIO_PIN_A15_HPP

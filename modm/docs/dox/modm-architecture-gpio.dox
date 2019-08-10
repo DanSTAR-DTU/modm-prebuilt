@@ -27,7 +27,7 @@ using Led = GpioOutputB0;
 Led::setOutput();
 Led::set();
 
-while (1)
+while (true)
 {
     Led::toggle();
     modm::delayMilliseconds(500);
@@ -58,5 +58,6 @@ Led::reset();
 @warning "Initialize your GPIOs"
     Call `Gpio::setInput()` or `Gpio::setOutput()` before the first use,
     otherwise the GPIO state may be undefined!
+
 
  */

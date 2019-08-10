@@ -19,137 +19,107 @@
 #include "../device.hpp"
 
 // ----------------------------------------------------------------------------
-// Interrupt vectors
-typedef void (* const FunctionPointer)(void);
+// Linker section start and end pointers
+extern const uint32_t __table_copy_intern_start[];
+extern const uint32_t __table_copy_intern_end[];
+
+extern const uint32_t __table_zero_intern_start[];
+extern const uint32_t __table_zero_intern_end[];
+
+extern const uint32_t __table_copy_extern_start[];
+extern const uint32_t __table_copy_extern_end[];
+
+extern const uint32_t __table_zero_extern_start[];
+extern const uint32_t __table_zero_extern_end[];
+
+extern const uint32_t __vector_table_ram_start[];
 
 // ----------------------------------------------------------------------------
-// The following are constructs created by the linker, indicating where the
-// the "data" and "bss" segments reside in memory.
-extern uint32_t __stack_start[];
-extern uint32_t __stack_end[];
+// Linker section start and end pointers for function hooks
+typedef void (* const FunctionPointer)(void);
 
-extern uint32_t __table_copy_intern_start[];
-extern uint32_t __table_copy_intern_end[];
+extern const FunctionPointer __hardware_init_start[];
+extern const FunctionPointer __hardware_init_end[];
 
-extern uint32_t __table_zero_intern_start[];
-extern uint32_t __table_zero_intern_end[];
+extern const FunctionPointer __init_array_start[];
+extern const FunctionPointer __init_array_end[];
 
-extern uint32_t __table_copy_extern_start[];
-extern uint32_t __table_copy_extern_end[];
-
-extern uint32_t __table_zero_extern_start[];
-extern uint32_t __table_zero_extern_end[];
-
-extern uint32_t __vector_table_rom_start[];
-extern uint32_t __vector_table_ram_start[];
-
-extern FunctionPointer __hardware_init_start[];
-extern FunctionPointer __hardware_init_end[];
-
-// Application's main function
-int __attribute__((noreturn))
-main(void);
-
-// calls CTORS of static objects
-void
-__libc_init_array(void);
-
-extern void
-__modm_initialize_memory(void);
-
-extern void
-__modm_initialize_platform(void);
-
-static void
-table_copy(uint32_t **table, uint32_t **end)
+// ----------------------------------------------------------------------------
+// Calls every function pointer in the section range
+static inline void
+table_call(const FunctionPointer *const start, const FunctionPointer *const end)
 {
-	while(table < end)
+	for (const FunctionPointer *entry = start; entry < end; entry++)
+		(*entry)();
+}
+
+// Copies the section defined by a table of {loadaddr, dest start, dest end}
+static inline void
+table_copy(const uint32_t *const start, const uint32_t *const end)
+{
+	uint32_t **table = (uint32_t **)start;
+	while(table < (uint32_t **)end)
 	{
-		uint32_t *src  = table[0]; // load address
-		uint32_t *dest = table[1]; // destination start
-		while (dest < table[2])    // destination end
-		{
+		const uint32_t *src  = table[0]; // load address
+		      uint32_t *dest = table[1]; // destination start
+		while (dest < table[2])          // destination end
 			*(dest++) = *(src++);
-		}
 		table += 3;
 	}
 }
 
-static void
-table_zero(uint32_t **table, uint32_t **end)
+// Zeros the section defined by a table of {start, end}
+static inline void
+table_zero(const uint32_t *const start, const uint32_t *const end)
 {
-	while(table < end)
+	uint32_t **table = (uint32_t **)start;
+	while(table < (uint32_t **)end)
 	{
 		uint32_t *dest = table[0]; // destination start
 		while (dest < table[1])    // destination end
-		{
 			*(dest++) = 0;
-		}
 		table += 2;
 	}
 }
 
 // ----------------------------------------------------------------------------
-void
-Reset_Handler(void)
+// Called by Reset_Handler in reset_handler.s
+void __modm_startup(void)
 {
-	__modm_initialize_platform();
+	// Copy and zero all internal memory
+	table_copy(__table_copy_intern_start, __table_copy_intern_end);
+	table_zero(__table_zero_intern_start, __table_zero_intern_end);
 
-	// copy all internal memory declared in linkerscript table
-	table_copy(	(uint32_t**)__table_copy_intern_start,
-				(uint32_t**)__table_copy_intern_end);
-	table_zero(	(uint32_t**)__table_zero_intern_start,
-				(uint32_t**)__table_zero_intern_end);
-
+	// Enable instruction cache
+	SCB_EnableICache();
 	// Enable FPU in privileged and user mode
-	SCB->CPACR |= ((3UL << 10*2) | (3UL << 11*2));  // set CP10 and CP11 Full Access
-	// Setup NVIC
-	// Set vector table
-	SCB->VTOR = (uint32_t)(__vector_table_rom_start);
-	// Enables handlers with priority -1 or -2 to ignore data BusFaults caused by load and store instructions.
-	// This applies to the hard fault, NMI, and FAULTMASK escalated handlers.
-	// We use this to opportunistically restore LR, PC and xPSR in the hard fault handler.
-	// Also enables trapping of divide by zero. Otherwise it would just be ignored.
-	SCB->CCR |= SCB_CCR_BFHFNMIGN_Msk | SCB_CCR_DIV_0_TRP_Msk;
+	SCB->CPACR |= ((3UL << 10*2) | (3UL << 11*2));
+	// Set the vector table location
+	SCB->VTOR = (uint32_t)__vector_table_ram_start;
 
-	// Lower priority level for all peripheral interrupts to lowest possible
-	for (uint32_t i = 0; i < 97; i++) {
-		NVIC->IP[i] = 0xff;
-	}
+	// Enable trapping of divide by zero for UDIV/SDIV instructions.
+	SCB->CCR |= SCB_CCR_DIV_0_TRP_Msk;
+	// Call all hardware initialize hooks
+	table_call(__hardware_init_start, __hardware_init_end);
 
-	// Set the PRIGROUP[10:8] bits to
-	// - 4 bits for pre-emption priority,
-	// - 0 bits for subpriority
-	NVIC_SetPriorityGrouping(3);
+	// Copy and zero all external memory
+	table_copy(__table_copy_extern_start, __table_copy_extern_end);
+	table_zero(__table_zero_extern_start, __table_zero_extern_end);
 
-	// Enable fault handlers
-	/*SCB->SHCSR |=
-			SCB_SHCSR_BUSFAULTENA_Msk |
-			SCB_SHCSR_USGFAULTENA_Msk |
-			SCB_SHCSR_MEMFAULTENA_Msk;*/
-	// Call all hardware initialize hooks.
-	for (FunctionPointer *init_hook = __hardware_init_start;
-			init_hook < __hardware_init_end;
-			init_hook++) {
-		(*init_hook)();
-	}
-
-	// copy all external memory declared in linkerscript table
-	table_copy(	(uint32_t**)__table_copy_extern_start,
-				(uint32_t**)__table_copy_extern_end);
-	table_zero(	(uint32_t**)__table_zero_extern_start,
-				(uint32_t**)__table_zero_extern_end);
-
-	// initialize heap
-	// needs to be done before calling the CTORS of static objects
+	// Initialize heap as implemented by the heap option
+	extern void __modm_initialize_memory(void);
 	__modm_initialize_memory();
 
-	// Call CTORS of static objects
-	__libc_init_array();
+	// Call all constructors of static objects
+	table_call(__init_array_start, __init_array_end);
 
 	// Call the application's entry point
+	extern int main(void);
 	main();
 
+	// If main exits, assert here in debug mode
 	modm_assert_debug(0, "core", "main", "exit");
-	while(1) ;
+
+	// Otherwise reboot
+	NVIC_SystemReset();
 }

@@ -89,6 +89,8 @@ public:
 		Trigger	= TIM_SMCR_SMS_2 | TIM_SMCR_SMS_1,
 		/// Rising edges of the selected trigger (TRGI) clock the counter.
 		ExternalClock = TIM_SMCR_SMS_2 | TIM_SMCR_SMS_1 | TIM_SMCR_SMS_0,
+		/// reinitialize and start counter
+		SLAVE_RESET_TRIGGER	= TIM_SMCR_SMS_3,
 	};
 
 	// This type is the internal size of the counter.
@@ -154,11 +156,11 @@ public:
 	{
 		// This will be inaccurate for non-smooth frequencies (last six digits
 		// unequal to zero)
-		uint32_t cycles = microseconds * (SystemClock::Timer3 / 1000000UL);
-		uint16_t prescaler = (cycles + 65535) / 65536;	// always round up
+		uint32_t cycles = microseconds * (SystemClock::Timer3 / 1'000'000UL);
+		uint16_t prescaler = (cycles + 65'535) / 65'536;	// always round up
 		Value overflow = cycles / prescaler;
 
-		overflow = overflow - 1;	// e.g. 36000 cycles are from 0 to 35999
+		overflow = overflow - 1;	// e.g. 36'000 cycles are from 0 to 35'999
 
 		setPrescaler(prescaler);
 		setOverflow(overflow);

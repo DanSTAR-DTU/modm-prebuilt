@@ -23,6 +23,10 @@
 void
 modm::platform::UartHal5::setParity(const Parity parity)
 {
+	const bool usartEnabled = (UART5->CR1 & USART_CR1_UE);
+	if(usartEnabled) {
+		disableOperation();
+	}
 	uint32_t flags = UART5->CR1;
 	flags &= ~(USART_CR1_PCE | USART_CR1_PS | USART_CR1_M);
 	flags |= static_cast<uint32_t>(parity);
@@ -32,6 +36,9 @@ modm::platform::UartHal5::setParity(const Parity parity)
 	}
 	UART5->CR1 = flags;
 
+	if(usartEnabled) {
+		enableOperation();
+	}
 }
 
 void
@@ -83,23 +90,30 @@ modm::platform::UartHal5::initializeWithBrr(uint16_t brr, Parity parity, Oversam
 void
 modm::platform::UartHal5::setOversamplingMode(OversamplingMode mode)
 {
+	const bool usartEnabled = (UART5->CR1 & USART_CR1_UE);
+	if(usartEnabled) {
+		disableOperation();
+	}
 	if(mode == OversamplingMode::By16) {
 		UART5->CR1 &= ~static_cast<uint32_t>(OversamplingMode::By8);
 	} else {
 		UART5->CR1 |=  static_cast<uint32_t>(OversamplingMode::By8);
 	}
 
+	if(usartEnabled) {
+		enableOperation();
+	}
 }
 void
 modm::platform::UartHal5::write(uint8_t data)
 {
-	UART5->DR = data;
+	UART5->TDR = data;
 }
 
 void
 modm::platform::UartHal5::read(uint8_t &data)
 {
-	data = UART5->DR;
+	data = UART5->RDR;
 }
 
 void
@@ -137,13 +151,13 @@ modm::platform::UartHal5::disableOperation()
 bool
 modm::platform::UartHal5::isReceiveRegisterNotEmpty()
 {
-	return UART5->SR & USART_SR_RXNE;
+	return UART5->ISR & USART_ISR_RXNE;
 }
 
 bool
 modm::platform::UartHal5::isTransmitRegisterEmpty()
 {
-	return UART5->SR & USART_SR_TXE;
+	return UART5->ISR & USART_ISR_TXE;
 }
 
 void
@@ -176,22 +190,31 @@ modm::platform::UartHal5::disableInterrupt(Interrupt_t interrupt)
 modm::platform::UartHal5::InterruptFlag_t
 modm::platform::UartHal5::getInterruptFlags()
 {
-	return InterruptFlag_t( UART5->SR );
+	return InterruptFlag_t( UART5->ISR );
 }
 
 void
 modm::platform::UartHal5::acknowledgeInterruptFlags(InterruptFlag_t flags)
 {
-	/* Interrupts must be cleared manually by accessing SR and DR.
-	 * Overrun Interrupt, Noise flag detected, Framing Error, Parity Error
-	 * p779: "It is cleared by a software sequence (an read to the
-	 * USART_SR register followed by a read to the USART_DR register"
-	 */
-	if (flags & InterruptFlag::OverrunError) {
-		uint32_t tmp;
-		tmp = UART5->SR;
-		tmp = UART5->DR;
-		(void) tmp;
-	}
-	(void) flags;	// avoid compiler warning
+	// Not all flags can be cleared by writing to this reg
+#ifdef USART_ICR_NECF
+#define USART_ICR_NCF USART_ICR_NECF
+#endif
+	const uint32_t mask = USART_ICR_PECF  | USART_ICR_FECF   |
+		USART_ICR_NCF   | USART_ICR_ORECF | USART_ICR_IDLECF |
+		USART_ICR_TCCF  | USART_ICR_CTSCF | USART_ICR_RTOCF  |
+		USART_ICR_CMCF
+#ifdef USART_ICR_LBDCF // F0x0 do not have LIN mode!
+		| USART_ICR_LBDCF
+#endif
+#ifdef USART_ICR_EOBCF // F0x0 do not have Smartcard mode!
+		| USART_ICR_EOBCF
+#endif
+#ifdef USART_ICR_WUCF
+		| USART_ICR_WUCF
+#endif
+		;
+	// Flags are cleared by writing a one to the flag position.
+	// Writing a zero is (hopefully) ignored.
+	UART5->ICR = (flags.value & mask);
 }

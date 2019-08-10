@@ -43,7 +43,14 @@ modm::platform::SpiHal1::initialize(Prescaler prescaler,
 						| static_cast<uint32_t>(dataOrder)
 						| static_cast<uint32_t>(masterSelection)
 						| static_cast<uint32_t>(prescaler)
-						| static_cast<uint32_t>(dataSize);
+						;
+	SPI1->CR2 = static_cast<uint32_t>(dataSize);
+
+	if(static_cast<uint8_t>(dataSize) <= static_cast<uint8_t>(DataSize::Bit8))
+	{
+		SPI1->CR2 |= SPI_CR2_FRXTH;
+	}
+
 	if(masterSelection == MasterSelection::Master) {
 		SPI1->CR2 |=  SPI_CR2_SSOE; // for master mode
 	}
@@ -68,7 +75,8 @@ modm::platform::SpiHal1::setDataOrder(DataOrder dataOrder)
 void inline
 modm::platform::SpiHal1::setDataSize(DataSize dataSize)
 {
-	SPI1->CR2 = (SPI1->CR2 & ~static_cast<uint32_t>(DataSize::All))
+	// TODO: implement as set/reset bit
+	SPI1->CR1 = (SPI1->CR1 & ~static_cast<uint32_t>(DataSize::All))
 										 | static_cast<uint32_t>(dataSize);
 }
 
@@ -101,7 +109,7 @@ modm::platform::SpiHal1::write(uint16_t data)
 void inline
 modm::platform::SpiHal1::write(uint8_t data)
 {
-	write(static_cast<uint16_t>(data));
+	*((__IO uint8_t *) &SPI1->DR) = data;
 }
 
 void inline

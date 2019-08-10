@@ -20,9 +20,6 @@
 #include <modm/architecture/interface/interrupt.hpp>
 
 /// @cond
-// STM has some weird ideas about continuity
-#define	USART_BRR_DIV_MANTISSA	USART_BRR_DIV_Mantissa
-#define	USART_BRR_DIV_FRACTION	USART_BRR_DIV_Fraction
 /// @endcond
 
 
@@ -44,6 +41,8 @@ class UartBase
 public:
 	enum class Interrupt : uint32_t
 	{
+		/// A USART interrupt is generated when match character is received.
+		CharacterMatch = USART_CR1_CMIE,
 		/// Call interrupt when a parity error occurred.
 		ParityError	= USART_CR1_PEIE,
 		/// Call interrupt when transmit register is empty (i.e. the byte has been transfered to the shift out register
@@ -57,18 +56,20 @@ public:
 
 	enum class InterruptFlag : uint32_t
 	{
+		/// Set if match character is received.
+		CharacterMatch	= USART_ISR_CMF,
 		/// Set if the transmit data register is empty.
-		TxEmpty			= USART_SR_TXE,
+		TxEmpty			= USART_ISR_TXE,
 		/// Set if the transmission is complete.
-		TxComplete		= USART_SR_TC,
+		TxComplete		= USART_ISR_TC,
 		/// Set if the receive data register is not empty.
-		RxNotEmpty		= USART_SR_RXNE,
+		RxNotEmpty		= USART_ISR_RXNE,
 		/// Set if receive register was not cleared.
-		OverrunError	= USART_SR_ORE,
+		OverrunError	= USART_ISR_ORE,
 		/// Set if a de-synchronization, excessive noise or a break character is detected
-		FramingError 	= USART_SR_FE,
+		FramingError 	= USART_ISR_FE,
 		/// Set if a parity error was detected.
-		ParityError		= USART_SR_PE,
+		ParityError		= USART_ISR_PE,
 	};
 	MODM_FLAGS32(InterruptFlag);
 

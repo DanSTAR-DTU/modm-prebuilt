@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2011-2012, 2019, Fabian Greif
- * Copyright (c) 2012, 2015-2018, Niklas Hauser
+ * Copyright (c) 2012, 2015-2019, Niklas Hauser
  * Copyright (c) 2013, Sascha Schade
  * Copyright (c) 2013, 2015, Kevin Läufer
  *
@@ -14,9 +14,13 @@
 
 MEMORY
 {
-	FLASH (rx) : ORIGIN = 0x08000000, LENGTH = 524288
-	SRAM1 (rwx) : ORIGIN = 0x20000000, LENGTH = 131072
-	RAM (rwx) : ORIGIN = 0x20000000, LENGTH = 131072
+	ITCM (rwx) : ORIGIN = 0x00000000, LENGTH = 16384
+	FLASH (rx) : ORIGIN = 0x08000000, LENGTH = 1048576
+	DTCM (rwx) : ORIGIN = 0x20000000, LENGTH = 65536
+	SRAM1 (rwx) : ORIGIN = 0x20010000, LENGTH = 311296
+	SRAM2 (rwx) : ORIGIN = 0x2005C000, LENGTH = 16384
+	BACKUP (rwx) : ORIGIN = 0x40024000, LENGTH = 4096
+	RAM (rwx) : ORIGIN = 0x20010000, LENGTH = 327680
     
 }
 
@@ -34,7 +38,7 @@ MAIN_STACK_SIZE     = 3040;
 TOTAL_STACK_SIZE = MAIN_STACK_SIZE + PROCESS_STACK_SIZE;
 
 
-VECTOR_TABLE_OFFSET = TOTAL_STACK_SIZE;
+
 SECTIONS
 {
 	__rom_start = ORIGIN(FLASH);
@@ -50,9 +54,35 @@ SECTIONS
 	} >FLASH
 
 
+	.vector_ram (NOLOAD) :
+	{
+		__vector_table_ram_start = .;
+		/* Vector table in RAM, only if remapped */
+		KEEP(*(.vector_ram))
+		. = ALIGN(4);
+		__vector_table_ram_end = .;
+	} >ITCM
+
+
+	.fastcode : ALIGN(4)
+	{
+		__fastcode_load = LOADADDR(.fastcode);
+		__fastcode_start = .;
+		*(.fastcode)
+		. = ALIGN(4);
+		__fastcode_end = .;
+	} >ITCM AT >FLASH
+
+
+	.heap4 (NOLOAD) :
+	{
+		__heap4_start = .;
+		. = ORIGIN(ITCM) + LENGTH(ITCM);
+		__heap4_end = .;
+	} >ITCM
+
 	.stack (NOLOAD) :
 	{
-		. = VECTOR_TABLE_OFFSET - TOTAL_STACK_SIZE;
 		__stack_start = .;
 
 		. += MAIN_STACK_SIZE;
@@ -64,19 +94,25 @@ SECTIONS
 		__process_stack_top = .;
 
 		__stack_end = .;
-	} >RAM
+	} >DTCM
 
 
-	.vector_ram (NOLOAD) :  /* Vector table in RAM, only if remapped */
+	.fastdata : ALIGN(4)
 	{
-		__vector_table_ram_start = .;
-
-		/* used for vectors remapped to RAM */
-		KEEP(*(.vector_ram))
-
+		__fastdata_load = LOADADDR(.fastdata);
+		__fastdata_start = .;
+		*(.fastdata)
 		. = ALIGN(4);
-		__vector_table_ram_end = .;
-	} >RAM
+		__fastdata_end = .;
+	} >DTCM AT >FLASH
+
+
+	.heap0 (NOLOAD) :
+	{
+		__heap0_start = .;
+		. = ORIGIN(DTCM) + LENGTH(DTCM);
+		__heap0_end = .;
+	} >DTCM
 
 
 	.text : ALIGN(4)
@@ -90,24 +126,29 @@ SECTIONS
 		KEEP(*(.init))
 
 		. = ALIGN(4);
-		PROVIDE_HIDDEN(__preinit_array_start = .);
-		KEEP(*(.preinit_array))
-		PROVIDE_HIDDEN(__preinit_array_end = .);
-
-		. = ALIGN(4);
-		PROVIDE_HIDDEN(__init_array_start = .);
+		__init_array_start = .;
 		KEEP(*(SORT(.init_array.*)))
 		KEEP(*(.init_array))
-		PROVIDE_HIDDEN(__init_array_end = .);
-
+		__init_array_end = .;
 	} >FLASH
 
+	/* Unwind tables are used to unwind the stack for C++ exceptions. Even
+	 * though we disabled exceptions, pre-compiled libraries such as libstdc++
+	 * still have to raise exceptions. We still force discard all tables
+	 * though and hook these exception throwers in code. */
+	/DISCARD/ :
+	{
+		*(.ARM.extab* .gnu.linkonce.armextab.*)
+		*(.ARM.exidx* .gnu.linkonce.armexidx.*)
+		*(.eh_frame*)
+	}
 	/* Hardware init table */
 	.hardware_init : ALIGN(4)
 	{
 		__hardware_init_start = .;
 		/* Table symbols are alphabetically sorted! */
-		KEEP(*(SORT(.hardware_init*)))
+		KEEP(*(SORT(.hardware_init.order_*)))
+		KEEP(*(SORT(.hardware_init)))
 		__hardware_init_end = .;
 	} >FLASH
 
@@ -124,12 +165,6 @@ SECTIONS
 		__build_id = .;
 		KEEP(*(.note.gnu.build-id))
 	} > FLASH
-
-
-	.fastcode : ALIGN(4)
-	{
-		*(.fastcode)
-	} >FLASH
 
 
 	/* initialized variables */
@@ -161,24 +196,19 @@ SECTIONS
 	} >RAM
 
 
-	.fastdata : ALIGN(4)
-	{
-		__fastdata_load = LOADADDR(.fastdata);
-		__fastdata_start = .;
-
-		*(.fastdata)
-
-		. = ALIGN(4);
-		__fastdata_end = .;
-	} >RAM AT >FLASH
-
-
 	.heap1 (NOLOAD) :
 	{
 		__heap1_start = .;
-
 		. = ORIGIN(SRAM1) + LENGTH(SRAM1);
 		__heap1_end = .;
+	} >RAM
+
+
+	.heap2 (NOLOAD) :
+	{
+		__heap2_start = .;
+		. = ORIGIN(SRAM2) + LENGTH(SRAM2);
+		__heap2_end = .;
 	} >RAM
 
 
@@ -203,6 +233,12 @@ SECTIONS
 		LONG(__fastdata_load)
 		LONG(__fastdata_start)
 		LONG(__fastdata_end)
+		LONG(__fastcode_load)
+		LONG(__fastcode_start)
+		LONG(__fastcode_end)
+		LONG(__vector_table_ram_load)
+		LONG(__vector_table_ram_start)
+		LONG(__vector_table_ram_end)
 		__table_copy_intern_end = .;
 	} >FLASH
 
@@ -239,9 +275,18 @@ SECTIONS
 	.table.heap : ALIGN(4)
 	{
 		__table_heap_start = .;
-		LONG(0x000f)
+		LONG(0x001f)
 		LONG(__heap1_start)
 		LONG(__heap1_end)
+		LONG(0x001f)
+		LONG(__heap2_start)
+		LONG(__heap2_end)
+		LONG(0x200f)
+		LONG(__heap0_start)
+		LONG(__heap0_end)
+		LONG(0x2005)
+		LONG(__heap4_start)
+		LONG(__heap4_end)
         
 		__table_heap_end = .;
 	} >FLASH

@@ -95,6 +95,7 @@ public:
 			SlaveMode slaveMode = SlaveMode::Disabled,
 			SlaveModeTrigger slaveModeTrigger = SlaveModeTrigger::Internal0,
 			MasterMode masterMode = MasterMode::Reset
+			, MasterMode2 masterMode2 = MasterMode2::Reset
 			);
 
 	static inline void
@@ -146,11 +147,11 @@ public:
 	{
 		// This will be inaccurate for non-smooth frequencies (last six digits
 		// unequal to zero)
-		uint32_t cycles = microseconds * (SystemClock::Timer8 / 1000000UL);
-		uint16_t prescaler = (cycles + 65535) / 65536;	// always round up
+		uint32_t cycles = microseconds * (SystemClock::Timer8 / 1'000'000UL);
+		uint16_t prescaler = (cycles + 65'535) / 65'536;	// always round up
 		uint16_t overflow = cycles / prescaler;
 
-		overflow = overflow - 1;	// e.g. 36000 cycles are from 0 to 35999
+		overflow = overflow - 1;	// e.g. 36'000 cycles are from 0 to 35'999
 
 		setPrescaler(prescaler);
 		setOverflow(overflow);

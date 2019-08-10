@@ -16,18 +16,19 @@
 #ifndef MODM_DEVICE_HPP
 #define MODM_DEVICE_HPP
 
-#define STM32F446xx 1
+#define STM32F746xx 1
 #include <stdint.h>
 // Defines for example the modm_always_inline macro
 #include <modm/architecture/utils.hpp>
 
 // Include external device headers:
-#include <stm32f446xx.h>
-#include <system_stm32f4xx.h>
+#include <stm32f746xx.h>
+#include <system_stm32f7xx.h>
 /// @cond
 // This is a hack to make the *_Typedef's known to GDB, so that you can debug
 // the peripherals directly in GDB in any context.
 // Otherwise GDB would throw a "no symbol 'GPIO_TypeDef' in current context".
+extern ADC_Common_TypeDef		___ADC				;
 extern ADC_TypeDef				___ADC1			;
 extern ADC_Common_TypeDef		___ADC123_COMMON	;
 extern ADC_TypeDef				___ADC2			;
@@ -51,6 +52,7 @@ extern DMA_Stream_TypeDef		___DMA1_Stream5	;
 extern DMA_Stream_TypeDef		___DMA1_Stream6	;
 extern DMA_Stream_TypeDef		___DMA1_Stream7	;
 extern DMA_TypeDef				___DMA2			;
+extern DMA2D_TypeDef			___DMA2D			;
 extern DMA_Stream_TypeDef		___DMA2_Stream0	;
 extern DMA_Stream_TypeDef		___DMA2_Stream1	;
 extern DMA_Stream_TypeDef		___DMA2_Stream2	;
@@ -60,13 +62,13 @@ extern DMA_Stream_TypeDef		___DMA2_Stream5	;
 extern DMA_Stream_TypeDef		___DMA2_Stream6	;
 extern DMA_Stream_TypeDef		___DMA2_Stream7	;
 extern DWT_Type				___DWT				;
+extern ETH_TypeDef				___ETH				;
 extern EXTI_TypeDef			___EXTI			;
 extern FLASH_TypeDef			___FLASH			;
 extern FMC_Bank1_TypeDef		___FMC_Bank1		;
 extern FMC_Bank1E_TypeDef		___FMC_Bank1E		;
 extern FMC_Bank3_TypeDef		___FMC_Bank3		;
 extern FMC_Bank5_6_TypeDef		___FMC_Bank5_6		;
-extern FMPI2C_TypeDef			___FMPI2C1			;
 extern FPU_Type				___FPU				;
 extern GPIO_TypeDef			___GPIOA			;
 extern GPIO_TypeDef			___GPIOB			;
@@ -76,16 +78,25 @@ extern GPIO_TypeDef			___GPIOE			;
 extern GPIO_TypeDef			___GPIOF			;
 extern GPIO_TypeDef			___GPIOG			;
 extern GPIO_TypeDef			___GPIOH			;
+extern GPIO_TypeDef			___GPIOI			;
+extern GPIO_TypeDef			___GPIOJ			;
+extern GPIO_TypeDef			___GPIOK			;
 extern I2C_TypeDef				___I2C1			;
 extern I2C_TypeDef				___I2C2			;
 extern I2C_TypeDef				___I2C3			;
+extern I2C_TypeDef				___I2C4			;
 extern ITM_Type				___ITM				;
 extern IWDG_TypeDef			___IWDG			;
+extern LPTIM_TypeDef			___LPTIM1			;
+extern LTDC_TypeDef			___LTDC			;
+extern LTDC_Layer_TypeDef		___LTDC_Layer1		;
+extern LTDC_Layer_TypeDef		___LTDC_Layer2		;
 extern MPU_Type				___MPU				;
 extern NVIC_Type				___NVIC			;
 extern PWR_TypeDef				___PWR				;
 extern QUADSPI_TypeDef			___QUADSPI			;
 extern RCC_TypeDef				___RCC				;
+extern RNG_TypeDef				___RNG				;
 extern RTC_TypeDef				___RTC				;
 extern SAI_TypeDef				___SAI1			;
 extern SAI_Block_TypeDef		___SAI1_Block_A	;
@@ -95,12 +106,14 @@ extern SAI_Block_TypeDef		___SAI2_Block_A	;
 extern SAI_Block_TypeDef		___SAI2_Block_B	;
 extern SCB_Type				___SCB				;
 extern SCnSCB_Type				___SCnSCB			;
-extern SDIO_TypeDef			___SDIO			;
+extern SDMMC_TypeDef			___SDMMC1			;
 extern SPDIFRX_TypeDef			___SPDIFRX			;
 extern SPI_TypeDef				___SPI1			;
 extern SPI_TypeDef				___SPI2			;
 extern SPI_TypeDef				___SPI3			;
 extern SPI_TypeDef				___SPI4			;
+extern SPI_TypeDef				___SPI5			;
+extern SPI_TypeDef				___SPI6			;
 extern SYSCFG_TypeDef			___SYSCFG			;
 extern SysTick_Type			___SysTick			;
 extern TIM_TypeDef				___TIM1			;
@@ -120,6 +133,8 @@ extern TIM_TypeDef				___TIM9			;
 extern TPI_Type				___TPI				;
 extern USART_TypeDef			___UART4			;
 extern USART_TypeDef			___UART5			;
+extern USART_TypeDef			___UART7			;
+extern USART_TypeDef			___UART8			;
 extern USART_TypeDef			___USART1			;
 extern USART_TypeDef			___USART2			;
 extern USART_TypeDef			___USART3			;

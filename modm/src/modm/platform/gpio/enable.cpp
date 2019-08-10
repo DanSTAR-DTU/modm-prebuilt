@@ -11,6 +11,7 @@
 // ----------------------------------------------------------------------------
 
 #include "../device.hpp"
+#include <modm/platform/core/hardware_init.hpp>
 
 void
 modm_gpio_enable(void)
@@ -23,24 +24,38 @@ modm_gpio_enable(void)
 		RCC_AHB1ENR_GPIOBEN |
 		RCC_AHB1ENR_GPIOCEN |
 		RCC_AHB1ENR_GPIODEN |
-		RCC_AHB1ENR_GPIOHEN;
+		RCC_AHB1ENR_GPIOEEN |
+		RCC_AHB1ENR_GPIOFEN |
+		RCC_AHB1ENR_GPIOGEN |
+		RCC_AHB1ENR_GPIOHEN |
+		RCC_AHB1ENR_GPIOIEN |
+		RCC_AHB1ENR_GPIOJEN |
+		RCC_AHB1ENR_GPIOKEN;
 	// Reset GPIO peripheral
 	RCC->AHB1RSTR |=
 		RCC_AHB1RSTR_GPIOARST |
 		RCC_AHB1RSTR_GPIOBRST |
 		RCC_AHB1RSTR_GPIOCRST |
 		RCC_AHB1RSTR_GPIODRST |
-		RCC_AHB1RSTR_GPIOHRST;
+		RCC_AHB1RSTR_GPIOERST |
+		RCC_AHB1RSTR_GPIOFRST |
+		RCC_AHB1RSTR_GPIOGRST |
+		RCC_AHB1RSTR_GPIOHRST |
+		RCC_AHB1RSTR_GPIOIRST |
+		RCC_AHB1RSTR_GPIOJRST |
+		RCC_AHB1RSTR_GPIOKRST;
 	RCC->AHB1RSTR &= ~(
 		RCC_AHB1RSTR_GPIOARST |
 		RCC_AHB1RSTR_GPIOBRST |
 		RCC_AHB1RSTR_GPIOCRST |
 		RCC_AHB1RSTR_GPIODRST |
-		RCC_AHB1RSTR_GPIOHRST);
+		RCC_AHB1RSTR_GPIOERST |
+		RCC_AHB1RSTR_GPIOFRST |
+		RCC_AHB1RSTR_GPIOGRST |
+		RCC_AHB1RSTR_GPIOHRST |
+		RCC_AHB1RSTR_GPIOIRST |
+		RCC_AHB1RSTR_GPIOJRST |
+		RCC_AHB1RSTR_GPIOKRST);
 }
 
-
-// .A000100 postfix since .hardware_init is sorted alphabetically and
-// this should be executed before application inits. Totally not a hack.
-modm_section(".hardware_init.A000100_modm_gpio_enable")
-uint32_t modm_gpio_enable_ptr = (uint32_t) &modm_gpio_enable;
+MODM_HARDWARE_INIT_ORDER(modm_gpio_enable, 80);

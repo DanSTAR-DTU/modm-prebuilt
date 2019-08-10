@@ -16,10 +16,7 @@
 #include "base.hpp"
 #include "set.hpp"
 
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /// @cond
@@ -83,13 +80,13 @@ public:
 	inline static void set(bool status) { PinSet::set(status); }
 	inline static void reset() { PinSet::reset(); }
 	inline static void toggle() {
-		if (isSet()) reset();
-		else         set();
+		if (isSet()) { reset(); }
+		else         { set();   }
 	}
 	inline static bool isSet() { return (GPIOA->ODR & mask); }
 	// stop documentation inherited
 	inline static void configure(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::configure(type, speed); }
-	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50)  { PinSet::setOutput(type, speed); }
+	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::setOutput(type, speed); }
 	// GpioInput
 	// start documentation inherited
 	inline static void setInput() { PinSet::setInput(); }
@@ -142,15 +139,17 @@ public:
 		}
 	}
 	inline static bool getExternalInterruptFlag() { return (EXTI->PR & mask); }
-	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR |= mask; }
+	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR = mask; }
 	// GpioIO
 	// start documentation inherited
 	inline static Direction getDirection() {
 		uint32_t mode = (GPIOA->MODER & mask2);
-		if (mode == (i(Mode::Input) << pin * 2))
+		if (mode == (i(Mode::Input) << pin * 2)) {
 			return Direction::In;
-		if (mode == (i(Mode::Output) << pin * 2))
+		}
+		if (mode == (i(Mode::Output) << pin * 2)) {
 			return Direction::Out;
+		}
 		return Direction::Special;
 	}
 	// end documentation inherited
@@ -177,6 +176,8 @@ public:
 	using Out1 = GpioSignal;
 	/// Connect to UsbOtgHs
 	using Sof = GpioSignal;
+	/// Connect to Ltdc
+	using Vsync = GpioSignal;
 	/// Connect to I2s1 or I2s3
 	using Ws = GpioSignal;
 	/// @}
@@ -225,6 +226,12 @@ public:
 		static_assert(
 			(peripheral == Peripheral::UsbOtgHs),
 			"GpioA4::Sof only connects to UsbOtgHs!");
+	};
+	template< Peripheral peripheral >
+	struct Vsync { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Ltdc),
+			"GpioA4::Vsync only connects to Ltdc!");
 	};
 	template< Peripheral peripheral >
 	struct Ws { static void connect();
@@ -354,6 +361,18 @@ struct GpioA4::Sof<Peripheral::UsbOtgHs>
 	}
 };
 template<>
+struct GpioA4::Vsync<Peripheral::Ltdc>
+{
+	using Gpio = GpioA4;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Vsync;
+	static constexpr int af = 14;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(14);
+	}
+};
+template<>
 struct GpioA4::Ws<Peripheral::I2s1>
 {
 	using Gpio = GpioA4;
@@ -379,8 +398,6 @@ struct GpioA4::Ws<Peripheral::I2s3>
 };
 /// @endcond
 
-} // namespace platform
-
-} // namespace modm
+} // namespace modm::platform
 
 #endif // MODM_STM32_GPIO_PIN_A4_HPP

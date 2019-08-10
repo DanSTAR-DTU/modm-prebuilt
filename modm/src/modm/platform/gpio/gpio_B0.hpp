@@ -16,10 +16,7 @@
 #include "base.hpp"
 #include "set.hpp"
 
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /// @cond
@@ -83,13 +80,13 @@ public:
 	inline static void set(bool status) { PinSet::set(status); }
 	inline static void reset() { PinSet::reset(); }
 	inline static void toggle() {
-		if (isSet()) reset();
-		else         set();
+		if (isSet()) { reset(); }
+		else         { set();   }
 	}
 	inline static bool isSet() { return (GPIOB->ODR & mask); }
 	// stop documentation inherited
 	inline static void configure(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::configure(type, speed); }
-	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50)  { PinSet::setOutput(type, speed); }
+	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::setOutput(type, speed); }
 	// GpioInput
 	// start documentation inherited
 	inline static void setInput() { PinSet::setInput(); }
@@ -142,15 +139,17 @@ public:
 		}
 	}
 	inline static bool getExternalInterruptFlag() { return (EXTI->PR & mask); }
-	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR |= mask; }
+	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR = mask; }
 	// GpioIO
 	// start documentation inherited
 	inline static Direction getDirection() {
 		uint32_t mode = (GPIOB->MODER & mask2);
-		if (mode == (i(Mode::Input) << pin * 2))
+		if (mode == (i(Mode::Input) << pin * 2)) {
 			return Direction::In;
-		if (mode == (i(Mode::Output) << pin * 2))
+		}
+		if (mode == (i(Mode::Output) << pin * 2)) {
 			return Direction::Out;
+		}
 		return Direction::Special;
 	}
 	// end documentation inherited
@@ -171,14 +170,12 @@ public:
 	using Ch3 = GpioSignal;
 	/// Connect to Uart4
 	using Cts = GpioSignal;
-	/// Connect to Sdio
-	using D1 = GpioSignal;
 	/// Connect to Adc1 or Adc2
 	using In8 = GpioSignal;
-	/// Connect to Spi3
-	using Mosi = GpioSignal;
-	/// Connect to I2s3
-	using Sd = GpioSignal;
+	/// Connect to Ltdc
+	using R3 = GpioSignal;
+	/// Connect to Eth
+	using Rxd2 = GpioSignal;
 	/// Connect to UsbOtgHs
 	using UlpiD1 = GpioSignal;
 	/// @}
@@ -210,12 +207,6 @@ public:
 			"GpioB0::Cts only connects to Uart4!");
 	};
 	template< Peripheral peripheral >
-	struct D1 { static void connect();
-		static_assert(
-			(peripheral == Peripheral::Sdio),
-			"GpioB0::D1 only connects to Sdio!");
-	};
-	template< Peripheral peripheral >
 	struct In8 { static void connect();
 		static_assert(
 			(peripheral == Peripheral::Adc1) ||
@@ -223,16 +214,16 @@ public:
 			"GpioB0::In8 only connects to Adc1 or Adc2!");
 	};
 	template< Peripheral peripheral >
-	struct Mosi { static void connect();
+	struct R3 { static void connect();
 		static_assert(
-			(peripheral == Peripheral::Spi3),
-			"GpioB0::Mosi only connects to Spi3!");
+			(peripheral == Peripheral::Ltdc),
+			"GpioB0::R3 only connects to Ltdc!");
 	};
 	template< Peripheral peripheral >
-	struct Sd { static void connect();
+	struct Rxd2 { static void connect();
 		static_assert(
-			(peripheral == Peripheral::I2s3),
-			"GpioB0::Sd only connects to I2s3!");
+			(peripheral == Peripheral::Eth),
+			"GpioB0::Rxd2 only connects to Eth!");
 	};
 	template< Peripheral peripheral >
 	struct UlpiD1 { static void connect();
@@ -304,18 +295,6 @@ struct GpioB0::Cts<Peripheral::Uart4>
 	}
 };
 template<>
-struct GpioB0::D1<Peripheral::Sdio>
-{
-	using Gpio = GpioB0;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::D1;
-	static constexpr int af = 12;
-	inline static void
-	connect()
-	{
-		setAlternateFunction(12);
-	}
-};
-template<>
 struct GpioB0::In8<Peripheral::Adc1>
 {
 	using Gpio = GpioB0;
@@ -348,27 +327,27 @@ template<>
 constexpr int8_t
 GpioB0::AdcChannel<Peripheral::Adc2> = 8;
 template<>
-struct GpioB0::Mosi<Peripheral::Spi3>
+struct GpioB0::R3<Peripheral::Ltdc>
 {
 	using Gpio = GpioB0;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::Mosi;
-	static constexpr int af = 7;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::R3;
+	static constexpr int af = 9;
 	inline static void
 	connect()
 	{
-		setAlternateFunction(7);
+		setAlternateFunction(9);
 	}
 };
 template<>
-struct GpioB0::Sd<Peripheral::I2s3>
+struct GpioB0::Rxd2<Peripheral::Eth>
 {
 	using Gpio = GpioB0;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::Sd;
-	static constexpr int af = 7;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Rxd2;
+	static constexpr int af = 11;
 	inline static void
 	connect()
 	{
-		setAlternateFunction(7);
+		setAlternateFunction(11);
 	}
 };
 template<>
@@ -385,8 +364,6 @@ struct GpioB0::UlpiD1<Peripheral::UsbOtgHs>
 };
 /// @endcond
 
-} // namespace platform
-
-} // namespace modm
+} // namespace modm::platform
 
 #endif // MODM_STM32_GPIO_PIN_B0_HPP

@@ -23,6 +23,10 @@
 void
 modm::platform::UsartHal1::setParity(const Parity parity)
 {
+	const bool usartEnabled = (USART1->CR1 & USART_CR1_UE);
+	if(usartEnabled) {
+		disableOperation();
+	}
 	uint32_t flags = USART1->CR1;
 	flags &= ~(USART_CR1_PCE | USART_CR1_PS | USART_CR1_M);
 	flags |= static_cast<uint32_t>(parity);
@@ -32,6 +36,9 @@ modm::platform::UsartHal1::setParity(const Parity parity)
 	}
 	USART1->CR1 = flags;
 
+	if(usartEnabled) {
+		enableOperation();
+	}
 }
 
 void
@@ -83,53 +90,81 @@ modm::platform::UsartHal1::initializeWithBrr(uint16_t brr, Parity parity, Oversa
 void
 modm::platform::UsartHal1::setOversamplingMode(OversamplingMode mode)
 {
+	const bool usartEnabled = (USART1->CR1 & USART_CR1_UE);
+	if(usartEnabled) {
+		disableOperation();
+	}
 	if(mode == OversamplingMode::By16) {
 		USART1->CR1 &= ~static_cast<uint32_t>(OversamplingMode::By8);
 	} else {
 		USART1->CR1 |=  static_cast<uint32_t>(OversamplingMode::By8);
 	}
 
+	if(usartEnabled) {
+		enableOperation();
+	}
 }
 void
 modm::platform::UsartHal1::setSpiClock(SpiClock clk)
 {
+	const bool usartEnabled = (USART1->CR1 & USART_CR1_UE);
+	if(usartEnabled) {
+		disableOperation();
+	}
 	if(clk == SpiClock::Disabled) {
 		USART1->CR2 &= ~static_cast<uint32_t>(SpiClock::Enabled);
 	} else {
 		USART1->CR2 |=  static_cast<uint32_t>(SpiClock::Enabled);
 	}
 
+	if(usartEnabled) {
+		enableOperation();
+	}
 }
 
 void
 modm::platform::UsartHal1::setSpiDataMode(SpiDataMode mode)
 {
+	const bool usartEnabled = (USART1->CR1 & USART_CR1_UE);
+	if(usartEnabled) {
+		disableOperation();
+	}
 	USART1->CR2 =
 		(USART1->CR2 & ~static_cast<uint32_t>(SpiDataMode::Mode3))
 		| static_cast<uint32_t>(mode);
 
+	if(usartEnabled) {
+		enableOperation();
+	}
 }
 
 void
 modm::platform::UsartHal1::setLastBitClockPulse(LastBitClockPulse pulse)
 {
+	const bool usartEnabled = (USART1->CR1 & USART_CR1_UE);
+	if(usartEnabled) {
+		disableOperation();
+	}
 	if(pulse == LastBitClockPulse::DoNotOutput) {
 		USART1->CR2 &= ~static_cast<uint32_t>(LastBitClockPulse::Output);
 	} else {
 		USART1->CR2 |=  static_cast<uint32_t>(LastBitClockPulse::Output);
 	}
 
+	if(usartEnabled) {
+		enableOperation();
+	}
 }
 void
 modm::platform::UsartHal1::write(uint8_t data)
 {
-	USART1->DR = data;
+	USART1->TDR = data;
 }
 
 void
 modm::platform::UsartHal1::read(uint8_t &data)
 {
-	data = USART1->DR;
+	data = USART1->RDR;
 }
 
 void
@@ -167,13 +202,13 @@ modm::platform::UsartHal1::disableOperation()
 bool
 modm::platform::UsartHal1::isReceiveRegisterNotEmpty()
 {
-	return USART1->SR & USART_SR_RXNE;
+	return USART1->ISR & USART_ISR_RXNE;
 }
 
 bool
 modm::platform::UsartHal1::isTransmitRegisterEmpty()
 {
-	return USART1->SR & USART_SR_TXE;
+	return USART1->ISR & USART_ISR_TXE;
 }
 
 void
@@ -206,22 +241,31 @@ modm::platform::UsartHal1::disableInterrupt(Interrupt_t interrupt)
 modm::platform::UsartHal1::InterruptFlag_t
 modm::platform::UsartHal1::getInterruptFlags()
 {
-	return InterruptFlag_t( USART1->SR );
+	return InterruptFlag_t( USART1->ISR );
 }
 
 void
 modm::platform::UsartHal1::acknowledgeInterruptFlags(InterruptFlag_t flags)
 {
-	/* Interrupts must be cleared manually by accessing SR and DR.
-	 * Overrun Interrupt, Noise flag detected, Framing Error, Parity Error
-	 * p779: "It is cleared by a software sequence (an read to the
-	 * USART_SR register followed by a read to the USART_DR register"
-	 */
-	if (flags & InterruptFlag::OverrunError) {
-		uint32_t tmp;
-		tmp = USART1->SR;
-		tmp = USART1->DR;
-		(void) tmp;
-	}
-	(void) flags;	// avoid compiler warning
+	// Not all flags can be cleared by writing to this reg
+#ifdef USART_ICR_NECF
+#define USART_ICR_NCF USART_ICR_NECF
+#endif
+	const uint32_t mask = USART_ICR_PECF  | USART_ICR_FECF   |
+		USART_ICR_NCF   | USART_ICR_ORECF | USART_ICR_IDLECF |
+		USART_ICR_TCCF  | USART_ICR_CTSCF | USART_ICR_RTOCF  |
+		USART_ICR_CMCF
+#ifdef USART_ICR_LBDCF // F0x0 do not have LIN mode!
+		| USART_ICR_LBDCF
+#endif
+#ifdef USART_ICR_EOBCF // F0x0 do not have Smartcard mode!
+		| USART_ICR_EOBCF
+#endif
+#ifdef USART_ICR_WUCF
+		| USART_ICR_WUCF
+#endif
+		;
+	// Flags are cleared by writing a one to the flag position.
+	// Writing a zero is (hopefully) ignored.
+	USART1->ICR = (flags.value & mask);
 }

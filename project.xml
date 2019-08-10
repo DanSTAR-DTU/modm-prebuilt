@@ -3,13 +3,11 @@
 		<repository><path>./repo/repo.lb</path></repository>
 	</repositories>
 	<options>
-		<option name=":target">stm32f446ret</option>
-		<option name=":docs:generate_module_docs">True</option>
+		<option name=":target">stm32f746ngh</option>
 	</options>
 	<modules>
 		<module>:architecture:*</module>
 		<module>:container</module>
-		<module>:driver:bme280</module>
 		<module>:docs</module>
 		<module>:math:*</module>
 		<module>:io</module>

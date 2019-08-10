@@ -20,10 +20,10 @@
 
 namespace modm::clock
 {
-uint32_t modm_fastdata fcpu(8000000);
-uint32_t modm_fastdata fcpu_kHz(8000);
-uint16_t modm_fastdata fcpu_MHz(8);
-uint16_t modm_fastdata ns_per_loop(375.0);
+uint32_t modm_fastdata fcpu(16'000'000);
+uint32_t modm_fastdata fcpu_kHz(16'000);
+uint16_t modm_fastdata fcpu_MHz(16);
+uint16_t modm_fastdata ns_per_loop(62);
 }
 
 // ----------------------------------------------------------------------------

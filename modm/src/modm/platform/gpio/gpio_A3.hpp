@@ -16,10 +16,7 @@
 #include "base.hpp"
 #include "set.hpp"
 
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /// @cond
@@ -83,13 +80,13 @@ public:
 	inline static void set(bool status) { PinSet::set(status); }
 	inline static void reset() { PinSet::reset(); }
 	inline static void toggle() {
-		if (isSet()) reset();
-		else         set();
+		if (isSet()) { reset(); }
+		else         { set();   }
 	}
 	inline static bool isSet() { return (GPIOA->ODR & mask); }
 	// stop documentation inherited
 	inline static void configure(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::configure(type, speed); }
-	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50)  { PinSet::setOutput(type, speed); }
+	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::setOutput(type, speed); }
 	// GpioInput
 	// start documentation inherited
 	inline static void setInput() { PinSet::setInput(); }
@@ -142,15 +139,17 @@ public:
 		}
 	}
 	inline static bool getExternalInterruptFlag() { return (EXTI->PR & mask); }
-	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR |= mask; }
+	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR = mask; }
 	// GpioIO
 	// start documentation inherited
 	inline static Direction getDirection() {
 		uint32_t mode = (GPIOA->MODER & mask2);
-		if (mode == (i(Mode::Input) << pin * 2))
+		if (mode == (i(Mode::Input) << pin * 2)) {
 			return Direction::In;
-		if (mode == (i(Mode::Output) << pin * 2))
+		}
+		if (mode == (i(Mode::Output) << pin * 2)) {
 			return Direction::Out;
+		}
 		return Direction::Special;
 	}
 	// end documentation inherited
@@ -165,12 +164,14 @@ public:
 	/// @{
 	/// Connect to any software peripheral
 	using BitBang = GpioSignal;
+	/// Connect to Ltdc
+	using B5 = GpioSignal;
 	/// Connect to Tim9
 	using Ch2 = GpioSignal;
 	/// Connect to Tim2 or Tim5
 	using Ch4 = GpioSignal;
-	/// Connect to Sai1
-	using FsA = GpioSignal;
+	/// Connect to Eth
+	using Col = GpioSignal;
 	/// Connect to Adc1 or Adc2 or Adc3
 	using In3 = GpioSignal;
 	/// Connect to Usart2
@@ -187,6 +188,12 @@ public:
 			"GpioA3::BitBang only connects to software drivers!");
 	};
 	template< Peripheral peripheral >
+	struct B5 { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Ltdc),
+			"GpioA3::B5 only connects to Ltdc!");
+	};
+	template< Peripheral peripheral >
 	struct Ch2 { static void connect();
 		static_assert(
 			(peripheral == Peripheral::Tim9),
@@ -200,10 +207,10 @@ public:
 			"GpioA3::Ch4 only connects to Tim2 or Tim5!");
 	};
 	template< Peripheral peripheral >
-	struct FsA { static void connect();
+	struct Col { static void connect();
 		static_assert(
-			(peripheral == Peripheral::Sai1),
-			"GpioA3::FsA only connects to Sai1!");
+			(peripheral == Peripheral::Eth),
+			"GpioA3::Col only connects to Eth!");
 	};
 	template< Peripheral peripheral >
 	struct In3 { static void connect();
@@ -239,6 +246,18 @@ struct GpioA3::BitBang<Peripheral::BitBang>
 	static constexpr Gpio::Signal Signal = Gpio::Signal::BitBang;
 	static constexpr int af = -1;
 	inline static void connect() {}
+};
+template<>
+struct GpioA3::B5<Peripheral::Ltdc>
+{
+	using Gpio = GpioA3;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::B5;
+	static constexpr int af = 14;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(14);
+	}
 };
 template<>
 struct GpioA3::Ch2<Peripheral::Tim9>
@@ -277,15 +296,15 @@ struct GpioA3::Ch4<Peripheral::Tim5>
 	}
 };
 template<>
-struct GpioA3::FsA<Peripheral::Sai1>
+struct GpioA3::Col<Peripheral::Eth>
 {
 	using Gpio = GpioA3;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::FsA;
-	static constexpr int af = 6;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Col;
+	static constexpr int af = 11;
 	inline static void
 	connect()
 	{
-		setAlternateFunction(6);
+		setAlternateFunction(11);
 	}
 };
 template<>
@@ -362,8 +381,6 @@ struct GpioA3::UlpiD0<Peripheral::UsbOtgHs>
 };
 /// @endcond
 
-} // namespace platform
-
-} // namespace modm
+} // namespace modm::platform
 
 #endif // MODM_STM32_GPIO_PIN_A3_HPP

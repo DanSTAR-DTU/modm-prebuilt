@@ -16,10 +16,7 @@
 #include "base.hpp"
 #include "set.hpp"
 
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /// @cond
@@ -83,13 +80,13 @@ public:
 	inline static void set(bool status) { PinSet::set(status); }
 	inline static void reset() { PinSet::reset(); }
 	inline static void toggle() {
-		if (isSet()) reset();
-		else         set();
+		if (isSet()) { reset(); }
+		else         { set();   }
 	}
 	inline static bool isSet() { return (GPIOC->ODR & mask); }
 	// stop documentation inherited
 	inline static void configure(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::configure(type, speed); }
-	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50)  { PinSet::setOutput(type, speed); }
+	inline static void setOutput(OutputType type, OutputSpeed speed = OutputSpeed::MHz50) { PinSet::setOutput(type, speed); }
 	// GpioInput
 	// start documentation inherited
 	inline static void setInput() { PinSet::setInput(); }
@@ -142,15 +139,17 @@ public:
 		}
 	}
 	inline static bool getExternalInterruptFlag() { return (EXTI->PR & mask); }
-	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR |= mask; }
+	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR = mask; }
 	// GpioIO
 	// start documentation inherited
 	inline static Direction getDirection() {
 		uint32_t mode = (GPIOC->MODER & mask2);
-		if (mode == (i(Mode::Input) << pin * 2))
+		if (mode == (i(Mode::Input) << pin * 2)) {
 			return Direction::In;
-		if (mode == (i(Mode::Output) << pin * 2))
+		}
+		if (mode == (i(Mode::Output) << pin * 2)) {
 			return Direction::Out;
+		}
 		return Direction::Special;
 	}
 	// end documentation inherited
@@ -169,8 +168,10 @@ public:
 	using In15 = GpioSignal;
 	/// Connect to Spdifrx
 	using In3 = GpioSignal;
-	/// Connect to Usart3
-	using Rx = GpioSignal;
+	/// Connect to Eth
+	using Rxd1 = GpioSignal;
+	/// Connect to Fmc
+	using Sdcke0 = GpioSignal;
 	/// @}
 #endif
 	/// @cond
@@ -194,10 +195,16 @@ public:
 			"GpioC5::In3 only connects to Spdifrx!");
 	};
 	template< Peripheral peripheral >
-	struct Rx { static void connect();
+	struct Rxd1 { static void connect();
 		static_assert(
-			(peripheral == Peripheral::Usart3),
-			"GpioC5::Rx only connects to Usart3!");
+			(peripheral == Peripheral::Eth),
+			"GpioC5::Rxd1 only connects to Eth!");
+	};
+	template< Peripheral peripheral >
+	struct Sdcke0 { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Fmc),
+			"GpioC5::Sdcke0 only connects to Fmc!");
 	};
 	/// @endcond
 private:
@@ -259,21 +266,31 @@ struct GpioC5::In3<Peripheral::Spdifrx>
 	}
 };
 template<>
-struct GpioC5::Rx<Peripheral::Usart3>
+struct GpioC5::Rxd1<Peripheral::Eth>
 {
 	using Gpio = GpioC5;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::Rx;
-	static constexpr int af = 7;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Rxd1;
+	static constexpr int af = 11;
 	inline static void
 	connect()
 	{
-		setAlternateFunction(7);
+		setAlternateFunction(11);
+	}
+};
+template<>
+struct GpioC5::Sdcke0<Peripheral::Fmc>
+{
+	using Gpio = GpioC5;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Sdcke0;
+	static constexpr int af = 12;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(12);
 	}
 };
 /// @endcond
 
-} // namespace platform
-
-} // namespace modm
+} // namespace modm::platform
 
 #endif // MODM_STM32_GPIO_PIN_C5_HPP

@@ -28,13 +28,12 @@ __modm_initialize_platform(void)
 {
 	// Enable SYSCFG
 	RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
-// Only the more powerful F4 targets have CCM or Backup SRAM
-#ifdef RCC_AHB1ENR_CCMDATARAMEN
+	// Reset from DFU settings to reset values.
+	RCC->DCKCFGR2 = 0;
 	// Enable power to backup domain
 	RCC->APB1ENR |= RCC_APB1ENR_PWREN;
 	// Enable write access to backup SRAM
-	PWR->CR |= PWR_CR_DBP;
-	// Enable Core Coupled Memory (CCM) and backup SRAM (BKPSRAM)
-	RCC->AHB1ENR |= RCC_AHB1ENR_CCMDATARAMEN | RCC_AHB1ENR_BKPSRAMEN;
-#endif
+	PWR->CR1 |= PWR_CR1_DBP;
+	// Enable Data Tighly Coupled Memory (DTCM) and backup SRAM (BKPSRAM)
+	RCC->AHB1ENR |= RCC_AHB1ENR_DTCMRAMEN | RCC_AHB1ENR_BKPSRAMEN;
 }
