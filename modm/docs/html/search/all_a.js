@@ -14,6 +14,7 @@ var searchData=
   ['hasnan',['hasNan',['../classmodm_1_1_vector_3_01_t_00_011_01_4.html#a34a3b0d84281a42666f9492774dcc4a8',1,'modm::Vector&lt; T, 1 &gt;::hasNan()'],['../classmodm_1_1_vector_3_01_t_00_012_01_4.html#ae881e8a6957a281e05c0b6a8b84e868d',1,'modm::Vector&lt; T, 2 &gt;::hasNan()'],['../classmodm_1_1_vector_3_01_t_00_013_01_4.html#a30e9a8604c429d5cfe9edaf65d61e348',1,'modm::Vector&lt; T, 3 &gt;::hasNan()'],['../classmodm_1_1_matrix.html#a9a8a6e93018e7cee81a54d6d7a6b415c',1,'modm::Matrix::hasNan()']]],
   ['hasreport',['hasReport',['../classmodm_1_1platform_1_1_fault_reporter.html#a9d370b75db16a50d28fd2a7bb4222273',1,'modm::platform::FaultReporter']]],
   ['hdmicec',['HdmiCec',['../namespacemodm_1_1platform.html#a9a75ca82fea26cd4f4948f93899d0f55ad117722e9b66f1c795edbf81cc3024b5',1,'modm::platform']]],
+  ['header',['Header',['../classmodm_1_1_nrf24_data.html#structmodm_1_1_nrf24_data_1_1_header',1,'modm::Nrf24Data']]],
   ['heap_5ftable_2ehpp',['heap_table.hpp',['../heap__table_8hpp.html',1,'']]],
   ['hex',['hex',['../classmodm_1_1_i_o_stream.html#a067f916e909f11b5c149d72a27d60b16',1,'modm::IOStream::hex()'],['../group__modm__io.html#gaf61485290089e35ac0a897af1c37d4f0',1,'modm::hex()']]],
   ['high',['High',['../structmodm_1_1_gpio.html#a17454096f07c8ae16d603ff46ad53c6a',1,'modm::Gpio::High()'],['../structmodm_1_1platform_1_1_gpio.html#ab7da9c5cdb55f0fad1955686331a5a09a655d20c1ca69519ca647684edbb2db35',1,'modm::platform::Gpio::High()']]],

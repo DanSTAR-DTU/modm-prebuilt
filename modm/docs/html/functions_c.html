@@ -208,6 +208,12 @@ $(function() {
 <li>clearAndReboot()
 : <a class="el" href="classmodm_1_1platform_1_1_fault_reporter.html#afa4aec87c07a1e87a9a9cd67cb606215">modm::platform::FaultReporter</a>
 </li>
+<li>clearBits()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#ae810ce5a50e1bfff1f38948cf92c3840">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
+</li>
+<li>clearInterrupt()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#ad749001c23f0ab9f6f9c650d2beea9fe">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
+</li>
 <li>Clk
 : <a class="el" href="classmodm_1_1platform_1_1_gpio_b2.html#adcfcdbd551ff21ef3b9b326f20882a75">modm::platform::GpioB2</a>
 </li>
@@ -223,6 +229,9 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_timer5.html#a8a661ce4f695c3f6691c2907f03a6d23">modm::platform::Timer5</a>
 , <a class="el" href="classmodm_1_1platform_1_1_timer9.html#a6fa1e281876a468aea7791944957911a">modm::platform::Timer9</a>
 </li>
+<li>ClockLower
+: <a class="el" href="classmodm_1_1_nrf24_data.html#af5f84fd69db74370c9576fe592904897">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
+</li>
 <li>ClockOutput1Source
 : <a class="el" href="classmodm_1_1platform_1_1_rcc.html#a181a9763ffacf0f3df326c82b3b1cbe4">modm::platform::Rcc</a>
 </li>
@@ -232,11 +241,20 @@ $(function() {
 <li>Cmd
 : <a class="el" href="classmodm_1_1platform_1_1_gpio_d2.html#aa6fcecb205d3541cc93f9e7eea7ccda2">modm::platform::GpioD2</a>
 </li>
+<li>Command
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a698d25698bb4833085944121984961c9">modm::Nrf24Register</a>
+</li>
+<li>Command_t
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a40e293dd42225b89f1b62f1613c98803">modm::Nrf24Register</a>
+</li>
 <li>Config
 : <a class="el" href="structmodm_1_1bme280.html#a91a7856aae86f523cc84215eed274888">modm::bme280</a>
+, <a class="el" href="classmodm_1_1_nrf24_data.html#ab9eb81fe6c01450f6d27bb1b176f6b5d">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
+, <a class="el" href="structmodm_1_1_nrf24_register.html#a105178b885e11ecd41b6abef87119092">modm::Nrf24Register</a>
 </li>
 <li>Config_t
 : <a class="el" href="structmodm_1_1bme280.html#a0f7a932685ec8f93564bfe3b03c58e27">modm::bme280</a>
+, <a class="el" href="structmodm_1_1_nrf24_register.html#a5350b3118429de45adf879588760dcff">modm::Nrf24Register</a>
 </li>
 <li>Configuration()
 : <a class="el" href="structmodm_1_1_configuration.html#a5ec48a181b69a0449fea9f4be17e43ba">modm::Configuration&lt; Parent, Enum, Mask, Position &gt;</a>
@@ -247,11 +265,11 @@ $(function() {
 </li>
 <li>configure()
 : <a class="el" href="classmodm_1_1platform_1_1_gpio_a0.html#a1cb1af28efd78ccabb9c3954f5cf2657">modm::platform::GpioA0</a>
-, <a class="el" href="classmodm_1_1platform_1_1_gpio_a10.html#aa679ad0b95f4f3927b9e5f205a619c8c">modm::platform::GpioA10</a>
+, <a class="el" href="classmodm_1_1platform_1_1_gpio_a10.html#ad7e824ff3aeca47accf85faeebf1c532">modm::platform::GpioA10</a>
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_a11.html#a30f8a4a2ea0e6a447ae31fc106082783">modm::platform::GpioA11</a>
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_a12.html#a35da0b216e02447237623ca54d3e097c">modm::platform::GpioA12</a>
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_a13.html#a17f991a8afed43f99a01f3d85cabe2ba">modm::platform::GpioA13</a>
-, <a class="el" href="classmodm_1_1platform_1_1_gpio_a14.html#ae9c9b3083bf5afab11058452d1850c5d">modm::platform::GpioA14</a>
+, <a class="el" href="classmodm_1_1platform_1_1_gpio_a14.html#af5441925848b8e7005505f3e8a63e930">modm::platform::GpioA14</a>
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_a15.html#a369d2850f4ac77afc24e0baa9c7f6bcd">modm::platform::GpioA15</a>
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_a1.html#a2594f84160704fec0561abc596799a2d">modm::platform::GpioA1</a>
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_a2.html#ab57450d9103a8002f9c9c39ecf79df69">modm::platform::GpioA2</a>
@@ -321,12 +339,12 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_timer12.html#af12cbf607c79a5f8ba44810349b74bc9">modm::platform::Timer12</a>
 , <a class="el" href="classmodm_1_1platform_1_1_timer13.html#a77cb0cb62627a48e1392034a9f213953">modm::platform::Timer13</a>
 , <a class="el" href="classmodm_1_1platform_1_1_timer14.html#ab539f0dae6a33672d9503ffa55ce2475">modm::platform::Timer14</a>
-, <a class="el" href="classmodm_1_1platform_1_1_timer1.html#a4d5b32f0109a794974009fd41ed6e2f8">modm::platform::Timer1</a>
+, <a class="el" href="classmodm_1_1platform_1_1_timer1.html#a6e36696928870d67f687edfdbabd2313">modm::platform::Timer1</a>
 , <a class="el" href="classmodm_1_1platform_1_1_timer2.html#a4254948c1a1dc1a9c5b36ec2c3ebd8c0">modm::platform::Timer2</a>
 , <a class="el" href="classmodm_1_1platform_1_1_timer3.html#aec5110eb22c3c224094566c9cb30f84a">modm::platform::Timer3</a>
 , <a class="el" href="classmodm_1_1platform_1_1_timer4.html#a54bf61643fe0370f683a5e1bed2afece">modm::platform::Timer4</a>
 , <a class="el" href="classmodm_1_1platform_1_1_timer5.html#afd96136541d4d3acc0b3298d387b101d">modm::platform::Timer5</a>
-, <a class="el" href="classmodm_1_1platform_1_1_timer8.html#af79a8af5eeb36b78b2ebc48c576193d3">modm::platform::Timer8</a>
+, <a class="el" href="classmodm_1_1platform_1_1_timer8.html#a9482d99ce4cbd56c8fa3f045665f7fda">modm::platform::Timer8</a>
 , <a class="el" href="classmodm_1_1platform_1_1_timer9.html#add36038020ad25d74e18d69c5ab2aeac">modm::platform::Timer9</a>
 </li>
 <li>configurePing()
@@ -403,13 +421,13 @@ $(function() {
 : <a class="el" href="classmodm_1_1_bounded_deque.html#ac220ce1c155db1ac44146c12d178056f">modm::BoundedDeque&lt; T, N &gt;</a>
 , <a class="el" href="classmodm_1_1_bounded_deque_1_1const__iterator.html#a322360a3705b147d3f366643bca7104a">modm::BoundedDeque&lt; T, N &gt;::const_iterator</a>
 , <a class="el" href="classmodm_1_1_doubly_linked_list.html#ac220ce1c155db1ac44146c12d178056f">modm::DoublyLinkedList&lt; T, Allocator &gt;</a>
-, <a class="el" href="classmodm_1_1_doubly_linked_list_1_1const__iterator.html#a76593c51b28f6e859a2bb687fd804c29">modm::DoublyLinkedList&lt; T, Allocator &gt;::const_iterator</a>
+, <a class="el" href="classmodm_1_1_doubly_linked_list_1_1const__iterator.html#a94771c2237af9df81a42215a57d765d9">modm::DoublyLinkedList&lt; T, Allocator &gt;::const_iterator</a>
 , <a class="el" href="classmodm_1_1_doubly_linked_list_1_1iterator.html#ac220ce1c155db1ac44146c12d178056f">modm::DoublyLinkedList&lt; T, Allocator &gt;::iterator</a>
 , <a class="el" href="classmodm_1_1_dynamic_array.html#ac220ce1c155db1ac44146c12d178056f">modm::DynamicArray&lt; T, Allocator &gt;</a>
 , <a class="el" href="classmodm_1_1_dynamic_array_1_1const__iterator.html#a42b5b4db8d108ad707e8ec2accb9b686">modm::DynamicArray&lt; T, Allocator &gt;::const_iterator</a>
 , <a class="el" href="classmodm_1_1_dynamic_array_1_1iterator.html#ac220ce1c155db1ac44146c12d178056f">modm::DynamicArray&lt; T, Allocator &gt;::iterator</a>
 , <a class="el" href="classmodm_1_1_linked_list.html#ac220ce1c155db1ac44146c12d178056f">modm::LinkedList&lt; T, Allocator &gt;</a>
-, <a class="el" href="classmodm_1_1_linked_list_1_1const__iterator.html#a25f519e7031e0e7f6850c99108fd8b13">modm::LinkedList&lt; T, Allocator &gt;::const_iterator</a>
+, <a class="el" href="classmodm_1_1_linked_list_1_1const__iterator.html#a3b27aa7b155345a963533061f0ce8a7b">modm::LinkedList&lt; T, Allocator &gt;::const_iterator</a>
 , <a class="el" href="classmodm_1_1_linked_list_1_1iterator.html#ac220ce1c155db1ac44146c12d178056f">modm::LinkedList&lt; T, Allocator &gt;::iterator</a>
 , <a class="el" href="classmodm_1_1platform_1_1_fault_reporter.html#a6c2a0da57b30cba55522baef1902f347">modm::platform::FaultReporter</a>
 , <a class="el" href="classmodm_1_1_point_set2_d.html#a749ec8f728b654f0ff0e6cb3fb72ccd1">modm::PointSet2D&lt; T &gt;</a>
@@ -422,7 +440,7 @@ $(function() {
 </li>
 <li>convert()
 : <a class="el" href="classmodm_1_1_location2_d.html#a8cceca0c307ebc9cda25c01ed2ae811f">modm::Location2D&lt; T &gt;</a>
-, <a class="el" href="classmodm_1_1_vector.html#ac4cf6d86033424786ee750d0991f4811">modm::Vector&lt; T, N &gt;</a>
+, <a class="el" href="classmodm_1_1_vector.html#af5f5bae012726dfe1c662325d061ae6d">modm::Vector&lt; T, N &gt;</a>
 , <a class="el" href="classmodm_1_1_vector_3_01_t_00_012_01_4.html#a64f182722705e332b118d6513405bcc5">modm::Vector&lt; T, 2 &gt;</a>
 </li>
 <li>coords
@@ -430,6 +448,9 @@ $(function() {
 </li>
 <li>count
 : <a class="el" href="classmodm_1_1pt_1_1_semaphore.html#ac4de7620941b9ad3b5182f62ed47bdc7">modm::pt::Semaphore</a>
+</li>
+<li>Crc
+: <a class="el" href="structmodm_1_1_nrf24_config_parameters.html#a8f5405c81db1005e621abf4d7fa91604">modm::Nrf24ConfigParameters</a>
 </li>
 <li>crc8
 : <a class="el" href="classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#a4e4fc641672f9e0ac922b0cfe128e71e">modm::platform::BitBangOneWireMaster&lt; Pin &gt;</a>
@@ -458,6 +479,9 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_b0.html#a0a1da25e77902d26018180fba7cbae88">modm::platform::GpioB0</a>
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_b13.html#a27c40f3acd1f30a751192d765508e609">modm::platform::GpioB13</a>
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_c9.html#ad74be64848a232df780d9598f11ebec1">modm::platform::GpioC9</a>
+</li>
+<li>currentMode
+: <a class="el" href="classmodm_1_1_nrf24_config.html#a2c3d52adb4de23508198983df071d259">modm::Nrf24Config&lt; Nrf24Phy &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['nestedresumable',['NestedResumable',['../classmodm_1_1_nested_resumable.html',1,'modm']]],
-  ['nestedresumable_3c_20nestinglevels_2b1_20_3e',['NestedResumable&lt; NestingLevels+1 &gt;',['../classmodm_1_1_nested_resumable.html',1,'modm']]],
-  ['node',['Node',['../classmodm_1_1_doubly_linked_list.html#structmodm_1_1_doubly_linked_list_1_1_node',1,'modm::DoublyLinkedList&lt; T, Allocator &gt;::Node'],['../classmodm_1_1_linked_list.html#structmodm_1_1_linked_list_1_1_node',1,'modm::LinkedList&lt; T, Allocator &gt;::Node']]]
+  ['makesigned_3c_20vector_3c_20t_2c_20n_20_3e_20_3e',['MakeSigned&lt; Vector&lt; T, N &gt; &gt;',['../namespacemodm_1_1detail.html#structmodm_1_1detail_1_1_make_signed_3_01_vector_3_01_t_00_01_n_01_4_01_4',1,'modm::detail']]],
+  ['makeunsigned_3c_20vector_3c_20t_2c_20n_20_3e_20_3e',['MakeUnsigned&lt; Vector&lt; T, N &gt; &gt;',['../namespacemodm_1_1detail.html#structmodm_1_1detail_1_1_make_unsigned_3_01_vector_3_01_t_00_01_n_01_4_01_4',1,'modm::detail']]],
+  ['matrix',['Matrix',['../classmodm_1_1_matrix.html',1,'modm']]],
+  ['median',['Median',['../classmodm_1_1filter_1_1_median.html',1,'modm::filter']]],
+  ['message',['Message',['../structmodm_1_1can_1_1_message.html',1,'modm::can']]],
+  ['movingaverage',['MovingAverage',['../classmodm_1_1filter_1_1_moving_average.html',1,'modm::filter']]]
 ];

@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['observe_5ftx',['OBSERVE_TX',['../structmodm_1_1_nrf24_register.html#aa9e05d835eae2c10a10d98d862714c21ad61d4adbac784aecaf31f11abe6b0de8',1,'modm::Nrf24Register']]],
+  ['observetx',['ObserveTx',['../structmodm_1_1_nrf24_register.html#a0c486521d4b2563c10ebf50adaf30eff',1,'modm::Nrf24Register']]],
+  ['observetx_5ft',['ObserveTx_t',['../structmodm_1_1_nrf24_register.html#a242d8a9da7145eb9d16b1323478d1699',1,'modm::Nrf24Register']]],
   ['octupel',['Octupel',['../structmodm_1_1bme280.html#ac9e6098549be3021a80f641487b752dca68004cf9ce5da33ee548cd06b68bb2f6',1,'modm::bme280']]],
   ['odd',['Odd',['../classmodm_1_1platform_1_1_uart_base.html#a598033b30db9a90ea5c34a7b1cdc41e1a37b6bd7fe61d651735cec3d3b0356c66',1,'modm::platform::UartBase']]],
   ['off',['Off',['../classmodm_1_1_can.html#a0914c89eaf4b5f5f8a302c7fc18b2a1ead15305d7a4e34e02489c74a5ef542f36',1,'modm::Can::Off()'],['../structmodm_1_1bme280.html#acecc1c055668a788131845d6e9a3b0a8ad15305d7a4e34e02489c74a5ef542f36',1,'modm::bme280::Off()']]],

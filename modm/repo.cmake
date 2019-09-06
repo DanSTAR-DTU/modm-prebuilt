@@ -141,8 +141,6 @@ set(LINKFLAGS_RELEASE "\
 set(LINKFLAGS_DEBUG "\
 ")
 
-
-
 SET(CMAKE_C_FLAGS "${ARCHFLAGS} ${CCFLAGS} ${CFLAGS}" CACHE INTERNAL "c compiler flags")
 SET(CMAKE_C_FLAGS_RELEASE   "${CCFLAGS_RELEASE}"      CACHE INTERNAL "c compiler flags release")
 SET(CMAKE_C_FLAGS_DEBUG     "${CCFLAGS_DEBUG}"        CACHE INTERNAL "c compiler flags debug")

@@ -40,6 +40,7 @@ var searchData=
   ['modm_2ddebug_2edox',['modm-debug.dox',['../modm-debug_8dox.html',1,'']]],
   ['modm_2ddocs_2edox',['modm-docs.dox',['../modm-docs_8dox.html',1,'']]],
   ['modm_2ddriver_2dbme280_2edox',['modm-driver-bme280.dox',['../modm-driver-bme280_8dox.html',1,'']]],
+  ['modm_2ddriver_2dnrf24_2edox',['modm-driver-nrf24.dox',['../modm-driver-nrf24_8dox.html',1,'']]],
   ['modm_2ddriver_2edox',['modm-driver.dox',['../modm-driver_8dox.html',1,'']]],
   ['modm_2dio_2edox',['modm-io.dox',['../modm-io_8dox.html',1,'']]],
   ['modm_2dmath_2dfilter_2edox',['modm-math-filter.dox',['../modm-math-filter_8dox.html',1,'']]],

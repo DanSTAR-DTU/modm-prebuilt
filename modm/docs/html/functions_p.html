@@ -117,12 +117,18 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_timer8.html#ac7c104082792ddb2f4adc65ae7673a36">modm::platform::Timer8</a>
 , <a class="el" href="classmodm_1_1platform_1_1_timer9.html#ac6967a01dc994723ebe773530c3425c5">modm::platform::Timer9</a>
 </li>
+<li>payload
+: <a class="el" href="classmodm_1_1_nrf24_data_1_1_packet.html#a3bdfbb9486724abf8e1b7af7415dd510">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;::Packet</a>
+</li>
 <li>performSearch()
 : <a class="el" href="classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#a249e4869f719ea1b813ab98f69be8f96">modm::platform::BitBangOneWireMaster&lt; Pin &gt;</a>
 </li>
 <li>perpendicular()
 : <a class="el" href="classmodm_1_1_angle.html#a941012886789d60779433358aa94202e">modm::Angle</a>
 , <a class="el" href="classmodm_1_1_vector_3_01_t_00_012_01_4.html#a0e15fcc37f1146b780aa70914d8c4e40">modm::Vector&lt; T, 2 &gt;</a>
+</li>
+<li>Phy
+: <a class="el" href="classmodm_1_1_nrf24_data.html#ac1c59f577d5096fdc262e5b73b707bae">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
 </li>
 <li>Pid
 : <a class="el" href="structmodm_1_1_pid_1_1_parameter.html#aa245417dc2cd8c1415aadfb01d675ce7">modm::Pid&lt; T, ScaleFactor &gt;::Parameter</a>
@@ -186,6 +192,12 @@ $(function() {
 </li>
 <li>PinState
 : <a class="el" href="classmodm_1_1platform_1_1_general_purpose_timer.html#ae01229bf3de06e608d019847c4d8aa88">modm::platform::GeneralPurposeTimer</a>
+</li>
+<li>Pipe
+: <a class="el" href="structmodm_1_1_nrf24_register.html#ac911a28fee2027d95498bb3499fecf7e">modm::Nrf24Register</a>
+</li>
+<li>Pipe_t
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a0797d170b6d1bc80106d8b6c72d951e8">modm::Nrf24Register</a>
 </li>
 <li>Pixclk
 : <a class="el" href="classmodm_1_1platform_1_1_gpio_a6.html#a79b0cd6511a140ec1ab32ed80620d78d">modm::platform::GpioA6</a>
@@ -327,8 +339,14 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_port.html#a962ee81d078f1c2128ee199528c29469">modm::platform::GpioPort&lt; StartGpio, Width &gt;</a>
 , <a class="el" href="classmodm_1_1platform_1_1_software_gpio_port.html#abf53f4aa9e9ef8be5e74d8b378b10fe8">modm::platform::SoftwareGpioPort&lt; Gpios &gt;</a>
 </li>
+<li>powerDown()
+: <a class="el" href="classmodm_1_1_nrf24_config.html#a31467c607626f722bbc439b0c8e95b93">modm::Nrf24Config&lt; Nrf24Phy &gt;</a>
+</li>
+<li>powerUp()
+: <a class="el" href="classmodm_1_1_nrf24_config.html#a51dbe27c31610d12b25509949466deb5">modm::Nrf24Config&lt; Nrf24Phy &gt;</a>
+</li>
 <li>Prefix()
-: <a class="el" href="classmodm_1_1log_1_1_prefix.html#a894f3883b872398ab84a7bebc34ab477">modm::log::Prefix&lt; T, STYLE &gt;</a>
+: <a class="el" href="classmodm_1_1log_1_1_prefix.html#aea82e9143c53a4310055eb5fcfa7edbf">modm::log::Prefix&lt; T, STYLE &gt;</a>
 </li>
 <li>prepend()
 : <a class="el" href="classmodm_1_1_bounded_deque.html#a21ee74c264d6a90cb16f96e4b2fc2eea">modm::BoundedDeque&lt; T, N &gt;</a>
@@ -360,7 +378,7 @@ $(function() {
 : <a class="el" href="classmodm_1_1pt_1_1_protothread.html#a3afd7216c6ef2282086a8d8c76a1dce6">modm::pt::Protothread</a>
 </li>
 <li>ptr()
-: <a class="el" href="classmodm_1_1_matrix.html#a1a3255fab8365f931c19b10a3c223539">modm::Matrix&lt; T, ROWS, COLUMNS &gt;</a>
+: <a class="el" href="classmodm_1_1_matrix.html#a5b485650dc61a6c9c431e373cc674d2a">modm::Matrix&lt; T, ROWS, COLUMNS &gt;</a>
 , <a class="el" href="classmodm_1_1_quaternion.html#abaecaa08a638a354ff78278518eb2aa0">modm::Quaternion&lt; T &gt;</a>
 , <a class="el" href="classmodm_1_1_smart_pointer.html#a9ea9a34e7ec959e5425f65cb82373d3d">modm::SmartPointer</a>
 , <a class="el" href="classmodm_1_1_vector.html#ab0cdc75a8ab1438b74b0d6336fdfccda">modm::Vector&lt; T, N &gt;</a>
@@ -371,6 +389,9 @@ $(function() {
 </li>
 <li>PullUps
 : <a class="el" href="classmodm_1_1_i2c_master.html#a51438a8241ababe94f9ca4b69b75d91c">modm::I2cMaster</a>
+</li>
+<li>pulseCe()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#abf727982dc74ceeafb5ad931eaf97365">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
 </li>
 <li>push()
 : <a class="el" href="classmodm_1_1atomic_1_1_queue.html#a01a5a6a23d1f1823bfd85dd860e67dd5">modm::atomic::Queue&lt; T, N &gt;</a>

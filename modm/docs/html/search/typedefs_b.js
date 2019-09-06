@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['observetx_5ft',['ObserveTx_t',['../structmodm_1_1_nrf24_register.html#a242d8a9da7145eb9d16b1323478d1699',1,'modm::Nrf24Register']]],
   ['osc32in',['Osc32In',['../classmodm_1_1platform_1_1_gpio_c14.html#ae63d3a0a3e39c2b2585524d7f1331bac',1,'modm::platform::GpioC14']]],
   ['osc32out',['Osc32Out',['../classmodm_1_1platform_1_1_gpio_c15.html#a728506ed23da53526dc875906ee5c5be',1,'modm::platform::GpioC15']]],
   ['oscin',['OscIn',['../classmodm_1_1platform_1_1_gpio_h0.html#a8bb2b068e802d975d7f42504af004205',1,'modm::platform::GpioH0']]],
