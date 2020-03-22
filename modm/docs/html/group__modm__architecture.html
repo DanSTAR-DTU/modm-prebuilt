@@ -236,6 +236,8 @@ Macros</h2></td></tr>
 <tr class="separator:gaf681f52986da306fed40f10fdcba058c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1f31943d7806c1bd0a4ccb49399a4a81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__modm__architecture.html#ga1f31943d7806c1bd0a4ccb49399a4a81">modm_section</a>(s)</td></tr>
 <tr class="separator:ga1f31943d7806c1bd0a4ccb49399a4a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae2d4498ab12250afc87ab845a71e541"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__modm__architecture.html#gaae2d4498ab12250afc87ab845a71e541">modm_deprecated</a>(msg)</td></tr>
+<tr class="separator:gaae2d4498ab12250afc87ab845a71e541"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga29d68073e57585b3bfb6b76e4cba0352"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__modm__architecture.html#ga29d68073e57585b3bfb6b76e4cba0352">modm_fastcode</a></td></tr>
 <tr class="separator:ga29d68073e57585b3bfb6b76e4cba0352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1fc08f57913d51e62a02cf38b47a2f86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__modm__architecture.html#ga1fc08f57913d51e62a02cf38b47a2f86">modm_fastdata</a></td></tr>
@@ -244,6 +246,8 @@ Macros</h2></td></tr>
 <tr class="separator:gaf961caee1842fbe64050996e64876b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbf02fcf7ad05611ac1abee8773f0c92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__modm__architecture.html#gafbf02fcf7ad05611ac1abee8773f0c92">modm_unlikely</a>(x)&#160;&#160;&#160;(x)</td></tr>
 <tr class="separator:gafbf02fcf7ad05611ac1abee8773f0c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ae7d02367a3f6bcdf960ae4eea979e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__modm__architecture.html#ga4ae7d02367a3f6bcdf960ae4eea979e9">modm_fallthrough</a></td></tr>
+<tr class="separator:ga4ae7d02367a3f6bcdf960ae4eea979e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>All hardware peripherals with common interfaces. </p>
@@ -671,6 +675,42 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>CPU description </p>
+
+</div>
+</div>
+<a id="gaae2d4498ab12250afc87ab845a71e541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae2d4498ab12250afc87ab845a71e541">&#9670;&nbsp;</a></span>modm_deprecated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define modm_deprecated</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Marks a declaration as deprecated and displays a message. </p>
+
+</div>
+</div>
+<a id="ga4ae7d02367a3f6bcdf960ae4eea979e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ae7d02367a3f6bcdf960ae4eea979e9">&#9670;&nbsp;</a></span>modm_fallthrough</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define modm_fallthrough</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mark a case statement as fallthrough. </p>
 
 </div>
 </div>

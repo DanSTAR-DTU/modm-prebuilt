@@ -67,25 +67,28 @@ $(function() {
 <p>modm (pronounced like dial-up "modem") is a toolbox for building custom C++17 libraries tailored to your embedded device. modm generates startup code, HALs and their implementations, communication protocols, drivers for external devices, BSPs, etc… in a modular, customizable process that you can fine-tune to your needs.</p>
 <ul>
 <li><a href="http://modm.io">This project has a homepage</a>.</li>
-<li>Check out our <a href="http://modm.io/guide/installation">install instructions</a> and our <a href="http://modm.io/guide/getting-started">getting started guide</a>.</li>
+<li>Check out our <a href="https://modm.io/guide/installation">install instructions</a> and our <a href="https://modm.io/guide/getting-started">getting started guide</a>.</li>
 <li>Feast your eyes on <a href="https://github.com/modm-io/modm/tree/develop/examples">lots of working examples</a>.</li>
-<li>Our CI checks every contribution for regressions: <a href="https://circleci.com/gh/modm-io/workflows/modm/tree/develop" style="border-bottom:none"></a></li>
-<li>We care <a href="http://modm.io/guide/testing">about testing modm</a>.</li>
+<li>Our CI checks every contribution for regressions: <div class="image">
+<img src="https://circleci.com/gh/modm-io/modm/tree/develop.svg?style=shield" alt="Build Status"/>
+</div>
+</li>
+<li>We care <a href="https://modm.io/guide/testing">about testing modm</a>.</li>
 </ul>
-<p>This project also has a <a href="http://blog.salkinium.com">technical blog</a> to document larger design concepts.</p>
+<p>This project also has a <a href="https://blog.salkinium.com">technical blog</a> to document larger design concepts.</p>
 <ul>
 <li>You found a bug? <a href="https://github.com/modm-io/modm/issues">Open up an issue, we don't bite</a>.</li>
 <li>You want to contribute? https://github.com/modm-io/modm/tree/develop/CONTRIBUTING.md "Read the contribution guidelines" and <a href="https://github.com/modm-io/modm/pulls">open a pull request</a>.</li>
 </ul>
 <p>modm is optimized for the harsh requirements of the <a href="http://www.eurobot.org/">Eurobot competition</a>, where our robots need to run reliably and completely autonomously for the game's 100 second duration. Our robots contain a lot of different microcontrollers, some without a lot of resources, so modm needs to fulfill a diverse set of objectives, like small code size with small memory consumption, predictable program flow, extreme portability.</p>
-<p>The source code is freely available under the MPLv2 license, so feel free to fork this project and adapt it to your needs. The only thing we ask of you is to contribute your changes back so everyone benefits.</p>
-<p>Please clone modm recursively, you will need all the submodules.</p>
+<p>The library source code is licensed as MPLv2 with any external source code under compatible licenses (BSD, Apache2, MIT). So feel free to fork this project and adapt it to your needs. The only thing we ask of you is to contribute your changes back so everyone can benefit.</p>
+<p>Please clone modm recursively, you need all the submodules:</p>
 <div class="fragment"><div class="line">git clone --recurse-submodules https://github.com/modm-io/modm.git</div></div><!-- fragment --><h2>Features</h2>
 <ul>
 <li>Efficient and fast object-oriented C++17 API.</li>
 <li>Support for hundreds of AVR and ARM Cortex-M microcontrollers from Atmel and ST.</li>
-<li>Build system agnostic: We use SCons by default, but you don't have to.</li>
-<li>Data-driven HAL generation using the library-builder engine.</li>
+<li>Build system agnostic: Choose SCons, CMake or use your own.</li>
+<li>Data-driven, target-specific HAL generation using the lbuild engine.</li>
 <li>No memory allocations in HAL with very low overall RAM consumption.</li>
 <li>Highly-configurable modules with sensible defaults and lots of documentation.</li>
 <li>Cross platform peripheral interfaces incl. bit banging:<ul>
@@ -95,15 +98,16 @@ $(function() {
 </ul>
 </li>
 <li>Interfaces and drivers for many external I<sup>2</sup>C and SPI sensors and devices.</li>
-<li>Debug/logging system with IOStream interface.</li>
+<li>Debug/logging system with IOStream and printf interface.</li>
 <li>Lightweight, stackless threads and resumable functions using cooperative multitasking.</li>
+<li>Functional (partial) libstdc++ implementation for AVRs.</li>
+<li>Integration of useful third-party software: FreeRTOS, ROSserial, CMSIS-DSP.</li>
 <li>Useful filter, interpolation and geometric algorithms.</li>
 <li>Lightweight unit testing system (suitable for AVRs).</li>
-<li>Graphical user interface for small binary and color displays.</li>
 <li>Hundreds of tests to ensure correct functionality.</li>
 </ul>
 <h2>Targets</h2>
-<p>modm can generate code for 76AVR and 917 STM32 devices, however, there are different levels of support and testing.</p>
+<p>modm can generate code for 78AVR and 958 STM32 devices, however, there are different levels of support and testing.</p>
 <center></center><center><table class="doxtable">
 <tr>
 <th align="left">Device Family </th><th align="left">Support </th><th align="left">Device Family </th><th align="left">Support </th><th align="left">Device Family </th><th align="left">Support  </th></tr>
@@ -130,37 +134,39 @@ $(function() {
 <tr>
 <td align="center">NUCLEO-F042K6 </td><td align="center">NUCLEO-F103RB </td><td align="center">NUCLEO-F303K8 </td><td align="center">NUCLEO-F401RE </td></tr>
 <tr>
-<td align="center">NUCLEO-F411RE </td><td align="center">NUCLEO-F429ZI </td><td align="center">NUCLEO-G071RB </td><td align="center">NUCLEO-L432KC </td></tr>
+<td align="center">NUCLEO-F411RE </td><td align="center">NUCLEO-F429ZI </td><td align="center">NUCLEO-F446RE </td><td align="center">NUCLEO-G071RB </td></tr>
 <tr>
-<td align="center">NUCLEO-L476RG </td><td align="center">OLIMEXINO-STM32 </td><td align="center">STM32F030F4P6-DEMO  </td></tr>
+<td align="center">NUCLEO-L432KC </td><td align="center">NUCLEO-L476RG </td><td align="center">OLIMEXINO-STM32 </td><td align="center">STM32F030F4P6-DEMO </td></tr>
+<tr>
+</tr>
 </table>
-</center><center></center><h3>Drivers</h3>
+</center><center> </center><center></center><center></center><h3>Drivers</h3>
 <p>We also have a number of completely target-independent <a href="https://github.com/modm-io/modm/tree/develop/src/modm/driver">drivers for external devices</a> connected via I<sup>2</sup>C, SPI, UART, BitBang, etc. Most of these also give you access to the entire device so you can easily configure them for you specific needs.</p>
 <center></center><center><table class="doxtable">
 <tr>
 <td align="center">AD7280A </td><td align="center">AD7928 </td><td align="center">ADNS9800 </td><td align="center">ADS7843 </td><td align="center">AMS5915 </td><td align="center">SPI-FLASH </td></tr>
 <tr>
-<td align="center">BME280 </td><td align="center">BMP085 </td><td align="center">DRV832X </td><td align="center">DS1302 </td><td align="center">DS1631 </td><td align="center">DS18B20 </td></tr>
+<td align="center">BME280 </td><td align="center">BMP085 </td><td align="center">BNO055 </td><td align="center">DRV832X </td><td align="center">DS1302 </td><td align="center">DS1631 </td></tr>
 <tr>
-<td align="center">EA-DOG </td><td align="center">FT245 </td><td align="center">FT6X06 </td><td align="center">HCLAx </td><td align="center">HD44780 </td><td align="center">HMC58x </td></tr>
+<td align="center">DS18B20 </td><td align="center">EA-DOG </td><td align="center">FT245 </td><td align="center">FT6X06 </td><td align="center">HCLAx </td><td align="center">HD44780 </td></tr>
 <tr>
-<td align="center">HMC6343 </td><td align="center">I2C-EEPROM </td><td align="center">ITG3200 </td><td align="center">L3GD20 </td><td align="center">LAWICEL </td><td align="center">LIS302DL </td></tr>
+<td align="center">HMC58x </td><td align="center">HMC6343 </td><td align="center">I2C-EEPROM </td><td align="center">ITG3200 </td><td align="center">L3GD20 </td><td align="center">LAWICEL </td></tr>
 <tr>
-<td align="center">LIS3DSH </td><td align="center">LM75 </td><td align="center">LSM303A </td><td align="center">LTC2984 </td><td align="center">MAX6966 </td><td align="center">MAX7219 </td></tr>
+<td align="center">LIS302DL </td><td align="center">LIS3DSH </td><td align="center">LM75 </td><td align="center">LSM303A </td><td align="center">LTC2984 </td><td align="center">MAX6966 </td></tr>
 <tr>
-<td align="center">MCP23X17 </td><td align="center">MCP2515 </td><td align="center">NOKIA5110 </td><td align="center">NRF24 </td><td align="center">TFT-DISPLAY </td><td align="center">PAT9125EL </td></tr>
+<td align="center">MAX7219 </td><td align="center">MCP23X17 </td><td align="center">MCP2515 </td><td align="center">NOKIA5110 </td><td align="center">NRF24 </td><td align="center">TFT-DISPLAY </td></tr>
 <tr>
-<td align="center">PCA8574 </td><td align="center">PCA9535 </td><td align="center">PCA9548A </td><td align="center">PCA9685 </td><td align="center">SIEMENS-S65 </td><td align="center">SIEMENS-S75 </td></tr>
+<td align="center">PAT9125EL </td><td align="center">PCA8574 </td><td align="center">PCA9535 </td><td align="center">PCA9548A </td><td align="center">PCA9685 </td><td align="center">SIEMENS-S65 </td></tr>
 <tr>
-<td align="center">SSD1306 </td><td align="center">TCS3414 </td><td align="center">TCS3472 </td><td align="center">TMP102 </td><td align="center">TMP175 </td><td align="center">VL53L0 </td></tr>
+<td align="center">SIEMENS-S75 </td><td align="center">SSD1306 </td><td align="center">TCS3414 </td><td align="center">TCS3472 </td><td align="center">TLC594X </td><td align="center">TMP102 </td></tr>
 <tr>
-<td align="center">VL6180 </td><td align="center">WS2812  </td></tr>
+<td align="center">TMP175 </td><td align="center">VL53L0 </td><td align="center">VL6180 </td><td align="center">WS2812  </td></tr>
 </table>
 </center><center></center><p>Please see <a href="https://github.com/modm-io/modm/tree/develop/examples">our examples for a complete list</a> of tested targets and drivers.</p>
 <h2>How can I contribute?</h2>
 <p>The easiest way for you and the best way for us to see if something is unclear or missing, is if you use the library and give us some feedback by <a href="https://github.com/modm-io/modm/issues">filing a bug report</a> or if you have a fix already, <a href="https://github.com/modm-io/modm/pulls">opening a pull request</a>.</p>
 <p>See https://github.com/modm-io/modm/tree/develop/CONTRIBUTING.md "CONTRIBUTING.md" for our contribution guidelines.</p>
-<p>The modm project is maintained by Niklas Hauser (<a href="https://github.com/salkinium">@salkinium</a>) with significant contributions from Sascha Schade (<a href="https://github.com/strongly-typed">@strongly-typed</a>), Fabian Greif (<a href="https://github.com/dergraaf">@dergraaf</a>), Kevin Läufer (<a href="https://github.com/ekiwi">@ekiwi</a>), Martin Rosekeit (<a href="https://github.com/thundernail">@thundernail</a>), Daniel Krebs (<a href="https://github.com/daniel-k">@daniel-k</a>), Georgi Grinshpun (<a href="https://github.com/georgi-g">@georgi-g</a>) and <a href="https://github.com/modm-io/modm/blob/develop/AUTHORS">20more contributors</a>.</p>
+<p>The modm project is maintained by Niklas Hauser (<a href="https://github.com/salkinium">@salkinium</a>) with significant contributions from Sascha Schade (<a href="https://github.com/strongly-typed">@strongly-typed</a>), Fabian Greif (<a href="https://github.com/dergraaf">@dergraaf</a>), Kevin Läufer (<a href="https://github.com/ekiwi">@ekiwi</a>), Martin Rosekeit (<a href="https://github.com/thundernail">@thundernail</a>), Daniel Krebs (<a href="https://github.com/daniel-k">@daniel-k</a>), Georgi Grinshpun (<a href="https://github.com/georgi-g">@georgi-g</a>) and 33more contributors.</p>
 <h2>Folder structure</h2>
 <dl>
 <dt>examples </dt>

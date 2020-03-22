@@ -187,6 +187,9 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_adc2.html#afee233f1d28e1cae7caf313c2550139a">modm::platform::Adc2</a>
 , <a class="el" href="classmodm_1_1platform_1_1_adc3.html#a9bb686ede772f521874fa330d8879920">modm::platform::Adc3</a>
 </li>
+<li>readFifoStatus()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#a25f9eb40407f550e0fa709b1816b50b7">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
+</li>
 <li>reading()
 : <a class="el" href="classmodm_1_1_i2c_read_transaction.html#a3202f5cd99ab21e729e20ab387599f7a">modm::I2cReadTransaction</a>
 , <a class="el" href="classmodm_1_1_i2c_transaction.html#ac013d2f70ccc9fd8bbfdc87b842aabb0">modm::I2cTransaction</a>
@@ -207,8 +210,20 @@ $(function() {
 <li>readPort()
 : <a class="el" href="classmodm_1_1_gpio_expander.html#afaf1513fe1b5e8551bfb30a12e3abd92">modm::GpioExpander</a>
 </li>
+<li>readRegister()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#a293a6520495eacda861a1f9daf8e8c7e">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
+</li>
+<li>readRxPayload()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#ac01aeec0d8ad8ed0b64982ee5b2f296c">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
+</li>
+<li>readRxPayloadWidth()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#acdde5e5bc5c76cfa8e664cfffc068f2e">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
+</li>
 <li>readSize
 : <a class="el" href="classmodm_1_1_i2c_write_read_transaction.html#ae1feec08dbb7ec9a1efa9a435717f86a">modm::I2cWriteReadTransaction</a>
+</li>
+<li>readStatus()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#a8fe6f5c3899f9c127c6e4e46d502b669">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
 </li>
 <li>RealTimeClockSource
 : <a class="el" href="classmodm_1_1platform_1_1_rcc.html#a062a9d37170c85c68c499d3f18d419cc">modm::platform::Rcc</a>
@@ -352,6 +367,9 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_i2c_master3.html#a427fd19f4ed97217cbfda41d322bb82e">modm::platform::I2cMaster3</a>
 , <a class="el" href="structmodm_1_1_value.html#a730f548166221c1a94f2216c0ab17f5f">modm::Value&lt; Parent, Width, Position &gt;</a>
 </li>
+<li>resetCe()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#aee323307b3e9f2d4b41ed0e9236766b7">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
+</li>
 <li>resetDevices()
 : <a class="el" href="structmodm_1_1_i2c.html#a1855002ad6a0992e32db4f3ebf0432da">modm::I2c</a>
 </li>
@@ -359,7 +377,7 @@ $(function() {
 : <a class="el" href="classmodm_1_1_i2c_master.html#a141efec8e032cdcd5c9766fbf0f1ddcb">modm::I2cMaster</a>
 </li>
 <li>resetSearch()
-: <a class="el" href="classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#a6e97882daa20fdb2b1843a0685a5a27e">modm::platform::BitBangOneWireMaster&lt; Pin &gt;</a>
+: <a class="el" href="classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#a751fbc830ab24ffe1f7f13638ff11392">modm::platform::BitBangOneWireMaster&lt; Pin &gt;</a>
 </li>
 <li>Resolution
 : <a class="el" href="classmodm_1_1_adc.html#accb65726d97868bd953b204e6807a3f9">modm::Adc</a>
@@ -368,7 +386,7 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_adc3.html#acaff7eb6323ae780ba39680e75923b0f">modm::platform::Adc3</a>
 </li>
 <li>restart()
-: <a class="el" href="classmodm_1_1_generic_periodic_timer.html#abb7d39c361e242662cb1f47272a6fced">modm::GenericPeriodicTimer&lt; Clock, TimestampType &gt;</a>
+: <a class="el" href="classmodm_1_1_generic_periodic_timer.html#aa2410a4eb1e1d96371604e7aef8f4b89">modm::GenericPeriodicTimer&lt; Clock, TimestampType &gt;</a>
 , <a class="el" href="classmodm_1_1_generic_timeout.html#a62a42cb1767af5dae3bbb07e2948a602">modm::GenericTimeout&lt; Clock, TimestampType &gt;</a>
 , <a class="el" href="classmodm_1_1pt_1_1_protothread.html#a8f975cb523dd09a8199491b3f1081e74">modm::pt::Protothread</a>
 </li>
@@ -378,8 +396,26 @@ $(function() {
 <li>ResumableResult()
 : <a class="el" href="structmodm_1_1_resumable_result.html#a1f78ca60d3af320a37a84b0ab779943c">modm::ResumableResult&lt; T &gt;</a>
 </li>
+<li>reuseTxPayload()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#a97f24072644de4a8c0f8b9566dde874f">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
+</li>
 <li>reverse()
 : <a class="el" href="classmodm_1_1_angle.html#a12e4bbe9cb8fa255ec77c821f582f672">modm::Angle</a>
+</li>
+<li>RfCh
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a42b9dd13e8e28fa6d3b6a4951c7103f6">modm::Nrf24Register</a>
+</li>
+<li>RfCh_t
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a1a0f47f720b7b140f96e08b90c44ff17">modm::Nrf24Register</a>
+</li>
+<li>RfPower
+: <a class="el" href="structmodm_1_1_nrf24_config_parameters.html#acf807149755830cc779f78c5a04a6c6c">modm::Nrf24ConfigParameters</a>
+</li>
+<li>RfSetup
+: <a class="el" href="structmodm_1_1_nrf24_register.html#ad8559c755a36b2191a9b929b775aa441">modm::Nrf24Register</a>
+</li>
+<li>RfSetup_t
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a24c88d0712b86a5e538a73da6fc92d43">modm::Nrf24Register</a>
 </li>
 <li>rget()
 : <a class="el" href="classmodm_1_1_bounded_deque.html#a8d64f1ff0f2f7ba59ef16e5f7a2d8a63">modm::BoundedDeque&lt; T, N &gt;</a>
@@ -398,6 +434,12 @@ $(function() {
 , <a class="el" href="structmodm_1_1_geometric_traits_3_01int32__t_01_4.html#ac4794c25ab6879a757fd641c27c869c6">modm::GeometricTraits&lt; int32_t &gt;</a>
 , <a class="el" href="structmodm_1_1_geometric_traits_3_01int8__t_01_4.html#a88a217182e50e3cf00b8704e76014c54">modm::GeometricTraits&lt; int8_t &gt;</a>
 , <a class="el" href="structmodm_1_1_geometric_traits_3_01uint8__t_01_4.html#a041e5da4a5b7361ccff22c96dd136bd7">modm::GeometricTraits&lt; uint8_t &gt;</a>
+</li>
+<li>Rpd
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a3715a52ee04982301567b7abc6f82314">modm::Nrf24Register</a>
+</li>
+<li>Rpd_t
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a8ae9ca83c273b309f2a12a4094129833">modm::Nrf24Register</a>
 </li>
 <li>rtr
 : <a class="el" href="structmodm_1_1can_1_1_message_1_1_flags.html#ad131e0760adb4747fd7581d86270994d">modm::can::Message::Flags</a>
@@ -446,6 +488,42 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_usart3.html#a77a4d245d50c156ffd3bb7a7012ac08e">modm::platform::Usart3</a>
 , <a class="el" href="classmodm_1_1platform_1_1_usart6.html#adffce33b69d812c9b499a6fdb01bf973">modm::platform::Usart6</a>
 , <a class="el" href="classmodm_1_1_uart.html#a97fdbe2c458756585be8e960facc69cc">modm::Uart</a>
+</li>
+<li>RxPwP0
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a267925e75667e188ab083acd4427beb2">modm::Nrf24Register</a>
+</li>
+<li>RxPwP0_t
+: <a class="el" href="structmodm_1_1_nrf24_register.html#af1e5dba8c8e44f02cb26e653b377547b">modm::Nrf24Register</a>
+</li>
+<li>RxPwP1
+: <a class="el" href="structmodm_1_1_nrf24_register.html#aeeac5cb72956c6609e721a81fc39863a">modm::Nrf24Register</a>
+</li>
+<li>RxPwP1_t
+: <a class="el" href="structmodm_1_1_nrf24_register.html#af302947c12a03ba8d441803c5c569c7e">modm::Nrf24Register</a>
+</li>
+<li>RxPwP2
+: <a class="el" href="structmodm_1_1_nrf24_register.html#afbbfcfdc43ed95592171de80bd5c4239">modm::Nrf24Register</a>
+</li>
+<li>RxPwP2_t
+: <a class="el" href="structmodm_1_1_nrf24_register.html#aee4d1232891c1ef24427028e0b0beec0">modm::Nrf24Register</a>
+</li>
+<li>RxPwP3
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a012e79c261b0c26d0b4123d1a16cac35">modm::Nrf24Register</a>
+</li>
+<li>RxPwP3_t
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a552a7298c800996ddc64bc5dc4e524d9">modm::Nrf24Register</a>
+</li>
+<li>RxPwP4
+: <a class="el" href="structmodm_1_1_nrf24_register.html#aed0aee983c396c828d324a02f630c654">modm::Nrf24Register</a>
+</li>
+<li>RxPwP4_t
+: <a class="el" href="structmodm_1_1_nrf24_register.html#ad7e0d669dfd6818d3133efcff88428c4">modm::Nrf24Register</a>
+</li>
+<li>RxPwP5
+: <a class="el" href="structmodm_1_1_nrf24_register.html#ab62230ac7022c371793cbee990a6e4f1">modm::Nrf24Register</a>
+</li>
+<li>RxPwP5_t
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a8b71d3aae8ed3119569a87bcc8cc368a">modm::Nrf24Register</a>
 </li>
 </ul>
 </div><!-- contents -->

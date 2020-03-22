@@ -141,4 +141,28 @@ modm::IOStream stream(device);
 stream << " World!";
 ~~~
 
+
+## Module Options
+
+### modm:io:with_long_long: Support for 64-bit integer formatting
+
+
+
+Generated with: `True in [True, False]`
+### modm:io:with_float: Support for floating point formatting
+
+On AVRs floating point values can be printed, however, the formatting cannot be
+specified and all values are printed as *scientific-notation exponential floating point*
+
+Generated with: `True in [True, False]`
+### modm:io:with_ptrdiff: Support for pointer difference formatting
+
+
+
+Generated with: `True in [True, False]`
+### modm:io:with_printf: Support for printf-style formatting
+
+
+
+Generated with: `True in [True, False]`
  */

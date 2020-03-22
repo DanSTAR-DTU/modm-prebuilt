@@ -12,7 +12,14 @@
 // ----------------------------------------------------------------------------
 
 #include "adc_interrupt_3.hpp"
-
+#include <modm/architecture/interface/interrupt.hpp>
 // ----------------------------------------------------------------------------
 modm::platform::AdcInterrupt3::Handler
 modm::platform::AdcInterrupt3::handler(modm::dummy);
+
+MODM_ISR(ADC3)
+{
+    if (modm::platform::AdcInterrupt3::getInterruptFlags()) {
+        modm::platform::AdcInterrupt3::handler();
+    }
+}

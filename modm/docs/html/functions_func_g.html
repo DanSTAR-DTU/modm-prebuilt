@@ -81,9 +81,15 @@ $(function() {
 , <a class="el" href="structmodm_1_1_configuration.html#ac29740c6f4c3adf62b7fdacdea673331">modm::Configuration&lt; Parent, Enum, Mask, Position &gt;</a>
 , <a class="el" href="classmodm_1_1_i_o_stream.html#aa0e3a3af8ec3a8d8d3f62e94845f319b">modm::IOStream</a>
 , <a class="el" href="classmodm_1_1_queue.html#a8830dfcadcc51f4a886bc31287bf8cbd">modm::Queue&lt; T, Container &gt;</a>
-, <a class="el" href="classmodm_1_1_smart_pointer.html#a5b5031693f73cb0902b312f4363fac67">modm::SmartPointer</a>
+, <a class="el" href="classmodm_1_1_smart_pointer.html#ae2f93b6afe967b1ab6bf255b072d6aec">modm::SmartPointer</a>
 , <a class="el" href="classmodm_1_1_stack.html#af0ed90ffbe21423970d61e9e53376a12">modm::Stack&lt; T, Container &gt;</a>
 , <a class="el" href="structmodm_1_1_value.html#a275d3ad40cb2e49643ac8e2ef210877f">modm::Value&lt; Parent, Width, Position &gt;</a>
+</li>
+<li>getAddress()
+: <a class="el" href="classmodm_1_1_nrf24_data.html#ad71ba3093f39ceb647ac9c1d063e5d9f">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
+</li>
+<li>getAddressWidth()
+: <a class="el" href="classmodm_1_1_nrf24_config.html#ad84de25119e22422822d2884b9cb5f37">modm::Nrf24Config&lt; Nrf24Phy &gt;</a>
 </li>
 <li>getAngle()
 : <a class="el" href="classmodm_1_1_vector_3_01_t_00_012_01_4.html#aa052d26cbc46253ead8b4b566f30d8e4">modm::Vector&lt; T, 2 &gt;</a>
@@ -98,7 +104,10 @@ $(function() {
 : <a class="el" href="classmodm_1_1_bounded_deque.html#a0986d7ea4ff7c83f953f81399160573f">modm::BoundedDeque&lt; T, N &gt;</a>
 , <a class="el" href="classmodm_1_1_doubly_linked_list.html#ad089b59dbe1f4db02bf38f013fe40324">modm::DoublyLinkedList&lt; T, Allocator &gt;</a>
 , <a class="el" href="classmodm_1_1_dynamic_array.html#a36c9c3cb02ca6d2b727d3247aaac2b66">modm::DynamicArray&lt; T, Allocator &gt;</a>
-, <a class="el" href="classmodm_1_1_linked_list.html#a4a59253f7d6fda544748a37b7119258d">modm::LinkedList&lt; T, Allocator &gt;</a>
+, <a class="el" href="classmodm_1_1_linked_list.html#a77c20d41c2b7f2b3665af54384f238e7">modm::LinkedList&lt; T, Allocator &gt;</a>
+</li>
+<li>getBroadcastAddress()
+: <a class="el" href="classmodm_1_1_nrf24_data.html#ae2c083d57f59832f5c40a2dd18a86d98">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
 </li>
 <li>getBrr()
 : <a class="el" href="classmodm_1_1platform_1_1_uart_baudrate.html#a157f3c96da74c09991bd8bbdbe07efbb">modm::platform::UartBaudrate</a>
@@ -158,6 +167,9 @@ $(function() {
 , <a class="el" href="classmodm_1_1_gpio_port.html#a2252b3d85e6f5d8bd43c978262a9617f">modm::GpioPort</a>
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_port.html#a3a469e8c0076a141a6cde4da8421e3e5">modm::platform::GpioPort&lt; StartGpio, Width &gt;</a>
 , <a class="el" href="classmodm_1_1platform_1_1_software_gpio_port.html#a717e863b9f0c4d1cc1fa09d8aad1766b">modm::platform::SoftwareGpioPort&lt; Gpios &gt;</a>
+</li>
+<li>getDestination()
+: <a class="el" href="classmodm_1_1_nrf24_data_1_1_packet.html#a2338698f9bf1416bd1c842ddd44aedd9">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;::Packet</a>
 </li>
 <li>getDirection()
 : <a class="el" href="classmodm_1_1_gpio_expander.html#ad61d5b99ae9fe42f686932032a661897">modm::GpioExpander</a>
@@ -228,6 +240,9 @@ $(function() {
 , <a class="el" href="classmodm_1_1_line_segment2_d.html#ab2bcfcb13c8ce8a3cb8420bb5febc7b0">modm::LineSegment2D&lt; T &gt;</a>
 , <a class="el" href="classmodm_1_1_vector_3_01_t_00_012_01_4.html#ab8758196fdbf2edca28af2b7a6874c63">modm::Vector&lt; T, 2 &gt;</a>
 </li>
+<li>getDynamicPayloadLength()
+: <a class="el" href="classmodm_1_1_nrf24_data.html#aa8fe9465167d7a780978a0eab97c5f4e">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
+</li>
 <li>getEndPoint()
 : <a class="el" href="classmodm_1_1_line_segment2_d.html#a9af0f63f7be1ae043095979291871003">modm::LineSegment2D&lt; T &gt;</a>
 </li>
@@ -293,11 +308,17 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_h1.html#acf7c70118c82096ee7598e93bc3d9141">modm::platform::GpioH1</a>
 , <a class="el" href="classmodm_1_1platform_1_1_gpio_unused.html#a8f4f491f1da68b2178c54607882a9b72">modm::platform::GpioUnused</a>
 </li>
+<li>getFeedback()
+: <a class="el" href="classmodm_1_1_nrf24_data.html#a5e13add3e8c7dd3665a1c9c8f93a0ea9">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
+</li>
 <li>getFirst()
 : <a class="el" href="classmodm_1_1_pair.html#a492a3e44e16b73978557ab7c630fe327">modm::Pair&lt; T1, T2 &gt;</a>
 </li>
+<li>getFrameOverhead()
+: <a class="el" href="classmodm_1_1_nrf24_data.html#abe3f17dec82ab491907a02c387a4cc5a">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
+</li>
 <li>getFront()
-: <a class="el" href="classmodm_1_1_bounded_deque.html#a1631cd7aa52c1de4bb5eb9c86acf82b2">modm::BoundedDeque&lt; T, N &gt;</a>
+: <a class="el" href="classmodm_1_1_bounded_deque.html#a5da219911bf80d9e61d40252596d0e79">modm::BoundedDeque&lt; T, N &gt;</a>
 , <a class="el" href="classmodm_1_1_doubly_linked_list.html#a01c4c0eaf4d6ef327051834b6ad0a182">modm::DoublyLinkedList&lt; T, Allocator &gt;</a>
 , <a class="el" href="classmodm_1_1_dynamic_array.html#a2839990fcc428d96128c40d4a7516013">modm::DynamicArray&lt; T, Allocator &gt;</a>
 , <a class="el" href="classmodm_1_1_linked_list.html#ab35d7d71fd18e537e8e4cf5c77f60dcd">modm::LinkedList&lt; T, Allocator &gt;</a>
@@ -342,7 +363,7 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_usart_hal6.html#acbdbb7753fc5d704bcc2bdd462569b51">modm::platform::UsartHal6</a>
 </li>
 <li>getIntersections()
-: <a class="el" href="classmodm_1_1_circle2_d.html#acbc7442e9ea3d7e0d39d2e8f07b634fb">modm::Circle2D&lt; T &gt;</a>
+: <a class="el" href="classmodm_1_1_circle2_d.html#a02acf757b4d27e9942bcc1c265db4b48">modm::Circle2D&lt; T &gt;</a>
 , <a class="el" href="classmodm_1_1_line2_d.html#a8c5f97d4539557f7aebb9a386ae330b4">modm::Line2D&lt; T &gt;</a>
 , <a class="el" href="classmodm_1_1_line_segment2_d.html#aff3049ff6c3e5f92f539de65d2a198c1">modm::LineSegment2D&lt; T &gt;</a>
 , <a class="el" href="classmodm_1_1_polygon2_d.html#a187d2ec1ca27ee251c208abb8895b222">modm::Polygon2D&lt; T &gt;</a>
@@ -363,11 +384,14 @@ $(function() {
 </li>
 <li>getLengthSquared()
 : <a class="el" href="classmodm_1_1_quaternion.html#aaa6fb73e52b6f56d94ae9dd2768b1cc0">modm::Quaternion&lt; T &gt;</a>
-, <a class="el" href="classmodm_1_1_vector.html#ac9838894a8857f0b002c71e0106bb18d">modm::Vector&lt; T, N &gt;</a>
+, <a class="el" href="classmodm_1_1_vector.html#adddd61142086faf4e12cd097a64a7d84">modm::Vector&lt; T, N &gt;</a>
 , <a class="el" href="classmodm_1_1_vector_3_01_t_00_011_01_4.html#a8b79b8f466d60c0db06d1fb538616c52">modm::Vector&lt; T, 1 &gt;</a>
 , <a class="el" href="classmodm_1_1_vector_3_01_t_00_012_01_4.html#a534f9317237ca236d6cef7d8c3e2b036">modm::Vector&lt; T, 2 &gt;</a>
 , <a class="el" href="classmodm_1_1_vector_3_01_t_00_013_01_4.html#af9e0cd4920d193824f36ff6a56e79d1a">modm::Vector&lt; T, 3 &gt;</a>
 , <a class="el" href="classmodm_1_1_vector_3_01_t_00_014_01_4.html#a99d61adaab73c2e8c512ab1afa279e00">modm::Vector&lt; T, 4 &gt;</a>
+</li>
+<li>getMaxPayload()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#a6c6c2d6b369552054dd3eb992a834b7e">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
 </li>
 <li>getMaxSize()
 : <a class="el" href="classmodm_1_1atomic_1_1_queue.html#a44c5d9ad02956e4b77a9c59f9d2b8d81">modm::atomic::Queue&lt; T, N &gt;</a>
@@ -398,6 +422,16 @@ $(function() {
 <li>getOversamplingMode()
 : <a class="el" href="classmodm_1_1platform_1_1_uart_baudrate.html#af060524d0a87f0616db2253752a0fb9a">modm::platform::UartBaudrate</a>
 </li>
+<li>getPacket()
+: <a class="el" href="classmodm_1_1_nrf24_data.html#a9acbe16a39cc9600dd9773d80f05f047">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
+</li>
+<li>getPayloadLength()
+: <a class="el" href="classmodm_1_1_nrf24_data_1_1_packet.html#abc9d6732dcb7431f66887c1db8a71bfb">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;::Packet</a>
+, <a class="el" href="classmodm_1_1_nrf24_phy.html#ab1647d020c8845429aafdbc99300af81">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
+</li>
+<li>getPayloadPipe()
+: <a class="el" href="classmodm_1_1_nrf24_config.html#a9350df194998f12732df27663dd6ad41">modm::Nrf24Config&lt; Nrf24Phy &gt;</a>
+</li>
 <li>getPinChannel()
 : <a class="el" href="classmodm_1_1platform_1_1_adc1.html#ac454627b3fd36ea7a5d986cd84497ded">modm::platform::Adc1</a>
 , <a class="el" href="classmodm_1_1platform_1_1_adc2.html#aa11521d434d28078bcef20a1903ac1c2">modm::platform::Adc2</a>
@@ -409,7 +443,7 @@ $(function() {
 <li>getPointer()
 : <a class="el" href="classmodm_1_1accessor_1_1_flash.html#af0699a131a3acd2060e95f1636b6b81e">modm::accessor::Flash&lt; T &gt;</a>
 , <a class="el" href="classmodm_1_1accessor_1_1_ram.html#a8716efc9aa610d1bb8136e326377b079">modm::accessor::Ram&lt; T &gt;</a>
-, <a class="el" href="classmodm_1_1_smart_pointer.html#ac1973e64240f7231485040a1e96745db">modm::SmartPointer</a>
+, <a class="el" href="classmodm_1_1_smart_pointer.html#aa2ce2d706f2f8715c504adce38a97c8f">modm::SmartPointer</a>
 </li>
 <li>getPosition()
 : <a class="el" href="classmodm_1_1_location2_d.html#a929503c6a5ff2769184491867a9e8cc2">modm::Location2D&lt; T &gt;</a>
@@ -435,8 +469,14 @@ $(function() {
 <li>getResumableDepth()
 : <a class="el" href="classmodm_1_1_nested_resumable.html#a9d2533f899a91e764498123bc26705c0">modm::NestedResumable&lt; Levels &gt;</a>
 </li>
+<li>getRetryCount()
+: <a class="el" href="classmodm_1_1_nrf24_config.html#a67ca5178846bdee291851d26110d22bc">modm::Nrf24Config&lt; Nrf24Phy &gt;</a>
+</li>
 <li>getRow()
 : <a class="el" href="classmodm_1_1_matrix.html#ac64b428c164beb25f57c11535862b778">modm::Matrix&lt; T, ROWS, COLUMNS &gt;</a>
+</li>
+<li>getRxAddress()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#ac4f9e463aa273fe2d77e5e7edcdf6e3a">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
 </li>
 <li>getSecond()
 : <a class="el" href="classmodm_1_1_pair.html#af246551e57ec593802f9ac37d68b78cc">modm::Pair&lt; T1, T2 &gt;</a>
@@ -453,6 +493,12 @@ $(function() {
 </li>
 <li>getSJW()
 : <a class="el" href="classmodm_1_1_can_bit_timing.html#a4f91f0a0a817c155b0ee0e8770857774">modm::CanBitTiming&lt; Clk, Bitrate &gt;</a>
+</li>
+<li>getSource()
+: <a class="el" href="classmodm_1_1_nrf24_data_1_1_packet.html#a29e52d995dafc7dca1d7cb1e975ee480">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;::Packet</a>
+</li>
+<li>getSpeed()
+: <a class="el" href="classmodm_1_1_nrf24_config.html#ae4ae9aff3dafa35c187659af5820543c">modm::Nrf24Config&lt; Nrf24Phy &gt;</a>
 </li>
 <li>getStartPoint()
 : <a class="el" href="classmodm_1_1_line_segment2_d.html#ae6cfa8e6db06b1ec1b0b19cd71e12776">modm::LineSegment2D&lt; T &gt;</a>
@@ -475,6 +521,9 @@ $(function() {
 : <a class="el" href="classmodm_1_1_can.html#a6eda8fdb60c2d66fe181a11c0c9c748e">modm::Can</a>
 , <a class="el" href="classmodm_1_1platform_1_1_can1.html#ab409e90cfc67ba73ffc40fa07efeffa4">modm::platform::Can1</a>
 , <a class="el" href="classmodm_1_1platform_1_1_can2.html#a9c90a5c212438fa6349998a2345c7b67">modm::platform::Can2</a>
+</li>
+<li>getTxAddress()
+: <a class="el" href="classmodm_1_1_nrf24_phy.html#a779f53f98d8ab7dbc637e0f0be41b268">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
 </li>
 <li>getValue()
 : <a class="el" href="classmodm_1_1_adc.html#a5b3c7ad317985e35aa2b4b26a0083f43">modm::Adc</a>

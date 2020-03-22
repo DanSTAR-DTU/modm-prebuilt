@@ -229,6 +229,16 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodm_1_1_nested_resumable.html">NestedResumable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodm_1_1_nrf24_config.html">Nrf24Config</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmodm_1_1_nrf24_config_parameters.html">Nrf24ConfigParameters</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodm_1_1_nrf24_data.html">Nrf24Data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodm_1_1_nrf24_phy.html">Nrf24Phy</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmodm_1_1_nrf24_register.html">Nrf24Register</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodm_1_1_pair.html">Pair</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodm_1_1_peripheral_driver.html">PeripheralDriver</a></td></tr>
@@ -1126,36 +1136,8 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a id="aec9a27daba54314a860c714c611db4b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec9a27daba54314a860c714c611db4b1">&#9670;&nbsp;</a></span>operator<<() <span class="overload">[1/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmodm_1_1_i_o_stream.html">modm::IOStream</a>&amp; modm::operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmodm_1_1_i_o_stream.html">modm::IOStream</a> &amp;&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classmodm_1_1_can.html#a0914c89eaf4b5f5f8a302c7fc18b2a1e">Can::BusState</a>&#160;</td>
-          <td class="paramname"><em>state</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a739f5a0e5096e70586eacd3771363444"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a739f5a0e5096e70586eacd3771363444">&#9670;&nbsp;</a></span>operator<<() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a739f5a0e5096e70586eacd3771363444">&#9670;&nbsp;</a></span>operator<<() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1188,6 +1170,34 @@ template&lt;typename T &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec9a27daba54314a860c714c611db4b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec9a27daba54314a860c714c611db4b1">&#9670;&nbsp;</a></span>operator<<() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmodm_1_1_i_o_stream.html">modm::IOStream</a>&amp; modm::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmodm_1_1_i_o_stream.html">modm::IOStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmodm_1_1_can.html#a0914c89eaf4b5f5f8a302c7fc18b2a1e">Can::BusState</a>&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

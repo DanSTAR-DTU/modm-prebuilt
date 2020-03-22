@@ -165,6 +165,8 @@ $(function() {
 , <a class="el" href="classmodm_1_1_bme280.html#aacccfa527c8efae8b899d9ef9ccf1030">modm::Bme280&lt; I2cMaster &gt;</a>
 , <a class="el" href="classmodm_1_1_can.html#af262b36cf754f6dc7dce556cee997de1">modm::Can</a>
 , <a class="el" href="classmodm_1_1_i2c_master.html#a4c4273e301d9bc57ba27bb76dc6d7ca5">modm::I2cMaster</a>
+, <a class="el" href="classmodm_1_1_nrf24_data.html#afc38501046774751ac750c26e48f95f1">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
+, <a class="el" href="classmodm_1_1_nrf24_phy.html#a0e81dd95e4865badc93bd6dbf460099e">modm::Nrf24Phy&lt; Spi, Csn, Ce &gt;</a>
 , <a class="el" href="classmodm_1_1platform_1_1_adc1.html#ad5e00d2ffe63b197e50c30d1032462b2">modm::platform::Adc1</a>
 , <a class="el" href="classmodm_1_1platform_1_1_adc2.html#a1d13827888d7b8049b4b641abdc3826b">modm::platform::Adc2</a>
 , <a class="el" href="classmodm_1_1platform_1_1_adc3.html#a4073576ebfb816e9a0ce697772a514cb">modm::platform::Adc3</a>
@@ -305,7 +307,8 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_uart_base.html#a6ebe84a6b410051751c29464340e395f">modm::platform::UartBase</a>
 </li>
 <li>InterruptFlag
-: <a class="el" href="classmodm_1_1platform_1_1_adc1.html#acce8191a6273fca8bce9477430eb12ce">modm::platform::Adc1</a>
+: <a class="el" href="structmodm_1_1_nrf24_register.html#ac3eb7bdf86229b089ab45bbc703899ce">modm::Nrf24Register</a>
+, <a class="el" href="classmodm_1_1platform_1_1_adc1.html#acce8191a6273fca8bce9477430eb12ce">modm::platform::Adc1</a>
 , <a class="el" href="classmodm_1_1platform_1_1_adc2.html#a972943e8a1baa83bbbaf2d5d45f36a19">modm::platform::Adc2</a>
 , <a class="el" href="classmodm_1_1platform_1_1_adc3.html#af58a128178ccf7b4a3bf79fa4bca38bc">modm::platform::Adc3</a>
 , <a class="el" href="classmodm_1_1platform_1_1_basic_timer.html#a77c851e009c1a0239dabf9f3451766a2">modm::platform::BasicTimer</a>
@@ -314,13 +317,17 @@ $(function() {
 , <a class="el" href="classmodm_1_1platform_1_1_uart_base.html#a231dd8ca89bde31fb9bec6a65c1dae8f">modm::platform::UartBase</a>
 </li>
 <li>InterruptFlag_t
-: <a class="el" href="classmodm_1_1platform_1_1_adc1.html#a104a2f204fd1f93bd856a49d59a94462">modm::platform::Adc1</a>
+: <a class="el" href="structmodm_1_1_nrf24_register.html#a3e39ba3647edf129f7208f785438bf62">modm::Nrf24Register</a>
+, <a class="el" href="classmodm_1_1platform_1_1_adc1.html#a104a2f204fd1f93bd856a49d59a94462">modm::platform::Adc1</a>
 , <a class="el" href="classmodm_1_1platform_1_1_adc2.html#abc80c313e7c576320cd234d742729dda">modm::platform::Adc2</a>
 , <a class="el" href="classmodm_1_1platform_1_1_adc3.html#a39ac7e47e86a574f48ec7d4aa8b4eb64">modm::platform::Adc3</a>
 , <a class="el" href="classmodm_1_1platform_1_1_basic_timer.html#a14819cdd8cd6f7f2a8696f42606cd8a9">modm::platform::BasicTimer</a>
 , <a class="el" href="classmodm_1_1platform_1_1_general_purpose_timer.html#ac3e47cde0c42ebdb9d9820320e60be78">modm::platform::GeneralPurposeTimer</a>
 , <a class="el" href="classmodm_1_1platform_1_1_spi_base.html#aa7fe72f6ca5a2e69aa94f2ff019caf5a">modm::platform::SpiBase</a>
 , <a class="el" href="classmodm_1_1platform_1_1_uart_base.html#a918f65a6ffc3f0f1a6c64b9088e4dc5b">modm::platform::UartBase</a>
+</li>
+<li>interruptHandler()
+: <a class="el" href="classmodm_1_1_nrf24_data.html#a3ac5d5f1ae517ec19278c4a3989c13fc">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
 </li>
 <li>intersects()
 : <a class="el" href="classmodm_1_1_circle2_d.html#aeb8ec0c54f12a98eacf3f42ddc0a52a5">modm::Circle2D&lt; T &gt;</a>
@@ -527,11 +534,15 @@ $(function() {
 , <a class="el" href="classmodm_1_1_bounded_deque.html#a16a0719915d1a084d3fdf1e4946ce93f">modm::BoundedDeque&lt; T, N &gt;</a>
 , <a class="el" href="classmodm_1_1_queue.html#ab3202627e9c341dcf6ff348c5e93ca5c">modm::Queue&lt; T, Container &gt;</a>
 </li>
+<li>isPacketAvailable()
+: <a class="el" href="classmodm_1_1_nrf24_data.html#ae910c17802f4b7a12b1d1f7fbd1f3de7">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
+</li>
 <li>isReading
 : <a class="el" href="classmodm_1_1_i2c_write_read_transaction.html#a0c6e23901bf9ccdb904af5509da7ce6d">modm::I2cWriteReadTransaction</a>
 </li>
 <li>isReadyToSend()
 : <a class="el" href="classmodm_1_1_can.html#add7452bb6199071f6b19d08e381bef65">modm::Can</a>
+, <a class="el" href="classmodm_1_1_nrf24_data.html#afb1a53d8aa116b372c57043f763c372c">modm::Nrf24Data&lt; Nrf24Phy, Clock &gt;</a>
 , <a class="el" href="classmodm_1_1platform_1_1_can1.html#a6a8274d59359e946816eebb38a4f6a54">modm::platform::Can1</a>
 , <a class="el" href="classmodm_1_1platform_1_1_can2.html#a52d92e7fddc7849f99a58bd6ebb20656">modm::platform::Can2</a>
 </li>
@@ -664,11 +675,11 @@ $(function() {
 </li>
 <li>iterator
 : <a class="el" href="classmodm_1_1_doubly_linked_list.html#a67171474c4da6cc8efe0c7fafefd2b2d">modm::DoublyLinkedList&lt; T, Allocator &gt;</a>
-, <a class="el" href="classmodm_1_1_doubly_linked_list_1_1iterator.html#a19a056e54bedbf968628f8529e958fc7">modm::DoublyLinkedList&lt; T, Allocator &gt;::iterator</a>
+, <a class="el" href="classmodm_1_1_doubly_linked_list_1_1iterator.html#aba3d689f838da6278bd173c51abba767">modm::DoublyLinkedList&lt; T, Allocator &gt;::iterator</a>
 , <a class="el" href="classmodm_1_1_dynamic_array.html#a67171474c4da6cc8efe0c7fafefd2b2d">modm::DynamicArray&lt; T, Allocator &gt;</a>
 , <a class="el" href="classmodm_1_1_dynamic_array_1_1iterator.html#a650d197c57a69b1679dab7734a079cc5">modm::DynamicArray&lt; T, Allocator &gt;::iterator</a>
 , <a class="el" href="classmodm_1_1_linked_list.html#a67171474c4da6cc8efe0c7fafefd2b2d">modm::LinkedList&lt; T, Allocator &gt;</a>
-, <a class="el" href="classmodm_1_1_linked_list_1_1iterator.html#a9e786c802f56d3cefa5cf7d4f308adb7">modm::LinkedList&lt; T, Allocator &gt;::iterator</a>
+, <a class="el" href="classmodm_1_1_linked_list_1_1iterator.html#a0a2be436c274bf784379df1638056fde">modm::LinkedList&lt; T, Allocator &gt;::iterator</a>
 , <a class="el" href="classmodm_1_1_point_set2_d.html#a6537a20cebaa1b163dfee8fc0c10ca7b">modm::PointSet2D&lt; T &gt;</a>
 </li>
 </ul>

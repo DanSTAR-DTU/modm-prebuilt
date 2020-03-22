@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['baseaddress',['BaseAddress',['../classmodm_1_1_nrf24_data.html#a41277272b184aec48f552ca9482ce63f',1,'modm::Nrf24Data']]],
   ['baudrate_5ft',['baudrate_t',['../group__modm__math__units.html#ga30af1fac499efa181bc4708e24c577d1',1,'modm']]],
   ['bd_5faddress_5ft',['bd_address_t',['../classmodm_1_1_block_device.html#ae5801b18bcaf9ad1e1f82f92afa77976',1,'modm::BlockDevice']]],
   ['bd_5fsize_5ft',['bd_size_t',['../classmodm_1_1_block_device.html#ae290fe8fd3c4afe4b8d8e3daaf4f08e0',1,'modm::BlockDevice']]],

@@ -16,5 +16,6 @@ var searchData=
   ['database',['DataBase',['../structmodm_1_1bme280.html#a2f1363585982a6aa78a679946ed70fcd',1,'modm::bme280']]],
   ['datadouble',['DataDouble',['../structmodm_1_1bme280.html#abdd56edb09635287e8544ccc29773d46',1,'modm::bme280']]],
   ['dm',['Dm',['../classmodm_1_1platform_1_1_gpio_a11.html#a769da8ffe602dcc23cb0ea8861ace8f9',1,'modm::platform::GpioA11::Dm()'],['../classmodm_1_1platform_1_1_gpio_b14.html#ac4bdad6f0f38fdb964781c657977e770',1,'modm::platform::GpioB14::Dm()']]],
-  ['dp',['Dp',['../classmodm_1_1platform_1_1_gpio_a12.html#ab432605257a784be99c0d82a4473d839',1,'modm::platform::GpioA12::Dp()'],['../classmodm_1_1platform_1_1_gpio_b15.html#a4913ca5c860a399509182c9d621bb52c',1,'modm::platform::GpioB15::Dp()']]]
+  ['dp',['Dp',['../classmodm_1_1platform_1_1_gpio_a12.html#ab432605257a784be99c0d82a4473d839',1,'modm::platform::GpioA12::Dp()'],['../classmodm_1_1platform_1_1_gpio_b15.html#a4913ca5c860a399509182c9d621bb52c',1,'modm::platform::GpioB15::Dp()']]],
+  ['dynpd_5ft',['DynPd_t',['../structmodm_1_1_nrf24_register.html#aa92c63b3cafc05ccf512c14bab1d8bba',1,'modm::Nrf24Register']]]
 ];

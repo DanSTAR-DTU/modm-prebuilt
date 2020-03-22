@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2011-2012, 2019, Fabian Greif
- * Copyright (c) 2012, 2015-2018, Niklas Hauser
+ * Copyright (c) 2012, 2015-2019, Niklas Hauser
  * Copyright (c) 2013, Sascha Schade
  * Copyright (c) 2013, 2015, Kevin Läufer
  *
@@ -67,13 +67,11 @@ SECTIONS
 	} >RAM
 
 
-	.vector_ram (NOLOAD) :  /* Vector table in RAM, only if remapped */
+	.vector_ram (NOLOAD) :
 	{
 		__vector_table_ram_start = .;
-
-		/* used for vectors remapped to RAM */
+		/* Vector table in RAM, only if remapped */
 		KEEP(*(.vector_ram))
-
 		. = ALIGN(4);
 		__vector_table_ram_end = .;
 	} >RAM
@@ -90,24 +88,29 @@ SECTIONS
 		KEEP(*(.init))
 
 		. = ALIGN(4);
-		PROVIDE_HIDDEN(__preinit_array_start = .);
-		KEEP(*(.preinit_array))
-		PROVIDE_HIDDEN(__preinit_array_end = .);
-
-		. = ALIGN(4);
-		PROVIDE_HIDDEN(__init_array_start = .);
+		__init_array_start = .;
 		KEEP(*(SORT(.init_array.*)))
 		KEEP(*(.init_array))
-		PROVIDE_HIDDEN(__init_array_end = .);
-
+		__init_array_end = .;
 	} >FLASH
 
+	/* Unwind tables are used to unwind the stack for C++ exceptions. Even
+	 * though we disabled exceptions, pre-compiled libraries such as libstdc++
+	 * still have to raise exceptions. We still force discard all tables
+	 * though and hook these exception throwers in code. */
+	/DISCARD/ :
+	{
+		*(.ARM.extab* .gnu.linkonce.armextab.*)
+		*(.ARM.exidx* .gnu.linkonce.armexidx.*)
+		*(.eh_frame*)
+	}
 	/* Hardware init table */
 	.hardware_init : ALIGN(4)
 	{
 		__hardware_init_start = .;
 		/* Table symbols are alphabetically sorted! */
-		KEEP(*(SORT(.hardware_init*)))
+		KEEP(*(SORT(.hardware_init.order_*)))
+		KEEP(*(SORT(.hardware_init)))
 		__hardware_init_end = .;
 	} >FLASH
 
@@ -128,7 +131,11 @@ SECTIONS
 
 	.fastcode : ALIGN(4)
 	{
+		__fastcode_load = LOADADDR(.fastcode);
+		__fastcode_start = .;
 		*(.fastcode)
+		. = ALIGN(4);
+		__fastcode_end = .;
 	} >FLASH
 
 
@@ -165,9 +172,7 @@ SECTIONS
 	{
 		__fastdata_load = LOADADDR(.fastdata);
 		__fastdata_start = .;
-
 		*(.fastdata)
-
 		. = ALIGN(4);
 		__fastdata_end = .;
 	} >RAM AT >FLASH
@@ -176,7 +181,6 @@ SECTIONS
 	.heap1 (NOLOAD) :
 	{
 		__heap1_start = .;
-
 		. = ORIGIN(SRAM1) + LENGTH(SRAM1);
 		__heap1_end = .;
 	} >RAM

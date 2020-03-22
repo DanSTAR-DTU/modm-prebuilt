@@ -1,6 +1,7 @@
 var searchData=
 [
   ['faultreporter',['FaultReporter',['../classmodm_1_1platform_1_1_fault_reporter.html',1,'modm::platform']]],
+  ['feedback',['Feedback',['../classmodm_1_1_nrf24_data.html#structmodm_1_1_nrf24_data_1_1_feedback',1,'modm::Nrf24Data']]],
   ['fir',['Fir',['../classmodm_1_1filter_1_1_fir.html',1,'modm::filter']]],
   ['flag',['Flag',['../classmodm_1_1atomic_1_1_flag.html',1,'modm::atomic']]],
   ['flags',['Flags',['../structmodm_1_1_flags.html',1,'modm::Flags&lt; Enum, T &gt;'],['../structmodm_1_1can_1_1_message_1_1_flags.html',1,'modm::can::Message::Flags']]],
