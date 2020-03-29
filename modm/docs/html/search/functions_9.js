@@ -1,6 +1,7 @@
 var searchData=
 [
   ['i2cdevice',['I2cDevice',['../classmodm_1_1_i2c_device.html#a8b2bad58a80104ddaaccf6e2c9d6b067',1,'modm::I2cDevice']]],
+  ['i2ceeprom',['I2cEeprom',['../classmodm_1_1_i2c_eeprom.html#a3c0fae5bb384c17913598fdefc36358b',1,'modm::I2cEeprom']]],
   ['i2cmultiplexer',['I2cMultiplexer',['../classmodm_1_1_i2c_multiplexer.html#a39f2d6ea6245adac5abaf96d8269e7de',1,'modm::I2cMultiplexer']]],
   ['i2creadtransaction',['I2cReadTransaction',['../classmodm_1_1_i2c_read_transaction.html#a4321bc507af7f84d9b6d65242115f214',1,'modm::I2cReadTransaction']]],
   ['i2ctransaction',['I2cTransaction',['../classmodm_1_1_i2c_transaction.html#a36767dc9db6bd682fd8348f402745263',1,'modm::I2cTransaction']]],

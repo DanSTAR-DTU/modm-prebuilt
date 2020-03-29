@@ -4,6 +4,7 @@ var searchData=
   ['i²c_20devices',['I²C Devices',['../group__modm__architecture__i2c__device.html',1,'']]],
   ['i²c_20multiplexer',['I²C Multiplexer',['../group__modm__architecture__i2c__multiplexer.html',1,'']]],
   ['interrupt_20service_20routines',['Interrupt Service Routines',['../group__modm__architecture__interrupt.html',1,'']]],
+  ['i2c_20eeprom',['I2C Eeprom',['../group__modm__driver__i2c__eeprom.html',1,'']]],
   ['input_2foutput_20streams',['Input/Output Streams',['../group__modm__io.html',1,'']]],
   ['interpolation_20methods',['Interpolation Methods',['../group__modm__math__interpolation.html',1,'']]],
   ['instance_201',['Instance 1',['../group__modm__platform__adc__1.html',1,'']]],

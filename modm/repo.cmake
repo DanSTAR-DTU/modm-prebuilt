@@ -183,6 +183,7 @@ list(APPEND SOURCE_FILES
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/architecture/interface/i2c.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/container/smart_pointer.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/debug/error_report.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/driver/storage/i2c_eeprom.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/io/iostream.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/io/iostream_printf.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/math/geometry/angle.cpp

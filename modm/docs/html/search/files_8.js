@@ -2,6 +2,7 @@ var searchData=
 [
   ['i2c_2ehpp',['i2c.hpp',['../i2c_8hpp.html',1,'']]],
   ['i2c_5fdevice_2ehpp',['i2c_device.hpp',['../i2c__device_8hpp.html',1,'']]],
+  ['i2c_5feeprom_2ehpp',['i2c_eeprom.hpp',['../i2c__eeprom_8hpp.html',1,'']]],
   ['i2c_5fmaster_2ehpp',['i2c_master.hpp',['../i2c__master_8hpp.html',1,'']]],
   ['i2c_5fmaster_5f1_2ehpp',['i2c_master_1.hpp',['../i2c__master__1_8hpp.html',1,'']]],
   ['i2c_5fmaster_5f2_2ehpp',['i2c_master_2.hpp',['../i2c__master__2_8hpp.html',1,'']]],

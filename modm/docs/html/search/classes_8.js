@@ -3,6 +3,8 @@ var searchData=
   ['i2c',['I2c',['../structmodm_1_1_i2c.html',1,'modm']]],
   ['i2cdevice',['I2cDevice',['../classmodm_1_1_i2c_device.html',1,'modm']]],
   ['i2cdevice_3c_20i2cmaster_2c_201_20_3e',['I2cDevice&lt; I2cMaster, 1 &gt;',['../classmodm_1_1_i2c_device.html',1,'modm']]],
+  ['i2cdevice_3c_20i2cmaster_2c_201_2c_20i2ceeprom_3a_3adatatransmissionadapter_20_3e',['I2cDevice&lt; I2cMaster, 1, i2cEeprom::DataTransmissionAdapter &gt;',['../classmodm_1_1_i2c_device.html',1,'modm']]],
+  ['i2ceeprom',['I2cEeprom',['../classmodm_1_1_i2c_eeprom.html',1,'modm']]],
   ['i2cmaster',['I2cMaster',['../classmodm_1_1_i2c_master.html',1,'modm']]],
   ['i2cmaster1',['I2cMaster1',['../classmodm_1_1platform_1_1_i2c_master1.html',1,'modm::platform']]],
   ['i2cmaster2',['I2cMaster2',['../classmodm_1_1platform_1_1_i2c_master2.html',1,'modm::platform']]],
