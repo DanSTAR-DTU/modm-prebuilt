@@ -111,6 +111,10 @@ public:
 	static std::size_t
 	discardReceiveBuffer();
 
+	static bool overrunErrorOccurred();
+
+	static void clearOverrunErrorOccurred();
+
 };
 
 }	// namespace platform

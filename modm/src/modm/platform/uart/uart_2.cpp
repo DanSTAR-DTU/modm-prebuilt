@@ -26,6 +26,7 @@ namespace
 {
 	static modm::atomic::Queue<uint8_t, 16> rxBuffer;
 	static modm::atomic::Queue<uint8_t, 250> txBuffer;
+	static modm::platform::UartBase::InterruptFlag_t flags;
 }
 void
 modm::platform::Usart2::initializeBuffered(uint32_t interruptPriority)
@@ -141,6 +142,18 @@ modm::platform::Usart2::discardReceiveBuffer()
 	return count;
 }
 
+bool modm::platform::Usart2::overrunErrorOccurred()
+{
+	if(flags & modm::platform::UsartHal2::InterruptFlag::OverrunError)
+	 	return true;
+	else
+		return false;
+}
+
+void modm::platform::Usart2::clearOverrunErrorOccurred()
+{
+	flags &= (~modm::platform::UsartHal2::InterruptFlag::OverrunError);
+}
 
 MODM_ISR(USART2)
 {
@@ -159,5 +172,10 @@ MODM_ISR(USART2)
 			modm::platform::UsartHal2::write(txBuffer.get());
 			txBuffer.pop();
 		}
+	}
+	if(modm::platform::UsartHal2::getInterruptFlags() & modm::platform::UsartHal2::InterruptFlag::OverrunError)
+	{
+		modm::platform::UsartHal2::acknowledgeInterruptFlags(modm::platform::UsartHal2::InterruptFlag::OverrunError);
+		flags |= modm::platform::UsartHal2::InterruptFlag::OverrunError;
 	}
 }
