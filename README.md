@@ -18,6 +18,8 @@ All of these tools should have their commands in the system path. With the excep
 
 ### Procedure
 
+0. Currently running a custom version of modm with modifications to usart1 and usart2. These changes should be manually added when updating modm.
+
 1. Check out submodules of this repository using `git submodule update --init --recursive`
 
 2. If these changes are experimental, switch to a branch other than `master`.
@@ -30,10 +32,10 @@ All of these tools should have their commands in the system path. With the excep
 
 6. Run `lbuild build` to regenerate the modm files.
 
-7. Update CMakeLists.txt in this repository if necessary to ensure any new directories with source and include files are compiled.
+7. Update modm/repo.cmake in this repository if necessary to ensure any new directories with source and include files are compiled. The appending of flags might not work with our build and have to be modified by hand to `cache` the flags and use `set` instead of `append`.
 
-7. Ensure the newly generated code compiles with the firmware and test on hardware as appropriate.
+8. Ensure the newly generated code compiles with the firmware and test on hardware as appropriate.
 
-8. Commit and push all changes.
+9. Commit and push all changes.
 
-9. Update repositories using this one as a submodule to use the new commit.
+10. Update repositories using this one as a submodule to use the new commit.
