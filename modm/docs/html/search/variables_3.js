@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['d',['D',['../classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#a1c35d60cf6b6ab9c13094962fff63525',1,'modm::platform::BitBangOneWireMaster']]],
-  ['debug',['debug',['../namespacemodm_1_1log.html#ae9143446ab426d7e3ebf45751c11e66a',1,'modm::log']]],
-  ['decimaldigits',['decimalDigits',['../structmodm_1_1_arithmetic_traits.html#ab918d0f589b3eff171243e15e341ff8e',1,'modm::ArithmeticTraits']]],
-  ['decreasefactor',['decreaseFactor',['../structmodm_1_1_s_curve_controller_1_1_parameter.html#a4b33316e1bcec37c92daf93f0deab4ba',1,'modm::SCurveController::Parameter']]],
-  ['dest',['dest',['../classmodm_1_1_nrf24_data.html#aaffee10eaec5a124f4d1965002488497',1,'modm::Nrf24Data::Header']]],
-  ['direction',['direction',['../classmodm_1_1_gpio_input.html#ac74cb3cc7adff9eefce8073771a0a034',1,'modm::GpioInput::direction()'],['../classmodm_1_1_gpio_output.html#a129151096af66ea8b05d430c964f57c3',1,'modm::GpioOutput::direction()'],['../classmodm_1_1_gpio_i_o.html#ac3e00d004cfc8c6268085b4468e22684',1,'modm::GpioIO::direction()'],['../classmodm_1_1_gpio_expander_pin.html#a16de7b4f290764d9535a6f52403b01de',1,'modm::GpioExpanderPin::direction()'],['../classmodm_1_1_ray2_d.html#a1a72b17422d8b48fc334854885d07021',1,'modm::Ray2D::direction()']]],
-  ['directionvector',['directionVector',['../classmodm_1_1_line2_d.html#a2c5a181fdb1a416bc409a95576466ee0',1,'modm::Line2D']]]
+  ['c',['C',['../classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#aedfa6f6222762e556e7d9073159dfdd7',1,'modm::platform::BitBangOneWireMaster::C()'],['../classmodm_1_1_queue.html#a18a7367e7cdb1a0a8cc6bb9d6626747e',1,'modm::Queue::c()'],['../classmodm_1_1_stack.html#aba2f1e88f5be68215509f72226721b6e',1,'modm::Stack::c()']]],
+  ['calibration',['calibration',['../structmodm_1_1bme280data_1_1_data_base.html#ac44f0ec1d448d956eac1ff07f0b50fb6',1,'modm::bme280data::DataBase']]],
+  ['center',['center',['../classmodm_1_1_circle2_d.html#ae77cd36b63c7ecaa66a419d2d3448cb9',1,'modm::Circle2D']]],
+  ['context',['context',['../group__modm__architecture__assert.html#a01daacbe2550e26014ac5a5af7284637',1,'modm::AssertionInfo']]],
+  ['coords',['coords',['../classmodm_1_1_vector.html#acf23210a664bb1cd30c031d3dae9afa5',1,'modm::Vector']]],
+  ['count',['count',['../classmodm_1_1pt_1_1_semaphore.html#ac4de7620941b9ad3b5182f62ed47bdc7',1,'modm::pt::Semaphore']]],
+  ['crc8',['crc8',['../classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#a4e4fc641672f9e0ac922b0cfe128e71e',1,'modm::platform::BitBangOneWireMaster']]],
+  ['currentmode',['currentMode',['../classmodm_1_1_nrf24_config.html#a2c3d52adb4de23508198983df071d259',1,'modm::Nrf24Config']]]
 ];

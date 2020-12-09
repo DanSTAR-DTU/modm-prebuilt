@@ -88,9 +88,7 @@ public:
 	};
 
 	// This type is the internal size of the counter.
-	// Timer 2 and 5 are the only one which have the size of 32 bit and
-	// only on stm32f2, stm32f4 and stm32f7
-	typedef uint32_t Value;
+	typedef uint16_t Value;
 
 	template< template<Peripheral _> class... Signals >
 	static void
@@ -128,7 +126,9 @@ public:
 			SlaveMode slaveMode = SlaveMode::Disabled,
 			SlaveModeTrigger slaveModeTrigger = static_cast<SlaveModeTrigger>(0),
 			MasterMode masterMode = MasterMode::Reset,
-			bool enableOnePulseMode = false);
+			bool enableOnePulseMode = false,
+			bool bufferAutoReloadRegister = true,
+			bool limitUpdateEventRequestSource = true);
 
 	static inline void
 	setPrescaler(uint16_t prescaler)
@@ -136,6 +136,12 @@ public:
 		// Because a prescaler of zero is not possible the actual
 		// prescaler value is \p prescaler - 1 (see Datasheet)
 		TIM5->PSC = prescaler - 1;
+	}
+
+	static uint16_t
+	getPrescaler()
+	{
+		return (TIM5->PSC + 1);
 	}
 
 	static inline void
@@ -167,6 +173,14 @@ public:
 		return overflow;
 	}
 
+	/* Returns the frequency of the timer */
+	template<class SystemClock>
+	static uint32_t
+	getTickFrequency()
+	{
+		return SystemClock::Timer5 / (TIM5->PSC + 1);
+	}
+
 	static inline void
 	applyAndReset()
 	{
@@ -186,6 +200,92 @@ public:
 		TIM5->CNT = value;
 	}
 
+
+	static inline void
+	enableOutput()
+	{
+		TIM5->BDTR |= TIM_BDTR_MOE;
+	}
+
+	static inline void
+	disableOutput()
+	{
+		TIM5->BDTR &= ~(TIM_BDTR_MOE);
+	}
+
+	/*
+	 * Enable/Disable automatic set of MOE bit at the next update event
+	 */
+	static inline void
+	setAutomaticUpdate(bool enable)
+	{
+		if(enable)
+			TIM5->BDTR |= TIM_BDTR_AOE;
+		else
+			TIM5->BDTR &= ~TIM_BDTR_AOE;
+	}
+
+	static inline void
+	setOffState(OffStateForRunMode runMode, OffStateForIdleMode idleMode)
+	{
+		uint32_t flags = TIM5->BDTR;
+		flags &= ~(TIM_BDTR_OSSR | TIM_BDTR_OSSI);
+		flags |= static_cast<uint32_t>(runMode);
+		flags |= static_cast<uint32_t>(idleMode);
+		TIM5->BDTR = flags;
+	}
+
+	/*
+	 * Set Dead Time Value
+	 *
+	 * Different Resolution Depending on DeadTime[7:5]:
+	 *     0xx =>  DeadTime[6:0]            * T(DTS)
+	 *     10x => (DeadTime[5:0] + 32) *  2 * T(DTS)
+	 *     110 => (DeadTime[4:0] + 4)  *  8 * T(DTS)
+	 *     111 => (DeadTime[4:0] + 2)  * 16 * T(DTS)
+	 */
+	static inline void
+	setDeadTime(uint8_t deadTime)
+	{
+		uint32_t flags = TIM5->BDTR;
+		flags &= ~TIM_BDTR_DTG;
+		flags |= deadTime;
+		TIM5->BDTR = flags;
+	}
+
+	/*
+	 * Set Dead Time Value
+	 *
+	 * Different Resolution Depending on DeadTime[7:5]:
+	 *     0xx =>  DeadTime[6:0]            * T(DTS)
+	 *     10x => (DeadTime[5:0] + 32) *  2 * T(DTS)
+	 *     110 => (DeadTime[4:0] + 4)  *  8 * T(DTS)
+	 *     111 => (DeadTime[4:0] + 2)  * 16 * T(DTS)
+	 */
+	static inline void
+	setDeadTime(DeadTimeResolution resolution, uint8_t deadTime)
+	{
+		uint8_t bitmask;
+		switch(resolution){
+			case DeadTimeResolution::From0With125nsStep:
+				bitmask = 0b01111111;
+				break;
+			case DeadTimeResolution::From16usWith250nsStep:
+				bitmask = 0b00111111;
+				break;
+			case DeadTimeResolution::From32usWith1usStep:
+			case DeadTimeResolution::From64usWith2usStep:
+				bitmask = 0b00011111;
+				break;
+			default:
+				bitmask = 0x00;
+				break;
+		}
+		uint32_t flags = TIM5->BDTR;
+		flags &= ~TIM_BDTR_DTG;
+		flags |= (deadTime & bitmask) | static_cast<uint32_t>(resolution);
+		TIM5->BDTR = flags;
+	}
 public:
 	static void
 	configureInputChannel(uint32_t channel, InputCaptureMapping input,
@@ -195,7 +295,8 @@ public:
 
 	static void
 	configureOutputChannel(uint32_t channel, OutputCompareMode_t mode,
-			Value compareValue, PinState out = PinState::Enable);
+			Value compareValue, PinState out = PinState::Enable,
+			bool enableComparePreload = true);
 
 	/// Switch to Pwm Mode 2
 	///
@@ -323,6 +424,12 @@ public:
 		}
 	}
 
+	/// Returns if the capture/compare channel of the timer is configured as input.
+	///
+	/// @param channel may be [1..4]
+	/// @return `false` if configured as *output*; `true` if configured as *input*
+	static bool
+	isChannelConfiguredAsInput(uint32_t channel);
 
 	static inline void
 	setCompareValue(uint32_t channel, Value value)
@@ -350,6 +457,12 @@ public:
 	disableInterrupt(Interrupt_t interrupt)
 	{
 		TIM5->DIER &= ~interrupt.value;
+	}
+
+	static inline InterruptFlag_t
+	getEnabledInterrupts()
+	{
+		return InterruptFlag_t(TIM5->DIER);
 	}
 
 	static inline void

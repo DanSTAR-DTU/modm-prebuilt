@@ -61,7 +61,8 @@ public:
 		if constexpr (mask(1)) r = (GPIOB->ODR & mask(1)) ^ inverted(1);
 		if constexpr (mask(2)) r = (GPIOC->ODR & mask(2)) ^ inverted(2);
 		if constexpr (mask(3)) r = (GPIOD->ODR & mask(3)) ^ inverted(3);
-		if constexpr (mask(4)) r = (GPIOH->ODR & mask(4)) ^ inverted(4);
+		if constexpr (mask(4)) r = (GPIOF->ODR & mask(4)) ^ inverted(4);
+		if constexpr (mask(5)) r = (GPIOG->ODR & mask(5)) ^ inverted(5);
 		if constexpr (getDataOrder() == modm::GpioPort::DataOrder::Reversed)
 			 return bitReverse(r) >> StartPinReversed;
 		else return            r  >> StartPin;
@@ -74,7 +75,8 @@ public:
 		if constexpr (mask(1)) r = (GPIOB->IDR & mask(1)) ^ inverted(1);
 		if constexpr (mask(2)) r = (GPIOC->IDR & mask(2)) ^ inverted(2);
 		if constexpr (mask(3)) r = (GPIOD->IDR & mask(3)) ^ inverted(3);
-		if constexpr (mask(4)) r = (GPIOH->IDR & mask(4)) ^ inverted(4);
+		if constexpr (mask(4)) r = (GPIOF->IDR & mask(4)) ^ inverted(4);
+		if constexpr (mask(5)) r = (GPIOG->IDR & mask(5)) ^ inverted(5);
 		if constexpr (getDataOrder() == modm::GpioPort::DataOrder::Reversed)
 			 return bitReverse(r) >> StartPinReversed;
 		else return            r  >> StartPin;
@@ -99,7 +101,10 @@ public:
 			GPIOD->BSRR = ((~p & mask(3)) << 16) | (p & mask(3));
 		}
 		if constexpr (mask(4)) { p ^= inverted(4);
-			GPIOH->BSRR = ((~p & mask(4)) << 16) | (p & mask(4));
+			GPIOF->BSRR = ((~p & mask(4)) << 16) | (p & mask(4));
+		}
+		if constexpr (mask(5)) { p ^= inverted(5);
+			GPIOG->BSRR = ((~p & mask(5)) << 16) | (p & mask(5));
 		}
 	}
 };
@@ -195,7 +200,7 @@ struct GpioPortInfo<Gpio::Port::D>
 	};
 };
 template<>
-struct GpioPortInfo<Gpio::Port::H>
+struct GpioPortInfo<Gpio::Port::F>
 {
 	static constexpr int8_t Width = 2;
 	static constexpr int8_t StartPin = 0;
@@ -214,6 +219,28 @@ struct GpioPortInfo<Gpio::Port::H>
 			"GpioPort StartPin + Width out of bounds! Maximum is 1.");
 		static_assert(isNormal or (StartPin <= QueryStartPin + QueryWidth + 1),
 			"GpioPort StartPin - Width out of bounds! Minimum is 0.");
+	};
+};
+template<>
+struct GpioPortInfo<Gpio::Port::G>
+{
+	static constexpr int8_t Width = 1;
+	static constexpr int8_t StartPin = 10;
+	static constexpr int8_t EndPin = StartPin + Width;
+
+	template< uint8_t QueryStartPin, int8_t QueryWidth >
+	struct check
+	{
+		static constexpr bool isNormal = QueryWidth > 0;
+		static constexpr bool isReversed = QueryWidth < 0;
+		static constexpr int8_t width = isNormal ? QueryWidth : -QueryWidth;
+		static_assert(isReversed or width <= Width,
+			"GpioPort Width out of bounds! Maximum is 1.");
+
+		static_assert(isReversed or (QueryStartPin + QueryWidth <= EndPin),
+			"GpioPort StartPin + Width out of bounds! Maximum is 10.");
+		static_assert(isNormal or (StartPin <= QueryStartPin + QueryWidth + 1),
+			"GpioPort StartPin - Width out of bounds! Minimum is 10.");
 	};
 };
 // ------ Translator classes from Gpio + Width -> GpioSet ------

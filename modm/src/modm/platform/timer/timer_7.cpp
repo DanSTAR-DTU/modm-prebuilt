@@ -45,11 +45,11 @@ modm::platform::Timer7::enableInterruptVector(bool enable, uint32_t priority)
 {
 	if (enable)
 	{
-		NVIC_SetPriority(TIM7_IRQn, priority);
-		NVIC_EnableIRQ(TIM7_IRQn);
+		NVIC_SetPriority(TIM7_DAC_IRQn, priority);
+		NVIC_EnableIRQ(TIM7_DAC_IRQn);
 	}
 	else
 	{
-		NVIC_DisableIRQ(TIM7_IRQn);
+		NVIC_DisableIRQ(TIM7_DAC_IRQn);
 	}
 }

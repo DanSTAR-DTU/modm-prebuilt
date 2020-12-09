@@ -2,11 +2,12 @@
 
 @defgroup modm_crashcatcher CrashCatcher
 
+lbuild module: `modm:crashcatcher`
+
 CrashCatcher hooks into the ARM Cortex-M HardFault handler and generates a coredump
 that can be used with CrashDebug for post-mortem debugging.
 
 - https://github.com/adamgreen/CrashCatcher
 - https://github.com/adamgreen/CrashDebug
-
 
  */

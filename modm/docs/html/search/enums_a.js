@@ -1,8 +1,8 @@
 var searchData=
 [
   ['observetx',['ObserveTx',['../structmodm_1_1_nrf24_register.html#a0c486521d4b2563c10ebf50adaf30eff',1,'modm::Nrf24Register']]],
-  ['offstateforidlemode',['OffStateForIdleMode',['../classmodm_1_1platform_1_1_advanced_control_timer.html#a26adf8c85966697d808adbbd620c1e27',1,'modm::platform::AdvancedControlTimer']]],
-  ['offstateforrunmode',['OffStateForRunMode',['../classmodm_1_1platform_1_1_advanced_control_timer.html#a0704b7c894f9b20391e2097b4ca6b759',1,'modm::platform::AdvancedControlTimer']]],
+  ['offstateforidlemode',['OffStateForIdleMode',['../classmodm_1_1platform_1_1_general_purpose_timer.html#a726b7b2af2041973947dee6e0d53c9c9',1,'modm::platform::GeneralPurposeTimer']]],
+  ['offstateforrunmode',['OffStateForRunMode',['../classmodm_1_1platform_1_1_general_purpose_timer.html#abb97ba80eceb1f729bea5208b929d28e',1,'modm::platform::GeneralPurposeTimer']]],
   ['operation',['Operation',['../structmodm_1_1_i2c.html#a768a0860e730f40db13d750648eb42ad',1,'modm::I2c']]],
   ['operationafterread',['OperationAfterRead',['../structmodm_1_1_i2c.html#a9b3a80feb3a8f179706ee1d5afe8bb31',1,'modm::I2c']]],
   ['operationafterstart',['OperationAfterStart',['../structmodm_1_1_i2c.html#ae92dc2a408c98192b77d0702fd18350d',1,'modm::I2c']]],

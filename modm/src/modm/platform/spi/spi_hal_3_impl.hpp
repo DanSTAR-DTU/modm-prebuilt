@@ -2,6 +2,7 @@
  * Copyright (c) 2013, Kevin Läufer
  * Copyright (c) 2013-2017, Niklas Hauser
  * Copyright (c) 2014, Daniel Krebs
+ * Copyright (c) 2020, Mike Wolfram
  *
  * This file is part of the modm project.
  *
@@ -43,7 +44,14 @@ modm::platform::SpiHal3::initialize(Prescaler prescaler,
 						| static_cast<uint32_t>(dataOrder)
 						| static_cast<uint32_t>(masterSelection)
 						| static_cast<uint32_t>(prescaler)
-						| static_cast<uint32_t>(dataSize);
+						;
+	SPI3->CR2 = static_cast<uint32_t>(dataSize);
+
+	if(static_cast<uint8_t>(dataSize) <= static_cast<uint8_t>(DataSize::Bit8))
+	{
+		SPI3->CR2 |= SPI_CR2_FRXTH;
+	}
+
 	if(masterSelection == MasterSelection::Master) {
 		SPI3->CR2 |=  SPI_CR2_SSOE; // for master mode
 	}
@@ -68,6 +76,7 @@ modm::platform::SpiHal3::setDataOrder(DataOrder dataOrder)
 void inline
 modm::platform::SpiHal3::setDataSize(DataSize dataSize)
 {
+	// TODO: implement as set/reset bit
 	SPI3->CR2 = (SPI3->CR2 & ~static_cast<uint32_t>(DataSize::All))
 										 | static_cast<uint32_t>(dataSize);
 }
@@ -80,6 +89,12 @@ modm::platform::SpiHal3::setMasterSelection(MasterSelection masterSelection)
 										 | static_cast<uint32_t>(masterSelection);
 }
 
+inline void
+modm::platform::SpiHal3::setRxFifoThreshold(RxFifoThreshold threshold)
+{
+	SPI3->CR2 = (SPI3->CR2 & ~static_cast<uint32_t>(RxFifoThreshold::QuarterFull))
+										 | static_cast<uint32_t>(threshold);
+}
 inline bool
 modm::platform::SpiHal3::isReceiveRegisterNotEmpty()
 {
@@ -101,7 +116,7 @@ modm::platform::SpiHal3::write(uint16_t data)
 void inline
 modm::platform::SpiHal3::write(uint8_t data)
 {
-	write(static_cast<uint16_t>(data));
+	*((__IO uint8_t *) &SPI3->DR) = data;
 }
 
 void inline

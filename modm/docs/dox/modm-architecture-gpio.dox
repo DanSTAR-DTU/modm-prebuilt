@@ -3,6 +3,8 @@
 @ingroup modm_architecture
 @defgroup modm_architecture_gpio General Purpose Input/Output
 
+lbuild module: `modm:architecture:gpio`
+
 GPIOs are modeled as individual classes with an interface consisting out of a
 common set of static methods.
 
@@ -30,7 +32,7 @@ Led::set();
 while (true)
 {
     Led::toggle();
-    modm::delayMilliseconds(500);
+    modm::delay(500ms);
 }
 ~~~
 
@@ -58,6 +60,5 @@ Led::reset();
 @warning "Initialize your GPIOs"
     Call `Gpio::setInput()` or `Gpio::setOutput()` before the first use,
     otherwise the GPIO state may be undefined!
-
 
  */

@@ -1,6 +1,6 @@
 // coding: utf-8
 /*
- * Copyright (c) 2017, Niklas Hauser
+ * Copyright (c) 2017, 2020, Niklas Hauser
  *
  * This file is part of the modm project.
  *
@@ -10,64 +10,92 @@
  */
 // ----------------------------------------------------------------------------
 
-#ifndef MODM_ASSERT_H
-#define MODM_ASSERT_H
+#pragma once
 
 #include <stdint.h>
 #include <stdbool.h>
 #include <modm/architecture/utils.hpp>
 
-#ifndef __DOXYGEN__
-
-// FIXME: <modm/architecture/driver/flash.hpp> is not C compatible!
-#ifdef MODM_CPU_AVR
-#	include <avr/pgmspace.h>
-#	define modm_ifss(s) PSTR(s)
+/// @cond
+#ifndef MODM_ASSERTION_INFO_HAS_DESCRIPTION
+#ifdef MODM_DEBUG_BUILD
+	#define MODM_ASSERTION_INFO_HAS_DESCRIPTION 1
 #else
-#	define modm_ifss(s) ((const char *)(s))
+	#define MODM_ASSERTION_INFO_HAS_DESCRIPTION 0
+#endif
 #endif
 
-#define modm_assert4(condition, module, location, failure) \
-	({ \
-		bool modm_assert_evaluated_condition = (bool) (condition); \
-		if (!modm_assert_evaluated_condition) { \
-			modm_assert_fail(modm_ifss(module "\0" location "\0" failure)); } \
-		modm_assert_evaluated_condition; \
-	})
+// C-type information struct
+typedef struct modm_packed
+{
+	const char *name;
+#if MODM_ASSERTION_INFO_HAS_DESCRIPTION
+	const char *description;
+#endif
+	uintptr_t context;
+	uint8_t behavior;
+} _modm_assertion_info;
+
+// modm_assert* helper macros
+
+#define _modm_assert_ifss(s) ((const char *)(s))
+#if MODM_ASSERTION_INFO_HAS_DESCRIPTION
+	#define _modm_assert5(behavior, condition, name, description, context) \
+		({ \
+			const bool evaluated_condition = (bool) (condition); \
+			if (!evaluated_condition) { \
+				_modm_assertion_info info = { \
+					_modm_assert_ifss(name), _modm_assert_ifss(description), \
+					 (uintptr_t)(context), (uint8_t)(behavior)}; \
+				modm_assert_report(&info); \
+				if (behavior & 4) __builtin_unreachable(); \
+			} \
+			evaluated_condition; \
+		})
+#else
+	#define _modm_assert5(behavior, condition, name, description, context) \
+		({ \
+			const bool evaluated_condition = (bool) (condition); \
+			if (!evaluated_condition) { \
+				_modm_assertion_info info = { \
+					_modm_assert_ifss(name), (uintptr_t)(context), (uint8_t)(behavior)}; \
+				modm_assert_report(&info); \
+				if (behavior & 4) __builtin_unreachable(); \
+			} \
+			evaluated_condition; \
+		})
+#endif
+#define _modm_assert4(behavior, condition, name, description) \
+	_modm_assert5(behavior, condition, name, description, -1)
+
+#define _modm_assert_get_macro(_1,_2,_3,_4,_modm_assertN,...) _modm_assertN
 
 
-#define modm_assert5(condition, module, location, failure, context) \
-	({ \
-		bool modm_assert_evaluated_condition = (bool) (condition); \
-		if (!modm_assert_evaluated_condition) { \
-			modm_assert_fail_context(modm_ifss(module "\0" location "\0" failure), (uintptr_t) context); } \
-		modm_assert_evaluated_condition; \
-	})
-
-#define modm_assert_get_macro(_1,_2,_3,_4,_5,foo,...) foo
+// modm_assert* definitions
 #define modm_assert(...) \
-	modm_assert_get_macro(__VA_ARGS__, modm_assert5, modm_assert4)(__VA_ARGS__)
+	_modm_assert_get_macro(__VA_ARGS__, _modm_assert5, _modm_assert4)(0x04, __VA_ARGS__)
+#define modm_assert_continue_ignore(...) \
+	_modm_assert_get_macro(__VA_ARGS__, _modm_assert5, _modm_assert4)(0x02, __VA_ARGS__)
+#define modm_assert_continue_fail(...) \
+	_modm_assert_get_macro(__VA_ARGS__, _modm_assert5, _modm_assert4)(0x01, __VA_ARGS__)
 
 #ifdef MODM_DEBUG_BUILD
-#define modm_assert_debug(...) \
-	modm_assert_get_macro(__VA_ARGS__, modm_assert5, modm_assert4)(__VA_ARGS__)
+
+#define modm_assert_continue_ignore_debug(...) \
+	_modm_assert_get_macro(__VA_ARGS__, _modm_assert5, _modm_assert4)(0x82, __VA_ARGS__)
+#define modm_assert_continue_fail_debug(...) \
+	_modm_assert_get_macro(__VA_ARGS__, _modm_assert5, _modm_assert4)(0x81, __VA_ARGS__)
+
 #else
-#	define modm_assert_debug(condition, ...) \
-	({ \
-		bool modm_unused modm_assert_evaluated_condition = (bool) (condition); \
-		modm_assert_evaluated_condition; \
-	})
+
+#define modm_assert_continue_ignore_debug(condition, ...) \
+	({ bool modm_unused evaluated_condition = (bool)(condition); evaluated_condition; })
+#define modm_assert_continue_fail_debug(condition, ...) \
+	modm_assert_continue_ignore_debug(condition)
+
 #endif
 
+// required runtime implementation
 modm_extern_c void
-modm_assert_fail_context(const char * identifier, uintptr_t context);
-
-modm_extern_c void
-modm_assert_fail(const char * identifier);
-
-modm_extern_c void
-modm_abandon(const char * module, const char * location, const char * failure, uintptr_t context);
-
-#endif // __DOXYGEN__
-
-#endif // MODM_ASSERT_H
+modm_assert_report(_modm_assertion_info *info);
+/// @endcond

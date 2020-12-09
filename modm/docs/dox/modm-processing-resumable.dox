@@ -3,6 +3,8 @@
 @ingroup modm_processing
 @defgroup modm_processing_resumable Resumable Functions
 
+lbuild module: `modm:processing:resumable`
+
 An implementation of lightweight resumable functions which allow for nested calling.
 
 This base class and its macros allows you to implement and use several
@@ -141,7 +143,7 @@ public:
     {
         RF_BEGIN();
 
-        timeout.restart(new_timeout);
+        timeout.restart(std::chrono::milliseconds(new_timeout));
 
         if(timeout.isArmed()) {
             RF_RETURN(true);
@@ -165,7 +167,6 @@ while (true) {
 
 For other examples take a look in the `examples` folder in the modm
 root folder. The given example is in `modm/examples/generic/resumable`.
-
 
 ## Module Options
 

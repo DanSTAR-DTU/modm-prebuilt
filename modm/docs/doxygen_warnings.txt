@@ -1,46 +1,65 @@
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp:795: warning: Reached end of file while still inside a (nested) comment. Nesting level 2 (probable line reference: 682, 673)
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp:115: warning: Internal inconsistency: scope for class modm::detail::MakeSigned< Vector< T, N > > not found!
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp:119: warning: Internal inconsistency: scope for class modm::detail::MakeUnsigned< Vector< T, N > > not found!
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp:123: warning: Internal inconsistency: scope for class modm::detail::WideType< Vector< T, N > > not found!
-warning: Include graph for 'platform.hpp' not generated, too many nodes. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Included by graph for 'device.hpp' not generated, too many nodes. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Included by graph for 'base.hpp' not generated, too many nodes. Consider increasing DOT_GRAPH_MAX_NODES.
-warning: Included by graph for 'set.hpp' not generated, too many nodes. Consider increasing DOT_GRAPH_MAX_NODES.
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/docs/dox/modm-processing-resumable.dox:31: warning: explicit link request to 'Functions' could not be resolved
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/docs/dox/modm-processing-resumable.dox:32: warning: explicit link request to 'Functions' could not be resolved
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp:108: warning: argument 'configuration' of command @param is not found in the argument list of modm::I2cMaster::start(I2cTransaction *transaction, ConfigurationHandler handler=nullptr)
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp:117: warning: The following parameters of modm::I2cMaster::start(I2cTransaction *transaction, ConfigurationHandler handler=nullptr) are not documented:
+warning: source ../../modm-test/src is not a readable file or directory... skipping.
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/register.hpp:793: warning: Reached end of file while still inside a (nested) comment. Nesting level 2 (probable line reference: 680, 671)
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp:115: warning: Internal inconsistency: scope for class modm::detail::MakeSigned< Vector< T, N > > not found!
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp:119: warning: Internal inconsistency: scope for class modm::detail::MakeUnsigned< Vector< T, N > > not found!
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/math/geometry/vector.hpp:123: warning: Internal inconsistency: scope for class modm::detail::WideType< Vector< T, N > > not found!
+C:/Github/test/software-dolken/modm-prebuilt/modm/docs/dox/modm-processing-resumable.dox:31: warning: explicit link request to 'Functions' could not be resolved
+C:/Github/test/software-dolken/modm-prebuilt/modm/docs/dox/modm-processing-resumable.dox:32: warning: explicit link request to 'Functions' could not be resolved
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp:107: warning: argument 'configuration' of command @param is not found in the argument list of modm::I2cMaster::start(I2cTransaction *transaction, ConfigurationHandler handler=nullptr)
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/architecture/interface/i2c_master.hpp:117: warning: The following parameters of modm::I2cMaster::start(I2cTransaction *transaction, ConfigurationHandler handler=nullptr) are not documented:
   parameter 'handler'
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp:43: warning: argument 'device' of command @param is not found in the argument list of modm::IOStream::IOStream(IODevice &odevice)
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp:50: warning: The following parameters of modm::IOStream::IOStream(IODevice &odevice) are not documented:
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp:42: warning: argument 'device' of command @param is not found in the argument list of modm::IOStream::IOStream(IODevice &odevice)
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/io/iostream.hpp:50: warning: The following parameters of modm::IOStream::IOStream(IODevice &odevice) are not documented:
   parameter 'odevice'
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/driver/radio/nrf24/nrf24_config.hpp:192: warning: The following parameters of modm::Nrf24Config::enablePipe(Pipe_t pipe, bool enableAutoAck) are not documented:
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/driver/radio/nrf24/nrf24_config.hpp:192: warning: The following parameters of modm::Nrf24Config::enablePipe(Pipe_t pipe, bool enableAutoAck) are not documented:
   parameter 'enableAutoAck'
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc1::acknowledgeInterruptFlags(const InterruptFlag_t flags)
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:352: warning: The following parameters of modm::platform::Adc1::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
-  parameter 'flags'
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc1::enableInterrupt(const Interrupt_t interrupt)
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc2::acknowledgeInterruptFlags(const InterruptFlag_t flags)
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:352: warning: The following parameters of modm::platform::Adc2::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
-  parameter 'flags'
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc2::enableInterrupt(const Interrupt_t interrupt)
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:343: warning: argument 'flag' of command @param is not found in the argument list of modm::platform::Adc3::acknowledgeInterruptFlags(const InterruptFlag_t flags)
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:352: warning: The following parameters of modm::platform::Adc3::acknowledgeInterruptFlags(const InterruptFlag_t flags) are not documented:
-  parameter 'flags'
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:306: warning: argument 'priority' of command @param is not found in the argument list of modm::platform::Adc3::enableInterrupt(const Interrupt_t interrupt)
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp:95: warning: argument 'bitrate' of command @param is not found in the argument list of modm::platform::Can1::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true)
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_1.hpp:111: warning: The following parameters of modm::platform::Can1::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true) are not documented:
-  parameter 'startupMode'
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp:95: warning: argument 'bitrate' of command @param is not found in the argument list of modm::platform::Can2::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true)
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/can/can_2.hpp:111: warning: The following parameters of modm::platform::Can2::initialize(uint32_t interruptPriority, Mode startupMode=Mode::Normal, bool overwriteOnOverrun=true) are not documented:
-  parameter 'startupMode'
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_1.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster1::initialize()
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster2::initialize()
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp:65: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster3::initialize()
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp:184: warning: The following parameters of modm::platform::Rcc::enablePll(PllSource source, uint8_t pllM, uint16_t pllN, uint8_t pllP, uint32_t waitCycles=2048) are not documented:
-  parameter 'pllP'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/math/algorithm/prescaler.hpp:150: warning: The following parameters of modm::Prescaler::from_power(modm::frequency_t input_frequency, modm::frequency_t desired_frequency, uint32_t begin, uint32_t end) are not documented:
+  parameter 'input_frequency'
+  parameter 'desired_frequency'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:187: warning: The following parameters of modm::platform::Adc1::initialize(const ClockMode clk=ClockMode::DoNotChange, const ClockSource clk_src=ClockSource::SystemClock, const Prescaler pre=Prescaler::Disabled, const CalibrationMode cal=CalibrationMode::DoNotCalibrate, const bool blocking=true) are not documented:
+  parameter 'clk_src'
+  parameter 'cal'
+  parameter 'blocking'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:196: warning: argument 'prescaler' of command @param is not found in the argument list of modm::platform::Adc1::setPrescaler(const Prescaler pre)
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_1.hpp:207: warning: The following parameters of modm::platform::Adc1::setPrescaler(const Prescaler pre) are not documented:
+  parameter 'pre'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:189: warning: The following parameters of modm::platform::Adc2::initialize(const ClockMode clk=ClockMode::DoNotChange, const ClockSource clk_src=ClockSource::SystemClock, const Prescaler pre=Prescaler::Disabled, const CalibrationMode cal=CalibrationMode::DoNotCalibrate, const bool blocking=true) are not documented:
+  parameter 'clk_src'
+  parameter 'cal'
+  parameter 'blocking'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:198: warning: argument 'prescaler' of command @param is not found in the argument list of modm::platform::Adc2::setPrescaler(const Prescaler pre)
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_2.hpp:209: warning: The following parameters of modm::platform::Adc2::setPrescaler(const Prescaler pre) are not documented:
+  parameter 'pre'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:191: warning: The following parameters of modm::platform::Adc3::initialize(const ClockMode clk=ClockMode::DoNotChange, const ClockSource clk_src=ClockSource::SystemClock, const Prescaler pre=Prescaler::Disabled, const CalibrationMode cal=CalibrationMode::DoNotCalibrate, const bool blocking=true) are not documented:
+  parameter 'clk_src'
+  parameter 'cal'
+  parameter 'blocking'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:200: warning: argument 'prescaler' of command @param is not found in the argument list of modm::platform::Adc3::setPrescaler(const Prescaler pre)
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_3.hpp:211: warning: The following parameters of modm::platform::Adc3::setPrescaler(const Prescaler pre) are not documented:
+  parameter 'pre'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_4.hpp:189: warning: The following parameters of modm::platform::Adc4::initialize(const ClockMode clk=ClockMode::DoNotChange, const ClockSource clk_src=ClockSource::SystemClock, const Prescaler pre=Prescaler::Disabled, const CalibrationMode cal=CalibrationMode::DoNotCalibrate, const bool blocking=true) are not documented:
+  parameter 'clk_src'
+  parameter 'cal'
+  parameter 'blocking'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_4.hpp:198: warning: argument 'prescaler' of command @param is not found in the argument list of modm::platform::Adc4::setPrescaler(const Prescaler pre)
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_4.hpp:209: warning: The following parameters of modm::platform::Adc4::setPrescaler(const Prescaler pre) are not documented:
+  parameter 'pre'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_5.hpp:184: warning: The following parameters of modm::platform::Adc5::initialize(const ClockMode clk=ClockMode::DoNotChange, const ClockSource clk_src=ClockSource::SystemClock, const Prescaler pre=Prescaler::Disabled, const CalibrationMode cal=CalibrationMode::DoNotCalibrate, const bool blocking=true) are not documented:
+  parameter 'clk_src'
+  parameter 'cal'
+  parameter 'blocking'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_5.hpp:193: warning: argument 'prescaler' of command @param is not found in the argument list of modm::platform::Adc5::setPrescaler(const Prescaler pre)
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/adc/adc_5.hpp:204: warning: The following parameters of modm::platform::Adc5::setPrescaler(const Prescaler pre) are not documented:
+  parameter 'pre'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_1.hpp:92: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster1::initialize()
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_2.hpp:92: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster2::initialize()
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_3.hpp:92: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster3::initialize()
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/i2c/i2c_master_4.hpp:92: warning: argument 'rate' of command @param is not found in the argument list of modm::platform::I2cMaster4::initialize()
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp:178: warning: argument 'factors' of command @param is not found in the argument list of modm::platform::Rcc::enablePll(PllSource source, const PllFactors &pllFactors, uint32_t waitCycles=2048)
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp:192: warning: The following parameters of modm::platform::Rcc::enablePll(PllSource source, const PllFactors &pllFactors, uint32_t waitCycles=2048) are not documented:
+  parameter 'pllFactors'
+C:/Github/test/software-dolken/modm-prebuilt/modm/src/modm/platform/clock/rcc.hpp:224: warning: The following parameters of modm::platform::Rcc::enablePll(PllSource source, uint8_t pllM, uint16_t pllN, uint8_t pllR, uint32_t waitCycles=2048) are not documented:
+  parameter 'pllR'
   parameter 'waitCycles'
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/docs/README.md:5: warning: Unexpected html tag <img> found within <a href=...> context
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/docs/README.md:33: warning: unable to resolve reference to `https:' for \ref command
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/docs/README.md:155: warning: expected <td> or <th> tag but found <tr> instead!
-/home/nicolai/Documents/Danstar/Software/software-dolken/modm-prebuilt/modm/docs/README.md:246: warning: unable to resolve reference to `https:' for \ref command
+C:/Github/test/software-dolken/modm-prebuilt/modm/docs/README.md:33: warning: unable to resolve reference to `https://github.com/modm-io/modm/tree/develop/CONTRIBUTING.md' for \ref command
+C:/Github/test/software-dolken/modm-prebuilt/modm/docs/README.md:325: warning: unable to resolve reference to `https://github.com/modm-io/modm/tree/develop/CONTRIBUTING.md' for \ref command

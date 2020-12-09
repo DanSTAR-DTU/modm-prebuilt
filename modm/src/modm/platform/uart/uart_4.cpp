@@ -90,6 +90,12 @@ modm::platform::Uart4::isWriteFinished()
 }
 
 std::size_t
+modm::platform::Uart4::transmitBufferSize()
+{
+	return txBuffer.getSize();
+}
+
+std::size_t
 modm::platform::Uart4::discardTransmitBuffer()
 {
 	std::size_t count = 0;
@@ -131,6 +137,12 @@ modm::platform::Uart4::read(uint8_t *data, std::size_t length)
 }
 
 std::size_t
+modm::platform::Uart4::receiveBufferSize()
+{
+	return rxBuffer.getSize();
+}
+
+std::size_t
 modm::platform::Uart4::discardReceiveBuffer()
 {
 	std::size_t count = 0;
@@ -139,6 +151,27 @@ modm::platform::Uart4::discardReceiveBuffer()
 		rxBuffer.pop();
 	}
 	return count;
+}
+
+bool
+modm::platform::Uart4::hasError()
+{
+	return UartHal4::getInterruptFlags().any(
+		UartHal4::InterruptFlag::ParityError |
+#ifdef USART_ISR_NE
+		UartHal4::InterruptFlag::NoiseError |
+#endif
+		UartHal4::InterruptFlag::OverrunError | UartHal4::InterruptFlag::FramingError);
+}
+void
+modm::platform::Uart4::clearError()
+{
+	return UartHal4::acknowledgeInterruptFlags(
+		UartHal4::InterruptFlag::ParityError |
+#ifdef USART_ISR_NE
+		UartHal4::InterruptFlag::NoiseError |
+#endif
+		UartHal4::InterruptFlag::OverrunError | UartHal4::InterruptFlag::FramingError);
 }
 
 
@@ -160,4 +193,5 @@ MODM_ISR(UART4)
 			txBuffer.pop();
 		}
 	}
+	modm::platform::UartHal4::acknowledgeInterruptFlags(modm::platform::UartHal4::InterruptFlag::OverrunError);
 }

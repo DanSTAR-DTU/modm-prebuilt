@@ -42,6 +42,11 @@
 	/// Compute the size of a static (!) array.
 	#define MODM_ARRAY_SIZE(x)	(sizeof(x) / sizeof(x[0]))
 
+	/// Include a binary file into a specific section (usually `".rodata"`).
+	/// Access via `extern "C" uint8_t {{name}}[]; extern "C" uint8_t {{name}}_length[];`.
+	/// @see http://elm-chan.org/junk/32bit/binclude.html
+	#define MODM_IMPORT_BINARY(name, file, section)
+
 	/// @{
 	/**
 	 * Force inlining on functions if needed. Compiling with -Os  does not
@@ -120,6 +125,8 @@
 	#define modm_unlikely(x)		__builtin_expect(!!(x), 0)
 	#define modm_section(s)			__attribute__((section(s)))
 	#define modm_fallthrough		__attribute__((fallthrough))
+	#define modm_noreturn			__attribute__((noreturn))
+	#define modm_warn_unused_result	__attribute__((warn_unused_result))
 
 	#ifdef MODM_COMPILER_MINGW
 	 	// FIXME: Windows Object Format PE does not support weak symbols
@@ -131,11 +138,13 @@
  	#	define modm_weak			__attribute__((weak))
 	#endif
 
-	#ifdef MODM_OS_HOSTED
+	#if defined(MODM_OS_HOSTED) || defined(MODM_CPU_AVR)
 	#	define modm_fastcode
+	#	define modm_ramcode
 	#	define modm_fastdata
 	#else
 	#	define modm_fastcode		modm_section(".fastcode")
+	#	define modm_ramcode			modm_section(".ramcode")
 	#	define modm_fastdata		modm_section(".fastdata")
 	#endif
 
@@ -144,6 +153,23 @@
 	#else
 	#	define modm_extern_c
 	#endif
+
+	#define MODM_IMPORT_BINARY(name, file, section) \
+		asm 										\
+		(											\
+			".section " #section "\n"				\
+			".balign 4\n"							\
+			".global " #name "\n"					\
+			#name ":\n"								\
+			".incbin \"" file "\"\n"				\
+			".global " #name "_laddr\n"				\
+			".set " #name "_laddr, . - " #name "\n"	\
+			".balign 4\n"							\
+			".section \".text\"\n"					\
+		); 											\
+		modm_extern_c uint8_t name ## _laddr[];		\
+		modm_extern_c const size_t name ## _length = (size_t) name ## _laddr; \
+		modm_extern_c uint8_t name[]
 
 
 #endif	// !__DOXYGEN__

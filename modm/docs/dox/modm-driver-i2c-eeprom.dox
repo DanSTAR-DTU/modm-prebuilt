@@ -3,9 +3,10 @@
 @ingroup modm_driver
 @defgroup modm_driver_i2c_eeprom I2C Eeprom
 
+lbuild module: `modm:driver:i2c.eeprom`
+
 Compatible with the 24C256 (ST) and 24FC1025 (Microchip) family and other
 I2C eeprom with an 16-bit address pointer.
 Base address for most 24xxyyyy eeproms is 0x50.
-
 
  */

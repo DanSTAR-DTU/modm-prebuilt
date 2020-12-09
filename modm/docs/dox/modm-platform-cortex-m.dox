@@ -3,6 +3,8 @@
 @ingroup modm_platform
 @defgroup modm_platform_cortex_m ARM Cortex-M Core
 
+lbuild module: `modm:platform:cortex-m`
+
 This module generates the startup code, vector table, linkerscript as well as
 initialize the heap, deal with assertions, provide blocking delay functions,
 atomic and unaligned access and the GNU build ID.
@@ -25,11 +27,11 @@ implemented as follows:
 6. Execute shared hardware initialization functions.
 7. Copy data from internal flash to *external* RAM.
 8. Zero sections in *external* RAM.
-9. Initialize heap via `__modm_initialize_memory()` (provided by the
-   `modm:platform:cortex-m:allocator` option).
+9. Initialize heap via `__modm_initialize_memory()` (implemented by the
+   `modm:platform:heap` module).
 10. Call static constructors.
 11. Call `main()` application entry point.
-12. If `main()` returns, assert on `core.main.exit` (only in debug profile).
+12. If `main()` returns, assert on `main.exit` (only in debug profile).
 13. Reboot if assertion returns.
 
 
@@ -104,7 +106,7 @@ linkerscript and the `Reset_Handler` is defined by the startup script.
 All handlers are weakly aliased to `Undefined_Handler`, which is called if an
 IRQ is enabled, but no handler is defined for it. This default handler
 determines the currectly active IRQ, sets its priority to the lowest level, and
-disables the IRQ from firing again and then asserts on `core.nvic.undefined`
+disables the IRQ from firing again and then asserts on `nvic.undef`
 with the (signed) IRQ number as context.
 
 The lowering of the priority is necessary, since the assertion handlers (see
@@ -293,51 +295,39 @@ env.collect(":platform:cortex-m:linkerscript.table_extern.heap", linkerscript_he
     the GNU LD documentation first.
 
 
+## Blocking Delay
+
+The delay functions as defined by `modm:architecture:delay` are implemented via
+software loop or hardware cycle counter (via DWT->CYCCNT, not available on
+ARMv6-M devices) and have the following limitations:
+
+- nanosecond delay is implemented as a tight loop with better than 100ns
+  resolution and accuracy at any CPU frequency.
+- microsecond delay has a maximum delay of 10 seconds.
+- millisecond delay is implemented via `modm::delay_us(ms * 1000)`, thus also
+  has a maximum delay of 10 seconds.
+
+
+## Compiler Options
+
+This module adds these architecture specific [compiler options][options]:
+
+- `-mcpu=cortex-m{type}`: the target to compile for.
+- `-mthumb`: only Thumb2 instruction set is supported.
+- `-mfloat-abi=hard`: if FPU available use the fastest ABI available.
+- `-mfpu=fpv{4, 5}-{sp}-d16`: single or double precision FPU.
+- `-fsingle-precision-constant`: if SP-FPU, treat all FP constants as SP.
+- `-Wdouble-promotion`: if SP-FPU, warn if FPs are promoted to doubles.
+
+In addition, these linker options are added:
+
+- `-nostartfiles`: modm implements its own startup script.
+- `-wrap,_{calloc, malloc, realloc, free}_r`: reimplemented Newlib with our own allocator.
+
+[options]: https://gcc.gnu.org/onlinedocs/gcc/Option-Summary.html
+
 ## Module Options
 
-### modm:platform:cortex-m:allocator: Dynamic memory allocation strategy
-
-By default, the arm-none-eabi toolchain ships with the `newlib` libc, which uses
-`dlmalloc` as the underlying allocator algorithm and only requires the
-implementation of the `void * sbrk(ptrdiff_t size)` hook. However, this limits
-the allocator to use just _one_ memory region, which must then also be of
-_continuous_ extend, since `sbrk` can only grow and shrink, but not jump.
-Therefore, when using the `newlib` strategy, only the largest memory region is
-used as heap! Depending on the device memory architecture this can leave large
-memory regions unused.
-
-For devices with very small memories, we recommend using the block allocator
-strategy, which uses a very light-weight and simple algorithm. This also only
-operates on one continuous memory region as heap.
-
-@note "Memory traits"
-    Memories can have different traits, such as DMA-ability or access time. The
-    default memory allocator functions (malloc, new, etc) only return DMA-able
-    memories, ordered by fastest access time. Similarly the search for the
-    largest memory region only considers DMA-able memory.
-
-@warning "On multi-SRAM devices"
-    For devices which contain separate memories laid out in a continuous way
-    (often called SRAM1, SRAM2, etc.) the `newlib` and `block` strategies choose
-    the largest continuous memory region, *even though* unaligned accesses
-    across memory regions may not be supported in hardware and lead to a bus
-    fault! Consider using the TLSF implementation, which does not suffer from
-    this issue.
-
-To use all non-statically allocated memory for heap, use the TLSF strategy,
-which natively supports multiple memory regions. Our implementation treats
-all internal memories as separate regions, so unaligned accesses across memory
-boundaries are not an issue. To request heap memory of different traits, see
-`modm::MemoryTraits`.
-
-@note "TLSF has static overhead"
-    The TLSF implementation has a static overhead of about 1kB per memory trait
-    group, however, these can then contain multiple non-continuous memory
-    regions. The upside of this large static allocation is very fast allocation
-    times of O(1), but we recommend using TLSF only for devices with multiple
-    memory regions.
-
-Generated with: `newlib in [block, newlib, tlsf]`
 ### modm:platform:cortex-m:main_stack_size: Minimum size of the application main stack
 
 The ARM Cortex-M uses a descending stack mechanism which is placed so that it
@@ -367,7 +357,7 @@ main stack, an alignment buffer up to 1kB is added to the main stack.
 '---------------------------------' <-- RAM origin
 ~~~
 
-Generated with: `3040 in [256 .. 3040 .. 65536]`
+Generated with: `3*1024 (3072) in [256 .. 3*1024 .. 65536]`
 ### modm:platform:cortex-m:vector_table_location: Vector table location in ROM or RAM
 
 The vector table is always stored in ROM and copied to RAM by the startup script
@@ -396,7 +386,7 @@ From the ARM Cortex-M4 Technical Reference Manual on exception handling:
     slow down interrupt latency, since both I-Code and D-Code memory interface
     need to fetch from the same access port.
 
-Generated with: `rom in [ram, rom]`
+Generated with: `ram in [ram, rom]`
 ### modm:platform:cortex-m:linkerscript.flash_offset: Offset of FLASH Section Origin
 
 Add an offset to the default start address of the flash memory. This might be
@@ -406,4 +396,9 @@ required for bootloaders located there.
     Not all offsets are compatible with the vector table relocation.
 
 Generated with: `0 in [0 ... 0x80000]`
+### modm:platform:cortex-m:linkerscript.override: Path to project provided linkerscript
+
+
+
+Generated with: `[] in [Path]`
  */
