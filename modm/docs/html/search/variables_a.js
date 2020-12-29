@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kp',['kp',['../structmodm_1_1_s_curve_controller_1_1_parameter.html#a208753285467c5413616c6653608b3c4',1,'modm::SCurveController::Parameter']]]
+  ['j_3962',['J',['../classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#a2c12f8ff65506a0dd6c4c41d85555aa6',1,'modm::platform::BitBangOneWireMaster']]]
 ];

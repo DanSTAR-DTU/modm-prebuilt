@@ -17,8 +17,8 @@
 typedef struct
 {
 	uint32_t traits;
-	uint32_t *const start;
-	uint32_t *const end;
+	uint8_t *const start;
+	uint8_t *const end;
 } __attribute__((packed)) table_pool_t;
 
 extern "C" const table_pool_t __table_heap_start[];
@@ -26,7 +26,7 @@ extern "C" const table_pool_t __table_heap_end[];
 
 namespace modm::platform
 {
-extern const uint32_t *fault_storage_heap_start;
+extern const uint8_t *fault_storage_heap_start;
 HeapTable::Iterator
 HeapTable::begin()
 {
@@ -59,7 +59,7 @@ HeapTable::Iterator::Type
 HeapTable::Iterator::operator*() const
 {
 	const auto t{reinterpret_cast<const table_pool_t*>(table)};
-	const uint32_t *const start = (const uint32_t *)((size_t)t->start + offset);
+	const uint8_t *const start = (const uint8_t *)((size_t)t->start + offset);
 	return {MemoryTraits(t->traits), start, t->end, (size_t)t->end - (size_t)start};
 }
 
@@ -92,12 +92,12 @@ HeapTable::Iterator::operator!=(const Iterator& other) const
 }
 
 // Finds the largest heap with declared traits
-void
-HeapTable::find_largest(const uint32_t **const start,
-						const uint32_t **const end,
+bool
+HeapTable::find_largest(const uint8_t **const start,
+						const uint8_t **const end,
 						const MemoryTraits trait_mask)
 {
-	uint32_t current_size = 0;
+	size_t current_size = 0;
 	*start = nullptr;
 	*end = nullptr;
 
@@ -120,6 +120,7 @@ HeapTable::find_largest(const uint32_t **const start,
 			}
 		}
 	}
+	return *start;
 }
 
 } // namespace modm::platform

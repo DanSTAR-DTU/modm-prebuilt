@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stm32f446xx',['STM32F446xx',['../device_8hpp.html#a89c3f6e33fc5056c1c5c4b09463458da',1,'device.hpp']]]
+  ['stm32g474xx_5053',['STM32G474xx',['../device_8hpp.html#af63978f7292395676b1fc71b0fa817bf',1,'device.hpp']]]
 ];

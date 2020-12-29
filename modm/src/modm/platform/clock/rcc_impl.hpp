@@ -9,15 +9,25 @@
  */
 // ----------------------------------------------------------------------------
 
-#include "common.hpp"
+#include <cmath>
 
 namespace modm::platform
 {
+/// @cond
+extern uint16_t delay_fcpu_MHz;
+extern uint16_t delay_ns_per_loop;
+/// @endcond
 
 constexpr Rcc::flash_latency
 Rcc::computeFlashLatency(uint32_t Core_Hz, uint16_t Core_mV)
 {
-	constexpr uint32_t flash_latency_1800[] =
+	constexpr uint32_t flash_latency_1000[] =
+	{
+		8000000,
+		16000000,
+		26000000,
+	};
+	constexpr uint32_t flash_latency_1280[] =
 	{
 		20000000,
 		40000000,
@@ -27,54 +37,14 @@ Rcc::computeFlashLatency(uint32_t Core_Hz, uint16_t Core_mV)
 		120000000,
 		140000000,
 		160000000,
-		168000000,
+		170000000,
 	};
-	constexpr uint32_t flash_latency_2100[] =
-	{
-		22000000,
-		44000000,
-		66000000,
-		88000000,
-		110000000,
-		132000000,
-		154000000,
-		176000000,
-		180000000,
-	};
-	constexpr uint32_t flash_latency_2400[] =
-	{
-		24000000,
-		48000000,
-		72000000,
-		96000000,
-		120000000,
-		144000000,
-		168000000,
-		180000000,
-	};
-	constexpr uint32_t flash_latency_2700[] =
-	{
-		30000000,
-		60000000,
-		90000000,
-		120000000,
-		150000000,
-		180000000,
-	};
-	const uint32_t *lut(flash_latency_1800);
-	uint8_t lut_size(sizeof(flash_latency_1800) / sizeof(uint32_t));
+	const uint32_t *lut(flash_latency_1000);
+	uint8_t lut_size(sizeof(flash_latency_1000) / sizeof(uint32_t));
 	// find the right table for the voltage
-	if (2700 <= Core_mV) {
-		lut = flash_latency_2700;
-		lut_size = sizeof(flash_latency_2700) / sizeof(uint32_t);
-	}
-	else if (2400 <= Core_mV) {
-		lut = flash_latency_2400;
-		lut_size = sizeof(flash_latency_2400) / sizeof(uint32_t);
-	}
-	else if (2100 <= Core_mV) {
-		lut = flash_latency_2100;
-		lut_size = sizeof(flash_latency_2100) / sizeof(uint32_t);
+	if (1280 <= Core_mV) {
+		lut = flash_latency_1280;
+		lut_size = sizeof(flash_latency_1280) / sizeof(uint32_t);
 	}
 	// find the next highest frequency in the table
 	uint8_t latency(0);
@@ -101,6 +71,7 @@ Rcc::setFlashLatency()
 	// enable flash prefetch and data and instruction cache
 	acr |= FLASH_ACR_PRFTEN | FLASH_ACR_DCEN | FLASH_ACR_ICEN;
 	FLASH->ACR = acr;
+	__DSB(); __ISB();
 	return fl.max_frequency;
 }
 
@@ -108,57 +79,60 @@ template< uint32_t Core_Hz >
 void
 Rcc::updateCoreFrequency()
 {
-	modm::clock::fcpu     = Core_Hz;
-	modm::clock::fcpu_kHz = Core_Hz / 1'000;
-	modm::clock::fcpu_MHz = Core_Hz / 1'000'000;
-	modm::clock::ns_per_loop = ::round(3000.f / (Core_Hz / 1'000'000));
+	SystemCoreClock = Core_Hz;
+	delay_fcpu_MHz = Core_Hz / 1'000'000;
+	delay_ns_per_loop = std::round(3000.f / (Core_Hz / 1'000'000));
 }
 
 constexpr bool
 rcc_check_enable(Peripheral peripheral)
 {
 	switch(peripheral) {
-		case Peripheral::Adc1:
-		case Peripheral::Adc2:
-		case Peripheral::Adc3:
-		case Peripheral::Can1:
-		case Peripheral::Can2:
+		case Peripheral::Cordic:
 		case Peripheral::Crc:
-		case Peripheral::Dac:
-		case Peripheral::Dcmi:
+		case Peripheral::Fdcan1:
+		case Peripheral::Fdcan2:
+		case Peripheral::Fdcan3:
+		case Peripheral::Dac1:
+		case Peripheral::Dac2:
+		case Peripheral::Dac3:
+		case Peripheral::Dac4:
 		case Peripheral::Dma1:
 		case Peripheral::Dma2:
-		case Peripheral::Fmpi2c1:
+		case Peripheral::Flash:
+		case Peripheral::Fmac:
+		case Peripheral::Hrtim1:
 		case Peripheral::I2c1:
 		case Peripheral::I2c2:
 		case Peripheral::I2c3:
+		case Peripheral::I2c4:
+		case Peripheral::Lptim1:
+		case Peripheral::Lpuart1:
+		case Peripheral::Rng:
 		case Peripheral::Rtc:
 		case Peripheral::Sai1:
-		case Peripheral::Sdio:
-		case Peripheral::Spdifrx:
 		case Peripheral::Spi1:
 		case Peripheral::Spi2:
 		case Peripheral::Spi3:
 		case Peripheral::Tim1:
-		case Peripheral::Tim10:
-		case Peripheral::Tim11:
-		case Peripheral::Tim12:
-		case Peripheral::Tim13:
-		case Peripheral::Tim14:
+		case Peripheral::Tim15:
+		case Peripheral::Tim16:
+		case Peripheral::Tim17:
 		case Peripheral::Tim2:
+		case Peripheral::Tim20:
 		case Peripheral::Tim3:
 		case Peripheral::Tim4:
 		case Peripheral::Tim5:
 		case Peripheral::Tim6:
 		case Peripheral::Tim7:
 		case Peripheral::Tim8:
-		case Peripheral::Tim9:
 		case Peripheral::Uart4:
 		case Peripheral::Uart5:
+		case Peripheral::Ucpd1:
 		case Peripheral::Usart1:
 		case Peripheral::Usart2:
 		case Peripheral::Usart3:
-		case Peripheral::Usart6:
+		case Peripheral::Usb:
 		case Peripheral::Wwdg:
 			return true;
 		default:
@@ -174,29 +148,11 @@ Rcc::enable()
 		"Rcc::enable() doesn't know this peripheral!");
 
 	__DSB();
-	if constexpr (peripheral == Peripheral::Adc1)
+	if constexpr (peripheral == Peripheral::Cordic)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB2ENR |= RCC_APB2ENR_ADC1EN;
-		}
-	if constexpr (peripheral == Peripheral::Adc2)
-		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB2ENR |= RCC_APB2ENR_ADC2EN;
-		}
-	if constexpr (peripheral == Peripheral::Adc3)
-		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB2ENR |= RCC_APB2ENR_ADC3EN;
-		}
-	if constexpr (peripheral == Peripheral::Can1)
-		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_CAN1EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_CAN1RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_CAN1RST;
-		}
-	if constexpr (peripheral == Peripheral::Can2)
-		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_CAN2EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_CAN2RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_CAN2RST;
+			RCC->AHB1ENR |= RCC_AHB1ENR_CORDICEN; __DSB();
+			RCC->AHB1RSTR |= RCC_AHB1RSTR_CORDICRST; __DSB();
+			RCC->AHB1RSTR &= ~RCC_AHB1RSTR_CORDICRST;
 		}
 	if constexpr (peripheral == Peripheral::Crc)
 		if (not Rcc::isEnabled<peripheral>()) {
@@ -204,17 +160,37 @@ Rcc::enable()
 			RCC->AHB1RSTR |= RCC_AHB1RSTR_CRCRST; __DSB();
 			RCC->AHB1RSTR &= ~RCC_AHB1RSTR_CRCRST;
 		}
-	if constexpr (peripheral == Peripheral::Dac)
+	if constexpr (peripheral == Peripheral::Fdcan1 ||
+				  peripheral == Peripheral::Fdcan2 ||
+				  peripheral == Peripheral::Fdcan3)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_DACEN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_DACRST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_DACRST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_FDCANEN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_FDCANRST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_FDCANRST;
 		}
-	if constexpr (peripheral == Peripheral::Dcmi)
+	if constexpr (peripheral == Peripheral::Dac1)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->AHB2ENR |= RCC_AHB2ENR_DCMIEN; __DSB();
-			RCC->AHB2RSTR |= RCC_AHB2RSTR_DCMIRST; __DSB();
-			RCC->AHB2RSTR &= ~RCC_AHB2RSTR_DCMIRST;
+			RCC->AHB2ENR |= RCC_AHB2ENR_DAC1EN; __DSB();
+			RCC->AHB2RSTR |= RCC_AHB2RSTR_DAC1RST; __DSB();
+			RCC->AHB2RSTR &= ~RCC_AHB2RSTR_DAC1RST;
+		}
+	if constexpr (peripheral == Peripheral::Dac2)
+		if (not Rcc::isEnabled<peripheral>()) {
+			RCC->AHB2ENR |= RCC_AHB2ENR_DAC2EN; __DSB();
+			RCC->AHB2RSTR |= RCC_AHB2RSTR_DAC2RST; __DSB();
+			RCC->AHB2RSTR &= ~RCC_AHB2RSTR_DAC2RST;
+		}
+	if constexpr (peripheral == Peripheral::Dac3)
+		if (not Rcc::isEnabled<peripheral>()) {
+			RCC->AHB2ENR |= RCC_AHB2ENR_DAC3EN; __DSB();
+			RCC->AHB2RSTR |= RCC_AHB2RSTR_DAC3RST; __DSB();
+			RCC->AHB2RSTR &= ~RCC_AHB2RSTR_DAC3RST;
+		}
+	if constexpr (peripheral == Peripheral::Dac4)
+		if (not Rcc::isEnabled<peripheral>()) {
+			RCC->AHB2ENR |= RCC_AHB2ENR_DAC4EN; __DSB();
+			RCC->AHB2RSTR |= RCC_AHB2RSTR_DAC4RST; __DSB();
+			RCC->AHB2RSTR &= ~RCC_AHB2RSTR_DAC4RST;
 		}
 	if constexpr (peripheral == Peripheral::Dma1)
 		if (not Rcc::isEnabled<peripheral>()) {
@@ -228,29 +204,65 @@ Rcc::enable()
 			RCC->AHB1RSTR |= RCC_AHB1RSTR_DMA2RST; __DSB();
 			RCC->AHB1RSTR &= ~RCC_AHB1RSTR_DMA2RST;
 		}
-	if constexpr (peripheral == Peripheral::Fmpi2c1)
+	if constexpr (peripheral == Peripheral::Flash)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_FMPI2C1EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_FMPI2C1RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_FMPI2C1RST;
+			RCC->AHB1ENR |= RCC_AHB1ENR_FLASHEN; __DSB();
+			RCC->AHB1RSTR |= RCC_AHB1RSTR_FLASHRST; __DSB();
+			RCC->AHB1RSTR &= ~RCC_AHB1RSTR_FLASHRST;
+		}
+	if constexpr (peripheral == Peripheral::Fmac)
+		if (not Rcc::isEnabled<peripheral>()) {
+			RCC->AHB1ENR |= RCC_AHB1ENR_FMACEN; __DSB();
+			RCC->AHB1RSTR |= RCC_AHB1RSTR_FMACRST; __DSB();
+			RCC->AHB1RSTR &= ~RCC_AHB1RSTR_FMACRST;
+		}
+	if constexpr (peripheral == Peripheral::Hrtim1)
+		if (not Rcc::isEnabled<peripheral>()) {
+			RCC->APB2ENR |= RCC_APB2ENR_HRTIM1EN; __DSB();
+			RCC->APB2RSTR |= RCC_APB2RSTR_HRTIM1RST; __DSB();
+			RCC->APB2RSTR &= ~RCC_APB2RSTR_HRTIM1RST;
 		}
 	if constexpr (peripheral == Peripheral::I2c1)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_I2C1EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_I2C1RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_I2C1RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_I2C1EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_I2C1RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_I2C1RST;
 		}
 	if constexpr (peripheral == Peripheral::I2c2)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_I2C2EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_I2C2RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_I2C2RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_I2C2EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_I2C2RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_I2C2RST;
 		}
 	if constexpr (peripheral == Peripheral::I2c3)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_I2C3EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_I2C3RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_I2C3RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_I2C3EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_I2C3RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_I2C3RST;
+		}
+	if constexpr (peripheral == Peripheral::I2c4)
+		if (not Rcc::isEnabled<peripheral>()) {
+			RCC->APB1ENR2 |= RCC_APB1ENR2_I2C4EN; __DSB();
+			RCC->APB1RSTR2 |= RCC_APB1RSTR2_I2C4RST; __DSB();
+			RCC->APB1RSTR2 &= ~RCC_APB1RSTR2_I2C4RST;
+		}
+	if constexpr (peripheral == Peripheral::Lptim1)
+		if (not Rcc::isEnabled<peripheral>()) {
+			RCC->APB1ENR1 |= RCC_APB1ENR1_LPTIM1EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_LPTIM1RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_LPTIM1RST;
+		}
+	if constexpr (peripheral == Peripheral::Lpuart1)
+		if (not Rcc::isEnabled<peripheral>()) {
+			RCC->APB1ENR2 |= RCC_APB1ENR2_LPUART1EN; __DSB();
+			RCC->APB1RSTR2 |= RCC_APB1RSTR2_LPUART1RST; __DSB();
+			RCC->APB1RSTR2 &= ~RCC_APB1RSTR2_LPUART1RST;
+		}
+	if constexpr (peripheral == Peripheral::Rng)
+		if (not Rcc::isEnabled<peripheral>()) {
+			RCC->AHB2ENR |= RCC_AHB2ENR_RNGEN; __DSB();
+			RCC->AHB2RSTR |= RCC_AHB2RSTR_RNGRST; __DSB();
+			RCC->AHB2RSTR &= ~RCC_AHB2RSTR_RNGRST;
 		}
 	if constexpr (peripheral == Peripheral::Rtc)
 		if (not Rcc::isEnabled<peripheral>()) {
@@ -262,18 +274,6 @@ Rcc::enable()
 			RCC->APB2RSTR |= RCC_APB2RSTR_SAI1RST; __DSB();
 			RCC->APB2RSTR &= ~RCC_APB2RSTR_SAI1RST;
 		}
-	if constexpr (peripheral == Peripheral::Sdio)
-		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB2ENR |= RCC_APB2ENR_SDIOEN; __DSB();
-			RCC->APB2RSTR |= RCC_APB2RSTR_SDIORST; __DSB();
-			RCC->APB2RSTR &= ~RCC_APB2RSTR_SDIORST;
-		}
-	if constexpr (peripheral == Peripheral::Spdifrx)
-		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_SPDIFRXEN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_SPDIFRXRST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_SPDIFRXRST;
-		}
 	if constexpr (peripheral == Peripheral::Spi1)
 		if (not Rcc::isEnabled<peripheral>()) {
 			RCC->APB2ENR |= RCC_APB2ENR_SPI1EN; __DSB();
@@ -282,15 +282,15 @@ Rcc::enable()
 		}
 	if constexpr (peripheral == Peripheral::Spi2)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_SPI2EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_SPI2RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_SPI2RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_SPI2EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_SPI2RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_SPI2RST;
 		}
 	if constexpr (peripheral == Peripheral::Spi3)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_SPI3EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_SPI3RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_SPI3RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_SPI3EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_SPI3RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_SPI3RST;
 		}
 	if constexpr (peripheral == Peripheral::Tim1)
 		if (not Rcc::isEnabled<peripheral>()) {
@@ -298,71 +298,65 @@ Rcc::enable()
 			RCC->APB2RSTR |= RCC_APB2RSTR_TIM1RST; __DSB();
 			RCC->APB2RSTR &= ~RCC_APB2RSTR_TIM1RST;
 		}
-	if constexpr (peripheral == Peripheral::Tim10)
+	if constexpr (peripheral == Peripheral::Tim15)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB2ENR |= RCC_APB2ENR_TIM10EN; __DSB();
-			RCC->APB2RSTR |= RCC_APB2RSTR_TIM10RST; __DSB();
-			RCC->APB2RSTR &= ~RCC_APB2RSTR_TIM10RST;
+			RCC->APB2ENR |= RCC_APB2ENR_TIM15EN; __DSB();
+			RCC->APB2RSTR |= RCC_APB2RSTR_TIM15RST; __DSB();
+			RCC->APB2RSTR &= ~RCC_APB2RSTR_TIM15RST;
 		}
-	if constexpr (peripheral == Peripheral::Tim11)
+	if constexpr (peripheral == Peripheral::Tim16)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB2ENR |= RCC_APB2ENR_TIM11EN; __DSB();
-			RCC->APB2RSTR |= RCC_APB2RSTR_TIM11RST; __DSB();
-			RCC->APB2RSTR &= ~RCC_APB2RSTR_TIM11RST;
+			RCC->APB2ENR |= RCC_APB2ENR_TIM16EN; __DSB();
+			RCC->APB2RSTR |= RCC_APB2RSTR_TIM16RST; __DSB();
+			RCC->APB2RSTR &= ~RCC_APB2RSTR_TIM16RST;
 		}
-	if constexpr (peripheral == Peripheral::Tim12)
+	if constexpr (peripheral == Peripheral::Tim17)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_TIM12EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_TIM12RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_TIM12RST;
-		}
-	if constexpr (peripheral == Peripheral::Tim13)
-		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_TIM13EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_TIM13RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_TIM13RST;
-		}
-	if constexpr (peripheral == Peripheral::Tim14)
-		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_TIM14EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_TIM14RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_TIM14RST;
+			RCC->APB2ENR |= RCC_APB2ENR_TIM17EN; __DSB();
+			RCC->APB2RSTR |= RCC_APB2RSTR_TIM17RST; __DSB();
+			RCC->APB2RSTR &= ~RCC_APB2RSTR_TIM17RST;
 		}
 	if constexpr (peripheral == Peripheral::Tim2)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_TIM2EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_TIM2RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_TIM2RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_TIM2EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_TIM2RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_TIM2RST;
+		}
+	if constexpr (peripheral == Peripheral::Tim20)
+		if (not Rcc::isEnabled<peripheral>()) {
+			RCC->APB2ENR |= RCC_APB2ENR_TIM20EN; __DSB();
+			RCC->APB2RSTR |= RCC_APB2RSTR_TIM20RST; __DSB();
+			RCC->APB2RSTR &= ~RCC_APB2RSTR_TIM20RST;
 		}
 	if constexpr (peripheral == Peripheral::Tim3)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_TIM3EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_TIM3RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_TIM3RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_TIM3EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_TIM3RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_TIM3RST;
 		}
 	if constexpr (peripheral == Peripheral::Tim4)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_TIM4EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_TIM4RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_TIM4RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_TIM4EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_TIM4RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_TIM4RST;
 		}
 	if constexpr (peripheral == Peripheral::Tim5)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_TIM5EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_TIM5RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_TIM5RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_TIM5EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_TIM5RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_TIM5RST;
 		}
 	if constexpr (peripheral == Peripheral::Tim6)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_TIM6EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_TIM6RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_TIM6RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_TIM6EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_TIM6RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_TIM6RST;
 		}
 	if constexpr (peripheral == Peripheral::Tim7)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_TIM7EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_TIM7RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_TIM7RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_TIM7EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_TIM7RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_TIM7RST;
 		}
 	if constexpr (peripheral == Peripheral::Tim8)
 		if (not Rcc::isEnabled<peripheral>()) {
@@ -370,23 +364,23 @@ Rcc::enable()
 			RCC->APB2RSTR |= RCC_APB2RSTR_TIM8RST; __DSB();
 			RCC->APB2RSTR &= ~RCC_APB2RSTR_TIM8RST;
 		}
-	if constexpr (peripheral == Peripheral::Tim9)
-		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB2ENR |= RCC_APB2ENR_TIM9EN; __DSB();
-			RCC->APB2RSTR |= RCC_APB2RSTR_TIM9RST; __DSB();
-			RCC->APB2RSTR &= ~RCC_APB2RSTR_TIM9RST;
-		}
 	if constexpr (peripheral == Peripheral::Uart4)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_UART4EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_UART4RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_UART4RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_UART4EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_UART4RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_UART4RST;
 		}
 	if constexpr (peripheral == Peripheral::Uart5)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_UART5EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_UART5RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_UART5RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_UART5EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_UART5RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_UART5RST;
+		}
+	if constexpr (peripheral == Peripheral::Ucpd1)
+		if (not Rcc::isEnabled<peripheral>()) {
+			RCC->APB1ENR2 |= RCC_APB1ENR2_UCPD1EN; __DSB();
+			RCC->APB1RSTR2 |= RCC_APB1RSTR2_UCPD1RST; __DSB();
+			RCC->APB1RSTR2 &= ~RCC_APB1RSTR2_UCPD1RST;
 		}
 	if constexpr (peripheral == Peripheral::Usart1)
 		if (not Rcc::isEnabled<peripheral>()) {
@@ -396,27 +390,25 @@ Rcc::enable()
 		}
 	if constexpr (peripheral == Peripheral::Usart2)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_USART2EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_USART2RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_USART2RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_USART2EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_USART2RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_USART2RST;
 		}
 	if constexpr (peripheral == Peripheral::Usart3)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_USART3EN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_USART3RST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_USART3RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_USART3EN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_USART3RST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_USART3RST;
 		}
-	if constexpr (peripheral == Peripheral::Usart6)
+	if constexpr (peripheral == Peripheral::Usb)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB2ENR |= RCC_APB2ENR_USART6EN; __DSB();
-			RCC->APB2RSTR |= RCC_APB2RSTR_USART6RST; __DSB();
-			RCC->APB2RSTR &= ~RCC_APB2RSTR_USART6RST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_USBEN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_USBRST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_USBRST;
 		}
 	if constexpr (peripheral == Peripheral::Wwdg)
 		if (not Rcc::isEnabled<peripheral>()) {
-			RCC->APB1ENR |= RCC_APB1ENR_WWDGEN; __DSB();
-			RCC->APB1RSTR |= RCC_APB1RSTR_WWDGRST; __DSB();
-			RCC->APB1RSTR &= ~RCC_APB1RSTR_WWDGRST;
+			RCC->APB1ENR1 |= RCC_APB1ENR1_WWDGEN;
 		}
 	__DSB();
 }
@@ -429,90 +421,96 @@ Rcc::disable()
 		"Rcc::disable() doesn't know this peripheral!");
 
 	__DSB();
-	if constexpr (peripheral == Peripheral::Adc1)
-		RCC->APB2ENR &= ~RCC_APB2ENR_ADC1EN;
-	if constexpr (peripheral == Peripheral::Adc2)
-		RCC->APB2ENR &= ~RCC_APB2ENR_ADC2EN;
-	if constexpr (peripheral == Peripheral::Adc3)
-		RCC->APB2ENR &= ~RCC_APB2ENR_ADC3EN;
-	if constexpr (peripheral == Peripheral::Can1)
-		RCC->APB1ENR &= ~RCC_APB1ENR_CAN1EN;
-	if constexpr (peripheral == Peripheral::Can2)
-		RCC->APB1ENR &= ~RCC_APB1ENR_CAN2EN;
+	if constexpr (peripheral == Peripheral::Cordic)
+		RCC->AHB1ENR &= ~RCC_AHB1ENR_CORDICEN;
+	if constexpr (peripheral == Peripheral::Fdcan1 ||
+				  peripheral == Peripheral::Fdcan2 ||
+				  peripheral == Peripheral::Fdcan3)
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_FDCANEN;	
 	if constexpr (peripheral == Peripheral::Crc)
 		RCC->AHB1ENR &= ~RCC_AHB1ENR_CRCEN;
-	if constexpr (peripheral == Peripheral::Dac)
-		RCC->APB1ENR &= ~RCC_APB1ENR_DACEN;
-	if constexpr (peripheral == Peripheral::Dcmi)
-		RCC->AHB2ENR &= ~RCC_AHB2ENR_DCMIEN;
+	if constexpr (peripheral == Peripheral::Dac1)
+		RCC->AHB2ENR &= ~RCC_AHB2ENR_DAC1EN;
+	if constexpr (peripheral == Peripheral::Dac2)
+		RCC->AHB2ENR &= ~RCC_AHB2ENR_DAC2EN;
+	if constexpr (peripheral == Peripheral::Dac3)
+		RCC->AHB2ENR &= ~RCC_AHB2ENR_DAC3EN;
+	if constexpr (peripheral == Peripheral::Dac4)
+		RCC->AHB2ENR &= ~RCC_AHB2ENR_DAC4EN;
 	if constexpr (peripheral == Peripheral::Dma1)
 		RCC->AHB1ENR &= ~RCC_AHB1ENR_DMA1EN;
 	if constexpr (peripheral == Peripheral::Dma2)
 		RCC->AHB1ENR &= ~RCC_AHB1ENR_DMA2EN;
-	if constexpr (peripheral == Peripheral::Fmpi2c1)
-		RCC->APB1ENR &= ~RCC_APB1ENR_FMPI2C1EN;
+	if constexpr (peripheral == Peripheral::Flash)
+		RCC->AHB1ENR &= ~RCC_AHB1ENR_FLASHEN;
+	if constexpr (peripheral == Peripheral::Fmac)
+		RCC->AHB1ENR &= ~RCC_AHB1ENR_FMACEN;
+	if constexpr (peripheral == Peripheral::Hrtim1)
+		RCC->APB2ENR &= ~RCC_APB2ENR_HRTIM1EN;
 	if constexpr (peripheral == Peripheral::I2c1)
-		RCC->APB1ENR &= ~RCC_APB1ENR_I2C1EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_I2C1EN;
 	if constexpr (peripheral == Peripheral::I2c2)
-		RCC->APB1ENR &= ~RCC_APB1ENR_I2C2EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_I2C2EN;
 	if constexpr (peripheral == Peripheral::I2c3)
-		RCC->APB1ENR &= ~RCC_APB1ENR_I2C3EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_I2C3EN;
+	if constexpr (peripheral == Peripheral::I2c4)
+		RCC->APB1ENR2 &= ~RCC_APB1ENR2_I2C4EN;
+	if constexpr (peripheral == Peripheral::Lptim1)
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_LPTIM1EN;
+	if constexpr (peripheral == Peripheral::Lpuart1)
+		RCC->APB1ENR2 &= ~RCC_APB1ENR2_LPUART1EN;
+	if constexpr (peripheral == Peripheral::Rng)
+		RCC->AHB2ENR &= ~RCC_AHB2ENR_RNGEN;
 	if constexpr (peripheral == Peripheral::Rtc)
 		RCC->BDCR &= ~RCC_BDCR_RTCEN;
 	if constexpr (peripheral == Peripheral::Sai1)
 		RCC->APB2ENR &= ~RCC_APB2ENR_SAI1EN;
-	if constexpr (peripheral == Peripheral::Sdio)
-		RCC->APB2ENR &= ~RCC_APB2ENR_SDIOEN;
-	if constexpr (peripheral == Peripheral::Spdifrx)
-		RCC->APB1ENR &= ~RCC_APB1ENR_SPDIFRXEN;
 	if constexpr (peripheral == Peripheral::Spi1)
 		RCC->APB2ENR &= ~RCC_APB2ENR_SPI1EN;
 	if constexpr (peripheral == Peripheral::Spi2)
-		RCC->APB1ENR &= ~RCC_APB1ENR_SPI2EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_SPI2EN;
 	if constexpr (peripheral == Peripheral::Spi3)
-		RCC->APB1ENR &= ~RCC_APB1ENR_SPI3EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_SPI3EN;
 	if constexpr (peripheral == Peripheral::Tim1)
 		RCC->APB2ENR &= ~RCC_APB2ENR_TIM1EN;
-	if constexpr (peripheral == Peripheral::Tim10)
-		RCC->APB2ENR &= ~RCC_APB2ENR_TIM10EN;
-	if constexpr (peripheral == Peripheral::Tim11)
-		RCC->APB2ENR &= ~RCC_APB2ENR_TIM11EN;
-	if constexpr (peripheral == Peripheral::Tim12)
-		RCC->APB1ENR &= ~RCC_APB1ENR_TIM12EN;
-	if constexpr (peripheral == Peripheral::Tim13)
-		RCC->APB1ENR &= ~RCC_APB1ENR_TIM13EN;
-	if constexpr (peripheral == Peripheral::Tim14)
-		RCC->APB1ENR &= ~RCC_APB1ENR_TIM14EN;
+	if constexpr (peripheral == Peripheral::Tim15)
+		RCC->APB2ENR &= ~RCC_APB2ENR_TIM15EN;
+	if constexpr (peripheral == Peripheral::Tim16)
+		RCC->APB2ENR &= ~RCC_APB2ENR_TIM16EN;
+	if constexpr (peripheral == Peripheral::Tim17)
+		RCC->APB2ENR &= ~RCC_APB2ENR_TIM17EN;
 	if constexpr (peripheral == Peripheral::Tim2)
-		RCC->APB1ENR &= ~RCC_APB1ENR_TIM2EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_TIM2EN;
+	if constexpr (peripheral == Peripheral::Tim20)
+		RCC->APB2ENR &= ~RCC_APB2ENR_TIM20EN;
 	if constexpr (peripheral == Peripheral::Tim3)
-		RCC->APB1ENR &= ~RCC_APB1ENR_TIM3EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_TIM3EN;
 	if constexpr (peripheral == Peripheral::Tim4)
-		RCC->APB1ENR &= ~RCC_APB1ENR_TIM4EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_TIM4EN;
 	if constexpr (peripheral == Peripheral::Tim5)
-		RCC->APB1ENR &= ~RCC_APB1ENR_TIM5EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_TIM5EN;
 	if constexpr (peripheral == Peripheral::Tim6)
-		RCC->APB1ENR &= ~RCC_APB1ENR_TIM6EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_TIM6EN;
 	if constexpr (peripheral == Peripheral::Tim7)
-		RCC->APB1ENR &= ~RCC_APB1ENR_TIM7EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_TIM7EN;
 	if constexpr (peripheral == Peripheral::Tim8)
 		RCC->APB2ENR &= ~RCC_APB2ENR_TIM8EN;
-	if constexpr (peripheral == Peripheral::Tim9)
-		RCC->APB2ENR &= ~RCC_APB2ENR_TIM9EN;
 	if constexpr (peripheral == Peripheral::Uart4)
-		RCC->APB1ENR &= ~RCC_APB1ENR_UART4EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_UART4EN;
 	if constexpr (peripheral == Peripheral::Uart5)
-		RCC->APB1ENR &= ~RCC_APB1ENR_UART5EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_UART5EN;
+	if constexpr (peripheral == Peripheral::Ucpd1)
+		RCC->APB1ENR2 &= ~RCC_APB1ENR2_UCPD1EN;
 	if constexpr (peripheral == Peripheral::Usart1)
 		RCC->APB2ENR &= ~RCC_APB2ENR_USART1EN;
 	if constexpr (peripheral == Peripheral::Usart2)
-		RCC->APB1ENR &= ~RCC_APB1ENR_USART2EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_USART2EN;
 	if constexpr (peripheral == Peripheral::Usart3)
-		RCC->APB1ENR &= ~RCC_APB1ENR_USART3EN;
-	if constexpr (peripheral == Peripheral::Usart6)
-		RCC->APB2ENR &= ~RCC_APB2ENR_USART6EN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_USART3EN;
+	if constexpr (peripheral == Peripheral::Usb)
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_USBEN;
 	if constexpr (peripheral == Peripheral::Wwdg)
-		RCC->APB1ENR &= ~RCC_APB1ENR_WWDGEN;
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_WWDGEN;
 	__DSB();
 }
 
@@ -523,90 +521,96 @@ Rcc::isEnabled()
 	static_assert(rcc_check_enable(peripheral),
 		"Rcc::isEnabled() doesn't know this peripheral!");
 
-	if constexpr (peripheral == Peripheral::Adc1)
-		return RCC->APB2ENR & RCC_APB2ENR_ADC1EN;
-	if constexpr (peripheral == Peripheral::Adc2)
-		return RCC->APB2ENR & RCC_APB2ENR_ADC2EN;
-	if constexpr (peripheral == Peripheral::Adc3)
-		return RCC->APB2ENR & RCC_APB2ENR_ADC3EN;
-	if constexpr (peripheral == Peripheral::Can1)
-		return RCC->APB1ENR & RCC_APB1ENR_CAN1EN;
-	if constexpr (peripheral == Peripheral::Can2)
-		return RCC->APB1ENR & RCC_APB1ENR_CAN2EN;
+	if constexpr (peripheral == Peripheral::Cordic)
+		return RCC->AHB1ENR & RCC_AHB1ENR_CORDICEN;
+	if constexpr (peripheral == Peripheral::Fdcan1 ||
+			peripheral == Peripheral::Fdcan2 ||
+			peripheral == Peripheral::Fdcan3)
+		return RCC->APB1ENR1 & RCC_APB1ENR1_FDCANEN;	
 	if constexpr (peripheral == Peripheral::Crc)
 		return RCC->AHB1ENR & RCC_AHB1ENR_CRCEN;
-	if constexpr (peripheral == Peripheral::Dac)
-		return RCC->APB1ENR & RCC_APB1ENR_DACEN;
-	if constexpr (peripheral == Peripheral::Dcmi)
-		return RCC->AHB2ENR & RCC_AHB2ENR_DCMIEN;
+	if constexpr (peripheral == Peripheral::Dac1)
+		return RCC->AHB2ENR & RCC_AHB2ENR_DAC1EN;
+	if constexpr (peripheral == Peripheral::Dac2)
+		return RCC->AHB2ENR & RCC_AHB2ENR_DAC2EN;
+	if constexpr (peripheral == Peripheral::Dac3)
+		return RCC->AHB2ENR & RCC_AHB2ENR_DAC3EN;
+	if constexpr (peripheral == Peripheral::Dac4)
+		return RCC->AHB2ENR & RCC_AHB2ENR_DAC4EN;
 	if constexpr (peripheral == Peripheral::Dma1)
 		return RCC->AHB1ENR & RCC_AHB1ENR_DMA1EN;
 	if constexpr (peripheral == Peripheral::Dma2)
 		return RCC->AHB1ENR & RCC_AHB1ENR_DMA2EN;
-	if constexpr (peripheral == Peripheral::Fmpi2c1)
-		return RCC->APB1ENR & RCC_APB1ENR_FMPI2C1EN;
+	if constexpr (peripheral == Peripheral::Flash)
+		return RCC->AHB1ENR & RCC_AHB1ENR_FLASHEN;
+	if constexpr (peripheral == Peripheral::Fmac)
+		return RCC->AHB1ENR & RCC_AHB1ENR_FMACEN;
+	if constexpr (peripheral == Peripheral::Hrtim1)
+		return RCC->APB2ENR & RCC_APB2ENR_HRTIM1EN;
 	if constexpr (peripheral == Peripheral::I2c1)
-		return RCC->APB1ENR & RCC_APB1ENR_I2C1EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_I2C1EN;
 	if constexpr (peripheral == Peripheral::I2c2)
-		return RCC->APB1ENR & RCC_APB1ENR_I2C2EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_I2C2EN;
 	if constexpr (peripheral == Peripheral::I2c3)
-		return RCC->APB1ENR & RCC_APB1ENR_I2C3EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_I2C3EN;
+	if constexpr (peripheral == Peripheral::I2c4)
+		return RCC->APB1ENR2 & RCC_APB1ENR2_I2C4EN;
+	if constexpr (peripheral == Peripheral::Lptim1)
+		return RCC->APB1ENR1 & RCC_APB1ENR1_LPTIM1EN;
+	if constexpr (peripheral == Peripheral::Lpuart1)
+		return RCC->APB1ENR2 & RCC_APB1ENR2_LPUART1EN;
+	if constexpr (peripheral == Peripheral::Rng)
+		return RCC->AHB2ENR & RCC_AHB2ENR_RNGEN;
 	if constexpr (peripheral == Peripheral::Rtc)
 		return RCC->BDCR & RCC_BDCR_RTCEN;
 	if constexpr (peripheral == Peripheral::Sai1)
 		return RCC->APB2ENR & RCC_APB2ENR_SAI1EN;
-	if constexpr (peripheral == Peripheral::Sdio)
-		return RCC->APB2ENR & RCC_APB2ENR_SDIOEN;
-	if constexpr (peripheral == Peripheral::Spdifrx)
-		return RCC->APB1ENR & RCC_APB1ENR_SPDIFRXEN;
 	if constexpr (peripheral == Peripheral::Spi1)
 		return RCC->APB2ENR & RCC_APB2ENR_SPI1EN;
 	if constexpr (peripheral == Peripheral::Spi2)
-		return RCC->APB1ENR & RCC_APB1ENR_SPI2EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_SPI2EN;
 	if constexpr (peripheral == Peripheral::Spi3)
-		return RCC->APB1ENR & RCC_APB1ENR_SPI3EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_SPI3EN;
 	if constexpr (peripheral == Peripheral::Tim1)
 		return RCC->APB2ENR & RCC_APB2ENR_TIM1EN;
-	if constexpr (peripheral == Peripheral::Tim10)
-		return RCC->APB2ENR & RCC_APB2ENR_TIM10EN;
-	if constexpr (peripheral == Peripheral::Tim11)
-		return RCC->APB2ENR & RCC_APB2ENR_TIM11EN;
-	if constexpr (peripheral == Peripheral::Tim12)
-		return RCC->APB1ENR & RCC_APB1ENR_TIM12EN;
-	if constexpr (peripheral == Peripheral::Tim13)
-		return RCC->APB1ENR & RCC_APB1ENR_TIM13EN;
-	if constexpr (peripheral == Peripheral::Tim14)
-		return RCC->APB1ENR & RCC_APB1ENR_TIM14EN;
+	if constexpr (peripheral == Peripheral::Tim15)
+		return RCC->APB2ENR & RCC_APB2ENR_TIM15EN;
+	if constexpr (peripheral == Peripheral::Tim16)
+		return RCC->APB2ENR & RCC_APB2ENR_TIM16EN;
+	if constexpr (peripheral == Peripheral::Tim17)
+		return RCC->APB2ENR & RCC_APB2ENR_TIM17EN;
 	if constexpr (peripheral == Peripheral::Tim2)
-		return RCC->APB1ENR & RCC_APB1ENR_TIM2EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_TIM2EN;
+	if constexpr (peripheral == Peripheral::Tim20)
+		return RCC->APB2ENR & RCC_APB2ENR_TIM20EN;
 	if constexpr (peripheral == Peripheral::Tim3)
-		return RCC->APB1ENR & RCC_APB1ENR_TIM3EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_TIM3EN;
 	if constexpr (peripheral == Peripheral::Tim4)
-		return RCC->APB1ENR & RCC_APB1ENR_TIM4EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_TIM4EN;
 	if constexpr (peripheral == Peripheral::Tim5)
-		return RCC->APB1ENR & RCC_APB1ENR_TIM5EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_TIM5EN;
 	if constexpr (peripheral == Peripheral::Tim6)
-		return RCC->APB1ENR & RCC_APB1ENR_TIM6EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_TIM6EN;
 	if constexpr (peripheral == Peripheral::Tim7)
-		return RCC->APB1ENR & RCC_APB1ENR_TIM7EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_TIM7EN;
 	if constexpr (peripheral == Peripheral::Tim8)
 		return RCC->APB2ENR & RCC_APB2ENR_TIM8EN;
-	if constexpr (peripheral == Peripheral::Tim9)
-		return RCC->APB2ENR & RCC_APB2ENR_TIM9EN;
 	if constexpr (peripheral == Peripheral::Uart4)
-		return RCC->APB1ENR & RCC_APB1ENR_UART4EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_UART4EN;
 	if constexpr (peripheral == Peripheral::Uart5)
-		return RCC->APB1ENR & RCC_APB1ENR_UART5EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_UART5EN;
+	if constexpr (peripheral == Peripheral::Ucpd1)
+		return RCC->APB1ENR2 & RCC_APB1ENR2_UCPD1EN;
 	if constexpr (peripheral == Peripheral::Usart1)
 		return RCC->APB2ENR & RCC_APB2ENR_USART1EN;
 	if constexpr (peripheral == Peripheral::Usart2)
-		return RCC->APB1ENR & RCC_APB1ENR_USART2EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_USART2EN;
 	if constexpr (peripheral == Peripheral::Usart3)
-		return RCC->APB1ENR & RCC_APB1ENR_USART3EN;
-	if constexpr (peripheral == Peripheral::Usart6)
-		return RCC->APB2ENR & RCC_APB2ENR_USART6EN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_USART3EN;
+	if constexpr (peripheral == Peripheral::Usb)
+		return RCC->APB1ENR1 & RCC_APB1ENR1_USBEN;
 	if constexpr (peripheral == Peripheral::Wwdg)
-		return RCC->APB1ENR & RCC_APB1ENR_WWDGEN;
+		return RCC->APB1ENR1 & RCC_APB1ENR1_WWDGEN;
 }
 
 }   // namespace modm::platform

@@ -3,6 +3,8 @@
 @ingroup modm_processing
 @defgroup modm_processing_protothread Protothreads
 
+lbuild module: `modm:processing:protothread`
+
 Protothreads are extremely lightweight stackless threads designed for
 severely memory constrained systems, such as small embedded systems or
 wireless sensor network nodes. Protothreads provide linear code execution
@@ -54,11 +56,11 @@ public:
 
         while (true)
         {
-            timeout.restart(100);
+            timeout.restart(100ms);
             Led::set();
             PT_WAIT_UNTIL(timeout.isExpired());
 
-            timeout.restart(200);
+            timeout.restart(200ms);
             Led::reset();
             PT_WAIT_UNTIL(timeout.isExpired());
         }
@@ -77,6 +79,5 @@ while (true) {
     light.run();
 }
 ~~~
-
 
  */

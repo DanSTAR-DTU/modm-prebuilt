@@ -2,6 +2,8 @@
 
 @defgroup modm_io Input/Output Streams
 
+lbuild module: `modm:io`
+
 The `modm::IOStream` class contains efficient formatting that supports both
 C++ `std::basic_ostream`-like formatting via `operator <<` as well as
 implementing a reasonably large subset of `printf`.
@@ -17,7 +19,7 @@ stream.printf("format number 8: %u or as signed -100: %d", 8, -100);
 @warning "AVR supported features"
     All expensive features incl. printf are disabled by default! Check the options.
 
-@note "`modm::endl` does implicitly flush!"
+@note "`modm::endl` does NOT implicitly flush!"
     Flushing is *extremely expensive* on embedded systems, therefore `modm::endl`
     does not implicitly flush the stream. Please call `modm::flush` explicitly.
 
@@ -140,7 +142,6 @@ device.write("Hello");
 modm::IOStream stream(device);
 stream << " World!";
 ~~~
-
 
 ## Module Options
 

@@ -2,6 +2,8 @@
 
 @defgroup modm_debug Logging
 
+lbuild module: `modm:debug`
+
 The `modm::log::Logger` uses a `modm::IOStream` to read messages and write them
 to a given output device.
 
@@ -56,6 +58,5 @@ if (MODM_LOG_LEVEL <= modm::log::DEBUG)
 - redirect to `std::cout`
 
 In sum there are two nested method calls with one of them being virtual.
-
 
  */

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yellow',['yellow',['../group__modm__io.html#ga0ba66e273e02afe2b580a77315924c1e',1,'modm']]]
+  ['zeromatrix_3804',['zeroMatrix',['../classmodm_1_1_matrix.html#ad328d29885c5a109943b76501495937e',1,'modm::Matrix']]]
 ];

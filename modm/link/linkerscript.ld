@@ -15,7 +15,9 @@
 MEMORY
 {
 	FLASH (rx) : ORIGIN = 0x08000000, LENGTH = 524288
-	SRAM1 (rwx) : ORIGIN = 0x20000000, LENGTH = 131072
+	CCM (rwx) : ORIGIN = 0x10000000, LENGTH = 32768
+	SRAM1 (rwx) : ORIGIN = 0x20000000, LENGTH = 114688
+	SRAM2 (rwx) : ORIGIN = 0x2001C000, LENGTH = 16384
 	RAM (rwx) : ORIGIN = 0x20000000, LENGTH = 131072
     
 }
@@ -29,12 +31,12 @@ ENTRY(Reset_Handler)
 /* the thread stack is used only for reporting hard fault conditions! It may therefore be small. */
 PROCESS_STACK_SIZE  = 0;
 /* the handler stack is used for main program as well as interrupts */
-MAIN_STACK_SIZE     = 3040;
+MAIN_STACK_SIZE     = 3072;
 /* combined stack size */
 TOTAL_STACK_SIZE = MAIN_STACK_SIZE + PROCESS_STACK_SIZE;
 
 
-VECTOR_TABLE_OFFSET = TOTAL_STACK_SIZE;
+
 SECTIONS
 {
 	__rom_start = ORIGIN(FLASH);
@@ -50,23 +52,6 @@ SECTIONS
 	} >FLASH
 
 
-	.stack (NOLOAD) :
-	{
-		. = VECTOR_TABLE_OFFSET - TOTAL_STACK_SIZE;
-		__stack_start = .;
-
-		. += MAIN_STACK_SIZE;
-		. = ALIGN(8);
-		__main_stack_top = .;
-
-		. += PROCESS_STACK_SIZE;
-		. = ALIGN(8);
-		__process_stack_top = .;
-
-		__stack_end = .;
-	} >RAM
-
-
 	.vector_ram (NOLOAD) :
 	{
 		__vector_table_ram_start = .;
@@ -74,9 +59,39 @@ SECTIONS
 		KEEP(*(.vector_ram))
 		. = ALIGN(4);
 		__vector_table_ram_end = .;
-	} >RAM
+	} >CCM
 
 
+	.fastcode : ALIGN(4)
+	{
+		__fastcode_load = LOADADDR(.fastcode);
+		__fastcode_start = .;
+		*(.fastcode)
+		. = ALIGN(4);
+		__fastcode_end = .;
+	} >CCM AT >FLASH
+
+
+	.fastdata : ALIGN(4)
+	{
+		__fastdata_load = LOADADDR(.fastdata);
+		__fastdata_start = .;
+		*(.fastdata)
+		. = ALIGN(4);
+		__fastdata_end = .;
+	} >CCM AT >FLASH
+
+
+	.heap4 (NOLOAD) :
+	{
+		*(.heap4)
+		. = ALIGN(4);
+		__heap4_start = .;
+		. = ORIGIN(CCM) + LENGTH(CCM);
+		__heap4_end = .;
+	} >CCM
+
+	g_crashCatcherStack = . - 500;
 	.text : ALIGN(4)
 	{
 		*(.text .text.* .gnu.linkonce.t.*)
@@ -104,6 +119,11 @@ SECTIONS
 		*(.ARM.exidx* .gnu.linkonce.armexidx.*)
 		*(.eh_frame*)
 	}
+	/DISCARD/ :
+	{
+		/* See `modm:platform:heap` module for an explanation! */
+		*(.Heap_is_not_implemented!__Please_include_the__modm:platform:heap__module_in_your_project!)
+	}
 	/* Hardware init table */
 	.hardware_init : ALIGN(4)
 	{
@@ -129,14 +149,20 @@ SECTIONS
 	} > FLASH
 
 
-	.fastcode : ALIGN(4)
+	.stack (NOLOAD) :
 	{
-		__fastcode_load = LOADADDR(.fastcode);
-		__fastcode_start = .;
-		*(.fastcode)
-		. = ALIGN(4);
-		__fastcode_end = .;
-	} >FLASH
+		__stack_start = .;
+
+		. += MAIN_STACK_SIZE;
+		. = ALIGN(8);
+		__main_stack_top = .;
+
+		. += PROCESS_STACK_SIZE;
+		. = ALIGN(8);
+		__process_stack_top = .;
+
+		__stack_end = .;
+	} >RAM
 
 
 	/* initialized variables */
@@ -145,7 +171,12 @@ SECTIONS
 		__data_load = LOADADDR(.data);
 		__data_start = .;
 		*(.data .data.* .gnu.linkonce.d.*)
-		. = ALIGN(4);
+	} >RAM AT >FLASH
+
+	/* code routines in RAM */
+	.ramcode : ALIGN(4)
+	{
+		*(.ramcode .ramcode*)
 		__data_end = .;
 	} >RAM AT >FLASH
 
@@ -168,25 +199,16 @@ SECTIONS
 	} >RAM
 
 
-	.fastdata : ALIGN(4)
-	{
-		__fastdata_load = LOADADDR(.fastdata);
-		__fastdata_start = .;
-		*(.fastdata)
-		. = ALIGN(4);
-		__fastdata_end = .;
-	} >RAM AT >FLASH
-
-
 	.heap1 (NOLOAD) :
 	{
+		*(.heap1)
+		. = ALIGN(4);
 		__heap1_start = .;
-		. = ORIGIN(SRAM1) + LENGTH(SRAM1);
+		. = ORIGIN(RAM) + LENGTH(RAM);
 		__heap1_end = .;
 	} >RAM
 
 
-	g_crashCatcherStack = . - 500;
     
 
 	/* TABLES! TABLES! ALL THE TABLES YOU COULD EVER WANT! TABLES! */
@@ -208,6 +230,12 @@ SECTIONS
 		LONG(__fastdata_load)
 		LONG(__fastdata_start)
 		LONG(__fastdata_end)
+		LONG(__fastcode_load)
+		LONG(__fastcode_start)
+		LONG(__fastcode_end)
+		LONG(__vector_table_ram_load)
+		LONG(__vector_table_ram_start)
+		LONG(__vector_table_ram_end)
 		__table_copy_intern_end = .;
 	} >FLASH
 
@@ -247,6 +275,9 @@ SECTIONS
 		LONG(0x000f)
 		LONG(__heap1_start)
 		LONG(__heap1_end)
+		LONG(0x2006)
+		LONG(__heap4_start)
+		LONG(__heap4_end)
         
 		__table_heap_end = .;
 	} >FLASH

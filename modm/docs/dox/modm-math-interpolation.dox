@@ -3,6 +3,8 @@
 @ingroup modm_math
 @defgroup modm_math_interpolation Interpolation Methods
 
+lbuild module: `modm:math:interpolation`
+
 Simple interpolation methods between a list of points.
 
 ## Linear Interpolation
@@ -87,6 +89,5 @@ float output = value.interpolate(1.5f);
     otherwise the calculation will deliver wrong results!
 
 See [Wikipedia](http://en.wikipedia.org/wiki/Lagrange_interpolation).
-
 
  */

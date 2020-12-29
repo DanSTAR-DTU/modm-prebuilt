@@ -1,0 +1,55 @@
+/**
+
+@defgroup modm_stdc__ C++ Standard Environment
+
+lbuild module: `modm:stdc++`
+
+Refines the C++ language to make it easier to use on embedded targets.
+Depending on the module options, the compiler options are appended with either:
+
+- `-fno-exceptions`: no C++ exceptions.
+- `-fno-rtti`: no C++ run-time type information.
+
+or:
+
+- `-fexceptions`: with C++ exceptions.
+- `-frtti`: with C++ run-time type information.
+
+## AVR
+
+A partial port of GCC 8 libstdc++ is provided:
+See https://github.com/modm-io/avr-libstdcpp.
+
+## Module Options
+
+### modm:stdc++:exceptions: C++ Exceptions
+
+Enables the full use of C++ exception handling.
+
+@warning "Check your code size"
+    The inclusion of the stack unwind tables will increase your code size quite
+    a bit. Check whether your target has enough memory for this!
+
+Generated with: `False in [True, False]`
+### modm:stdc++:rtti: C++ Runtime Type Information
+
+Enables the full use of C++ runtime type information.
+
+@warning "Check your code size"
+    The inclusion of the RTTI information will increase your code size quite a
+    bit. Check whether your target has enough memory for this!
+
+Generated with: `False in [True, False]`
+### modm:stdc++:safe_statics: C++ Safe Statics Initialization
+
+Enables safe initialization of statics inside functions and interrupts.
+In case of recursive initialization the debug assertion `cxa.guard.recursion`
+is raised.
+
+Further reading on this topic:
+- [C++ ABI for the ARM Architecture](https://static.docs.arm.com/ihi0041/d/IHI0041D_cppabi.pdf)
+- https://manishearth.github.io/blog/2015/06/26/adventures-in-systems-programming-c-plus-plus-local-statics/
+- https://iamroman.org/blog/2017/04/cpp11-static-init/
+
+Generated with: `True in [True, False]`
+ */

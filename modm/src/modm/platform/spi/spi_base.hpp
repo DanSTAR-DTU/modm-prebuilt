@@ -2,6 +2,7 @@
  * Copyright (c) 2013, Kevin Läufer
  * Copyright (c) 2013-2017, Niklas Hauser
  * Copyright (c) 2014, Daniel Krebs
+ * Copyright (c) 2020, Mike Wolfram
  *
  * This file is part of the modm project.
  *
@@ -41,6 +42,8 @@ public:
 		RxBufferNotEmpty	= SPI_CR2_RXNEIE,
 		TxBufferEmpty		= SPI_CR2_TXEIE,
 		Error				= SPI_CR2_ERRIE,
+		RxDmaEnable         = SPI_CR2_RXDMAEN,
+		TxDmaEnable         = SPI_CR2_TXDMAEN,
 	};
 	MODM_FLAGS32(Interrupt);
 
@@ -54,6 +57,8 @@ public:
 		OverrunError		= SPI_SR_OVR,
 		Busy				= SPI_SR_BSY,
 		FrameFormatError	= SPI_SR_FRE,
+		FifoRxLevel			= SPI_SR_FRLVL,
+		FifoTxLevel			= SPI_SR_FTLVL,
 	};
 	MODM_FLAGS32(InterruptFlag);
 
@@ -87,8 +92,19 @@ public:
 	enum class
 	DataSize : uint32_t
 	{
-		Bit8  = 0,
-		Bit16 = SPI_CR1_DFF,
+		Bit4  = SPI_CR2_DS_1 | SPI_CR2_DS_0,				///< 0b0011
+		Bit5  = SPI_CR2_DS_2,								///< 0b0100
+		Bit6  = SPI_CR2_DS_2 | SPI_CR2_DS_0,				///< 0b0101
+		Bit7  = SPI_CR2_DS_2 | SPI_CR2_DS_1,				///< 0b0110
+		Bit8  = SPI_CR2_DS_2 | SPI_CR2_DS_1 | SPI_CR2_DS_0,	///< 0b0111
+		Bit9  = SPI_CR2_DS_3,								///< 0b1000
+		Bit10 = SPI_CR2_DS_3 | SPI_CR2_DS_0,				///< 0b1001
+		Bit11 = SPI_CR2_DS_3 | SPI_CR2_DS_1,				///< 0b1010
+		Bit12 = SPI_CR2_DS_3 | SPI_CR2_DS_1 | SPI_CR2_DS_0,	///< 0b1011
+		Bit13 = SPI_CR2_DS_3 | SPI_CR2_DS_2,				///< 0b1100
+		Bit14 = SPI_CR2_DS_3 | SPI_CR2_DS_2 | SPI_CR2_DS_0,	///< 0b1101
+		Bit15 = SPI_CR2_DS_3 | SPI_CR2_DS_2 | SPI_CR2_DS_1,	///< 0b1110
+		Bit16 = SPI_CR2_DS_3 | SPI_CR2_DS_2 | SPI_CR2_DS_1 | SPI_CR2_DS_0,///< 0b1111
 		All   = Bit16,
 	};
 
@@ -105,6 +121,12 @@ public:
 		Div256 	= SPI_CR1_BR_2 | SPI_CR1_BR_1 | SPI_CR1_BR_0,
 	};
 
+	enum class
+	RxFifoThreshold : uint32_t
+	{
+		HalfFull    = 0,
+		QuarterFull = SPI_CR2_FRXTH,
+	};
 };
 
 } // namespace platform

@@ -9,35 +9,11 @@
  */
 // ----------------------------------------------------------------------------
 
-#include <stdint.h>
-#include <inttypes.h>
-
-#include <modm/io/iostream.hpp>
-#include <modm/architecture/utils.hpp>
-#include <modm/architecture/interface/can_message.hpp>
-
-namespace modm
-{
-
-namespace can
-{
-
-modm::IOStream&
-operator << (modm::IOStream& s, const modm::can::Message m)
-{
-    s.printf("id = %04" PRIx32 ", len = ", m.identifier);
-    s << m.length;
-    s.printf(", flags = %c%c, data = ",
-             m.flags.rtr ? 'R' : 'r',
-             m.flags.extended ? 'E' : 'e');
-    for (uint_fast8_t ii = 0; ii < m.length; ++ii) {
-        s.printf("%02x ", m.data[ii]);
-    }
-    return s;
-}
+#include "can_message.hpp"
+#include <cstring>
 
 bool
-modm::can::Message::operator == (const modm::can::Message& rhs) const
+modm::can::IMessage::operator == (const modm::can::IMessage& rhs) const
 {
 	if ((this->identifier     == rhs.identifier) and
 		(this->length         == rhs.length)     and
@@ -55,5 +31,56 @@ modm::can::Message::operator == (const modm::can::Message& rhs) const
 	}
 	return false;
 }
-} // can namespace
-} // modm namespace
+
+bool
+modm::can::IMessage::operator < (const modm::can::IMessage& rhs) const
+{
+	return (this->identifier << (this->flags.extended ? 0 : 18))
+		< (rhs.identifier << (rhs.flags.extended ? 0 : 18));
+}
+
+void
+modm::can::IMessage::operator= (const modm::can::IMessage& rhs)
+{
+	this->identifier = rhs.identifier;
+	this->flags = rhs.flags;
+	this->setLength(rhs.length);
+	if(this->data != nullptr and rhs.data != nullptr)
+		std::memcpy(this->data, rhs.data, this->length);
+}
+
+
+#include <inttypes.h>
+#include <modm/io/iostream.hpp>
+
+modm::IOStream&
+operator << (modm::IOStream& s, const modm::can::Message m)
+{
+	s.printf("id = %04" PRIx32 ", len = ", m.identifier);
+	s << m.length;
+	s.printf(", flags = %c%c, data = ",
+			 m.flags.rtr ? 'R' : 'r',
+			 m.flags.extended ? 'E' : 'e');
+	if (not m.isRemoteTransmitRequest()) {
+		for (uint_fast8_t ii = 0; ii < m.length; ++ii) {
+			s.printf("%02x ", m.data[ii]);
+		}
+	}
+	return s;
+}
+
+modm::IOStream&
+operator << (modm::IOStream& s, const modm::can::LongMessage m)
+{
+	s.printf("id = %04" PRIx32 ", len = ", m.identifier);
+	s << m.length;
+	s.printf(", flags = %c%c, data = ",
+			 m.flags.rtr ? 'R' : 'r',
+			 m.flags.extended ? 'E' : 'e');
+	if (not m.isRemoteTransmitRequest()) {
+		for (uint_fast8_t ii = 0; ii < m.length; ++ii) {
+			s.printf("%02x ", m.data[ii]);
+		}
+	}
+	return s;
+}

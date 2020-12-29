@@ -19,6 +19,7 @@
 
 #include <modm/architecture/interface/spi_master.hpp>
 #include <modm/platform/gpio/connector.hpp>
+#include <modm/math/algorithm/prescaler.hpp>
 #include "spi_hal_3.hpp"
 
 namespace modm
@@ -63,6 +64,8 @@ public:
 		LsbFirst = SPI_CR1_LSBFIRST
 	};
 
+	using DataSize = Hal::DataSize;
+
 public:
 	template< template<Peripheral _> class... Signals >
 	static void
@@ -85,36 +88,11 @@ public:
 	static void
 	initialize()
 	{
-		// calculate the nearest prescaler from the baudrate
-		constexpr float desired = float(SystemClock::Spi3) / baudrate;
-		constexpr uint16_t nearest = (
-				(desired >= (128 * 4.f/3)) ? 256 : (
-				(desired >= ( 64 * 4.f/3)) ? 128 : (
-				(desired >= ( 32 * 4.f/3)) ?  64 : (
-				(desired >= ( 16 * 4.f/3)) ?  32 : (
-				(desired >= (  8 * 4.f/3)) ?  16 : (
-				(desired >= (  4 * 4.f/3)) ?   8 : (
-				(desired >= (  2 * 4.f/3)) ?   4 :
-											   2
-				)))))));
-
-		// check if we found a prescaler which generates a baudrate within the tolerance
-		assertBaudrateInTolerance<
-				SystemClock::Spi3 / nearest,
-				baudrate,
-				tolerance >();
+		constexpr auto result = modm::Prescaler::from_power(SystemClock::Spi3, baudrate, 2, 256);
+		assertBaudrateInTolerance< result.frequency, baudrate, tolerance >();
 
 		// translate the prescaler into the bitmapping
-		constexpr SpiHal3::Prescaler prescaler = (
-				(nearest >= 256) ? SpiHal3::Prescaler::Div256 : (
-				(nearest >= 128) ? SpiHal3::Prescaler::Div128 : (
-				(nearest >=  64) ? SpiHal3::Prescaler::Div64  : (
-				(nearest >=  32) ? SpiHal3::Prescaler::Div32  : (
-				(nearest >=  16) ? SpiHal3::Prescaler::Div16  : (
-				(nearest >=   8) ? SpiHal3::Prescaler::Div8   : (
-				(nearest >=   4) ? SpiHal3::Prescaler::Div4   :
-								   SpiHal3::Prescaler::Div2
-				)))))));
+		constexpr SpiHal3::Prescaler prescaler{result.index << SPI_CR1_BR_Pos};
 
 		// initialize the Spi
 		SpiHal3::initialize(prescaler);
@@ -131,6 +109,11 @@ public:
 	setDataOrder(DataOrder order)
 	{
 		SpiHal3::setDataOrder(static_cast<SpiHal3::DataOrder>(order));
+	}
+	static modm_always_inline void
+	setDataSize(DataSize size)
+	{
+		SpiHal3::setDataSize(static_cast<SpiHal3::DataSize>(size));
 	}
 
 

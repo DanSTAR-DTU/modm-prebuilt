@@ -32,7 +32,7 @@ set(CCFLAGS "\
     -funsigned-char \
     -fwrapv \
     -g3 \
-    -gdwarf \
+    -gdwarf-3 \
     -W \
     -Wall \
     -Wdouble-promotion \
@@ -43,6 +43,7 @@ set(CCFLAGS "\
     -Werror=sign-compare \
     -Wextra \
     -Wlogical-op \
+    -Wno-redundant-decls \
     -Wpointer-arith \
     -Wundef \
 ")
@@ -77,7 +78,6 @@ set(CFLAGS_DEBUG "\
 set(CXXFLAGS "\
     -fno-exceptions \
     -fno-rtti \
-    -fno-threadsafe-statics \
     -fno-unwind-tables \
     -fstrict-enums \
     -fuse-cxa-atexit \
@@ -94,7 +94,7 @@ set(CXXFLAGS_DEBUG "\
 
 set(ASFLAGS "\
     -g3 \
-    -gdwarf \
+    -gdwarf-3 \
 ")
 
 set(ASFLAGS_RELEASE "\
@@ -129,10 +129,6 @@ set(LINKFLAGS "\
     -Wl,--gc-sections \
     -Wl,--no-wchar-size-warning \
     -Wl,--relax \
-    -Wl,-wrap,_calloc_r \
-    -Wl,-wrap,_free_r \
-    -Wl,-wrap,_malloc_r \
-    -Wl,-wrap,_realloc_r \
 ")
 
 set(LINKFLAGS_RELEASE "\
@@ -176,13 +172,15 @@ include_directories(
 )
 list(APPEND SOURCE_FILES
     ${CMAKE_CURRENT_LIST_DIR}/ext/crashcatcher/src/CrashCatcher.c
-    ${CMAKE_CURRENT_LIST_DIR}/ext/crashcatcher/src/CrashCatcher_armv7m.S
+    ${CMAKE_CURRENT_LIST_DIR}/ext/crashcatcher/src/CrashCatcher_armv7m.sx
+    ${CMAKE_CURRENT_LIST_DIR}/ext/gcc/cabi.c
+    ${CMAKE_CURRENT_LIST_DIR}/ext/gcc/cxxabi.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/ext/gcc/new_delete.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/architecture/driver/atomic/flag.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/architecture/interface/can.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/architecture/interface/can_message.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/architecture/interface/i2c.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/container/smart_pointer.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/debug/error_report.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/driver/storage/i2c_eeprom.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/io/iostream.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/io/iostream_printf.cpp
@@ -190,21 +188,13 @@ list(APPEND SOURCE_FILES
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/math/geometry/vector2.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/math/utils/bit_operation.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/math/utils/pc/operator.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/adc/adc_interrupt_1.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/adc/adc_interrupt_2.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/adc/adc_interrupt_3.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/can/can_1.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/can/can_2.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/can/can_filter.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/clock/rcc.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/clock/systick_timer.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/assert.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/build_id.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/clock.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/cxxabi.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/delay.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/heap_newlib.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/heap_table.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/no_heap.c
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/reset_handler.sx
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/startup.c
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/startup_platform.c
@@ -216,33 +206,33 @@ list(APPEND SOURCE_FILES
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/i2c/i2c_master_1.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/i2c/i2c_master_2.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/i2c/i2c_master_3.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/i2c/i2c_master_4.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/spi/spi_master_1.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/spi/spi_master_2.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/spi/spi_master_3.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_1.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_10.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_11.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_12.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_13.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_14.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_15.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_16.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_17.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_2.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_20.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_3.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_4.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_5.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_6.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_7.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_8.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/timer/timer_9.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/uart/uart_1.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/uart/uart_2.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/uart/uart_3.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/uart/uart_4.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/uart/uart_5.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/uart/uart_6.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/can/fd_can1.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/can/fd_can2.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/utils/dummy.cpp
 )
 set_source_files_properties(
-    ${CMAKE_CURRENT_LIST_DIR}/ext/crashcatcher/src/CrashCatcher_armv7m.S
+    ${CMAKE_CURRENT_LIST_DIR}/ext/crashcatcher/src/CrashCatcher_armv7m.sx
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/core/reset_handler.sx
     PROPERTIES LANGUAGE CXX
 )

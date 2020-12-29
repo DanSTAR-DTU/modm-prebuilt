@@ -90,6 +90,12 @@ modm::platform::Uart5::isWriteFinished()
 }
 
 std::size_t
+modm::platform::Uart5::transmitBufferSize()
+{
+	return txBuffer.getSize();
+}
+
+std::size_t
 modm::platform::Uart5::discardTransmitBuffer()
 {
 	std::size_t count = 0;
@@ -131,6 +137,12 @@ modm::platform::Uart5::read(uint8_t *data, std::size_t length)
 }
 
 std::size_t
+modm::platform::Uart5::receiveBufferSize()
+{
+	return rxBuffer.getSize();
+}
+
+std::size_t
 modm::platform::Uart5::discardReceiveBuffer()
 {
 	std::size_t count = 0;
@@ -139,6 +151,27 @@ modm::platform::Uart5::discardReceiveBuffer()
 		rxBuffer.pop();
 	}
 	return count;
+}
+
+bool
+modm::platform::Uart5::hasError()
+{
+	return UartHal5::getInterruptFlags().any(
+		UartHal5::InterruptFlag::ParityError |
+#ifdef USART_ISR_NE
+		UartHal5::InterruptFlag::NoiseError |
+#endif
+		UartHal5::InterruptFlag::OverrunError | UartHal5::InterruptFlag::FramingError);
+}
+void
+modm::platform::Uart5::clearError()
+{
+	return UartHal5::acknowledgeInterruptFlags(
+		UartHal5::InterruptFlag::ParityError |
+#ifdef USART_ISR_NE
+		UartHal5::InterruptFlag::NoiseError |
+#endif
+		UartHal5::InterruptFlag::OverrunError | UartHal5::InterruptFlag::FramingError);
 }
 
 
@@ -160,4 +193,5 @@ MODM_ISR(UART5)
 			txBuffer.pop();
 		}
 	}
+	modm::platform::UartHal5::acknowledgeInterruptFlags(modm::platform::UartHal5::InterruptFlag::OverrunError);
 }

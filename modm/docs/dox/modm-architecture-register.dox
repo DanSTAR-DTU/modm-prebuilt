@@ -3,6 +3,8 @@
 @ingroup modm_architecture
 @defgroup modm_architecture_register General Purpose Registers
 
+lbuild module: `modm:architecture:register`
+
 Data structures to provide a native register abstraction.
 
 These data structures are used to describe the relationship of single bits,
@@ -175,6 +177,5 @@ uint8_t delay = Delay_t::get(control);
 
 See [Typesafe Register Access in C++](https://blog.salkinium.com/typesafe-register-access-in-c++/)
 for a more detailed background on this implementation.
-
 
  */

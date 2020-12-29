@@ -32,7 +32,7 @@ extern const uint32_t __table_copy_extern_end[];
 extern const uint32_t __table_zero_extern_start[];
 extern const uint32_t __table_zero_extern_end[];
 
-extern const uint32_t __vector_table_rom_start[];
+extern const uint32_t __vector_table_ram_start[];
 
 // ----------------------------------------------------------------------------
 // Linker section start and end pointers for function hooks
@@ -93,7 +93,7 @@ void __modm_startup(void)
 	// Enable FPU in privileged and user mode
 	SCB->CPACR |= ((3UL << 10*2) | (3UL << 11*2));
 	// Set the vector table location
-	SCB->VTOR = (uint32_t)__vector_table_rom_start;
+	SCB->VTOR = (uint32_t)__vector_table_ram_start;
 
 	// Enable trapping of divide by zero for UDIV/SDIV instructions.
 	SCB->CCR |= SCB_CCR_DIV_0_TRP_Msk;
@@ -116,8 +116,8 @@ void __modm_startup(void)
 	main();
 
 	// If main exits, assert here in debug mode
-	modm_assert_debug(0, "core", "main", "exit");
-
+	(void) modm_assert_continue_fail_debug(0,
+			"main.exit", "The main() function returned!");
 	// Otherwise reboot
 	NVIC_SystemReset();
 }

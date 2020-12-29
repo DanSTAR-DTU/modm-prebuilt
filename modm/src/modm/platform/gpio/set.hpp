@@ -26,21 +26,23 @@ template< class... Gpios >
 class GpioSet : public Gpio
 {
 protected:
-	static constexpr uint16_t inverteds[5] = {
+	static constexpr uint16_t inverteds[6] = {
 		(((Gpios::port == Port::A and Gpios::isInverted) ? Gpios::mask : 0) | ...),
 		(((Gpios::port == Port::B and Gpios::isInverted) ? Gpios::mask : 0) | ...),
 		(((Gpios::port == Port::C and Gpios::isInverted) ? Gpios::mask : 0) | ...),
 		(((Gpios::port == Port::D and Gpios::isInverted) ? Gpios::mask : 0) | ...),
-		(((Gpios::port == Port::H and Gpios::isInverted) ? Gpios::mask : 0) | ...),
+		(((Gpios::port == Port::F and Gpios::isInverted) ? Gpios::mask : 0) | ...),
+		(((Gpios::port == Port::G and Gpios::isInverted) ? Gpios::mask : 0) | ...),
 	};
 	static constexpr uint16_t inverted(uint8_t id) { return inverteds[id]; }
 
-	static constexpr uint16_t masks[5] = {
+	static constexpr uint16_t masks[6] = {
 		(((Gpios::port == Port::A) ? Gpios::mask : 0) | ...),
 		(((Gpios::port == Port::B) ? Gpios::mask : 0) | ...),
 		(((Gpios::port == Port::C) ? Gpios::mask : 0) | ...),
 		(((Gpios::port == Port::D) ? Gpios::mask : 0) | ...),
-		(((Gpios::port == Port::H) ? Gpios::mask : 0) | ...),
+		(((Gpios::port == Port::F) ? Gpios::mask : 0) | ...),
+		(((Gpios::port == Port::G) ? Gpios::mask : 0) | ...),
 	};
 	static constexpr uint16_t mask(uint8_t id) { return masks[id]; }
 	static constexpr uint32_t mask2(uint8_t id, uint8_t value = 0b11) {
@@ -64,7 +66,8 @@ public:
 		if constexpr (mask(1)) GPIOB->MODER = (GPIOB->MODER & ~mask2(1)) | mask2(1, i(Mode::Output));
 		if constexpr (mask(2)) GPIOC->MODER = (GPIOC->MODER & ~mask2(2)) | mask2(2, i(Mode::Output));
 		if constexpr (mask(3)) GPIOD->MODER = (GPIOD->MODER & ~mask2(3)) | mask2(3, i(Mode::Output));
-		if constexpr (mask(4)) GPIOH->MODER = (GPIOH->MODER & ~mask2(4)) | mask2(4, i(Mode::Output));
+		if constexpr (mask(4)) GPIOF->MODER = (GPIOF->MODER & ~mask2(4)) | mask2(4, i(Mode::Output));
+		if constexpr (mask(5)) GPIOG->MODER = (GPIOG->MODER & ~mask2(5)) | mask2(5, i(Mode::Output));
 	}
 
 	static void setOutput(bool status)
@@ -98,8 +101,12 @@ public:
 			GPIOD->OTYPER  = (GPIOD->OTYPER  & ~mask(3))  | (i(type) ? mask(3) : 0);
 		}
 		if constexpr (mask(4)) {
-			GPIOH->OSPEEDR = (GPIOH->OSPEEDR & ~mask2(4)) | (i(speed) * mask2(4, 0b01));
-			GPIOH->OTYPER  = (GPIOH->OTYPER  & ~mask(4))  | (i(type) ? mask(4) : 0);
+			GPIOF->OSPEEDR = (GPIOF->OSPEEDR & ~mask2(4)) | (i(speed) * mask2(4, 0b01));
+			GPIOF->OTYPER  = (GPIOF->OTYPER  & ~mask(4))  | (i(type) ? mask(4) : 0);
+		}
+		if constexpr (mask(5)) {
+			GPIOG->OSPEEDR = (GPIOG->OSPEEDR & ~mask2(5)) | (i(speed) * mask2(5, 0b01));
+			GPIOG->OTYPER  = (GPIOG->OTYPER  & ~mask(5))  | (i(type) ? mask(5) : 0);
 		}
 	}
 
@@ -126,9 +133,14 @@ public:
 			GPIOD->OSPEEDR &= ~mask2(3);
 		}
 		if constexpr (mask(4)) {
-			GPIOH->MODER &= ~mask2(4);
-			GPIOH->OTYPER &= ~mask(4);
-			GPIOH->OSPEEDR &= ~mask2(4);
+			GPIOF->MODER &= ~mask2(4);
+			GPIOF->OTYPER &= ~mask(4);
+			GPIOF->OSPEEDR &= ~mask2(4);
+		}
+		if constexpr (mask(5)) {
+			GPIOG->MODER &= ~mask2(5);
+			GPIOG->OTYPER &= ~mask(5);
+			GPIOG->OSPEEDR &= ~mask2(5);
 		}
 	}
 
@@ -144,7 +156,8 @@ public:
 		if constexpr (mask(1)) GPIOB->MODER |= mask2(1, i(Mode::Analog));
 		if constexpr (mask(2)) GPIOC->MODER |= mask2(2, i(Mode::Analog));
 		if constexpr (mask(3)) GPIOD->MODER |= mask2(3, i(Mode::Analog));
-		if constexpr (mask(4)) GPIOH->MODER |= mask2(4, i(Mode::Analog));
+		if constexpr (mask(4)) GPIOF->MODER |= mask2(4, i(Mode::Analog));
+		if constexpr (mask(5)) GPIOG->MODER |= mask2(5, i(Mode::Analog));
 	}
 
 	static void configure(InputType type)
@@ -162,7 +175,10 @@ public:
 			GPIOD->PUPDR = (GPIOD->PUPDR & ~mask2(3)) | (i(type) * mask2(3, 0b01));
 		}
 		if constexpr (mask(4)) {
-			GPIOH->PUPDR = (GPIOH->PUPDR & ~mask2(4)) | (i(type) * mask2(4, 0b01));
+			GPIOF->PUPDR = (GPIOF->PUPDR & ~mask2(4)) | (i(type) * mask2(4, 0b01));
+		}
+		if constexpr (mask(5)) {
+			GPIOG->PUPDR = (GPIOG->PUPDR & ~mask2(5)) | (i(type) * mask2(5, 0b01));
 		}
 	}
 
@@ -172,7 +188,8 @@ public:
 		if constexpr (mask(1)) GPIOB->BSRR = (inverted(1) << 16) | (mask(1) & ~inverted(1));
 		if constexpr (mask(2)) GPIOC->BSRR = (inverted(2) << 16) | (mask(2) & ~inverted(2));
 		if constexpr (mask(3)) GPIOD->BSRR = (inverted(3) << 16) | (mask(3) & ~inverted(3));
-		if constexpr (mask(4)) GPIOH->BSRR = (inverted(4) << 16) | (mask(4) & ~inverted(4));
+		if constexpr (mask(4)) GPIOF->BSRR = (inverted(4) << 16) | (mask(4) & ~inverted(4));
+		if constexpr (mask(5)) GPIOG->BSRR = (inverted(5) << 16) | (mask(5) & ~inverted(5));
 	}
 
 	static void set(bool status)
@@ -187,7 +204,8 @@ public:
 		if constexpr (mask(1)) GPIOB->BSRR = ((uint32_t(mask(1)) & ~inverted(1)) << 16) | inverted(1);
 		if constexpr (mask(2)) GPIOC->BSRR = ((uint32_t(mask(2)) & ~inverted(2)) << 16) | inverted(2);
 		if constexpr (mask(3)) GPIOD->BSRR = ((uint32_t(mask(3)) & ~inverted(3)) << 16) | inverted(3);
-		if constexpr (mask(4)) GPIOH->BSRR = ((uint32_t(mask(4)) & ~inverted(4)) << 16) | inverted(4);
+		if constexpr (mask(4)) GPIOF->BSRR = ((uint32_t(mask(4)) & ~inverted(4)) << 16) | inverted(4);
+		if constexpr (mask(5)) GPIOG->BSRR = ((uint32_t(mask(5)) & ~inverted(5)) << 16) | inverted(5);
 	}
 
 	static void toggle()
@@ -213,9 +231,14 @@ public:
 			GPIOD->BSRR = (are_set << 16) | are_reset;
 		}
 		if constexpr (mask(4)) {
-			uint32_t are_set = (GPIOH->ODR & mask(4));
+			uint32_t are_set = (GPIOF->ODR & mask(4));
 			uint32_t are_reset = mask(4) ^ are_set;
-			GPIOH->BSRR = (are_set << 16) | are_reset;
+			GPIOF->BSRR = (are_set << 16) | are_reset;
+		}
+		if constexpr (mask(5)) {
+			uint32_t are_set = (GPIOG->ODR & mask(5));
+			uint32_t are_reset = mask(5) ^ are_set;
+			GPIOG->BSRR = (are_set << 16) | are_reset;
 		}
 	}
 
@@ -246,10 +269,16 @@ public:
 			(void) GPIOD->LCKR;
 		}
 		if constexpr (mask(4)) {
-			GPIOH->LCKR = 0x10000 | mask(4);
-			GPIOH->LCKR = 0x00000 | mask(4);
-			GPIOH->LCKR = 0x10000 | mask(4);
-			(void) GPIOH->LCKR;
+			GPIOF->LCKR = 0x10000 | mask(4);
+			GPIOF->LCKR = 0x00000 | mask(4);
+			GPIOF->LCKR = 0x10000 | mask(4);
+			(void) GPIOF->LCKR;
+		}
+		if constexpr (mask(5)) {
+			GPIOG->LCKR = 0x10000 | mask(5);
+			GPIOG->LCKR = 0x00000 | mask(5);
+			GPIOG->LCKR = 0x10000 | mask(5);
+			(void) GPIOG->LCKR;
 		}
 	}
 

@@ -43,6 +43,7 @@ public:
 	static constexpr bool isInverted = false;
 	static constexpr Port port = Port::B; ///< Port name
 	static constexpr uint8_t pin = 9; ///< Pin number
+	static constexpr IRQn_Type ExternalInterruptIRQ = EXTI9_5_IRQn;
 
 protected:
 	/// Bitmask for registers that contain a 1bit value for every pin.
@@ -57,8 +58,6 @@ protected:
 	static constexpr uint8_t af_offset = (pin * 4) % 32;
 	/// Alternate Function register mask.
 	static constexpr uint32_t af_mask  = 0xf << af_offset;
-	/// ExternalInterruptIRQ
-	static constexpr IRQn_Type ExternalInterruptIRQ = EXTI9_5_IRQn;
 
 public:
 	/// @cond
@@ -79,9 +78,9 @@ public:
 	inline static void set() { PinSet::set(); }
 	inline static void set(bool status) { PinSet::set(status); }
 	inline static void reset() { PinSet::reset(); }
-	inline static void toggle() {
-		if (isSet()) { reset(); }
-		else         { set();   }
+	inline static bool toggle() {
+		if (isSet()) { reset(); return true; }
+		else         { set();   return false; }
 	}
 	inline static bool isSet() { return (GPIOB->ODR & mask); }
 	// stop documentation inherited
@@ -111,9 +110,9 @@ public:
 		constexpr uint16_t syscfg_mask = (0b1111) << bit_pos;
 		constexpr uint16_t syscfg_value = (port_nr & (0b1111)) << bit_pos;
 		SYSCFG->EXTICR[index] = (SYSCFG->EXTICR[index] & ~syscfg_mask) | syscfg_value;
-		EXTI->IMR |= mask;
+		EXTI->IMR1 |= mask;
 	}
-	inline static void disableExternalInterrupt() { EXTI->IMR &= ~mask; }
+	inline static void disableExternalInterrupt() { EXTI->IMR1 &= ~mask; }
 	inline static void enableExternalInterruptVector(const uint32_t priority)
 	{
 		NVIC_SetPriority(ExternalInterruptIRQ, priority);
@@ -125,21 +124,21 @@ public:
 		switch (trigger)
 		{
 		case InputTrigger::RisingEdge:
-			EXTI->RTSR |=  mask;
-			EXTI->FTSR &= ~mask;
+			EXTI->RTSR1 |=  mask;
+			EXTI->FTSR1 &= ~mask;
 			break;
 		case InputTrigger::FallingEdge:
-			EXTI->RTSR &= ~mask;
-			EXTI->FTSR |=  mask;
+			EXTI->RTSR1 &= ~mask;
+			EXTI->FTSR1 |=  mask;
 			break;
 		case InputTrigger::BothEdges:
-			EXTI->RTSR |=  mask;
-			EXTI->FTSR |=  mask;
+			EXTI->RTSR1 |=  mask;
+			EXTI->FTSR1 |=  mask;
 			break;
 		}
 	}
-	inline static bool getExternalInterruptFlag() { return (EXTI->PR & mask); }
-	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR = mask; }
+	inline static bool getExternalInterruptFlag() { return (EXTI->PR1 & mask); }
+	inline static void acknowledgeExternalInterruptFlag() { EXTI->PR1 = mask; }
 	// GpioIO
 	// start documentation inherited
 	inline static Direction getDirection() {
@@ -164,26 +163,26 @@ public:
 	/// @{
 	/// Connect to any software peripheral
 	using BitBang = GpioSignal;
-	/// Connect to Tim11
+	/// Connect to Tim17
 	using Ch1 = GpioSignal;
-	/// Connect to Tim2
-	using Ch2 = GpioSignal;
+	/// Connect to Tim8
+	using Ch3 = GpioSignal;
+	/// Connect to Tim1
+	using Ch3n = GpioSignal;
 	/// Connect to Tim4
 	using Ch4 = GpioSignal;
-	/// Connect to Sdio
-	using D5 = GpioSignal;
-	/// Connect to Dcmi
-	using D7 = GpioSignal;
 	/// Connect to Sai1
-	using FsB = GpioSignal;
-	/// Connect to Spi2
-	using Nss = GpioSignal;
+	using D2 = GpioSignal;
+	/// Connect to Hrtim1
+	using Eev5 = GpioSignal;
+	/// Connect to Sai1
+	using Fsa = GpioSignal;
+	/// Connect to Irtim or Comp2
+	using Out = GpioSignal;
 	/// Connect to I2c1
 	using Sda = GpioSignal;
-	/// Connect to Can1
+	/// Connect to Usart3 or Fdcan1
 	using Tx = GpioSignal;
-	/// Connect to I2s2
-	using Ws = GpioSignal;
 	/// @}
 #endif
 	/// @cond
@@ -196,14 +195,20 @@ public:
 	template< Peripheral peripheral >
 	struct Ch1 { static void connect();
 		static_assert(
-			(peripheral == Peripheral::Tim11),
-			"GpioB9::Ch1 only connects to Tim11!");
+			(peripheral == Peripheral::Tim17),
+			"GpioB9::Ch1 only connects to Tim17!");
 	};
 	template< Peripheral peripheral >
-	struct Ch2 { static void connect();
+	struct Ch3 { static void connect();
 		static_assert(
-			(peripheral == Peripheral::Tim2),
-			"GpioB9::Ch2 only connects to Tim2!");
+			(peripheral == Peripheral::Tim8),
+			"GpioB9::Ch3 only connects to Tim8!");
+	};
+	template< Peripheral peripheral >
+	struct Ch3n { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Tim1),
+			"GpioB9::Ch3n only connects to Tim1!");
 	};
 	template< Peripheral peripheral >
 	struct Ch4 { static void connect();
@@ -212,28 +217,29 @@ public:
 			"GpioB9::Ch4 only connects to Tim4!");
 	};
 	template< Peripheral peripheral >
-	struct D5 { static void connect();
-		static_assert(
-			(peripheral == Peripheral::Sdio),
-			"GpioB9::D5 only connects to Sdio!");
-	};
-	template< Peripheral peripheral >
-	struct D7 { static void connect();
-		static_assert(
-			(peripheral == Peripheral::Dcmi),
-			"GpioB9::D7 only connects to Dcmi!");
-	};
-	template< Peripheral peripheral >
-	struct FsB { static void connect();
+	struct D2 { static void connect();
 		static_assert(
 			(peripheral == Peripheral::Sai1),
-			"GpioB9::FsB only connects to Sai1!");
+			"GpioB9::D2 only connects to Sai1!");
 	};
 	template< Peripheral peripheral >
-	struct Nss { static void connect();
+	struct Eev5 { static void connect();
 		static_assert(
-			(peripheral == Peripheral::Spi2),
-			"GpioB9::Nss only connects to Spi2!");
+			(peripheral == Peripheral::Hrtim1),
+			"GpioB9::Eev5 only connects to Hrtim1!");
+	};
+	template< Peripheral peripheral >
+	struct Fsa { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Sai1),
+			"GpioB9::Fsa only connects to Sai1!");
+	};
+	template< Peripheral peripheral >
+	struct Out { static void connect();
+		static_assert(
+			(peripheral == Peripheral::Irtim) ||
+			(peripheral == Peripheral::Comp2),
+			"GpioB9::Out only connects to Irtim or Comp2!");
 	};
 	template< Peripheral peripheral >
 	struct Sda { static void connect();
@@ -244,19 +250,16 @@ public:
 	template< Peripheral peripheral >
 	struct Tx { static void connect();
 		static_assert(
-			(peripheral == Peripheral::Can1),
-			"GpioB9::Tx only connects to Can1!");
-	};
-	template< Peripheral peripheral >
-	struct Ws { static void connect();
-		static_assert(
-			(peripheral == Peripheral::I2s2),
-			"GpioB9::Ws only connects to I2s2!");
+			(peripheral == Peripheral::Usart3) ||
+			(peripheral == Peripheral::Fdcan1),
+			"GpioB9::Tx only connects to Usart3 or Fdcan1!");
 	};
 	/// @endcond
 private:
 	template< Peripheral peripheral >
 	static constexpr int8_t AdcChannel = -1;
+	template< Peripheral peripheral >
+	static constexpr int8_t DacChannel = -1;
 };
 
 /// @cond
@@ -269,27 +272,39 @@ struct GpioB9::BitBang<Peripheral::BitBang>
 	inline static void connect() {}
 };
 template<>
-struct GpioB9::Ch1<Peripheral::Tim11>
+struct GpioB9::Ch1<Peripheral::Tim17>
 {
 	using Gpio = GpioB9;
 	static constexpr Gpio::Signal Signal = Gpio::Signal::Ch1;
-	static constexpr int af = 3;
-	inline static void
-	connect()
-	{
-		setAlternateFunction(3);
-	}
-};
-template<>
-struct GpioB9::Ch2<Peripheral::Tim2>
-{
-	using Gpio = GpioB9;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::Ch2;
 	static constexpr int af = 1;
 	inline static void
 	connect()
 	{
 		setAlternateFunction(1);
+	}
+};
+template<>
+struct GpioB9::Ch3<Peripheral::Tim8>
+{
+	using Gpio = GpioB9;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Ch3;
+	static constexpr int af = 10;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(10);
+	}
+};
+template<>
+struct GpioB9::Ch3n<Peripheral::Tim1>
+{
+	using Gpio = GpioB9;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Ch3n;
+	static constexpr int af = 12;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(12);
 	}
 };
 template<>
@@ -305,22 +320,22 @@ struct GpioB9::Ch4<Peripheral::Tim4>
 	}
 };
 template<>
-struct GpioB9::D5<Peripheral::Sdio>
+struct GpioB9::D2<Peripheral::Sai1>
 {
 	using Gpio = GpioB9;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::D5;
-	static constexpr int af = 12;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::D2;
+	static constexpr int af = 3;
 	inline static void
 	connect()
 	{
-		setAlternateFunction(12);
+		setAlternateFunction(3);
 	}
 };
 template<>
-struct GpioB9::D7<Peripheral::Dcmi>
+struct GpioB9::Eev5<Peripheral::Hrtim1>
 {
 	using Gpio = GpioB9;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::D7;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Eev5;
 	static constexpr int af = 13;
 	inline static void
 	connect()
@@ -329,10 +344,22 @@ struct GpioB9::D7<Peripheral::Dcmi>
 	}
 };
 template<>
-struct GpioB9::FsB<Peripheral::Sai1>
+struct GpioB9::Fsa<Peripheral::Sai1>
 {
 	using Gpio = GpioB9;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::FsB;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Fsa;
+	static constexpr int af = 14;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(14);
+	}
+};
+template<>
+struct GpioB9::Out<Peripheral::Irtim>
+{
+	using Gpio = GpioB9;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Out;
 	static constexpr int af = 6;
 	inline static void
 	connect()
@@ -341,15 +368,15 @@ struct GpioB9::FsB<Peripheral::Sai1>
 	}
 };
 template<>
-struct GpioB9::Nss<Peripheral::Spi2>
+struct GpioB9::Out<Peripheral::Comp2>
 {
 	using Gpio = GpioB9;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::Nss;
-	static constexpr int af = 5;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Out;
+	static constexpr int af = 8;
 	inline static void
 	connect()
 	{
-		setAlternateFunction(5);
+		setAlternateFunction(8);
 	}
 };
 template<>
@@ -365,7 +392,19 @@ struct GpioB9::Sda<Peripheral::I2c1>
 	}
 };
 template<>
-struct GpioB9::Tx<Peripheral::Can1>
+struct GpioB9::Tx<Peripheral::Usart3>
+{
+	using Gpio = GpioB9;
+	static constexpr Gpio::Signal Signal = Gpio::Signal::Tx;
+	static constexpr int af = 7;
+	inline static void
+	connect()
+	{
+		setAlternateFunction(7);
+	}
+};
+template<>
+struct GpioB9::Tx<Peripheral::Fdcan1>
 {
 	using Gpio = GpioB9;
 	static constexpr Gpio::Signal Signal = Gpio::Signal::Tx;
@@ -374,18 +413,6 @@ struct GpioB9::Tx<Peripheral::Can1>
 	connect()
 	{
 		setAlternateFunction(9);
-	}
-};
-template<>
-struct GpioB9::Ws<Peripheral::I2s2>
-{
-	using Gpio = GpioB9;
-	static constexpr Gpio::Signal Signal = Gpio::Signal::Ws;
-	static constexpr int af = 5;
-	inline static void
-	connect()
-	{
-		setAlternateFunction(5);
 	}
 };
 /// @endcond

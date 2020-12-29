@@ -1,7 +1,7 @@
+// coding: utf-8
 /*
- * Copyright (c) 2013, Kevin Läufer
- * Copyright (c) 2013-2017, Niklas Hauser
  * Copyright (c) 2017, Sascha Schade
+ * Copyright (c) 2017-2018, Niklas Hauser
  *
  * This file is part of the modm project.
  *
@@ -14,9 +14,11 @@
 #ifndef MODM_STM32_I2C_2_HPP
 #define MODM_STM32_I2C_2_HPP
 
-#include "../device.hpp"
-#include <modm/platform/gpio/connector.hpp>
 #include <modm/architecture/interface/i2c_master.hpp>
+#include <modm/architecture/interface/clock.hpp>
+#include <modm/platform/gpio/connector.hpp>
+
+#include "i2c_timing_calculator.hpp"
 
 namespace modm
 {
@@ -31,12 +33,38 @@ namespace platform
  *
  * @author		Georgi Grinshpun
  * @author		Niklas Hauser
+ * @author		Sascha Schade (strongly-typed)
  * @ingroup		modm_platform_i2c modm_platform_i2c_2
  */
 class I2cMaster2 : public ::modm::I2cMaster
 {
 public:
 	static constexpr size_t TransactionBufferSize = 8;
+
+private:
+	template<class SystemClock, baudrate_t baudrate, percent_t tolerance>
+	static constexpr std::optional<uint32_t>
+	calculateTimings()
+	{
+		constexpr I2cParameters parameters = {
+			.peripheralClock = SystemClock::I2c2,
+			.targetSpeed = baudrate,
+			.tolerance = tolerance,
+			.digitalFilterLength = 0,
+			.enableAnalogFilter = true,
+			.riseTime = 0,
+			.fallTime = 0
+		};
+
+		auto calculator = I2cTimingCalculator{parameters};
+
+		std::optional<I2cMasterTimings> timings = calculator.calculateTimings();
+		if(timings) {
+			return I2cTimingCalculator::timingsToRegisterValue(timings.value());
+		} else {
+			return std::nullopt;
+		}
+	}
 
 public:
 	template< template<Peripheral _> class... Signals, ResetDevices reset = ResetDevices::Standard>
@@ -71,50 +99,10 @@ public:
 	static modm_always_inline void
 	initialize()
 	{
-		// calculate the expected clock ratio
-		constexpr uint8_t scalar = (baudrate <= 100'000) ? 2 : ((baudrate <= 300'000) ? 3 : 25);
+		constexpr std::optional<uint32_t> timingRegisterValue = calculateTimings<SystemClock, baudrate, tolerance>();
+		static_assert(bool(timingRegisterValue), "Could not find a valid clock configuration for the requested baudrate");
 
-		// calculate the fractional prescaler value
-		constexpr float pre_raw  = float(SystemClock::I2c2) / (scalar * baudrate);
-		// respect the prescaler range of 1 or 4 to 4095
-		constexpr uint32_t pre_ceil = std::ceil(pre_raw) > 4095 ? 4095 : std::ceil(pre_raw);
-		constexpr uint32_t pre_floor = std::floor(pre_raw) < ((scalar < 3) ? 4 : 1) ?
-				((scalar < 3) ? 4 : 1) : std::floor(pre_raw);
-
-		// calculate the possible baudrates above and below the requested baudrate
-		constexpr uint32_t baud_lower = SystemClock::I2c2 / ( scalar * pre_ceil  );
-		constexpr uint32_t baud_upper = SystemClock::I2c2 / ( scalar * pre_floor );
-
-		// calculate the fractional prescaler value corresponding to the baudrate exactly
-		// between the upper and lower baudrate
-		constexpr uint32_t baud_middle = (baud_upper + baud_lower) / 2;
-		// decide which prescaler value is closer to a possible baudrate
-		constexpr uint32_t pre = (baudrate < baud_middle) ? pre_ceil : pre_floor;
-
-		// check if within baudrate tolerance
-		constexpr uint32_t generated_baudrate = SystemClock::I2c2 / ( scalar * pre );
-		assertBaudrateInTolerance<
-				/* clostest available baudrate */ generated_baudrate,
-				/* desired baudrate */ baudrate,
-				tolerance >();
-
-		// the final prescaler value is augmented with the F/S and DUTY bit.
-		constexpr uint32_t prescaler = pre |
-				((scalar >= 3) ? (1 << 15) : 0) |
-				((scalar == 25) ? (1 << 14) : 0);
-
-		// peripheral frequency clock
-		constexpr uint8_t freq = SystemClock::I2c2 / 1'000'000;
-
-		// maximum rise time: assuming its linear:
-		// 1000ns @ 100kHz and 300ns @ 400kHz
-		//   => y = x * m + b, with m = -2.3333ns/kHz, b = 1'233.3333ns
-		constexpr float max_rise_time = -2.333333f * (float(baudrate) / 1'000.f) + 1'233.333333f;
-		// calculate trise
-		constexpr float trise_raw = max_rise_time < 0 ? 0 : std::floor(max_rise_time / (1'000.f / freq));
-		constexpr uint8_t trise = trise_raw > 62 ? 63 : (trise_raw + 1);
-
-		initializeWithPrescaler(freq, trise, prescaler);
+		initializeWithPrescaler(timingRegisterValue.value());
 	}
 
 	// start documentation inherited
@@ -130,8 +118,9 @@ public:
 
 private:
 	static void
-	initializeWithPrescaler(uint8_t peripheralFrequency, uint8_t riseTime, uint16_t prescaler);
+	initializeWithPrescaler(uint32_t timingRegisterValue);
 };
+
 
 } // namespace platform
 

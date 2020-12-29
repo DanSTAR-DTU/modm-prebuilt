@@ -1,13 +1,19 @@
 var searchData=
 [
-  ['t1',['T1',['../namespacemodm_1_1bme280data.html#a8da35433649ecd8a6586b673aec5c730',1,'modm::bme280data::Calibration']]],
-  ['t2',['T2',['../namespacemodm_1_1bme280data.html#a1dae264a6541b341c0a35fdc58c72f2c',1,'modm::bme280data::Calibration']]],
-  ['t3',['T3',['../namespacemodm_1_1bme280data.html#a2f846584d06e52c16055fba1ec5345a4',1,'modm::bme280data::Calibration']]],
-  ['targetarea',['targetArea',['../structmodm_1_1_s_curve_controller_1_1_parameter.html#aefda1232c82e34e11c2d4a80e1bb4e81',1,'modm::SCurveController::Parameter']]],
-  ['time',['time',['../classmodm_1_1_clock.html#a120d7805e995c51f227323060774bb6a',1,'modm::Clock']]],
-  ['timestamp',['timestamp',['../classmodm_1_1_nrf24_data.html#a76028809717455130577fd3ecd4611fd',1,'modm::Nrf24Data::Feedback']]],
-  ['timestamptrusted',['timestampTrusted',['../classmodm_1_1_nrf24_data.html#af76f78d067846e4128920edf5c049bd7',1,'modm::Nrf24Data::Feedback']]],
-  ['transaction',['transaction',['../classmodm_1_1_i2c_device.html#a2143acb5e132fa9a9b89dac9adb29336',1,'modm::I2cDevice']]],
-  ['transactionbuffersize',['TransactionBufferSize',['../classmodm_1_1_i2c_master.html#ad1e8c614cc60a21ded60bd4cba60bf54',1,'modm::I2cMaster::TransactionBufferSize()'],['../classmodm_1_1platform_1_1_i2c_master1.html#a1204f1dd5fed17e3cc2be6d8b506db2c',1,'modm::platform::I2cMaster1::TransactionBufferSize()'],['../classmodm_1_1platform_1_1_i2c_master2.html#a688688c3e071e97c86d4cc93806ef9ec',1,'modm::platform::I2cMaster2::TransactionBufferSize()'],['../classmodm_1_1platform_1_1_i2c_master3.html#aa1dc60c90394235cf15e40603241be89',1,'modm::platform::I2cMaster3::TransactionBufferSize()']]],
-  ['txbuffersize',['TxBufferSize',['../classmodm_1_1_can.html#a6af7198b9af044bb577244e14cbe6e82',1,'modm::Can::TxBufferSize()'],['../classmodm_1_1_uart.html#a7f0cadcc58c9df740356866b44f20f51',1,'modm::Uart::TxBufferSize()'],['../classmodm_1_1platform_1_1_can1.html#a0e8f11d8c4db2ce16909340ca2728450',1,'modm::platform::Can1::TxBufferSize()'],['../classmodm_1_1platform_1_1_can2.html#a1dec13729842b9b0eb6edd4aca5107db',1,'modm::platform::Can2::TxBufferSize()'],['../classmodm_1_1platform_1_1_usart1.html#aea04850dbb73a847ce2638479b4adbbe',1,'modm::platform::Usart1::TxBufferSize()'],['../classmodm_1_1platform_1_1_usart2.html#abcf97845aa70ef8028bcc34820730ba0',1,'modm::platform::Usart2::TxBufferSize()'],['../classmodm_1_1platform_1_1_usart3.html#ae9b585777f3e6d992f5b12e07dc68653',1,'modm::platform::Usart3::TxBufferSize()'],['../classmodm_1_1platform_1_1_uart4.html#a43d1a6558cde7c39c54a86aa8402ec8c',1,'modm::platform::Uart4::TxBufferSize()'],['../classmodm_1_1platform_1_1_uart5.html#ab251d6bc3be4012532ab3fe38226b9b8',1,'modm::platform::Uart5::TxBufferSize()'],['../classmodm_1_1platform_1_1_usart6.html#a24e0485d9c413fda1aa02ae7722dab90',1,'modm::platform::Usart6::TxBufferSize()']]]
+  ['scldel_4028',['sclDel',['../namespacemodm_1_1platform.html#aef4704ec4d22e25c28bbf045ff92d530',1,'modm::platform::I2cMasterTimings']]],
+  ['sclhigh_4029',['sclHigh',['../namespacemodm_1_1platform.html#a1013e96e69f9d187ec5420efec7c3a19',1,'modm::platform::I2cMasterTimings']]],
+  ['scllow_4030',['sclLow',['../namespacemodm_1_1platform.html#a1c6be2f5efbd66494bcb1acbbdea2ce0',1,'modm::platform::I2cMasterTimings']]],
+  ['sdadel_4031',['sdaDel',['../namespacemodm_1_1platform.html#a533c315627ef261101f4b7977c6bb25c',1,'modm::platform::I2cMasterTimings']]],
+  ['second_4032',['second',['../classmodm_1_1_pair.html#a4497a4fd53ef4a5063418de10174f24c',1,'modm::Pair']]],
+  ['sendingfeedback_4033',['sendingFeedback',['../classmodm_1_1_nrf24_data.html#ac4682bc8d92a548c98373655737a16e9',1,'modm::Nrf24Data::Feedback']]],
+  ['shift_5fmasks_4034',['shift_masks',['../classmodm_1_1platform_1_1_software_gpio_port.html#a48c14f365ef9e5e08cab9bd792113566',1,'modm::platform::SoftwareGpioPort']]],
+  ['size_4035',['size',['../classmodm_1_1_i2c_write_transaction.html#a7281e5c764b59fb6adc8050c210d5be1',1,'modm::I2cWriteTransaction::size()'],['../classmodm_1_1_i2c_read_transaction.html#ae52e985d9e0c357e1289025405c58b11',1,'modm::I2cReadTransaction::size()']]],
+  ['speedmaximum_4036',['speedMaximum',['../structmodm_1_1_s_curve_controller_1_1_parameter.html#ab5f049e26d88b7224dd84bdc6b65ac8f',1,'modm::SCurveController::Parameter']]],
+  ['speedminimum_4037',['speedMinimum',['../structmodm_1_1_s_curve_controller_1_1_parameter.html#afc45a2bbab625bb2fd75765a2c32d905',1,'modm::SCurveController::Parameter']]],
+  ['speedtarget_4038',['speedTarget',['../structmodm_1_1_s_curve_controller_1_1_parameter.html#ac627eee7b9fc19ac1274ef57627de614',1,'modm::SCurveController::Parameter']]],
+  ['src_4039',['src',['../classmodm_1_1_nrf24_data.html#a64a8447a029a3e77d2a4fa9bce0af28c',1,'modm::Nrf24Data::Header']]],
+  ['startpin_4040',['StartPin',['../classmodm_1_1platform_1_1_gpio_port.html#aa66268571e5e595cc110e40f8a831bb9',1,'modm::platform::GpioPort']]],
+  ['startpinreversed_4041',['StartPinReversed',['../classmodm_1_1platform_1_1_gpio_port.html#aa4698b3ea61702d66f28e366f4565412',1,'modm::platform::GpioPort']]],
+  ['startpoint_4042',['startPoint',['../classmodm_1_1_line_segment2_d.html#aa8d8bb93cb3e33c4dfe9e3af1646439d',1,'modm::LineSegment2D']]],
+  ['state_4043',['state',['../classmodm_1_1_i2c_transaction.html#ae0568bb0ae518843c5642da840867805',1,'modm::I2cTransaction']]]
 ];
