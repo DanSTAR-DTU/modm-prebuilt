@@ -82,9 +82,8 @@ public:
 	enum class ClockSource : uint32_t
 	{
 		NoClock = 0, // No clock selected.
-		PllSai1 = RCC_CCIPR_ADC345SEL_0, // PLLSAI1 "R" clock (PLLADC1CLK) selected as ADCs clock
-		PllSai2 = RCC_CCIPR_ADC345SEL_1, // PLLSAI2 "R" clock (PLLADC2CLK) selected as ADCs clock
-		SystemClock = RCC_CCIPR_ADC345SEL_1 | RCC_CCIPR_ADC345SEL_0, // System clock selected as ADCs clock
+		Pll = RCC_CCIPR_ADC345SEL_0, // PLL “P” clock selected as ADC clock
+		SystemClock = RCC_CCIPR_ADC345SEL_1 , // System clock selected as ADCs clock
 	};
 	// Prescaler of the Asynchronous ADC clock
 	enum class Prescaler : uint32_t

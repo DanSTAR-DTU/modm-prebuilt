@@ -6,7 +6,7 @@
 <!--/webignore-->
 
 modm (pronounced like dial-up "modem") is a toolbox for
-building custom C++17 libraries tailored to your embedded device.
+building custom C++20 libraries tailored to your embedded device.
 modm generates startup code, HALs and their implementations, communication
 protocols, drivers for external devices, BSPs, etc… in a modular, customizable
 process that you can fine-tune to your needs.
@@ -48,7 +48,7 @@ git clone --recurse-submodules https://github.com/modm-io/modm.git
 
 ## Features
 
-- Efficient and fast object-oriented C++17 API.
+- Efficient and fast object-oriented C++20 API.
 - Support for hundreds of AVR and ARM Cortex-M microcontrollers from Atmel and ST.
 - Build system agnostic: Choose SCons, CMake or use your own.
 - Data-driven, target-specific HAL generation using the lbuild engine.
@@ -70,8 +70,8 @@ git clone --recurse-submodules https://github.com/modm-io/modm.git
 
 ## Targets
 
-modm can generate code for <!--avrcount-->506<!--/avrcount--> AVR,
-<!--samcount-->163<!--/samcount--> SAM and <!--stmcount-->2010<!--/stmcount-->
+modm can generate code for <!--avrcount-->506<!--/avrcount-->
+AVR, <!--samcount-->163<!--/samcount--> SAM and <!--stmcount-->2010<!--/stmcount-->
 STM32 devices, however, there are different levels of support and testing.
 
 <center>
@@ -150,23 +150,24 @@ documentation.
 <td align="center">NUCLEO-F411RE</td>
 <td align="center">NUCLEO-F429ZI</td>
 <td align="center">NUCLEO-F446RE</td>
-<td align="center">NUCLEO-F746ZG</td>
+<td align="center">NUCLEO-F446ZE</td>
 </tr><tr>
+<td align="center">NUCLEO-F746ZG</td>
 <td align="center">NUCLEO-G071RB</td>
 <td align="center">NUCLEO-G431KB</td>
 <td align="center">NUCLEO-G431RB</td>
-<td align="center">NUCLEO-G474RE</td>
 </tr><tr>
+<td align="center">NUCLEO-G474RE</td>
 <td align="center">NUCLEO-L152RE</td>
 <td align="center">NUCLEO-L432KC</td>
 <td align="center">NUCLEO-L476RG</td>
-<td align="center">OLIMEXINO-STM32</td>
 </tr><tr>
+<td align="center">OLIMEXINO-STM32</td>
 <td align="center">RASPBERRYPI</td>
 <td align="center">SAMD21-MINI</td>
 <td align="center">STM32-F4VE</td>
-<td align="center">STM32F030F4P6-DEMO</td>
 </tr><tr>
+<td align="center">STM32F030F4P6-DEMO</td>
 </tr>
 </table>
 <!--/bsptable-->
@@ -284,8 +285,8 @@ Fabian Greif ([\@dergraaf](https://github.com/dergraaf)),
 Kevin Läufer ([\@ekiwi](https://github.com/ekiwi)),
 Martin Rosekeit ([\@thundernail](https://github.com/thundernail)),
 Daniel Krebs ([\@daniel-k](https://github.com/daniel-k)),
-Georgi Grinshpun ([\@georgi-g](https://github.com/georgi-g)) and
-<!--authorcount-->33<!--/authorcount-->  more contributors.
+Georgi Grinshpun ([\@georgi-g](https://github.com/georgi-g))
+and <!--authorcount-->33<!--/authorcount-->  more contributors.
 <!--/authors-->
 
 ## Folder structure

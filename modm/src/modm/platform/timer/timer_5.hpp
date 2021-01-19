@@ -88,7 +88,8 @@ public:
 	};
 
 	// This type is the internal size of the counter.
-	typedef uint16_t Value;
+	// Timer 2 and 5 are the only one which have the size of 32 bit
+	typedef uint32_t Value;
 
 	template< template<Peripheral _> class... Signals >
 	static void

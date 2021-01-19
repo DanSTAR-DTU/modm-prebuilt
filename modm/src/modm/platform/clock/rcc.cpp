@@ -5,7 +5,7 @@
  * Copyright (c) 2012, 2016, Sascha Schade
  * Copyright (c) 2012, 2014-2019, Niklas Hauser
  * Copyright (c) 2013-2014, Kevin Läufer
- * Copyright (c) 2018, Christopher Durand
+ * Copyright (c) 2018, 2021, Christopher Durand
  *
  * This file is part of the modm project.
  *
