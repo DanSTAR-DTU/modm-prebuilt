@@ -177,6 +177,21 @@ modm::platform::Usart2::clearError()
 }
 
 
+
+bool modm::platform::Usart2::overrunErrorOccurred()
+{
+	if(flags & modm::platform::UsartHal2::InterruptFlag::OverrunError)
+	 	return true;
+	else
+		return false;
+}
+
+void modm::platform::Usart2::clearOverrunErrorOccurred()
+{
+	flags &= (~modm::platform::UsartHal2::InterruptFlag::OverrunError);
+}
+
+
 MODM_ISR(USART2)
 {
 	if (modm::platform::UsartHal2::isReceiveRegisterNotEmpty()) {
@@ -195,12 +210,9 @@ MODM_ISR(USART2)
 			txBuffer.pop();
 		}
 	}
-	if(modm::platform::UsartHal2::getInterruptFlags() & modm::platform::UsartHal2::InterruptFlag::OverrunError) {
+	if(modm::platform::UsartHal2::getInterruptFlags() & modm::platform::UsartHal2::InterruptFlag::OverrunError)
+	{
 		modm::platform::UsartHal2::acknowledgeInterruptFlags(modm::platform::UsartHal2::InterruptFlag::OverrunError);
-		
-		//Clear rxBuffer
-		while(!rxBuffer.isEmpty()) {
-			rxBuffer.pop();
-		}	
+		flags |= modm::platform::UsartHal2::InterruptFlag::OverrunError;
 	}
 }
