@@ -132,14 +132,14 @@ public:
 			bool limitUpdateEventRequestSource = true);
 
 	static inline void
-	setPrescaler(uint16_t prescaler)
+	setPrescaler(uint32_t prescaler)
 	{
 		// Because a prescaler of zero is not possible the actual
 		// prescaler value is \p prescaler - 1 (see Datasheet)
 		TIM5->PSC = prescaler - 1;
 	}
 
-	static uint16_t
+	static uint32_t
 	getPrescaler()
 	{
 		return (TIM5->PSC + 1);
@@ -158,7 +158,7 @@ public:
 		// This will be inaccurate for non-smooth frequencies (last six digits
 		// unequal to zero)
 		uint32_t cycles = microseconds * (SystemClock::Timer5 / 1'000'000UL);
-		uint16_t prescaler = (cycles + 65'535) / 65'536;	// always round up
+		uint32_t prescaler = (cycles + 65'535) / 65'536;	// always round up
 		Value overflow = cycles / prescaler;
 
 		overflow = overflow - 1;	// e.g. 36'000 cycles are from 0 to 35'999
