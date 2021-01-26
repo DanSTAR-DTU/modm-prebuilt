@@ -169,10 +169,10 @@ private:
 	uint8_t modm_aligned(4) data_holder[8];
 public:
 	bool
-	operator == (const modm::can::Message& rhs) const{IMessage::operator==(reinterpret_cast<const IMessage&>(rhs));}
+	operator == (const modm::can::Message& rhs) const{return IMessage::operator==(reinterpret_cast<const IMessage&>(rhs));}
 	
 	bool
-	operator < (const modm::can::Message& rhs) const{IMessage::operator<(reinterpret_cast<const IMessage&>(rhs));}
+	operator < (const modm::can::Message& rhs) const{return IMessage::operator<(reinterpret_cast<const IMessage&>(rhs));}
 	
 	void
 	operator = (const modm::can::Message& rhs) {IMessage::operator=(reinterpret_cast<const IMessage&>(rhs));}
@@ -194,10 +194,10 @@ private:
 	uint8_t modm_aligned(4) data_holder[64];
 public:
 	bool
-	operator == (const modm::can::LongMessage& rhs) const{IMessage::operator==(reinterpret_cast<const IMessage&>(rhs));}
+	operator == (const modm::can::LongMessage& rhs) const{return IMessage::operator==(reinterpret_cast<const IMessage&>(rhs));}
 	
 	bool
-	operator < (const modm::can::LongMessage& rhs) const{IMessage::operator<(reinterpret_cast<const IMessage&>(rhs));}
+	operator < (const modm::can::LongMessage& rhs) const{return IMessage::operator<(reinterpret_cast<const IMessage&>(rhs));}
 	
 	void
 	operator = (const modm::can::Message& rhs) {IMessage::operator=(reinterpret_cast<const IMessage&>(rhs));}
