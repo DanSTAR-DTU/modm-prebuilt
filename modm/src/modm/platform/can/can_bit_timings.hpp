@@ -17,7 +17,6 @@
 
 #include <modm/architecture/interface/clock.hpp>
 #include <modm/math/units.hpp>
-#include <modm/math/utils/misc.hpp>
 #include <cmath>
 
 namespace modm
@@ -45,7 +44,7 @@ namespace modm
  * @author	Kevin Laeufer
  * @ingroup	modm_platform_can_common
  */
-template<int32_t Clk, int32_t Bitrate>
+template<int32_t Clk, int32_t Bitrate, uint8_t prescaler_width = 10, uint8_t bs1_width = 4, uint8_t bs2_width = 3, uint8_t sjw_width = 2>
 class CanBitTiming
 {
 private:
@@ -78,7 +77,7 @@ private:
 		for(uint8_t bs1Bs2 = minBs1Bs2; bs1Bs2 <= maxBs1Bs2; ++bs1Bs2) {
 			float idealPrescaler = float(Clk) / (Bitrate * (1 + bs1Bs2));
 			uint32_t intPrescaler = round_uint32(idealPrescaler);
-			float error = constexpr_fabs(1 - intPrescaler/idealPrescaler);
+			float error = fabs(1 - intPrescaler/idealPrescaler);
 			if(error <= minError) {
 				bestPrescaler = intPrescaler;
 				minError = error;
@@ -91,6 +90,33 @@ private:
 
 		return CanBitTimingConfiguration{bs1, bs2, 1, bestPrescaler, minError};
 	}
+	/*static constexpr CanBitTimingConfiguration calculateBestConfig()
+	{
+		constexpr uint8_t minBs1Bs2 = 14;
+		constexpr uint8_t maxBs1Bs2 = 20;
+
+		float minError = 10'000.0;
+		uint16_t bestPrescaler = 0;
+		uint8_t bestBs1Bs2 = 0;
+
+		for(uint8_t bs1Bs2 = minBs1Bs2; bs1Bs2 <= maxBs1Bs2; ++bs1Bs2) {
+			float idealPrescaler = float(Clk) / (Bitrate * (1 + bs1Bs2));
+			uint32_t intPrescaler = round_uint32(idealPrescaler);
+			if(intPrescaler < ((1 << prescaler_width) - 1)) {
+				float error = fabs(1 - intPrescaler/idealPrescaler);
+				if(error <= minError) {
+					bestPrescaler = intPrescaler;
+					minError = error;
+					bestBs1Bs2 = bs1Bs2;
+				}
+			}
+		}
+
+		uint8_t bs2 = round_uint32(0.275f * (bestBs1Bs2 + 1));
+		uint8_t bs1 = bestBs1Bs2 - bs2;
+
+		return CanBitTimingConfiguration{bs1, bs2, 1, bestPrescaler, minError};
+	}*/
 
 	static constexpr CanBitTimingConfiguration BestConfig = calculateBestConfig();
 
@@ -109,8 +135,11 @@ public:
 
 private:
 	// check assertions
-	static_assert(getPrescaler() > 0, "CAN bitrate is too high for standard bit timings!");
-	static_assert(getPrescaler() < ((1 << 10) - 1), "Prescaler value too large"); // 10 bit prescaler on STM32
+	static_assert(getPrescaler() > 0, "CAN bitrate is too high for standard bit timings!");	
+	static_assert(getPrescaler() <= (1 << prescaler_width), "Prescaler value too large");
+	static_assert(getBS1() <= (1 << bs1_width), "BS1 value too large");
+	static_assert(getBS2() <= (1 << bs2_width), "BS2 value too large");
+	static_assert(getSJW() <= (1 << sjw_width), "SJW value too large");
 };
 
 }	// namespace modm

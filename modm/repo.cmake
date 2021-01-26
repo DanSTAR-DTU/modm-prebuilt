@@ -231,6 +231,9 @@ list(APPEND SOURCE_FILES
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/uart/uart_3.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/uart/uart_4.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/uart/uart_5.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/can/fd_can1.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/can/fd_can2.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/platform/can/fd_can3.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/utils/dummy.cpp
 )
 set_source_files_properties(

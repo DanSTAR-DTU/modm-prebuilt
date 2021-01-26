@@ -90,6 +90,9 @@ rcc_check_enable(Peripheral peripheral)
 	switch(peripheral) {
 		case Peripheral::Cordic:
 		case Peripheral::Crc:
+		case Peripheral::Fdcan1:
+		case Peripheral::Fdcan2:
+		case Peripheral::Fdcan3:
 		case Peripheral::Dac1:
 		case Peripheral::Dac2:
 		case Peripheral::Dac3:
@@ -156,6 +159,14 @@ Rcc::enable()
 			RCC->AHB1ENR |= RCC_AHB1ENR_CRCEN; __DSB();
 			RCC->AHB1RSTR |= RCC_AHB1RSTR_CRCRST; __DSB();
 			RCC->AHB1RSTR &= ~RCC_AHB1RSTR_CRCRST;
+		}
+	if constexpr (peripheral == Peripheral::Fdcan1 ||
+				  peripheral == Peripheral::Fdcan2 ||
+				  peripheral == Peripheral::Fdcan3)
+		if (not Rcc::isEnabled<peripheral>()) {
+			RCC->APB1ENR1 |= RCC_APB1ENR1_FDCANEN; __DSB();
+			RCC->APB1RSTR1 |= RCC_APB1RSTR1_FDCANRST; __DSB();
+			RCC->APB1RSTR1 &= ~RCC_APB1RSTR1_FDCANRST;
 		}
 	if constexpr (peripheral == Peripheral::Dac1)
 		if (not Rcc::isEnabled<peripheral>()) {
@@ -412,6 +423,10 @@ Rcc::disable()
 	__DSB();
 	if constexpr (peripheral == Peripheral::Cordic)
 		RCC->AHB1ENR &= ~RCC_AHB1ENR_CORDICEN;
+	if constexpr (peripheral == Peripheral::Fdcan1 ||
+				  peripheral == Peripheral::Fdcan2 ||
+				  peripheral == Peripheral::Fdcan3)
+		RCC->APB1ENR1 &= ~RCC_APB1ENR1_FDCANEN;	
 	if constexpr (peripheral == Peripheral::Crc)
 		RCC->AHB1ENR &= ~RCC_AHB1ENR_CRCEN;
 	if constexpr (peripheral == Peripheral::Dac1)
@@ -508,6 +523,10 @@ Rcc::isEnabled()
 
 	if constexpr (peripheral == Peripheral::Cordic)
 		return RCC->AHB1ENR & RCC_AHB1ENR_CORDICEN;
+	if constexpr (peripheral == Peripheral::Fdcan1 ||
+			peripheral == Peripheral::Fdcan2 ||
+			peripheral == Peripheral::Fdcan3)
+		return RCC->APB1ENR1 & RCC_APB1ENR1_FDCANEN;	
 	if constexpr (peripheral == Peripheral::Crc)
 		return RCC->AHB1ENR & RCC_AHB1ENR_CRCEN;
 	if constexpr (peripheral == Peripheral::Dac1)

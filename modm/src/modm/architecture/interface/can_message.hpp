@@ -14,30 +14,20 @@
 #define MODM_CAN_MESSAGE_HPP
 
 #include <stdint.h>
-#include <string.h>  // strlen
-#include <algorithm>
 #include <modm/architecture/utils.hpp>
+#include <array>
+#include <modm/debug/logger.hpp>
 
 namespace modm::can
 {
 
 /// Representation of a CAN message
 /// @ingroup modm_architecture_can
-struct Message
+struct IMessage
 {
-	inline Message(uint32_t inIdentifier = 0, uint8_t inLength = 0) :
+	inline IMessage(uint32_t inIdentifier = 0, uint8_t inLength = 0) :
 		identifier(inIdentifier), flags(), length(inLength)
 	{
-	}
-
-	// Create CAN message from long data in Network Order.
-	inline Message(uint32_t inIdentifier, uint8_t inLength, const uint64_t &inData, bool extended=false) :
-		identifier(inIdentifier), length(std::min(inLength, uint8_t(8)))
-	{
-		flags.extended = extended;
-		const uint8_t *inDataB = reinterpret_cast<const uint8_t *>(&inData);
-		for (uint8_t ii = 0; ii < length; ++ii)
- 			data[ii] = inDataB[length - ii - 1];
 	}
 
 	inline uint32_t
@@ -76,6 +66,26 @@ struct Message
 		return (flags.rtr != 0);
 	}
 
+	inline void setFlexibleData(bool fd = true)
+	{
+		flags.fd = fd;
+	}
+
+	inline bool isFlexibleData() const
+	{
+		return flags.fd;
+	}
+
+	inline void setBitRateSwitching(bool brs = true)
+	{
+		flags.brs = brs;
+	}
+
+	inline bool isBitRateSwitching() const
+	{
+		return flags.brs;
+	}
+
 	inline uint8_t
 	getLength() const
 	{
@@ -85,62 +95,124 @@ struct Message
 	inline void
 	setLength(uint8_t len)
 	{
-		length = len;
+		length = std::min(len, capacity);
+	}
+	
+	inline uint8_t
+	getDLC() const
+	{
+		//MODM_LOG_INFO << "L: " << length << modm::endl;
+		if(length <= 8) {
+			return length;
+		}
+		else if(length <= 24) {
+			return 8 + ((length - 8 + 4 - 1) >> 2); 
+		}
+		else {
+			return 12 + ((length - 8 + 8 - 1) >> 4);
+		}
+	}
+
+	inline void
+	setDLC(uint8_t dlc)
+	{
+		setLength(dlcLookup.at(dlc));
+	}
+
+	inline uint8_t 
+	getCapacity() const
+	{
+		return capacity;
 	}
 
 public:
 	uint32_t identifier;
-	uint8_t modm_aligned(4) data[8];
 	struct Flags
 	{
 		Flags() :
-			rtr(0), extended(1)
+			rtr(0), extended(1), fd(0), brs(0)
 		{
 		}
 
 		bool rtr : 1;
 		bool extended : 1;
+		bool fd : 1;
+		bool brs : 1;
 	} flags;
-	uint8_t length;
-
+	uint8_t length = 0;
+protected:
+    uint8_t capacity = 0;
 public:
-	inline bool
-	operator == (const modm::can::Message& rhs) const
-	{
-		return ((this->identifier     == rhs.identifier) and
-				(this->length         == rhs.length)     and
-				(this->flags.rtr      == rhs.flags.rtr)  and
-				(this->flags.extended == rhs.flags.extended) and
-				std::equal(data, data + length, rhs.data));
+    uint8_t *data = nullptr;
+	
+	bool
+	operator == (const IMessage& rhs) const;
+	
+	bool
+	operator < (const IMessage& rhs) const;
+
+	void operator= (const IMessage& rhs);
+
+protected:
+	static constexpr std::array<uint8_t, 16> dlcLookup = {{0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 16, 20, 24, 32, 48, 64}};
+};
+
+struct LongMessage; // Forward decleration
+
+struct Message : IMessage
+{
+	inline Message(uint32_t inIdentifier = 0, uint8_t inLength = 0) : IMessage(inIdentifier, inLength) {
+		this->capacity = 8;
+		this->data = data_holder;
 	}
+private:
+	uint8_t modm_aligned(4) data_holder[8];
+public:
+	bool
+	operator == (const modm::can::Message& rhs) const{IMessage::operator==(reinterpret_cast<const IMessage&>(rhs));}
+	
+	bool
+	operator < (const modm::can::Message& rhs) const{IMessage::operator<(reinterpret_cast<const IMessage&>(rhs));}
+	
+	void
+	operator = (const modm::can::Message& rhs) {IMessage::operator=(reinterpret_cast<const IMessage&>(rhs));}
+	
+	void
+	operator = (const modm::can::LongMessage& rhs) {IMessage::operator=(reinterpret_cast<const IMessage&>(rhs));}
+	
+	void
+	operator = (const modm::can::IMessage& rhs) {IMessage::operator=(rhs);}
+};
+
+struct LongMessage: IMessage
+{
+	inline LongMessage(uint32_t inIdentifier = 0, uint8_t inLength = 0) : IMessage(inIdentifier, inLength) {
+		this->capacity = 64;
+		this->data = data_holder;
+}
+private:
+	uint8_t modm_aligned(4) data_holder[64];
+public:
+	bool
+	operator == (const modm::can::LongMessage& rhs) const{IMessage::operator==(reinterpret_cast<const IMessage&>(rhs));}
+	
+	bool
+	operator < (const modm::can::LongMessage& rhs) const{IMessage::operator<(reinterpret_cast<const IMessage&>(rhs));}
+	
+	void
+	operator = (const modm::can::Message& rhs) {IMessage::operator=(reinterpret_cast<const IMessage&>(rhs));}
+
+	void
+	operator = (const modm::can::LongMessage& rhs) {IMessage::operator=(reinterpret_cast<const IMessage&>(rhs));}
+	
+	void
+	operator = (const modm::can::IMessage& rhs) {IMessage::operator=(rhs);}
 };
 
 }	// namespace modm::can
 
-#if MODM_HAS_IOSTREAM
-#include <inttypes.h>
 #include <modm/io/iostream.hpp>
 
-namespace modm
-{
-
-inline modm::IOStream&
-operator << (modm::IOStream& s, const modm::can::Message& m)
-{
-	s.printf("id = %04" PRIx32 ", len = ", m.identifier);
-	s << m.length;
-	s.printf(", flags = %c%c, data = ",
-			 m.flags.rtr ? 'R' : 'r',
-			 m.flags.extended ? 'E' : 'e');
-	if (not m.isRemoteTransmitRequest()) {
-		for (uint_fast8_t ii = 0; ii < m.length; ++ii) {
-			s.printf("%02x ", m.data[ii]);
-		}
-	}
-	return s;
-}
-
-} // modm namespace
-#endif
-
+modm::IOStream&
+operator << (modm::IOStream& s, const modm::can::Message m);
 #endif // MODM_CAN_MESSAGE_HPP
