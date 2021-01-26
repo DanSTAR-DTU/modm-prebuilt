@@ -184,6 +184,7 @@ list(APPEND SOURCE_FILES
     ${CMAKE_CURRENT_LIST_DIR}/ext/tlsf/tlsf.c
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/architecture/driver/atomic/flag.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/architecture/interface/can.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/modm/architecture/interface/can_message.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/container/smart_pointer.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/driver/storage/i2c_eeprom.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/modm/io/iostream.cpp
