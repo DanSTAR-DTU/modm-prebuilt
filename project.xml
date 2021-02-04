@@ -3,9 +3,11 @@
 		<repository><path>./repo/repo.lb</path></repository>
 	</repositories>
 	<options>
-		<option name=":target">stm32f446ret</option>
+		<option name=":target">stm32g474ret6</option>
 		<option name=":build:cmake:include_makefile">False</option>
 		<option name=":build:cmake:include_cmakelists">False</option>
+
+
 	</options>
 	<modules>
 		<module>:build:cmake</module>
@@ -19,7 +21,7 @@
 		<module>:math:*</module>
 		<module>:io</module>
 		<module>:platform:adc:*</module>
-		<module>:platform:can:*</module>
+		<module>:platform:can*</module>
 		<module>:platform:core</module>
 		<module>:platform:clock</module>
 		<module>:platform:fault</module>
@@ -30,8 +32,11 @@
 		<module>:platform:spi.bitbang</module>
 		<module>:platform:timer:*</module>
 		<module>:platform:uart:*</module>
+		<module>:platform:heap</module>
 		<module>:processing:protothread</module>
 		<module>:processing:resumable</module>
 		<module>:processing:timer</module>
+
+
 	</modules>
 </library>

@@ -6,7 +6,7 @@
 <!--/webignore-->
 
 modm (pronounced like dial-up "modem") is a toolbox for
-building custom C++17 libraries tailored to your embedded device.
+building custom C++20 libraries tailored to your embedded device.
 modm generates startup code, HALs and their implementations, communication
 protocols, drivers for external devices, BSPs, etc… in a modular, customizable
 process that you can fine-tune to your needs.
@@ -15,10 +15,10 @@ process that you can fine-tune to your needs.
 - [This project has a homepage](http://modm.io).<!--/webignore-->
 - Check out our [install instructions][install] and our [getting started guide][guide].
 - Feast your eyes on [lots of working examples][examples].
-- Our CI checks every contribution for regressions: ![Build Status](https://circleci.com/gh/modm-io/modm/tree/develop.svg?style=shield)
+- Our CI checks every contribution for regressions.
 - We care [about testing modm][testing].
+- [API reference is available here][api-docs].
 
-<!-- - [API reference is available here][reference]. -->
 <!-- - [Check out our latest quarterly release][releases] with a [beautiful changelog][changelog]. -->
 
 This project also has a [technical blog][blog] to document larger design concepts.
@@ -48,7 +48,7 @@ git clone --recurse-submodules https://github.com/modm-io/modm.git
 
 ## Features
 
-- Efficient and fast object-oriented C++17 API.
+- Efficient and fast object-oriented C++20 API.
 - Support for hundreds of AVR and ARM Cortex-M microcontrollers from Atmel and ST.
 - Build system agnostic: Choose SCons, CMake or use your own.
 - Data-driven, target-specific HAL generation using the lbuild engine.
@@ -70,16 +70,19 @@ git clone --recurse-submodules https://github.com/modm-io/modm.git
 
 ## Targets
 
-modm can generate code for <!--avrcount-->78<!--/avrcount--> AVR and <!--stmcount-->958<!--/stmcount-->
+modm can generate code for <!--avrcount-->506<!--/avrcount-->
+AVR, <!--samcount-->163<!--/samcount--> SAM and <!--stmcount-->2010<!--/stmcount-->
 STM32 devices, however, there are different levels of support and testing.
 
 <center>
 
 | Device Family | Support | Device Family | Support | Device Family | Support |
 |:--------------|:--------|:--------------|:--------|:--------------|:--------|
-| AVR           | ★★★     | STM32F2       | ★★★     | STM32F7       | ★★★★    |
-| STM32F0       | ★★★★    | STM32F3       | ★★★★★   | STM32L4       | ★★★★    |
-| STM32F1       | ★★★★    | STM32F4       | ★★★★★   | STM32G0       | ★★★★    |
+| AVR           | ★★★     | STM32F0       | ★★★★    | STM32F1       | ★★★★    |
+| STM32F2       | ★★★★    | STM32F3       | ★★★★★   | STM32F4       | ★★★★★   |
+| STM32F7       | ★★★★    | STM32L1       | ★★★★    | STM32L4       | ★★★★    |
+| STM32L4+      | ★★★★    | STM32G0       | ★★★★    | STM32G4       | ★★★★    |
+| SAMD21        | ★★      | Raspberry Pi  | ★       |               |         |
 
 </center>
 
@@ -115,35 +118,56 @@ documentation.
 <td align="center">Black Pill</td>
 </tr><tr>
 <td align="center">Blue Pill</td>
+<td align="center">DEVEBOX-STM32F4XX</td>
 <td align="center">DISCO-F051R8</td>
 <td align="center">DISCO-F072RB</td>
-<td align="center">DISCO-F100RB</td>
 </tr><tr>
+<td align="center">DISCO-F100RB</td>
 <td align="center">DISCO-F303VC</td>
 <td align="center">DISCO-F407VG</td>
 <td align="center">DISCO-F429ZI</td>
-<td align="center">DISCO-F469NI</td>
 </tr><tr>
+<td align="center">DISCO-F469NI</td>
 <td align="center">DISCO-F746NG</td>
 <td align="center">DISCO-F769NI</td>
-<td align="center">DISCO-L476VG</td>
-<td align="center">NUCLEO-F031K6</td>
+<td align="center">DISCO-L152RC</td>
 </tr><tr>
+<td align="center">DISCO-L476VG</td>
+<td align="center">FEATHER-M0</td>
+<td align="center">MEGA-2560-PRO</td>
+<td align="center">MINI-F401</td>
+</tr><tr>
+<td align="center">MINI-F411</td>
+<td align="center">NUCLEO-F031K6</td>
 <td align="center">NUCLEO-F042K6</td>
 <td align="center">NUCLEO-F103RB</td>
+</tr><tr>
 <td align="center">NUCLEO-F303K8</td>
+<td align="center">NUCLEO-F303RE</td>
+<td align="center">NUCLEO-F334R8</td>
 <td align="center">NUCLEO-F401RE</td>
 </tr><tr>
 <td align="center">NUCLEO-F411RE</td>
 <td align="center">NUCLEO-F429ZI</td>
 <td align="center">NUCLEO-F446RE</td>
-<td align="center">NUCLEO-G071RB</td>
+<td align="center">NUCLEO-F446ZE</td>
 </tr><tr>
+<td align="center">NUCLEO-F746ZG</td>
+<td align="center">NUCLEO-G071RB</td>
+<td align="center">NUCLEO-G431KB</td>
+<td align="center">NUCLEO-G431RB</td>
+</tr><tr>
+<td align="center">NUCLEO-G474RE</td>
+<td align="center">NUCLEO-L152RE</td>
 <td align="center">NUCLEO-L432KC</td>
 <td align="center">NUCLEO-L476RG</td>
-<td align="center">OLIMEXINO-STM32</td>
-<td align="center">STM32F030F4P6-DEMO</td>
 </tr><tr>
+<td align="center">OLIMEXINO-STM32</td>
+<td align="center">RASPBERRYPI</td>
+<td align="center">SAMD21-MINI</td>
+<td align="center">STM32-F4VE</td>
+</tr><tr>
+<td align="center">STM32F030F4P6-DEMO</td>
 </tr>
 </table>
 <!--/bsptable-->
@@ -166,57 +190,72 @@ can easily configure them for you specific needs.
 <td align="center">ADNS9800</td>
 <td align="center">ADS7843</td>
 <td align="center">AMS5915</td>
-<td align="center">SPI-FLASH</td>
+<td align="center">APA102</td>
 </tr><tr>
+<td align="center">SPI-FLASH</td>
 <td align="center">BME280</td>
 <td align="center">BMP085</td>
 <td align="center">BNO055</td>
+<td align="center">CAT24AA</td>
 <td align="center">DRV832X</td>
+</tr><tr>
 <td align="center">DS1302</td>
 <td align="center">DS1631</td>
-</tr><tr>
 <td align="center">DS18B20</td>
 <td align="center">EA-DOG</td>
+<td align="center">ENCODER-OUTPUT</td>
 <td align="center">FT245</td>
+</tr><tr>
 <td align="center">FT6X06</td>
+<td align="center">GPIO-SAMPLER</td>
 <td align="center">HCLAx</td>
 <td align="center">HD44780</td>
-</tr><tr>
 <td align="center">HMC58x</td>
 <td align="center">HMC6343</td>
+</tr><tr>
+<td align="center">HX711</td>
 <td align="center">I2C-EEPROM</td>
+<td align="center">ILI9341</td>
+<td align="center">IS31FL3733</td>
 <td align="center">ITG3200</td>
 <td align="center">L3GD20</td>
-<td align="center">LAWICEL</td>
 </tr><tr>
+<td align="center">LAWICEL</td>
 <td align="center">LIS302DL</td>
 <td align="center">LIS3DSH</td>
+<td align="center">LIS3MDL</td>
 <td align="center">LM75</td>
+<td align="center">LP503X</td>
+</tr><tr>
 <td align="center">LSM303A</td>
+<td align="center">LSM6DS33</td>
 <td align="center">LTC2984</td>
 <td align="center">MAX6966</td>
-</tr><tr>
 <td align="center">MAX7219</td>
 <td align="center">MCP23X17</td>
+</tr><tr>
 <td align="center">MCP2515</td>
 <td align="center">NOKIA5110</td>
 <td align="center">NRF24</td>
 <td align="center">TFT-DISPLAY</td>
-</tr><tr>
 <td align="center">PAT9125EL</td>
 <td align="center">PCA8574</td>
+</tr><tr>
 <td align="center">PCA9535</td>
 <td align="center">PCA9548A</td>
 <td align="center">PCA9685</td>
 <td align="center">SIEMENS-S65</td>
-</tr><tr>
 <td align="center">SIEMENS-S75</td>
+<td align="center">SK6812</td>
+</tr><tr>
+<td align="center">SK9822</td>
 <td align="center">SSD1306</td>
+<td align="center">SX1276</td>
 <td align="center">TCS3414</td>
 <td align="center">TCS3472</td>
 <td align="center">TLC594X</td>
-<td align="center">TMP102</td>
 </tr><tr>
+<td align="center">TMP102</td>
 <td align="center">TMP175</td>
 <td align="center">VL53L0</td>
 <td align="center">VL6180</td>
@@ -246,8 +285,8 @@ Fabian Greif ([\@dergraaf](https://github.com/dergraaf)),
 Kevin Läufer ([\@ekiwi](https://github.com/ekiwi)),
 Martin Rosekeit ([\@thundernail](https://github.com/thundernail)),
 Daniel Krebs ([\@daniel-k](https://github.com/daniel-k)),
-Georgi Grinshpun ([\@georgi-g](https://github.com/georgi-g)) and
-<!--authorcount-->33<!--/authorcount-->  more contributors.
+Georgi Grinshpun ([\@georgi-g](https://github.com/georgi-g))
+and <!--authorcount-->33<!--/authorcount-->  more contributors.
 <!--/authors-->
 
 ## Folder structure
@@ -292,7 +331,7 @@ Georgi Grinshpun ([\@georgi-g](https://github.com/georgi-g)) and
 [contrib]:         https://github.com/modm-io/modm/tree/develop/CONTRIBUTING.md
 [devboards]:       https://github.com/modm-io/modm/tree/develop/src/modm/board
 [drivers]:         https://github.com/modm-io/modm/tree/develop/src/modm/driver
-[eurobot]:         http://www.eurobot.org/
+[eurobot]:         https://www.eurobot.org/
 [examples]:        https://github.com/modm-io/modm/tree/develop/examples
 [guide]:           https://modm.io/guide/getting-started
 [install]:         https://modm.io/guide/installation
@@ -301,8 +340,9 @@ Georgi Grinshpun ([\@georgi-g](https://github.com/georgi-g)) and
 [modm-devices]:    https://github.com/modm-io/modm-devices
 [porting]:         https://github.com/modm-io/modm/tree/develop/docs/PORTING.md
 [prs]:             https://github.com/modm-io/modm/pulls
-[rca_ev]:          http://www.roboterclub.rwth-aachen.de/
+[rca_ev]:          https://www.roboterclub.rwth-aachen.de/
 [reference]:       https://modm.io/reference/api
 [releases]:        https://github.com/modm-io/modm/releases
 [testing]:         https://modm.io/guide/testing
+[api-docs]:        https://docs.modm.io/
 <!--/links-->

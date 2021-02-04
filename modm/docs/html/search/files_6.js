@@ -23,6 +23,7 @@ var searchData=
   ['gpio_5fb0_2ehpp',['gpio_B0.hpp',['../gpio___b0_8hpp.html',1,'']]],
   ['gpio_5fb1_2ehpp',['gpio_B1.hpp',['../gpio___b1_8hpp.html',1,'']]],
   ['gpio_5fb10_2ehpp',['gpio_B10.hpp',['../gpio___b10_8hpp.html',1,'']]],
+  ['gpio_5fb11_2ehpp',['gpio_B11.hpp',['../gpio___b11_8hpp.html',1,'']]],
   ['gpio_5fb12_2ehpp',['gpio_B12.hpp',['../gpio___b12_8hpp.html',1,'']]],
   ['gpio_5fb13_2ehpp',['gpio_B13.hpp',['../gpio___b13_8hpp.html',1,'']]],
   ['gpio_5fb14_2ehpp',['gpio_B14.hpp',['../gpio___b14_8hpp.html',1,'']]],
@@ -53,6 +54,7 @@ var searchData=
   ['gpio_5fc9_2ehpp',['gpio_C9.hpp',['../gpio___c9_8hpp.html',1,'']]],
   ['gpio_5fd2_2ehpp',['gpio_D2.hpp',['../gpio___d2_8hpp.html',1,'']]],
   ['gpio_5fexpander_2ehpp',['gpio_expander.hpp',['../gpio__expander_8hpp.html',1,'']]],
-  ['gpio_5fh0_2ehpp',['gpio_H0.hpp',['../gpio___h0_8hpp.html',1,'']]],
-  ['gpio_5fh1_2ehpp',['gpio_H1.hpp',['../gpio___h1_8hpp.html',1,'']]]
+  ['gpio_5ff0_2ehpp',['gpio_F0.hpp',['../gpio___f0_8hpp.html',1,'']]],
+  ['gpio_5ff1_2ehpp',['gpio_F1.hpp',['../gpio___f1_8hpp.html',1,'']]],
+  ['gpio_5fg10_2ehpp',['gpio_G10.hpp',['../gpio___g10_8hpp.html',1,'']]]
 ];

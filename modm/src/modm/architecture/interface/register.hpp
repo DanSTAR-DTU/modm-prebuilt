@@ -17,7 +17,9 @@
 #include <stdint.h>
 #include <modm/math/utils/bit_constants.hpp>
 #include <modm/architecture/detect.hpp>
+#if MODM_HAS_IOSTREAM
 #include <modm/io/iostream.hpp>
+#endif
 
 namespace modm
 {
@@ -82,15 +84,17 @@ struct Register
 	{ return not bool(value); }
 	/// @}
 
+#if MODM_HAS_IOSTREAM
 	/// Printing a register will output its numeric value.
 	friend IOStream&
 	operator << (IOStream& s, const Register<T>& m)
 	{ return (s << m.value); }
+#endif
 
 protected:
 	/// This class is meant to be subclassed
-	constexpr Register(UnderlyingType value)
-	:	value(value) {}
+	constexpr Register(UnderlyingType initialValue)
+	:	value(initialValue) {}
 };
 
 /// @ingroup	modm_architecture_register
@@ -346,16 +350,16 @@ struct Flags : public ::modm::FlagsOperators<Enum, T>
 	inline void toggle(Flags const &o)
 	{ *this ^= o; }
 
-	/// Sets a single bit, when `value` is true, clears it otherwise
-	inline void update(Enum const &flag, bool value)
+	/// Sets a single bit, when `valueToCompare` is true, clears it otherwise
+	inline void update(Enum const &flag, bool valueToCompare)
 	{
-		if (value) *this |= flag;
+		if (valueToCompare) *this |= flag;
 		else *this &= ~flag;
 	}
-	/// Sets multiple bits, when `value` is true, clears them otherwise
-	inline void update(Flags const &o, bool value)
+	/// Sets multiple bits, when `valueToCompare` is true, clears them otherwise
+	inline void update(Flags const &o, bool valueToCompare)
 	{
-		if (value) *this |= o;
+		if (valueToCompare) *this |= o;
 		else *this &= ~o;
 	}
 	/// @}

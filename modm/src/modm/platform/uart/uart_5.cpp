@@ -26,6 +26,7 @@ namespace
 {
 	static modm::atomic::Queue<uint8_t, 16> rxBuffer;
 	static modm::atomic::Queue<uint8_t, 250> txBuffer;
+	static modm::platform::UartBase::InterruptFlag_t flags;
 }
 void
 modm::platform::Uart5::initializeBuffered(uint32_t interruptPriority)
@@ -90,6 +91,12 @@ modm::platform::Uart5::isWriteFinished()
 }
 
 std::size_t
+modm::platform::Uart5::transmitBufferSize()
+{
+	return txBuffer.getSize();
+}
+
+std::size_t
 modm::platform::Uart5::discardTransmitBuffer()
 {
 	std::size_t count = 0;
@@ -131,6 +138,12 @@ modm::platform::Uart5::read(uint8_t *data, std::size_t length)
 }
 
 std::size_t
+modm::platform::Uart5::receiveBufferSize()
+{
+	return rxBuffer.getSize();
+}
+
+std::size_t
 modm::platform::Uart5::discardReceiveBuffer()
 {
 	std::size_t count = 0;
@@ -141,6 +154,39 @@ modm::platform::Uart5::discardReceiveBuffer()
 	return count;
 }
 
+bool
+modm::platform::Uart5::hasError()
+{
+	return UartHal5::getInterruptFlags().any(
+		UartHal5::InterruptFlag::ParityError |
+#ifdef USART_ISR_NE
+		UartHal5::InterruptFlag::NoiseError |
+#endif
+		UartHal5::InterruptFlag::OverrunError | UartHal5::InterruptFlag::FramingError);
+}
+void
+modm::platform::Uart5::clearError()
+{
+	return UartHal5::acknowledgeInterruptFlags(
+		UartHal5::InterruptFlag::ParityError |
+#ifdef USART_ISR_NE
+		UartHal5::InterruptFlag::NoiseError |
+#endif
+		UartHal5::InterruptFlag::OverrunError | UartHal5::InterruptFlag::FramingError);
+}
+
+bool modm::platform::Uart5::overrunErrorOccurred()
+{
+	if(flags & modm::platform::UartHal5::InterruptFlag::OverrunError)
+	 	return true;
+	else
+		return false;
+}
+
+void modm::platform::Uart5::clearOverrunErrorOccurred()
+{
+	flags &= (~modm::platform::UartHal5::InterruptFlag::OverrunError);
+}
 
 MODM_ISR(UART5)
 {
@@ -160,4 +206,9 @@ MODM_ISR(UART5)
 			txBuffer.pop();
 		}
 	}
+	if(modm::platform::UartHal5::getInterruptFlags() & modm::platform::UartHal5::InterruptFlag::OverrunError)
+		{
+			modm::platform::UartHal5::acknowledgeInterruptFlags(modm::platform::UartHal5::InterruptFlag::OverrunError);
+			flags |= modm::platform::UartHal5::InterruptFlag::OverrunError;
+		}
 }

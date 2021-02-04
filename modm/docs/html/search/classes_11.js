@@ -1,20 +1,9 @@
 var searchData=
 [
-  ['uart',['Uart',['../classmodm_1_1_uart.html',1,'modm']]],
-  ['uart4',['Uart4',['../classmodm_1_1platform_1_1_uart4.html',1,'modm::platform']]],
-  ['uart5',['Uart5',['../classmodm_1_1platform_1_1_uart5.html',1,'modm::platform']]],
-  ['uartbase',['UartBase',['../classmodm_1_1platform_1_1_uart_base.html',1,'modm::platform']]],
-  ['uartbaudrate',['UartBaudrate',['../classmodm_1_1platform_1_1_uart_baudrate.html',1,'modm::platform']]],
-  ['uarthal4',['UartHal4',['../classmodm_1_1platform_1_1_uart_hal4.html',1,'modm::platform']]],
-  ['uarthal5',['UartHal5',['../classmodm_1_1platform_1_1_uart_hal5.html',1,'modm::platform']]],
-  ['unaligned_5ft',['unaligned_t',['../structmodm_1_1unaligned__t.html',1,'modm']]],
-  ['unlock',['Unlock',['../classmodm_1_1atomic_1_1_unlock.html',1,'modm::atomic']]],
-  ['usart1',['Usart1',['../classmodm_1_1platform_1_1_usart1.html',1,'modm::platform']]],
-  ['usart2',['Usart2',['../classmodm_1_1platform_1_1_usart2.html',1,'modm::platform']]],
-  ['usart3',['Usart3',['../classmodm_1_1platform_1_1_usart3.html',1,'modm::platform']]],
-  ['usart6',['Usart6',['../classmodm_1_1platform_1_1_usart6.html',1,'modm::platform']]],
-  ['usarthal1',['UsartHal1',['../classmodm_1_1platform_1_1_usart_hal1.html',1,'modm::platform']]],
-  ['usarthal2',['UsartHal2',['../classmodm_1_1platform_1_1_usart_hal2.html',1,'modm::platform']]],
-  ['usarthal3',['UsartHal3',['../classmodm_1_1platform_1_1_usart_hal3.html',1,'modm::platform']]],
-  ['usarthal6',['UsartHal6',['../classmodm_1_1platform_1_1_usart_hal6.html',1,'modm::platform']]]
+  ['value',['Value',['../structmodm_1_1_value.html',1,'modm']]],
+  ['vector',['Vector',['../classmodm_1_1_vector.html',1,'modm']]],
+  ['vector_3c_20t_2c_201_20_3e',['Vector&lt; T, 1 &gt;',['../classmodm_1_1_vector_3_01_t_00_011_01_4.html',1,'modm']]],
+  ['vector_3c_20t_2c_202_20_3e',['Vector&lt; T, 2 &gt;',['../classmodm_1_1_vector_3_01_t_00_012_01_4.html',1,'modm']]],
+  ['vector_3c_20t_2c_203_20_3e',['Vector&lt; T, 3 &gt;',['../classmodm_1_1_vector_3_01_t_00_013_01_4.html',1,'modm']]],
+  ['vector_3c_20t_2c_204_20_3e',['Vector&lt; T, 4 &gt;',['../classmodm_1_1_vector_3_01_t_00_014_01_4.html',1,'modm']]]
 ];

@@ -3,6 +3,8 @@
 @ingroup modm_cmsis
 @defgroup modm_cmsis_device STM32 CMSIS Headers
 
+lbuild module: `modm:cmsis:device`
+
 This module wraps [the CMSIS headers for STM32 devices][repo] and provides the
 header file and CPP definitions for accessing the `modm:target` peripherals.
 Specifically, it copies the target header file which provides the CMSIS
@@ -32,12 +34,10 @@ modm implements the target specific CMSIS functionality itself, without using
 the CMSIS interface. This is necessary to provide similar functionality on
 non-Cortex-M based targets.
 
-Specifically, these functions are not implemented:
-
-- `uint32_t SystemCoreClock` and `void SystemCoreClockUpdate()`: please use
-  `modm::clock::f_cpu` as defined in the `modm:architecture:clock` module.
-- `void SystemInit()`: modm defines its own startup architecture, see the
-  `modm:platform:core` module for details.
+- `uint32_t SystemCoreClock` contains an up-to-date value of CPU frequency.
+- `void SystemCoreClockUpdate()` does nothing, it's a weak empty function.
+- `void SystemInit()` is **undefined**: modm defines its own startup
+  architecture, see the `modm:platform:core` module for details.
 
 
 [repo]: https://github.com/modm-io/cmsis-header-stm32
@@ -79,6 +79,5 @@ helper feature and none of these definitions make it into the executable.
     peripheral memory location can have. It's fairly obvious that a write may
     have consequences, but also reads can modify peripheral state, for example,
     a hardware FIFO buffer may pop the queue if your read the top of it.
-
 
  */

@@ -5,7 +5,7 @@
  * Copyright (c) 2012, 2016, Sascha Schade
  * Copyright (c) 2012, 2014-2019, Niklas Hauser
  * Copyright (c) 2013-2014, Kevin Läufer
- * Copyright (c) 2018, Christopher Durand
+ * Copyright (c) 2018, 2021, Christopher Durand
  *
  * This file is part of the modm project.
  *
@@ -16,14 +16,15 @@
 // ----------------------------------------------------------------------------
 
 #include "rcc.hpp"
-#include "common.hpp"
 
-namespace modm::clock
+// CMSIS Core compliance
+uint32_t modm_fastdata SystemCoreClock(16'000'000);
+modm_weak void SystemCoreClockUpdate() { /* Nothing to update */ }
+
+namespace modm::platform
 {
-uint32_t modm_fastdata fcpu(8'000'000);
-uint32_t modm_fastdata fcpu_kHz(8'000);
-uint16_t modm_fastdata fcpu_MHz(8);
-uint16_t modm_fastdata ns_per_loop(375);
+uint16_t modm_fastdata delay_fcpu_MHz(16);
+uint16_t modm_fastdata delay_ns_per_loop(187);
 }
 
 // ----------------------------------------------------------------------------
@@ -87,28 +88,35 @@ modm::platform::Rcc::enableLowSpeedExternalCrystal(uint32_t waitCycles)
 	return retval;
 }
 
-// ----------------------------------------------------------------------------
 bool
-modm::platform::Rcc::enablePll(PllSource source, uint8_t pllM, uint16_t pllN, uint8_t pllP, uint32_t waitCycles)
+modm::platform::Rcc::enablePll(PllSource source, const PllFactors& pllFactors, uint32_t waitCycles)
 {
 	// Read reserved values and clear all other values
-	uint32_t tmp = RCC->PLLCFGR & ~(RCC_PLLCFGR_PLLSRC | RCC_PLLCFGR_PLLM
-			| RCC_PLLCFGR_PLLN | RCC_PLLCFGR_PLLP | RCC_PLLCFGR_PLLQ);
+	uint32_t tmp = RCC->PLLCFGR & ~(
+			RCC_PLLCFGR_PLLSRC | RCC_PLLCFGR_PLLM | RCC_PLLCFGR_PLLN |
+			// RCC_PLLCFGR_PLLPEN | RCC_PLLCFGR_PLLP |
+			RCC_PLLCFGR_PLLREN | RCC_PLLCFGR_PLLR);
 
-	// PLLSRC source for pll and for plli2s
+	// PLLSRC source for pll
 	tmp |= static_cast<uint32_t>(source);
 
-	// PLLM (0) = factor is user defined VCO input frequency must be configured to 2MHz
-	tmp |= ((uint32_t) pllM) & RCC_PLLCFGR_PLLM;
+	// PLLM factor is user defined VCO input frequency must be configured between 4MHz and 16Mhz
+	tmp |= (uint32_t(pllFactors.pllM - 1) << RCC_PLLCFGR_PLLM_Pos) & RCC_PLLCFGR_PLLM;
 
-	// PLLN (6) = factor is user defined
-	tmp |= (((uint32_t) pllN) << RCC_PLLCFGR_PLLN_Pos) & RCC_PLLCFGR_PLLN;
+	// PLLN factor is user defined: between 64 and 344 MHz
+	tmp |= (uint32_t(pllFactors.pllN) << RCC_PLLCFGR_PLLN_Pos) & RCC_PLLCFGR_PLLN;
 
-	// PLLP (16) divider for CPU frequency; (00: PLLP = 2, 01: PLLP = 4, etc.)
-	tmp |= (((uint32_t) (pllP / 2) - 1) << RCC_PLLCFGR_PLLP_Pos) & RCC_PLLCFGR_PLLP;
-
-	// PLLQ (24) divider for USB frequency; (0-15)
-	// tmp |= (((uint32_t) pllQ) << RCC_PLLCFGR_PLLQ_Pos) & RCC_PLLCFGR_PLLQ;
+	// PLLR divider for CPU frequency
+	tmp |= ((uint32_t(pllFactors.pllR / 2) - 1) << RCC_PLLCFGR_PLLR_Pos) & RCC_PLLCFGR_PLLR;
+	// PLLQ (21) divider for USB frequency; (00: PLLQ = 2, 01: PLLQ = 4, etc.)
+	if (pllFactors.pllQ != 0xff) {
+		tmp &= ~RCC_PLLCFGR_PLLQ;
+		tmp |= (((uint32_t) (pllFactors.pllQ / 2) - 1) << RCC_PLLCFGR_PLLQ_Pos) & RCC_PLLCFGR_PLLQ;
+		// enable pll USB clock output
+		tmp |= RCC_PLLCFGR_PLLQEN;
+	}
+	// enable pll CPU clock output
+	tmp |= RCC_PLLCFGR_PLLREN;
 
 	RCC->PLLCFGR = tmp;
 
@@ -119,7 +127,9 @@ modm::platform::Rcc::enablePll(PllSource source, uint8_t pllM, uint16_t pllN, ui
 		;
 
 	return tmp;
+
 }
+
 // ----------------------------------------------------------------------------
 bool
 modm::platform::Rcc::enableSystemClock(SystemClockSource src, uint32_t waitCycles)

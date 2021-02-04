@@ -2,6 +2,8 @@
 
 @defgroup modm_container Containers
 
+lbuild module: `modm:container`
+
 A container is a holder object that stores a collection other objects (its
 elements). They are implemented as class templates, which allows a great
 flexibility in the types supported as elements.
@@ -83,6 +85,5 @@ every one of it, only a subset which is sufficient for the container.
 - getSize
 - getMaxSize
 - getCapacity
-
 
  */

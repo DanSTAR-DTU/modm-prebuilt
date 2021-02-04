@@ -27,6 +27,7 @@ namespace
 	static modm::atomic::Queue<uint8_t, 16> rxBuffer;
 	static modm::atomic::Queue<uint8_t, 250> txBuffer;
 	static modm::platform::UartBase::InterruptFlag_t flags;
+
 }
 void
 modm::platform::Usart2::initializeBuffered(uint32_t interruptPriority)
@@ -91,6 +92,12 @@ modm::platform::Usart2::isWriteFinished()
 }
 
 std::size_t
+modm::platform::Usart2::transmitBufferSize()
+{
+	return txBuffer.getSize();
+}
+
+std::size_t
 modm::platform::Usart2::discardTransmitBuffer()
 {
 	std::size_t count = 0;
@@ -132,6 +139,12 @@ modm::platform::Usart2::read(uint8_t *data, std::size_t length)
 }
 
 std::size_t
+modm::platform::Usart2::receiveBufferSize()
+{
+	return rxBuffer.getSize();
+}
+
+std::size_t
 modm::platform::Usart2::discardReceiveBuffer()
 {
 	std::size_t count = 0;
@@ -141,6 +154,29 @@ modm::platform::Usart2::discardReceiveBuffer()
 	}
 	return count;
 }
+
+bool
+modm::platform::Usart2::hasError()
+{
+	return UsartHal2::getInterruptFlags().any(
+		UsartHal2::InterruptFlag::ParityError |
+#ifdef USART_ISR_NE
+		UsartHal2::InterruptFlag::NoiseError |
+#endif
+		UsartHal2::InterruptFlag::OverrunError | UsartHal2::InterruptFlag::FramingError);
+}
+void
+modm::platform::Usart2::clearError()
+{
+	return UsartHal2::acknowledgeInterruptFlags(
+		UsartHal2::InterruptFlag::ParityError |
+#ifdef USART_ISR_NE
+		UsartHal2::InterruptFlag::NoiseError |
+#endif
+		UsartHal2::InterruptFlag::OverrunError | UsartHal2::InterruptFlag::FramingError);
+}
+
+
 
 bool modm::platform::Usart2::overrunErrorOccurred()
 {
@@ -154,6 +190,7 @@ void modm::platform::Usart2::clearOverrunErrorOccurred()
 {
 	flags &= (~modm::platform::UsartHal2::InterruptFlag::OverrunError);
 }
+
 
 MODM_ISR(USART2)
 {

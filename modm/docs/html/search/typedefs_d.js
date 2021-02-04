@@ -1,18 +1,17 @@
 var searchData=
 [
-  ['refin',['Refin',['../classmodm_1_1platform_1_1_gpio_b15.html#a70bd9c4efc17507ed9de9bd7c3a0f20c',1,'modm::platform::GpioB15']]],
-  ['register16',['Register16',['../group__modm__architecture__register.html#ga40997210e0b33d038e50059246a6c35f',1,'modm']]],
-  ['register32',['Register32',['../group__modm__architecture__register.html#ga6e710bba1e576562f1b48d3fac68c3fd',1,'modm']]],
-  ['register8',['Register8',['../group__modm__architecture__register.html#gabd73ce6ec9b57c64d6f0a6205f023435',1,'modm']]],
-  ['rfch_5ft',['RfCh_t',['../structmodm_1_1_nrf24_register.html#a1a0f47f720b7b140f96e08b90c44ff17',1,'modm::Nrf24Register']]],
-  ['rfsetup_5ft',['RfSetup_t',['../structmodm_1_1_nrf24_register.html#a24c88d0712b86a5e538a73da6fc92d43',1,'modm::Nrf24Register']]],
-  ['rpd_5ft',['Rpd_t',['../structmodm_1_1_nrf24_register.html#a8ae9ca83c273b309f2a12a4094129833',1,'modm::Nrf24Register']]],
-  ['rts',['Rts',['../classmodm_1_1platform_1_1_gpio_a1.html#a4e48fe70f7c0a575d79e0cca8a11d5fd',1,'modm::platform::GpioA1::Rts()'],['../classmodm_1_1platform_1_1_gpio_a12.html#a6e2e49ff64b8b8b0868c01671b55daa1',1,'modm::platform::GpioA12::Rts()'],['../classmodm_1_1platform_1_1_gpio_a15.html#a8db3a68ed1e37b5a8361e4374b096f21',1,'modm::platform::GpioA15::Rts()'],['../classmodm_1_1platform_1_1_gpio_b14.html#a2f858a41148ce5de1ecd95b70d43e119',1,'modm::platform::GpioB14::Rts()'],['../classmodm_1_1platform_1_1_gpio_c8.html#a837d5ce2ae47bbd896c0e025af6e24f3',1,'modm::platform::GpioC8::Rts()']]],
-  ['rx',['Rx',['../classmodm_1_1platform_1_1_gpio_a1.html#a3e864ce9c1979f9de107e5d72b717f10',1,'modm::platform::GpioA1::Rx()'],['../classmodm_1_1platform_1_1_gpio_a10.html#abf9283ad42f525fb1d947abc13bf627f',1,'modm::platform::GpioA10::Rx()'],['../classmodm_1_1platform_1_1_gpio_a11.html#a53c70a91b100be9decb060535d765a9a',1,'modm::platform::GpioA11::Rx()'],['../classmodm_1_1platform_1_1_gpio_a3.html#a9ecf689db0dad8a74e9aa09975cc5fef',1,'modm::platform::GpioA3::Rx()'],['../classmodm_1_1platform_1_1_gpio_b12.html#a03c559f8a4a0c52646ff59edb712e60e',1,'modm::platform::GpioB12::Rx()'],['../classmodm_1_1platform_1_1_gpio_b5.html#abe0155fdf0fea8776c2969978ea4f87c',1,'modm::platform::GpioB5::Rx()'],['../classmodm_1_1platform_1_1_gpio_b7.html#a148c769b982fd0d85b11d8f70da7feea',1,'modm::platform::GpioB7::Rx()'],['../classmodm_1_1platform_1_1_gpio_b8.html#a53d3313b49db27682aba72354bfc4900',1,'modm::platform::GpioB8::Rx()'],['../classmodm_1_1platform_1_1_gpio_c11.html#a8abcafbff965796ae7b553c86c80d419',1,'modm::platform::GpioC11::Rx()'],['../classmodm_1_1platform_1_1_gpio_c5.html#a05c5e4396d3cb01a70c6b6e0999c9478',1,'modm::platform::GpioC5::Rx()'],['../classmodm_1_1platform_1_1_gpio_c7.html#adf5175a5b8fc4cb156ab62db520c9d2d',1,'modm::platform::GpioC7::Rx()'],['../classmodm_1_1platform_1_1_gpio_d2.html#a9c04a9d8ef42f0b58340ad8f3e2abdb7',1,'modm::platform::GpioD2::Rx()']]],
-  ['rxpwp0_5ft',['RxPwP0_t',['../structmodm_1_1_nrf24_register.html#af1e5dba8c8e44f02cb26e653b377547b',1,'modm::Nrf24Register']]],
-  ['rxpwp1_5ft',['RxPwP1_t',['../structmodm_1_1_nrf24_register.html#af302947c12a03ba8d441803c5c569c7e',1,'modm::Nrf24Register']]],
-  ['rxpwp2_5ft',['RxPwP2_t',['../structmodm_1_1_nrf24_register.html#aee4d1232891c1ef24427028e0b0beec0',1,'modm::Nrf24Register']]],
-  ['rxpwp3_5ft',['RxPwP3_t',['../structmodm_1_1_nrf24_register.html#a552a7298c800996ddc64bc5dc4e524d9',1,'modm::Nrf24Register']]],
-  ['rxpwp4_5ft',['RxPwP4_t',['../structmodm_1_1_nrf24_register.html#ad7e0d669dfd6818d3133efcff88428c4',1,'modm::Nrf24Register']]],
-  ['rxpwp5_5ft',['RxPwP5_t',['../structmodm_1_1_nrf24_register.html#a8b71d3aae8ed3119569a87bcc8cc368a',1,'modm::Nrf24Register']]]
+  ['percent_5ft',['percent_t',['../group__modm__math__units.html#ga4f017ee3fdf26cb780b0df55356f031c',1,'modm']]],
+  ['period',['period',['../structmodm_1_1chrono_1_1milli__clock.html#a038d727378c057ed53052de1088fa014',1,'modm::chrono::milli_clock::period()'],['../structmodm_1_1chrono_1_1micro__clock.html#ab62f080357218e0dd4da61340b4a575e',1,'modm::chrono::micro_clock::period()'],['../classmodm_1_1_generic_timeout.html#ae4a349c161e8770fcc3764f8e564d288',1,'modm::GenericTimeout::period()']]],
+  ['periodictimer',['PeriodicTimer',['../group__modm__processing__timer.html#ga8b28a26d7cb392b92ef1501e67e34668',1,'modm']]],
+  ['phy',['Phy',['../classmodm_1_1_nrf24_data.html#ac1c59f577d5096fdc262e5b73b707bae',1,'modm::Nrf24Data']]],
+  ['pipe_5ft',['Pipe_t',['../structmodm_1_1_nrf24_register.html#a0797d170b6d1bc80106d8b6c72d951e8',1,'modm::Nrf24Register']]],
+  ['pointtype',['PointType',['../classmodm_1_1_point_set2_d.html#a7e72fd08abf050ddad5faedee7235a4e',1,'modm::PointSet2D']]],
+  ['porttype',['PortType',['../classmodm_1_1_gpio_port.html#a7bfb4242ca91cfe30823d1f4167f2c32',1,'modm::GpioPort::PortType()'],['../classmodm_1_1_gpio_expander.html#a7465c714b304d6c0be85a04c4529f82c',1,'modm::GpioExpander::PortType()'],['../classmodm_1_1platform_1_1_gpio_port.html#a962ee81d078f1c2128ee199528c29469',1,'modm::platform::GpioPort::PortType()'],['../classmodm_1_1platform_1_1_software_gpio_port.html#abf53f4aa9e9ef8be5e74d8b378b10fe8',1,'modm::platform::SoftwareGpioPort::PortType()']]],
+  ['preciseclock',['PreciseClock',['../namespacemodm.html#a0fbdeec9cb2bbb049c6bf1627a927e46',1,'modm']]],
+  ['preciseduration',['PreciseDuration',['../group__modm__processing__timer.html#gaa6fbbdb7432422456f7dbcbe3e83b53d',1,'modm']]],
+  ['preciseperiodictimer',['PrecisePeriodicTimer',['../group__modm__processing__timer.html#ga500c2344443ab528a2e38b6bf040a988',1,'modm']]],
+  ['precisetimeout',['PreciseTimeout',['../group__modm__processing__timer.html#ga671a22a3fd5a21d056de903b965cbd00',1,'modm']]],
+  ['precisetimestamp',['PreciseTimestamp',['../group__modm__processing__timer.html#gaee66627f734b5724469ddc7f8786f7a4',1,'modm']]],
+  ['pressure',['Pressure',['../structmodm_1_1bme280.html#ab63583d4a4d1d93d8132851aa03daf8f',1,'modm::bme280']]],
+  ['pvdin',['Pvdin',['../classmodm_1_1platform_1_1_gpio_b7.html#a1084987e3754a785a4786043a5f24886',1,'modm::platform::GpioB7']]]
 ];

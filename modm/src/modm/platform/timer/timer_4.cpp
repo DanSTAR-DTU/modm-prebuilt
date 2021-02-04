@@ -44,7 +44,8 @@ modm::platform::Timer4::disable()
 void
 modm::platform::Timer4::setMode(Mode mode, SlaveMode slaveMode,
 		SlaveModeTrigger slaveModeTrigger, MasterMode masterMode,
-		bool enableOnePulseMode)
+		bool enableOnePulseMode, bool bufferAutoReloadRegister,
+		bool limitUpdateEventRequestSource)
 {
 	// disable timer
 	TIM4->CR1 = 0;
@@ -57,13 +58,19 @@ modm::platform::Timer4::setMode(Mode mode, SlaveMode slaveMode,
 		// Prescaler has to be 1 when using the quadrature decoder
 		setPrescaler(1);
 	}
-	// ARR Register is buffered, only Under/Overflow generates update interrupt
+	uint32_t cr1 = static_cast<uint32_t>(mode);
+	if(bufferAutoReloadRegister)
+	{
+		cr1 |= TIM_CR1_ARPE;
+	}
+	if(limitUpdateEventRequestSource)
+	{
+		cr1 |= TIM_CR1_URS;
+	}
 	if (enableOnePulseMode) {
-		TIM4->CR1 = TIM_CR1_ARPE | TIM_CR1_URS | TIM_CR1_OPM
-										| static_cast<uint32_t>(mode);
+		TIM4->CR1 = cr1 | TIM_CR1_OPM;
 	} else {
-		TIM4->CR1 = TIM_CR1_ARPE | TIM_CR1_URS
-										| static_cast<uint32_t>(mode);
+		TIM4->CR1 = cr1;
 	}
 	TIM4->CR2 = static_cast<uint32_t>(masterMode);
 	TIM4->SMCR = static_cast<uint32_t>(slaveMode)
@@ -118,7 +125,8 @@ modm::platform::Timer4::configureInputChannel(uint32_t channel,
 // ----------------------------------------------------------------------------
 void
 modm::platform::Timer4::configureOutputChannel(uint32_t channel,
-		OutputCompareMode_t mode, Value compareValue, PinState out)
+		OutputCompareMode_t mode, Value compareValue, PinState out,
+		bool enableComparePreload)
 {
 	channel -= 1;	// 1..4 -> 0..3
 
@@ -127,8 +135,12 @@ modm::platform::Timer4::configureOutputChannel(uint32_t channel,
 
 	setCompareValue(channel + 1, compareValue);
 
-	// enable preload (the compare value is loaded at each update event)
-	uint32_t flags = mode.value | TIM_CCMR1_OC1PE;
+	uint32_t flags = mode.value;
+	if(enableComparePreload)
+	{
+		// enable preload (the compare value is loaded at each update event)
+		flags |= TIM_CCMR1_OC1PE;
+	}
 
 	if (channel <= 1)
 	{
@@ -166,4 +178,28 @@ modm::platform::Timer4::enableInterruptVector(bool enable, uint32_t priority)
 	{
 		NVIC_DisableIRQ(TIM4_IRQn);
 	}
+}
+
+// ----------------------------------------------------------------------------
+bool
+modm::platform::Timer4::isChannelConfiguredAsInput(uint32_t channel)
+{
+	bool isInput = false;
+	switch (channel) {
+		case 1:
+			isInput = TIM4->CCMR1 & TIM_CCMR1_CC1S;
+			break;
+		case 2:
+			isInput = TIM4->CCMR1 & TIM_CCMR1_CC2S;
+			break;
+		case 3:
+			isInput = TIM4->CCMR2 & TIM_CCMR2_CC3S;
+			break;
+		case 4:
+			isInput = TIM4->CCMR2 & TIM_CCMR2_CC4S;
+			break;
+		default:
+			break;
+	}
+	return isInput;
 }

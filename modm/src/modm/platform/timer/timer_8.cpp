@@ -228,36 +228,36 @@ modm::platform::Timer8::enableInterruptVector(Interrupt interrupt, bool enable, 
 	{
 		if (enable)
 		{
-			NVIC_SetPriority(TIM8_BRK_TIM12_IRQn, priority);
-			NVIC_EnableIRQ(TIM8_BRK_TIM12_IRQn);
+			NVIC_SetPriority(TIM8_BRK_IRQn, priority);
+			NVIC_EnableIRQ(TIM8_BRK_IRQn);
 		}
 		else
 		{
-			NVIC_DisableIRQ(TIM8_BRK_TIM12_IRQn);
+			NVIC_DisableIRQ(TIM8_BRK_IRQn);
 		}
 	}
 	if(interrupt & (Interrupt::Update))
 	{
 		if (enable)
 		{
-			NVIC_SetPriority(TIM8_UP_TIM13_IRQn, priority);
-			NVIC_EnableIRQ(TIM8_UP_TIM13_IRQn);
+			NVIC_SetPriority(TIM8_UP_IRQn, priority);
+			NVIC_EnableIRQ(TIM8_UP_IRQn);
 		}
 		else
 		{
-			NVIC_DisableIRQ(TIM8_UP_TIM13_IRQn);
+			NVIC_DisableIRQ(TIM8_UP_IRQn);
 		}
 	}
 	if(interrupt & (Interrupt::Trigger | Interrupt::COM))
 	{
 		if (enable)
 		{
-			NVIC_SetPriority(TIM8_TRG_COM_TIM14_IRQn, priority);
-			NVIC_EnableIRQ(TIM8_TRG_COM_TIM14_IRQn);
+			NVIC_SetPriority(TIM8_TRG_COM_IRQn, priority);
+			NVIC_EnableIRQ(TIM8_TRG_COM_IRQn);
 		}
 		else
 		{
-			NVIC_DisableIRQ(TIM8_TRG_COM_TIM14_IRQn);
+			NVIC_DisableIRQ(TIM8_TRG_COM_IRQn);
 		}
 	}
 	if(interrupt & (Interrupt::CaptureCompare1 | Interrupt::CaptureCompare2 | Interrupt::CaptureCompare3 | Interrupt::CaptureCompare4))

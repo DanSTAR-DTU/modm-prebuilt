@@ -2,6 +2,8 @@
 
 @defgroup modm_build Build System Generators
 
+lbuild module: `modm:build`
+
 This parent module defines a common set of functionality that is independent of
 the specific build system generator implementation.
 This includes straight-forward options like project name and build path
@@ -11,117 +13,6 @@ AvrDude or OpenOCD and debugging via GDB.
 **Note that this module does not compile your project, you will need to choose
 the `modm:build:scons` or `modm:build:cmake` submodule for that, or provide
 your own build system.**
-
-
-## Using OpenOCD
-
-For accessing your ARM Cortex-M based device, we use OpenOCD by default and
-generate a `modm/openocd.cfg` file with the target specific configuration:
-
-- Search directories passed via the `path.openocd` collector.
-- User configuration files passed via the `openocd.source` collector.
-  Your custom `modm:build:openocd.cfg` is added here too.
-- The target specific programming command `modm_program elffile`
-
-You can now upload your program in a one-line command:
-
-~~~{.sh}
-openocd -f modm/openocd.cfg -c "modm_program path/to/project.elf"
-~~~
-~~~
-Open On-Chip Debugger 0.10.0
-adapter speed: 2000 kHz
-adapter_nsrst_delay: 100
-none separate
-srst_only separate srst_nogate srst_open_drain connect_deassert_srst
-program_debug
-Info : clock speed 1800 kHz
-Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
-Info : using stlink api v2
-Info : Target voltage: 3.260972
-Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
-adapter speed: 1800 kHz
-** Programming Started **
-auto erase enabled
-Info : device id = 0x10006434
-Info : flash size = 2048kbytes
-wrote 16384 bytes from file path/to/project.elf in 0.589551s (27.139 KiB/s)
-** Programming Finished **
-** Verify Started **
-verified 13064 bytes in 0.328969s (38.781 KiB/s)
-** Verified OK **
-adapter speed: 1800 kHz
-target halted due to debug-request, current mode: Thread
-xPSR: 0x01000000 pc: 0x0800263c msp: 0x10000be0
-shutdown command invoked
-~~~
-
-
-## Using GDB
-
-For debugging your program on ARM Cortex-M device, we provide the `modm/gdbinit`
-and `modm/openocd_gdbinit` files for the `arm-none-eabi-gdb` debugger connected
-to your target via OpenOCD.
-
-Two commands are provided for convenience:
-
-- `restart` resets the device and halts.
-- `rerun` resets the device and continues execution.
-
-GDB is configured in TUI mode and continues running the target after attaching,
-but *does not* load an ELF file! Please pass the ELF file as a command line
-argument.
-
-You can start your debug session by launching OpenOCD and then GDB:
-
-~~~{.sh}
-# Run OpenOCD without any commands in the background
-openocd -f modm/openocd.cfg
-# Open another shell with your projects ELF file
-arm-none-eabi-gdb -x modm/gdbinit -x modm/openocd_gdbinit path/to/project.elf
-~~~
-
-~~~
-   ┌——main.cpp———————————————————————————————————————————————————————┐
-  >│194             DRAW(x+1, y+3);                                  │
-   │195             DRAW(x+2, y+3);                                  │
-   │196     #else                                                    │
-   │197             DRAW(x  , y  );                                  │
-   │198     #endif                                                   │
-   │199     #undef DRAW                                              │
-   │200     }                                                        │
-   │201                                                              │
-   │202     static inline void drawScreen(framebuffer_t before, frame│
-   └—————————————————————————————————————————————————————————————————┘
-  >│0x80017a0 <game_of_life()+1692> strh.w r3, [r4, r12, lsl #1]     │
-   │0x80017a4 <game_of_life()+1696> add    r0, lr                    │
-   │0x80017a6 <game_of_life()+1698> ldr    r2, [r2, #0]              │
-   │0x80017a8 <game_of_life()+1700> strh.w r3, [r2, r0, lsl #1]      │
-   │0x80017ac <game_of_life()+1704> ldr    r3, [sp, #12]             │
-   │0x80017ae <game_of_life()+1706> ldr    r2, [sp, #0]              │
-   │0x80017b0 <game_of_life()+1708> add    r2, r3                    │
-   │0x80017b2 <game_of_life()+1710> ldrb   r3, [r7, r1]              │
-   │0x80017b4 <game_of_life()+1712> strb   r3, [r2, r1]              │
-   └—————————————————————————————————————————————————————————————————┘
-extended-r Remote target In: game_of_life         L194  PC: 0x80017a0
-
-Program received signal SIGINT, Interrupt.
-0x080017a0 in drawPixel (color=<optimized out>, y=42, x=578) at main.c
-(gdb)
-~~~
-
-@warning "Be careful attaching to a running target"
-    Due to the OpenOCD implementation, the target is halted for a very short
-    period of time, while the device's debug peripheral is initialized.
-    This time is dependent on the debug adapter and may range from just a few
-    milliseconds to hundreds. Make sure your hardware can handle that!
-
-
-## Using AvrDude
-
-Unfortunately AvrDude does not support a user configuration file like OpenOCD
-does, so there is no convenient one-line command to issue.
-You have to use the wrapper support of the specific build system.
 
 
 ## Compiler Options
@@ -156,38 +47,331 @@ For *debug builds*:
 
 #### Only C++
 
-- `-std=c++17`: use C++17
-- `-fno-exceptions`: no exceptions.
-- `-fno-rtti`: no run-time type information.
+- `-std=c++20`: use C++20
+
+For exception and RTTI flags, see `modm:stdc++` module.
 
 #### Linker
 
 - `--gc-section`: garbage collecting sections throws out a lot of unused data/code.
 - `-L{linkdir} -Tlinkerscript.ld`: modm uses a custom linkerscript.
 
-### Only AVR
-
-- `-mmcu={target}`: the target to compile for.
-
-### Only ARM Cortex-M
-
-- `-mcpu=cortex-m{type}`: the target to compile for.
-- `-mthumb`: only Thumb2 instruction set is supported.
-- `-mfloat-abi=hard`: if FPU available use the fastest ABI available.
-- `-mfpu=fpv{4, 5}-{sp}-d16`: single or double precision FPU.
-- `-fsingle-precision-constant`: if SP-FPU, treat all FP constants as SP.
-- `-Wdouble-promotion`: if SP-FPU, warn if FPs are promoted to doubles.
-
-In addition, these linker options are added:
-
-- `-nostartfiles`: modm implements its own startup script.
-- `--specs=nano.specs`: use Newlib Nano.
-- `--specs=nosys.specs`: modm does not use C stdlib features.
-- `-wrap,_{calloc, malloc, realloc, free}_r`: reimplemented Newlib with our own allocator.
-
+For target specific flags, see the `modm:platform:core` and related modules.
 
 [options]: https://gcc.gnu.org/onlinedocs/gcc/Option-Summary.html
 
+
+## Configuration
+
+This module generates a common set of configuration files that are used by the
+common tooling. Please note that these files are the *foundation* of more
+extensive tooling available as Python scripts which are then again wrapped by
+your chosen build system for convenience.
+
+
+### OpenOCD
+
+For accessing your ARM Cortex-M based device, we use OpenOCD by default and
+generate a `modm/openocd.cfg` file with the target specific configuration:
+
+- Search directories passed via the `path.openocd` collector.
+- User configuration files passed via the `openocd.source` collector.
+  Your custom `modm:build:openocd.cfg` is added here too.
+
+You need to start openocd with this configuration file:
+
+~~~{.sh}
+openocd -f modm/openocd.cfg
+~~~
+
+@warning "Be careful attaching to a running target"
+    The OpenOCD implementation halts the target at least while the device's
+    debug peripheral is initialized. Only connect to systems that cannot create
+    any damage while being halted! For example halting motor controllers may
+    damage motors!!
+
+
+### AvrDude
+
+Unfortunately AvrDude does not support a *project-specific* configuration file
+like OpenOCD does (only a undocumented user config in `~/.avrduderc`), so there
+is no convenient one-line command to issue. You have to use the wrapper support
+of the specific build system or simply call AvrDude yourself via its command
+line.
+
+
+### GDB
+
+Two commands are provided for convenience via the `modm/gdbinit` configuration:
+
+- `restart` resets the device and halts.
+- `rerun` resets the device and continues execution.
+
+GDB continues running the target after attaching, but *does not* load an ELF
+file! Please pass the ELF file as a command line argument.
+
+You can start your GDB session like so:
+
+~~~{.sh}
+arm-none-eabi-gdb -x modm/gdbinit path/to/project.elf
+~~~
+
+
+## Generic Python Tools
+
+We have written a number of pure Python tools to provide common functionality
+that get wrapped by the build system.
+
+Here is a selection of tools that have a command line interface, so you can call
+them even without build system support in case you have a special setup.
+Note that there are even more tools that can be called in Python only, so have
+a look in your generated `modm/modm_tools` folder.
+
+
+### AvrDude
+
+This tool simply wraps the `avrdude` command to provide two features:
+
+- guessing the serial port when a baudrate was set.
+- inspecting the ELF file to decide whether EEPROM needs to be programmed.
+
+~~~{.sh}
+python3 modm/modm_tools/avrdude.py -p m328p -c arduino -P auto -b 57600 \\
+                                   path/to/project.elf
+~~~
+
+[Fuses stored in the ELF file](http://avr-libc.nongnu.org/user-manual/group__avr__fuse.html)
+can be programmed by passing `--fuse` arguments:
+
+~~~{.sh}
+python3 modm/modm_tools/avrdude.py -p m328p -c stk500v2 path/to/project.elf \\
+                                   --fuse hfuse --fuse lfuse --fuse efuse
+~~~
+
+(\* *only AVR targets*)
+
+
+### OpenOCD
+
+Simply wraps OpenOCD and issues the right command to program the target.
+
+~~~{.sh}
+python3 modm/modm_tools/openocd.py -f modm/openocd.cfg path/to/project.elf
+~~~
+
+(\* *only ARM Cortex-M targets*)
+
+
+### Black Magic Probe
+
+This tool wraps GDB to program an ELF file onto a target connected to a BMP.
+You can explictly pass the serial port, or let the tool guess it.
+
+~~~{.sh}
+python3 modm/modm_tools/bmp.py path/to/project.elf
+# or choose the port explicitly
+python3 modm/modm_tools/bmp.py path/to/project.elf -p /dev/tty.usbserial-123
+~~~
+
+(\* *only ARM Cortex-M targets*)
+
+
+### GDB
+
+For debugging your program on ARM Cortex-M device, this Python tool wraps
+`arm-none-eabi-gdb` and connects it to a number of programmers running in the
+background or remotely.
+
+The tool can be called from the command line. Here is a typical use-case using
+the openocd backend with the common configuration files:
+
+~~~{.sh}
+python3 modm/modm_tools/gdb.py path/to/project.elf -ui=tui \
+        -x modm/gdbinit -x modm/openocd_gdbinit \
+        openocd -f modm/openocd.cfg
+~~~
+
+Or you can call the Python API directly:
+
+~~~{.python}
+import sys
+sys.path.append("modm")
+from modm_tools import gdb
+from modm_tools.openocd import OpenOcdBackend
+
+backend = OpenOcdBackend(config="modm/openocd.cfg")
+gdb.call(source="path/to/project.elf", backend=backend,
+         config=["modm/gdbinit", "modm/openocd_gdbinit"], ui="tui")
+~~~
+
+This configuration starts the OpenOCD process in the background for you,
+however, if you want to connect to an already running process, you can use the
+remote backend with the `--host={ip or hostname}` via the command line:
+
+~~~{.sh}
+# Extended-Remote running remotely
+python3 modm/modm_tools/gdb.py path/to/project.elf -x modm/gdbinit -ui=tui \
+        remote --host 123.45.67.89
+~~~
+
+Note that you can use different programmer backends to GDB:
+
+~~~{.sh}
+# Black Magic Probe
+python3 modm/modm_tools/gdb.py path/to/project.elf -x modm/gdbinit -ui=tui \
+        bmp --port /dev/tty.usbserial-123
+
+# CrashDebug for Post-Mortem debugging
+python3 modm/modm_tools/gdb.py path/to/project.elf -x modm/gdbinit -ui=tui \
+        crashdebug --binary-path modm/ext/crashcatcher/bins --dump coredump.txt
+~~~
+
+(\* *only ARM Cortex-M targets*)
+
+Currently two UIs are implemented for debugging:
+
+- `-ui=tui`: Text-based UI in your shell.
+- `-ui=web`: Web-based UI in your browser, based on [gdbgui][].
+
+
+#### Text UI
+
+This UI is builtin to GDB and is therefore always available.
+
+~~~
+   ┌——main.cpp———————————————————————————————————————————————————————┐
+  >│194             DRAW(x+1, y+3);                                  │
+   │195             DRAW(x+2, y+3);                                  │
+   │196     #else                                                    │
+   │197             DRAW(x  , y  );                                  │
+   │198     #endif                                                   │
+   │199     #undef DRAW                                              │
+   │200     }                                                        │
+   │201                                                              │
+   │202     static inline void drawScreen(framebuffer_t before, frame│
+   └—————————————————————————————————————————————————————————————————┘
+  >│0x80017a0 <game_of_life()+1692> strh.w r3, [r4, r12, lsl #1]     │
+   │0x80017a4 <game_of_life()+1696> add    r0, lr                    │
+   │0x80017a6 <game_of_life()+1698> ldr    r2, [r2, #0]              │
+   │0x80017a8 <game_of_life()+1700> strh.w r3, [r2, r0, lsl #1]      │
+   │0x80017ac <game_of_life()+1704> ldr    r3, [sp, #12]             │
+   │0x80017ae <game_of_life()+1706> ldr    r2, [sp, #0]              │
+   │0x80017b0 <game_of_life()+1708> add    r2, r3                    │
+   │0x80017b2 <game_of_life()+1710> ldrb   r3, [r7, r1]              │
+   │0x80017b4 <game_of_life()+1712> strb   r3, [r2, r1]              │
+   └—————————————————————————————————————————————————————————————————┘
+extended-r Remote target In: game_of_life         L194  PC: 0x80017a0
+
+Program received signal SIGINT, Interrupt.
+0x080017a0 in drawPixel (color=<optimized out>, y=42, x=578) at main.c
+(gdb)
+~~~
+
+
+#### Web UI
+
+This UI simply uses the [gdbgui][] project and works very well as an advanced
+IDE-independent debugging solution.
+
+![](https://github.com/cs01/gdbgui/raw/master/screenshots/gdbgui_animation.gif)
+
+[gdbgui]: https://www.gdbgui.com
+
+
+### Size Report
+
+Inspects the ELF file and generates a size report of the static usage of the
+device's memories. You must pass the available memory segments as a Python
+dictionary:
+
+~~~{.sh}
+python3 modm/modm_tools/size.py path/to/project.elf \\
+    "[{'name': 'flash', 'access': 'rx', 'start': 134217728, 'size': 65536}, \\
+    {'name': 'sram1', 'access': 'rwx', 'start': 536870912, 'size': 20480}]"
+
+Program:   1.4 KiB (2.2% used)
+(.build_id + .fastcode + .fastdata + .hardware_init + .rodata +
+ .table.copy.intern + .table.heap + .table.zero.intern + .text + .vector_rom)
+
+Data:      3.0 KiB (15.1% used) = 20 B static (0.1%) + 3072 B stack (15.0%)
+(.bss + .fastdata + .stack)
+
+Heap:     17.0 KiB (84.9% available)
+(.heap1)
+~~~
+
+(\* *only ARM Cortex-M targets*)
+
+
+### Unittest
+
+This tools scans a directory for files ending in `_test.hpp`, extracts their
+test cases and generates a source file containing the test runner.
+
+~~~{.sh}
+python3 modm/modm_tools/unit_test.py path/containing/tests \\
+                                    path/to/generated_runner.cpp
+~~~
+
+Note that the files containing unittests must contain *one* class that inherits
+from the `unittest::TestSuite` class, and test case names must begin with
+`test`:
+
+~~~{.cpp}
+class TestClass : public unittest::TestSuite
+{
+public:
+    void testCase1();
+}
+~~~
+
+
+### Logging
+
+Usually logging is done simply via a serial port and only a USB-Serial adapter
+is necessary to read the device output. However, some forms of logging require
+host support or additional processing steps.
+
+
+#### ITM
+
+Logging via the SWO trace pin is supported via OpenOCD and the
+`modm:platform:itm` module:
+
+~~~{.sh}
+python3 modm/modm_tools/log.py itm openocd -f modm/openocd.cfg -fcpu 64000000
+~~~
+
+(\* *only ARM Cortex-M targets*)
+
+
+### GNU Build-ID
+
+To extract the build ID from an ELF file:
+
+~~~{.sh}
+python3 modm/modm_tools/build_id.py path/to/project.elf
+fa8918e6971ed783b25bff0ad11a0541be47a933
+~~~
+
+To copy the ELF file to a artifact cache:
+
+~~~{.sh}
+python3 modm/modm_tools/build_id.py path/to/project.elf --cache path/to/folder
+# copies to `path/to/folder/fa8918e6971ed783b25bff0ad11a0541be47a933.elf`
+~~~
+
+(\* *only ARM Cortex-M targets*)
+
+
+### Bitmap
+
+This tool can convert P1 `.pbm` files into C++ source code.
+
+~~~{.sh}
+python3 modm/modm_tools/bitmap.py image.pbm --outpath .
+# creates `image.hpp` and `image.cpp` in the CWD
+~~~
 
 ## Module Options
 
@@ -210,7 +394,7 @@ Remember to add your build path to your `.gitignore`.
 You should use a relative path instead of an absolute one, so that this option
 still works for other developers.
 
-Generated with: `build/modm-prebuilt in [Path]`
+Generated with: `build\modm-prebuilt in [Path]`
 ### modm:build:openocd.cfg: Path to a custom OpenOCD configuration file
 
 If you have a custom configuration file for your target, it will get included

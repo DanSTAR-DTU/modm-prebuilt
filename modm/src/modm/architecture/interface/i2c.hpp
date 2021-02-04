@@ -15,9 +15,9 @@
 #ifndef MODM_INTERFACE_I2C_HPP
 #define MODM_INTERFACE_I2C_HPP
 
+#include <modm/architecture/detect.hpp>
 #include <modm/architecture/interface/gpio.hpp>
 #include <modm/architecture/interface/delay.hpp>
-#include <modm/io/iostream.hpp>
 
 namespace modm
 {
@@ -116,31 +116,74 @@ struct I2c
 	static void
 	resetDevices()
 	{
-		static_assert(baudrate <= 500'000, "I2c::resetDevices() can only do max. 500kHz!");
-		constexpr uint32_t delay = 500'000 / baudrate;
+		static_assert(baudrate <= 500'000ul, "I2c::resetDevices() can only do max. 500kHz!");
+		constexpr auto delay = 500'000ul / baudrate;
 
 		for (uint_fast8_t ii = 0; ii < 9; ++ii) {
 			Scl::reset();
-			modm::delayMicroseconds(delay);
+			modm::delay_us(delay);
 			Scl::set();
-			modm::delayMicroseconds(delay);
+			modm::delay_us(delay);
 		}
 	}
 
 };
 
-modm::IOStream&
-operator << (modm::IOStream& s, const modm::I2c::Operation op);
+}	// namespace modm
 
-modm::IOStream&
-operator << (modm::IOStream& s, const modm::I2c::OperationAfterStart op);
+#if MODM_HAS_IOSTREAM
+#include <modm/io/iostream.hpp>
 
-modm::IOStream&
-operator << (modm::IOStream& s, const modm::I2c::OperationAfterRead op);
+namespace modm
+{
 
-modm::IOStream&
-operator << (modm::IOStream& s, const modm::I2c::OperationAfterWrite op);
+inline modm::IOStream&
+operator << (modm::IOStream& s, const modm::I2c::DetachCause detach_cause)
+{
+	switch (detach_cause)
+	{
+		case modm::I2c::DetachCause::NormalStop:     s << "NormalStop";     break;
+		case modm::I2c::DetachCause::ErrorCondition: s << "ErrorCondition"; break;
+		case modm::I2c::DetachCause::FailedToAttach: s << "FailedToAttach"; break;
+	}
+	return s;
+}
+
+inline modm::IOStream&
+operator << (modm::IOStream& s, const modm::I2c::Operation op)
+{
+	switch (op)
+	{
+		case modm::I2c::Operation::Stop:    s << "Stop";    break;
+		case modm::I2c::Operation::Restart: s << "Restart"; break;
+		case modm::I2c::Operation::Write:   s << "Write";   break;
+		case modm::I2c::Operation::Read:    s << "Read";    break;
+	}
+	return s;
+}
+
+inline modm::IOStream&
+operator << (modm::IOStream& s, const modm::I2c::OperationAfterStart op)
+{
+	s << static_cast<modm::I2c::Operation>(op);
+	return s;
+}
+
+inline modm::IOStream&
+operator << (modm::IOStream& s, const modm::I2c::OperationAfterRead op)
+{
+	s << static_cast<modm::I2c::Operation>(op);
+	return s;
+}
+
+inline modm::IOStream&
+operator << (modm::IOStream& s, const modm::I2c::OperationAfterWrite op)
+{
+	s << static_cast<modm::I2c::Operation>(op);
+	return s;
+}
 
 }	// namespace modm
+#endif
 
 #endif // MODM_INTERFACE_I2C_HPP

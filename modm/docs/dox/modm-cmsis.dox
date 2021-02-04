@@ -2,6 +2,8 @@
 
 @defgroup modm_cmsis ARM CMSIS Support
 
+lbuild module: `modm:cmsis`
+
 The [*Cortex Microcontroller Software Interface Standard*][cmsis] is a software
 standard by ARM that defines a number of foundational interfaces for Cortex-M
 microcontrollers.
@@ -21,6 +23,5 @@ We use only use these parts of CMSIS:
 
 [cmsis]: https://developer.arm.com/embedded/cmsis
 [overview]: https://developer.arm.com/-/media/Arm%20Developer%20Community/Images/Block%20Diagrams/Cortex%20Microcontroller%20Software%20Interface%20Standard%20-%20CMSIS/CMSIS%20Diagram%20v2.png
-
 
  */

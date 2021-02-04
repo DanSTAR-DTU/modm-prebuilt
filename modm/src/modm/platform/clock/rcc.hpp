@@ -3,7 +3,7 @@
  * Copyright (c) 2012, 2017, Fabian Greif
  * Copyright (c) 2012, 2014-2017, Niklas Hauser
  * Copyright (c) 2013-2014, Kevin Läufer
- * Copyright (c) 2018, Christopher Durand
+ * Copyright (c) 2018, 2021, Christopher Durand
  *
  * This file is part of the modm project.
  *
@@ -42,9 +42,9 @@ public:
 	{
 		/// High speed internal clock (16 MHz)
 		Hsi = RCC_PLLCFGR_PLLSRC_HSI,
+		InternalClock = Hsi,
 		/// High speed external clock (see HseConfig)
 		Hse = RCC_PLLCFGR_PLLSRC_HSE,
-		InternalClock = Hsi,
 		ExternalClock = Hse,
 		ExternalCrystal = Hse,
 	};
@@ -66,7 +66,6 @@ public:
 		Lsi = RCC_BDCR_RTCSEL_1,
 		Lse = RCC_BDCR_RTCSEL_0,
 		Hse = RCC_BDCR_RTCSEL_0 | RCC_BDCR_RTCSEL_1,
-
 		ExternalClock = Hse,
 		ExternalCrystal = Hse,
 		LowSpeedInternalClock = Lsi,
@@ -114,21 +113,16 @@ public:
 		Div16  = RCC_CFGR_PPRE2_DIV16
 	};
 	enum class
-	ClockOutput1Source : uint32_t
+	ClockOutputSource : uint32_t
 	{
-		InternalClock = 0,
-		ExternalClock = RCC_CFGR_MCO1_1,
-		ExternalCrystal = RCC_CFGR_MCO1_1,
-		Pll = RCC_CFGR_MCO1_1 | RCC_CFGR_MCO1_0,
-	};
-
-	enum class
-	ClockOutput2Source : uint32_t
-	{
-		SystemClock = 0,
-		ExternalClock = RCC_CFGR_MCO2_1,
-		ExternalCrystal = RCC_CFGR_MCO2_1,
-		Pll = RCC_CFGR_MCO2_1 | RCC_CFGR_MCO2_0,
+		Disable = 0,
+		SystemClock = (1 << RCC_CFGR_MCOSEL_Pos), // SYSCLK
+		InternalClock = (3 << RCC_CFGR_MCOSEL_Pos), // HSI16
+		ExternalClock = (4 << RCC_CFGR_MCOSEL_Pos), // HSE
+		ExternalCrystal = (4 << RCC_CFGR_MCOSEL_Pos), // HSE
+		Pll = (5 << RCC_CFGR_MCOSEL_Pos), // Main PLL
+		LowSpeedInternalClock = (6 << RCC_CFGR_MCOSEL_Pos), // LSI
+		LowSpeedExternalClock = (7 << RCC_CFGR_MCOSEL_Pos), // LSE
 	};
 public:
 	// sources
@@ -150,7 +144,53 @@ public:
 	static bool
 	enableLowSpeedExternalCrystal(uint32_t waitCycles = 2048);
 
-	// plls
+	/**
+	 * \code
+	 * VCO input frequency = PLL input clock frequency / PLLM [with 2 <= PLLM <= 63]
+	 * VCO output frequency = VCO input frequency × PLLN [with 64 <= PLLN <= 432]
+	 * \endcode
+	 *
+	 * \param	pllM
+	 * 		Division factor for the main PLL (PLL) and
+	 * 		audio PLL (PLLI2S) input clock (with 2 <= pllM <= 63).
+	 *		The software has to set these bits correctly to ensure
+	 *		that frequency of selected source divided by pllM
+	 *		is in ranges from 1 to 2 MHz.
+	 *
+	 * \param	pllN
+	 * 		Main PLL (PLL) multiplication factor for VCO (with 64 <= pllN <= 432).
+	 * 		The software has to set these bits correctly to ensure
+	 * 		that the VCO output frequency is
+	 * 		 - 336 MHz for ST32F4. Core will run at 168 MHz.
+	 *		 - 240 MHz for ST32F2. Core will run at 120 MHz.
+	 *
+	 * \param	pllR
+	 *
+	 */
+	struct PllFactors
+	{
+		const uint8_t pllM;
+		const uint16_t pllN;
+		const uint8_t pllR;
+ 		const uint8_t pllQ = 0xff;
+	};
+
+	/**
+	 * Enable PLL.
+	 *
+	 * \param	source
+	 * 		Source select for PLL. If you are using HSE you must
+	 * 		enable it first (see enableHse()).
+	 *
+	 * \param	factors
+	 * 		Struct with all pll factors. \see PllFactors.
+	 *
+	 * \param	waitCycles
+	 * 		Number of cycles to wait for the pll to stabilise. Default: 2048.
+	 */
+	static bool
+	enablePll(PllSource source, const PllFactors& pllFactors, uint32_t waitCycles = 2048);
+
 	/**
 	 * Enable PLL.
 	 *
@@ -180,10 +220,18 @@ public:
 	 * Example:
 	 *
 	 */
-	static bool
+	[[deprecated("Use PllFactors as argument instead")]] static bool
 	enablePll(PllSource source, uint8_t pllM, uint16_t pllN,
-			  uint8_t pllP,
-			  uint32_t waitCycles = 2048);
+	          uint8_t pllR,
+			  uint32_t waitCycles = 2048)
+	{
+		PllFactors pllFactors{
+			.pllM = pllM,
+			.pllN = pllN,
+	          .pllR = pllR,
+		};
+		return enablePll(source, pllFactors, waitCycles);
+	}
 	// sinks
 	static bool
 	enableSystemClock(SystemClockSource src, uint32_t waitCycles = 2048);
@@ -199,21 +247,20 @@ public:
 	enableWatchdogClock(WatchdogClockSource /*src*/)
 	{ return true; }
 
-	static inline bool
-	enableClockOutput1(ClockOutput1Source src, uint8_t div)
+	enum class
+	ClockOutputPrescaler : uint32_t
 	{
-		uint32_t tmp = RCC->CFGR & ~(RCC_CFGR_MCO1 | RCC_CFGR_MCO1PRE);
-		if (div > 1) tmp |= (div + 2) << 24;
-		RCC->CFGR = tmp | uint32_t(src);
-		return true;
-	}
+		Div1 = 0,
+		Div2 = (1 << RCC_CFGR_MCOPRE_Pos),
+		Div4 = (2 << RCC_CFGR_MCOPRE_Pos),
+		Div8 = (3 << RCC_CFGR_MCOPRE_Pos),
+		Div16 = (4 << RCC_CFGR_MCOPRE_Pos),
+	};
 
 	static inline bool
-	enableClockOutput2(ClockOutput2Source src, uint8_t div)
+	enableClockOutput(ClockOutputSource src, ClockOutputPrescaler div = ClockOutputPrescaler::Div1)
 	{
-		uint32_t tmp = RCC->CFGR & ~(RCC_CFGR_MCO2 | RCC_CFGR_MCO2PRE);
-		if (div > 1) tmp |= (div + 2) << 27;
-		RCC->CFGR = tmp | uint32_t(src);
+		RCC->CFGR = (RCC->CFGR & ~(RCC_CFGR_MCOPRE)) | uint32_t(src) | uint32_t(div);
 		return true;
 	}
 public:

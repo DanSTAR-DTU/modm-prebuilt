@@ -3,6 +3,8 @@
 @ingroup modm_cmsis
 @defgroup modm_cmsis_core ARM CMSIS-CORE
 
+lbuild module: `modm:cmsis:core`
+
 This module provides these files for accessing the ARM Cortex-M CPU and
 peripherals:
 
@@ -12,6 +14,5 @@ peripherals:
 Please [see the API documentation][docs] for their content and how to use them.
 
 [docs]: http://arm-software.github.io/CMSIS_5/Core/html/modules.html
-
 
  */

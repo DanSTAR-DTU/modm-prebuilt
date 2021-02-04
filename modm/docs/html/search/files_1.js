@@ -7,7 +7,6 @@ var searchData=
   ['bitbang_5fmaster_2ehpp',['bitbang_master.hpp',['../bitbang__master_8hpp.html',1,'']]],
   ['bitbang_5fspi_5fmaster_2ehpp',['bitbang_spi_master.hpp',['../bitbang__spi__master_8hpp.html',1,'']]],
   ['block_2ehpp',['block.hpp',['../block_8hpp.html',1,'']]],
-  ['block_5fallocator_2ehpp',['block_allocator.hpp',['../block__allocator_8hpp.html',1,'']]],
   ['block_5fdevice_2ehpp',['block_device.hpp',['../block__device_8hpp.html',1,'']]],
   ['bme280_2ehpp',['bme280.hpp',['../bme280_8hpp.html',1,'']]],
   ['bme280_5fdata_2ehpp',['bme280_data.hpp',['../bme280__data_8hpp.html',1,'']]],
