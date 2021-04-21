@@ -2,6 +2,10 @@
 
 This repository contains the already-generated modm library and documentation for software-dolken, so that users do not need to have lbuild and python installed on their computers. It is used as a submodule in the [software-dolken repository](https://github.com/DanSTAR-DTU/software-dolken).
 
+## Issue pushing to branch
+If you're using a ssh key, then use the following command
+* git remote set-url origin git@github.com:DanSTAR-DTU/modm-prebuilt.git
+
 ## Updating
 
 ### Tools Required
