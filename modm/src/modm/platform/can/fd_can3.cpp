@@ -23,7 +23,7 @@
 #include "fd_can3.hpp"
 
 #undef  MODM_LOG_LEVEL
-#define MODM_LOG_LEVEL modm::log::DEBUG
+#define MODM_LOG_LEVEL modm::log::DISABLED
 
 static modm::atomic::Queue<modm::can::LongMessage, 32> txQueue;
 
