@@ -145,9 +145,9 @@ static bool
 sendMsg(const modm::can::LongMessage& message)
 {
 	using namespace modm::platform;
-	if(!Fdcan3::isReadyToSend()) {
-		return false;
-	}
+	//if(!Fdcan3::isReadyToSend()) {
+	//	return false;
+	//}
 	// Retrieve the Tx queue put index
 	uint8_t putIndex = (FDCAN3->TXFQS & FDCAN_TXFQS_TFQPI_Msk) >> FDCAN_TXFQS_TFQPI_Pos;
 

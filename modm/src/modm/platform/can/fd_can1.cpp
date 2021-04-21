@@ -23,7 +23,7 @@
 #include "fd_can1.hpp"
 
 #undef  MODM_LOG_LEVEL
-#define MODM_LOG_LEVEL modm::log::DISABLED
+#define MODM_LOG_LEVEL modm::log::INFO
 
 static modm::atomic::Queue<modm::can::LongMessage, 32> txQueue;
 
@@ -145,9 +145,9 @@ static bool
 sendMsg(const modm::can::LongMessage& message)
 {
 	using namespace modm::platform;
-	if(!Fdcan1::isReadyToSend()) {
-		return false;
-	}
+	//if(!Fdcan1::isReadyToSend()) {
+	//	return false;
+	//}
 	// Retrieve the Tx queue put index
 	uint8_t putIndex = (FDCAN1->TXFQS & FDCAN_TXFQS_TFQPI_Msk) >> FDCAN_TXFQS_TFQPI_Pos;
 
@@ -213,7 +213,6 @@ readMsg(modm::can::LongMessage& message, uint8_t* filter_id, uint16_t *timestamp
 		message.setDLC((*msgRam >> 16) & ((1 << 4)-1));
 	else
 		message.setLength(std::min((uint8_t)8, (uint8_t)((*msgRam>>16) & ((1 << 4)-1))));
-	MODM_LOG_INFO << "Id: " << message.getIdentifier() << " brs: " << message.isBitRateSwitching() << " fd: " << message.isFlexibleData() << modm::endl;
 	
 	if(timestamp != nullptr) {
 		*timestamp = *msgRam & ((1 << 16) -1 );
