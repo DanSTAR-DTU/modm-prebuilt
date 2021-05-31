@@ -24,8 +24,8 @@
 
 namespace
 {
-	static modm::atomic::Queue<uint8_t, 16> rxBuffer;
-	static modm::atomic::Queue<uint8_t, 250> txBuffer;
+	static modm::atomic::Queue<uint8_t, modm::platform::Uart5::RxBufferSize> rxBuffer;
+	static modm::atomic::Queue<uint8_t, modm::platform::Uart5::TxBufferSize> txBuffer;
 	static modm::platform::UartBase::InterruptFlag_t flags;
 }
 void
