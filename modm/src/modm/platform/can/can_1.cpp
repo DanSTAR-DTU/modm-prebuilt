@@ -86,6 +86,7 @@ readMsg(modm::can::IMessage& message, uint8_t fifoIndex, uint8_t* filter_id, uin
 {
 	using namespace modm::platform;
 	using CommonHeader = MessageRam::CommonFifoHeader;
+	using RxFifoHeader = MessageRam::RxFifoHeader;
 	using RxFifoAddress = MessageRam::RxFifoAddress;
 
 	// retrieve index of next frame in RX fifo
@@ -96,6 +97,7 @@ readMsg(modm::can::IMessage& message, uint8_t fifoIndex, uint8_t* filter_id, uin
 
 	message.setExtended(bool(commonHeader & CommonHeader::ExtendedId));
 	message.setRemoteTransmitRequest(bool(commonHeader & CommonHeader::RemoteFrame));
+	message.setFlexibleData(bool(rxHeader & RxFifoHeader::FdFrame));
 	const auto id = MessageRam::CanId_t::get(commonHeader);
 	if(message.isExtended()) {
 		message.setIdentifier(id);
@@ -113,10 +115,7 @@ readMsg(modm::can::IMessage& message, uint8_t fifoIndex, uint8_t* filter_id, uin
 
 	const uint8_t dlcValue = MessageRam::RxDlc_t::get(rxHeader);
 	// TODO: fd large frames not supported yet
-	if (rxHeader & MessageRam::RxFifoHeader::FdFrame)
-		message.setDLC(dlcValue);
-	else
-		message.setLength(std::min<uint8_t>(8u, dlcValue));
+	message.setDLC(dlcValue);
 
 	// required for optimization in MessageRam::readData()
 	//static_assert((std::size(decltype(message.data){}) % 4) == 0);
@@ -131,6 +130,7 @@ bool
 sendMsg(const modm::can::IMessage& message)
 {
 	using namespace modm::platform;
+	using TxFifoHeader = MessageRam::TxFifoHeader;
 
 	if (!Fdcan1::isReadyToSend()) {
 		return false;
@@ -138,7 +138,7 @@ sendMsg(const modm::can::IMessage& message)
 
 	// TODO: for fdcan frame format with bit rate switching set:
 	// (TxFifoHeader::FdFrame | TxFifoHeader::RateSwitching)
-	MessageRam::TxFifoHeader_t txHeader{};
+	MessageRam::TxFifoHeader_t txHeader = (message.isFlexibleData() ? TxFifoHeader::FdFrame: TxFifoHeader(0));
 
 	// TODO: large frame support
 	const uint8_t dlc = message.getDLC();
