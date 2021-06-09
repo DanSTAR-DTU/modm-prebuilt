@@ -17,6 +17,7 @@
 #include <modm/architecture/interface/can_filter.hpp>
 #include <modm/platform/gpio/connector.hpp>
 #include "../device.hpp"
+#include <optional>
 
 #include "can_bit_timings.hpp"
 #include "message_ram.hpp"
@@ -185,13 +186,13 @@ public:
 	isMessageAvailable();
 
 	static bool
-	getMessage(can::Message& message, uint8_t *filter_id=nullptr, uint16_t *timestamp=nullptr);
+	getMessage(can::IMessage& message, uint8_t *filter_id=nullptr, uint16_t *timestamp=nullptr);
 
 	static bool
 	isReadyToSend();
 
 	static bool
-	sendMessage(const can::Message& message);
+	sendMessage(const can::IMessage& message);
 
 public:
 	// Can filter configuration

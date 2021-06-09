@@ -27,9 +27,9 @@ namespace {
 
 using MessageRam = modm::platform::fdcan::MessageRam<1>;
 
-modm::atomic::Queue<modm::can::Message, 32> txQueue;
+modm::atomic::Queue<modm::can::LongMessage, 32> txQueue;
 struct RxMessage {
-    modm::can::Message message;
+    modm::can::LongMessage message;
     uint8_t filter_id;
     uint16_t timestamp;
 };
@@ -82,7 +82,7 @@ retrieveTxFifoPutIndex()
 // Internal function to receive a message from an RX Fifo.
 // Called by RX interrupt or by getMessage()
 void
-readMsg(modm::can::Message& message, uint8_t fifoIndex, uint8_t* filter_id, uint16_t *timestamp)
+readMsg(modm::can::IMessage& message, uint8_t fifoIndex, uint8_t* filter_id, uint16_t *timestamp)
 {
 	using namespace modm::platform;
 	using CommonHeader = MessageRam::CommonFifoHeader;
@@ -113,13 +113,13 @@ readMsg(modm::can::Message& message, uint8_t fifoIndex, uint8_t* filter_id, uint
 
 	const uint8_t dlcValue = MessageRam::RxDlc_t::get(rxHeader);
 	// TODO: fd large frames not supported yet
-	//if (rxHeader & MessageRam::RxHeader::FdFrame)
-		//message.setDLC(dlcValue);
-	// else
-	message.setLength(std::min<uint8_t>(8u, dlcValue));
+	if (rxHeader & MessageRam::RxFifoHeader::FdFrame)
+		message.setDLC(dlcValue);
+	 else
+		message.setLength(std::min<uint8_t>(8u, dlcValue));
 
 	// required for optimization in MessageRam::readData()
-	static_assert((std::size(decltype(message.data){}) % 4) == 0);
+	//static_assert((std::size(decltype(message.data){}) % 4) == 0);
 
 	MessageRam::readData(address, {&message.data[0], message.getLength()});
 	acknowledgeRxFifoRead(fifoIndex, getIndex);
@@ -128,7 +128,7 @@ readMsg(modm::can::Message& message, uint8_t fifoIndex, uint8_t* filter_id, uint
 // Internal function to send a CAN message.
 // called by sendMessage and by TX Interrupt.
 bool
-sendMsg(const modm::can::Message& message)
+sendMsg(const modm::can::IMessage& message)
 {
 	using namespace modm::platform;
 
@@ -141,7 +141,7 @@ sendMsg(const modm::can::Message& message)
 	MessageRam::TxFifoHeader_t txHeader{};
 
 	// TODO: large frame support
-	const uint8_t dlc = std::min<uint8_t>(8, message.getLength());
+	const uint8_t dlc = message.getDLC();
 	MessageRam::TxDlc_t::set(txHeader, dlc);
 
 	const uint8_t putIndex = retrieveTxFifoPutIndex();
@@ -149,7 +149,7 @@ sendMsg(const modm::can::Message& message)
 	MessageRam::writeTxHeaders(putIndex, commonHeader, txHeader);
 
 	// required for optimization in MessageRam::readData()
-	static_assert((std::size(decltype(message.data){}) % 4) == 0);
+	//static_assert((std::size(decltype(message.data){}) % 4) == 0);
 
 	MessageRam::writeData(putIndex, {&message.data[0], message.getLength()});
 
@@ -345,7 +345,7 @@ modm::platform::Fdcan2::isMessageAvailable()
 
 
 bool
-modm::platform::Fdcan2::getMessage(can::Message& message, uint8_t *filter_id, uint16_t *timestamp)
+modm::platform::Fdcan2::getMessage(can::IMessage& message, uint8_t *filter_id, uint16_t *timestamp)
 {
 	if (rxQueue.isEmpty()) {
 		// no message in the receive buffer
@@ -373,13 +373,13 @@ modm::platform::Fdcan2::isReadyToSend()
 
 
 bool
-modm::platform::Fdcan2::sendMessage(const can::Message& message)
+modm::platform::Fdcan2::sendMessage(const can::IMessage& message)
 {
 	if (isHardwareTxQueueFull()) {
 		if (txQueue.isFull()) {
 			return false;
 		}
-		txQueue.push(message);
+		txQueue.push((const can::LongMessage&)message);
 		return true;
 	} else {
 		sendMsg(message);

@@ -113,6 +113,10 @@ public:
 	static void
 	clearError();
 
+	static bool overrunErrorOccurred();
+
+	static void clearOverrunErrorOccurred();
+
 };
 
 }	// namespace modm::platform

@@ -217,7 +217,7 @@ public:
 
 	/// Construct common fifo header from CanMessage
 	static CommonFifoHeader_t
-	headerFromMessage(const modm::can::Message& message)
+	headerFromMessage(const modm::can::IMessage& message)
 	{
 		CommonFifoHeader_t header = (message.isExtended() ? CommonFifoHeader::ExtendedId : CommonFifoHeader(0))
 			| (message.isRemoteTransmitRequest() ? CommonFifoHeader::RemoteFrame : CommonFifoHeader(0));

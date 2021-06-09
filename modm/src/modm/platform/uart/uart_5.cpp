@@ -25,6 +25,7 @@ namespace
 {
 	static modm::atomic::Queue<uint8_t, 256> rxBuffer;
 	static modm::atomic::Queue<uint8_t, 256> txBuffer;
+	static modm::platform::UartBase::InterruptFlag_t flags;
 }
 namespace modm::platform
 {
@@ -170,6 +171,20 @@ Uart5::clearError()
 		UartHal5::InterruptFlag::OverrunError | UartHal5::InterruptFlag::FramingError);
 }
 
+bool Uart5::overrunErrorOccurred()
+{
+	if(flags & modm::platform::UartHal5::InterruptFlag::OverrunError)
+	 	return true;
+	else
+		return false;
+}
+
+void Uart5::clearOverrunErrorOccurred()
+{
+	flags &= (~modm::platform::UartHal5::InterruptFlag::OverrunError);
+}
+
+
 }	// namespace modm::platform
 
 MODM_ISR(UART5)
@@ -191,5 +206,9 @@ MODM_ISR(UART5)
 			txBuffer.pop();
 		}
 	}
-	UartHal5::acknowledgeInterruptFlags(UartHal5::InterruptFlag::OverrunError);
+	if(modm::platform::UartHal5::getInterruptFlags() & modm::platform::UartHal5::InterruptFlag::OverrunError)
+	{
+		modm::platform::UartHal5::acknowledgeInterruptFlags(modm::platform::UartHal5::InterruptFlag::OverrunError);
+		flags |= modm::platform::UartHal5::InterruptFlag::OverrunError;
+	}
 }
