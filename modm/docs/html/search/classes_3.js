@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['data',['Data',['../classmodm_1_1bme280data_1_1_data.html',1,'modm::bme280data']]],
-  ['database',['DataBase',['../structmodm_1_1bme280data_1_1_data_base.html',1,'modm::bme280data']]],
-  ['datadouble',['DataDouble',['../classmodm_1_1bme280data_1_1_data_double.html',1,'modm::bme280data']]],
   ['debounce',['Debounce',['../classmodm_1_1filter_1_1_debounce.html',1,'modm::filter']]],
   ['defaultstyle',['DefaultStyle',['../classmodm_1_1log_1_1_default_style.html',1,'modm::log']]],
   ['doublylinkedlist',['DoublyLinkedList',['../classmodm_1_1_doubly_linked_list.html',1,'modm']]],

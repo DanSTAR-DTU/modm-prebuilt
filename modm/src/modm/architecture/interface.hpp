@@ -24,6 +24,7 @@
 #include "interface/block_device.hpp"
 #include "interface/build_id.hpp"
 #include "interface/can.hpp"
+#include "interface/can_filter.hpp"
 #include "interface/can_message.hpp"
 #include "interface/clock.hpp"
 #include "interface/delay.hpp"

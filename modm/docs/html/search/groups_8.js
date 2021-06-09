@@ -4,7 +4,6 @@ var searchData=
   ['i²c_20devices',['I²C Devices',['../group__modm__architecture__i2c__device.html',1,'']]],
   ['i²c_20multiplexer',['I²C Multiplexer',['../group__modm__architecture__i2c__multiplexer.html',1,'']]],
   ['interrupt_20service_20routines',['Interrupt Service Routines',['../group__modm__architecture__interrupt.html',1,'']]],
-  ['i2c_20eeprom',['I2C Eeprom',['../group__modm__driver__i2c__eeprom.html',1,'']]],
   ['input_2foutput_20streams',['Input/Output Streams',['../group__modm__io.html',1,'']]],
   ['interpolation_20methods',['Interpolation Methods',['../group__modm__math__interpolation.html',1,'']]],
   ['instance_201',['Instance 1',['../group__modm__platform__adc__1.html',1,'']]],
@@ -12,6 +11,9 @@ var searchData=
   ['instance_203',['Instance 3',['../group__modm__platform__adc__3.html',1,'']]],
   ['instance_204',['Instance 4',['../group__modm__platform__adc__4.html',1,'']]],
   ['instance_205',['Instance 5',['../group__modm__platform__adc__5.html',1,'']]],
+  ['instance_201',['Instance 1',['../group__modm__platform__can__1.html',1,'']]],
+  ['instance_202',['Instance 2',['../group__modm__platform__can__2.html',1,'']]],
+  ['instance_203',['Instance 3',['../group__modm__platform__can__3.html',1,'']]],
   ['inter_2dintegrated_20circuit_20_28i²c_29',['Inter-Integrated Circuit (I²C)',['../group__modm__platform__i2c.html',1,'']]],
   ['instance_201',['Instance 1',['../group__modm__platform__i2c__1.html',1,'']]],
   ['instance_202',['Instance 2',['../group__modm__platform__i2c__2.html',1,'']]],
@@ -36,5 +38,6 @@ var searchData=
   ['instance_202',['Instance 2',['../group__modm__platform__uart__2.html',1,'']]],
   ['instance_203',['Instance 3',['../group__modm__platform__uart__3.html',1,'']]],
   ['instance_204',['Instance 4',['../group__modm__platform__uart__4.html',1,'']]],
-  ['instance_205',['Instance 5',['../group__modm__platform__uart__5.html',1,'']]]
+  ['instance_205',['Instance 5',['../group__modm__platform__uart__5.html',1,'']]],
+  ['instance_201',['Instance 1',['../group__modm__platform__uart__lpuart1.html',1,'']]]
 ];

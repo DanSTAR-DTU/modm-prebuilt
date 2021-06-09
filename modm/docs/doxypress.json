@@ -226,7 +226,6 @@
         "input-recursive": true,
         "input-source": [
             "dox/",
-            "../../modm-test/src/",
             "../src/"
         ],
         "mdfile-mainpage": "README.md"
@@ -282,13 +281,14 @@
             ""
         ],
         "html-file-extension": ".html",
-        "html-footer": "",
+        "html-footer": "footer.html",
         "html-header": "",
         "html-index-num-entries": 100,
         "html-output": "html",
         "html-search": true,
         "html-stylesheets": [
-            ""
+            "custom.css",
+            "custom_dark_theme.css"
         ],
         "html-timestamp": false,
         "mathjax-codefile": "",
@@ -402,7 +402,7 @@
     "project": {
         "project-brief": "",
         "project-logo": "",
-        "project-name": "modm API documentation for STM32G474RET6",
+        "project-name": "modm API documentation",
         "project-version": ""
     },
     "source": {

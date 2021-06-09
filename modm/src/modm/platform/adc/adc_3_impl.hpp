@@ -52,14 +52,18 @@ modm::platform::Adc3::initialize(const ClockMode clk,
 	ADC3->CR |= static_cast<uint32_t>(VoltageRegulatorState::Enabled);
 	modm::delay_us(10);	// FIXME: this is ugly -> find better solution
 
-	// Clear ready flag
-	ADC3->ISR |= ADC_ISR_ADRDY;
+	acknowledgeInterruptFlag(InterruptFlag::Ready);
 
 	calibrate(cal, true);	// blocking calibration
 
 	ADC3->CR |= ADC_CR_ADEN;
 	if (blocking) {
-		while(not isReady());
+		// ADEN can only be set 4 ADC clock cycles after ADC_CR_ADCAL gets
+		// cleared. Setting it in a loop ensures the flag gets set for ADC
+		// clocks slower than the CPU clock.
+		while (not isReady()) {
+			ADC3->CR |= ADC_CR_ADEN;
+		}
 		acknowledgeInterruptFlag(InterruptFlag::Ready);
 	}
 }

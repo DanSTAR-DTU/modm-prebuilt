@@ -157,7 +157,7 @@ public:
 	{
 		// This will be inaccurate for non-smooth frequencies (last six digits
 		// unequal to zero)
-		uint32_t cycles = microseconds * (SystemClock::Timer5 / 1'000'000UL); 
+		uint32_t cycles = microseconds * (SystemClock::Timer5 / 1'000'000UL);
 		uint16_t prescaler = (cycles + 65'535) / 65'536;	// always round up
 		Value overflow = cycles / prescaler;
 

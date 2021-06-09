@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['calibration',['Calibration',['../structmodm_1_1bme280.html#a59ed724b2dd720cc7ddd8be1957ca6a0',1,'modm::bme280']]],
   ['cc1',['Cc1',['../classmodm_1_1platform_1_1_gpio_b6.html#a25d6db0d3e4022e9564461cc358e01ee',1,'modm::platform::GpioB6']]],
   ['cc2',['Cc2',['../classmodm_1_1platform_1_1_gpio_b4.html#af440c1309350730ae401cd56fdb21640',1,'modm::platform::GpioB4']]],
   ['ch0',['Ch0',['../classmodm_1_1_i2c_multiplexer.html#ad33057e6f8da95b781e36773b8a39865',1,'modm::I2cMultiplexer']]],
@@ -34,15 +33,8 @@ var searchData=
   ['ckin',['Ckin',['../classmodm_1_1platform_1_1_gpio_a12.html#a0c863f32164fdc5c51c04d369b07e03e',1,'modm::platform::GpioA12::Ckin()'],['../classmodm_1_1platform_1_1_gpio_c9.html#a0af469d23bb0e51b054430f0bd1eae1d',1,'modm::platform::GpioC9::Ckin()']]],
   ['clk',['Clk',['../classmodm_1_1platform_1_1_gpio_a3.html#a1e2b01edb1d59ad4469777751ca28952',1,'modm::platform::GpioA3::Clk()'],['../classmodm_1_1platform_1_1_gpio_b10.html#a289c4a8e2a5d957bf0a6db61a4171be9',1,'modm::platform::GpioB10::Clk()']]],
   ['clock',['clock',['../classmodm_1_1_generic_timeout.html#ad929e91c8be9cf8e60795ec4afee0ca5',1,'modm::GenericTimeout::clock()'],['../namespacemodm.html#aea867c6a43c2d9ad11a0c4e2808a5f2c',1,'modm::Clock()']]],
-  ['clockcontrol',['ClockControl',['../namespacemodm_1_1platform.html#a6602a07fb8f21fb7fc440c0d0e27ca39',1,'modm::platform']]],
-  ['clocklower',['ClockLower',['../classmodm_1_1_nrf24_data.html#af5f84fd69db74370c9576fe592904897',1,'modm::Nrf24Data']]],
-  ['command_5ft',['Command_t',['../structmodm_1_1_nrf24_register.html#a40e293dd42225b89f1b62f1613c98803',1,'modm::Nrf24Register']]],
-  ['config',['Config',['../classmodm_1_1_nrf24_data.html#ab9eb81fe6c01450f6d27bb1b176f6b5d',1,'modm::Nrf24Data']]],
-  ['config_5ft',['Config_t',['../structmodm_1_1bme280.html#a0f7a932685ec8f93564bfe3b03c58e27',1,'modm::bme280::Config_t()'],['../structmodm_1_1_nrf24_register.html#a5350b3118429de45adf879588760dcff',1,'modm::Nrf24Register::Config_t()']]],
   ['configurationhandler',['ConfigurationHandler',['../structmodm_1_1_i2c.html#acc3232e086891a4564399117a4e0e450',1,'modm::I2c::ConfigurationHandler()'],['../structmodm_1_1_spi.html#a0d609550a29c439aa83e5999f584447d',1,'modm::Spi::ConfigurationHandler()']]],
   ['const_5fiterator',['const_iterator',['../classmodm_1_1_point_set2_d.html#a749ec8f728b654f0ff0e6cb3fb72ccd1',1,'modm::PointSet2D::const_iterator()'],['../classmodm_1_1platform_1_1_fault_reporter.html#a6c2a0da57b30cba55522baef1902f347',1,'modm::platform::FaultReporter::const_iterator()']]],
   ['crssync',['Crssync',['../classmodm_1_1platform_1_1_gpio_a10.html#a4100d1e066382fe0c4f565c1e88c2b7c',1,'modm::platform::GpioA10::Crssync()'],['../classmodm_1_1platform_1_1_gpio_b3.html#a4bd2b6766e9e0073e545f4b0d26a6a49',1,'modm::platform::GpioB3::Crssync()']]],
-  ['ctrlhum_5ft',['CtrlHum_t',['../structmodm_1_1bme280.html#af073fa36b2ac6e68061d9ace1de675ad',1,'modm::bme280']]],
-  ['ctrlmeas_5ft',['CtrlMeas_t',['../structmodm_1_1bme280.html#ac3b485aaeefac3429b0d7356ca98cef2',1,'modm::bme280']]],
   ['cts',['Cts',['../classmodm_1_1platform_1_1_gpio_a0.html#afa02df648ef6f0b7a105a933b0f461c6',1,'modm::platform::GpioA0::Cts()'],['../classmodm_1_1platform_1_1_gpio_a11.html#a118d1a79e613d2d21caf6cbad4df1b07',1,'modm::platform::GpioA11::Cts()'],['../classmodm_1_1platform_1_1_gpio_a13.html#a14155faf16bb11e6c34b5f5516fb1363',1,'modm::platform::GpioA13::Cts()'],['../classmodm_1_1platform_1_1_gpio_a6.html#a6e8c7e1802619b932a734bbf89e208ea',1,'modm::platform::GpioA6::Cts()'],['../classmodm_1_1platform_1_1_gpio_b13.html#a27c40f3acd1f30a751192d765508e609',1,'modm::platform::GpioB13::Cts()'],['../classmodm_1_1platform_1_1_gpio_b5.html#a559461a4d565e55466a53c6e452e2ba3',1,'modm::platform::GpioB5::Cts()'],['../classmodm_1_1platform_1_1_gpio_b7.html#ac06a176705aabb75978b613385385804',1,'modm::platform::GpioB7::Cts()']]]
 ];

@@ -9,19 +9,14 @@ lbuild module: `modm:platform:uart:5`
 
 ## Module Options
 
-### modm:platform:uart:5:buffered: 
-
-
-
-Generated with: `True in [True, False]`
 ### modm:platform:uart:5:buffer.tx: 
 
 
 
-Generated with: `250 in [1 .. 250 .. 65534]`
+Generated with: `256 in [0 ... 65534]`
 ### modm:platform:uart:5:buffer.rx: 
 
 
 
-Generated with: `16 in [1 .. 16 .. 65534]`
+Generated with: `256 in [0 ... 65534]`
  */

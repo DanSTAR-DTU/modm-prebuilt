@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['platform_20hal',['Platform HAL',['../group__modm__platform.html',1,'']]],
-  ['processing',['Processing',['../group__modm__processing.html',1,'']]],
-  ['protothreads',['Protothreads',['../group__modm__processing__protothread.html',1,'']]]
+  ['reset_20and_20clock_20control_20_28rcc_29',['Reset and Clock Control (RCC)',['../group__modm__platform__rcc.html',1,'']]],
+  ['resumable_20functions',['Resumable Functions',['../group__modm__processing__resumable.html',1,'']]]
 ];

@@ -6,6 +6,7 @@
  * Copyright (c) 2013, 2016, Kevin Läufer
  * Copyright (c) 2013-2017, Niklas Hauser
  * Copyright (c) 2018, Lucas Mösch
+ * Copyright (c) 2021, Raphael Lehmann
  *
  * This file is part of the modm project.
  *
@@ -16,34 +17,19 @@
 // ----------------------------------------------------------------------------
 
 #include "../device.hpp"
-#include "uart_hal_2.hpp"
 #include "uart_2.hpp"
-
-#include <modm/architecture/interface/atomic_lock.hpp>
-#include <modm/architecture/driver/atomic/queue.hpp>
-
-namespace
+namespace modm::platform
 {
-	static modm::atomic::Queue<uint8_t, 16> rxBuffer;
-	static modm::atomic::Queue<uint8_t, 250> txBuffer;
-	static modm::platform::UartBase::InterruptFlag_t flags;
 
-}
 void
-modm::platform::Usart2::initializeBuffered(uint32_t interruptPriority)
-{
-	UsartHal2::enableInterruptVector(true, interruptPriority);
-	UsartHal2::enableInterrupt(Interrupt::RxNotEmpty);
-}
-void
-modm::platform::Usart2::writeBlocking(uint8_t data)
+Usart2::writeBlocking(uint8_t data)
 {
 	while(!UsartHal2::isTransmitRegisterEmpty());
 	UsartHal2::write(data);
 }
 
 void
-modm::platform::Usart2::writeBlocking(const uint8_t *data, std::size_t length)
+Usart2::writeBlocking(const uint8_t *data, std::size_t length)
 {
 	while (length-- != 0) {
 		writeBlocking(*data++);
@@ -51,29 +37,24 @@ modm::platform::Usart2::writeBlocking(const uint8_t *data, std::size_t length)
 }
 
 void
-modm::platform::Usart2::flushWriteBuffer()
+Usart2::flushWriteBuffer()
 {
-	while(!isWriteFinished());
+	return;
 }
 
 bool
-modm::platform::Usart2::write(uint8_t data)
+Usart2::write(uint8_t data)
 {
-	if(txBuffer.isEmpty() && UsartHal2::isTransmitRegisterEmpty()) {
+	if(UsartHal2::isTransmitRegisterEmpty()) {
 		UsartHal2::write(data);
+		return true;
 	} else {
-		if (!txBuffer.push(data))
-			return false;
-		// Disable interrupts while enabling the transmit interrupt
-		atomic::Lock lock;
-		// Transmit Data Register Empty Interrupt Enable
-		UsartHal2::enableInterrupt(Interrupt::TxEmpty);
+		return false;
 	}
-	return true;
 }
 
 std::size_t
-modm::platform::Usart2::write(const uint8_t *data, std::size_t length)
+Usart2::write(const uint8_t *data, std::size_t length)
 {
 	uint32_t i = 0;
 	for (; i < length; ++i)
@@ -86,77 +67,59 @@ modm::platform::Usart2::write(const uint8_t *data, std::size_t length)
 }
 
 bool
-modm::platform::Usart2::isWriteFinished()
+Usart2::isWriteFinished()
 {
-	return txBuffer.isEmpty() && UsartHal2::isTransmitRegisterEmpty();
+	return UsartHal2::isTransmitRegisterEmpty();
 }
 
 std::size_t
-modm::platform::Usart2::transmitBufferSize()
+Usart2::transmitBufferSize()
 {
-	return txBuffer.getSize();
+	return UsartHal2::isTransmitRegisterEmpty() ? 0 : 1;
 }
 
 std::size_t
-modm::platform::Usart2::discardTransmitBuffer()
+Usart2::discardTransmitBuffer()
 {
-	std::size_t count = 0;
-	// disable interrupt since buffer will be cleared
-	UsartHal2::disableInterrupt(UsartHal2::Interrupt::TxEmpty);
-	while(!txBuffer.isEmpty()) {
-		++count;
-		txBuffer.pop();
-	}
-	return count;
+	return 0;
 }
 
 bool
-modm::platform::Usart2::read(uint8_t &data)
+Usart2::read(uint8_t &data)
 {
-	if (rxBuffer.isEmpty()) {
-		return false;
-	} else {
-		data = rxBuffer.get();
-		rxBuffer.pop();
+	if(UsartHal2::isReceiveRegisterNotEmpty()) {
+		UsartHal2::read(data);
 		return true;
+	} else {
+		return false;
 	}
 }
 
 std::size_t
-modm::platform::Usart2::read(uint8_t *data, std::size_t length)
+Usart2::read(uint8_t *data, std::size_t length)
 {
-	uint32_t i = 0;
-	for (; i < length; ++i)
-	{
-		if (rxBuffer.isEmpty()) {
-			return i;
-		} else {
-			*data++ = rxBuffer.get();
-			rxBuffer.pop();
-		}
+	(void)length; // avoid compiler warning
+	if(read(*data)) {
+		return 1;
+	} else {
+		return 0;
 	}
-	return i;
 }
 
 std::size_t
-modm::platform::Usart2::receiveBufferSize()
+Usart2::receiveBufferSize()
 {
-	return rxBuffer.getSize();
+	return UsartHal2::isReceiveRegisterNotEmpty() ? 1 : 0;
 }
 
 std::size_t
-modm::platform::Usart2::discardReceiveBuffer()
+Usart2::discardReceiveBuffer()
 {
-	std::size_t count = 0;
-	while(!rxBuffer.isEmpty()) {
-		++count;
-		rxBuffer.pop();
-	}
-	return count;
+	return 0;
 }
 
 bool
-modm::platform::Usart2::hasError()
+Usart2::hasError()
 {
 	return UsartHal2::getInterruptFlags().any(
 		UsartHal2::InterruptFlag::ParityError |
@@ -166,7 +129,7 @@ modm::platform::Usart2::hasError()
 		UsartHal2::InterruptFlag::OverrunError | UsartHal2::InterruptFlag::FramingError);
 }
 void
-modm::platform::Usart2::clearError()
+Usart2::clearError()
 {
 	return UsartHal2::acknowledgeInterruptFlags(
 		UsartHal2::InterruptFlag::ParityError |
@@ -176,43 +139,5 @@ modm::platform::Usart2::clearError()
 		UsartHal2::InterruptFlag::OverrunError | UsartHal2::InterruptFlag::FramingError);
 }
 
+}	// namespace modm::platform
 
-
-bool modm::platform::Usart2::overrunErrorOccurred()
-{
-	if(flags & modm::platform::UsartHal2::InterruptFlag::OverrunError)
-	 	return true;
-	else
-		return false;
-}
-
-void modm::platform::Usart2::clearOverrunErrorOccurred()
-{
-	flags &= (~modm::platform::UsartHal2::InterruptFlag::OverrunError);
-}
-
-
-MODM_ISR(USART2)
-{
-	if (modm::platform::UsartHal2::isReceiveRegisterNotEmpty()) {
-		// TODO: save the errors
-		uint8_t data;
-		modm::platform::UsartHal2::read(data);
-		rxBuffer.push(data);
-	}
-	if (modm::platform::UsartHal2::isTransmitRegisterEmpty()) {
-		if (txBuffer.isEmpty()) {
-			// transmission finished, disable TxEmpty interrupt
-			modm::platform::UsartHal2::disableInterrupt(modm::platform::UsartHal2::Interrupt::TxEmpty);
-		}
-		else {
-			modm::platform::UsartHal2::write(txBuffer.get());
-			txBuffer.pop();
-		}
-	}
-	if(modm::platform::UsartHal2::getInterruptFlags() & modm::platform::UsartHal2::InterruptFlag::OverrunError)
-	{
-		modm::platform::UsartHal2::acknowledgeInterruptFlags(modm::platform::UsartHal2::InterruptFlag::OverrunError);
-		flags |= modm::platform::UsartHal2::InterruptFlag::OverrunError;
-	}
-}

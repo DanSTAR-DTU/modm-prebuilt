@@ -5,6 +5,7 @@
  * Copyright (c) 2011, 2013-2017, Niklas Hauser
  * Copyright (c) 2012, Sascha Schade
  * Copyright (c) 2013, 2016, Kevin Läufer
+ * Copyright (c) 2021, Raphael Lehmann
  *
  * This file is part of the modm project.
  *
@@ -16,21 +17,15 @@
 
 #ifndef MODM_STM32_UART_2_HPP
 #define MODM_STM32_UART_2_HPP
-
 #include <modm/architecture/interface/uart.hpp>
 #include <modm/platform/gpio/connector.hpp>
 #include "uart_base.hpp"
-#include "uart_baudrate.hpp"
 #include "uart_hal_2.hpp"
-
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /**
- * Universal asynchronous receiver transmitter (USART2)
+ * Universal asynchronous receiver transmitter (Usart2)
  *
  * @author		Kevin Laeufer
  * @author		Niklas Hauser
@@ -38,16 +33,11 @@ namespace platform
  */
 class Usart2 : public UartBase, public ::modm::Uart
 {
-private:
-	/// Second stage initialize for buffered uart
-	// that need to be implemented in the .cpp
-	static void
-	initializeBuffered(uint32_t interruptPriority);
 public:
 	using Hal = UsartHal2;
 	// Expose jinja template parameters to be checked by e.g. drivers or application
-	static constexpr size_t RxBufferSize = 16;
-	static constexpr size_t TxBufferSize = 250;
+	static constexpr size_t RxBufferSize = 0;
+	static constexpr size_t TxBufferSize = 0;
 
 public:
 	template< template<Peripheral _> class... Signals >
@@ -68,17 +58,15 @@ public:
 		Connector::connect();
 	}
 
+	/// @warning Remember to set word length correctly when using the parity bit!
 	template< class SystemClock, baudrate_t baudrate, percent_t tolerance=pct(1) >
-	static void modm_always_inline
-	initialize(uint32_t interruptPriority = 12, Parity parity = Parity::Disabled)
+	static inline void
+	initialize(Parity parity=Parity::Disabled, WordLength length=WordLength::Bit8)
 	{
-		UsartHal2::initializeWithBrr(
-				UartBaudrate::getBrr<SystemClock::Usart2, baudrate, tolerance>(),
-				parity,
-				UartBaudrate::getOversamplingMode(SystemClock::Usart2, baudrate));
-		initializeBuffered(interruptPriority);
+		UsartHal2::initialize<SystemClock, baudrate, tolerance>(parity, length);
 		UsartHal2::setTransmitterEnable(true);
 		UsartHal2::setReceiverEnable(true);
+		UsartHal2::enableOperation();
 	}
 
 	static void
@@ -123,14 +111,8 @@ public:
 	static void
 	clearError();
 
-	static bool overrunErrorOccurred();
-
-	static void clearOverrunErrorOccurred();
-
 };
 
-}	// namespace platform
-
-}	// namespace modm
+}	// namespace modm::platform
 
 #endif // MODM_STM32_UART_2_HPP

@@ -1,14 +1,9 @@
 var searchData=
 [
-  ['t1',['T1',['../namespacemodm_1_1bme280data.html#a8da35433649ecd8a6586b673aec5c730',1,'modm::bme280data::Calibration']]],
-  ['t2',['T2',['../namespacemodm_1_1bme280data.html#a1dae264a6541b341c0a35fdc58c72f2c',1,'modm::bme280data::Calibration']]],
-  ['t3',['T3',['../namespacemodm_1_1bme280data.html#a2f846584d06e52c16055fba1ec5345a4',1,'modm::bme280data::Calibration']]],
-  ['targetarea',['targetArea',['../structmodm_1_1_s_curve_controller_1_1_parameter.html#aefda1232c82e34e11c2d4a80e1bb4e81',1,'modm::SCurveController::Parameter']]],
-  ['targetspeed',['targetSpeed',['../namespacemodm_1_1platform.html#a36800a50929bdc3c84343d7b2d479281',1,'modm::platform::I2cParameters']]],
-  ['timestamp',['timestamp',['../classmodm_1_1_nrf24_data.html#a76028809717455130577fd3ecd4611fd',1,'modm::Nrf24Data::Feedback']]],
-  ['timestamptrusted',['timestampTrusted',['../classmodm_1_1_nrf24_data.html#af76f78d067846e4128920edf5c049bd7',1,'modm::Nrf24Data::Feedback']]],
-  ['tolerance',['tolerance',['../namespacemodm_1_1platform.html#a19b0bda5e85ba2448153a486adb3ffdb',1,'modm::platform::I2cParameters']]],
-  ['transaction',['transaction',['../classmodm_1_1_i2c_device.html#a2143acb5e132fa9a9b89dac9adb29336',1,'modm::I2cDevice']]],
-  ['transactionbuffersize',['TransactionBufferSize',['../classmodm_1_1_i2c_master.html#ad1e8c614cc60a21ded60bd4cba60bf54',1,'modm::I2cMaster::TransactionBufferSize()'],['../classmodm_1_1platform_1_1_i2c_master1.html#a1204f1dd5fed17e3cc2be6d8b506db2c',1,'modm::platform::I2cMaster1::TransactionBufferSize()'],['../classmodm_1_1platform_1_1_i2c_master2.html#a688688c3e071e97c86d4cc93806ef9ec',1,'modm::platform::I2cMaster2::TransactionBufferSize()'],['../classmodm_1_1platform_1_1_i2c_master3.html#aa1dc60c90394235cf15e40603241be89',1,'modm::platform::I2cMaster3::TransactionBufferSize()'],['../classmodm_1_1platform_1_1_i2c_master4.html#ad728c8f16d757e1cf2db10df0fc83544',1,'modm::platform::I2cMaster4::TransactionBufferSize()']]],
-  ['txbuffersize',['TxBufferSize',['../classmodm_1_1_can.html#a6af7198b9af044bb577244e14cbe6e82',1,'modm::Can::TxBufferSize()'],['../classmodm_1_1_uart.html#a7f0cadcc58c9df740356866b44f20f51',1,'modm::Uart::TxBufferSize()'],['../classmodm_1_1platform_1_1_usart1.html#aea04850dbb73a847ce2638479b4adbbe',1,'modm::platform::Usart1::TxBufferSize()'],['../classmodm_1_1platform_1_1_usart2.html#abcf97845aa70ef8028bcc34820730ba0',1,'modm::platform::Usart2::TxBufferSize()'],['../classmodm_1_1platform_1_1_usart3.html#ae9b585777f3e6d992f5b12e07dc68653',1,'modm::platform::Usart3::TxBufferSize()'],['../classmodm_1_1platform_1_1_uart4.html#a43d1a6558cde7c39c54a86aa8402ec8c',1,'modm::platform::Uart4::TxBufferSize()'],['../classmodm_1_1platform_1_1_uart5.html#ab251d6bc3be4012532ab3fe38226b9b8',1,'modm::platform::Uart5::TxBufferSize()']]]
+  ['w',['w',['../classmodm_1_1_quaternion.html#ad72a1ca0d7f2f89db398d8014a60308b',1,'modm::Quaternion::w()'],['../classmodm_1_1_vector_3_01_t_00_014_01_4.html#a6fac91cda81a2a6f7afc1db7535e5b78',1,'modm::Vector&lt; T, 4 &gt;::w()']]],
+  ['warning',['warning',['../namespacemodm_1_1log.html#a4410a5a427bdee73d6e1fbddca0bc21a',1,'modm::log']]],
+  ['width',['width',['../classmodm_1_1_gpio_port.html#abe0568b16960fc23df2c4ea72617d67a',1,'modm::GpioPort::width()'],['../classmodm_1_1_gpio_expander.html#aa8a015befd1dc7f2f28cbdfac6ded5bd',1,'modm::GpioExpander::width()'],['../classmodm_1_1_gpio_expander_port.html#ae6233408fdd231666d262ad4bf34e29c',1,'modm::GpioExpanderPort::width()'],['../classmodm_1_1platform_1_1_gpio_set.html#abec2a6602fbaf75ea0964e03f8be160c',1,'modm::platform::GpioSet::width()']]],
+  ['write',['Write',['../structmodm_1_1_i2c.html#a1f77408aecf63279f7c085d8c3692681',1,'modm::I2c']]],
+  ['writebuffer',['writeBuffer',['../classmodm_1_1_i2c_write_read_transaction.html#a029a5075698d9bf62fe790f1f08d10d0',1,'modm::I2cWriteReadTransaction']]],
+  ['writesize',['writeSize',['../classmodm_1_1_i2c_write_read_transaction.html#a8d9ba261ef718d44ded469205986a538',1,'modm::I2cWriteReadTransaction']]]
 ];

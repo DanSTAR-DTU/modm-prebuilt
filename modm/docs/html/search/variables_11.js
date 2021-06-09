@@ -1,19 +1,4 @@
 var searchData=
 [
-  ['scldel',['sclDel',['../namespacemodm_1_1platform.html#aef4704ec4d22e25c28bbf045ff92d530',1,'modm::platform::I2cMasterTimings']]],
-  ['sclhigh',['sclHigh',['../namespacemodm_1_1platform.html#a1013e96e69f9d187ec5420efec7c3a19',1,'modm::platform::I2cMasterTimings']]],
-  ['scllow',['sclLow',['../namespacemodm_1_1platform.html#a1c6be2f5efbd66494bcb1acbbdea2ce0',1,'modm::platform::I2cMasterTimings']]],
-  ['sdadel',['sdaDel',['../namespacemodm_1_1platform.html#a533c315627ef261101f4b7977c6bb25c',1,'modm::platform::I2cMasterTimings']]],
-  ['second',['second',['../classmodm_1_1_pair.html#a4497a4fd53ef4a5063418de10174f24c',1,'modm::Pair']]],
-  ['sendingfeedback',['sendingFeedback',['../classmodm_1_1_nrf24_data.html#ac4682bc8d92a548c98373655737a16e9',1,'modm::Nrf24Data::Feedback']]],
-  ['shift_5fmasks',['shift_masks',['../classmodm_1_1platform_1_1_software_gpio_port.html#a48c14f365ef9e5e08cab9bd792113566',1,'modm::platform::SoftwareGpioPort']]],
-  ['size',['size',['../classmodm_1_1_i2c_write_transaction.html#a7281e5c764b59fb6adc8050c210d5be1',1,'modm::I2cWriteTransaction::size()'],['../classmodm_1_1_i2c_read_transaction.html#ae52e985d9e0c357e1289025405c58b11',1,'modm::I2cReadTransaction::size()']]],
-  ['speedmaximum',['speedMaximum',['../structmodm_1_1_s_curve_controller_1_1_parameter.html#ab5f049e26d88b7224dd84bdc6b65ac8f',1,'modm::SCurveController::Parameter']]],
-  ['speedminimum',['speedMinimum',['../structmodm_1_1_s_curve_controller_1_1_parameter.html#afc45a2bbab625bb2fd75765a2c32d905',1,'modm::SCurveController::Parameter']]],
-  ['speedtarget',['speedTarget',['../structmodm_1_1_s_curve_controller_1_1_parameter.html#ac627eee7b9fc19ac1274ef57627de614',1,'modm::SCurveController::Parameter']]],
-  ['src',['src',['../classmodm_1_1_nrf24_data.html#a64a8447a029a3e77d2a4fa9bce0af28c',1,'modm::Nrf24Data::Header']]],
-  ['startpin',['StartPin',['../classmodm_1_1platform_1_1_gpio_port.html#aa66268571e5e595cc110e40f8a831bb9',1,'modm::platform::GpioPort']]],
-  ['startpinreversed',['StartPinReversed',['../classmodm_1_1platform_1_1_gpio_port.html#aa4698b3ea61702d66f28e366f4565412',1,'modm::platform::GpioPort']]],
-  ['startpoint',['startPoint',['../classmodm_1_1_line_segment2_d.html#aa8d8bb93cb3e33c4dfe9e3af1646439d',1,'modm::LineSegment2D']]],
-  ['state',['state',['../classmodm_1_1_i2c_transaction.html#ae0568bb0ae518843c5642da840867805',1,'modm::I2cTransaction']]]
+  ['value',['value',['../structmodm_1_1_register.html#a4d86255f7cd8fc09c9f88d1776535f68',1,'modm::Register::value()'],['../classmodm_1_1_doubly_linked_list.html#a0aa60f31169b7527c764dfd85142f30a',1,'modm::DoublyLinkedList::Node::value()'],['../classmodm_1_1_linked_list.html#ab9f881841424f946ae197f966a1589b6',1,'modm::LinkedList::Node::value()']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['external_20device_20drivers',['External Device Drivers',['../group__modm__driver.html',1,'']]]
+  ['filters',['Filters',['../group__modm__math__filter.html',1,'']]]
 ];

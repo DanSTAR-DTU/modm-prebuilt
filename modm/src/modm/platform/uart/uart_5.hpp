@@ -5,6 +5,7 @@
  * Copyright (c) 2011, 2013-2017, Niklas Hauser
  * Copyright (c) 2012, Sascha Schade
  * Copyright (c) 2013, 2016, Kevin Läufer
+ * Copyright (c) 2021, Raphael Lehmann
  *
  * This file is part of the modm project.
  *
@@ -16,21 +17,15 @@
 
 #ifndef MODM_STM32_UART_5_HPP
 #define MODM_STM32_UART_5_HPP
-
 #include <modm/architecture/interface/uart.hpp>
 #include <modm/platform/gpio/connector.hpp>
 #include "uart_base.hpp"
-#include "uart_baudrate.hpp"
 #include "uart_hal_5.hpp"
-
-namespace modm
-{
-
-namespace platform
+namespace modm::platform
 {
 
 /**
- * Universal asynchronous receiver transmitter (UART5)
+ * Universal asynchronous receiver transmitter (Uart5)
  *
  * @author		Kevin Laeufer
  * @author		Niklas Hauser
@@ -38,16 +33,11 @@ namespace platform
  */
 class Uart5 : public UartBase, public ::modm::Uart
 {
-private:
-	/// Second stage initialize for buffered uart
-	// that need to be implemented in the .cpp
-	static void
-	initializeBuffered(uint32_t interruptPriority);
 public:
 	using Hal = UartHal5;
 	// Expose jinja template parameters to be checked by e.g. drivers or application
-	static constexpr size_t RxBufferSize = 250;
-	static constexpr size_t TxBufferSize = 250;
+	static constexpr size_t RxBufferSize = 256;
+	static constexpr size_t TxBufferSize = 256;
 
 public:
 	template< template<Peripheral _> class... Signals >
@@ -68,17 +58,17 @@ public:
 		Connector::connect();
 	}
 
+	/// @warning Remember to set word length correctly when using the parity bit!
 	template< class SystemClock, baudrate_t baudrate, percent_t tolerance=pct(1) >
-	static void modm_always_inline
-	initialize(uint32_t interruptPriority = 12, Parity parity = Parity::Disabled)
+	static inline void
+	initialize(Parity parity=Parity::Disabled, WordLength length=WordLength::Bit8)
 	{
-		UartHal5::initializeWithBrr(
-				UartBaudrate::getBrr<SystemClock::Uart5, baudrate, tolerance>(),
-				parity,
-				UartBaudrate::getOversamplingMode(SystemClock::Uart5, baudrate));
-		initializeBuffered(interruptPriority);
+		UartHal5::initialize<SystemClock, baudrate, tolerance>(parity, length);
+		UartHal5::enableInterruptVector(true, 12);
+		UartHal5::enableInterrupt(Interrupt::RxNotEmpty);
 		UartHal5::setTransmitterEnable(true);
 		UartHal5::setReceiverEnable(true);
+		UartHal5::enableOperation();
 	}
 
 	static void
@@ -123,14 +113,8 @@ public:
 	static void
 	clearError();
 
-	static bool overrunErrorOccurred();
-
-	static void clearOverrunErrorOccurred();
-
 };
 
-}	// namespace platform
-
-}	// namespace modm
+}	// namespace modm::platform
 
 #endif // MODM_STM32_UART_5_HPP

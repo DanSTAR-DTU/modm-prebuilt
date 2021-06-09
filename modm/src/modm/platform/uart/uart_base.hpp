@@ -27,10 +27,9 @@
 /// @endcond
 
 
-namespace modm
+namespace modm::platform
 {
-namespace platform
-{
+
 /**
  * Base class for the UART classes
  *
@@ -43,7 +42,8 @@ class UartBase
 {
 
 public:
-	enum class Interrupt : uint32_t
+	enum class
+	Interrupt : uint32_t
 	{
 		/// A USART interrupt is generated when match character is received.
 		CharacterMatch = USART_CR1_CMIE,
@@ -58,7 +58,8 @@ public:
 	};
 	MODM_FLAGS32(Interrupt);
 
-	enum class InterruptFlag : uint32_t
+	enum class
+	InterruptFlag : uint32_t
 	{
 		/// Set if match character is received.
 		CharacterMatch	= USART_ISR_CMF,
@@ -81,35 +82,12 @@ public:
 	};
 	MODM_FLAGS32(InterruptFlag);
 
-	enum class Parity : uint32_t
+	enum class
+	Parity : uint32_t
 	{
 		Disabled 	= 0,
 		Even 		= USART_CR1_PCE,
 		Odd  		= USART_CR1_PCE | USART_CR1_PS,
-	};
-
-	/// Spi Data Mode, Mode0 is the most common mode
-	enum class
-	SpiDataMode : uint32_t
-	{
-		Mode0 = 0b00,			///< clock normal,   sample on rising  edge
-		Mode1 = USART_CR2_CPHA,	///< clock normal,   sample on falling edge
-		Mode2 = USART_CR2_CPOL,	///< clock inverted, sample on falling  edge
-		Mode3 = USART_CR2_CPOL | USART_CR2_CPHA
-		///< clock inverted, sample on rising edge
-	};
-
-	enum class
-	OversamplingMode : uint32_t
-	{
-		By16 = 0b0,
-		By8  = USART_CR1_OVER8,
-	};
-	enum class
-	LastBitClockPulse : uint32_t
-	{
-		DoNotOutput = 0b0,
-		Output = USART_CR2_LBCL,
 	};
 
 	enum class
@@ -132,10 +110,23 @@ public:
 		Enabled  = USART_CR2_CLKEN,
 	};
 
+	enum class
+	LastBitClockPulse : uint32_t
+	{
+		DoNotOutput = 0b0,
+		Output = USART_CR2_LBCL,
+	};
+
+	enum class
+	SpiDataMode : uint32_t
+	{
+		Mode0 = 0b00,
+		Mode1 = USART_CR2_CPHA,
+		Mode2 = USART_CR2_CPOL,
+		Mode3 = USART_CR2_CPOL | USART_CR2_CPHA,
+	};
 };
 
-}	// namespace platform
-
-}	// namespace modm
+}	// namespace modm::platform
 
 #endif // MODM_STM32_UART_BASE_HPP

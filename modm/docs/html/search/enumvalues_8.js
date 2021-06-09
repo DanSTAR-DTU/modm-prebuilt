@@ -9,7 +9,6 @@ var searchData=
   ['i2s3',['I2s3',['../namespacemodm_1_1platform.html#a9a75ca82fea26cd4f4948f93899d0f55aa2e888f74c5328544e371222bf18abef',1,'modm::platform']]],
   ['idle',['Idle',['../structmodm_1_1_i2c.html#a0ba607aa36d2c6c1e5f3ddd9a969c713ae599161956d626eda4cb0a5ffb85271c',1,'modm::I2c']]],
   ['ignore',['Ignore',['../group__modm__architecture__assert.html#ggaf22c76f51642c50723ba439c5e080726afd038fc7f319e48f3115d92bf5bdbef9',1,'modm']]],
-  ['im_5fupdate',['IM_UPDATE',['../structmodm_1_1bme280.html#ab6e9d26f95cde8d1b23f1559d1f5579ba9b22f172f8b21b91f2380c63e4174d24',1,'modm::bme280']]],
   ['in',['In',['../structmodm_1_1_gpio.html#a5c167852e8d86eded53f554eabace79baefeb369cccbd560588a756610865664c',1,'modm::Gpio']]],
   ['inactive',['Inactive',['../classmodm_1_1platform_1_1_general_purpose_timer.html#a5352910894a1b58d7e166a293b51a162a3cab03c00dbd11bc3569afa0748013f0',1,'modm::platform::GeneralPurposeTimer']]],
   ['info',['INFO',['../group__modm__debug.html#ggab363317856672ff8274a151df368c400a1807bd32e8c3560dd2ee1b1b2ac72bc8',1,'modm::log']]],
@@ -25,7 +24,6 @@ var searchData=
   ['internalclock',['InternalClock',['../classmodm_1_1platform_1_1_rcc.html#ac74f8c9671fb47f85fdfef5a3074407ba8ebf726ceabd9db011ff9d387ce22781',1,'modm::platform::Rcc::InternalClock()'],['../classmodm_1_1platform_1_1_rcc.html#a4e028f51723e4c669727401df53524afa8ebf726ceabd9db011ff9d387ce22781',1,'modm::platform::Rcc::InternalClock()'],['../classmodm_1_1platform_1_1_rcc.html#a2997a7d582ad2b140ae49f72492a776ea8ebf726ceabd9db011ff9d387ce22781',1,'modm::platform::Rcc::InternalClock()']]],
   ['internalreference',['InternalReference',['../classmodm_1_1platform_1_1_adc4.html#a0a0f2d6e8ac02f98a1c3ad6fa85869bfaee534ac11d9a6aad6664a4a0ccd40648',1,'modm::platform::Adc4']]],
   ['internaltrigger',['InternalTrigger',['../classmodm_1_1platform_1_1_general_purpose_timer.html#a176bb4227ea0210d299c014508e260e1a39623e976720c46a958677fdb1d4c3f5',1,'modm::platform::GeneralPurposeTimer']]],
-  ['invalid',['Invalid',['../structmodm_1_1_nrf24_config_parameters.html#a8bef325eebf715df85215fcbc5fd0556a4bbb8f967da6d1a610596d7257179c2b',1,'modm::Nrf24ConfigParameters']]],
   ['irtim',['Irtim',['../namespacemodm_1_1platform.html#a9a75ca82fea26cd4f4948f93899d0f55ab4379836892e3f61196046899c6ea9dd',1,'modm::platform']]],
   ['iwdg',['Iwdg',['../namespacemodm_1_1platform.html#a9a75ca82fea26cd4f4948f93899d0f55ab7326e2ea9b07b47f3553b208ed2720d',1,'modm::platform']]]
 ];

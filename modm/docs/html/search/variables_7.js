@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['g',['G',['../classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#aeb6a580a3e90201f6955bb02c51bbe55',1,'modm::platform::BitBangOneWireMaster']]]
+  ['high',['High',['../structmodm_1_1_gpio.html#a17454096f07c8ae16d603ff46ad53c6a',1,'modm::Gpio']]]
 ];

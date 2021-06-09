@@ -6,6 +6,7 @@
  * Copyright (c) 2013, 2016, Kevin Läufer
  * Copyright (c) 2013-2017, Niklas Hauser
  * Copyright (c) 2018, Lucas Mösch
+ * Copyright (c) 2021, Raphael Lehmann
  *
  * This file is part of the modm project.
  *
@@ -16,33 +17,27 @@
 // ----------------------------------------------------------------------------
 
 #include "../device.hpp"
-#include "uart_hal_5.hpp"
 #include "uart_5.hpp"
-
 #include <modm/architecture/interface/atomic_lock.hpp>
 #include <modm/architecture/driver/atomic/queue.hpp>
 
 namespace
 {
-	static modm::atomic::Queue<uint8_t, modm::platform::Uart5::RxBufferSize> rxBuffer;
-	static modm::atomic::Queue<uint8_t, modm::platform::Uart5::TxBufferSize> txBuffer;
-	static modm::platform::UartBase::InterruptFlag_t flags;
+	static modm::atomic::Queue<uint8_t, 256> rxBuffer;
+	static modm::atomic::Queue<uint8_t, 256> txBuffer;
 }
-void
-modm::platform::Uart5::initializeBuffered(uint32_t interruptPriority)
+namespace modm::platform
 {
-	UartHal5::enableInterruptVector(true, interruptPriority);
-	UartHal5::enableInterrupt(Interrupt::RxNotEmpty);
-}
+
 void
-modm::platform::Uart5::writeBlocking(uint8_t data)
+Uart5::writeBlocking(uint8_t data)
 {
 	while(!UartHal5::isTransmitRegisterEmpty());
 	UartHal5::write(data);
 }
 
 void
-modm::platform::Uart5::writeBlocking(const uint8_t *data, std::size_t length)
+Uart5::writeBlocking(const uint8_t *data, std::size_t length)
 {
 	while (length-- != 0) {
 		writeBlocking(*data++);
@@ -50,13 +45,13 @@ modm::platform::Uart5::writeBlocking(const uint8_t *data, std::size_t length)
 }
 
 void
-modm::platform::Uart5::flushWriteBuffer()
+Uart5::flushWriteBuffer()
 {
 	while(!isWriteFinished());
 }
 
 bool
-modm::platform::Uart5::write(uint8_t data)
+Uart5::write(uint8_t data)
 {
 	if(txBuffer.isEmpty() && UartHal5::isTransmitRegisterEmpty()) {
 		UartHal5::write(data);
@@ -72,7 +67,7 @@ modm::platform::Uart5::write(uint8_t data)
 }
 
 std::size_t
-modm::platform::Uart5::write(const uint8_t *data, std::size_t length)
+Uart5::write(const uint8_t *data, std::size_t length)
 {
 	uint32_t i = 0;
 	for (; i < length; ++i)
@@ -85,19 +80,19 @@ modm::platform::Uart5::write(const uint8_t *data, std::size_t length)
 }
 
 bool
-modm::platform::Uart5::isWriteFinished()
+Uart5::isWriteFinished()
 {
 	return txBuffer.isEmpty() && UartHal5::isTransmitRegisterEmpty();
 }
 
 std::size_t
-modm::platform::Uart5::transmitBufferSize()
+Uart5::transmitBufferSize()
 {
 	return txBuffer.getSize();
 }
 
 std::size_t
-modm::platform::Uart5::discardTransmitBuffer()
+Uart5::discardTransmitBuffer()
 {
 	std::size_t count = 0;
 	// disable interrupt since buffer will be cleared
@@ -110,7 +105,7 @@ modm::platform::Uart5::discardTransmitBuffer()
 }
 
 bool
-modm::platform::Uart5::read(uint8_t &data)
+Uart5::read(uint8_t &data)
 {
 	if (rxBuffer.isEmpty()) {
 		return false;
@@ -122,7 +117,7 @@ modm::platform::Uart5::read(uint8_t &data)
 }
 
 std::size_t
-modm::platform::Uart5::read(uint8_t *data, std::size_t length)
+Uart5::read(uint8_t *data, std::size_t length)
 {
 	uint32_t i = 0;
 	for (; i < length; ++i)
@@ -138,13 +133,13 @@ modm::platform::Uart5::read(uint8_t *data, std::size_t length)
 }
 
 std::size_t
-modm::platform::Uart5::receiveBufferSize()
+Uart5::receiveBufferSize()
 {
 	return rxBuffer.getSize();
 }
 
 std::size_t
-modm::platform::Uart5::discardReceiveBuffer()
+Uart5::discardReceiveBuffer()
 {
 	std::size_t count = 0;
 	while(!rxBuffer.isEmpty()) {
@@ -155,7 +150,7 @@ modm::platform::Uart5::discardReceiveBuffer()
 }
 
 bool
-modm::platform::Uart5::hasError()
+Uart5::hasError()
 {
 	return UartHal5::getInterruptFlags().any(
 		UartHal5::InterruptFlag::ParityError |
@@ -165,7 +160,7 @@ modm::platform::Uart5::hasError()
 		UartHal5::InterruptFlag::OverrunError | UartHal5::InterruptFlag::FramingError);
 }
 void
-modm::platform::Uart5::clearError()
+Uart5::clearError()
 {
 	return UartHal5::acknowledgeInterruptFlags(
 		UartHal5::InterruptFlag::ParityError |
@@ -175,40 +170,26 @@ modm::platform::Uart5::clearError()
 		UartHal5::InterruptFlag::OverrunError | UartHal5::InterruptFlag::FramingError);
 }
 
-bool modm::platform::Uart5::overrunErrorOccurred()
-{
-	if(flags & modm::platform::UartHal5::InterruptFlag::OverrunError)
-	 	return true;
-	else
-		return false;
-}
-
-void modm::platform::Uart5::clearOverrunErrorOccurred()
-{
-	flags &= (~modm::platform::UartHal5::InterruptFlag::OverrunError);
-}
+}	// namespace modm::platform
 
 MODM_ISR(UART5)
 {
-	if (modm::platform::UartHal5::isReceiveRegisterNotEmpty()) {
+	using namespace modm::platform;
+	if (UartHal5::isReceiveRegisterNotEmpty()) {
 		// TODO: save the errors
 		uint8_t data;
-		modm::platform::UartHal5::read(data);
+		UartHal5::read(data);
 		rxBuffer.push(data);
 	}
-	if (modm::platform::UartHal5::isTransmitRegisterEmpty()) {
+	if (UartHal5::isTransmitRegisterEmpty()) {
 		if (txBuffer.isEmpty()) {
 			// transmission finished, disable TxEmpty interrupt
-			modm::platform::UartHal5::disableInterrupt(modm::platform::UartHal5::Interrupt::TxEmpty);
+			UartHal5::disableInterrupt(UartHal5::Interrupt::TxEmpty);
 		}
 		else {
-			modm::platform::UartHal5::write(txBuffer.get());
+			UartHal5::write(txBuffer.get());
 			txBuffer.pop();
 		}
 	}
-	if(modm::platform::UartHal5::getInterruptFlags() & modm::platform::UartHal5::InterruptFlag::OverrunError)
-		{
-			modm::platform::UartHal5::acknowledgeInterruptFlags(modm::platform::UartHal5::InterruptFlag::OverrunError);
-			flags |= modm::platform::UartHal5::InterruptFlag::OverrunError;
-		}
+	UartHal5::acknowledgeInterruptFlags(UartHal5::InterruptFlag::OverrunError);
 }
