@@ -6,6 +6,5 @@ var searchData=
   ['deadtimeresolution',['DeadTimeResolution',['../classmodm_1_1platform_1_1_general_purpose_timer.html#a8f1ee5d70f2fa8a2c7c3407b7a64fe13',1,'modm::platform::GeneralPurposeTimer']]],
   ['detachcause',['DetachCause',['../structmodm_1_1_i2c.html#a0406997126d064926cdb512911a17dcd',1,'modm::I2c']]],
   ['direction',['Direction',['../structmodm_1_1_gpio.html#a5c167852e8d86eded53f554eabace79b',1,'modm::Gpio']]],
-  ['dmarequestenable',['DmaRequestEnable',['../classmodm_1_1platform_1_1_general_purpose_timer.html#a4f017a249b3dcf933902761eb4ebbb05',1,'modm::platform::GeneralPurposeTimer']]],
-  ['dynpd',['DynPd',['../structmodm_1_1_nrf24_register.html#a22a8144b0596ffad37e2c278f108c0d0',1,'modm::Nrf24Register']]]
+  ['dmarequestenable',['DmaRequestEnable',['../classmodm_1_1platform_1_1_general_purpose_timer.html#a4f017a249b3dcf933902761eb4ebbb05',1,'modm::platform::GeneralPurposeTimer']]]
 ];

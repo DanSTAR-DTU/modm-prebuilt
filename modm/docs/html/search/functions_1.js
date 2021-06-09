@@ -9,9 +9,8 @@ var searchData=
   ['block',['Block',['../classmodm_1_1allocator_1_1_block.html#aa562e93c7cf01c66e66378be2f251b0d',1,'modm::allocator::Block::Block()'],['../classmodm_1_1allocator_1_1_block.html#a841e6ba0dde1356477e2a210f9d51afc',1,'modm::allocator::Block::Block(const Block &amp;other)'],['../classmodm_1_1allocator_1_1_block.html#a43e83e5755acb3e97ac39d2482543569',1,'modm::allocator::Block::Block(const Block&lt; U, BLOCKSIZE &gt; &amp;)']]],
   ['blockdevice',['BlockDevice',['../classmodm_1_1_block_device.html#a5654ddb60563ad6b0ee4427e8ff11fe5',1,'modm::BlockDevice::BlockDevice()=default'],['../classmodm_1_1_block_device.html#a05749f18c2430cf32b834276b4ac3663',1,'modm::BlockDevice::BlockDevice(const BlockDevice &amp;)=delete']]],
   ['blue',['blue',['../group__modm__io.html#gae6f479911a2706520d6355834b2fa7c4',1,'modm']]],
-  ['bme280',['Bme280',['../classmodm_1_1_bme280.html#aaf4b3fc997752ac74a4563c464f149fe',1,'modm::Bme280']]],
   ['boundeddeque',['BoundedDeque',['../classmodm_1_1_bounded_deque.html#ac3e12ae31276790c19d4568afabc79dc',1,'modm::BoundedDeque']]],
   ['bps',['bps',['../group__modm__math__units.html#ga71a525699779b80ef319bb4efe1e4ec9',1,'modm']]],
-  ['build_5fid',['build_id',['../group__modm__architecture__build__id.html#gaac7e7e205bbced786315f5f5e7d165cf',1,'modm']]],
-  ['buildid',['buildId',['../classmodm_1_1platform_1_1_fault_reporter.html#a76416abd41819b8376c7b13c0b3b8d75',1,'modm::platform::FaultReporter']]]
+  ['build_5fid',['build_id',['../group__modm__architecture__build__id.html#gad339e6ce47096797da34e051ede8fe1d',1,'modm']]],
+  ['buildid',['buildId',['../classmodm_1_1platform_1_1_fault_reporter.html#aff8a2691fbec7a38a5c5da01c5dd2259',1,'modm::platform::FaultReporter']]]
 ];

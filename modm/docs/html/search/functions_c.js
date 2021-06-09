@@ -9,7 +9,7 @@ var searchData=
   ['mbd',['MBd',['../group__modm__math__units.html#gaef886c89016768744f89476c3d87f1cf',1,'modm']]],
   ['mbps',['Mbps',['../group__modm__math__units.html#gae90901c790a783cdf1e3afa277051399',1,'modm']]],
   ['median',['Median',['../classmodm_1_1filter_1_1_median.html#acb65a4652fccc9a32ca85c3773a3cdb2',1,'modm::filter::Median']]],
-  ['message',['Message',['../structmodm_1_1can_1_1_message.html#a09b3a7d9c5a50084eb1887ff367d4970',1,'modm::can::Message']]],
+  ['message',['Message',['../structmodm_1_1can_1_1_message.html#a7a61200c0fb8e799c4605b33878f44e1',1,'modm::can::Message::Message(uint32_t inIdentifier=0, uint8_t inLength=0)'],['../structmodm_1_1can_1_1_message.html#a49a964279207adcf05d1d34d5efd79fc',1,'modm::can::Message::Message(uint32_t inIdentifier, uint8_t inLength, const uint64_t &amp;inData, bool extended=false)']]],
   ['mhz',['MHz',['../group__modm__math__units.html#ga2020ec8d88e38c63e7104fd91c721e10',1,'modm']]],
   ['min',['min',['../group__modm__math__utils.html#ga0911b63c9be749d20800b5f99fb6d4a4',1,'modm::min(const T &amp;a, const T &amp;b)'],['../group__modm__math__utils.html#ga63941abd87426c326fd3d968c2fd2256',1,'modm::min(const T &amp;a, const T &amp;b, Compare compare)']]],
   ['modm_5f_5fsqrt32',['modm__sqrt32',['../operator_8hpp.html#a0a1b1db3b6a66ff984cc91d39be509bd',1,'operator.hpp']]],

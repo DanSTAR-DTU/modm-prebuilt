@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['b',['B',['../classmodm_1_1platform_1_1_bit_bang_one_wire_master.html#af0932d5b576daaa3ccdf0a8f398517a7',1,'modm::platform::BitBangOneWireMaster']]],
   ['back',['back',['../classmodm_1_1_doubly_linked_list.html#ac2bf3de4a44527c127904ec72025d725',1,'modm::DoublyLinkedList::back()'],['../classmodm_1_1_linked_list.html#a0c4c153009c49d2cd98fdae2df801edf',1,'modm::LinkedList::back()']]],
   ['basepoint',['basePoint',['../classmodm_1_1_ray2_d.html#ae3e8c146666b7f6b402cd64f99cd1117',1,'modm::Ray2D']]],
   ['behavior',['behavior',['../group__modm__architecture__assert.html#a2a277073453dbe8f37cfed3cd376940a',1,'modm::AssertionInfo']]],
@@ -72,5 +71,7 @@ var searchData=
   ['blocksizeerase',['BlockSizeErase',['../classmodm_1_1_block_device.html#a19bb8e6f488c95595a13ec2a1748a9b3',1,'modm::BlockDevice']]],
   ['blocksizeread',['BlockSizeRead',['../classmodm_1_1_block_device.html#a3423d4e7c653ae74b88979609e2c99b3',1,'modm::BlockDevice']]],
   ['blocksizewrite',['BlockSizeWrite',['../classmodm_1_1_block_device.html#aed5ae2b05b68d134e7714b429b3094a4',1,'modm::BlockDevice']]],
+  ['bs1',['bs1',['../namespacemodm.html#a02f447ef153847f47314525136c484a2',1,'modm::CanBitTimingConfiguration']]],
+  ['bs2',['bs2',['../namespacemodm.html#a17c4effdddc66235e34124bd6451ac8d',1,'modm::CanBitTimingConfiguration']]],
   ['buffer',['buffer',['../structmodm_1_1_i2c_transaction_1_1_writing.html#a346466f9f1a00e46bbdc39f67a5e2221',1,'modm::I2cTransaction::Writing::buffer()'],['../structmodm_1_1_i2c_transaction_1_1_reading.html#a005d4dc3d855c314e45d9cdc333f556e',1,'modm::I2cTransaction::Reading::buffer()'],['../classmodm_1_1_i2c_write_transaction.html#a57c5c0ac3491d8ac335b6897c78ad248',1,'modm::I2cWriteTransaction::buffer()'],['../classmodm_1_1_i2c_read_transaction.html#ac4e9e65532b42a60caa8749043aea008',1,'modm::I2cReadTransaction::buffer()']]]
 ];

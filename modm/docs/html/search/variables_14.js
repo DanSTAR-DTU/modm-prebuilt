@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value',['value',['../structmodm_1_1_register.html#a4d86255f7cd8fc09c9f88d1776535f68',1,'modm::Register::value()'],['../classmodm_1_1_doubly_linked_list.html#a0aa60f31169b7527c764dfd85142f30a',1,'modm::DoublyLinkedList::Node::value()'],['../classmodm_1_1_linked_list.html#ab9f881841424f946ae197f966a1589b6',1,'modm::LinkedList::Node::value()']]]
+  ['y',['y',['../classmodm_1_1_quaternion.html#a4b9e2b46e2a28bb50f084999ae5b8414',1,'modm::Quaternion::y()'],['../classmodm_1_1_vector_3_01_t_00_012_01_4.html#a4363ae5effcf56c4e78f330601f09fbc',1,'modm::Vector&lt; T, 2 &gt;::y()'],['../classmodm_1_1_vector_3_01_t_00_013_01_4.html#ac75f8db6a9effe931327d136db9c4952',1,'modm::Vector&lt; T, 3 &gt;::y()'],['../classmodm_1_1_vector_3_01_t_00_014_01_4.html#ae1e06168324a8825b7de60ea919d3466',1,'modm::Vector&lt; T, 4 &gt;::y()']]]
 ];

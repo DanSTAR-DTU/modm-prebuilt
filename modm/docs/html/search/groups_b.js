@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['nrf24_20drivers',['NRF24 Drivers',['../group__modm__driver__nrf24.html',1,'']]]
+  ['platform_20hal',['Platform HAL',['../group__modm__platform.html',1,'']]],
+  ['processing',['Processing',['../group__modm__processing.html',1,'']]],
+  ['protothreads',['Protothreads',['../group__modm__processing__protothread.html',1,'']]]
 ];

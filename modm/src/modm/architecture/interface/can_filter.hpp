@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020, Raphael Lehmann
+ * Copyright (c) 2021, Christopher Durand
  *
  * This file is part of the modm project.
  *
@@ -16,33 +16,57 @@
 namespace modm::can
 {
 
-/// Representation of a CAN filter
+/// CAN 2.0A 11 bit standard identifier
+/// The upper 5 bits are ignored
 /// @ingroup modm_architecture_can
-struct Filter
+struct StandardIdentifier
 {
-	Filter(uint32_t identifier_, uint32_t mask_, bool extended_=false, Mode mode_=Mode::ClassicMask) :
-		identifier{ identifier_ },
-		mask{ mask_ },
-		mode{ _mode },
-		extended{ extended_ }
+	uint16_t id;
+
+	constexpr explicit operator uint16_t()
 	{
+		return id;
 	}
-
-	enum class Mode : uint8_t {
-		ClassicMask,
-		DualIdentifier,
-		//Range, // only supported on STM32 FDCAN IP
-	}
-
-public:
-	uint32_t identifier;
-	uint32_t mask;
-	Mode mode;
-	bool extended;
 };
 
-modm::IOStream&
-operator << (modm::IOStream& s, const modm::can::Filter f);
+/// CAN 2.0A 11 bit standard mask
+/// The upper 5 bits are ignored
+/// @ingroup modm_architecture_can
+struct StandardMask
+{
+	uint16_t mask;
+
+	constexpr explicit operator uint16_t()
+	{
+		return mask;
+	}
+};
+
+/// CAN 2.0B 29 bit extended identifier
+/// The upper 3 bits are ignored
+/// @ingroup modm_architecture_can
+struct ExtendedIdentifier
+{
+	uint32_t id;
+
+	constexpr explicit operator uint32_t()
+	{
+		return id;
+	}
+};
+
+/// CAN 2.0B 29 bit extended mask
+/// The upper 3 bits are ignored
+/// @ingroup modm_architecture_can
+struct ExtendedMask
+{
+	uint32_t mask;
+
+	constexpr explicit operator uint32_t()
+	{
+		return mask;
+	}
+};
 
 }
 

@@ -4,9 +4,8 @@
 	</repositories>
 	<options>
 		<option name=":target">stm32g474ret6</option>
-		<option name=":build:cmake:include_makefile">False</option>
-		<option name=":build:cmake:include_cmakelists">False</option>
-
+		<option name="modm:platform:uart:5:buffer.tx">256</option>
+		<option name="modm:platform:uart:5:buffer.rx">256</option>
 
 	</options>
 	<modules>
@@ -14,22 +13,17 @@
 		<module>:architecture:*</module>
 		<module>:container</module>
 		<module>:crashcatcher</module>
-		<module>:driver:nrf24</module>
-		<module>:driver:bme280</module>
-		<module>:driver:i2c.eeprom</module>
 		<module>:docs</module>
 		<module>:math:*</module>
 		<module>:io</module>
 		<module>:platform:adc:*</module>
-		<module>:platform:can*</module>
+		<module>:platform:can:*</module>
 		<module>:platform:core</module>
 		<module>:platform:clock</module>
 		<module>:platform:fault</module>
 		<module>:platform:gpio</module>
 		<module>:platform:i2c:*</module>
-		<module>:platform:1-wire.bitbang</module>
 		<module>:platform:spi:*</module>
-		<module>:platform:spi.bitbang</module>
 		<module>:platform:timer:*</module>
 		<module>:platform:uart:*</module>
 		<module>:platform:heap</module>

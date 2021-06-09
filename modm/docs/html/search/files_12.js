@@ -7,7 +7,6 @@ var searchData=
   ['uart_5f4_2ehpp',['uart_4.hpp',['../uart__4_8hpp.html',1,'']]],
   ['uart_5f5_2ehpp',['uart_5.hpp',['../uart__5_8hpp.html',1,'']]],
   ['uart_5fbase_2ehpp',['uart_base.hpp',['../uart__base_8hpp.html',1,'']]],
-  ['uart_5fbaudrate_2ehpp',['uart_baudrate.hpp',['../uart__baudrate_8hpp.html',1,'']]],
   ['uart_5fhal_5f1_2ehpp',['uart_hal_1.hpp',['../uart__hal__1_8hpp.html',1,'']]],
   ['uart_5fhal_5f2_2ehpp',['uart_hal_2.hpp',['../uart__hal__2_8hpp.html',1,'']]],
   ['uart_5fhal_5f3_2ehpp',['uart_hal_3.hpp',['../uart__hal__3_8hpp.html',1,'']]],

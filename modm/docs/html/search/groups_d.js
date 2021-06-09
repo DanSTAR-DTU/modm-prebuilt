@@ -1,5 +1,13 @@
 var searchData=
 [
-  ['reset_20and_20clock_20control_20_28rcc_29',['Reset and Clock Control (RCC)',['../group__modm__platform__rcc.html',1,'']]],
-  ['resumable_20functions',['Resumable Functions',['../group__modm__processing__resumable.html',1,'']]]
+  ['system_20clock',['System Clock',['../group__modm__architecture__clock.html',1,'']]],
+  ['serial_20peripheral_20interface_20_28spi_29',['Serial Peripheral Interface (SPI)',['../group__modm__architecture__spi.html',1,'']]],
+  ['spi_20devices',['SPI Devices',['../group__modm__architecture__spi__device.html',1,'']]],
+  ['stm32_20cmsis_20headers',['STM32 CMSIS Headers',['../group__modm__cmsis__device.html',1,'']]],
+  ['saturated_20arithmetics',['Saturated Arithmetics',['../group__modm__math__saturated.html',1,'']]],
+  ['si_20units',['SI Units',['../group__modm__math__units.html',1,'']]],
+  ['system_20clock_20via_20cortex_2dm_20systick',['System Clock via Cortex-M SysTick',['../group__modm__platform__clock.html',1,'']]],
+  ['stm32_20core_20module',['STM32 core module',['../group__modm__platform__core.html',1,'']]],
+  ['serial_20peripheral_20interface_20_28spi_29',['Serial Peripheral Interface (SPI)',['../group__modm__platform__spi.html',1,'']]],
+  ['software_20timers',['Software Timers',['../group__modm__processing__timer.html',1,'']]]
 ];

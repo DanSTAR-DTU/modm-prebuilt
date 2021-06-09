@@ -6,6 +6,7 @@
  * Copyright (c) 2013, 2016, Kevin Läufer
  * Copyright (c) 2013-2017, Niklas Hauser
  * Copyright (c) 2018, Lucas Mösch
+ * Copyright (c) 2021, Raphael Lehmann
  *
  * This file is part of the modm project.
  *
@@ -16,32 +17,19 @@
 // ----------------------------------------------------------------------------
 
 #include "../device.hpp"
-#include "uart_hal_4.hpp"
 #include "uart_4.hpp"
-
-#include <modm/architecture/interface/atomic_lock.hpp>
-#include <modm/architecture/driver/atomic/queue.hpp>
-
-namespace
+namespace modm::platform
 {
-	static modm::atomic::Queue<uint8_t, 16> rxBuffer;
-	static modm::atomic::Queue<uint8_t, 250> txBuffer;
-}
+
 void
-modm::platform::Uart4::initializeBuffered(uint32_t interruptPriority)
-{
-	UartHal4::enableInterruptVector(true, interruptPriority);
-	UartHal4::enableInterrupt(Interrupt::RxNotEmpty);
-}
-void
-modm::platform::Uart4::writeBlocking(uint8_t data)
+Uart4::writeBlocking(uint8_t data)
 {
 	while(!UartHal4::isTransmitRegisterEmpty());
 	UartHal4::write(data);
 }
 
 void
-modm::platform::Uart4::writeBlocking(const uint8_t *data, std::size_t length)
+Uart4::writeBlocking(const uint8_t *data, std::size_t length)
 {
 	while (length-- != 0) {
 		writeBlocking(*data++);
@@ -49,29 +37,24 @@ modm::platform::Uart4::writeBlocking(const uint8_t *data, std::size_t length)
 }
 
 void
-modm::platform::Uart4::flushWriteBuffer()
+Uart4::flushWriteBuffer()
 {
-	while(!isWriteFinished());
+	return;
 }
 
 bool
-modm::platform::Uart4::write(uint8_t data)
+Uart4::write(uint8_t data)
 {
-	if(txBuffer.isEmpty() && UartHal4::isTransmitRegisterEmpty()) {
+	if(UartHal4::isTransmitRegisterEmpty()) {
 		UartHal4::write(data);
+		return true;
 	} else {
-		if (!txBuffer.push(data))
-			return false;
-		// Disable interrupts while enabling the transmit interrupt
-		atomic::Lock lock;
-		// Transmit Data Register Empty Interrupt Enable
-		UartHal4::enableInterrupt(Interrupt::TxEmpty);
+		return false;
 	}
-	return true;
 }
 
 std::size_t
-modm::platform::Uart4::write(const uint8_t *data, std::size_t length)
+Uart4::write(const uint8_t *data, std::size_t length)
 {
 	uint32_t i = 0;
 	for (; i < length; ++i)
@@ -84,77 +67,59 @@ modm::platform::Uart4::write(const uint8_t *data, std::size_t length)
 }
 
 bool
-modm::platform::Uart4::isWriteFinished()
+Uart4::isWriteFinished()
 {
-	return txBuffer.isEmpty() && UartHal4::isTransmitRegisterEmpty();
+	return UartHal4::isTransmitRegisterEmpty();
 }
 
 std::size_t
-modm::platform::Uart4::transmitBufferSize()
+Uart4::transmitBufferSize()
 {
-	return txBuffer.getSize();
+	return UartHal4::isTransmitRegisterEmpty() ? 0 : 1;
 }
 
 std::size_t
-modm::platform::Uart4::discardTransmitBuffer()
+Uart4::discardTransmitBuffer()
 {
-	std::size_t count = 0;
-	// disable interrupt since buffer will be cleared
-	UartHal4::disableInterrupt(UartHal4::Interrupt::TxEmpty);
-	while(!txBuffer.isEmpty()) {
-		++count;
-		txBuffer.pop();
-	}
-	return count;
+	return 0;
 }
 
 bool
-modm::platform::Uart4::read(uint8_t &data)
+Uart4::read(uint8_t &data)
 {
-	if (rxBuffer.isEmpty()) {
-		return false;
-	} else {
-		data = rxBuffer.get();
-		rxBuffer.pop();
+	if(UartHal4::isReceiveRegisterNotEmpty()) {
+		UartHal4::read(data);
 		return true;
+	} else {
+		return false;
 	}
 }
 
 std::size_t
-modm::platform::Uart4::read(uint8_t *data, std::size_t length)
+Uart4::read(uint8_t *data, std::size_t length)
 {
-	uint32_t i = 0;
-	for (; i < length; ++i)
-	{
-		if (rxBuffer.isEmpty()) {
-			return i;
-		} else {
-			*data++ = rxBuffer.get();
-			rxBuffer.pop();
-		}
+	(void)length; // avoid compiler warning
+	if(read(*data)) {
+		return 1;
+	} else {
+		return 0;
 	}
-	return i;
 }
 
 std::size_t
-modm::platform::Uart4::receiveBufferSize()
+Uart4::receiveBufferSize()
 {
-	return rxBuffer.getSize();
+	return UartHal4::isReceiveRegisterNotEmpty() ? 1 : 0;
 }
 
 std::size_t
-modm::platform::Uart4::discardReceiveBuffer()
+Uart4::discardReceiveBuffer()
 {
-	std::size_t count = 0;
-	while(!rxBuffer.isEmpty()) {
-		++count;
-		rxBuffer.pop();
-	}
-	return count;
+	return 0;
 }
 
 bool
-modm::platform::Uart4::hasError()
+Uart4::hasError()
 {
 	return UartHal4::getInterruptFlags().any(
 		UartHal4::InterruptFlag::ParityError |
@@ -164,7 +129,7 @@ modm::platform::Uart4::hasError()
 		UartHal4::InterruptFlag::OverrunError | UartHal4::InterruptFlag::FramingError);
 }
 void
-modm::platform::Uart4::clearError()
+Uart4::clearError()
 {
 	return UartHal4::acknowledgeInterruptFlags(
 		UartHal4::InterruptFlag::ParityError |
@@ -174,24 +139,5 @@ modm::platform::Uart4::clearError()
 		UartHal4::InterruptFlag::OverrunError | UartHal4::InterruptFlag::FramingError);
 }
 
+}	// namespace modm::platform
 
-MODM_ISR(UART4)
-{
-	if (modm::platform::UartHal4::isReceiveRegisterNotEmpty()) {
-		// TODO: save the errors
-		uint8_t data;
-		modm::platform::UartHal4::read(data);
-		rxBuffer.push(data);
-	}
-	if (modm::platform::UartHal4::isTransmitRegisterEmpty()) {
-		if (txBuffer.isEmpty()) {
-			// transmission finished, disable TxEmpty interrupt
-			modm::platform::UartHal4::disableInterrupt(modm::platform::UartHal4::Interrupt::TxEmpty);
-		}
-		else {
-			modm::platform::UartHal4::write(txBuffer.get());
-			txBuffer.pop();
-		}
-	}
-	modm::platform::UartHal4::acknowledgeInterruptFlags(modm::platform::UartHal4::InterruptFlag::OverrunError);
-}
