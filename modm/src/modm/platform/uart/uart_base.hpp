@@ -20,9 +20,13 @@
 #include <modm/architecture/interface/interrupt.hpp>
 
 /// @cond
+#undef USART_CR1_TXEIE
 #define USART_CR1_TXEIE   USART_CR1_TXEIE_TXFNFIE
+#undef USART_CR1_RXNEIE
 #define USART_CR1_RXNEIE  USART_CR1_RXNEIE_RXFNEIE
+#undef USART_ISR_RXNE
 #define USART_ISR_RXNE    USART_ISR_RXNE_RXFNE
+#undef USART_ISR_TXE
 #define USART_ISR_TXE     USART_ISR_TXE_TXFNF
 /// @endcond
 
