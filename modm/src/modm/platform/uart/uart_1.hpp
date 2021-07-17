@@ -36,8 +36,8 @@ class Usart1 : public UartBase, public ::modm::Uart
 public:
 	using Hal = UsartHal1;
 	// Expose jinja template parameters to be checked by e.g. drivers or application
-	static constexpr size_t RxBufferSize = 0;
-	static constexpr size_t TxBufferSize = 0;
+	static constexpr size_t RxBufferSize = 256;
+	static constexpr size_t TxBufferSize = 256;
 
 public:
 	template< template<Peripheral _> class... Signals >
@@ -64,6 +64,8 @@ public:
 	initialize(Parity parity=Parity::Disabled, WordLength length=WordLength::Bit8)
 	{
 		UsartHal1::initialize<SystemClock, baudrate, tolerance>(parity, length);
+		UsartHal1::enableInterruptVector(true, 12);
+		UsartHal1::enableInterrupt(Interrupt::RxNotEmpty);
 		UsartHal1::setTransmitterEnable(true);
 		UsartHal1::setReceiverEnable(true);
 		UsartHal1::enableOperation();
