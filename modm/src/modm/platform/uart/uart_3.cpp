@@ -205,9 +205,11 @@ MODM_ISR(USART3)
 			txBuffer.pop();
 		}
 	}
+
 	if(modm::platform::UsartHal3::getInterruptFlags() & modm::platform::UsartHal3::InterruptFlag::OverrunError)
 	{
 		modm::platform::UsartHal3::acknowledgeInterruptFlags(modm::platform::UsartHal3::InterruptFlag::OverrunError);
+
 		flags |= modm::platform::UsartHal3::InterruptFlag::OverrunError;
 	}
 }
